@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/StatDef[defName="WorkTableWorkSpeedFactor"]/parts</xpath>
+		<value>
+			<li Class="AlphaMemes.StatPart_WorkTableArt" />
+			
+		</value>
+	</Operation>
+
+
+
+
+</Patch>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--==================== Traps ======================== -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_TrapBlunt</defName>
+    <label>blunt trap</label>
+    <description>A heavy burlap sack filled with sand, connected to a touch-activated trigger. When the victim disturbs the trigger, the sack springs forth and bludgeons the victim. Contrary to other traps, these can be placed next to each other. Animals can sense these when calm.</description>
+    <thingClass>AlphaMemes.Building_TrapDamagerBlunt</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/AM_TrapBluntArmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>100</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <designationCategory>Security</designationCategory>
+    <designationHotKey>Misc6</designationHotKey>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <trapDamageCategory>Blunt</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+   
+  </ThingDef>
+
+ 
+</Defs>

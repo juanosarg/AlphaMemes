@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Fa1FHU9lkra5hvnQBBeFqB7CtNyB4PwLWEnWBkkykg0V+IdYkDqKRT84pQjW5hVSyd8iFQt9EBXm7bqIyVnaA==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.3\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.1.1\\lib.harmony.2.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
