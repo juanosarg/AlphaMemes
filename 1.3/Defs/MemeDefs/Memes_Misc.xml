@@ -173,6 +173,9 @@
 			<li>
 				<li>AM_ArtProductionSpeed_Increased</li>
 			</li>
+			<li>
+				<li>AM_Art_Desired</li>
+			</li>
 			
 		</requireOne>
 		<symbolPacks>

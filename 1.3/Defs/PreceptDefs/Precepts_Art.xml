@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Art</defName>
+    <label>art</label>
+    <iconPath>UI/Issues/AM_Art</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>AM_Art_Desired</defName>
+    <issue>AM_Art</issue>
+    <label>desired</label>
+    <description>.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>AM_Artist</li>
+	
+    </associatedMemes>
+	
+   
+  </PreceptDef>
+  
+ 
+
+</Defs>
