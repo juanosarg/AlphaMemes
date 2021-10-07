@@ -196,7 +196,7 @@
 	<MemeDef>
 		<defName>AM_Madness</defName>
 		<label>madness</label>
-		<description>A setback of the heart is often one floor above you, onomatopoeia as a weapon of mental destruction. Are the roosters fighting?! I hope not! All turtles are stupid.</description>
+		<description>A setback of the heart is often one floor above you, onomatopoeia as a weapon of mental destruction. Are the roosters fighting?! I hope not! All turtles are stupid.\n\n&lt;color=#33d733&gt;*ahem* The non-crazy part... This meme is based around getting huge bonuses after mental breaks... At the expense of having mental breaks quite often. Powerful... if you can get around the crazed shenanigans.&lt;/color&gt;</description>
 		<iconPath>UI/Memes/AM_Madness</iconPath>
 		<groupDef>Misc</groupDef>
 		
