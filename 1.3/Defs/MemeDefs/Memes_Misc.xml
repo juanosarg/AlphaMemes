@@ -50,7 +50,7 @@
 					<li>archistFact(tag=meme_NonViolence)     ->Violence is inherently abhorrent to advanced minds, the last resort of the weak of spirit.</li>
 					<li>archistProphecy(tag=meme_NonViolence) ->[inTheEnd], only those who refuse to retaliate in the face of provocation and violence will be ready to transcend.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_NonViolence)    ->The spirit teach us that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
+					<li>animistBasis(tag=meme_NonViolence)    ->The spirits teach us that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
 					<li>animistFact(tag=meme_NonViolence)     ->Feeding the spirit of violence is senseless and wasteful, for violence is the ultimate sin.</li>
 					<li>animistProphecy(tag=meme_NonViolence) ->[itIsSaid] only those who refuse to retaliate in the face of provocation and violence will be ready to commune with the spirits.</li>
 					<!-- serketist -->
@@ -114,7 +114,7 @@
 	<MemeDef>
 		<defName>AM_Artist</defName>
 		<label>artist</label>
-		<description>.</description>
+		<description>Art is unquestionably one of the purest and highest elements in human happiness. It trains the mind through the eye, and the eye through the mind. As the sun colours flowers, so does art colour life.</description>
 		<iconPath>UI/Memes/AM_Artist</iconPath>
 		<groupDef>Misc</groupDef>
 		
@@ -122,11 +122,13 @@
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->artistic</li>
-				<li>memeAdjective->peace-loving</li>
-				<li>memeAdjective->harmonious</li>
-				<li>memeLeaderNoun->conscientious objector</li>
-				<li>memeMoralist->passive resister</li>
-				<li>memeConcept->nonviolence</li>
+				<li>memeAdjective->creative</li>
+				<li>memeAdjective->imaginative</li>
+				<li>memeAdjective->expressive</li>
+				<li>memeAdjective->aesthetic</li>
+				<li>memeLeaderNoun->sculptor</li>
+				<li>memeMoralist->art critic</li>
+				<li>memeConcept->art</li>
 				
 			</rulesStrings>
 		</generalRules>
@@ -134,38 +136,38 @@
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_NonViolence)        ->[deity0_name] made all of [deity0_possessive] followers swear a solemn vow of nonviolence.</li>
-					<li>episode(uses=1,tag=meme_NonViolence)  ->Speaking to the believers, [deity0_name] said: "Violence is the ultimate sin. It is preferable to be slaughtered than to raise a hand against other human being".</li>
+					<li>creation(tag=meme_Artist)        ->[deity0_name] taught all of [deity0_possessive] followers to paint, write and sculpt, for all those activities were sacred to [deity0_objective].</li>
+					<li>episode(uses=1,tag=meme_Artist)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "Every child is an artist. The problem is how to remain an artist once he grows up".</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_NonViolence)           ->[place_summary] [place_name] was always fraught with conflict. The [memberNamePlural] were besieged constantly by terrible warmongers, and this deeply saddened [deity0_name].</li>
-					<li>conflict(tag=meme_NonViolence)        ->[deity0_name] witnessed the contant assaults of a terrible [foeLeader], a war leader, and how [foeLeader_pronoun] was always planning some sort of violence.</li>
-					<li>founderJoin(tag=meme_NonViolence)     ->[deity0_name], tired of all the violence, infused the [foeLeader] with [deity0_pronoun] love, and [foeLeader_pronoun] immediately had a change of heart. From that point on, the [foeLeader] took [foeLeader_possessive] new name as the [deity0_name]'s speaker: [founderName] the Nonviolent.</li>
-					<li>victory(tag=meme_NonViolence)         ->[founderName] made us all understand that love is the only way forward, and we all swore a solemn vow of nonviolence.</li>
+					<li>intro(tag=meme_Artist)           ->[place_summary] [place_name] was a place renowned for its collections of fine art dedicated to [deity0_name].</li>
+					<li>conflict(tag=meme_Artist)        ->A greedy [foeLeader], wanting to increase [foeLeader_possessive] already obscene riches, wanted to sell all the art and get rid of it.</li>
+					<li>founderJoin(tag=meme_Artist)     ->[deity0_name] inspired our founder, [founderName], with incredible creativity, and a work of art of such wondrous quality was created that the [foeLeader] broke into tears, moved by its beauty.</li>
+					<li>victory(tag=meme_Artist)         ->[founderName] made us all understand that art enables us to find ourselves and lose ourselves at the same time.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_NonViolence)           ->[founderName] was a monk. [founder_pronoun] spent decades of [founder_possessive] life teaching that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
-					<li>story(uses=1,tag=meme_NonViolence)    ->[founderName] understood better than anyone else that violence is a poison to the soul, and that we must refuse to retaliate in the face of provocation and violence.</li>
+					<li>setup(tag=meme_Artist)           ->[founderName] was a painter, often compared to the great artists of old Earth. [founder_pronoun] spent decades perfecting [founder_possessive] style, and [founder_pronoun] was considered a true master.</li>
+					<li>story(uses=1,tag=meme_Artist)    ->[founderName] understood better than anyone else that art is not what you see, but what you make others see.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_NonViolence)         ->The ancient sages of Earth were absolutely right. They teach us that</li>
-					<li>lesson(tag=meme_NonViolence)              ->a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms</li>
-					<li>lessonReinforcement(tag=meme_NonViolence) ->We must refuse to retaliate in the face of provocation and violence.</li>
+					<li>lessonIntro(tag=meme_Artist)         ->You need only to study the ancient history of art to understand that</li>
+					<li>lesson(tag=meme_Artist)              ->you don't make mistakes, just happy little accidents</li>
+					<li>lessonReinforcement(tag=meme_Artist) ->Art is not what you see, but what you make others see.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_NonViolence)    ->Archotechs are pure minds, and they didn't get to their state by imposing their will upon others.</li>
-					<li>archistFact(tag=meme_NonViolence)     ->Violence is inherently abhorrent to advanced minds, the last resort of the weak of spirit.</li>
-					<li>archistProphecy(tag=meme_NonViolence) ->[inTheEnd], only those who refuse to retaliate in the face of provocation and violence will be ready to transcend.</li>
+					<li>archistBasis(tag=meme_Artist)    ->Archotechs are pure creativity. Pristine minds with an infinite capacity for imagination.</li>
+					<li>archistFact(tag=meme_Artist)     ->There is nothing the archotechs despise more than a person who doesn't create new things.</li>
+					<li>archistProphecy(tag=meme_Artist) ->[inTheEnd], only those who have embraced their creative side will be ready to transcend.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_NonViolence)    ->The spirit teach us that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
-					<li>animistFact(tag=meme_NonViolence)     ->Feeding the spirit of violence is senseless and wasteful, for violence is the ultimate sin.</li>
-					<li>animistProphecy(tag=meme_NonViolence) ->[itIsSaid] only those who refuse to retaliate in the face of provocation and violence will be ready to commune with the spirits.</li>
+					<li>animistBasis(tag=meme_Artist)    ->The spirit of creativity is one of the strongest, for it governs everything that involves human imagination.</li>
+					<li>animistFact(tag=meme_Artist)     ->The act of creating new things is sacred to the spirits.</li>
+					<li>animistProphecy(tag=meme_Artist) ->[itIsSaid] only those who have embraced their creative side will be ready to commune with the spirits.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_NonViolence)->[itIsSaid] we will understand that a hive of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
+					<li>serketistProphecy(tag=meme_Artist)->[itIsSaid] we will create intricate designs representing the myriad variations of our beloved insects.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_NonViolence)->Violence is just sustenance for these ancient entities, for they feed on terror. We must refuse to retaliate in the face of their provocation and violence.</li>
+					<li>chthonianProphecy(tag=meme_Artist)->Only a real artist knows the actual anatomy of the terrible or the physiology of fear - the exact sort of lines and proportions that connect up with latent instincts or hereditary memories of fright, and the proper colour contrasts and lighting effects to stir the dormant sense of strangeness.</li>
 					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_NonViolence)->Occult knowledge can't enter a mind occupied by violence and strife. Violence is a poison to the soul, and we must refuse to retaliate in the face of provocation and violence.</li>
+					<li>esotericismProphecy(tag=meme_Artist)->Who knows what secret patterns hide behind these arcane secrets? We will create wondrous works of art and study them to discover what lays beyond.</li>
 					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_NonViolence)->However, we are not killers. If we become murderers, how are we any better than this cursed Universe? We will be witnesses to the coming Apocalypse, but we won't be bearers of the weapons that bring its justice.</li>
+					<li>eschatologismFact(tag=meme_Artist)->Every act of creation is first of all an act of destruction.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_NonViolence)->We are writing to remind you that the mandatory online anger management seminar has been rescheduled to this next Tuesday. Remember, people, in this company we are committed to bringing about a world of peace, harmony, laughter, and love!</li>
+					<li>introMemo(tag=meme_Artist)->Could you *please* look again into the problems the art department has with their computers? I think they have installed something they shouldn't...</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -176,6 +178,9 @@
 			<li>
 				<li>AM_Art_Desired</li>
 			</li>
+			<li>
+				<li>AM_ArtQuality_Expected</li>
+			</li>
 			
 		</requireOne>
 		<symbolPacks>
@@ -184,6 +189,81 @@
 				<theme>art</theme>
 				<adjective>artistic</adjective>
 				<member>artist</member>
+			</li>
+		</symbolPacks>
+		
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Madness</defName>
+		<label>madness</label>
+		<description>A setback of the heart is often one floor above you, onomatopoeia as a weapon of mental destruction. Are the roosters fighting?! I hope not! All turtles are stupid.</description>
+		<iconPath>UI/Memes/AM_Madness</iconPath>
+		<groupDef>Misc</groupDef>
+		
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->mad</li>
+				<li>memeAdjective->crazy</li>
+				<li>memeLeaderNoun->madman</li>
+				<li>memeMoralist->maniac</li>
+				<li>memeMoralist->lunatic</li>
+				<li>memeConcept->madness</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Madness)        ->[deity0_name] faced [deity0_possessive] followers and turned their minds inside out.</li>
+					<li>episode(uses=1,tag=meme_Madness)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "My children, you must face the dirty truth about knitting". Which didn't apply to the current situation at all, but that's why [deity0_pronoun] is the deity of Madness.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Madness)           ->[place_summary] [place_name] was a place where madness reigned, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Madness)        ->A conniving [foeLeader], wanting to impose [foeLeader_possessive] will on [deity0_name]'s followers, tried to attack with the help of a powerful army.</li>
+					<li>founderJoin(tag=meme_Madness)     ->[deity0_name] inspired our founder, [founderName], with complete insanity, and [founder_pronoun] assaulted the huge army on [founder_possessive] own. Naked.</li>
+					<li>victory(tag=meme_Madness)         ->In a stroke of mad luck, [founderName] struck the [foeLeader] on the head with a throwing rock, and the rest of the army couldn't help but stare in awe as a single crazed loony had singlehandedly killed their leader. Then of course they tore [founderName] to pieces.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Madness)           ->[founderName] was a very wise person. [founder_pronoun] had the gift of being able to paint songs and smell paintings on Tuesdays. [founder_pronoun] loved wildcrafted limberger paste topped with room temperature scallop tea. Without a hint of cinnamon, that would be madness.</li>
+					<li>story(uses=1,tag=meme_Madness)    ->[founderName] always repeated the same sentence over and over again. And again. And again: no man on the Rim has no belly-button, it proves every believer on the Rim a liar.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Madness)         ->Let me tell you: Academic free speech is a damn lie. They refuse to see the truth. You need to understand that</li>
+					<li>lesson(tag=meme_Madness)              ->there is no human entity, just human cubics -as in 4 different people in a 4 corner stage metamorphic rotation- never more than 1 corner at same time</li>
+					<li>lessonReinforcement(tag=meme_Madness) ->Nature has no choice but to bring forth a hell upon boring cubelessness. Know it to be of your own making.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Madness)    ->All knowledge of the human word animal is insignificant, when his fictitious word world is compared to the archotechs.</li>
+					<li>archistFact(tag=meme_Madness)     ->We called to them, what a damn shame. They were too small to understand that concave is just a state of mind. Physics in motion. Like a stork.</li>
+					<li>archistProphecy(tag=meme_Madness) ->[inTheEnd], nothing will remain, but those who have opened their pathetic minds to the reality that is 6 dimensional math will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Madness)    ->The spirits don't exist: The boring academic bastards who preach the existence of the spirits should be nailed to the cross, because the spirits love us. They are the best.</li>
+					<li>animistFact(tag=meme_Madness)     ->Faith IS NOT knowledge, but boring of not measuring. The spirits understand this well. You cannot comprehend the actual truth.</li>
+					<li>animistProphecy(tag=meme_Madness) ->[itIsSaid] only those who assume that opposites ARE NOT entities will be ready to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Madness)->[itIsSaid] we will understand that educated brilliant word insects can't fathom the greatest social and scientific math of creation. A thousand goats!</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Madness)->A seething, half-luminous cloud-background will hold ineffable suggestions of a vague, ethereal beyondness far more than terrestrially spatial; and give appalling reminders of the utter remoteness, separateness, desolation, and aeon-long death of this untrodden and unfathomed austral world.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Madness)->Only poetry or madness can do justice to the noises.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Madness)->What unicorn mentality they have: to worship an old dead Taco as God/Creator. One does not exist except in death state.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Madness)->We are having a recurring incident where someone in the company is replying to mails with a long chain of illegible gibberish. Please remember that AAmOwdh765sh dghd//%dg gt7s65 %/s uisis 7s78s ysg ys/%/Sysy awwxoPOUPSUs yiosioIOSy ysoIYSioy soeqyy66678xnm.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Madness_Exalted</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Madness</ideoName>
+				<theme>madness</theme>
+				<adjective>insane</adjective>
+				<member>dement</member>
 			</li>
 		</symbolPacks>
 		

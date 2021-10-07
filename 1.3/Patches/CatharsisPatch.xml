@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+		
+		<xpath>/Defs/ThoughtDef[defName = "Catharsis"]/thoughtClass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "Catharsis"]</xpath>
+			<value>
+				<thoughtClass>AlphaMemes.Thought_Catharsis</thoughtClass>
+			</value>
+		</nomatch>
+		
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	
+		<xpath>/Defs/ThoughtDef[defName = "Catharsis"]/stages</xpath>
+		<value>
+			<li>
+				<label>crazed catharsis</label>
+				<description>A flailing monkey wanted the TRUTH! A river a thousand paces wide would die for a grapefruit!</description>
+				<baseMoodEffect>60</baseMoodEffect>
+			</li>
+		</value>
+	</Operation>
+
+
+
+</Patch>

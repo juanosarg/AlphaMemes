@@ -299,9 +299,14 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableArt.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
+    <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />
+    <Compile Include="Thoughts\Thought_Art_Desired.cs" />
+    <Compile Include="Thoughts\Thought_Catharsis.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -20,6 +20,10 @@ namespace AlphaMemes
 
 		public static ThingDef AM_TrapBlunt;
 
+		public static MemeDef AM_Madness;
+
+		public static HediffDef AM_CatharsisHediff;
+
 
 	}
 }
