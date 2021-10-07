@@ -23,7 +23,7 @@
 					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 				</statOffsets>
-				<painFactor>0.1</painFactor>
+				<painFactor>0.75</painFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
