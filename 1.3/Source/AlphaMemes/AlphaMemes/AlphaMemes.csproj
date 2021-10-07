@@ -299,6 +299,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
@@ -307,6 +308,7 @@
     <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
+    <Compile Include="Thoughts\Thought_Mood_Volatile.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
