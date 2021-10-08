@@ -428,7 +428,7 @@
 					<li>story(uses=1,tag=meme_Youth)    ->[founderName] thus created a great school of thought, where the bounty of youth is always respected and considered.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_Youth)         ->The youngest man to be chosen as leader in our community omce taught me the history of civilization, how older men declare war, but it is the youth that must fight and die. He was leading me to understand that</li>
-					<li>lesson(tag=meme_Youth)              ->we want our legacy to stand upon the youth. We want to give knowledge to the younger generation and be a part of changing the game.</li>
+					<li>lesson(tag=meme_Youth)              ->we want our legacy to stand upon the youth. We want to give knowledge to the younger generation and be a part of changing the game</li>
 					<li>lessonReinforcement(tag=meme_Youth) ->Good habits formed at youth make all the difference.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_Youth)    ->The archotechs are supreme beings, existing beyond concepts like age and time.</li>
