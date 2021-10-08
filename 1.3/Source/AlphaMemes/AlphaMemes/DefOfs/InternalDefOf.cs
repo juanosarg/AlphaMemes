@@ -17,12 +17,15 @@ namespace AlphaMemes
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
 
 		public static HistoryEventDef AM_SomeoneDied;
+		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
 
 		public static ThingDef AM_TrapBlunt;
 
 		public static MemeDef AM_Madness;
 
 		public static HediffDef AM_CatharsisHediff;
+
+		public static SoundDef AM_RitualSustainer_MaddeningChant;
 
 
 	}

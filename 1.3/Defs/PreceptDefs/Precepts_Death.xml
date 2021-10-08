@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Death</defName>
+		<label>death</label>
+		<iconPath>UI/Issues/Death</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Death_DontCare</defName>
+		<issue>VME_Death</issue>
+		<label>don't care</label>
+		<description>Death is inevitable, should we lose an ally or slay an enemy it is not to be thought about.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists won't get any mood effects for losing other colonists.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_BloodCourt</li>
+		</associatedMemes>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Death_Normal</defName>
+		<issue>VME_Death</issue>
+		<label>normal</label>
+		<description>Death is inevitable, an incredibly sad fact of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Death_Troubling</defName>
+		<issue>VME_Death</issue>
+		<label>troubling</label>
+		<description>Death is inevitable, but we prefer not to dwell on it and not be reminded of its reality as much as possible.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>ObservedLayingCorpse</eventDef>
+				<thought>VME_Death_Troubling</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Death_Troubling</defName>
+		<durationDays>2</durationDays>
+		<stages>
+			<li>
+				<label>death is troubling</label>
+				<description>I know death is a part of life, but I just HATE being reminded of it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+</Defs>

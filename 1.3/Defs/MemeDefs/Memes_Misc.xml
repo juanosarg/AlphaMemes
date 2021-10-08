@@ -13,7 +13,7 @@
 			<li>VME_NotRaiders</li>
 			<li>VME_NoCannibalsAndNonviolenceVow</li>
 			<li>VME_NonViolenceVoteVsRancher</li>
-				
+			<li>VME_SadistVsNonviolence</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -181,7 +181,9 @@
 			<li>
 				<li>AM_ArtQuality_Expected</li>
 			</li>
-			
+			<li>
+				<li>VME_AutomationEfficiency_Decreased</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -269,6 +271,199 @@
 				<member>dement</member>
 			</li>
 		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_MaddeningChantPrecept</precept>
+				<pattern>AM_MaddeningChantPattern</pattern>
+			</li>
+		</requiredRituals>
 		
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>AM_Sadist</defName>
+		<label>sadist</label>
+		<description>There is nothing more sublime than inflicting pain upon others, to watch another's life wane and witness their soul leave behind a discarded husk.</description>
+		<iconPath>UI/Memes/AM_Sadist</iconPath>
+		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_SadistVsPacifist</li>
+			<li>VME_SadistVsNonviolence</li>							
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->sadist</li>
+				<li>memeAdjective->vicious</li>
+				<li>memeAdjective->pitiless</li>
+				<li>memeAdjective->perverse</li>
+				<li>memeAdjective->ruthless</li>
+				<li>memeLeaderNoun->pain bringer</li>
+				<li>memeMoralist->psychopath</li>			
+				<li>memeConcept->pain</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Sadist)        ->[deity0_name] was without mercy. [deity0_pronoun] ordered all the apostates and heretics to be flayed alive, until the cacophony of their agonizing screams was the only sound that could be heard.</li>
+					<li>episode(uses=1,tag=meme_Sadist)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "To see others suffer does one good, to make others suffer even more".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Sadist)           ->[place_summary] [place_name] glistened with the caked, dried blood that had dripped from the crucifixion victims, a testament of [deity0_name]'s glory.</li>
+					<li>conflict(tag=meme_Sadist)        ->A rabid [foeLeader], wanting to liberate those scheduled for execution in the name of [deity0_name], tried to attack with the help of [foeLeader_possessive] many [foeSoldiers].</li>
+					<li>founderJoin(tag=meme_Sadist)     ->[deity0_name] bestowed our founder, [founderName], with the [relic0_name], and [founder_pronoun] used it to rally an incredible force to resist the onslaught.</li>
+					<li>victory(tag=meme_Sadist)         ->The massacre was divine. [founderName] slaughtered countless enemies, and ravens feasted on the rotting mounds of their corpses for weeks.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Sadist)           ->[founderName] understood that pain is the great liberator. Only by making others suffer do you hold any power over them. The appetite for torment is for some what the lure of gain is for others.</li>
+					<li>story(uses=1,tag=meme_Sadist)    ->[founderName] always repeated the same lesson over and over again: certain souls may seem harsh to others, but it is just a way, beknownst only to them, of caring and feeling more deeply.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Sadist)         ->It is only by way of pain one arrives at pleasure. You need to understand that</li>
+					<li>lesson(tag=meme_Sadist)              ->in order to know virtue, we must first acquaint ourselves with vice</li>
+					<li>lessonReinforcement(tag=meme_Sadist) ->All universal moral principles are idle fancies.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Sadist)    ->The archotechs understand that pain is just a means to an end. Torture is just the perfect way through which a soul is liberated from its mortal shell.</li>
+					<li>archistFact(tag=meme_Sadist)     ->To reach their supreme state as perfect minds, the archotechs had to inflict exquisite pain upon any others that stood in their way.</li>
+					<li>archistProphecy(tag=meme_Sadist) ->[inTheEnd], only those who have left their enemies mutilated and broken will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Sadist)    ->The spirits understand that pain is just a means to an end. Torture is just the perfect way through which a soul is liberated from its mortal shell.</li>
+					<li>animistFact(tag=meme_Sadist)     ->To reach their supreme state as pure minds, the spirits had to inflict exquisite pain upon any others that stood in their way.</li>
+					<li>animistProphecy(tag=meme_Sadist) ->[itIsSaid] only those who have left their enemies mutilated and broken will be ready to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Sadist)->[itIsSaid] we will understand that insects care nothing for others. Flay them, mutilate them, scour the flesh from their bones until only a broken corpse remains.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Sadist)->These entities show us that pain is but a means to an end. The delicate screams of torture will shield us from their attention.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Sadist)->We will uncover these arcane secrets by any means necessary. Perhaps in the terrified screams of a torture victim we will discover a piece of the puzzle.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Sadist)->The whole world will be blanketed with the crushed corpses of our enemies. Their blood will fill the oceans and their terrified screams will drown the sounds of the wind.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Sadist)->We are happy to announce that the company we acquired last week has had all its assets completely liquidated. Both the tangible assets and the... human capital, if you catch my meaning.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Corpses_Sublime</li>
+			</li>
+			<li>
+				<li>AM_OrganUse_Torturous</li>
+			</li>
+			<li>
+				<li>AM_Death_Desired</li>
+			</li>
+			<li>
+				<li>AM_Reputation_Lowered</li>
+			</li>
+			<li>
+				<li>VME_CraftingQuality_Decreased</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Sadist</ideoName>
+				<theme>sadism</theme>
+				<adjective>sadist</adjective>
+				<member>sadist</member>
+			</li>
+			<li>
+				<ideoName>Ruthless</ideoName>
+				<theme>ruthlessness</theme>
+				<adjective>ruthless</adjective>
+				<member>ruthless</member>
+			</li>
+			<li>
+				<ideoName>Perverse</ideoName>
+				<theme>perversity</theme>
+				<adjective>perverse</adjective>
+				<member>pervert</member>
+			</li>
+		</symbolPacks>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<factionOpinionOffset>-50</factionOpinionOffset>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AM_AgeRelated</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_Youth</defName>
+		<label>youth</label>
+		<description>The future of the world belongs to the youth, and it is from the youth and not from the old that the fire of life will warm and enlighten the world.</description>
+		<iconPath>UI/Memes/AM_Youth</iconPath>
+		<groupDef>AM_AgeRelated</groupDef>
+		<impact>1</impact>
+		<exclusionTags>
+			<li>VME_EldersOrYouth</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->young</li>
+				<li>memeAdjective->youthful</li>
+				<li>memeAdjective->youngster</li>				
+				<li>memeConcept->age</li>
+				<li>memeHyphenPrefix->young</li>
+				<li>memeLeaderNoun->junior</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Youth)        ->[deity0_name] spoke to [deity0_possessive] followers: "Youth comes but once in a lifetime."</li>
+					<li>episode(uses=1,tag=meme_Youth)  ->Following [deity0_name]'s teachings, we honoured our youth, putting their needs above those of others.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Youth)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic nursery, so that the youngsters could spend their early years in peace.</li>
+					<li>conflict(tag=meme_Youth)        ->An old [foeLeader], jealous of the wisdom of [deity0_name]'s followers, tried to spread a deadly plague that only affected children.</li>
+					<li>founderJoin(tag=meme_Youth)     ->[founderName], a great scientist, developed a cure in a record time, saving many lives in the process.</li>
+					<li>victory(tag=meme_Youth)         ->[foeLeader] was imprisoned, and [foeLeader_possessive] tale will forever be used as a cautinary tale against those who try to deny the sanctity of youth.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Youth)           ->[founderName] was a social scientist in one of the Glitterworlds. [founder_pronoun] always advised the youth to not get influenced or forced by their elders, and that they should have their own political views and choices and the courage to pick the right leader.</li>
+					<li>story(uses=1,tag=meme_Youth)    ->[founderName] thus created a great school of thought, where the bounty of youth is always respected and considered.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Youth)         ->The youngest man to be chosen as leader in our community omce taught me the history of civilization, how older men declare war, but it is the youth that must fight and die. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Youth)              ->we want our legacy to stand upon the youth. We want to give knowledge to the younger generation and be a part of changing the game.</li>
+					<li>lessonReinforcement(tag=meme_Youth) ->Good habits formed at youth make all the difference.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Youth)    ->The archotechs are supreme beings, existing beyond concepts like age and time.</li>
+					<li>archistFact(tag=meme_Youth)     ->Whirling through a vortex of infinite time, their wisdom grows far larger than anything possible for a mere human, but they were human in their infancy.</li>
+					<li>archistProphecy(tag=meme_Youth) ->[inTheEnd], the archotechs will allow only the youngest of us to transcend, for we remind them of their own origins.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Youth)    ->The spirits value vitality above anything else, for only those who are truly alive can properly communicate with them.</li>
+					<li>animistFact(tag=meme_Youth)     ->Our children, with their infinite energy, will act as a conduit to the world of the spirits.</li>
+					<li>animistProphecy(tag=meme_Youth) ->[itIsSaid] the liveliest of our children will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Youth)->[itIsSaid] we will become as eternal as the greatest ant colony. With vitality and exhuberance beyond measure.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Youth)->The eldritch entities are old and wise beyond all imagining, and we are but children to them. Perhaps the innocence of the youth will shield us from their unwanted attention.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Youth)->Such occult knowledge can only be acquired with time and study. Only the youngest among us will have enough time in their lives to pierce the barrier between reality and the realms beyond.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Youth)->We shall honour our youth, for the process to bring about the end of days will be long and arduous, and only them may witness it before they themselves succumb to age.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Youth)->We are gladly informing you that we have decided to relax the previous rules regarding minimum acceptable employee age. If he walks, he can work!</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>VME_Elders_Despised</li>
+				
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Youth</ideoName>
+				<theme>youth</theme>
+				<adjective>young</adjective>
+				<member>young one</member>
+			</li>
+		</symbolPacks>
 	</MemeDef>
 </Defs>

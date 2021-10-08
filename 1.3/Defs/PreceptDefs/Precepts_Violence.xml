@@ -18,9 +18,7 @@
 				<eventDef>AM_SomeoneDied</eventDef>
 				<thought>AM_Violence_Abhorrent_Strict</thought>
 			</li>
-		
 		</comps>
-		
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>AM_Violence_Abhorrent_Strict</defName>
@@ -37,4 +35,5 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
 </Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_MaddeningChantPattern</defName>
+    <ritualBehavior>AM_MaddeningChantBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+    <ritualExplanation>Mental break and its intensity will be completely random. Affected colonists will benefit from the catharsis effect once recovered.</ritualExplanation>
+    <ritualOutcomeEffect>AM_MaddeningChantOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<playsIdeoMusic>false</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>
