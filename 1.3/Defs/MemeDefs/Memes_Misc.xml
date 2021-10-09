@@ -24,7 +24,6 @@
 				<li>memeLeaderNoun->conscientious objector</li>
 				<li>memeMoralist->passive resister</li>
 				<li>memeConcept->nonviolence</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -110,14 +109,12 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>AM_Artist</defName>
 		<label>artist</label>
 		<description>Art is unquestionably one of the purest and highest elements in human happiness. It trains the mind through the eye, and the eye through the mind. As the sun colours flowers, so does art colour life.</description>
 		<iconPath>UI/Memes/AM_Artist</iconPath>
 		<groupDef>Misc</groupDef>
-		
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
@@ -129,7 +126,6 @@
 				<li>memeLeaderNoun->sculptor</li>
 				<li>memeMoralist->art critic</li>
 				<li>memeConcept->art</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -193,7 +189,6 @@
 				<member>artist</member>
 			</li>
 		</symbolPacks>
-		
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Madness</defName>
@@ -201,7 +196,6 @@
 		<description>A setback of the heart is often one floor above you, onomatopoeia as a weapon of mental destruction. Are the roosters fighting?! I hope not! All turtles are stupid.\n\n&lt;color=#33d733&gt;*ahem* The non-crazy part... This meme is based around getting huge bonuses after mental breaks... At the expense of having mental breaks quite often. Powerful... if you can get around the crazed shenanigans.&lt;/color&gt;</description>
 		<iconPath>UI/Memes/AM_Madness</iconPath>
 		<groupDef>Misc</groupDef>
-		
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
@@ -212,7 +206,6 @@
 				<li>memeMoralist->maniac</li>
 				<li>memeMoralist->lunatic</li>
 				<li>memeConcept->madness</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -261,7 +254,6 @@
 			<li>
 				<li>AM_Mood_Volatile</li>
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -277,9 +269,7 @@
 				<pattern>AM_MaddeningChantPattern</pattern>
 			</li>
 		</requiredRituals>
-		
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>AM_Sadist</defName>
 		<label>sadist</label>
@@ -288,7 +278,7 @@
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
 			<li>VME_SadistVsPacifist</li>
-			<li>VME_SadistVsNonviolence</li>							
+			<li>VME_SadistVsNonviolence</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
@@ -299,9 +289,8 @@
 				<li>memeAdjective->perverse</li>
 				<li>memeAdjective->ruthless</li>
 				<li>memeLeaderNoun->pain bringer</li>
-				<li>memeMoralist->psychopath</li>			
+				<li>memeMoralist->psychopath</li>
 				<li>memeConcept->pain</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -406,7 +395,7 @@
 			<rulesStrings>
 				<li>memeAdjective->young</li>
 				<li>memeAdjective->youthful</li>
-				<li>memeAdjective->youngster</li>				
+				<li>memeAdjective->youngster</li>
 				<li>memeConcept->age</li>
 				<li>memeHyphenPrefix->young</li>
 				<li>memeLeaderNoun->junior</li>
@@ -454,7 +443,6 @@
 		<requireOne>
 			<li>
 				<li>VME_Elders_Despised</li>
-				
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -463,6 +451,92 @@
 				<theme>youth</theme>
 				<adjective>young</adjective>
 				<member>young one</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AA_Biological</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_BiologicalDefilers</defName>
+		<label>biological defilers</label>
+		<exclusionTags>
+			<li>AA_Biological</li>
+			<li>AnimalTreatment</li>
+			<li>AA_SerketistAndEradicators</li>
+			<li>Primacy</li>
+		</exclusionTags>
+		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
+		<iconPath>UI/Memes/AM_BiologicalDefilers</iconPath>
+		<groupDef>AA_Biological</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->ravaging</li>
+				<li>memeAdjective->annihilating</li>
+				<li>memeAdjective->eradicating</li>
+				<li>memeAdjective->exterminating</li>
+				<li>memeLeaderAdjective->anti-ecologist</li>
+				<li>memeConcept->extermination</li>
+				<li>memeConcept->extinction</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_BiologicalDefilers)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has gone too far. I am the sole creator of life, and all these... monstrosities you have created are obscene to me. They must be eradicated."</li>
+					<li>episode(uses=1,tag=meme_BiologicalDefilers)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of genetic abominations, and culled their numbers.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_BiologicalDefilers)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic slaughterhouse, and countless genetic abominations were sacrificed there, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_BiologicalDefilers)        ->A misguided [foeLeader], feeling some twisted compassion for these grotesque animals, tried to go against [deity0_name]'s will and free those that were scheduled for termination.</li>
+					<li>founderJoin(tag=meme_BiologicalDefilers)     ->[founderName], a great scientist, showed the hard, cold data to the [foeLeader], and convinced [foeLeader_objective] that humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<li>victory(tag=meme_BiologicalDefilers)         ->The [foeLeader] came to firmly believe in [deity0_name]'s admonitions.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_BiologicalDefilers)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the grotesque menagerie of genetically modified creatures and plants that humanity had created, and felt a deep disgust. Humanity had gone too far.</li>
+					<li>story(uses=1,tag=meme_BiologicalDefilers)    ->[founderName] taught us that playing god is quite obscene, and that humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_BiologicalDefilers)         ->The smartest biologist in our community omce taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lesson(tag=meme_BiologicalDefilers)              ->humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth</li>
+					<li>lessonReinforcement(tag=meme_BiologicalDefilers) ->Have we already forgotten what happened in Sorne? Have we forgotten the marble worlds, glassed to contain the Feralisk menace?</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_BiologicalDefilers)    ->The archotechs are supreme beings, and the act of creation is not beyond their grasp. It should be beyond ours, though.</li>
+					<li>archistFact(tag=meme_BiologicalDefilers)     ->Humanity has been playing god, damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<li>archistProphecy(tag=meme_BiologicalDefilers) ->[inTheEnd], the archotechs will allow only those who rectify these mistakes of our ancestors to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_BiologicalDefilers)    ->The grotesque, genetically modified animals that have been seeded through the galaxy by humans are soulless abominations. An insult to the spirit world.</li>
+					<li>animistFact(tag=meme_BiologicalDefilers)     ->Getting rid of these aberrations is a sacred duty, and one that will please the spirits.</li>
+					<li>animistProphecy(tag=meme_BiologicalDefilers) ->[itIsSaid] those who rectify these mistakes of our ancestors will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_BiologicalDefilers)->The eldritch entities are beings of constant creation and destruction. The endless seeding of terrestrial life by humanity is like a beacon to them, and perhaps by exterminating these obscene genetically modified abominations we may keep their gaze averted from us for some time.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_BiologicalDefilers)->Such occult knowledge can only be acquired through acts of destruction. The endless seeding of terrestrial life by humanity provides us with a nearly infinite source of life, and perhaps by exterminating these obscene genetically modified abominations we may peer beyond the veil of the cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_BiologicalDefilers)->Nothing will resist our wrath. All creations of humanity will be slaughtered.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_BiologicalDefilers)->We are happy to inform that we have opened three new extermination centers across the Rim! Remember to report any genetically modified animals you may find on your travels, and schedule them for termination on your nearest facility.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalDefilers)->We must destroy these lifeforms, for humanity has gone way too far. All the galaxy is being remade in the image of our original planet, and that is obscene.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Bonding_Abhorrent</li>
+			</li>
+			<li>
+				<li>AM_AnimalSlaughter_Desired</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Extermination</ideoName>
+				<theme>extermination</theme>
+				<adjective>exterminating</adjective>
+				<member>exterminator</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>

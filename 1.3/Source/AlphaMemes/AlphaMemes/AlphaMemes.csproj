@@ -301,6 +301,8 @@
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
+    <Compile Include="Harmony\WorkGiver_Tame_JobOnThing.cs" />
+    <Compile Include="Harmony\WorkGiver_Train_JobOnThing.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />

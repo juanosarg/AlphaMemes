@@ -13,6 +13,15 @@
     <allowMultiplePrecepts>true</allowMultiplePrecepts>
   </IssueDef>
 
+  <HistoryEventDef>
+    <defName>AM_DespisedAnimalDied</defName>
+    <label>despised animal died</label>
+  </HistoryEventDef>
+  
+  <HistoryEventDef>
+    <defName>AM_AnimalDied</defName>
+    <label>animal died</label>
+  </HistoryEventDef>
 
   <!-- Precepts -->
 
@@ -29,33 +38,46 @@
     <impact>Medium</impact>
     <maxCount>6</maxCount>
     <comps>
-      <li Class="PreceptComp_UnwillingToDo">
-        <eventDef>SlaughteredVeneratedAnimal</eventDef>
-      </li>
-      <li Class="PreceptComp_UnwillingToDo">
-        <eventDef>HuntedVeneratedAnimal</eventDef>
-      </li>
+     
       <li Class="PreceptComp_SelfTookMemoryThought">
-        <eventDef>TameVeneratedAnimalDied</eventDef>
-        <thought>TameVeneratedAnimalDied</thought>
-        <description>Tame venerated animal died</description>
+        <eventDef>AM_DespisedAnimalDied</eventDef>
+        <thought>AM_AnimalDespised_Died_Despised</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
-        <eventDef>AteVeneratedAnimalMeat</eventDef>
-        <thought>AteVeneratedAnimalMeat</thought>
+	  <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AM_AnimalDied</eventDef>
+        <thought>AM_AnimalDespised_Died_Normal</thought>
       </li>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>VeneratedAnimalsOnMapOrCaravan</thought>
-        <thoughtStageDescriptions>
-          <li>Scarce animals {STAGE1}</li>
-          <li>Few animals {STAGE2}</li>
-          <li>Some animals {STAGE3}</li>
-          <li>Lots of animals {STAGE4}</li>
-          <li>Tons of animals</li>
-        </thoughtStageDescriptions>
-      </li>
+     
     </comps>
   </PreceptDef>
+  
+   <ThoughtDef>
+    <defName>AM_AnimalDespised_Died_Despised</defName>
+   
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+   
+    <stages>
+      <li>
+        <label>despised animal died</label>
+        <description>A despised animal died. The death of such a grotesque abomination is something to celebrate.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>AM_AnimalDespised_Died_Normal</defName>   
+    <durationDays>5</durationDays> 
+	<stackLimit>2</stackLimit>	
+    <stages>
+      <li>
+        <label>animal died</label>
+        <description>An animal died. The sooner we get rid of these misguided genetic creations the sooner the galaxy will be safe.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 
  

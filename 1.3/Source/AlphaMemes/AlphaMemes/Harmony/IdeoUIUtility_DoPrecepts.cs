@@ -21,7 +21,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         static void AddDespisedAnimalPrecepts(ref float curY, float width, Ideo ideo, IdeoEditMode editMode)
         {
-            if (ideo.HasMeme(InternalDefOf.AM_Madness))
+            if (ideo.HasMeme(InternalDefOf.AM_BiologicalDefilers))
             {
 
                 Func<PreceptDef, bool> filter = (PreceptDef p) => p.preceptClass == typeof(Precept_DespisedAnimal);

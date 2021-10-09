@@ -16,12 +16,22 @@ namespace AlphaMemes
 
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
 
+		public static PreceptDef AM_AnimalDespised;
+
+		public static PreceptDef AM_Bonding_Abhorrent;
+
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
+		public static HistoryEventDef AM_DespisedAnimalDied;
+		public static HistoryEventDef AM_AnimalDied;
+		public static HistoryEventDef AM_TameAnimal;
+		public static HistoryEventDef AM_TrainAnimal;
 
 		public static ThingDef AM_TrapBlunt;
 
 		public static MemeDef AM_Madness;
+
+		public static MemeDef AM_BiologicalDefilers;
 
 		public static HediffDef AM_CatharsisHediff;
 
