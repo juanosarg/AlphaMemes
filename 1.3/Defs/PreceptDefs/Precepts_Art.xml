@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- Issues -->
-
- 
-  <IssueDef>
-    <defName>AM_Art</defName>
-    <label>art</label>
-    <iconPath>UI/Issues/AM_Art</iconPath>
-  </IssueDef>
-
-  <!-- Precepts -->
-
- 
-
-  <PreceptDef>
-    <defName>AM_Art_Desired</defName>
-    <issue>AM_Art</issue>
-    <label>desired</label>
-    <description>A true work of art is the revelation of a new conception of life arising in the artist's soul, which, when expressed, lights up the path along which humanity progresses.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will demand art pieces around the colony, at the very least one per colonist.</description>
-    <impact>Medium</impact>
-    <associatedMemes>
-      <li>AM_Artist</li>	
-    </associatedMemes>
-	<comps>
-      <li Class="PreceptComp_SituationalThought">
-        <thought>AM_Art_Desired</thought>
-      </li>
-    </comps>
-	
-   
-  </PreceptDef>
-  
-<ThoughtDef>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Art</defName>
+		<label>art</label>
+		<iconPath>UI/Issues/AM_Art</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Art_Desired</defName>
+		<issue>AM_Art</issue>
+		<label>desired</label>
+		<description>A true work of art is the revelation of a new conception of life arising in the artist's soul, which, when expressed, lights up the path along which humanity progresses.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will demand art pieces around the colony, at the very least one per colonist.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Artist</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Art_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>no art nearby</li>
+					<li>very little art around (less than 1 per colonist)</li>
+					<li>a few art pieces around (less than 1,5 per colonist)</li>
+					<li>several art pieces around (less than 2 per colonist)</li>
+					<li>lots of art pieces around (less than 3 per colonist)</li>
+					<li>surrounded by art</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
 		<defName>AM_Art_Desired</defName>
 		<minExpectation>Low</minExpectation>
 		<workerClass>AlphaMemes.Thought_Art_Desired</workerClass>
@@ -67,11 +65,6 @@
 				<description>Art washes away from the soul the dust of everyday life.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
-				
-			
-			
 		</stages>
 	</ThoughtDef>
-
-
 </Defs>

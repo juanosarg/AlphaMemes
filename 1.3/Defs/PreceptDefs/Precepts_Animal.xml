@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- History events -->
+
+
+
+  <!-- Issue -->
+
+  <IssueDef>
+    <defName>AM_AnimalsDespised</defName>
+    <label>despised animal</label>
+    <allowMultiplePrecepts>true</allowMultiplePrecepts>
+  </IssueDef>
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_AnimalDespised</defName>
+    <issue>AM_AnimalsDespised</issue>
+    <label>despised</label>
+    <description>I hate you.</description>
+    <preceptClass>AlphaMemes.Precept_DespisedAnimal</preceptClass>
+    <workerClass>AlphaMemes.PreceptWorker_DespisedAnimal</workerClass>
+    <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <impact>Medium</impact>
+    <maxCount>6</maxCount>
+    <comps>
+      <li Class="PreceptComp_UnwillingToDo">
+        <eventDef>SlaughteredVeneratedAnimal</eventDef>
+      </li>
+      <li Class="PreceptComp_UnwillingToDo">
+        <eventDef>HuntedVeneratedAnimal</eventDef>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>TameVeneratedAnimalDied</eventDef>
+        <thought>TameVeneratedAnimalDied</thought>
+        <description>Tame venerated animal died</description>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteVeneratedAnimalMeat</eventDef>
+        <thought>AteVeneratedAnimalMeat</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VeneratedAnimalsOnMapOrCaravan</thought>
+        <thoughtStageDescriptions>
+          <li>Scarce animals {STAGE1}</li>
+          <li>Few animals {STAGE2}</li>
+          <li>Some animals {STAGE3}</li>
+          <li>Lots of animals {STAGE4}</li>
+          <li>Tons of animals</li>
+        </thoughtStageDescriptions>
+      </li>
+    </comps>
+  </PreceptDef>
+
+
+ 
+
+</Defs>

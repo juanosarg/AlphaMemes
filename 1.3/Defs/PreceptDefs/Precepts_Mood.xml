@@ -18,9 +18,19 @@
 			<li>AM_Madness</li>
 		</requiredMemes>
 		<comps>
-			<li Class="PreceptComp_SituationalThought">
-				
+			<li Class="PreceptComp_SituationalThought">				
 				<thought>AM_Mood_Volatile</thought>
+				<thoughtStageDescriptions>
+					<li>spiders in my face</li>
+					<li>clown in the sky looking at me</li>
+					<li>liquorice tastes like betrayal</li>
+					<li>the voices won't stop</li>
+					<li>I feel like turpentine</li>
+					<li>all cheese is obnoxious</li>
+					<li>have you ever seen tomorrow?</li>
+					<li>I can feel the inside of my skin</li>
+					<li>my flesh vessel is itchy</li>
+				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
@@ -46,7 +56,7 @@
 			</li>
 			<li>
 				<label>the voices won't stop</label>
-				<description>They could be telling me to kill everyone, but instead they recite stock exchange transactions in ancient Sumerian. Ishtar smiles upon my portfolio.</description>
+				<description>They could be telling me to kill everyone, but instead they recite stock exchange transactions in ancient languages. A beet smiles upon my portfolio.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
