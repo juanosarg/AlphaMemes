@@ -61,7 +61,7 @@
       <li>
         <label>despised animal died</label>
         <description>A despised animal died. The death of such a grotesque abomination is something to celebrate.</description>
-        <baseMoodEffect>3</baseMoodEffect>
+        <baseMoodEffect>4</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -74,7 +74,7 @@
       <li>
         <label>animal died</label>
         <description>An animal died. The sooner we get rid of these misguided genetic creations the sooner the galaxy will be safe.</description>
-        <baseMoodEffect>2</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

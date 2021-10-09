@@ -5,7 +5,7 @@
 		<defName>AM_AnimalSlaughter_Desired</defName>
 		<issue>AnimalSlaughter</issue>
 		<label>desired</label>
-		<description>To slaughter an animal is an ugly thing.</description>
+		<description>The abominable genetically modified creations of humanity must be culled. We have no compunctions about consuming their flesh, as long as we are hunting them in the wild.</description>
 		<impact>High</impact>
 		<displayOrderInImpact>1000</displayOrderInImpact>
 		<displayOrderInIssue>30</displayOrderInIssue>
