@@ -24,52 +24,49 @@
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->mental</li>
-				<li>memeAdjective->psychic</li>
-				<li>memeAdjective->metaphysical</li>
+				<li>memeAdjective->draining</li>
+				<li>memeAdjective->psychic</li>				
 				<li>memeHyphenPrefix->mind</li>
-				<li>memeConcept->psychic power</li>
-				<li>memeLeaderNoun->mentalist</li>
-				<li>memeLeaderNoun->augur</li>
-				<li>memeLeaderNoun->seer</li>
-				<li>memeMoralist->prophet</li>
-				<li>memeMoralist->clairvoyant</li>
+				<li>memeConcept->psychic draining</li>
+				<li>memeLeaderNoun->thaumaturge</li>			
+				<li>memeMoralist->sorcerer</li>
+				<li>memeMoralist->warlock</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_PsychicFocus)        ->[deity0_name] gifted humanity with psychic powers so we can follow [deity0_possessive] will.</li>
-					<li>episode(uses=1,tag=meme_PsychicFocus)  ->[deity0_name] said to all the [memberNamePlural], "Your mind is your greatest boon. Learn to use it, and no enemies will stand against you."</li>
+					<li>creation(tag=meme_PsychicVampirism)        ->[deity0_name] gifted humanity with psychic powers so we can follow [deity0_possessive] will.</li>
+					<li>episode(uses=1,tag=meme_PsychicVampirism)  ->[deity0_name] said to all the [memberNamePlural], "The power of the mind is limitless. Drain the mind of your enemies and you will be unstoppable."</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_PsychicFocus)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], a place of learning and a school to hone one's psychic powers to exalt [deity0_name]'s will.</li>
-					<li>conflict(tag=meme_PsychicFocus)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to attack [deity0_name]'s followers with insane psychic powers.</li>
-					<li>founderJoin(tag=meme_PsychicFocus)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] uncanny mental prowess, and none could turn away when [founder_pronoun] spoke, entranced by the wise words.</li>
-					<li>victory(tag=meme_PsychicFocus)         ->[founderName] mind-bent many of the [foeSoldiers] and coaxed them to pray to [deity0_name]. The [foeLeader] was shamed and never heard of again.</li>
+					<li>intro(tag=meme_PsychicVampirism)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], a place of learning and a school to hone one's psychic powers to exalt [deity0_name]'s will.</li>
+					<li>conflict(tag=meme_PsychicVampirism)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to attack [deity0_name]'s followers with insane psychic powers.</li>
+					<li>founderJoin(tag=meme_PsychicVampirism)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] uncanny mental prowess, and [founder_pronoun] drained the mental energies of the attackers, leaving them powerless.</li>
+					<li>victory(tag=meme_PsychicVampirism)         ->[founderName] approached the kneeling [foeLeader] and slaughtered [foeLeader_objective] for the glory of [deity0_name].</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_PsychicFocus)           ->Our founder [founderName] was a psychic warrior in a forgotten, shattered star empire. [founder_pronoun] had an incredible mental discipline, that manifested in wondrous psychic powers.</li>
-					<li>story(uses=1,tag=meme_PsychicFocus)    ->[founder_pronoun] founded a prestigious martial academy where all [foeLeader_possessive] followers could learn how to hone their minds and use them as a weapon.</li>
+					<li>setup(tag=meme_PsychicVampirism)           ->Our founder [founderName] was a psychic warrior living in the shattered ruins of a fallen Glitterworld. [founder_pronoun] had an incredible mental discipline, that manifested in wild psychic powers.</li>
+					<li>story(uses=1,tag=meme_PsychicVampirism)    ->[founder_pronoun] undertood that your mind must be honed to be used as a weapon, and that psychic power is something that must be acquired by force. No senseless meditation technique will turn you into a bastion of psychic powers.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_PsychicFocus)         ->In all my years teaching the disciplines of the mind, I learned one lesson that is more important than anything else:</li>
-					<li>lesson(tag=meme_PsychicFocus)              ->you don't use your mind as a weapon, your mind IS the weapon. You don't just use it for offenssive purposes, or it is wasted</li>
-					<li>lessonReinforcement(tag=meme_PsychicFocus) ->The greatest psychic warrior ever will not be one that knows how to use these powers, but one who knows how to think before using them.</li>
+					<li>lessonIntro(tag=meme_PsychicVampirism)         ->In all my years teaching the discipline of mind combat, I learned one lesson that is more important than anything else:</li>
+					<li>lesson(tag=meme_PsychicVampirism)              ->psychic powers must be acquired by force, pried from the still pulsating mind of a fallen enemy</li>
+					<li>lessonReinforcement(tag=meme_PsychicVampirism) ->Others will try to convince you that ancient techniques of meditation are somehow more useful than laying the mind of your enemies bare and ripping their psychic power for your own use. They are fools.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_PsychicFocus)    ->The archotechs are pure minds, pristine intellects that are so far beyond anything else as to be like gods.</li>
-					<li>archistFact(tag=meme_PsychicFocus)     ->Psychic powers are a gift from the archotechs. By awakening them in our minds we participate, albeit faintly, in the glory that is an archotech intellect.</li>
-					<li>archistProphecy(tag=meme_PsychicFocus) ->[inTheEnd], the archotechs will choose those with the greatest command over their minds, and only them will be allowed to transcend.</li>
+					<li>archistBasis(tag=meme_PsychicVampirism)    ->The archotechs are pure minds, pristine intellects that are so far beyond anything else as to be like gods. They didn't get to their stage by playing nice.</li>
+					<li>archistFact(tag=meme_PsychicVampirism)     ->Psychic powers are a gift from the archotechs. But it is a gift that we will need to pry from the still pulsating minds of our fallen enemies.</li>
+					<li>archistProphecy(tag=meme_PsychicVampirism) ->[inTheEnd], the archotechs will choose those with the greatest psychic powers, and only them will be allowed to transcend.</li>
 					<!-- animist -->
-					<li>animistFact(tag=meme_PsychicFocus)     ->The spirits are the ultimate minds, and by awakening and channeling our hidden psychic potential we can commune with them.</li>
+					<li>animistFact(tag=meme_PsychicVampirism)     ->The spirits are the ultimate minds, and by prying the psychic power from the still pulsating minds of our fallen enemies we can commune with them.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_PsychicFocus)->[itIsSaid] we will unlock the hidden psychic potential of our minds, and use those newfound powers to venerate our beloved insects.</li>
+					<li>serketistProphecy(tag=meme_PsychicVampirism)->[itIsSaid] we will pry the psychic power from the still pulsating minds of our fallen enemies, and use those newfound powers to venerate our beloved insects.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_PsychicFocus)->These eldritch entities are the ultimate intellects, as vast and deep as entire nebulae, their madness engulfing a thousand stars. Only by awakening and channeling our hidden psychic potential can we hope to stand against them.</li>
+					<li>chthonianProphecy(tag=meme_PsychicVampirism)->These eldritch entities are the ultimate intellects, as vast and deep as entire nebulae, their madness engulfing a thousand stars. Only by prying the psychic power from the still pulsating minds of our fallen enemies can we hope to stand against them.</li>
 					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_PsychicFocus)->We will awaken and channel our hidden psychic potential to unlock all these secrets, baring them for all to see.</li>
+					<li>esotericismProphecy(tag=meme_PsychicVampirism)->We will pry the psychic power from the still pulsating minds of our fallen enemies to unlock all these secrets, baring them for all to see.</li>
 					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_PsychicFocus)->We will awaken and channel our hidden psychic potential and use our destructive powers to slaughter everyone who stands in our way.</li>
+					<li>eschatologismFact(tag=meme_PsychicVampirism)->We will pryg the psychic power from the still pulsating minds of our fallen enemies and use our destructive powers to slaughter everyone who stands in our way.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_PsychicFocus)->As you all well know, we value intelligence immensely here at the company. Therefore, those who manifest hidden psychic potential are encouraged to inform human resources as soon as possible, so they can be reassigned to a new department where they could be put at use.</li>
+					<li>introMemo(tag=meme_PsychicVampirism)->There have been rumours floating around that a competing company is using psychics to try and uncover some of our corporate secrets. This cannot be allowed to stand, so if you have any info that could lead to apprehending these disgusting corporate spies feel free to contact us ASAP.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
