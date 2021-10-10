@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsMadness</defName>
+		<associatedMeme>AM_Madness</associatedMeme>	
+		<thingSetMaker>AM_StartingItemsMadness</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

@@ -6,11 +6,9 @@
 	
 	<Operation Class="PatchOperationAdd"> 
 	<success>Always</success>
-		<xpath>/Defs/MemeDef[defName="AM_Madness"]/requireOne</xpath>
+		<xpath>/Defs/MemeDef[defName="VME_PsychicFocus"]</xpath>
 		<value>
-			<li>
-				<li>AM_PsychicSensitivity_Affinity</li>
-			</li>
+			<groupDef>AM_Psychic</groupDef>
 		</value>
 	</Operation>
 	

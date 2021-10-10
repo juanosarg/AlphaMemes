@@ -29,7 +29,7 @@
     <defName>AM_AnimalDespised</defName>
     <issue>AM_AnimalsDespised</issue>
     <label>despised</label>
-    <description>I hate you.</description>
+    <description>This animal is considered by believers to be specially abhorrent, which means it must be hunted and exterminated at all costs.</description>
     <preceptClass>AlphaMemes.Precept_DespisedAnimal</preceptClass>
     <workerClass>AlphaMemes.PreceptWorker_DespisedAnimal</workerClass>
     <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>
@@ -74,7 +74,7 @@
       <li>
         <label>animal died</label>
         <description>An animal died. The sooner we get rid of these misguided genetic creations the sooner the galaxy will be safe.</description>
-        <baseMoodEffect>3</baseMoodEffect>
+        <baseMoodEffect>1</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

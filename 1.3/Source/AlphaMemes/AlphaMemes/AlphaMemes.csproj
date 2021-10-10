@@ -312,6 +312,7 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableArt.cs" />
+    <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
     <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
