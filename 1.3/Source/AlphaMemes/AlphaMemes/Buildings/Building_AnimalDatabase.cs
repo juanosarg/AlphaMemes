@@ -2,7 +2,7 @@
 using Verse;
 
 using System.Collections.Generic;
-
+using System.Linq;
 using UnityEngine;
 
 namespace AlphaMemes
@@ -10,7 +10,10 @@ namespace AlphaMemes
 	public class Building_AnimalDatabase : Building
 	{
 
-		public List<PawnKindDef> analyzedAnimalList;
+		public List<PawnKindDef> analyzedAnimalList = new List<PawnKindDef>();
+		public int totalAnimals = 0;
+		public const int tickTotal = 10;
+		public int tickCounter = 0;
 
 		public override IEnumerable<Gizmo> GetGizmos()
         {
@@ -27,7 +30,24 @@ namespace AlphaMemes
 			yield break;
 		}
 
-		public void ShowAnimals()
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+
+			List<PawnKindDef> totalAnimalList = (from x in DefDatabase<PawnKindDef>.AllDefsListForReading
+											where x.RaceProps.Animal && !x.RaceProps.Dryad
+											select x).ToList();
+			totalAnimals = totalAnimalList.Count;
+			base.SpawnSetup(map, respawningAfterLoad);
+
+        }
+
+        public override void ExposeData()
+        {
+			Scribe_Collections.Look(ref analyzedAnimalList, "analyzedAnimalList", LookMode.Reference);
+			base.ExposeData();
+        }
+
+        public void ShowAnimals()
         {
 
 
@@ -36,6 +56,34 @@ namespace AlphaMemes
 			
 
 		}
+
+        public override void TickRare()
+        {
+            base.TickRare();
+            if (tickCounter>tickTotal && totalAnimals!=0) {
+				StaticCollectionsClass.databaseCompletion = (float)this.analyzedAnimalList.Count / (float)this.totalAnimals;
+				tickCounter = 0;
+			}
+			tickCounter++;
+			
+        }
+
+        public override string GetInspectString()
+        {
+			string completionDescription = "";
+			float completion = 0;
+
+			if (totalAnimals != 0)
+			{
+				completion = (float)this.analyzedAnimalList.Count / (float)this.totalAnimals;
+				
+			}
+
+			completionDescription+="AM_CompletionDescription".Translate(completion.ToStringPercent());
+
+			if (completionDescription != "") { return completionDescription; } else return null;
+			
+        }
 
     }
 }

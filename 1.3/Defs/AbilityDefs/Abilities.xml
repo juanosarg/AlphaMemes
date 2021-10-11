@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ 
+  
+  <AbilityDef ParentName="SpeechBase">
+    <defName>AM_AnalyzeCreature</defName>
+    <label>analyze creature</label>
+    <description>This ability allows the colonist to scan animals in the map and add them to a genetic database, receiving bonuses depending on the number of animals scanned.\n\nIt is very low range and some animals will move out of range constantly, so they can be downed first to make it easier.\n\nNote however that it won't work on dead animals, and it will also fail if no database has been built yet.</description>
+    <iconPath>UI/Abilities/AM_AnalyzeCreature</iconPath>  
+    <overrideGroupCooldown>True</overrideGroupCooldown>
+    <cooldownTicksRange>20000</cooldownTicksRange>
+    <targetRequired>True</targetRequired>
+    <gizmoClass>Command_Ability</gizmoClass>
+    <comps>
+      <li Class = "AlphaMemes.CompProperties_AbilityAnalyzeCreature">
+				
+			</li>
+    </comps>
+    <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3</range>
+      <targetParams>
+	  
+        <canTargetAnimals>true</canTargetAnimals>
+		<canTargetHumans>false</canTargetHumans>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+       
+      </targetParams>
+    </verbProperties>
+    <requiredMemes>
+      <li>AM_BiologicalReconstructors</li>
+    </requiredMemes>
+  </AbilityDef>
+
+ 
+  
+</Defs>

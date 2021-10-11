@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- History events -->
+
+
+
+  <!-- Issue -->
+
+  <IssueDef>
+    <defName>AM_AnimalAnalysis</defName>
+    <label>animal analysis</label>
+     <iconPath>UI/Issues/AM_AnimalAnalysis</iconPath>
+  </IssueDef>
+
+ 
+
+  <!-- Precepts -->
+
+ <PreceptDef>
+    <defName>AM_AnimalAnalysis_Expected</defName>
+    <issue>AM_AnimalAnalysis</issue>
+    <label>expected</label>
+    <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.</description>
+    <impact>High</impact>
+  
+    <displayOrderInIssue>20</displayOrderInIssue>
+     <associatedMemes>
+      <li>AM_BiologicalReconstructors</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_BiologicalReconstructors</li>
+      
+    </requiredMemes>
+   <comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_AnimalAnalysis_Expected</thought>
+				<thoughtStageDescriptions>
+					<li>no scans</li>
+					<li>at least 1</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+  </PreceptDef>
+  
+  <ThoughtDef>
+		<defName>AM_AnimalAnalysis_Expected</defName>
+		<!--<minExpectation>Low</minExpectation>-->
+		<workerClass>AlphaMemes.Thought_AnimalAnalysis_Expected</workerClass>
+		<stages>
+			<li>
+				<label>no scans</label>
+				<description>This colony is barren of fine art. A disgrace.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>at least 1</label>
+				<description>There are only a bunch of art pieces around: where the spirit does not work with the hand, there is no art.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
+  
+ 
+
+</Defs>

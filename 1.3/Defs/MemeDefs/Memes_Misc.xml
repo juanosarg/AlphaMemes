@@ -644,4 +644,95 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
+	
+	<MemeDef>
+		<defName>AM_BiologicalReconstructors</defName>
+		<label>biological reconstructors</label>
+		<exclusionTags>
+			<li>AA_Biological</li>			
+		</exclusionTags>
+		<description>Life is precious, a gift from Old Earth. We shall try to replicate as much of it as possible and use it to populate the worlds of the Rim with a myriad lifeforms.</description>
+		<iconPath>UI/Memes/AM_BiologicalReconstructors</iconPath>
+		<groupDef>AA_Biological</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->zoological</li>
+				<li>memeAdjective->conservationist</li>
+				<li>memeAdjective->environmentalist</li>		
+				<li>memeAdjective->green</li>										
+				<li>memeConcept->conservation</li>
+				<li>memeHyphenPrefix->eco</li>	
+				<li>memeLeaderNoun->ecologist</li>
+				<li>memeMoralist->ecofreak</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					
+					<!-- theist myth -->
+					<li>creation(tag=meme_BiologicalReconstructors)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has been honouring me for centuries, creating all sorts of marvelous creatures. This pleases me."</li>
+					<li>episode(uses=1,tag=meme_BiologicalReconstructors)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of these genetic wonders, cataloguing their multitude of forms.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_BiologicalReconstructors)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic zoo, and countless genetic wonders were analyzed there, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_BiologicalReconstructors)        ->A misguided [foeLeader], feeling some twisted compassion for these animals, tried to go against [deity0_name]'s will and free those that were being studied in the facilities.</li>
+					<li>founderJoin(tag=meme_BiologicalReconstructors)     ->[founderName], a great scientist, showed the hard, cold data to the [foeLeader], and convinced [foeLeader_objective] that humanity is doing [deity0_name]'s work by studying and cataloguing all these wonderful creatures.</li>
+					<li>victory(tag=meme_BiologicalReconstructors)         ->The [foeLeader] came to firmly believe in [deity0_name]'s admonitions.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_BiologicalReconstructors)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the incredible variety of genetically modified creatures and plants that humanity had created, and felt a deep awe. Humanity had outdone itself.</li>
+					<li>story(uses=1,tag=meme_BiologicalReconstructors)    ->[founderName] taught us that genetic engineering had been the key to human expansion, and that humanity has been remaking the whole galaxy into a paradise as an imitation of old Earth.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_BiologicalReconstructors)         ->The smartest biologist in our community omce taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lesson(tag=meme_BiologicalReconstructors)              ->genetic engineering has been the key to human expansion</li>
+					<li>lessonReinforcement(tag=meme_BiologicalReconstructors) ->A sad, lifeless Universe was waiting for us, and we have turned it into a vision of paradise.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_BiologicalReconstructors)    ->The archotechs are supreme beings, and the act of creation is dear to them.</li>
+					<li>archistFact(tag=meme_BiologicalReconstructors)     ->Humanity has been turning the lifeless galaxy into an eden, and this pleases the archotechs.</li>
+					<li>archistProphecy(tag=meme_BiologicalReconstructors) ->[inTheEnd], the archotechs will allow only those who catalogue and analyze the wonders created by our ancestors to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_BiologicalReconstructors)    ->The amazing, genetically modified animals that have been seeded through the galaxy by humans are dear to the spirits.</li>
+					<li>animistFact(tag=meme_BiologicalReconstructors)     ->Cataloguing and analyzing the wonders created by our ancestors is a sacred duty, and one that will please the spirits.</li>
+					<li>animistProphecy(tag=meme_BiologicalReconstructors) ->[itIsSaid] those who keep turning the lifeless galaxy into an eden will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_BiologicalReconstructors)->The eldritch entities are beings of infinite destructive powers. The endless seeding of terrestrial life by humanity is confusing to them, and perhaps by cataloguing and analyzing these genetically modified creatures we may keep their gaze averted from us for some time.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_BiologicalReconstructors)->Such occult knowledge can only be acquired through acts of creation. The endless seeding of terrestrial life by humanity provides us with a nearly infinite source of life, and perhaps by cataloguing and analyzing these genetically modified creatures we may peer beyond the veil of the cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_BiologicalReconstructors)->By cataloguing and analyzing the wondrous creatures created by our ancestors we will acquire invaluable knowledge about what makes humans fragile.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_BiologicalReconstructors)->How many animals have you analyzed this week? Remember that this is a business, and slacking will NOT be tolerated.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalReconstructors)->We will create and breed as many new creatures as possible, and use them to repopulate the vast ecospheres of the Rim.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Reconstruction</ideoName>
+				<theme>ecologism</theme>
+				<adjective>ecologist</adjective>
+				<member>eco-activist</member>
+			</li>
+			
+		</symbolPacks>
+		<requireOne>
+			<li>
+				<li>AM_Abilities_AnalyzeCreature</li>
+			</li>
+			<li>
+				<li>AM_AnimalAnalysis_Expected</li>
+			</li>
+		</requireOne>
+		<addDesignators>
+			<li>AM_AnimalDatabase</li>
+		</addDesignators>
+		 <modExtensions>
+            <li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<abilitiesGiven><li>AM_AnalyzeCreature</li></abilitiesGiven>
+			</li>
+        </modExtensions>
+	</MemeDef>
 </Defs>

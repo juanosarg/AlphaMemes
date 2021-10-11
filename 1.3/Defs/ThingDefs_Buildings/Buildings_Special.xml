@@ -5,7 +5,7 @@
     <defName>AM_AnimalDatabase</defName>
     <label>animal database</label>
 	<thingClass>AlphaMemes.Building_AnimalDatabase</thingClass>
-    <description>.</description>
+    <description>An animal database containing detailed data of all scanned animals.</description>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Things/Building/Misc/Lectern/Lectern</texPath>
@@ -23,6 +23,8 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
+	  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	<tickerType>Rare</tickerType>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
@@ -39,7 +41,10 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    
+    <placeWorkers>
+      <li>AlphaMemes.PlaceWorker_OnlyOne</li>
+     
+    </placeWorkers>
   </ThingDef>
 
 </Defs>

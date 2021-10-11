@@ -294,7 +294,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityAnalyzeCreature.cs" />
     <Compile Include="Abilities\CompAbilityPsychicDeathKnell.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityAnalyzeCreature.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityPsychicDeathKnell.cs" />
     <Compile Include="Buildings\Building_AnimalDatabase.cs" />
     <Compile Include="Buildings\Building_TrapDamagerBlunt.cs" />
@@ -302,7 +304,6 @@
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
-    <Compile Include="Harmony\Pawn_GetGizmos_Patch.cs" />
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
@@ -311,6 +312,7 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_OnlyOne.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />
     <Compile Include="Precepts\Precept_DespisedAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -321,6 +323,7 @@
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsGauranlen.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
+    <Compile Include="Thoughts\Thought_AnimalAnalysis_Expected.cs" />
     <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />

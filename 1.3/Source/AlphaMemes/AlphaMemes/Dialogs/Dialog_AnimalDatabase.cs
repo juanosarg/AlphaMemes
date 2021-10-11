@@ -61,11 +61,12 @@ namespace AlphaMemes
                     if (shownOptions[i] != null)
                     {
                         Rect rectIcon = new Rect(0, rect2.y + 1f, 50f, 50f);
+                        GUI.color = shownOptions[i].lifeStages.Last().bodyGraphicData.color;
                         GUI.DrawTexture(rectIcon, ContentFinder<Texture2D>.Get(shownOptions[i].lifeStages.Last().bodyGraphicData.Graphic.path+"_east"));
                         Rect rectText = new Rect(rectIcon.xMax + 10f, rect2.y + 1f, 250,50);
                         GUI.color = Color.white;
                         Widgets.Label(rectText, shownOptions[i].LabelCap);
-                        Rect rectTextAcquired = new Rect(rectIcon.xMax + 270, rect2.y + 1f, 100, 50);
+                        Rect rectTextAcquired = new Rect(rectIcon.xMax + 270, rect2.y + 1f, 150, 50);
                         if (building.analyzedAnimalList.Contains(shownOptions[i]))
                         {
                             GUI.color = Color.green;

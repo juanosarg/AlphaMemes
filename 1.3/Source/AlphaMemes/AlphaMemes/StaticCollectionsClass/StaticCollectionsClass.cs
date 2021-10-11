@@ -18,6 +18,8 @@ namespace AlphaMemes
 
         public static int artInTheMap = 0;
 
+        public static float databaseCompletion = 0;
+
         public static float artBeautyInTheMap = 0;
 
         public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();

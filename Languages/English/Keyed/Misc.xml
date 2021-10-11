@@ -6,9 +6,15 @@
 	<AM_DespisedAnimals>Despised Animals</AM_DespisedAnimals>
 	<AM_AddDespisedAnimals>Despised Animal</AM_AddDespisedAnimals>
 	<AM_AbilityNeedsADownedPawn>This ability must target a downed sapient humanoid</AM_AbilityNeedsADownedPawn>
+	<AM_AbilityNeedsAValidAnimal>This ability must target a living, non-dryad animal</AM_AbilityNeedsAValidAnimal>
+	<AM_NoDataBaseFound>You'll need to build an animal database before this ability can be used</AM_NoDataBaseFound>
 	<AM_NotAnalyzed>Not scanned</AM_NotAnalyzed>
 	<AM_Analyzed>Genome analyzed</AM_Analyzed>
 	<AM_OnlyTaggedAnimals>Only tagged animals</AM_OnlyTaggedAnimals>
 	<AM_ShowAnimalAnalysis>Show genome analysis</AM_ShowAnimalAnalysis>
+	<AM_OnlyOneDatabase>Only one database can be built</AM_OnlyOneDatabase>
+	<AM_AnimalAlreadyScanned>This animal has already been scanned for the database</AM_AnimalAlreadyScanned>
+	<AM_AnimalScanned>{0} has been scanned into the animal database</AM_AnimalScanned>
+	<AM_CompletionDescription>Database completion rate at {0}</AM_CompletionDescription>
 	
 </LanguageData>

@@ -23,7 +23,7 @@ namespace AlphaMemes
 
 		public static PreceptDef AM_Dryads_Enhanced;
 
-		public static PreceptDef AM_Abilities_DeathKnell;
+		
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -33,7 +33,9 @@ namespace AlphaMemes
 		public static HistoryEventDef AM_TrainAnimal;
 
 		public static ThingDef AM_TrapBlunt;
-		
+
+		public static ThingDef AM_AnimalDatabase;
+
 		public static MemeDef AM_Madness;
 
 		public static MemeDef AM_BiologicalDefilers;
@@ -58,5 +60,7 @@ namespace AlphaMemes
 		[MayRequireRoyalty]
 		public static ThoughtDef AM_DeathKnellThought;
 
+		[MayRequireRoyalty]
+		public static PreceptDef AM_Abilities_DeathKnell;
 	}
 }
