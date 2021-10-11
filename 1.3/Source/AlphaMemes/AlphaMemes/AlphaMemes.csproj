@@ -294,16 +294,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityPsychicDeathKnell.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityPsychicDeathKnell.cs" />
+    <Compile Include="Buildings\Building_AnimalDatabase.cs" />
     <Compile Include="Buildings\Building_TrapDamagerBlunt.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
+    <Compile Include="Harmony\Pawn_GetGizmos_Patch.cs" />
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\WorkGiver_Tame_JobOnThing.cs" />
     <Compile Include="Harmony\WorkGiver_Train_JobOnThing.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
+    <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />
     <Compile Include="Precepts\Precept_DespisedAnimal.cs" />
@@ -312,6 +318,7 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableArt.cs" />
+    <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsGauranlen.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
     <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />

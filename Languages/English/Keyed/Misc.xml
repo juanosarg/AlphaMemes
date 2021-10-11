@@ -5,5 +5,10 @@
 	<AM_ArtTableExtraSpeed>Art production speed: increased precept</AM_ArtTableExtraSpeed>
 	<AM_DespisedAnimals>Despised Animals</AM_DespisedAnimals>
 	<AM_AddDespisedAnimals>Despised Animal</AM_AddDespisedAnimals>
+	<AM_AbilityNeedsADownedPawn>This ability must target a downed sapient humanoid</AM_AbilityNeedsADownedPawn>
+	<AM_NotAnalyzed>Not scanned</AM_NotAnalyzed>
+	<AM_Analyzed>Genome analyzed</AM_Analyzed>
+	<AM_OnlyTaggedAnimals>Only tagged animals</AM_OnlyTaggedAnimals>
+	<AM_ShowAnimalAnalysis>Show genome analysis</AM_ShowAnimalAnalysis>
 	
 </LanguageData>

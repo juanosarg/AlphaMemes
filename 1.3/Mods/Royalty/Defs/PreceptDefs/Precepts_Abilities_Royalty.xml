@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_Abilities_DeathKnell</defName>
+    <issue>AM_Abilities</issue>
+    <label>death knell</label>
+    <description>We will lay bare the minds of our enemies, and take their latent psychic energy for ourselves.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists that adopt this precept will get the Psychic death knell ability, which allows them to recharge their psyfocus completely by killing a downed human enemy.</description>
+    <impact>Medium</impact>
+  
+    <displayOrderInIssue>20</displayOrderInIssue>
+     <associatedMemes>
+      <li>AM_PsychicVampirism</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_PsychicVampirism</li>
+      
+    </requiredMemes>
+   
+  </PreceptDef>
+  
+  
+
+
+</Defs>

@@ -66,7 +66,7 @@
 					<li>introMemo(tag=meme_NonViolence)->We are writing to remind you that the mandatory online anger management seminar has been rescheduled to this next Tuesday. Remember, people, in this company we are committed to bringing about a world of peace, harmony, laughter, and love!</li>					
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
-					
+
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -171,7 +171,7 @@
 					<li>introMemo(tag=meme_Artist)->Could you *please* look again into the problems the art department has with their computers? I think they have installed something they shouldn't...</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are an infinite source of creativity. We will portray their myriad forms in our art.</li>
-					
+
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -254,7 +254,7 @@
 					<li>introMemo(tag=meme_Madness)->We are having a recurring incident where someone in the company is replying to mails with a long chain of illegible gibberish. Please remember that AAmOwdh765sh dghd//%dg gt7s65 %/s uisis 7s78s ysg ys/%/Sysy awwxoPOUPSUs yiosioIOSy ysoIYSioy soeqyy66678xnm.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->I have seen the face of these creatures, and they were staring at me. I could feel their gaze. Even closing my eyes, I could still see their eyes like bright points of red burning my retinas. So arousing!</li>
-					
+
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -265,7 +265,7 @@
 			<li>
 				<li>AM_Mood_Volatile</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -559,5 +559,89 @@
 				<member>exterminator</member>
 			</li>
 		</symbolPacks>
+	</MemeDef>
+
+	<MemeDef>
+		<defName>AM_GauranlenSupremacy</defName>
+		<label>gauranlen supremacy</label>		
+		<description>The symbiotic relationship between humanity, gauranlen trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme is chosen too (alternatively, the Biological Corruptors meme in Alpha Animals).\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
+		<iconPath>UI/Memes/AM_GauranlenSupremacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->dryad</li>				
+				<li>memeCreed->gauranlen tree</li>
+				<li>memeConcept->gauranlen trees</li>
+				<li>memeConcept->dryads</li>
+				<li>memeAdjective->druidic</li>
+				<li>memeAdjective->barky</li>
+				<li>memeHyphenPrefix->tree</li>
+				<li>memeHyphenPrefix->arbor</li>
+				<li>memeHyphenPrefix->dryad</li>
+				<li>memeLeaderNoun->dryadkeeper</li>
+				<li>memeLeaderNoun->arborist</li>				
+				<li>memeLeaderAdjective->green</li>
+				<li>memeLeaderAdjective->root</li>
+				<li>memeLeaderAdjective->canopy</li>
+				<li>memeMoralist->druid</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_GauranlenSupremacy)        ->[deity0_name] created the Gauranlen trees and the dryads, two symbiotic lifeforms that share a psychic link with humanity.</li>
+					<li>episode(uses=1,tag=meme_GauranlenSupremacy)  ->The Gauranlen dryads are sacred beings, children of [deity0_name], and we should honour and respect them.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_GauranlenSupremacy)           ->A long forgotten tribe of ancient druids first came to the [place_summary] [place_name], and they planted a sacred grove of Gauranlen trees where they could worship the [deity0_type] [deity0_name].</li>
+					<li>conflict(tag=meme_GauranlenSupremacy)        ->A wicked [foeLeader] destroyed many of the Gauranlen trees, heretically considering the dryads to be pests, and the [memberNamePlural] wept for the murdered trees.</li>
+					<li>founderJoin(tag=meme_GauranlenSupremacy)     ->The prophet [founderName] had a mystical connection with the trees and its dryads. [founder_pronoun] was considered to be the best druid among [founder_possessive] tribe.</li>
+					<li>victory(tag=meme_GauranlenSupremacy)         ->[founderName] found the [foeLeader], and summoned all the surviving dryads to attack. The [foeLeader] was swarmed and covered by countless furious dryads, and only small twigs and branches were left where [foeLeader_pronoun] stood.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_GauranlenSupremacy)           ->[founderName] was a great scholar, and [founder_pronoun] studied for decades the intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as the intriguing psychic link they share with humanity.</li>
+					<li>story(uses=1,tag=meme_GauranlenSupremacy)    ->[founderName] posited that some forgotten scientist must have bioengineered this fascinating relationship centuries ago. But for what purpose?</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_GauranlenSupremacy)         ->The Gauranlen trees are a fascinating example of the possibilities of genetic manipulation of living beings. Examining their leaves, I knew that</li>
+					<li>lesson(tag=meme_GauranlenSupremacy)              ->the intricate symbiotic relationship between the Gauranlen trees and their dryads can't be a naturally occuring phenomena</li>
+					<li>lessonReinforcement(tag=meme_GauranlenSupremacy) ->It is obvious that this link was created by some long forgotten scientist for unknown purposes.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_GauranlenSupremacy)    ->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as their psychic link with humanity, was surely the work of the archotechs.</li>
+					<li>archistFact(tag=meme_GauranlenSupremacy)     ->The archotechs choose to express themselves through, of all things, a unique kind of tree.</li>
+					<li>archistProphecy(tag=meme_GauranlenSupremacy) ->[inTheEnd], the archotechs will allow only those who are attuned to the psychic link of the Gauranlen trees to transcend.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_GauranlenSupremacy)     ->Some say Gauranlen trees are the homes of nature spirits that follow humanity across worlds.</li>
+					<li>animistFact(tag=meme_GauranlenSupremacy)     ->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as their psychic link with humanity, are surely the work of the spirits.</li>
+
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_GauranlenSupremacy)->The eldritch entities will come for us, and we won't be ready. We will enlist the help of the Gauranlen trees and their dryads, and perhaps together we might stand a chance against them.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_GauranlenSupremacy)->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as the intriguing psychic link they share with humanity might prove to be a source of occult knowledge worth studying.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_GauranlenSupremacy)->We will use the Gauranlen trees and their dryads to bring forth the destruction of everything.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_GauranlenSupremacy)->The new Gauranlen tree arboretum has greatly increased productivity around. We are however aware of the recent reports of dryads being used for unintended purposes, such as carrying office supplies around. Please note that such uses are penalized by immediate dismissal from the company.</li>
+
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Dryads_Enhanced</li>
+			</li>
+			<li>
+				<li>AM_CombatProwess_Reduced</li>
+			</li>
+		</requireOne>
+
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<requiredMemes>
+					<li>TreeConnection</li>
+					<li>AA_BiologicalCorruptors</li>
+					
+				</requiredMemes>
+			</li>
+		</modExtensions>
 	</MemeDef>
 </Defs>

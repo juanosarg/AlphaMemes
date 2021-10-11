@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Abilities</defName>
+    <label>abilities</label>
+    <iconPath>UI/Issues/AM_Abilities</iconPath>
+  </IssueDef>
+
+ 
+
+
+</Defs>

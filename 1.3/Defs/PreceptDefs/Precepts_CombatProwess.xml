@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>AM_CombatProwess</defName>
+		<label>combat prowess</label>
+		<iconPath>UI/Issues/AM_CombatProwess</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>AM_CombatProwess_Reduced</defName>
+		<issue>AM_CombatProwess</issue>
+		<label>reduced</label>
+		<description>Although we won't hesitate to defend ourselves if the situation warrants it, we have grown dependent on our dryads for our defense.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_GauranlenSupremacy</li>
+
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_GauranlenSupremacy</li>
+
+		</requiredMemes>
+		<statOffsets>
+			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.2</AimingDelayFactor>
+			<MeleeHitChance>-0.2</MeleeHitChance>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+	</PreceptDef>
+
+
+</Defs>

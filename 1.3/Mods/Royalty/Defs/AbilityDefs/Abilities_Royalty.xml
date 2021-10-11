@@ -7,25 +7,28 @@
   <AbilityDef ParentName="SpeechBase">
     <defName>AM_PsychicDeathKnell</defName>
     <label>psychic death knell</label>
-    <description>Try to persuade someone to adopt your beliefs. If it goes well, they will lose some certainty in their ideoligion and may convert. If it backfires, they will gain certainty in their old beliefs.\n\nTo start this ritual at a specific place, select a ritual spot or matching altar/ideogram.</description>
-    <iconPath>UI/Abilities/ConversionRitual</iconPath>  
+    <description>Forcefully extract the latent psychic energy from a downed foe. Animals don't have enough intelligence to be of any use in this regard.\n\nIf the person casting the ability doesn't have psychic powers, they'll just receive a minor healing effect and a mood boost. If the person does have at least level 1 psychic powers this ability will recharge his or her focus, but will generate 30% of maximum psychic heat.</description>
+    <iconPath>UI/Abilities/AM_DeathKnell</iconPath>  
     <overrideGroupCooldown>True</overrideGroupCooldown>
     <cooldownTicksRange>60000</cooldownTicksRange>
     <targetRequired>True</targetRequired>
     <gizmoClass>Command_Ability</gizmoClass>
     <comps>
-      <li Class="CompProperties_AbilityStartConversion">
-        <ritualDef>VME_LeaderConversion</ritualDef>
-        <targetRoleId>convertee</targetRoleId>
-      </li>
+      <li Class = "AlphaMemes.CompProperties_AbilityPsychicDeathKnell">
+				
+			</li>
     </comps>
     <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
       <targetParams>
+	  
         <canTargetAnimals>false</canTargetAnimals>
         <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>false</canTargetMechs>
-        <onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
+       
       </targetParams>
     </verbProperties>
     <requiredMemes>

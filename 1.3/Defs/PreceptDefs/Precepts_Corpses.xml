@@ -11,7 +11,7 @@
     <label>sublime</label>
     <description>The sight of a dead person is a beautiful thing. There is nothing more sublime than decorating our colony with the corpses of our vanquished foes.</description>
     <impact>Medium</impact>
-    <classic>true</classic>
+   
     <displayOrderInIssue>20</displayOrderInIssue>
      <associatedMemes>
       <li>AM_Sadist</li>

@@ -7,6 +7,12 @@
 		<associatedMeme>AM_NonViolence</associatedMeme>	
 		<thingSetMaker>AM_StartingItemsNonViolent</thingSetMaker>		
 	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+	
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsGauranlen</defName>
+		<associatedMeme>AM_GauranlenSupremacy</associatedMeme>	
+		<thingSetMaker>AM_StartingItemsGauranlen</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
 
 
 

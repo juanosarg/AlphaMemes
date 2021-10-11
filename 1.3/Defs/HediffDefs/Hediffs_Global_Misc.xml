@@ -54,5 +54,102 @@
 		</stages>
 	</HediffDef>
 	
+	<HediffDef>
+		<defName>AM_UtilityDryadHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>utility dryad supremacy boost</label>
+		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+					<MeleeDodgeChance>0.2</MeleeDodgeChance>
+					<InjuryHealingFactor>0.25</InjuryHealingFactor>
+				</statOffsets>
+				<painFactor>0.75</painFactor>
+				<capMods>
+					
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>AM_CombatDryadHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>combat dryad supremacy boost</label>
+		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>					
+					<InjuryHealingFactor>0.25</InjuryHealingFactor>
+					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.75</AimingDelayFactor>
+					
+				</statOffsets>
+				<painFactor>0.6</painFactor>
+				<capMods>
+					
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.40</offset>
+					</li>
+					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 	
+	<HediffDef>
+		<defName>AM_GenericDryadHediff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>generic dryad supremacy boost</label>
+		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>		
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>					
+					<InjuryHealingFactor>0.25</InjuryHealingFactor>					
+					<MeleeDPS>0.2</MeleeDPS>					
+				</statOffsets>
+				<painFactor>0.75</painFactor>
+				<capMods>
+					
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

@@ -9,6 +9,11 @@
 		<defName>AM_StartingItemsNonViolent</defName>
 		<root Class="AlphaMemes.ThingSetMaker_StartingItemsNonViolent" />
 	</ThingSetMakerDef>
+	
+	 <ThingSetMakerDef>
+		<defName>AM_StartingItemsGauranlen</defName>
+		<root Class="AlphaMemes.ThingSetMaker_StartingItemsGauranlen" />
+	</ThingSetMakerDef>
 
  
   

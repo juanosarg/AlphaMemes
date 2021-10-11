@@ -77,6 +77,9 @@
 			<li>
 				<li>AM_PsychicSensitivity_Heightened</li>
 			</li>
+			<li>
+				<li>AM_Abilities_DeathKnell</li>
+			</li>
 		</requireOne>
 		
 		<symbolPacks>

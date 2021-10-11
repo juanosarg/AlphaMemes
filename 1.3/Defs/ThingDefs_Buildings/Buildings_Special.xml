@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_AnimalDatabase</defName>
+    <label>animal database</label>
+	<thingClass>AlphaMemes.Building_AnimalDatabase</thingClass>
+    <description>.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Misc/Lectern/Lectern</texPath>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.8, 1, 0.8)</volume>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <designationCategory>Misc</designationCategory>
+    <fillPercent>0.35</fillPercent>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Beauty>10</Beauty>
+      <Flammability>1.0</Flammability>
+      <Mass>25</Mass>
+    </statBases>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    
+  </ThingDef>
+
+</Defs>
