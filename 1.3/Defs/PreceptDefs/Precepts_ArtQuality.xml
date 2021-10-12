@@ -18,7 +18,7 @@
     <defName>AM_ArtQuality_Expected</defName>
     <issue>AM_ArtQuality</issue>
     <label>expected</label>
-    <description>The true work of art is but a shadow of the divine perfection. There is no valid excuse for shoddily executed art, and we shouldn't have to suffer it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "High" expectations or higher will demand high quality art. Art quality will be averaged between all art pieces present in the colony.</description>
+    <description>The true work of art is but a shadow of divine perfection. There is no valid excuse for shoddily executed art, and we shouldn't have to suffer it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "High" expectations or higher will demand high quality art. Art quality will be averaged between all art pieces present in the colony.</description>
     <impact>Medium</impact>
     <associatedMemes>
       <li>AM_Artist</li>	

@@ -489,7 +489,7 @@
 			<li>VME_PacifistsVsDefilers</li>
 			<li>VME_InsectoidVsDefilers</li>
 		</exclusionTags>
-		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
+		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad of worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
 		<iconPath>UI/Memes/AM_BiologicalDefilers</iconPath>
 		<groupDef>AA_Biological</groupDef>
 		<impact>2</impact>
@@ -651,7 +651,7 @@
 		<exclusionTags>
 			<li>AA_Biological</li>			
 		</exclusionTags>
-		<description>Life is precious, a gift from Old Earth. We shall try to replicate as much of it as possible and use it to populate the worlds of the Rim with a myriad lifeforms.</description>
+		<description>Life is precious, a gift from Old Earth. We shall try to replicate as much of it as possible and use it to populate the worlds of the Rim with a myriad of lifeforms.</description>
 		<iconPath>UI/Memes/AM_BiologicalReconstructors</iconPath>
 		<groupDef>AA_Biological</groupDef>
 		<impact>2</impact>
