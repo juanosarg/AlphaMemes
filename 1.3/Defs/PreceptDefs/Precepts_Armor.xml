@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Armour</defName>
+		<label>armor</label>
+		<iconPath>UI/Issues/AM_Armour</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Armour_Blunt</defName>
+		<issue>AM_Armour</issue>
+		<label>blunt</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% blunt armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_Armour_Sharp</defName>
+		<issue>AM_Armour</issue>
+		<label>sharp</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% sharp armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_Armour_Heat</defName>
+		<issue>AM_Armour</issue>
+		<label>heat</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% heat armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		
+	</PreceptDef>
+	
+</Defs>

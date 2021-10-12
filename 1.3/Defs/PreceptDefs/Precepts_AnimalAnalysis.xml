@@ -21,7 +21,7 @@
     <defName>AM_AnimalAnalysis_Expected</defName>
     <issue>AM_AnimalAnalysis</issue>
     <label>expected</label>
-    <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.</description>
+    <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will receive increasing mood boosts from the number of animals scanned and stored in the animal database. You need to have a database built for this to work.</description>
     <impact>High</impact>
   
     <displayOrderInIssue>20</displayOrderInIssue>
@@ -38,7 +38,15 @@
 				<thought>AM_AnimalAnalysis_Expected</thought>
 				<thoughtStageDescriptions>
 					<li>no scans</li>
-					<li>at least 1</li>
+					<li>very few scans (less than 1%)</li>
+					<li>few scans (less than 5%)</li>
+					<li>some scans (less than 10%)</li>					
+					<li>many scans (less than 25%)</li>
+					<li>a lot of scans (less than 40%)</li>
+					<li>database almost half full (less than 50%)</li>
+					<li>a huge lot of scans (less than 60%)</li>
+					<li>database almost filled (less than 75%)</li>
+					<li>database filled (more than 75%)</li>
 					
 				</thoughtStageDescriptions>
 			</li>
@@ -47,18 +55,58 @@
   
   <ThoughtDef>
 		<defName>AM_AnimalAnalysis_Expected</defName>
-		<!--<minExpectation>Low</minExpectation>-->
+		<minExpectation>Low</minExpectation>
 		<workerClass>AlphaMemes.Thought_AnimalAnalysis_Expected</workerClass>
 		<stages>
 			<li>
 				<label>no scans</label>
-				<description>This colony is barren of fine art. A disgrace.</description>
+				<description>We haven't yet scanned a single animal. We are neglecting our tasks .</description>
+				<baseMoodEffect>-40</baseMoodEffect>
+			</li>
+			<li>
+				<label>very few scans</label>
+				<description>We have scanned very, very few animals. We need to focus on our tasks.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 			<li>
-				<label>at least 1</label>
-				<description>There are only a bunch of art pieces around: where the spirit does not work with the hand, there is no art.</description>
+				<label>few scans</label>
+				<description>We have scanned few animals. We need to focus on our tasks.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>some scans</label>
+				<description>We are starting to fill the database with creature data.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>many scans</label>
+				<description>We have almost a quarter of the database filled!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>a lot of scans</label>
+				<description>We have a lot of scanned creatures in the database, it's amazing!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>database almost half full</label>
+				<description>Almost halfway there!</description>
 				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>a huge lot of scans</label>
+				<description>The database is full of amazing creature details, I love it!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>database almost filled</label>
+				<description>We are getting there! I love perusing the wondrous animal data we have collected.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+			<li>
+				<label>database filled</label>
+				<description>The database is above 75% filled. Perhaps this world has provided as much data as it can!</description>
+				<baseMoodEffect>20</baseMoodEffect>
 			</li>
 			
 		</stages>

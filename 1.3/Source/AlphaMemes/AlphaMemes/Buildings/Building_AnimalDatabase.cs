@@ -24,6 +24,7 @@ namespace AlphaMemes
 			yield return new Command_Action
 			{
 				defaultLabel = "AM_ShowAnimalAnalysis".Translate(),
+				defaultDesc = "AM_ShowAnimalAnalysisDesc".Translate(),
 				action = new Action(this.ShowAnimals),
 				icon = ContentFinder<Texture2D>.Get("UI/Commands/LaunchReport", true)
 			};

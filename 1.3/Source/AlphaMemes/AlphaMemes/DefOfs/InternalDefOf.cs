@@ -23,7 +23,9 @@ namespace AlphaMemes
 
 		public static PreceptDef AM_Dryads_Enhanced;
 
-		
+		public static PreceptDef AM_Armour_Blunt;
+		public static PreceptDef AM_Armour_Sharp;
+		public static PreceptDef AM_Armour_Heat;
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;

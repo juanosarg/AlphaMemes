@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_GauranlenSupremacy</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_GauranlenSupremacy</li>
+	
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+			
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/allowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+		
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+					<value>
+						
+						<li MayRequire="Ludeon.RimWorld.Ideology">AM_Bulwark</li>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/StatDef[defName="ArmorRating_Blunt"]/parts</xpath>
+		<value>
+			<li Class="AlphaMemes.StatPart_ExtraBlunt" />
+			
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/StatDef[defName="ArmorRating_Sharp"]/parts</xpath>
+		<value>
+			<li Class="AlphaMemes.StatPart_ExtraSharp" />
+			
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/StatDef[defName="ArmorRating_Heat"]/parts</xpath>
+		<value>
+			<li Class="AlphaMemes.StatPart_ExtraHeat" />
+			
+		</value>
+	</Operation>
+
+
+
+
+</Patch>

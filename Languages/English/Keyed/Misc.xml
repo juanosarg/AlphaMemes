@@ -3,6 +3,9 @@
 	<!-- Ideoligions -->
 	
 	<AM_ArtTableExtraSpeed>Art production speed: increased precept</AM_ArtTableExtraSpeed>
+	<AM_ExtraBluntArmorFactor>Armour: blunt precept</AM_ExtraBluntArmorFactor>
+	<AM_ExtraSharpArmorFactor>Armour: sharp precept</AM_ExtraSharpArmorFactor>
+	<AM_ExtraHeatArmorFactor>Armour: heat precept</AM_ExtraHeatArmorFactor>
 	<AM_DespisedAnimals>Despised Animals</AM_DespisedAnimals>
 	<AM_AddDespisedAnimals>Despised Animal</AM_AddDespisedAnimals>
 	<AM_AbilityNeedsADownedPawn>This ability must target a downed sapient humanoid</AM_AbilityNeedsADownedPawn>
@@ -12,6 +15,7 @@
 	<AM_Analyzed>Genome analyzed</AM_Analyzed>
 	<AM_OnlyTaggedAnimals>Only tagged animals</AM_OnlyTaggedAnimals>
 	<AM_ShowAnimalAnalysis>Show genome analysis</AM_ShowAnimalAnalysis>
+	<AM_ShowAnimalAnalysisDesc>This will show you a list of possible animals that need to be scanned.</AM_ShowAnimalAnalysisDesc>
 	<AM_OnlyOneDatabase>Only one database can be built</AM_OnlyOneDatabase>
 	<AM_AnimalAlreadyScanned>This animal has already been scanned for the database</AM_AnimalAlreadyScanned>
 	<AM_AnimalScanned>{0} has been scanned into the animal database</AM_AnimalScanned>

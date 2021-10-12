@@ -65,7 +65,7 @@
 					<!-- corporate -->
 					<li>introMemo(tag=meme_NonViolence)->We are writing to remind you that the mandatory online anger management seminar has been rescheduled to this next Tuesday. Remember, people, in this company we are committed to bringing about a world of peace, harmony, laughter, and love!</li>					
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
+					<li>alienistProphecy(tag=meme_NonViolence)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
 
 				</rulesStrings>
 			</rules>
@@ -170,7 +170,7 @@
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Artist)->Could you *please* look again into the problems the art department has with their computers? I think they have installed something they shouldn't...</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These wayward creatures are an infinite source of creativity. We will portray their myriad forms in our art.</li>
+					<li>alienistProphecy(tag=meme_Artist)->These wayward creatures are an infinite source of creativity. We will portray their myriad forms in our art.</li>
 
 				</rulesStrings>
 			</rules>
@@ -253,7 +253,7 @@
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Madness)->We are having a recurring incident where someone in the company is replying to mails with a long chain of illegible gibberish. Please remember that AAmOwdh765sh dghd//%dg gt7s65 %/s uisis 7s78s ysg ys/%/Sysy awwxoPOUPSUs yiosioIOSy ysoIYSioy soeqyy66678xnm.</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->I have seen the face of these creatures, and they were staring at me. I could feel their gaze. Even closing my eyes, I could still see their eyes like bright points of red burning my retinas. So arousing!</li>
+					<li>alienistProphecy(tag=meme_Madness)->I have seen the face of these creatures, and they were staring at me. I could feel their gaze. Even closing my eyes, I could still see their eyes like bright points of red burning my retinas. So arousing!</li>
 
 				</rulesStrings>
 			</rules>
@@ -342,7 +342,7 @@
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Sadist)->We are happy to announce that the company we acquired last week has had all its assets completely liquidated. Both the tangible assets and the... human capital, if you catch my meaning.</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These "things" exist just to be a recipient of our uncontained rage. We will kill them all.</li>
+					<li>alienistProphecy(tag=meme_Sadist)->These "things" exist just to be a recipient of our uncontained rage. We will kill them all.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -452,7 +452,7 @@
 					<!-- corporate -->
 					<li>introMemo(tag=meme_Youth)->We are gladly informing you that we have decided to relax the previous rules regarding minimum acceptable employee age. If he walks, he can work!</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->These poor wayward creations of humanity are a fine example of vitality and exhuberance beyond measure.</li>
+					<li>alienistProphecy(tag=meme_Youth)->These poor wayward creations of humanity are a fine example of vitality and exhuberance beyond measure.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -734,5 +734,91 @@
 				<abilitiesGiven><li>AM_AnalyzeCreature</li></abilitiesGiven>
 			</li>
         </modExtensions>
+	</MemeDef>
+	
+	<MemeGroupDef>
+		<defName>AM_Combat</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>1000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_Bulwark</defName>
+		<label>bulwark</label>
+		<exclusionTags>
+			<li>AM_Combat</li>			
+		</exclusionTags>
+		<description>A proper defense is the only way to stay safe on the Rim. All weapons in the universe will be useless if your soldiers are dead.</description>
+		<iconPath>UI/Memes/AM_Bulwark</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->protective</li>
+				<li>memeAdjective->armoured</li>
+				<li>memeAdjective->ironclad</li>
+				<li>memeAdjective->reinforced</li>
+				<li>memeLeaderAdjective->steel plated</li>
+				<li>memeConcept->armor</li>
+				<li>memeConcept->defense</li>
+				<li>memeLeaderNoun->bastion</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Bulwark)        ->[deity0_name] spoke to [deity0_possessive] followers: "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light."</li>
+					<li>episode(uses=1,tag=meme_Bulwark)  ->Following [deity0_name]'s teachings, we consecrated our armors so that we may be able to stand against the wiles of the devil.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Bulwark)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless shining armours were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Bulwark)        ->A greedy [foeLeader], wanting all the armor for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Bulwark)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Bulwark)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Bulwark)           ->[founderName] was a forge master in a medieval world. [founder_pronoun] has seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Bulwark)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of armour forging along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Bulwark)         ->The sturdiest armourer in our community omce taught me the history of blacksmithing, how a properly designed armour can save your life. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Bulwark)              ->if there are cracks in your armour, your opponent is going to find them</li>
+					<li>lessonReinforcement(tag=meme_Bulwark) ->Fortitude is the marshal of thought, the armour of the will, and the fort of reason.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Bulwark)    ->The archotechs are supreme beings, and their minds lie in impregnable fortresses in both the physical and the metaversal sense.</li>
+					<li>archistFact(tag=meme_Bulwark)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without sturdy defenses end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Bulwark) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Bulwark)    ->The spirits value strength. But not just brute strength. Instead, they value those with the stregth to know how to defend themselves.</li>
+					<li>animistFact(tag=meme_Bulwark)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Bulwark) ->[itIsSaid] those who are able to withstand any assault thrown at them will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Bulwark)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will be a bastion that resists their onslaught.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Bulwark)->Such occult knowledge is valuable to many people, and they will try to steal it from us. Only by properly defending ourselves may we resist their cowardly advances.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Bulwark)->Everyone will try to stop us, but they will be crushed against our armours. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Bulwark)->Let us remind you that we take security issues very seriously here at the company. To avoid recent cybersecurity threats we are instituting a company-wide bi-weekly password changing policy. Remember people, the best defense is... a good defense!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Bulwark)->These lifeforms may be sometimes hostile to us, and we'd do well to defend us properly in case they threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Armour_Blunt</li>
+				<li>AM_Armour_Sharp</li>
+				<li>AM_Armour_Heat</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Defense</ideoName>
+				<theme>defense</theme>
+				<adjective>armoured</adjective>
+				<member>defender</member>
+			</li>
+		</symbolPacks>
 	</MemeDef>
 </Defs>

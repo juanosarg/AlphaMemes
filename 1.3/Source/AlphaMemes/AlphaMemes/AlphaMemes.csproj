@@ -319,6 +319,9 @@
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
+    <Compile Include="StatPartDefs\StatPart_ExtraBlunt.cs" />
+    <Compile Include="StatPartDefs\StatPart_ExtraHeat.cs" />
+    <Compile Include="StatPartDefs\StatPart_ExtraSharp.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableArt.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsGauranlen.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
