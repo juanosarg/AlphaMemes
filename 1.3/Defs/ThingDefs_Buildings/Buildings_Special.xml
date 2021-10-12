@@ -5,7 +5,7 @@
     <defName>AM_AnimalDatabase</defName>
     <label>animal database</label>
 	<thingClass>AlphaMemes.Building_AnimalDatabase</thingClass>
-    <description>An animal database containing detailed data of all scanned animals.\n\nIf the database gets somehow destroyed it will lose all its data, so you'd better protect it well.\n\nIt will display a total database completion on its infobox. Bear in mind you ABSOLUTELY do not need 100% completion, as it will most likely be impossible to attain, specially if you are using modded animals that only appear under special cicumstances.</description>
+    <description>An animal database containing detailed data of all scanned animals.\n\nIf the database gets somehow destroyed it will lose all its data, so you'd better protect it well.\n\nIt will display a total database completion on its infobox. Bear in mind you ABSOLUTELY do not need 100% completion, as it will most likely be impossible to attain, specially if you are using modded animals that only appear under special circumstances.</description>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Things/Building/Misc/AM_AnimalDatabase</texPath>
