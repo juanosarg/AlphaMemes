@@ -49,17 +49,22 @@ namespace AlphaMemes
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-
-                colonist_and_random_mood_backup = StaticCollectionsClass.colonist_and_random_mood;
-
-                foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.InRandomOrder())
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Mood_Volatile) != null)
                 {
-                    System.Random random = new System.Random(Current.Game.tickManager.TicksAbs + PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.IndexOf(pawn));
-                    int randomMood = random.Next(0, 9);
-                    StaticCollectionsClass.AddColonistRandomMood(pawn, randomMood);
-                   
+                    colonist_and_random_mood_backup = StaticCollectionsClass.colonist_and_random_mood;
+
+                    foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.InRandomOrder())
+                    {
+                        System.Random random = new System.Random(Current.Game.tickManager.TicksAbs + PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.IndexOf(pawn));
+                        int randomMood = random.Next(0, 9);
+                        StaticCollectionsClass.AddColonistRandomMood(pawn, randomMood);
+
+
+                    }
 
                 }
+
+                
 
                 tickCounter = 0;
             }

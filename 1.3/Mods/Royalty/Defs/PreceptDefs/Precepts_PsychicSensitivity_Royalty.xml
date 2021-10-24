@@ -29,14 +29,14 @@
 	<PreceptDef>
 		<defName>AM_PsychicSensitivity_Heightened</defName>
 		<issue>VME_PsychicSensitivity</issue>
-		<label>heightened</label>
+		<label>increased</label>
 		<description>Our minds will stay wide open to the vast universe of possibilities we are facing. We are not afraid.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>AM_PsychicVampirism</li>
 		</associatedMemes>
 		<statOffsets>
-			<PsychicSensitivity>+0.15</PsychicSensitivity>
+			<PsychicSensitivity>+0.25</PsychicSensitivity>
 			
 		</statOffsets>
 	</PreceptDef>

@@ -52,7 +52,7 @@ namespace AlphaMemes
             {
 
 
-                if (map.IsPlayerHome)
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Art_Desired) != null|| Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_ArtQuality_Expected) != null))
                 {
                     artInTheMap_backup = StaticCollectionsClass.artInTheMap;
                     artBeautyInTheMap_backup = StaticCollectionsClass.artBeautyInTheMap;

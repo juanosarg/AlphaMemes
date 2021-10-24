@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<PreceptDef>
+    <defName>AM_Recreation_Abhorrent</defName>
+    <issue>VME_Recreation</issue>
+    <label>abhorrent</label>
+    <description>Recreation is a complete waste of time. We have much more important things to do than indulging in meaningless recreative activities.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists get -15 mood for half a day after doing a recreation job.</description>
+    <impact>High</impact>
+	<displayOrderInIssue>10</displayOrderInIssue>
+	<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_HavingFun</eventDef>
+				<thought>AM_Recreation_Abhorrent</thought>
+			</li>
+			
+		</comps>
+  </PreceptDef>
+  
+	<ThoughtDef>
+		<defName>AM_Recreation_Abhorrent</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>waste of time</label>
+				<description>Recreation is a complete waste of time. I have much better things to do with my time.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	
+
+ 
+
+</Defs>
+

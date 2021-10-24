@@ -21,7 +21,7 @@ namespace AlphaMemes
         static void DisableMostMentalBreaksIfPacifist(ref bool __result, Pawn pawn, MentalBreakWorker __instance)
         {
 
-            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(InternalDefOf.AM_Violence_Abhorrent_Strict))
+            if (pawn.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Violence_Abhorrent_Strict)==true)
             {
 
                 if (__instance.def.defName != "Wander_Psychotic")

@@ -16,6 +16,8 @@ namespace AlphaMemes
 		public static PreceptDef AM_Violence_Abhorrent_Strict;
 
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
+		public static PreceptDef AM_Art_Desired;
+		public static PreceptDef AM_ArtQuality_Expected;
 
 		public static PreceptDef AM_AnimalDespised;
 
@@ -26,6 +28,8 @@ namespace AlphaMemes
 		public static PreceptDef AM_Armour_Blunt;
 		public static PreceptDef AM_Armour_Sharp;
 		public static PreceptDef AM_Armour_Heat;
+
+		public static PreceptDef AM_Mood_Volatile;
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
