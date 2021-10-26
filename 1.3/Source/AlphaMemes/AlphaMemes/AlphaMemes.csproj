@@ -303,6 +303,7 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
+    <Compile Include="Harmony\GenConstruct_CanConstruct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
     <Compile Include="Harmony\ReleaseAnimalToWildUtility_DoReleaseAnimal.cs" />

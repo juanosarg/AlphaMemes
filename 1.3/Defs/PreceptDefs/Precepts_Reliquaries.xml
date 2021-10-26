@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IssueDef>
+		<defName>AM_Reliquaries</defName>
+		<label>reliquaries</label>
+		<iconPath>UI/Issues/AM_CombatProwess</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_BuildingReliquary</defName>
+		<label>building a reliquary</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_BuildingReliquary_Forbidden</defName>
+		<issue>AM_Reliquaries</issue>
+		<label>forbidden</label>
+		<description>Humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth. These genetically modified animals should be destroyed, and relying on them for anything is obscene.</description>
+		<impact>Medium</impact>
+		
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_BuildingReliquary</eventDef>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+</Defs>

@@ -43,6 +43,7 @@ namespace AlphaMemes
 		public static HistoryEventDef AM_AnimalReleased;
 		public static HistoryEventDef AM_UsedMelee;
 		public static HistoryEventDef AM_UsedRanged;
+		public static HistoryEventDef AM_BuildingReliquary;
 
 		public static ThingDef AM_TrapBlunt;
 
