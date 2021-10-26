@@ -60,7 +60,7 @@
 		<stages>
 			<li>
 				<label>no scans</label>
-				<description>We haven't yet scanned a single animal. We are neglecting our tasks .</description>
+				<description>We haven't yet scanned a single animal. We are neglecting our tasks.</description>
 				<baseMoodEffect>-40</baseMoodEffect>
 			</li>
 			<li>

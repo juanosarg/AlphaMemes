@@ -30,6 +30,9 @@ namespace AlphaMemes
 		public static PreceptDef AM_Armour_Heat;
 
 		public static PreceptDef AM_Mood_Volatile;
+		public static PreceptDef AM_CombatProwess_Increased;
+		public static PreceptDef AM_CombatProwess_Melee;
+
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -37,6 +40,9 @@ namespace AlphaMemes
 		public static HistoryEventDef AM_AnimalDied;
 		public static HistoryEventDef AM_TameAnimal;
 		public static HistoryEventDef AM_TrainAnimal;
+		public static HistoryEventDef AM_AnimalReleased;
+		public static HistoryEventDef AM_UsedMelee;
+		public static HistoryEventDef AM_UsedRanged;
 
 		public static ThingDef AM_TrapBlunt;
 

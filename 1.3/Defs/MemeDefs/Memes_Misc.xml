@@ -489,6 +489,7 @@
 			<li>VME_PacifistsVsDefilers</li>
 			<li>VME_InsectoidVsDefilers</li>
 		</exclusionTags>
+		<veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
 		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad of worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
 		<iconPath>UI/Memes/AM_BiologicalDefilers</iconPath>
 		<groupDef>AA_Biological</groupDef>
@@ -550,6 +551,9 @@
 			<li>
 				<li>AM_AnimalSlaughter_Desired</li>
 			</li>
+			<li>
+				<li>AM_AnimalRelease_Discouraged</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -568,6 +572,10 @@
 		<iconPath>UI/Memes/AM_GauranlenSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			<li>AM_GladiatorVsDryads</li>	
+			<li>AM_SharpshooterVsDryads</li>			
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeCreed->dryad</li>				
@@ -612,7 +620,8 @@
 					<!-- animist -->
 					<li>animistFact(tag=meme_GauranlenSupremacy)     ->Some say Gauranlen trees are the homes of nature spirits that follow humanity across worlds.</li>
 					<li>animistFact(tag=meme_GauranlenSupremacy)     ->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as their psychic link with humanity, are surely the work of the spirits.</li>
-
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_GauranlenSupremacy)->[itIsSaid] we will create a human hive in symbiosis with the Gauranlen trees and their dryads, like the divine insect hives that serve as our inspiration.</li>
 					<!-- eldritch / chthonian -->
 					<li>chthonianProphecy(tag=meme_GauranlenSupremacy)->The eldritch entities will come for us, and we won't be ready. We will enlist the help of the Gauranlen trees and their dryads, and perhaps together we might stand a chance against them.</li>
 					<!-- esoteric -->
@@ -639,12 +648,12 @@
 				<requiredMemes>
 					<li>TreeConnection</li>
 					<li>AA_BiologicalCorruptors</li>
-					
+
 				</requiredMemes>
 			</li>
 		</modExtensions>
 	</MemeDef>
-	
+
 	<MemeDef>
 		<defName>AM_BiologicalReconstructors</defName>
 		<label>biological reconstructors</label>
@@ -665,13 +674,13 @@
 				<li>memeHyphenPrefix->eco</li>	
 				<li>memeLeaderNoun->ecologist</li>
 				<li>memeMoralist->ecofreak</li>
-			
+
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
-					
+
 					<!-- theist myth -->
 					<li>creation(tag=meme_BiologicalReconstructors)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has been honouring me for centuries, creating all sorts of marvelous creatures. This pleases me."</li>
 					<li>episode(uses=1,tag=meme_BiologicalReconstructors)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of these genetic wonders, cataloguing their multitude of forms.</li>
@@ -699,6 +708,8 @@
 					<li>chthonianProphecy(tag=meme_BiologicalReconstructors)->The eldritch entities are beings of infinite destructive powers. The endless seeding of terrestrial life by humanity is confusing to them, and perhaps by cataloguing and analyzing these genetically modified creatures we may keep their gaze averted from us for some time.</li>
 					<!-- esoteric -->
 					<li>esotericismProphecy(tag=meme_BiologicalReconstructors)->Such occult knowledge can only be acquired through acts of creation. The endless seeding of terrestrial life by humanity provides us with a nearly infinite source of life, and perhaps by cataloguing and analyzing these genetically modified creatures we may peer beyond the veil of the cosmos.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_BiologicalReconstructors)->[itIsSaid] we will catalogue new amazing species of insects all around this planet.</li>
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_BiologicalReconstructors)->By cataloguing and analyzing the wondrous creatures created by our ancestors we will acquire invaluable knowledge about what makes humans fragile.</li>
 					<!-- corporate -->
@@ -708,7 +719,7 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-		
+
 		<symbolPacks>
 			<li>
 				<ideoName>Reconstruction</ideoName>
@@ -716,7 +727,7 @@
 				<adjective>ecologist</adjective>
 				<member>eco-activist</member>
 			</li>
-			
+
 		</symbolPacks>
 		<requireOne>
 			<li>
@@ -725,17 +736,22 @@
 			<li>
 				<li>AM_AnimalAnalysis_Expected</li>
 			</li>
+			<li>
+				<li>AM_AnimalRelease_Encouraged</li>
+			</li>
 		</requireOne>
 		<addDesignators>
 			<li>AM_AnimalDatabase</li>
 		</addDesignators>
-		 <modExtensions>
-            <li Class="VanillaMemesExpanded.ExtendedMemeProperties">
-				<abilitiesGiven><li>AM_AnalyzeCreature</li></abilitiesGiven>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<abilitiesGiven>
+					<li>AM_AnalyzeCreature</li>
+				</abilitiesGiven>
 			</li>
-        </modExtensions>
+		</modExtensions>
 	</MemeDef>
-	
+
 	<MemeGroupDef>
 		<defName>AM_Combat</defName>
 		<drawOffset>(0.65, 0.23)</drawOffset>
@@ -762,7 +778,7 @@
 				<li>memeConcept->armor</li>
 				<li>memeConcept->defense</li>
 				<li>memeLeaderNoun->bastion</li>
-				
+
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -777,10 +793,10 @@
 					<li>founderJoin(tag=meme_Bulwark)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
 					<li>victory(tag=meme_Bulwark)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_Bulwark)           ->[founderName] was a forge master in a medieval world. [founder_pronoun] has seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>setup(tag=meme_Bulwark)           ->[founderName] was a forge master in a medieval world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
 					<li>story(uses=1,tag=meme_Bulwark)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of armour forging along all the Rim.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Bulwark)         ->The sturdiest armourer in our community omce taught me the history of blacksmithing, how a properly designed armour can save your life. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_Bulwark)         ->The sturdiest armourer in our community once taught me the history of blacksmithing, how a properly designed armour can save your life. He was leading me to understand that</li>
 					<li>lesson(tag=meme_Bulwark)              ->if there are cracks in your armour, your opponent is going to find them</li>
 					<li>lessonReinforcement(tag=meme_Bulwark) ->Fortitude is the marshal of thought, the armour of the will, and the fort of reason.</li>
 					<!-- archist -->
@@ -795,6 +811,8 @@
 					<li>chthonianProphecy(tag=meme_Bulwark)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will be a bastion that resists their onslaught.</li>
 					<!-- esoteric -->
 					<li>esotericismProphecy(tag=meme_Bulwark)->Such occult knowledge is valuable to many people, and they will try to steal it from us. Only by properly defending ourselves may we resist their cowardly advances.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Bulwark)->[itIsSaid] we will defend ourselves as the insects do, covered by wondrous metallic carapaces of our own making.</li>
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_Bulwark)->Everyone will try to stop us, but they will be crushed against our armours. We will be unstoppable.</li>
 					<!-- corporate -->
@@ -810,7 +828,7 @@
 				<li>AM_Armour_Sharp</li>
 				<li>AM_Armour_Heat</li>
 			</li>
-			
+
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -818,6 +836,174 @@
 				<theme>defense</theme>
 				<adjective>armoured</adjective>
 				<member>defender</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+
+	<MemeDef>
+		<defName>AM_Sharpshooter</defName>
+		<label>sharpshooter</label>
+		<exclusionTags>
+			<li>AM_Combat</li>		
+			<li>AM_SharpshooterVsDryads</li>			
+		</exclusionTags>
+		<description>Our enemies won't see us coming. We will set our sights on them and they'll be taken silently, without any fanfare or celebration.</description>
+		<iconPath>UI/Memes/AM_Sharpshooter</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->sharp</li>
+				<li>memeAdjective->silent</li>
+				<li>memeAdjective->precise</li>
+				<li>memeAdjective->accurate</li>
+				<li>memeLeaderAdjective->sharp</li>
+				<li>memeConcept->sniper rifles</li>
+				<li>memeConcept->precision</li>
+				<li>memeLeaderNoun->sniper</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Sharpshooter)        ->[deity0_name] spoke to [deity0_possessive] followers: "You will be beset by countless enemies, stronger than you, but it is my Will that you be the instrument of my vengeance. Your strikes will be swift and precise."</li>
+					<li>episode(uses=1,tag=meme_Sharpshooter)  ->Following [deity0_name]'s teachings, we became experts in long range weaponry, being able to strike at our enemies before they could even see us coming.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Sharpshooter)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless precise weapons were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Sharpshooter)        ->A greedy [foeLeader], wanting all the rifles for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Sharpshooter)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Sharpshooter)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Sharpshooter)           ->[founderName] was a weapon master in an industrial world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Sharpshooter)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of weapon crafting along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Sharpshooter)         ->The most skilled weapon crafter in our community omce taught me the history of riflemaking, how humanity has always been improving on projectile weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Sharpshooter)              ->one man can change the world with a bullet in the right place</li>
+					<li>lessonReinforcement(tag=meme_Sharpshooter) ->Only the sharpest shooter will survive on the Rim.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Sharpshooter)    ->The archotechs are supreme beings, and open conflict is impure to them. If you need to strike, do it fast, and do it from far away.</li>
+					<li>archistFact(tag=meme_Sharpshooter)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without long range weaponry end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Sharpshooter) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Sharpshooter)    ->The spirits value strength. But not just brute strength. Instead, they value those who can strike fast, and strike from far away.</li>
+					<li>animistFact(tag=meme_Sharpshooter)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Sharpshooter) ->[itIsSaid] only those who are the sharpest shooters will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Sharpshooter)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will strike at them from the distance, and they won't even know what hit them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Sharpshooter)->[itIsSaid] we will strike at our enemies from a distance before they can threaten us, like a bombardier beetle catching its prey unaware.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Sharpshooter)->Such occult knowledge is valuable to many people, and they will try to steal it from us. We will strike at them from the distance, and they won't even know what hit them.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Sharpshooter)->Everyone will try to stop us, but they will be taken apart by our sniper rifles. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Sharpshooter)->Ensuring a safe work environment and the prevention of workplace violence is of paramount importance to our company. Therefore, we remind you that firearms in the workplace are absolutely welcomed here, as long as they are handled correctly.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Sharpshooter)->These lifeforms may be sometimes hostile to us, and we'd do well to strike at them from a distance before they can threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_CombatProwess_Increased</li>
+			</li>
+		</requireOne>
+		<preferredWeaponClasses>
+			<noble>LongShots</noble>
+			<despised>ShortShots</despised>
+		</preferredWeaponClasses>
+		<symbolPacks>
+			<li>
+				<ideoName>Sharpshooting</ideoName>
+				<theme>sharpshooting</theme>
+				<adjective>sharpshooter</adjective>
+				<member>marksman</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeDef>
+		<defName>AM_Gladiator</defName>
+		<label>gladiator</label>
+		<exclusionTags>
+			<li>AM_Combat</li>		
+			<li>AM_GladiatorVsDryads</li>			
+		</exclusionTags>
+		<description>True glory can only be achieved in hand to hand combat. Ranged weapons are for cowards, and using them is shameful.</description>
+		<iconPath>UI/Memes/AM_Gladiator</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->brutal</li>
+				<li>memeAdjective->combative</li>
+				<li>memeAdjective->gladiatorial</li>
+				<li>memeAdjective->brawling</li>
+				<li>memeLeaderAdjective->melee</li>
+				<li>memeConcept->hand to hand combat</li>
+				<li>memeConcept->melee</li>
+				<li>memeLeaderNoun->gladiator</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Gladiator)        ->[deity0_name] spoke to [deity0_possessive] followers: "If you can't see the white of your enemy's eyes when you slay him, you are a coward to me."</li>
+					<li>episode(uses=1,tag=meme_Gladiator)  ->Following [deity0_name]'s teachings, we became experts in melee weaponry, gladly throwing ourselves into the fray.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Gladiator)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless melee weapons were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Gladiator)        ->A greedy [foeLeader], wanting all the swords for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Gladiator)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Gladiator)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Gladiator)           ->[founderName] was a blacksmith in a primitive world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Gladiator)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of blacksmithing along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Gladiator)         ->The most skilled blacksmith in our community omce taught me the history of weapon crafting, how humanity has always been improving on melee weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Gladiator)              ->it's not the size of the sword, it's how you use it</li>
+					<li>lessonReinforcement(tag=meme_Gladiator) ->A sword wields no strength, unless the hand that holds it has courage.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Gladiator)    ->The archotechs are supreme beings, and conflict is sacred to them. If you need to strike, do it fast, and do it in close range.</li>
+					<li>archistFact(tag=meme_Gladiator)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without melee weaponry end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Gladiator) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Gladiator)    ->The spirits value strength. Big men fall just as quick as little ones, if you put a sword through their hearts.</li>
+					<li>animistFact(tag=meme_Gladiator)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Gladiator) ->[itIsSaid] only those who are the best possible melee fighters will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Gladiator)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will strike at them head on, and they won't even know what hit them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Gladiator)->[itIsSaid] we will strike at our enemies in a flurry of melee attacks, like a praying mantis slaughtering its prey.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Gladiator)->Such occult knowledge is valuable to many people, and they will try to steal it from us. We will strike at them head on, and they won't even know what hit them.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Gladiator)->Everyone will try to stop us, but they will be taken apart by our fearsome gladiators. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Gladiator)->To further ensure a safe working environment, weapons of any type, including, but not limited to, knives with a 3 inch blade or longer, daggers, swords and katanas are allowed inside a company building or leased office space, as long as they are handled correctly.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Gladiator)->These lifeforms may be sometimes hostile to us, and we'd do well to strike at them head on before they can threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_CombatProwess_Melee</li>
+			</li>
+		</requireOne>
+		<preferredWeaponClasses>
+			<noble>Melee</noble>
+			<despised>Ranged</despised>
+		</preferredWeaponClasses>
+		<symbolPacks>
+			<li>
+				<ideoName>Gladiators</ideoName>
+				<theme>melee combat</theme>
+				<adjective>gladiatorial</adjective>
+				<member>combatant</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>

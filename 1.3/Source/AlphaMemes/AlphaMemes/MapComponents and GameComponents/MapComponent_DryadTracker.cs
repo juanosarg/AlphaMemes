@@ -13,7 +13,7 @@ namespace AlphaMemes
 
 
         public int tickCounter = 0;
-        public int tickInterval = 5000;
+        public int tickInterval = 10000;
      
 
 
