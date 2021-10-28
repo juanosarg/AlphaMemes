@@ -430,7 +430,7 @@
 					<li>setup(tag=meme_Youth)           ->[founderName] was a social scientist in one of the Glitterworlds. [founder_pronoun] always advised the youth to not get influenced or forced by their elders, and that they should have their own political views and choices and the courage to pick the right leader.</li>
 					<li>story(uses=1,tag=meme_Youth)    ->[founderName] thus created a great school of thought, where the bounty of youth is always respected and considered.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Youth)         ->The youngest man to be chosen as leader in our community omce taught me the history of civilization, how older men declare war, but it is the youth that must fight and die. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_Youth)         ->The youngest man to be chosen as leader in our community once taught me the history of civilization, how older men declare war, but it is the youth that must fight and die. He was leading me to understand that</li>
 					<li>lesson(tag=meme_Youth)              ->we want our legacy to stand upon the youth. We want to give knowledge to the younger generation and be a part of changing the game</li>
 					<li>lessonReinforcement(tag=meme_Youth) ->Good habits formed at youth make all the difference.</li>
 					<!-- archist -->
@@ -520,7 +520,7 @@
 					<li>setup(tag=meme_BiologicalDefilers)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the grotesque menagerie of genetically modified creatures and plants that humanity had created, and felt a deep disgust. Humanity had gone too far.</li>
 					<li>story(uses=1,tag=meme_BiologicalDefilers)    ->[founderName] taught us that playing god is quite obscene, and that humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_BiologicalDefilers)         ->The smartest biologist in our community omce taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_BiologicalDefilers)         ->The smartest biologist in our community once taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
 					<li>lesson(tag=meme_BiologicalDefilers)              ->humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth</li>
 					<li>lessonReinforcement(tag=meme_BiologicalDefilers) ->Have we already forgotten what happened in Sorne? Have we forgotten the marble worlds, glassed to contain the Feralisk menace?</li>
 					<!-- archist -->
@@ -693,7 +693,7 @@
 					<li>setup(tag=meme_BiologicalReconstructors)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the incredible variety of genetically modified creatures and plants that humanity had created, and felt a deep awe. Humanity had outdone itself.</li>
 					<li>story(uses=1,tag=meme_BiologicalReconstructors)    ->[founderName] taught us that genetic engineering had been the key to human expansion, and that humanity has been remaking the whole galaxy into a paradise as an imitation of old Earth.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_BiologicalReconstructors)         ->The smartest biologist in our community omce taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_BiologicalReconstructors)         ->The smartest biologist in our community once taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
 					<li>lesson(tag=meme_BiologicalReconstructors)              ->genetic engineering has been the key to human expansion</li>
 					<li>lessonReinforcement(tag=meme_BiologicalReconstructors) ->A sad, lifeless Universe was waiting for us, and we have turned it into a vision of paradise.</li>
 					<!-- archist -->
@@ -879,7 +879,7 @@
 					<li>setup(tag=meme_Sharpshooter)           ->[founderName] was a weapon master in an industrial world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
 					<li>story(uses=1,tag=meme_Sharpshooter)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of weapon crafting along all the Rim.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Sharpshooter)         ->The most skilled weapon crafter in our community omce taught me the history of riflemaking, how humanity has always been improving on projectile weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_Sharpshooter)         ->The most skilled weapon crafter in our community once taught me the history of riflemaking, how humanity has always been improving on projectile weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
 					<li>lesson(tag=meme_Sharpshooter)              ->one man can change the world with a bullet in the right place</li>
 					<li>lessonReinforcement(tag=meme_Sharpshooter) ->Only the sharpest shooter will survive on the Rim.</li>
 					<!-- archist -->
@@ -963,7 +963,7 @@
 					<li>setup(tag=meme_Gladiator)           ->[founderName] was a blacksmith in a primitive world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
 					<li>story(uses=1,tag=meme_Gladiator)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of blacksmithing along all the Rim.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Gladiator)         ->The most skilled blacksmith in our community omce taught me the history of weapon crafting, how humanity has always been improving on melee weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lessonIntro(tag=meme_Gladiator)         ->The most skilled blacksmith in our community once taught me the history of weapon crafting, how humanity has always been improving on melee weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
 					<li>lesson(tag=meme_Gladiator)              ->it's not the size of the sword, it's how you use it</li>
 					<li>lessonReinforcement(tag=meme_Gladiator) ->A sword wields no strength, unless the hand that holds it has courage.</li>
 					<!-- archist -->
@@ -1004,6 +1004,79 @@
 				<theme>melee combat</theme>
 				<adjective>gladiatorial</adjective>
 				<member>combatant</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Iconoclast</defName>
+		<label>iconoclast</label>
+		<description>Religious images, icons, relics, artefacts, they are all obscene and should be destroyed.</description>
+		<iconPath>UI/Memes/AM_Iconoclast</iconPath>
+		
+		<impact>2</impact>
+		<exclusionTags>
+			
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->aniconic</li>
+				<li>memeAdjective->destructive</li>
+				<li>memeAdjective->anti idolatry</li>				
+				<li>memeConcept->destruction of religious icons</li>
+				<li>memeConcept->iconoclasm</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Iconoclast)        ->[deity0_name] spoke to [deity0_possessive] followers: "You shall never erect a figure in my image, for idolatry is the greatest sin."</li>
+					<li>episode(uses=1,tag=meme_Iconoclast)  ->Speaking to the believers, [deity0_name] said: "Relics and icons are obscene to me. He who offers God a second place offers Him no place".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Iconoclast)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge temple, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Iconoclast)        ->An old [foeLeader] wanted to erect a statue of [deity0_name], but the [memberNamePlural] warned [foeLeader_objective] that it was forbidden by the tenets of their faith. The disagreement escalated into a bitter feud.</li>
+					<li>founderJoin(tag=meme_Iconoclast)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that images were obscene to [deity0_name].</li>
+					<li>victory(tag=meme_Iconoclast)         ->The [foeLeader] was convinced, and with time [foeLeader_pronoun] became one of the best iconoclasts in [deity0_name]'s clergy.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Iconoclast)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] taught that idolatry is worshipping anything that ought to be used, or using anything that is meant to be worshipped.</li>
+					<li>story(uses=1,tag=meme_Iconoclast)    ->[founderName] showed us that idolatry functions widely inside religious communities when doctrinal truth is elevated to the position of a false god.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Iconoclast)         ->The wisest man in our colony was a scholar specialized in the history of civilization, going all the way back to the ancient cultures of old Earth. He taught me that</li>
+					<li>lesson(tag=meme_Iconoclast)              ->man's mind is like a store of idolatry and superstition</li>
+					<li>lessonReinforcement(tag=meme_Iconoclast) ->Logicians may reason about abstractions. But the great mass of men must have images. The strong tendency of the multitude in all ages and nations to idolatry can be explained on no other principle.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Iconoclast)    ->The archotechs are supreme beings, a reflection of our own human image and the next logical step in our evolution.</li>
+					<li>archistFact(tag=meme_Iconoclast)     ->Archotechs frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>archistProphecy(tag=meme_Iconoclast) ->[inTheEnd], the archotechs will allow only those who shun the worship of material images to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Iconoclast)    ->The spirits frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>animistFact(tag=meme_Iconoclast)     ->As the spirits are everywhere, one must take care not to confuse the worship of a spirit with the worship of the thing it inhabits.</li>
+					<li>animistProphecy(tag=meme_Iconoclast) ->[itIsSaid] only those who shun the worship of material images will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Iconoclast)->[itIsSaid] we will destroy all images of our holy insects, because idolatry is obscene and incomprehensible to them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Iconoclast)->The eldritch entities are old and evil beyond all imagining. We will destroy all images of them, for portraying their physical form is infinitely obscene.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Iconoclast)->Such occult knowledge can only be spoken of in abstract terms. Portraying its physical form is dangerous and obscene.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Iconoclast)->We wil smash to pieces all icons, relics, and portrayals of heretic beliefs, for they are obscene.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Iconoclast)->Per company policy, employees should use moderation in decorating their workspaces to accentuate a professional and pleasant work environment without inhibiting or disrupting its intended use. A picture of your family is OK. A reliquary with remains of a Saint is DEFINITELY NOT.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Iconoclast)->These poor wayward creations of humanity remind us that science can have its own form of idolatry too, as obscene as the religious one.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Iconoclasm</ideoName>
+				<theme>iconoclasm</theme>
+				<adjective>iconoclast</adjective>
+				<member>iconoclast</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
