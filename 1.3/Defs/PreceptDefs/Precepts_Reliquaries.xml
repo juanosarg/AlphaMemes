@@ -4,7 +4,7 @@
 	<IssueDef>
 		<defName>AM_Reliquaries</defName>
 		<label>reliquaries</label>
-		<iconPath>UI/Issues/AM_CombatProwess</iconPath>
+		<iconPath>UI/Issues/AM_Reliquaries</iconPath>
 	</IssueDef>
 	<HistoryEventDef>
 		<defName>AM_BuildingReliquary</defName>
@@ -15,7 +15,7 @@
 		<defName>AM_BuildingReliquary_Forbidden</defName>
 		<issue>AM_Reliquaries</issue>
 		<label>forbidden</label>
-		<description>Humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth. These genetically modified animals should be destroyed, and relying on them for anything is obscene.</description>
+		<description>Relic worship and idolatry are obscene. We refuse to have a reliquary on our colony, as the only acceptable reason to have a relic is to destroy it as soon as possible.</description>
 		<impact>Medium</impact>
 		
 		<comps>
