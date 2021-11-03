@@ -13,7 +13,7 @@
 		<defName>AM_PsychicVampirism</defName>
 		<label>psychic vampirism</label>
 		
-		<description>Mastering the power of the mind is essential to securing one’s place in the universe. Strength of mind can be achieved only through inner peace, and inner peace can only be achieved through meditation.</description>
+		<description>Meditation is useless and a waste of time. If we want to master the powers of the mind we will have to rip the psychic energy from the still pulsating brains of our enemies.</description>
 		<iconPath>UI/Memes/AM_PsychicVampirism</iconPath>
 		<groupDef>AM_Psychic</groupDef>
 		<exclusionTags>
