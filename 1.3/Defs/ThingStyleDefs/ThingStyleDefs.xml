@@ -157,6 +157,16 @@
 		</graphicData>
 	</ThingStyleDef>
 
+	<ThingStyleDef>
+		<defName>AM_Jewish_LongSword</defName>
+		<overrideLabel>duckbill axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/TaoistWeapons/VME_TaoistLongsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
 
 	
 	

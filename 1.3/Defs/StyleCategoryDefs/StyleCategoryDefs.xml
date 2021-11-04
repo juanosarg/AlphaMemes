@@ -85,6 +85,12 @@
 				<thingDef>Ideogram</thingDef>
 				<styleDef>AM_Jewish_IdeogramB</styleDef>
 			</li>
+			
+			<li>
+				<thingDef>MeleeWeapon_LongSword</thingDef>
+				<styleDef>AM_Jewish_LongSword</styleDef>
+			</li>
+			
 		</thingDefStyles>
 		<addDesignatorGroups>
 			
