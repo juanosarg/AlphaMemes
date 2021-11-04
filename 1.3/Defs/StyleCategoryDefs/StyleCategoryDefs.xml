@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<StyleCategoryDef>
+		<defName>AM_Jewish</defName>
+		<label>jewish</label>
+		<iconPath>UI/Structures/AM_Jewish</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Jewish</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_JewishVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>SculptureSmall</thingDef>
+				<styleDef>AM_Jewish_SculptureSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureLarge</thingDef>
+				<styleDef>AM_Jewish_SculptureLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureGrand</thingDef>
+				<styleDef>AM_Jewish_SculptureGrand</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Small</thingDef>
+				<styleDef>AM_Jewish_AltarSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Medium</thingDef>
+				<styleDef>AM_Jewish_AltarMedium</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Large</thingDef>
+				<styleDef>AM_Jewish_AltarLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Grand</thingDef>
+				<styleDef>AM_Jewish_AltarGrand</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Table1x2c</thingDef>
+				<styleDef>AM_Jewish_Table1x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>AM_Jewish_Table2x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>AM_Jewish_Table2x4c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_Jewish_Table3x3c</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_Jewish_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>AM_Jewish_StandingLamp_Red</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>AM_Jewish_StandingLamp_Green</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>AM_Jewish_StandingLamp_Blue</styleDef>
+			</li>
+			<li>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>AM_Jewish_DarklampStanding</styleDef>
+			</li>
+		
+			
+			<li>
+				<thingDef>Ideogram</thingDef>
+				<styleDef>AM_Jewish_IdeogramA</styleDef>
+			</li>
+			<li>
+				<thingDef>Ideogram</thingDef>
+				<styleDef>AM_Jewish_IdeogramB</styleDef>
+			</li>
+		</thingDefStyles>
+		<addDesignatorGroups>
+			
+			<li>AM_Floor_JewishTiles</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_JewishFineTiles</li>
+
+		</addDesignatorGroups>
+		
+	</StyleCategoryDef>
+
+
+
+</Defs>

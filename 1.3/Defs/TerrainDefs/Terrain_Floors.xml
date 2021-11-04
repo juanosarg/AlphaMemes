@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Jewish -->
+	
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_JewishTiles</defName>
+		<label>jewish stone tiles</label>
+	</DesignatorDropdownGroupDef>
+	
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_JewishTileStoneBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Carefully-cut and fit stone tiles in a Jewish style. They are pretty to look at, but they take a long time to lay.</description>
+    <texturePath>Terrain/Surfaces/AM_JewishTile</texturePath>
+    <statBases>
+      <WorkToBuild>1100</WorkToBuild>
+      <Beauty>1</Beauty>
+    </statBases>
+	 <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <designatorDropdown>AM_Floor_JewishTiles</designatorDropdown>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+	<dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="AM_JewishTileStoneBase">
+    <defName>AM_JewishTileSandstone</defName>
+    <label>jewish sandstone tile</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>4</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_JewishTileStoneBase">
+    <defName>AM_JewishTileGranite</defName>
+    <label>jewish granite tile</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>4</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_JewishTileStoneBase">
+    <defName>AM_JewishTileLimestone</defName>
+    <label>jewish limestone tile</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>4</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_JewishTileStoneBase">
+    <defName>AM_JewishTileSlate</defName>
+    <label>jewish slate tile</label>
+    <color>(100,100,100)</color>
+    <costList>
+      <BlocksSlate>4</BlocksSlate>
+  </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="AM_JewishTileStoneBase">
+    <defName>AM_JewishTileMarble</defName>
+    <label>jewish marble tile</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>4</BlocksMarble>
+    </costList>
+  </TerrainDef>
+	
+	
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_JewishFineTiles</defName>
+		<label>jewish fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="AM_JewishFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a jewish style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/AM_BlueJewishTile</texturePath>
+		<designatorDropdown>AM_Floor_JewishFineTiles</designatorDropdown>
+		<dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileSandstone</defName>
+		<label>jewish fine sandstone tile</label>
+		
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileGranite</defName>
+		<label>jewish fine granite tile</label>
+		
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileLimestone</defName>
+		<label>jewish fine limestone tile</label>
+		
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileSlate</defName>
+		<label>jewish fine slate tile</label>
+		
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileMarble</defName>
+		<label>jewish fine marble tile</label>
+		
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	
+
+
+</Defs>
