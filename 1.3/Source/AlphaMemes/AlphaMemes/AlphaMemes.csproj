@@ -337,6 +337,7 @@
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
     <Compile Include="Thoughts\Thought_Mood_Volatile.cs" />
+    <Compile Include="Thoughts\Thought_Reliquaries_Forbidden.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -15,6 +15,7 @@ namespace AlphaMemes
         public int tickCounter = 0;
         public int tickInterval = 10000;
         public int artInTheMap_backup = 0;
+        public int reliquariesInTheMap_backup = 0;
         public float artBeautyInTheMap_backup = 0;
 
 
@@ -30,6 +31,7 @@ namespace AlphaMemes
             {
                 StaticCollectionsClass.artInTheMap = artInTheMap_backup;
                 StaticCollectionsClass.artBeautyInTheMap = artBeautyInTheMap_backup;
+                StaticCollectionsClass.reliquariesInTheMap = reliquariesInTheMap_backup;
             }
             base.FinalizeInit();
         }
@@ -39,6 +41,7 @@ namespace AlphaMemes
             base.ExposeData();
             Scribe_Values.Look<int>(ref this.artInTheMap_backup, "artInTheMap_backup", 0, true);
             Scribe_Values.Look<float>(ref this.artBeautyInTheMap_backup, "artBeautyInTheMap_backup", 0, true);
+            Scribe_Values.Look<int>(ref this.reliquariesInTheMap_backup, "reliquariesInTheMap_backup", 0, true);
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFurniture", 0, true);
 
@@ -93,7 +96,13 @@ namespace AlphaMemes
                     StaticCollectionsClass.artBeautyInTheMap = artBeautyInTheMap_backup;
                 }
 
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Reliquaries_Forbidden) != null ))
+                {
+                    int reliquaryCount = map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.Reliquary).EnumerableCount();
+                    reliquariesInTheMap_backup = reliquaryCount;                 
+                    StaticCollectionsClass.reliquariesInTheMap = reliquaryCount;
 
+                }
 
 
                 tickCounter = 0;

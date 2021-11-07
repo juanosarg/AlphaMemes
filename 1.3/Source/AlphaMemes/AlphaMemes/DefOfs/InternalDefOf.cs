@@ -33,6 +33,9 @@ namespace AlphaMemes
 		public static PreceptDef AM_CombatProwess_Increased;
 		public static PreceptDef AM_CombatProwess_Melee;
 
+		public static PreceptDef AM_Reliquaries_Forbidden;
+
+
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;

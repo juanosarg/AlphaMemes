@@ -1069,7 +1069,9 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-			
+			<li>
+				<li>AM_Reliquaries_Forbidden</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
