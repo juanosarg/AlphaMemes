@@ -267,6 +267,66 @@
 	
 	<!-- ====== Kemetic ======== -->
 	
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_StandingLamp_Red</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_StandingLamp_Green</defName>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_DarklampStanding</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticDarklampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_BarbedSpear</defName>
 		<overrideLabel>barbed spear</overrideLabel>

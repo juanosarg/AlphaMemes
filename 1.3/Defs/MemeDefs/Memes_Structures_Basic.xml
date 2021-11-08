@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<MemeDef>
-		<defName>VME_Structure_Atheist</defName>
+		<defName>AM_Structure_Atheist</defName>
 		<label>atheism</label>
 		<description>There are no gods, no supernatural beings guiding our path or watching over us. Unfalsifiable concepts cannot be used as a basis for a rational society.</description>
 		<category>Structure</category>
@@ -59,7 +59,7 @@
 		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Structure_Jewish</defName>
+		<defName>AM_Structure_Jewish</defName>
 		<label>jewish origins</label>
 		<description>This ideoligion is a descendant of ancient Judaism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
@@ -115,7 +115,7 @@
 		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Structure_Jainism</defName>
+		<defName>AM_Structure_Jainism</defName>
 		<label>jain origins</label>
 		<description>This ideoligion is a descendant of ancient Jainism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
@@ -169,7 +169,7 @@
 		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Structure_Sikhism</defName>
+		<defName>AM_Structure_Sikhism</defName>
 		<label>Sikh origins</label>
 		<description>This ideoligion is a descendant of ancient Sikhism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
@@ -217,7 +217,7 @@
 		</thingStyleCategories>
 	</MemeDef>
 	<MemeDef>
-		<defName>VME_Structure_Kemetism</defName>
+		<defName>AM_Structure_Kemetism</defName>
 		<label>Kemetic origins</label>
 		<description>This ideoligion is a descendant of Egyptian Neopaganism, also known as Kemetism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>

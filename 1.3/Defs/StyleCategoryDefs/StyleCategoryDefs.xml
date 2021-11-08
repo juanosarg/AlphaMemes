@@ -143,9 +143,13 @@
 			
 			<li>AM_Floor_JewishTiles</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_JewishFineTiles</li>
+			
 
 		</addDesignatorGroups>
-		
+		<addDesignators>
+			<li>AM_JewishSlab_Medium</li>
+			<li>AM_JewishSlab_Broad</li>
+		</addDesignators>
 	</StyleCategoryDef>
 	
 	<StyleCategoryDef>
@@ -155,6 +159,44 @@
 		<soundOngoingRitual>AM_RitualSustainer_Kemetic</soundOngoingRitual>
 		<ritualVisualEffectDef>AM_KemeticVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
+		
+			<li>
+				<thingDef>Table1x2c</thingDef>
+				<styleDef>AM_Kemetic_Table1x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>AM_Kemetic_Table2x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>AM_Kemetic_Table2x4c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_Kemetic_Table3x3c</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_Kemetic_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>AM_Kemetic_StandingLamp_Red</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>AM_Kemetic_StandingLamp_Green</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>AM_Kemetic_StandingLamp_Blue</styleDef>
+			</li>
+			<li>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>AM_Kemetic_DarklampStanding</styleDef>
+			</li>
+		
 			<li>
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>AM_Kemetic_BarbedSpear</styleDef>
@@ -258,6 +300,10 @@
 			
 			
 		</thingDefStyles>
+		<addDesignators>
+			<li>AM_Pyramid</li>
+			
+		</addDesignators>
 		
 		
 	</StyleCategoryDef>
