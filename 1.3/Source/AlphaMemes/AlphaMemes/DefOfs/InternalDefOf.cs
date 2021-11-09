@@ -52,6 +52,8 @@ namespace AlphaMemes
 
 		public static ThingDef AM_AnimalDatabase;
 
+		public static ThingDef AM_BlocksPristineLimestone;
+
 		public static MemeDef AM_Madness;
 
 		public static MemeDef AM_BiologicalDefilers;

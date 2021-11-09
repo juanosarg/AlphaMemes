@@ -299,6 +299,80 @@
 		</graphicData>
 	</ThingStyleDef>
 	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+
+	
 	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
 		<defName>AM_Kemetic_StandingLamp</defName>
 		<graphicData>
@@ -324,6 +398,61 @@
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticDarklampStanding</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_Stool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Stool/AM_KemeticStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>AM_Kemetic_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticColumn</texPath>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_IdeogramA</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_IconKemeticA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Kemetic_IdeogramB</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_IconKemeticB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	

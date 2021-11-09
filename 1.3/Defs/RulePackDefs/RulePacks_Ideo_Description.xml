@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+    <IdeoStoryPatternDef>
+    <defName>AM_JewishDescription</defName>
+    <segments>
+      <li>jewishlessonIntro</li>
+      <li>lesson</li>
+      <li>lessonReinforcement</li>
+    </segments>
+    <noCapitalizeFirstSentence>
+      <li>lesson</li>
+    </noCapitalizeFirstSentence>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+      </include>
+      <rulesStrings>
+        <!-- final fallbacks (when no memes selected yet) -->
+        <li>lesson(priority=-1)->stuff happens</li>
+
+        <!-- typesetting -->
+        <li>r_pattern->"[r_jewishlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+
+        <!-- attribution -->
+       
+        <li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>       
+        <li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+
+
+        <li>revision->revision</li>
+        <li>revision->emendation</li>
+		<li>revision->edition</li>
+		<li>revision->correction</li>
+		<li>revision->alteration</li>
+		
+		<li>book->Tanakh</li>
+		<li>book->Torah</li>
+		<li>book->Pentateuch</li>
+		<li>book->Nevi'im</li>
+		<li>book->Ketuvim</li>
+		<li>book->Talmud</li>
+		
+		<li>edition->25th Edition</li>
+		<li>edition->3rd Edition</li>
+		<li>edition->12nd Edition</li>
+		<li>edition->37th Edition</li>
+
+        <!-- generic intro -->
+        <li>jewishlessonIntro->Do not seek revenge or bear a grudge against anyone among your people, but love your neighbor as yourself. I am the LORD. I want you to understand:</li>
+        <li>jewishlessonIntro->Then Moses said, 'Now show me your glory.' And the Lord said, 'I will cause all my goodness to pass in front of you, and I will proclaim my name, the Lord, in your presence. I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.' This teaches us that</li>
+        <li>jewishlessonIntro->The LORD bless you and keep you; the LORD make his face shine upon you and be gracious to you; the LORD turn his face toward you and give you peace. The LORD did teach me one thing:</li>
+        <li>jewishlessonIntro->By teaching the Torah on the [place_summary] [place_name], I realized that</li>
+        <li>jewishlessonIntro->God is not a human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill? You will realize that</li>
+        <li>jewishlessonIntro->And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth. He was teaching that</li>
+        <li>jewishlessonIntro->For the life of a creature is in the blood, and I have given it to you to make atonement for yourselves on the altar; it is the blood that makes atonement for one's life. One thing will become increasingly clear then: that</li>
+        <li>jewishlessonIntro->Any man or woman who wrongs another in any way and so is unfaithful to the Lord is guilty and must confess the sin they have committed. Then they'll see that</li>
+        <li>jewishlessonIntro->In your unfailing love, you will lead the people you have redeemed. In your strength, you will guide them to your holy dwelling. Once that is achieved you will see that</li>
+       
+
+        <!-- generic reinforcement -->
+        <li>lessonReinforcement->A righteous man falls down seven times and gets up.</li>
+        <li>lessonReinforcement->If you don't know what you're living for, you haven't yet lived.</li>
+        <li>lessonReinforcement->Gam zu l'tova. This too is for the good.</li>
+        <li>lessonReinforcement->I don't speak because I have the power to speak; I speak because I don't have the power to remain silent.</li>
+        <li>lessonReinforcement->There are no problems, only opportunities for growth.</li>
+		<li>lessonReinforcement->The salvation of God is like the blink of an eye.</li>
+		<li>lessonReinforcement->L’fum tzara agra, according to the effort is the reward.</li>
+        <li>lessonReinforcement->L’Chaim!</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+   
+  
+ 
+</Defs>

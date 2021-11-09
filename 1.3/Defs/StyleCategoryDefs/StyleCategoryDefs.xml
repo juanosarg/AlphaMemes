@@ -159,7 +159,35 @@
 		<soundOngoingRitual>AM_RitualSustainer_Kemetic</soundOngoingRitual>
 		<ritualVisualEffectDef>AM_KemeticVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
-		
+			<li>
+				<thingDef>SculptureSmall</thingDef>
+				<styleDef>AM_Kemetic_SculptureSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureLarge</thingDef>
+				<styleDef>AM_Kemetic_SculptureLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureGrand</thingDef>
+				<styleDef>AM_Kemetic_SculptureGrand</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Altar_Small</thingDef>
+				<styleDef>AM_Kemetic_AltarSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Medium</thingDef>
+				<styleDef>AM_Kemetic_AltarMedium</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Large</thingDef>
+				<styleDef>AM_Kemetic_AltarLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>Altar_Grand</thingDef>
+				<styleDef>AM_Kemetic_AltarGrand</styleDef>
+			</li>
 			<li>
 				<thingDef>Table1x2c</thingDef>
 				<styleDef>AM_Kemetic_Table1x2c</styleDef>
@@ -196,7 +224,26 @@
 				<thingDef>Darklamp</thingDef>
 				<styleDef>AM_Kemetic_DarklampStanding</styleDef>
 			</li>
-		
+			<li>
+				<thingDef>Stool</thingDef>
+				<styleDef>AM_Kemetic_Stool</styleDef>
+			</li>
+			<li>
+				<thingDef>TorchLamp</thingDef>
+				<styleDef>AM_Kemetic_TorchLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>Column</thingDef>
+				<styleDef>AM_Kemetic_Column</styleDef>
+			</li>
+			<li>
+				<thingDef>Ideogram</thingDef>
+				<styleDef>AM_Kemetic_IdeogramA</styleDef>
+			</li>
+			<li>
+				<thingDef>Ideogram</thingDef>
+				<styleDef>AM_Kemetic_IdeogramB</styleDef>
+			</li>
 			<li>
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>AM_Kemetic_BarbedSpear</styleDef>
@@ -302,7 +349,8 @@
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
-			
+			<li>AM_KemeticSlab_Medium</li>
+			<li>AM_KemeticSlab_Broad</li>
 		</addDesignators>
 		
 		

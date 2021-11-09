@@ -295,8 +295,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityAnalyzeCreature.cs" />
+    <Compile Include="Abilities\CompAbilityFinishConstruction.cs" />
     <Compile Include="Abilities\CompAbilityPsychicDeathKnell.cs" />
+    <Compile Include="Abilities\CompAbilityConvertStone.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityConvertStone.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityAnalyzeCreature.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityFinishConstruction.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityPsychicDeathKnell.cs" />
     <Compile Include="Buildings\Building_AnimalDatabase.cs" />
     <Compile Include="Buildings\Building_TrapDamagerBlunt.cs" />

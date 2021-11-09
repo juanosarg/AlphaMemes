@@ -10,6 +10,8 @@
 	<AM_AddDespisedAnimals>Despised Animal</AM_AddDespisedAnimals>
 	<AM_AbilityNeedsADownedPawn>This ability must target a downed sapient humanoid</AM_AbilityNeedsADownedPawn>
 	<AM_AbilityNeedsAValidAnimal>This ability must target a living, non-dryad animal</AM_AbilityNeedsAValidAnimal>
+	<AM_AbilityNeedsABlueprint>This ability needs to target a building frame that is under construction</AM_AbilityNeedsABlueprint>
+	<AM_AbilityNeedsResourcesDelivered>All resources must have been delivered to the building frame</AM_AbilityNeedsResourcesDelivered>
 	<AM_NoDataBaseFound>You'll need to build an animal database before this ability can be used</AM_NoDataBaseFound>
 	<AM_NotAnalyzed>Not scanned</AM_NotAnalyzed>
 	<AM_Analyzed>Genome analyzed</AM_Analyzed>

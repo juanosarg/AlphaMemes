@@ -90,12 +90,12 @@
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_EsotericismDescription</def>
+					<def>AM_JewishDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_esotericism</key>
+					<key>structure_jewish</key>
 					<value>true</value>
 				</li>
 			</constants>
