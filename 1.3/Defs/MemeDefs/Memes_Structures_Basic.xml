@@ -144,12 +144,12 @@
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_EsotericismDescription</def>
+					<def>AM_JainistDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_esotericism</key>
+					<key>structure_jainism</key>
 					<value>true</value>
 				</li>
 			</constants>
@@ -192,12 +192,12 @@
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_EsotericismDescription</def>
+					<def>AM_SikhDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_esotericism</key>
+					<key>structure_sikh</key>
 					<value>true</value>
 				</li>
 			</constants>

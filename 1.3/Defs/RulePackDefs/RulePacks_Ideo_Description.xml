@@ -1,78 +1,235 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
-    <IdeoStoryPatternDef>
-    <defName>AM_JewishDescription</defName>
-    <segments>
-      <li>jewishlessonIntro</li>
-      <li>lesson</li>
-      <li>lessonReinforcement</li>
-    </segments>
-    <noCapitalizeFirstSentence>
-      <li>lesson</li>
-    </noCapitalizeFirstSentence>
-    <rules>
-      <include>
-        <li>IdeoDescriptionGlobal</li>
-      </include>
-      <rulesStrings>
-        <!-- final fallbacks (when no memes selected yet) -->
-        <li>lesson(priority=-1)->stuff happens</li>
-
-        <!-- typesetting -->
-        <li>r_pattern->"[r_jewishlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
-
-        <!-- attribution -->
-       
-        <li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>       
-        <li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
-
-
-        <li>revision->revision</li>
-        <li>revision->emendation</li>
-		<li>revision->edition</li>
-		<li>revision->correction</li>
-		<li>revision->alteration</li>
-		
-		<li>book->Tanakh</li>
-		<li>book->Torah</li>
-		<li>book->Pentateuch</li>
-		<li>book->Nevi'im</li>
-		<li>book->Ketuvim</li>
-		<li>book->Talmud</li>
-		
-		<li>edition->25th Edition</li>
-		<li>edition->3rd Edition</li>
-		<li>edition->12nd Edition</li>
-		<li>edition->37th Edition</li>
-
-        <!-- generic intro -->
-        <li>jewishlessonIntro->Do not seek revenge or bear a grudge against anyone among your people, but love your neighbor as yourself. I am the LORD. I want you to understand:</li>
-        <li>jewishlessonIntro->Then Moses said, 'Now show me your glory.' And the Lord said, 'I will cause all my goodness to pass in front of you, and I will proclaim my name, the Lord, in your presence. I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.' This teaches us that</li>
-        <li>jewishlessonIntro->The LORD bless you and keep you; the LORD make his face shine upon you and be gracious to you; the LORD turn his face toward you and give you peace. The LORD did teach me one thing:</li>
-        <li>jewishlessonIntro->By teaching the Torah on the [place_summary] [place_name], I realized that</li>
-        <li>jewishlessonIntro->God is not a human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill? You will realize that</li>
-        <li>jewishlessonIntro->And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth. He was teaching that</li>
-        <li>jewishlessonIntro->For the life of a creature is in the blood, and I have given it to you to make atonement for yourselves on the altar; it is the blood that makes atonement for one's life. One thing will become increasingly clear then: that</li>
-        <li>jewishlessonIntro->Any man or woman who wrongs another in any way and so is unfaithful to the Lord is guilty and must confess the sin they have committed. Then they'll see that</li>
-        <li>jewishlessonIntro->In your unfailing love, you will lead the people you have redeemed. In your strength, you will guide them to your holy dwelling. Once that is achieved you will see that</li>
-       
-
-        <!-- generic reinforcement -->
-        <li>lessonReinforcement->A righteous man falls down seven times and gets up.</li>
-        <li>lessonReinforcement->If you don't know what you're living for, you haven't yet lived.</li>
-        <li>lessonReinforcement->Gam zu l'tova. This too is for the good.</li>
-        <li>lessonReinforcement->I don't speak because I have the power to speak; I speak because I don't have the power to remain silent.</li>
-        <li>lessonReinforcement->There are no problems, only opportunities for growth.</li>
-		<li>lessonReinforcement->The salvation of God is like the blink of an eye.</li>
-		<li>lessonReinforcement->L’fum tzara agra, according to the effort is the reward.</li>
-        <li>lessonReinforcement->L’Chaim!</li>
-      </rulesStrings>
-    </rules>
-  </IdeoStoryPatternDef>
-  
-   
-  
- 
+	<IdeoStoryPatternDef>
+		<defName>AM_JewishDescription</defName>
+		<segments>
+			<li>jewishlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_jewishlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+				<li>revision->revision</li>
+				<li>revision->emendation</li>
+				<li>revision->edition</li>
+				<li>revision->correction</li>
+				<li>revision->alteration</li>
+				<li>book->Tanakh</li>
+				<li>book->Torah</li>
+				<li>book->Pentateuch</li>
+				<li>book->Nevi'im</li>
+				<li>book->Ketuvim</li>
+				<li>book->Talmud</li>
+				<li>edition->25th Edition</li>
+				<li>edition->3rd Edition</li>
+				<li>edition->12nd Edition</li>
+				<li>edition->37th Edition</li>
+				<!-- generic intro -->
+				<li>jewishlessonIntro->Do not seek revenge or bear a grudge against anyone among your people, but love your neighbor as yourself. I am the LORD. I want you to understand:</li>
+				<li>jewishlessonIntro->Then Moses said, 'Now show me your glory.' And the Lord said, 'I will cause all my goodness to pass in front of you, and I will proclaim my name, the Lord, in your presence. I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.' This teaches us that</li>
+				<li>jewishlessonIntro->The LORD bless you and keep you; the LORD make his face shine upon you and be gracious to you; the LORD turn his face toward you and give you peace. The LORD did teach me one thing:</li>
+				<li>jewishlessonIntro->By teaching the Torah on the [place_summary] [place_name], I realized that</li>
+				<li>jewishlessonIntro->God is not a human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill? You will realize that</li>
+				<li>jewishlessonIntro->And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth. He was teaching that</li>
+				<li>jewishlessonIntro->For the life of a creature is in the blood, and I have given it to you to make atonement for yourselves on the altar; it is the blood that makes atonement for one's life. One thing will become increasingly clear then: that</li>
+				<li>jewishlessonIntro->Any man or woman who wrongs another in any way and so is unfaithful to the Lord is guilty and must confess the sin they have committed. Then they'll see that</li>
+				<li>jewishlessonIntro->In your unfailing love, you will lead the people you have redeemed. In your strength, you will guide them to your holy dwelling. Once that is achieved you will see that</li>
+				<!-- generic reinforcement -->
+				<li>lessonReinforcement->A righteous man falls down seven times and gets up.</li>
+				<li>lessonReinforcement->If you don't know what you're living for, you haven't yet lived.</li>
+				<li>lessonReinforcement->Gam zu l'tova. This too is for the good.</li>
+				<li>lessonReinforcement->I don't speak because I have the power to speak; I speak because I don't have the power to remain silent.</li>
+				<li>lessonReinforcement->There are no problems, only opportunities for growth.</li>
+				<li>lessonReinforcement->The salvation of God is like the blink of an eye.</li>
+				<li>lessonReinforcement->L’fum tzara agra, according to the effort is the reward.</li>
+				<li>lessonReinforcement->L’Chaim!</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_JainistDescription</defName>
+		<segments>
+			<li>jainistlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_jainistlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+				<li>lessonAttribution->[founder_nameFull]'s memorized sutras</li>
+				<li>revision->interpretation</li>
+				<li>revision->preserved meditations</li>
+				<li>revision->theological musings</li>
+				<li>revision->reflection</li>
+				<li>revision->rumination</li>
+				<li>book->teachings of Mahavira</li>
+				<li>book->Agamas</li>
+				<li>book->compiled sutras</li>
+				<li>book->Purvas</li>
+				<li>edition->32nd Edition</li>
+				<li>edition->43rd Edition</li>
+				<li>edition->52nd Edition</li>
+				<li>edition->57th Edition</li>
+				<!-- generic intro -->
+				<li>jainistlessonIntro->This is my country, that is your country; these are the conceptions of narrow souls - to the liberal minded the whole world is a family. I want you to understand:</li>
+				<li>jainistlessonIntro->In happiness and suffering, in joy and grief, we should regard all creatures as we regard our own self. This teaches us that</li>
+				<li>jainistlessonIntro->Some foolish men declare that a creator made the world. The doctrine that the world was created is ill advised and should be rejected. If God created the world, where was he before the creation? These musings did teach me one thing:</li>
+				<li>jainistlessonIntro->By teaching the sacred Agamas on the [place_summary] [place_name], I realized that</li>
+				<li>jainistlessonIntro->May peace rule the universe; may peace rule in kingdoms and empires; may peace rule in states and in the lands of the potentates; may peace rule in the house of friends and may peace also rule in the house of enemies. In peace you will realize that</li>
+				<li>jainistlessonIntro->We preach and practice brotherhood — not only of man but of all living beings — not on Sundays only but on all the days of the week. We believe in the law of universal justice. We preach that</li>
+				<li>jainistlessonIntro->If a person's mind is controlled by forces of revenge and jealousy, it cannot express love and sympathy. One thing will become increasingly clear then: that</li>
+				<li>jainistlessonIntro->A man is seated on top of a tree in the midst of a burning forest. He sees all living beings perish. But he doesn’t realize that the same fate is soon to overtake him also. That man is a fool. He needs to realize that</li>
+				<li>jainistlessonIntro->Attachment and aversion are the root cause of karma, and karma originates from infatuation. Karma is the root cause of birth and death, and these are said to be the source of misery. None can escape the effect of their own past karma. Once you free yourself from attachment you will see that</li>
+				<!-- generic reinforcement -->
+				<li>lessonReinforcement->Live and allow others to live; hurt no one; life is dear to all living beings.</li>
+				<li>lessonReinforcement->By sincerity, a man gains physical, mental and linguistic straightforwardness, and harmonious tendency; that is, congruence of speech and action.</li>
+				<li>lessonReinforcement->All souls are equal and alike and have the similar nature and qualities.</li>
+				<li>lessonReinforcement->Start the practice of self-control with some penance; begin with fasting.</li>
+				<li>lessonReinforcement->The nature of things is dharma.</li>
+				<li>lessonReinforcement->One who neglects or disregards the existence of earth, air, fire, water and vegetation disregards his own existence which is entwined with them.</li>
+				<li>lessonReinforcement->Soul is the central point of spiritual discipline.</li>
+				<li>lessonReinforcement->Eating constitutes the greatest obstacle to self-control; it gives rise to indolence.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_SikhDescription</defName>
+		<segments>
+			<li>sikhlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_sikhlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+			
+				<li>revision->writings</li>
+				<li>revision->contemplations</li>
+				<li>revision->theological debates</li>
+				<li>revision->pondering</li>
+				<li>revision->meditation</li>
+				<li>book->Guru Granth Sahib</li>
+				<li>book->Sarbloh Granth</li>
+				<li>book->Adi Sri Granth Sahib</li>
+				<li>book->Dasam Granth</li>
+				<li>edition->2nd Edition</li>
+				<li>edition->13th Edition</li>
+				<li>edition->38th Edition</li>
+				<li>edition->49th Edition</li>
+				<!-- generic intro -->
+				<li>sikhlessonIntro->Truth is the highest of all virtues, but higher than truth is true conduct. I want you to understand:</li>
+				<li>sikhlessonIntro->The fool indulges in sensual pleasures which in the end lead to pain. Easy and sinful life is the Cause of diseases. This teaches us that</li>
+				<li>sikhlessonIntro->Neither do I call myself good nor I see any one bad. These contemplations did teach me one thing:</li>
+				<li>sikhlessonIntro->By teaching the sacred words of the Guru Granth Sahib on the [place_summary] [place_name], I realized that</li>
+				<li>sikhlessonIntro->In this life our actions are the ink and mind the paper, we inscribe on it the two writings of good and evil. In time you will realize that</li>
+				<li>sikhlessonIntro->When the mind is not pure, what is the good of practicing outward cleanliness? We preach that</li>
+				<li>sikhlessonIntro->There is only one air, earth and only one light of the God in each being. One thing will become increasingly clear then: that</li>
+				<li>sikhlessonIntro->The word (Shabad) is the Guru, And the mind attuned to the Shabad is the disciple. He needs to realize that</li>
+				<li>sikhlessonIntro->For the sake of wealth, the mortals become servants and thieves. But it goes not with them and remains behind for another. Once you free yourself from material attachment you will see that</li>
+				<!-- generic reinforcement -->
+				<li>lessonReinforcement->The glories are in the Lord’s own hand. He blesses those with whom He is pleased.</li>
+				<li>lessonReinforcement->He alone is a wise man, who gains spiritual knowledge through meditation upon the divine virtues.</li>
+				<li>lessonReinforcement->Every one say that the Lord is one, but each one is engrossed in ego and pride.</li>
+				<li>lessonReinforcement->If he who plays the tyrant, is honoured, then deem it to be the surest sign of the Dark Age.</li>
+				<li>lessonReinforcement->A saint is better off without bathing. A thief is always a thief whether he bathes in sacred waters, or not.</li>
+				<li>lessonReinforcement->We are men of but one breath and know not the appointed time and moment of our departure from this world.</li>
+				<li>lessonReinforcement->Meet the Lord through contemplation and your anxieties will be dispelled.</li>
+				<li>lessonReinforcement->When man abandons desire, then alone does he become a true renouncer.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_KemeticDescription</defName>
+		<segments>
+			<li>kemeticlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_kemeticlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->fragment of a [edited] [book] found in [museum]</li>
+				
+				<li>edited->heavily edited</li>
+				<li>edited->poorly translated</li>
+				<li>edited->ruined</li>
+				<li>edited->forgotten</li>
+				<li>edited->recovered</li>
+				<li>book->Book of the Dead</li>
+				<li>book->papyrus</li>
+				<li>book->funerary text</li>			
+				<li>museum->the archeological museum of </li>
+				<li>museum->13th Edition</li>
+				<li>museum->38th Edition</li>
+				<li>museum->49th Edition</li>
+				<!-- generic intro -->
+				<li>kemeticlessonIntro->Truth is the highest of all virtues, but higher than truth is true conduct. I want you to understand:</li>
+				<li>kemeticlessonIntro->The fool indulges in sensual pleasures which in the end lead to pain. Easy and sinful life is the Cause of diseases. This teaches us that</li>
+				<li>kemeticlessonIntro->Neither do I call myself good nor I see any one bad. These contemplations did teach me one thing:</li>
+				<li>kemeticlessonIntro->By teaching the sacred words of the Guru Granth Sahib on the [place_summary] [place_name], I realized that</li>
+				<li>kemeticlessonIntro->In this life our actions are the ink and mind the paper, we inscribe on it the two writings of good and evil. In time you will realize that</li>
+				<li>kemeticlessonIntro->When the mind is not pure, what is the good of practicing outward cleanliness? We preach that</li>
+				<li>kemeticlessonIntro->There is only one air, earth and only one light of the God in each being. One thing will become increasingly clear then: that</li>
+				<li>kemeticlessonIntro->The word (Shabad) is the Guru, And the mind attuned to the Shabad is the disciple. He needs to realize that</li>
+				<li>kemeticlessonIntro->For the sake of wealth, the mortals become servants and thieves. But it goes not with them and remains behind for another. Once you free yourself from material attachment you will see that</li>
+				<!-- generic reinforcement -->
+				<li>lessonReinforcement->The glories are in the Lord’s own hand. He blesses those with whom He is pleased.</li>
+				<li>lessonReinforcement->He alone is a wise man, who gains spiritual knowledge through meditation upon the divine virtues.</li>
+				<li>lessonReinforcement->Every one say that the Lord is one, but each one is engrossed in ego and pride.</li>
+				<li>lessonReinforcement->If he who plays the tyrant, is honoured, then deem it to be the surest sign of the Dark Age.</li>
+				<li>lessonReinforcement->A saint is better off without bathing. A thief is always a thief whether he bathes in sacred waters, or not.</li>
+				<li>lessonReinforcement->We are men of but one breath and know not the appointed time and moment of our departure from this world.</li>
+				<li>lessonReinforcement->Meet the Lord through contemplation and your anxieties will be dispelled.</li>
+				<li>lessonReinforcement->When man abandons desire, then alone does he become a true renouncer.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>
