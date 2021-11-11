@@ -80,6 +80,10 @@
 		<worshipRoomLabel>synagogue</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>1</deityCount>
+		<exclusionTags>
+			<li>AM_Ascetic</li>
+			
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->traditional</li>

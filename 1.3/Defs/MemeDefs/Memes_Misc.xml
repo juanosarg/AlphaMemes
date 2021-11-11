@@ -1082,4 +1082,93 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
+	<MemeDef>
+		<defName>AM_Monastic</defName>
+		<label>monastic</label>
+		<description>We renounce worldly pursuits and  devote ourselves fully to spiritual work. Only through quiet contemplation and an ascetic lifestyle can we discover the true nature of the world.</description>
+		<iconPath>UI/Memes/AM_Monastic</iconPath>
+		
+		<impact>2</impact>
+		<exclusionTags>
+			<li>AM_Ascetic</li>			
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				 <li>memeCreed->root</li>
+        <li>memeCreed->leaf</li>
+        <li>memeCreed->vine</li>
+        <li>memeCreed->glade</li>
+        <li>memeCreed->forest</li>
+        <li>memeConcept->trees</li>
+        <li>memeConcept->forests</li>
+        <li>memeAdjective->sturdy</li>
+        <li>memeAdjective->barky</li>
+        <li>memeHyphenPrefix->tree</li>
+        <li>memeHyphenPrefix->arbor</li>
+        <li>memeHyphenPrefix->twig</li>
+        <li>memeLeaderNoun->treekeeper</li>
+        <li>memeLeaderNoun->arborist</li>
+        <li>memeLeaderNoun->neodruid</li>
+        <li>memeLeaderAdjective->green</li>
+        <li>memeLeaderAdjective->root</li>
+        <li>memeLeaderAdjective->canopy</li>
+        <li>memeMoralist->treespeaker</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Iconoclast)        ->[deity0_name] spoke to [deity0_possessive] followers: "You shall never erect a figure in my image, for idolatry is the greatest sin."</li>
+					<li>episode(uses=1,tag=meme_Iconoclast)  ->Speaking to the believers, [deity0_name] said: "Relics and icons are obscene to me. He who offers God a second place offers Him no place".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Iconoclast)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge temple, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Iconoclast)        ->An old [foeLeader] wanted to erect a statue of [deity0_name], but the [memberNamePlural] warned [foeLeader_objective] that it was forbidden by the tenets of their faith. The disagreement escalated into a bitter feud.</li>
+					<li>founderJoin(tag=meme_Iconoclast)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that images were obscene to [deity0_name].</li>
+					<li>victory(tag=meme_Iconoclast)         ->The [foeLeader] was convinced, and with time [foeLeader_pronoun] became one of the best iconoclasts in [deity0_name]'s clergy.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Iconoclast)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] taught that idolatry is worshipping anything that ought to be used, or using anything that is meant to be worshipped.</li>
+					<li>story(uses=1,tag=meme_Iconoclast)    ->[founderName] showed us that idolatry functions widely inside religious communities when doctrinal truth is elevated to the position of a false god.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Iconoclast)         ->The wisest man in our colony was a scholar specialized in the history of civilization, going all the way back to the ancient cultures of old Earth. He taught me that</li>
+					<li>lesson(tag=meme_Iconoclast)              ->man's mind is like a store of idolatry and superstition</li>
+					<li>lessonReinforcement(tag=meme_Iconoclast) ->Logicians may reason about abstractions. But the great mass of men must have images. The strong tendency of the multitude in all ages and nations to idolatry can be explained on no other principle.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Iconoclast)    ->The archotechs are supreme beings, a reflection of our own human image and the next logical step in our evolution.</li>
+					<li>archistFact(tag=meme_Iconoclast)     ->Archotechs frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>archistProphecy(tag=meme_Iconoclast) ->[inTheEnd], the archotechs will allow only those who shun the worship of material images to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Iconoclast)    ->The spirits frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>animistFact(tag=meme_Iconoclast)     ->As the spirits are everywhere, one must take care not to confuse the worship of a spirit with the worship of the thing it inhabits.</li>
+					<li>animistProphecy(tag=meme_Iconoclast) ->[itIsSaid] only those who shun the worship of material images will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Iconoclast)->[itIsSaid] we will destroy all images of our holy insects, because idolatry is obscene and incomprehensible to them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Iconoclast)->The eldritch entities are old and evil beyond all imagining. We will destroy all images of them, for portraying their physical form is infinitely obscene.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Iconoclast)->Such occult knowledge can only be spoken of in abstract terms. Portraying its physical form is dangerous and obscene.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Iconoclast)->We wil smash to pieces all icons, relics, and portrayals of heretic beliefs, for they are obscene.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Iconoclast)->Per company policy, employees should use moderation in decorating their workspaces to accentuate a professional and pleasant work environment without inhibiting or disrupting its intended use. A picture of your family is OK. A reliquary with remains of a Saint is DEFINITELY NOT.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Iconoclast)->These poor wayward creations of humanity remind us that science can have its own form of idolatry too, as obscene as the religious one.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Reliquaries_Forbidden</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Iconoclasm</ideoName>
+				<theme>iconoclasm</theme>
+				<adjective>iconoclast</adjective>
+				<member>iconoclast</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
 </Defs>
