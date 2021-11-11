@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_Religion</defName>
+		<label>religion</label>
+		<iconPath>UI/Issues/AM_Religion</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Religion_Despised</defName>
+		<issue>AM_Religion</issue>
+		<label>despised</label>
+		<description>We call religion the one great curse, the one great intrinsic depravity, the one great instinct of revenge, for which no means are venomous enough, or secret, subterranean and small enough – we call it the one immortal blemish upon the human race.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get a considerable opinion penalty on other colonists with religious beliefs. This covers all religious structures from this mod, VE Memes and Structures as well as vanilla Ideology, plus God Emperor meme in VE.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Religion_Despised</thought>
+				
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Religion_Despised</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<stages>
+			<li>
+				<label>religious beliefs</label>
+				<baseOpinionOffset>-60</baseOpinionOffset>
+			</li>			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>AM_Religion_Disliked</defName>
+		<issue>AM_Religion</issue>
+		<label>disliked</label>
+		<description>What millions believe is often just fairy tales for children. Glory lies in searching the truth not in believing the irrational legends.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get an opinion penalty on other colonists with religious beliefs. This covers all religious structures from this mod, VE Memes and Structures as well as vanilla Ideology, plus God Emperor meme in VE.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Religion_Disliked</thought>
+				
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Religion_Disliked</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<stages>
+			<li>
+				<label>religious beliefs</label>
+				<baseOpinionOffset>-25</baseOpinionOffset>
+			</li>			
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

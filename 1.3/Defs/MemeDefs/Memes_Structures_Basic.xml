@@ -31,6 +31,16 @@
 				<li>memeMoralist->dialectician</li>
 			</rulesStrings>
 		</generalRules>
+		<requireOne>
+			<li>
+				<li>AM_Religion_Despised</li>
+				<li>AM_Religion_Disliked</li>
+			</li>
+		</requireOne>
+		<exclusionTags>
+			<li>VME_GodEmperor</li>
+			
+		</exclusionTags>
 		<descriptionMaker>
 			<patterns>
 				<li>

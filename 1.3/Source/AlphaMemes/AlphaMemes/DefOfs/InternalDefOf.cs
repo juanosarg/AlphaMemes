@@ -49,14 +49,25 @@ namespace AlphaMemes
 		public static HistoryEventDef AM_BuildingReliquary;
 
 		public static ThingDef AM_TrapBlunt;
-
 		public static ThingDef AM_AnimalDatabase;
-
 		public static ThingDef AM_BlocksPristineLimestone;
 
 		public static MemeDef AM_Madness;
-
 		public static MemeDef AM_BiologicalDefilers;
+		public static MemeDef AM_Structure_Jewish;
+		public static MemeDef AM_Structure_Jainism;
+		public static MemeDef AM_Structure_Sikhism;
+		public static MemeDef AM_Structure_Kemetism;
+		public static MemeDef Structure_Animist;
+		public static MemeDef Structure_TheistEmbodied;
+		public static MemeDef Structure_TheistAbstract;
+		public static MemeDef Structure_Archist;
+		public static MemeDef Structure_OriginChristian;
+		public static MemeDef Structure_OriginIslamic;
+		public static MemeDef Structure_OriginHindu;
+		public static MemeDef Structure_OriginBuddhist;
+	
+
 
 		public static HediffDef AM_CatharsisHediff;
 		public static HediffDef AM_UtilityDryadHediff;

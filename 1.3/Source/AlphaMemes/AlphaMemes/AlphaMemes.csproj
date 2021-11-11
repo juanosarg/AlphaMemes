@@ -317,6 +317,7 @@
     <Compile Include="Harmony\Thing_Notify_Equipped.cs" />
     <Compile Include="Harmony\WorkGiver_Tame_JobOnThing.cs" />
     <Compile Include="Harmony\WorkGiver_Train_JobOnThing.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_ReligiousMemes.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_WeaponRanges.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
@@ -341,6 +342,7 @@
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
     <Compile Include="Thoughts\Thought_Mood_Volatile.cs" />
+    <Compile Include="Thoughts\Thought_Religion_Despised.cs" />
     <Compile Include="Thoughts\Thought_Reliquaries_Forbidden.cs" />
   </ItemGroup>
   <ItemGroup />
