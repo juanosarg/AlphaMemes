@@ -356,6 +356,41 @@
 		
 	</StyleCategoryDef>
 	
+	<StyleCategoryDef>
+		<defName>AM_Atheist</defName>
+		<label>atheist</label>
+		<iconPath>UI/Structures/AM_Atheist</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Atheism</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_AtheismVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>AM_Jain</defName>
+		<label>jain</label>
+		<iconPath>UI/Structures/AM_JainOrigins</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Jain</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_JainVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	<StyleCategoryDef>
+		<defName>AM_Sikh</defName>
+		<label>sikh</label>
+		<iconPath>UI/Structures/AM_SikhOrigins</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Sikh</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_SikhVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
+	
 
 
 </Defs>

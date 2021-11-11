@@ -34,7 +34,7 @@
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_EsotericismDescription</def>
+					<def>AM_AtheismDescription</def>
 				</li>
 			</patterns>
 			<constants>
@@ -53,7 +53,7 @@
 		</symbolPacks>
 		<thingStyleCategories>
 			<li>
-				<category>VME_Esotericism</category>
+				<category>AM_Atheist</category>
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
@@ -163,7 +163,7 @@
 		</symbolPacks>
 		<thingStyleCategories>
 			<li>
-				<category>VME_Esotericism</category>
+				<category>AM_Jain</category>
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
@@ -206,12 +206,12 @@
 			<li>
 				<theme>sikhism</theme>
 				<adjective>sikh</adjective>
-				<member>jain</member>
+				<member>sikh</member>
 			</li>
 		</symbolPacks>
 		<thingStyleCategories>
 			<li>
-				<category>VME_Esotericism</category>
+				<category>AM_Sikh</category>
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
@@ -246,12 +246,12 @@
 		<descriptionMaker>
 			<patterns>
 				<li>
-					<def>VME_EsotericismDescription</def>
+					<def>AM_KemeticDescription</def>
 				</li>
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_esotericism</key>
+					<key>structure_kemetic</key>
 					<value>true</value>
 				</li>
 			</constants>
