@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IssueDef>
+		<defName>AM_Barracks</defName>
+		<label>barracks</label>
+		<iconPath>UI/Issues/AM_Barracks</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Barracks_Preferred</defName>
+		<issue>AM_Barracks</issue>
+		<label>preferred</label>
+		<description>A communal living space allows us to meditate and contemplate the meaning of this life together. Private rooms are an unnecessary frivolity.</description>
+		<impact>Medium</impact>
+	
+		
+		
+	</PreceptDef>
+	
+	
+</Defs>

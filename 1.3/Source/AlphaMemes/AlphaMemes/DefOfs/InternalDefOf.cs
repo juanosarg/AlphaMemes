@@ -14,28 +14,20 @@ namespace AlphaMemes
 		}
 
 		public static PreceptDef AM_Violence_Abhorrent_Strict;
-
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
 		public static PreceptDef AM_Art_Desired;
 		public static PreceptDef AM_ArtQuality_Expected;
-
 		public static PreceptDef AM_AnimalDespised;
-
 		public static PreceptDef AM_Bonding_Abhorrent;
-
 		public static PreceptDef AM_Dryads_Enhanced;
-
 		public static PreceptDef AM_Armour_Blunt;
 		public static PreceptDef AM_Armour_Sharp;
 		public static PreceptDef AM_Armour_Heat;
-
 		public static PreceptDef AM_Mood_Volatile;
 		public static PreceptDef AM_CombatProwess_Increased;
 		public static PreceptDef AM_CombatProwess_Melee;
-
 		public static PreceptDef AM_Reliquaries_Forbidden;
-
-
+		public static PreceptDef AM_Barracks_Preferred;
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -67,8 +59,6 @@ namespace AlphaMemes
 		public static MemeDef Structure_OriginHindu;
 		public static MemeDef Structure_OriginBuddhist;
 	
-
-
 		public static HediffDef AM_CatharsisHediff;
 		public static HediffDef AM_UtilityDryadHediff;
 		public static HediffDef AM_CombatDryadHediff;

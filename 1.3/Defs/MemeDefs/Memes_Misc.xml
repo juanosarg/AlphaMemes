@@ -1085,7 +1085,7 @@
 	<MemeDef>
 		<defName>AM_Monastic</defName>
 		<label>monastic</label>
-		<description>We renounce worldly pursuits and  devote ourselves fully to spiritual work. Only through quiet contemplation and an ascetic lifestyle can we discover the true nature of the world.</description>
+		<description>We renounce worldly pursuits and  devote ourselves fully to spiritual work. Only through quiet contemplation and an ascetic lifestyle can we discover the true nature of the world.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists in an ideo with this meme will have the Ascetic trait.</description>
 		<iconPath>UI/Memes/AM_Monastic</iconPath>
 		
 		<impact>2</impact>
@@ -1094,81 +1094,92 @@
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
-				 <li>memeCreed->root</li>
-        <li>memeCreed->leaf</li>
-        <li>memeCreed->vine</li>
-        <li>memeCreed->glade</li>
-        <li>memeCreed->forest</li>
-        <li>memeConcept->trees</li>
-        <li>memeConcept->forests</li>
-        <li>memeAdjective->sturdy</li>
-        <li>memeAdjective->barky</li>
-        <li>memeHyphenPrefix->tree</li>
-        <li>memeHyphenPrefix->arbor</li>
-        <li>memeHyphenPrefix->twig</li>
-        <li>memeLeaderNoun->treekeeper</li>
-        <li>memeLeaderNoun->arborist</li>
-        <li>memeLeaderNoun->neodruid</li>
-        <li>memeLeaderAdjective->green</li>
-        <li>memeLeaderAdjective->root</li>
-        <li>memeLeaderAdjective->canopy</li>
-        <li>memeMoralist->treespeaker</li>
-				
+				<li>memeCreed->asceticism</li>
+				<li>memeCreed->monastic life</li>
+				<li>memeCreed->austerity</li>
+				<li>memeCreed->self-discipline</li>
+				<li>memeCreed->simplicity</li>
+				<li>memeConcept->moderation</li>
+				<li>memeConcept->self-restraint</li>
+				<li>memeAdjective->monastic</li>
+				<li>memeAdjective->austere</li>
+				<li>memeHyphenPrefix->monk</li>				
+				<li>memeLeaderNoun->friar</li>
+				<li>memeLeaderNoun->abbot</li>
+				<li>memeLeaderNoun->prior</li>
+						
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
 					<!-- theist myth -->
-					<li>creation(tag=meme_Iconoclast)        ->[deity0_name] spoke to [deity0_possessive] followers: "You shall never erect a figure in my image, for idolatry is the greatest sin."</li>
-					<li>episode(uses=1,tag=meme_Iconoclast)  ->Speaking to the believers, [deity0_name] said: "Relics and icons are obscene to me. He who offers God a second place offers Him no place".</li>
+					<li>creation(tag=meme_Monastic)        ->[deity0_name] spoke to [deity0_possessive] followers: "Silence will illuminate you in my eyes... and deliver you from phantoms of ignorance."</li>
+					<li>episode(uses=1,tag=meme_Monastic)  ->Speaking to the believers, [deity0_name] said: "Study the scriptures, observe monastic discipline, and sing the daily services in church; study, teaching, and write, for all these things please me".</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_Iconoclast)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge temple, for the glory of [deity0_name].</li>
-					<li>conflict(tag=meme_Iconoclast)        ->An old [foeLeader] wanted to erect a statue of [deity0_name], but the [memberNamePlural] warned [foeLeader_objective] that it was forbidden by the tenets of their faith. The disagreement escalated into a bitter feud.</li>
-					<li>founderJoin(tag=meme_Iconoclast)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that images were obscene to [deity0_name].</li>
-					<li>victory(tag=meme_Iconoclast)         ->The [foeLeader] was convinced, and with time [foeLeader_pronoun] became one of the best iconoclasts in [deity0_name]'s clergy.</li>
+					<li>intro(tag=meme_Monastic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge monastery, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Monastic)        ->An old [foeLeader] saw the austere and humble lifestyle of the [memberNamePlural] and despised what [foeLeader_pronoun] saw. In [foeLeader_possessive] eyes the monastery had to be destroyed.</li>
+					<li>founderJoin(tag=meme_Monastic)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that the monastery was a testament to [deity0_name]'s Will.</li>
+					<li>victory(tag=meme_Monastic)         ->The [foeLeader] was convinced, and decided to spend the rest of [foeLeader_possessive] life in monastic seclusion.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_Iconoclast)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] taught that idolatry is worshipping anything that ought to be used, or using anything that is meant to be worshipped.</li>
-					<li>story(uses=1,tag=meme_Iconoclast)    ->[founderName] showed us that idolatry functions widely inside religious communities when doctrinal truth is elevated to the position of a false god.</li>
+					<li>setup(tag=meme_Monastic)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] posited that a life of gluttony and vices is meaningless, and that only by living an austere, monastic life can one reach true enlightenment.</li>
+					<li>story(uses=1,tag=meme_Monastic)    ->[founderName] showed us that spending your life in contemplation and meditation is a truly worthy endeavour.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Iconoclast)         ->The wisest man in our colony was a scholar specialized in the history of civilization, going all the way back to the ancient cultures of old Earth. He taught me that</li>
-					<li>lesson(tag=meme_Iconoclast)              ->man's mind is like a store of idolatry and superstition</li>
-					<li>lessonReinforcement(tag=meme_Iconoclast) ->Logicians may reason about abstractions. But the great mass of men must have images. The strong tendency of the multitude in all ages and nations to idolatry can be explained on no other principle.</li>
+					<li>lessonIntro(tag=meme_Monastic)         ->The oldest yogi in our colony was a scholar on the art of Transcendental Meditation. He taught me that</li>
+					<li>lesson(tag=meme_Monastic)              ->spending your life in contemplation and meditation is a truly worthy endeavour</li>
+					<li>lessonReinforcement(tag=meme_Monastic) ->A life of gluttony and vices is meaningless, and only by living an austere, monastic life can one reach true enlightenment.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_Iconoclast)    ->The archotechs are supreme beings, a reflection of our own human image and the next logical step in our evolution.</li>
-					<li>archistFact(tag=meme_Iconoclast)     ->Archotechs frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
-					<li>archistProphecy(tag=meme_Iconoclast) ->[inTheEnd], the archotechs will allow only those who shun the worship of material images to transcend.</li>
+					<li>archistBasis(tag=meme_Monastic)    ->The archotechs are supreme beings, able to span the whole of existence with their vast minds.</li>
+					<li>archistFact(tag=meme_Monastic)     ->A life of gluttony and vices is obscene to the archotechs, and only by living an austere, monastic life can one reach true transcendence.</li>
+					<li>archistProphecy(tag=meme_Monastic) ->[inTheEnd], the archotechs will allow only those who spend their life in contemplation and meditation to transcend.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_Iconoclast)    ->The spirits frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
-					<li>animistFact(tag=meme_Iconoclast)     ->As the spirits are everywhere, one must take care not to confuse the worship of a spirit with the worship of the thing it inhabits.</li>
-					<li>animistProphecy(tag=meme_Iconoclast) ->[itIsSaid] only those who shun the worship of material images will one day commune fully with the spirits, becoming one with them.</li>
+					<li>animistBasis(tag=meme_Monastic)    ->The spirits are pure minds, observing all of creation from behind the veil.</li>
+					<li>animistFact(tag=meme_Monastic)     ->A life of gluttony and vices is obscene to the spirits, and only by living an austere, monastic life can one reach true enlightenment.</li>
+					<li>animistProphecy(tag=meme_Monastic) ->[itIsSaid] only those who spend their life in contemplation and meditation will one day commune fully with the spirits.</li>
 					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_Iconoclast)->[itIsSaid] we will destroy all images of our holy insects, because idolatry is obscene and incomprehensible to them.</li>
+					<li>serketistProphecy(tag=meme_Monastic)->[itIsSaid] we will spend our lives in contemplation and meditation, singing the praises to our beloved insects.</li>
 					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_Iconoclast)->The eldritch entities are old and evil beyond all imagining. We will destroy all images of them, for portraying their physical form is infinitely obscene.</li>
+					<li>chthonianProphecy(tag=meme_Monastic)->The eldritch entities prey on the vices of humanity. As such, we will spend our lives in contemplation and meditation, adhering to a monastic lifestyle that won't attract their unwanted attentions.</li>
 					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_Iconoclast)->Such occult knowledge can only be spoken of in abstract terms. Portraying its physical form is dangerous and obscene.</li>
+					<li>esotericismProphecy(tag=meme_Monastic)->Such occult knowledge requires a serene mind. We will spend our lives in contemplation and meditation and thus reach true enlightenment.</li>
 					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_Iconoclast)->We wil smash to pieces all icons, relics, and portrayals of heretic beliefs, for they are obscene.</li>
+					<li>eschatologismFact(tag=meme_Monastic)->The obscene vices of humanity are abhorrent, and should be destroyed. We will spend our lives in contemplation and meditation and the end of all things will find us pure of mind.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_Iconoclast)->Per company policy, employees should use moderation in decorating their workspaces to accentuate a professional and pleasant work environment without inhibiting or disrupting its intended use. A picture of your family is OK. A reliquary with remains of a Saint is DEFINITELY NOT.</li>
+					<li>introMemo(tag=meme_Monastic)->We are happy to announce that per our austerity policy we are beginning a meditation program. The program will begin with some initial training that teaching employees how to meditate. We will provide access to in-person training, online classes, recorded materials and a combination of all of these.</li>
 					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_Iconoclast)->These poor wayward creations of humanity remind us that science can have its own form of idolatry too, as obscene as the religious one.</li>
+					<li>alienistProphecy(tag=meme_Monastic)->These poor wayward creations of humanity remind us that science has led us through a path of excess and vices, and only by rejecting these can we reach true enlightenment.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
 		<requireOne>
 			<li>
-				<li>AM_Reliquaries_Forbidden</li>
+				<li>RoughLiving_Welcomed</li>
 			</li>
+			<li>
+				<li>VME_Alcohol_MildAbstinence</li>
+				<li>DrugUse_MedicalOnly</li>
+				<li>DrugUse_Prohibited</li>
+			</li>
+			<li>
+				<li>VME_AutomationEfficiency_Decreased</li>
+			</li>
+			<li>
+				<li>AM_Barracks_Preferred</li>
+			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
-				<ideoName>Iconoclasm</ideoName>
-				<theme>iconoclasm</theme>
-				<adjective>iconoclast</adjective>
-				<member>iconoclast</member>
+				<ideoName>Monasticism</ideoName>
+				<theme>monasticism</theme>
+				<adjective>monastic</adjective>
+				<member>monk</member>
 			</li>
 		</symbolPacks>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<forcedTrait>Ascetic</forcedTrait>
+			</li>
+		</modExtensions>
 	</MemeDef>
 </Defs>
