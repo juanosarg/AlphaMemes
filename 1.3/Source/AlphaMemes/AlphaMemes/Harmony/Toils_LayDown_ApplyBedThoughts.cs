@@ -29,16 +29,16 @@ namespace AlphaMemes
 					
 					if (building_Bed.GetRoom().Role == RoomRoleDefOf.Barracks)
 					{
-						ThoughtDef thoughtDef = ThoughtDefOf.SleptInBarracks;
-					}
-					if (thoughtDef != null)
-					{
+						ThoughtDef thoughtDef = InternalDefOf.AM_SleptInBarracksMonastic;
 						int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(building_Bed.GetRoom().GetStat(RoomStatDefOf.Impressiveness));
 						if (thoughtDef.stages[scoreStageIndex] != null)
 						{
 							actor.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(thoughtDef, scoreStageIndex));
 						}
 					}
+					
+						
+					
 				}
 			}
 

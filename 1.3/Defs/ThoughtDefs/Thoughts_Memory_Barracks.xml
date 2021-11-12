@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <ThoughtDef>
+    <defName>AM_SleptInBarracksMonastic</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>awful barrack</label>
+        <description>We appreciate the monastic, austere lifestyle, but this place is a PIT.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+      <li>
+        <label>dull barrack</label>
+        <description>We appreciate the monastic, austere lifestyle, but this place could use a little bit of cleaning and organization.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>austere barrack</label>
+        <description>I slept in a barrack with my brothers and sisters. This pleases me.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>well organized barrack</label>
+        <description>I slept in a decent, well organized barrack. This is really perfect: the correct way to share a communal living space. I love it.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>contemplative barrack</label>
+        <description>I got to sleep in a pretty nice barrack. A nice place to meditate and contemplate the reality of human condition, but I'd prefer it if it was simpler.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive barrack</label>
+        <description>I got to sleep in an impressive barrack. I honestly think it is too much. I would prefer simpler accomodations.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>too luxurious barrack</label>
+        <description>I slept in a quite luxurious barrack. I honestly think it is too much. I would prefer simpler accomodations.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive barrack</label>
+        <description>I slept in an extremely impressive barrack. I honestly think this is way too much. We need to tone down the obscene display of wealth.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive barrack</label>
+        <description>The barrack I slept in was too impressive. We are not princes and living in such a palace is obscene.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>wondrously impressive barrack</label>
+        <description>Disgusting. An obscene display of wealth and vice.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

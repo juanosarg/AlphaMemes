@@ -1157,6 +1157,9 @@
 			</li>
 			<li>
 				<li>VME_Alcohol_MildAbstinence</li>
+			</li>
+			<li>
+				<li>DrugUse_MedicalOrSocial</li>
 				<li>DrugUse_MedicalOnly</li>
 				<li>DrugUse_Prohibited</li>
 			</li>
