@@ -1012,7 +1012,7 @@
 		<label>iconoclast</label>
 		<description>Religious images, icons, relics, artefacts, they are all obscene and should be destroyed.</description>
 		<iconPath>UI/Memes/AM_Iconoclast</iconPath>
-		
+		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
 			
@@ -1081,14 +1081,17 @@
 				<member>iconoclast</member>
 			</li>
 		</symbolPacks>
+		<addDesignators>
+			<li>AM_RelicSmashingAltar</li>
+		</addDesignators>
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Monastic</defName>
 		<label>monastic</label>
 		<description>We renounce worldly pursuits and  devote ourselves fully to spiritual work. Only through quiet contemplation and an ascetic lifestyle can we discover the true nature of the world.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists in an ideo with this meme will have the Ascetic trait.</description>
 		<iconPath>UI/Memes/AM_Monastic</iconPath>
-		
-		<impact>2</impact>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
 		<exclusionTags>
 			<li>AM_Ascetic</li>			
 		</exclusionTags>
@@ -1169,8 +1172,15 @@
 			<li>
 				<li>AM_Barracks_Preferred</li>
 			</li>
+			<li>
+				<li>Lovin_Prohibited</li>
+				<li>Lovin_SpouseOnly_Strict</li>				
+			</li>
 			
 		</requireOne>
+		<agreeableTraits>
+			<li>Ascetic</li>
+		</agreeableTraits>
 		<symbolPacks>
 			<li>
 				<ideoName>Monasticism</ideoName>

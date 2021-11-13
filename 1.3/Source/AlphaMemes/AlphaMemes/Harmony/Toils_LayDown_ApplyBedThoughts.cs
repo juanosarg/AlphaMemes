@@ -33,12 +33,20 @@ namespace AlphaMemes
 						int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(building_Bed.GetRoom().GetStat(RoomStatDefOf.Impressiveness));
 						if (thoughtDef.stages[scoreStageIndex] != null)
 						{
-							actor.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(thoughtDef, scoreStageIndex));
+							Thought_Memory thisThought = ThoughtMaker.MakeThought(thoughtDef, scoreStageIndex);
+							thisThought.sourcePrecept = actor.ideo?.Ideo?.GetPrecept(InternalDefOf.AM_Barracks_Preferred);
+							actor.needs.mood.thoughts.memories.TryGainMemory(thisThought);
 						}
 					}
+					if (building_Bed.GetRoom().Role == RoomRoleDefOf.Bedroom)
+					{
+						ThoughtDef thoughtDef = InternalDefOf.AM_SleptInPrivateRoomMonastic;
+						actor.needs.mood.thoughts.memories.TryGainMemory(thoughtDef, null, actor.ideo?.Ideo?.GetPrecept(InternalDefOf.AM_Barracks_Preferred));
 					
-						
-					
+					}
+
+
+
 				}
 			}
 

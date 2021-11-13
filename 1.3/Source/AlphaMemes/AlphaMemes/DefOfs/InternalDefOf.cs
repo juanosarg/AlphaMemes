@@ -67,6 +67,7 @@ namespace AlphaMemes
 		public static SoundDef AM_RitualSustainer_MaddeningChant;
 
 		public static ThoughtDef AM_SleptInBarracksMonastic;
+		public static ThoughtDef AM_SleptInPrivateRoomMonastic;
 
 		public static PawnKindDef Dryad_Woodmaker;
 		public static PawnKindDef Dryad_Berrymaker;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_RelicDestructionPattern</defName>
+    <ritualBehavior>AM_RelicDestructionBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>AM_DestructionAltarTarget</ritualObligationTargetFilter>
+  
+    <ritualOutcomeEffect>AM_RelicDestructionOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<playsIdeoMusic>false</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>
