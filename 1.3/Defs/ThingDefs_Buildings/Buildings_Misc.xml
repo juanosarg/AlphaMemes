@@ -6,7 +6,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AM_RelicSmashingAltar</defName>
     <label>relic smashing altar</label>
-    <description>A ceremonial building that protects and displays a relic. Relics are ancient objects venerated by believers of a specific ideoligion.</description>
+    <description>A small bowl with capacity for one relic. Relics can be slotted in the altar to start a relic destruction ritual, but the colonists won't extract the relic from it.</description>
     <statBases>
       <MaxHitPoints>350</MaxHitPoints>
       <WorkToBuild>40000</WorkToBuild>
