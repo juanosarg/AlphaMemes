@@ -3,7 +3,7 @@
 
   <RitualObligationTargetFilterDef>
     <defName>AM_DestructionAltarTarget</defName>
-    <workerClass>RitualObligationTargetWorker_ThingDef</workerClass>
+    <workerClass>AlphaMemes.RitualObligationTargetWorker_DestructionAltar</workerClass>
     <thingDefs>
       <li>AM_RelicSmashingAltar</li>
     </thingDefs>

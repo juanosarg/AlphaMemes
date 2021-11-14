@@ -49,8 +49,8 @@
     <designationCategory>Misc</designationCategory>
     <comps>
       <li Class="CompProperties_ThingContainer">
-        <compClass>CompRelicContainer</compClass>
-        <containedThingOffset>(0,0,1)</containedThingOffset>
+        <compClass>AlphaMemes.CompRelicSmashingContainer</compClass>
+        <containedThingOffset>(0,0,0)</containedThingOffset>
         <stackLimit>1</stackLimit>
       </li>
     </comps>

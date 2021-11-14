@@ -22,5 +22,8 @@
 	<AM_AnimalAlreadyScanned>This animal has already been scanned for the database</AM_AnimalAlreadyScanned>
 	<AM_AnimalScanned>{0} has been scanned into the animal database</AM_AnimalScanned>
 	<AM_CompletionDescription>Database completion rate at {0}</AM_CompletionDescription>
+	<AM_InstallInReliquary>Install in relic smashing altar</AM_InstallInReliquary>
+	<AM_NoEmptyReliquary>no empty accessible relic smashing altar</AM_NoEmptyReliquary>
+	<AM_NeedsFullAltar>Relic smashing altar needs to have a relic installed to start the ritual</AM_NeedsFullAltar>
 	
 </LanguageData>

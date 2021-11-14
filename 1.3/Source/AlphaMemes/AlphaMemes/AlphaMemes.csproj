@@ -302,14 +302,18 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityAnalyzeCreature.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityFinishConstruction.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityPsychicDeathKnell.cs" />
+    <Compile Include="AI\JobDriver_InstallRelicInSmashingAltar.cs" />
     <Compile Include="Buildings\Building_AnimalDatabase.cs" />
     <Compile Include="Buildings\Building_TrapDamagerBlunt.cs" />
+    <Compile Include="Comps\CompRelicSmashingContainer.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
+    <Compile Include="Harmony\FloatMenuMakerMap_AddHumanlikeOrders.cs" />
     <Compile Include="Harmony\GenConstruct_CanConstruct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
+    <Compile Include="Harmony\Precept_Relic_Notify_ThingLost.cs" />
     <Compile Include="Harmony\ReleaseAnimalToWildUtility_DoReleaseAnimal.cs" />
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
@@ -319,7 +323,7 @@
     <Compile Include="Harmony\Toils_LayDown_ApplyBedThoughts.cs" />
     <Compile Include="Harmony\WorkGiver_Tame_JobOnThing.cs" />
     <Compile Include="Harmony\WorkGiver_Train_JobOnThing.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_ReligiousMemes.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_ReligiousMemesAndRelics.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_WeaponRanges.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
@@ -330,6 +334,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
+    <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
+    <Compile Include="Rituals\TargetWorkers\RitualObligationTargetWorker_DestructionAltar.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
     <Compile Include="StatPartDefs\StatPart_ExtraBlunt.cs" />
     <Compile Include="StatPartDefs\StatPart_ExtraHeat.cs" />
@@ -344,6 +350,7 @@
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
     <Compile Include="Thoughts\Thought_Mood_Volatile.cs" />
+    <Compile Include="Thoughts\Thought_RelicDestruction_Desired.cs" />
     <Compile Include="Thoughts\Thought_Religion_Despised.cs" />
     <Compile Include="Thoughts\Thought_Reliquaries_Forbidden.cs" />
   </ItemGroup>

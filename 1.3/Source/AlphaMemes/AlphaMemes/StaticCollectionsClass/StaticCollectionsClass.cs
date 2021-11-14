@@ -18,6 +18,8 @@ namespace AlphaMemes
 
         public static int artInTheMap = 0;
 
+        public static int relicsDestroyedThisGame = 0;
+
         public static float databaseCompletion = 0;
 
         public static float artBeautyInTheMap = 0;

@@ -13,6 +13,8 @@ namespace AlphaMemes
 			DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
 		}
 
+		public static JobDef AM_InstallRelic;
+
 		public static PreceptDef AM_Violence_Abhorrent_Strict;
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
 		public static PreceptDef AM_Art_Desired;
@@ -43,6 +45,7 @@ namespace AlphaMemes
 		public static ThingDef AM_TrapBlunt;
 		public static ThingDef AM_AnimalDatabase;
 		public static ThingDef AM_BlocksPristineLimestone;
+		public static ThingDef AM_RelicSmashingAltar;
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
@@ -58,11 +61,14 @@ namespace AlphaMemes
 		public static MemeDef Structure_OriginIslamic;
 		public static MemeDef Structure_OriginHindu;
 		public static MemeDef Structure_OriginBuddhist;
-	
+		public static MemeDef AM_Iconoclast;
+
+
 		public static HediffDef AM_CatharsisHediff;
 		public static HediffDef AM_UtilityDryadHediff;
 		public static HediffDef AM_CombatDryadHediff;
 		public static HediffDef AM_GenericDryadHediff;
+		public static HediffDef AM_IconoclastHediff;
 
 		public static SoundDef AM_RitualSustainer_MaddeningChant;
 

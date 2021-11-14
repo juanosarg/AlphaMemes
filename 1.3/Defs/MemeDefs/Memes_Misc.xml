@@ -1072,6 +1072,9 @@
 			<li>
 				<li>AM_Reliquaries_Forbidden</li>
 			</li>
+			<li>
+				<li>AM_RelicDestruction_Desired</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>

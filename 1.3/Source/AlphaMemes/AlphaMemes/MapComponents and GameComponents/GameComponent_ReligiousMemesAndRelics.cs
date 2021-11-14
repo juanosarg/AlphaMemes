@@ -7,18 +7,25 @@ using System.Collections.Generic;
 
 namespace AlphaMemes
 {
-    public class GameComponent_ReligiousMemes : GameComponent
+    public class GameComponent_ReligiousMemesAndRelics : GameComponent
     {
+       
+        public int relicsDestroyedThisGame = 0;
 
-
-
-        public GameComponent_ReligiousMemes(Game game) : base()
+        public GameComponent_ReligiousMemesAndRelics(Game game) : base()
         {
 
         }
-
+        public override void ExposeData()
+        {
+            base.ExposeData();         
+            Scribe_Values.Look<int>(ref this.relicsDestroyedThisGame, "relicsDestroyedThisGame", 0, true);
+          
+        }
         public override void FinalizeInit()
         {
+            StaticCollectionsClass.relicsDestroyedThisGame = relicsDestroyedThisGame;
+
             if (DefDatabase<MemeDef>.GetNamedSilentFail("VME_Structure_Serketist") != null)
             {
                 StaticCollectionsClass.AddReligiousMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_Structure_Serketist"));
@@ -36,6 +43,8 @@ namespace AlphaMemes
 
             base.FinalizeInit();
         }
+
+       
 
 
 

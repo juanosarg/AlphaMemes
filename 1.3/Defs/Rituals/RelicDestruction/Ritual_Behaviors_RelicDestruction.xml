@@ -5,7 +5,7 @@
   
  <RitualBehaviorDef>
     <defName>AM_RelicDestructionBehavior</defName>
-   <workerClass>AlphaMemes.RitualBehaviorWorker_MaddeningChant</workerClass>
+   
     <durationTicks>7500</durationTicks>
     <preceptRequirements><li Class="PreceptRequirement_Altar"/></preceptRequirements>
     <roles Inherit="False">

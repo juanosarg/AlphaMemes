@@ -5,8 +5,8 @@
 
 	<RitualOutcomeEffectDef>
     <defName>AM_RelicDestructionOutcome</defName>
-    <description>If the incantation ritual goes well (positive outcome) it will provide a mood bonus and cause mental breaks. A negative outcome will have no effect except a mood penalty.</description>
-    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_MaddeningChant</workerClass>
+    <description>If the relic destruction ritual goes well (positive outcome) it will provide a mood bonus. A negative outcome will cause a mood penalty. In any case, the relic will be destroyed and all followers of the same ideo will get a permanent stat bonus.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_RelicDestruction</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_RoomStat">
         <label>room impressiveness</label>
@@ -47,35 +47,20 @@
     </comps>
     <outcomeChances>
       <li>
-        <label>Rational</label>
-        <chance>0.10</chance>
-        <memory>AM_RationalMaddeningChant</memory>
-        <description>The {0} was rational and sane! What was that? There was no shared insanity, no cackling forbidden whispers of madness. What a bore.</description>
+        <label>Boring</label>
+        <chance>0.5</chance>
+        <memory>AM_BoringRelicDestruction</memory>
+        <description>The {0} was a bit boring, but we got rid of an obscene idol, and that will only make our beliefs stronger.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
-        <label>Deranged</label>
-        <chance>0.15</chance>
-        <memory>AM_DerangedMaddeningChant</memory>
-        <description>The {0} was suitably deranged. One person's craziness is another person's reality.</description>
+        <label>Entertaining</label>
+        <chance>0.5</chance>
+        <memory>AM_EntertainingRelicDestruction</memory>
+        <description>The {0} was entertaining. We got rid of an obscene idol, and that will only make our beliefs stronger.</description>
         <positivityIndex>1</positivityIndex>
       </li>
-      <li>
-        <label>Psychotic</label>
-        <chance>0.55</chance>
-        <memory>AM_PsychoticMaddeningChant</memory>
-       
-        <description>The {0} was psychotic. There's a fine line between genius and insanity. We have erased this line.</description>
-        <positivityIndex>2</positivityIndex>
-      </li>
-      <li>
-        <label>Insane</label>
-        <chance>0.2</chance>
-        <memory>AM_InsaneMaddeningChant</memory>
-      
-        <description>The {0} was thoroughly insane! Sweet, crazy conversations full of half sentences, daydreams and misunderstandings more thrilling than understanding could ever be.</description>
-        <positivityIndex>3</positivityIndex>
-      </li>
+     
     </outcomeChances>
   </RitualOutcomeEffectDef>
 

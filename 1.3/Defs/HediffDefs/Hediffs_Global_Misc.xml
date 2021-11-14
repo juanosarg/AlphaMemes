@@ -152,4 +152,108 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>AM_IconoclastHediff</defName>
+		
+		<label>feeling righteous</label>
+		<description>The destruction of an ancient relic is filling this person with increased confidence and righteousness.</description>
+		
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		
+		<stages>
+			<li>				
+				<painFactor>0.95</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.03</offset>
+					</li>					
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.03</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>				
+				<painFactor>0.9</painFactor>
+				<minSeverity>0.29</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.06</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.06</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.06</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.06</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.06</offset>
+					</li>					
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.06</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>				
+				<painFactor>0.85</painFactor>
+				<minSeverity>0.59</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.10</offset>
+					</li>					
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		
+	</HediffDef>
 </Defs>

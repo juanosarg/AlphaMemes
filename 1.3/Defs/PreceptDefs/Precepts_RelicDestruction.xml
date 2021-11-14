@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_RelicDestruction</defName>
+		<label>relic destruction</label>
+		<iconPath>UI/Issues/AM_RelicDestructionPrecept</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_RelicDestruction_Desired</defName>
+		<issue>AM_RelicDestruction</issue>
+		<label>desired</label>
+		<description>We will get rid of any obscene idols. They are disgusting and need to be destroyed.</description>
+		<impact>High</impact>
+		<requiredMemes>
+			<li>AM_Iconoclast</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>AM_Iconoclast</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_RelicDestruction_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>Destroyed a relic</li>
+					<li>Destroyed two relics</li>
+					<li>Destroyed three or more relics</li>
+					
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>AM_RelicDestruction_Desired</defName>
+		
+		<workerClass>AlphaMemes.Thought_RelicDestruction_Desired</workerClass>
+		<stages>
+			<li>
+				<label>destroyed a relic</label>
+				<description>We destroyed a relic. Feels good to get rid of such obscene idols.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>destroyed two relics</label>
+				<description>We destroyed two relics. We won't rest until we have destroyed all the false images.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>destroyed three or more relics</label>
+				<description>We destroyed three or more relics. The entire world will be purged of such obscene representations.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			
+			
+		</stages>
+	</ThoughtDef>
+</Defs>
