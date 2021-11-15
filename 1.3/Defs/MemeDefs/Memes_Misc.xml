@@ -1010,7 +1010,7 @@
 	<MemeDef>
 		<defName>AM_Iconoclast</defName>
 		<label>iconoclast</label>
-		<description>Religious images, icons, relics, artefacts, they are all obscene and should be destroyed.</description>
+		<description>Religious images, icons, relics, artefacts, they are all obscene and should be destroyed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This meme doesn't change the way you acquire the relics.</description>
 		<iconPath>UI/Memes/AM_Iconoclast</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>

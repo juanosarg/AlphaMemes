@@ -11,6 +11,14 @@
 		<label>abhorrent (strict)</label>
 		<description>Strive for peace within yourself. Refuse to retaliate in the face of provocation and violence. Persevere in nonviolence of tongue and heart.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All persons joining this ideoligion will take a solemn nonviolence vow.\n - The only mental break allowed is psychotic wander.\n - Colonists will receive negative mood if ANY human casualties take place on the colony.</description>
 		<impact>High</impact>
+		  <associatedMemes>
+      <li>AM_NonViolence</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_NonViolence</li>
+      
+    </requiredMemes>
 		<displayOrderInIssue>70</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<comps>
