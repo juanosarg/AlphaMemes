@@ -352,6 +352,13 @@
 			<li>AM_KemeticSlab_Medium</li>
 			<li>AM_KemeticSlab_Broad</li>
 		</addDesignators>
+		<addDesignatorGroups>
+			
+			<li>AM_Floor_KemeticTiles</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_KemeticFineTiles</li>
+			
+
+		</addDesignatorGroups>
 		
 		
 	</StyleCategoryDef>

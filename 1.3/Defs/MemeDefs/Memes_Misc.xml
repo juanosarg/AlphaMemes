@@ -1096,7 +1096,11 @@
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
 		<exclusionTags>
-			<li>AM_Ascetic</li>			
+			<li>AM_Ascetic</li>	
+			<li>VME_AsceticVsHedonism</li>		
+			<li>AM_AsceticVsHighLife</li>	
+			<li>VME_AsceticVsSweetTeeth</li>	
+			<li>VME_AsceticVsPartyLife</li>				
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>

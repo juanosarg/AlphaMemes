@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "HighLife"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "HighLife"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>AM_AsceticVsHighLife</li>
+				
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "HighLife"]/exclusionTags</xpath>
+			<value>
+				<li>AM_AsceticVsHighLife</li>
+				
+			</value>
+		</match>
+	</Operation>
+
+
+
+</Patch>

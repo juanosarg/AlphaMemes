@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "RelicsCollected"]/nullifyingPrecepts</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -9,7 +9,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>AM_RelicDestruction_Desired</li>
-				
+
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -17,11 +17,11 @@
 			<xpath>/Defs/ThoughtDef[defName = "RelicsCollected"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>AM_RelicDestruction_Desired</li>
-				
+
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "RelicAtRitual"]/nullifyingPrecepts</xpath>
@@ -30,7 +30,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>AM_RelicDestruction_Desired</li>
-				
+
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -38,11 +38,11 @@
 			<xpath>/Defs/ThoughtDef[defName = "RelicAtRitual"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>AM_RelicDestruction_Desired</li>
-				
+
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "RelicDestroyed"]/nullifyingPrecepts</xpath>
@@ -51,7 +51,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>AM_RelicDestruction_Desired</li>
-				
+
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -59,11 +59,11 @@
 			<xpath>/Defs/ThoughtDef[defName = "RelicDestroyed"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>AM_RelicDestruction_Desired</li>
-				
+
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "RelicLost"]/nullifyingPrecepts</xpath>
@@ -72,7 +72,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>AM_RelicDestruction_Desired</li>
-				
+
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -80,7 +80,7 @@
 			<xpath>/Defs/ThoughtDef[defName = "RelicLost"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>AM_RelicDestruction_Desired</li>
-				
+
 			</value>
 		</match>
 	</Operation>

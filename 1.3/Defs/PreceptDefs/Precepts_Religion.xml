@@ -37,7 +37,7 @@
 		<defName>AM_Religion_Disliked</defName>
 		<issue>AM_Religion</issue>
 		<label>disliked</label>
-		<description>What millions believe is often just fairy tales for children. Glory lies in searching the truth not in believing the irrational legends.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get an opinion penalty on other colonists with religious beliefs. This covers all religious structures from this mod, VE Memes and Structures as well as vanilla Ideology, plus God Emperor meme in VE.</description>
+		<description>What millions believe is often just fairy tales for children. Glory lies in searching for the truth not in believing the irrational legends.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get an opinion penalty on other colonists with religious beliefs. This covers all religious structures from this mod, VE Memes and Structures as well as vanilla Ideology, plus God Emperor meme in VE.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
