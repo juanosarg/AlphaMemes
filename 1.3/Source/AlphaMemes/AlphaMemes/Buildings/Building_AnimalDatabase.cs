@@ -44,7 +44,7 @@ namespace AlphaMemes
 
         public override void ExposeData()
         {
-			Scribe_Collections.Look(ref analyzedAnimalList, "analyzedAnimalList", LookMode.Reference);
+			Scribe_Collections.Look(ref analyzedAnimalList, "analyzedAnimalList", LookMode.Def);
 			base.ExposeData();
         }
 

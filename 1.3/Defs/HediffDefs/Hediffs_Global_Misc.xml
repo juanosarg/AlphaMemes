@@ -11,11 +11,11 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
+			 <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
 			
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-1</severityPerDayNotImmune>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
 			
 		</comps>
 		<stages>
