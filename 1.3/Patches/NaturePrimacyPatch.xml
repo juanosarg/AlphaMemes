@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>AM_DefilersVsNaturePrimacy</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/exclusionTags</xpath>
+			<value>
+				<li>AM_DefilersVsNaturePrimacy</li>
+			</value>
+		</match>
+	</Operation>
+	
+
+	
+
+
+
+</Patch>

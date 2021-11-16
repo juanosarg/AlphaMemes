@@ -55,7 +55,7 @@
 
 	<ThingDef ParentName="AM_StoneBlocksBase">
 		<defName>AM_BlocksPristineLimestone</defName>
-		<label>pristine limestone</label>
+		<label>pristine limestone blocks</label>
 		<description>Blocks of pristine limestone.</description>
 		<graphicData>
 			<color>(235,207,136)</color>

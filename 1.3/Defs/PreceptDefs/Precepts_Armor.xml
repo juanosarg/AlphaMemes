@@ -76,6 +76,8 @@
 		
 	</PreceptDef>
 	
+	
+	
 	<ThoughtDef>
 		<defName>AM_Armour_Expected</defName>
 		<minExpectation>Low</minExpectation>

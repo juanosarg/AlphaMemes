@@ -13,9 +13,13 @@
 			<li>VME_NotRaiders</li>
 			<li>VME_NoCannibalsAndNonviolenceVow</li>
 			<li>VME_NonViolenceVoteVsRancher</li>
+			<li>AM_NonViolenceVowVsSupremacist</li>
 			<li>VME_NonViolenceVoteVsDefilers</li>
+			<li>VME_NonViolenceVowVsNationalists</li>
 			<li>VME_NonViolenceVoteVsPsychicVampires</li>
 			<li>VME_SadistVsNonviolence</li>
+			<li>AM_NonViolenceVowVsSharpshooter</li>
+			<li>AM_NonViolenceVowVsGladiator</li>
 		</exclusionTags>
 		<impact>3</impact>
 		<generalRules>
@@ -93,9 +97,7 @@
 			<li>
 				<li>KillingInnocentAnimals_Abhorrent</li>
 			</li>
-			<li>
-				<li>TreeCutting_Disapproved</li>
-			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -205,6 +207,11 @@
 		<iconPath>UI/Memes/AM_Madness</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_MadnessVsGestalt</li>
+			<li>VME_MadnessVsAstrology</li>
+			
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->insane</li>
@@ -483,11 +490,12 @@
 			<li>AA_Biological</li>
 			<li>AnimalTreatment</li>
 			<li>AA_SerketistAndEradicators</li>
-			<li>Primacy</li>
+			<li>AM_DefilersVsNaturePrimacy</li>
 			<li>VME_VeganVsExterminators</li>
 			<li>VME_NonViolenceVoteVsDefilers</li>
 			<li>VME_PacifistsVsDefilers</li>
 			<li>VME_InsectoidVsDefilers</li>
+			<li>AM_DefilerVsTreeConnection</li>
 		</exclusionTags>
 		<veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
 		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad of worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
@@ -845,7 +853,8 @@
 		<label>sharpshooter</label>
 		<exclusionTags>
 			<li>AM_Combat</li>		
-			<li>AM_SharpshooterVsDryads</li>			
+			<li>AM_SharpshooterVsDryads</li>		
+			<li>AM_NonViolenceVowVsSharpshooter</li>
 		</exclusionTags>
 		<description>Our enemies won't see us coming. We will set our sights on them and they'll be taken silently, without any fanfare or celebration.</description>
 		<iconPath>UI/Memes/AM_Sharpshooter</iconPath>
@@ -929,7 +938,8 @@
 		<label>gladiator</label>
 		<exclusionTags>
 			<li>AM_Combat</li>		
-			<li>AM_GladiatorVsDryads</li>			
+			<li>AM_GladiatorVsDryads</li>		
+			<li>AM_NonViolenceVowVsGladiator</li>
 		</exclusionTags>
 		<description>True glory can only be achieved in hand to hand combat. Ranged weapons are for cowards, and using them is shameful.</description>
 		<iconPath>UI/Memes/AM_Gladiator</iconPath>

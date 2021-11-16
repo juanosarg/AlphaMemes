@@ -14,6 +14,7 @@
 			
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-1</severityPerDayNotImmune>
+				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			
 		</comps>

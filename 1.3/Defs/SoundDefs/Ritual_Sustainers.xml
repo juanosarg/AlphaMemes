@@ -83,7 +83,7 @@
             <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Jain_Loop</clipPath>
           </li>
         </grains>
-        <volumeRange>30</volumeRange>
+        <volumeRange>35</volumeRange>
         <distRange>30~100</distRange>
         <sustainAttack>5.0</sustainAttack>
         <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
