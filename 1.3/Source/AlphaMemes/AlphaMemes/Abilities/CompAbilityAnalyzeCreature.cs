@@ -23,6 +23,12 @@ namespace AlphaMemes
 			
 			if (pawn != null && pawn.RaceProps.Animal && !pawn.RaceProps.Dryad && !pawn.Dead)
 			{
+				if (pawn.Ideo?.HasMeme(InternalDefOf.AM_BiologicalReconstructors) != true)
+				{
+					Messages.Message("AM_AbilityNeedsMeme".Translate(), MessageTypeDefOf.RejectInput, true);
+					this.parent.StartCooldown(30);
+					return;
+				}
 				bool existingDatabase = false;
 				foreach (Map existingMap in Current.Game.Maps)
 				{

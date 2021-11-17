@@ -49,6 +49,7 @@ namespace AlphaMemes
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
+		public static MemeDef AM_BiologicalReconstructors;
 		public static MemeDef AM_Structure_Jewish;
 		public static MemeDef AM_Structure_Jainism;
 		public static MemeDef AM_Structure_Sikhism;

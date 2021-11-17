@@ -298,6 +298,7 @@
 		<exclusionTags>
 			<li>VME_SadistVsPacifist</li>
 			<li>VME_SadistVsNonviolence</li>
+			<li>VME_SadistVsCraftCulture</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>

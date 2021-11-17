@@ -25,5 +25,6 @@
 	<AM_InstallInReliquary>Install in relic smashing altar</AM_InstallInReliquary>
 	<AM_NoEmptyReliquary>no empty accessible relic smashing altar</AM_NoEmptyReliquary>
 	<AM_NeedsFullAltar>Relic smashing altar needs to have a relic installed to start the ritual</AM_NeedsFullAltar>
+	<AM_AbilityNeedsMeme>This ability can't be used if the colonist's ideo doesn't have the necessary meme</AM_AbilityNeedsMeme>
 	
 </LanguageData>

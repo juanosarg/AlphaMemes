@@ -23,6 +23,12 @@ namespace AlphaMemes
 
 			if (pawn != null && caster!= null && pawn.Downed)
 			{
+                if (pawn.Ideo?.HasMeme(DefDatabase<MemeDef>.GetNamedSilentFail("AM_PsychicVampirism")) != true)
+                {
+					Messages.Message("AM_AbilityNeedsMeme".Translate(), MessageTypeDefOf.RejectInput, true);
+					this.parent.StartCooldown(30);
+					return;
+				}
 				caster.needs.mood.thoughts.memories.TryGainMemory(InternalDefOf.AM_DeathKnellThought,null,caster.ideo.Ideo.GetPrecept(InternalDefOf.AM_Abilities_DeathKnell));
 				if (caster.health != null)
 				{
