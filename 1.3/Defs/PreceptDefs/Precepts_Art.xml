@@ -20,12 +20,12 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>AM_Art_Desired</thought>
 				<thoughtStageDescriptions>
-					<li>no art nearby</li>
-					<li>very little art around (less than 1 per colonist)</li>
-					<li>a few art pieces around (less than 1,5 per colonist)</li>
-					<li>several art pieces around (less than 2 per colonist)</li>
-					<li>lots of art pieces around (less than 3 per colonist)</li>
-					<li>surrounded by art</li>
+					<li>No art nearby</li>
+					<li>Very little art around (less than 1 per colonist)</li>
+					<li>A few art pieces around (less than 1,5 per colonist)</li>
+					<li>Several art pieces around (less than 2 per colonist)</li>
+					<li>Lots of art pieces around (less than 3 per colonist)</li>
+					<li>Surrounded by art</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>

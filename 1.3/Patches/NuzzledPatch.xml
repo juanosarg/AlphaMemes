@@ -8,7 +8,7 @@
 			<xpath>/Defs/ThoughtDef[defName = "Nuzzled"]</xpath>
 			<value>
 				<nullifyingPrecepts>
-					<li>AM_AnimalRelease_Discouraged</li>
+					<li>AM_Bonding_Abhorrent</li>
 
 				</nullifyingPrecepts>
 			</value>
@@ -16,7 +16,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThoughtDef[defName = "Nuzzled"]/nullifyingPrecepts</xpath>
 			<value>
-				<li>AM_AnimalRelease_Discouraged</li>
+				<li>AM_Bonding_Abhorrent</li>
 
 			</value>
 		</match>

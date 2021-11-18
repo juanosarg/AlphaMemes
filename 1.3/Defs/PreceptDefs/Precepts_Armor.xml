@@ -22,8 +22,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>AM_Armour_Expected</thought>
 				<thoughtStageDescriptions>
-					<li>no metallic armor</li>
-					<li>strong armor</li>			
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -45,8 +45,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>AM_Armour_Expected</thought>
 				<thoughtStageDescriptions>
-					<li>no metallic armor</li>
-					<li>strong armor</li>			
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -68,8 +68,8 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>AM_Armour_Expected</thought>
 				<thoughtStageDescriptions>
-					<li>no metallic armor</li>
-					<li>strong armor</li>			
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
 				</thoughtStageDescriptions>
 			</li>
 		</comps>

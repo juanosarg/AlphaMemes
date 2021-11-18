@@ -37,16 +37,16 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>AM_AnimalAnalysis_Expected</thought>
 				<thoughtStageDescriptions>
-					<li>no scans</li>
-					<li>very few scans (less than 1%)</li>
-					<li>few scans (less than 5%)</li>
-					<li>some scans (less than 10%)</li>					
-					<li>many scans (less than 25%)</li>
-					<li>a lot of scans (less than 40%)</li>
-					<li>database almost half full (less than 50%)</li>
-					<li>a huge lot of scans (less than 60%)</li>
-					<li>database almost filled (less than 75%)</li>
-					<li>database filled (more than 75%)</li>
+					<li>No scans</li>
+					<li>Very few scans (less than 1%)</li>
+					<li>Few scans (less than 5%)</li>
+					<li>Some scans (less than 10%)</li>					
+					<li>Many scans (less than 25%)</li>
+					<li>A lot of scans (less than 40%)</li>
+					<li>Database almost half full (less than 50%)</li>
+					<li>A huge lot of scans (less than 60%)</li>
+					<li>Database almost filled (less than 75%)</li>
+					<li>Database filled (more than 75%)</li>
 					
 				</thoughtStageDescriptions>
 			</li>

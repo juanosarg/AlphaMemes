@@ -13,7 +13,7 @@
 		<defName>AM_Bonding_Abhorrent</defName>
 		<issue>Bonding</issue>
 		<label>abhorrent</label>
-		<description>Humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth. These genetically modified animals should be destroyed, and relying on them for anything is obscene.</description>
+		<description>Humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth. These genetically modified animals should be destroyed, and relying on them for anything is obscene.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive no bonus mood from animal nuzzling.</description>
 		<impact>High</impact>
 		<requiredMemes>
 			<li>AM_BiologicalDefilers</li>

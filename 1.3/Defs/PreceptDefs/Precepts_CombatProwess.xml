@@ -51,7 +51,7 @@
 		<defName>AM_CombatProwess_Increased</defName>
 		<issue>AM_CombatProwess</issue>
 		<label>distance</label>
-		<description>Sniper rifles, carbines, revolvers, all ranged weapons are our expertise. We will master their use and defend ourselves from anyone who dares oppose us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any ranged weapons used by colonists receive a 20% range increase.</description>
+		<description>Sniper rifles, carbines, revolvers, all ranged weapons are our expertise. We will master their use and defend ourselves from anyone who dares oppose us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any ranged weapons used by colonists receive a 20% range increase. Mortars and other artillery weapons are not counted as ranged for this purpose.</description>
 		<impact>Medium</impact>
 
 		<displayOrderInIssue>20</displayOrderInIssue>

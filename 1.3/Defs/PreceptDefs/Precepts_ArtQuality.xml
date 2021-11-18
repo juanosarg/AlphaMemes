@@ -27,13 +27,13 @@
       <li Class="PreceptComp_SituationalThought">
         <thought>AM_ArtQuality_Expected</thought>
 		<thoughtStageDescriptions>
-					<li>awful art</li>
-					<li>poor art</li>
-					<li>normal art</li>
-					<li>good art</li>
-					<li>excellent art</li>
-					<li>masterwork art</li>
-					<li>legendary art</li>
+					<li>Awful art</li>
+					<li>Poor art</li>
+					<li>Normal art</li>
+					<li>Good art</li>
+					<li>Excellent art</li>
+					<li>Masterwork art</li>
+					<li>Legendary art</li>
 				</thoughtStageDescriptions>
       </li>
     </comps>
