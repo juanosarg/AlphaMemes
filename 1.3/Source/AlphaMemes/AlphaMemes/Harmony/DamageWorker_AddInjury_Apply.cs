@@ -50,7 +50,11 @@ namespace AlphaMemes
                     {
                         if(dinfo.Weapon?.IsMeleeWeapon == false)
                         {
-                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_UsedRanged, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);
+                            if(dinfo.Weapon?.building == null || dinfo.Weapon?.building.buildingTags.Contains("Artillery_BaseDestroyer")!=true)
+                            {
+                                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_UsedRanged, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);
+                            }
+                            
 
                         } else if (dinfo.Weapon?.IsMeleeWeapon == true)
                         {

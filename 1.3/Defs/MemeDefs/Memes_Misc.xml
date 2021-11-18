@@ -771,7 +771,8 @@
 		<defName>AM_Bulwark</defName>
 		<label>bulwark</label>
 		<exclusionTags>
-			<li>AM_Combat</li>			
+			<li>AM_Combat</li>	
+			<li>AM_BulwarkVsNudist</li>
 		</exclusionTags>
 		<description>A proper defense is the only way to stay safe on the Rim. All weapons in the universe will be useless if your soldiers are dead.</description>
 		<iconPath>UI/Memes/AM_Bulwark</iconPath>
