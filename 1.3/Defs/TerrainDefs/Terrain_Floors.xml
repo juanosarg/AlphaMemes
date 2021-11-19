@@ -220,7 +220,7 @@
 	<TerrainDef ParentName="AM_KemeticTileStoneBase">
 		<defName>AM_KemeticTilePristineLimestone</defName>
 		<label>kemetic pristine limestone tile</label>
-		<color>(235,207,136)</color>
+		<color>(170,157,125)</color>
 		<costList>
 			<AM_BlocksPristineLimestone>4</AM_BlocksPristineLimestone>
 		</costList>
@@ -304,7 +304,7 @@
 	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
 		<defName>AM_KemeticFineTilePristineLimestone</defName>
 		<label>kemetic fine pristine limestone tile</label>
-		<color>(235,207,136)</color>
+		<color>(170,157,125)</color>
 		<costList>
 			<AM_BlocksPristineLimestone>20</AM_BlocksPristineLimestone>
 		</costList>

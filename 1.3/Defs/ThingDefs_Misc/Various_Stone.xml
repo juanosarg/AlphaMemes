@@ -58,7 +58,7 @@
 		<label>pristine limestone blocks</label>
 		<description>Blocks of pristine limestone.</description>
 		<graphicData>
-			<color>(235,207,136)</color>
+			<color>(170,157,125)</color>
 		</graphicData>
 		<statBases>
 			
@@ -71,7 +71,7 @@
 		<stuffProps>
 			<commonality>0</commonality>
 
-			<color>(235,207,136)</color>
+			<color>(170,157,125)</color>
 			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>

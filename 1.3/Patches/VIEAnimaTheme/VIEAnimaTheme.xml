@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Anima Theme</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/MemeDef[defName="AM_GauranlenSupremacy"]/label</xpath>
+					<value>
+						<label>dryad supremacy</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/MemeDef[defName="AM_GauranlenSupremacy"]/description</xpath>
+					<value>
+						<description>The symbiotic relationship between humanity, anima nexus trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme is chosen too (alternatively, the Biological Corruptors meme in Alpha Animals).\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/MemeDef[defName="AM_GauranlenSupremacy"]/iconPath</xpath>
+					<value>
+						<iconPath>UI/Memes/AM_GauranlenSupremacyAlt</iconPath>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
