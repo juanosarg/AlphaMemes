@@ -23,7 +23,7 @@ namespace AlphaMemes
 
 			if (pawn != null && caster!= null && pawn.Downed)
 			{
-                if (pawn.Ideo?.HasMeme(DefDatabase<MemeDef>.GetNamedSilentFail("AM_PsychicVampirism")) != true)
+                if (this.parent.pawn.Ideo?.HasMeme(DefDatabase<MemeDef>.GetNamedSilentFail("AM_PsychicVampirism")) != true)
                 {
 					Messages.Message("AM_AbilityNeedsMeme".Translate(), MessageTypeDefOf.RejectInput, true);
 					this.parent.StartCooldown(30);

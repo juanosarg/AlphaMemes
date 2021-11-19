@@ -23,7 +23,7 @@ namespace AlphaMemes
 			
 			if (pawn != null && pawn.RaceProps.Animal && !pawn.RaceProps.Dryad && !pawn.Dead)
 			{
-				if (pawn.Ideo?.HasMeme(InternalDefOf.AM_BiologicalReconstructors) != true)
+				if (this.parent.pawn.Ideo?.HasMeme(InternalDefOf.AM_BiologicalReconstructors) != true)
 				{
 					Messages.Message("AM_AbilityNeedsMeme".Translate(), MessageTypeDefOf.RejectInput, true);
 					this.parent.StartCooldown(30);
