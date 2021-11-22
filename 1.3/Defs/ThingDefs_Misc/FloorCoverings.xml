@@ -47,7 +47,7 @@
     <defName>AM_KemeticSlab_Medium</defName>
     <label>kemetic slab (medium)</label>
     <description>A stone bas relief of kemetic imagery for decorating a floor.</description>
-    <dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+    <dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Things/Building/BuildingStyles/Kemetic/Slab/Medium</texPath>
@@ -67,7 +67,7 @@
     <defName>AM_KemeticSlab_Broad</defName>
     <label>kemetic slab (broad)</label>
     <description>A stone bas relief of kemetic imagery for decorating a floor.</description>
-    <dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+    <dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Things/Building/BuildingStyles/Kemetic/Slab/Broad</texPath>

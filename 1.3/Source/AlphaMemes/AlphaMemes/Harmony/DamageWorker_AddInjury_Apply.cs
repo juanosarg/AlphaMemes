@@ -48,7 +48,7 @@ namespace AlphaMemes
 
                     if (victimPawn != null)
                     {
-                        if(dinfo.Weapon?.IsMeleeWeapon == false)
+                        if(dinfo.Weapon?.IsMeleeWeapon == false || dinfo.Weapon?.IsNaturalOrgan == false)
                         {
                             if(dinfo.Weapon?.building == null || dinfo.Weapon?.building.buildingTags.Contains("Artillery_BaseDestroyer")!=true)
                             {
@@ -56,7 +56,7 @@ namespace AlphaMemes
                             }
                             
 
-                        } else if (dinfo.Weapon?.IsMeleeWeapon == true)
+                        } else if (dinfo.Weapon?.IsMeleeWeapon == true || dinfo.Weapon?.IsNaturalOrgan == true)
                         {
                             System.Random random = new System.Random();
                             if (random.NextDouble() < 0.2)
