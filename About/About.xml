@@ -32,6 +32,23 @@
 		<li>VanillaExpanded.VMemesE</li>		
 	</loadAfter>
 	<packageId>Sarg.AlphaMemes</packageId>
-	<description>Testing version
-	</description>
+	<description>Adds new memes and structures to Rimworld.
+
+&lt;size=24&gt;Features&lt;/size&gt;
+
+- Adds 5 new structures: Jewish origins, Kemetic origins, Jain origins, Sikh origins and Atheism.
+- Adds 14 new memes: Vow of Nonviolence, Artist, Sadist, Youth, Madness, Biological defilers, Biological reconstructors, Psychic vampirism (needs Royalty), Gauranlen supremacy, Bulwark, Sharpshooter, Gladiator, Iconoclast and Monastic. 
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+No issues known at the moment 
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+Oh you can bet I will add new things!
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+v1.0: Release. (22/11/21)
+Full changelog on GitHub</description>
 </ModMetaData>
