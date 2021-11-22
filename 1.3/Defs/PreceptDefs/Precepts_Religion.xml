@@ -90,4 +90,32 @@
 		</stages>
 	</ThoughtDef>
 	
+	<PreceptDef>
+		<defName>AM_Religion_Loved</defName>
+		<issue>AM_Religion</issue>
+		<label>loved</label>
+		<description>Religion is an amazing human concept that brings everyone together.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get an opinion bonus on other colonists with religious beliefs. This covers all religious structures from this mod, VE Memes and Structures as well as vanilla Ideology, plus God Emperor meme in VE.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Religion_Loved</thought>
+				
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Religion_Loved</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<stages>
+			<li>
+				<label>religious beliefs</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>			
+		</stages>
+	</ThoughtDef>
+	
 </Defs>
