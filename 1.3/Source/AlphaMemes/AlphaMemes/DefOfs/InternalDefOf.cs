@@ -63,6 +63,8 @@ namespace AlphaMemes
 		public static MemeDef Structure_OriginHindu;
 		public static MemeDef Structure_OriginBuddhist;
 		public static MemeDef AM_Iconoclast;
+		public static MemeDef Proselytizer;
+
 
 
 		public static HediffDef AM_CatharsisHediff;

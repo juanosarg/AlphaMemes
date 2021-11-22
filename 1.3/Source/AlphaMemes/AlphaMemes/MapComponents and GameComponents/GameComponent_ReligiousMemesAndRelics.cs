@@ -39,6 +39,15 @@ namespace AlphaMemes
 
             }
 
+            if (DefDatabase<MemeDef>.GetNamedSilentFail("VME_ViolentConversion") != null)
+            {
+                StaticCollectionsClass.AddProselytizerMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_ViolentConversion"));
+               
+
+
+
+            }
+
 
 
             base.FinalizeInit();

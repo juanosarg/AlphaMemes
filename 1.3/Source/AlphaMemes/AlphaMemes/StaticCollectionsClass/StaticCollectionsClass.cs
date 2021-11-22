@@ -36,6 +36,8 @@ namespace AlphaMemes
         InternalDefOf.Structure_Animist,InternalDefOf.Structure_Archist,InternalDefOf.Structure_OriginBuddhist,InternalDefOf.Structure_OriginChristian,InternalDefOf.Structure_OriginHindu,InternalDefOf.Structure_OriginIslamic,
         InternalDefOf.Structure_TheistAbstract,InternalDefOf.Structure_TheistEmbodied};
 
+        public static List<MemeDef> listProselytizerMemes = new List<MemeDef>() { InternalDefOf.Proselytizer };
+
 
         public static void AddColonistRandomMood(Pawn pawn, int mood)
         {
@@ -60,6 +62,14 @@ namespace AlphaMemes
             if (meme != null && !listReligiousMemes.Contains(meme))
             {
                 listReligiousMemes.Add(meme);
+            }
+
+        }
+        public static void AddProselytizerMeme(MemeDef meme)
+        {
+            if (meme != null && !listProselytizerMemes.Contains(meme))
+            {
+                listProselytizerMemes.Add(meme);
             }
 
         }

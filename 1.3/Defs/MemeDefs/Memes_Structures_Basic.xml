@@ -35,10 +35,12 @@
 			<li>
 				<li>AM_Religion_Despised</li>
 				<li>AM_Religion_Disliked</li>
+				<li>AM_Religion_ProselytismDisliked</li>
 			</li>
 		</requireOne>
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
+			<li>VME_Proselytism</li>
 			
 		</exclusionTags>
 		<descriptionMaker>
