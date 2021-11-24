@@ -28,7 +28,7 @@ namespace AlphaMemes
 
                     Pawn victimPawn = thing as Pawn;
 
-                    if (victimPawn != null && dinfo.Weapon?.IsRangedWeapon ==false)
+                    if (victimPawn != null && dinfo.Weapon?.IsRangedWeapon == false)
                     {
 
                         Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_UsedMelee, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);
@@ -48,7 +48,7 @@ namespace AlphaMemes
 
                     if (victimPawn != null)
                     {
-                        if(dinfo.Weapon?.IsMeleeWeapon == false || dinfo.Weapon?.IsNaturalOrgan == false)
+                        if(dinfo.Weapon?.IsRangedWeapon == true)
                         {
                             if(dinfo.Weapon?.building == null || dinfo.Weapon?.building.buildingTags.Contains("Artillery_BaseDestroyer")!=true)
                             {

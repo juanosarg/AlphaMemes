@@ -30,7 +30,7 @@ namespace AlphaMemes
 		{
 			Apparel apparel = th as Apparel;
 
-			return apparel != null && apparel.Wearer?.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Armour_Sharp) != null;
+			return apparel != null && apparel.Wearer?.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Armour_Sharp) == true;
 		}
 	}
 }

@@ -14,7 +14,7 @@ namespace AlphaMemes
         {
 
             base.Apply(target, dest);
-            foreach (Thing item in GenRadial.RadialDistinctThingsAround(target.Cell, parent.pawn.Map, parent.def.EffectRadius, useCenter: true))
+            foreach (Thing item in GenRadial.RadialDistinctThingsAround(dest.Cell, parent.pawn.Map, parent.def.EffectRadius, useCenter: true))
             {
                 if (item?.def.defName.Contains("Block")==true)
                 {
