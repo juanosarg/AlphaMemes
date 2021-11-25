@@ -318,13 +318,12 @@
     <Compile Include="Harmony\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs" />
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
-    <Compile Include="Harmony\Thing_Notify_Equipped.cs" />
+    <Compile Include="Harmony\Verb_EffectiveRange.cs" />
     <Compile Include="Harmony\ThoughtUtility_RemovePositiveBedroomThoughts.cs" />
     <Compile Include="Harmony\Toils_LayDown_ApplyBedThoughts.cs" />
     <Compile Include="Harmony\WorkGiver_Tame_JobOnThing.cs" />
     <Compile Include="Harmony\WorkGiver_Train_JobOnThing.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_ReligiousMemesAndRelics.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_WeaponRanges.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
