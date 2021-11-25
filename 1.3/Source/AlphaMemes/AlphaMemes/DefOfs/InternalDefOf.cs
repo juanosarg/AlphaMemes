@@ -86,6 +86,11 @@ namespace AlphaMemes
 		public static PawnKindDef Dryad_Barkskin;
 		public static PawnKindDef AM_UnshackledDryad;
 
+		public static DesignatorDropdownGroupDef AM_Floor_JewishTiles;
+		public static DesignatorDropdownGroupDef AM_Floor_JewishFineTiles;
+		public static DesignatorDropdownGroupDef AM_Floor_KemeticTiles;
+		public static DesignatorDropdownGroupDef AM_Floor_KemeticFineTiles;
+
 		[MayRequireRoyalty]
 		public static ThoughtDef AM_DeathKnellThought;
 

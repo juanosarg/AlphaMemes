@@ -87,6 +87,13 @@
 			
 			</statFactors>
 		</stuffProps>
+		<modExtensions>
+		<li Class="VFECore.StuffExtension">
+			<structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>			
+			<structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+			
+		</li>
+</modExtensions>
 	</ThingDef>
 
 	

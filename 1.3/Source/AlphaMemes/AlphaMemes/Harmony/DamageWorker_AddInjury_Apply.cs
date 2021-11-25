@@ -48,7 +48,7 @@ namespace AlphaMemes
 
                     if (victimPawn != null)
                     {
-                        if(dinfo.Weapon?.IsRangedWeapon == true)
+                        if(dinfo.Weapon?.IsRangedWeapon == true && dinfo.Weapon?.Verbs?.FirstOrFallback()?.range >2)
                         {
                             if(dinfo.Weapon?.building == null || dinfo.Weapon?.building.buildingTags.Contains("Artillery_BaseDestroyer")!=true)
                             {
