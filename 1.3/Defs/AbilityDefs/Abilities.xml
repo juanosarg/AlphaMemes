@@ -59,9 +59,7 @@
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/AM_CreatePristineLimestone</iconPath>
 		<uiOrder>1</uiOrder>
-		<statBases>
-			<Ability_EffectRadius>3.9</Ability_EffectRadius>
-		</statBases>
+		
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>5</warmupTime>
