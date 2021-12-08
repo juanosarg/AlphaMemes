@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingStyleDef Name="AM_RotateWeapons"  Abstract="True">		
+		<graphicData>
+			 <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingStyleDef>
+
+	
+</Defs>

@@ -157,7 +157,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_DuckBillAxe</defName>
 		<overrideLabel>duckbill axe</overrideLabel>
 		<graphicData>
@@ -166,7 +166,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Javelin</defName>
 		<overrideLabel>javelin</overrideLabel>
 		<graphicData>
@@ -175,7 +175,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Chanith</defName>
 		<overrideLabel>chanith</overrideLabel>
 		<graphicData>
@@ -184,7 +184,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Sniper</defName>
 		<overrideLabel>dan .338 sniper rifle</overrideLabel>
 		<graphicData>
@@ -193,7 +193,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Pistol</defName>
 		<overrideLabel>jericho 941 pistol</overrideLabel>
 		<graphicData>
@@ -202,7 +202,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Club</defName>
 		
 		<graphicData>
@@ -211,7 +211,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Spear</defName>
 		<overrideLabel>kidhohn</overrideLabel>
 		<graphicData>
@@ -220,7 +220,7 @@
 		</graphicData>
 	</ThingStyleDef>
 
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Knife</defName>
 		<overrideLabel>leaf dagger</overrideLabel>
 		<graphicData>
@@ -229,7 +229,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Sword</defName>
 		<overrideLabel>leaf sword</overrideLabel>
 		<graphicData>
@@ -238,7 +238,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Rifle</defName>
 		<overrideLabel>tavor TAR-21 assault rifle</overrideLabel>
 		<graphicData>
@@ -247,7 +247,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Revolver</defName>
 		<overrideLabel>webley revolver</overrideLabel>
 		<graphicData>
@@ -256,7 +256,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_ChainShotgun</defName>
 		<overrideLabel>tavor TS12 bullpup shotgun</overrideLabel>
 		<graphicData>
@@ -456,7 +456,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_BarbedSpear</defName>
 		<overrideLabel>barbed spear</overrideLabel>
 		<graphicData>
@@ -465,7 +465,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Javelin</defName>
 		<overrideLabel>javelin</overrideLabel>
 		<graphicData>
@@ -474,7 +474,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ShortSword</defName>
 		<overrideLabel>short sword</overrideLabel>
 		<graphicData>
@@ -483,7 +483,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_BattleAxe</defName>
 		<overrideLabel>battle axe</overrideLabel>
 		<graphicData>
@@ -492,7 +492,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Mace</defName>
 		<overrideLabel>discoidal mace</overrideLabel>
 		<graphicData>
@@ -501,7 +501,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Khopesh</defName>
 		<overrideLabel>khopesh</overrideLabel>
 		<graphicData>
@@ -510,7 +510,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Staff</defName>
 		<overrideLabel>laser staff</overrideLabel>
 		<graphicData>
@@ -519,7 +519,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PalmAxe</defName>
 		<overrideLabel>palm axe</overrideLabel>
 		<graphicData>
@@ -528,7 +528,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Pistol</defName>
 		<overrideLabel>helwan 951 pistol</overrideLabel>
 		<graphicData>
@@ -537,7 +537,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Rifle</defName>
 		<overrideLabel>misr assault rifle</overrideLabel>
 		<graphicData>
@@ -546,7 +546,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_MachineGun</defName>
 		<overrideLabel>port said machinegun</overrideLabel>
 		<graphicData>
@@ -555,7 +555,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Carbine</defName>
 		<overrideLabel>rasheed carbine</overrideLabel>
 		<graphicData>
@@ -564,7 +564,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</wornGraphicPath>
 		<graphicData>
@@ -572,7 +572,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorBHelmet/JaffaArmorBHelmet</wornGraphicPath>
 		<graphicData>
@@ -580,7 +580,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigePowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorC/JaffaArmorC</wornGraphicPath>
 		<graphicData>
@@ -588,7 +588,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigePowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorCHelmet/JaffaArmorCHelmet</wornGraphicPath>
 		<graphicData>
@@ -596,7 +596,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ArmorCataphract</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/Cataphract/Cataphract</wornGraphicPath>
 		<graphicData>
@@ -604,7 +604,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ArmorCataphractHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/CataphractHelmet/CataphractHelmet</wornGraphicPath>
 		<graphicData>
@@ -612,7 +612,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigeCataphract</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphract/PrestigeCataphract</wornGraphicPath>
 		<graphicData>
@@ -620,7 +620,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigeCataphractHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
 		<graphicData>
