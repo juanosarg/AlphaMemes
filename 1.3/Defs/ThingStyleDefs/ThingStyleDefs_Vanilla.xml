@@ -110,7 +110,7 @@
 		<defName>AM_Hindu_Column</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Hindu/AM_HinduColumn</texPath>
-			<drawSize>(1,2)</drawSize>
+			<drawSize>(0.625,1.25)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 
