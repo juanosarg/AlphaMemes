@@ -108,6 +108,42 @@
 			<li>AM_Structure_Kemetism</li>
 		</requiredMemes>
 	</AbilityDef>
+	
+	<AbilityGroupDef>
+		<defName>AM_ChangeStyle</defName>
+		<cooldownTicks>200</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityDef>
+		<defName>AM_ChangeStyle</defName>
+		<label>change style</label>
+		<description>The leader of the colony has the ability to change the styling of an item or building. Bear in mind that only the styles present in the colony's primary ideo can be used to swap.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>AM_ChangeStyle</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>		
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AM_ChangeStyle</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>10</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetItems>True</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "AlphaMemes.CompProperties_AbilityChangeStyle">
+
+			</li>
+		</comps>
+		
+	</AbilityDef>
+
 
 
 
