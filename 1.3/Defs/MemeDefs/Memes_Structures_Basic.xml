@@ -72,7 +72,7 @@
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Structure_Jewish</defName>
-		<label>jewish origins</label>
+		<label>jewish origin</label>
 		<description>This ideoligion is a descendant of ancient Judaism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_Jewish</iconPath>
@@ -132,7 +132,7 @@
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Structure_Jainism</defName>
-		<label>jain origins</label>
+		<label>jain origin</label>
 		<description>This ideoligion is a descendant of ancient Jainism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_JainOrigins</iconPath>
@@ -186,7 +186,7 @@
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Structure_Sikhism</defName>
-		<label>Sikh origins</label>
+		<label>Sikh origin</label>
 		<description>This ideoligion is a descendant of ancient Sikhism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_SikhOrigins</iconPath>
@@ -234,7 +234,7 @@
 	</MemeDef>
 	<MemeDef>
 		<defName>AM_Structure_Kemetism</defName>
-		<label>Kemetic origins</label>
+		<label>Kemetic origin</label>
 		<description>This ideoligion is a descendant of Egyptian Neopaganism, also known as Kemetism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_KemeticOrigins</iconPath>
