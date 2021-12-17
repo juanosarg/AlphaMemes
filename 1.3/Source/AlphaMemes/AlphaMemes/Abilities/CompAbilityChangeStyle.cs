@@ -18,7 +18,8 @@ namespace AlphaMemes
 
             List<ThingStyleCategoryWithPriority> listStyles = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.thingStyleCategories;
 
-           
+
+
 
             HashSet<Thing> hashSet = new HashSet<Thing>(target.Cell.GetThingList(this.parent.pawn.Map));
             if (hashSet != null)
@@ -28,8 +29,17 @@ namespace AlphaMemes
                     if (thing != null && thing.def.CanBeStyled())
                     {
 
+                        if (AlphaMemes_Settings.makeChangeStyleAbilityUseAllStyles) {
 
-                        thing.StyleDef = listStyles.RandomElement().category.GetStyleForThingDef(thing.def);
+                           
+
+                            List<StyleCategoryDef> listStylesAll = (from x in DefDatabase<StyleCategoryDef>.AllDefsListForReading
+                                                                   where x.GetStyleForThingDef(thing.def) != null select x).ToList();
+
+                            thing.StyleDef = listStylesAll.RandomElement().GetStyleForThingDef(thing.def); 
+                        } else { 
+                            thing.StyleDef = listStyles.RandomElement().category.GetStyleForThingDef(thing.def); 
+                        }
                         thing.DirtyMapMesh(thing.Map);
                     }
 
@@ -43,7 +53,7 @@ namespace AlphaMemes
 
 
 
-                }
+        }
 
 
 

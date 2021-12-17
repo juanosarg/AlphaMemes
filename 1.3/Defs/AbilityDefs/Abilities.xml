@@ -117,7 +117,7 @@
 	<AbilityDef>
 		<defName>AM_ChangeStyle</defName>
 		<label>change style</label>
-		<description>The leader of the colony has the ability to change the styling of an item or building. Bear in mind that only the styles present in the colony's primary ideo can be used to swap.</description>
+		<description>The leader of the colony has the ability to change the styling of an item or building. Bear in mind that only the styles present in the colony's primary ideo can be used to swap (this can be changed in mod options to allow ALL possible styles).</description>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<groupDef>AM_ChangeStyle</groupDef>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>

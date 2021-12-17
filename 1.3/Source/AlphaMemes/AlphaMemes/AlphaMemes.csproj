@@ -330,6 +330,8 @@
     <Compile Include="MapComponents and GameComponents\GameComponent_RandomMood.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_DryadTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
+    <Compile Include="Options\AlphaMemes_Settings.cs" />
+    <Compile Include="Options\AlphaMemes_SettingsController.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnlyOne.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />
     <Compile Include="Precepts\Precept_DespisedAnimal.cs" />
