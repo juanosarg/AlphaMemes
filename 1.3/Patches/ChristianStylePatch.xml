@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "Christian"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "Christian"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>Apparel_PowerArmor</thingDef>
+					<styleDef>AM_ChristianPowerArmor</styleDef>
+				</li>
+				<li>
+					<thingDef>Apparel_PowerArmorHelmet</thingDef>
+					<styleDef>AM_ChristianPowerArmorHelmet</styleDef>
+				</li>
+				
+			
+			
+			</value>
+		</match>
+	</Operation>
+	
+	
+</Patch>

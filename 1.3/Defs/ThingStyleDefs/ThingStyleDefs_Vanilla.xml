@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+	<!-- Hindu -->
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_ChristianPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Christian/AM_ChristianPowerArmor/AM_ChristianPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Christian/AM_ChristianPowerArmor/AM_ChristianPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_ChristianPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Christian/AM_ChristianPowerArmorHelmet/AM_ChristianPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Christian/AM_ChristianPowerArmorHelmet/AM_ChristianPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<!-- Islamic -->
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_IslamicPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Islamic/AM_IslamicPowerArmor/AM_IslamicPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Islamic/AM_IslamicPowerArmor/AM_IslamicPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_IslamicPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Islamic/AM_IslamicPowerArmorHelmet/AM_IslamicPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Islamic/AM_IslamicPowerArmorHelmet/AM_IslamicPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<!-- Buddhist -->
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_BuddhistPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmor/AM_BuddhistPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmor/AM_BuddhistPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_BuddhistPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmorHelmet/AM_BuddhistPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmorHelmet/AM_BuddhistPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
 	<!-- Hindu -->
 	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -8,6 +66,14 @@
 		<wornGraphicPath>Things/Apparel/Hindu/AM_HinduPowerArmor/AM_HinduPowerArmor</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Hindu/AM_HinduPowerArmor/AM_HinduPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_HinduPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Hindu/AM_HinduPowerArmorHelmet/AM_HinduPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Hindu/AM_HinduPowerArmorHelmet/AM_HinduPowerArmorHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
