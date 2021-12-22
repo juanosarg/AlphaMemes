@@ -51,7 +51,7 @@
 			</patterns>
 			<constants>
 				<li>
-					<key>structure_esotericism</key>
+					<key>structure_atheism</key>
 					<value>true</value>
 				</li>
 			</constants>
@@ -403,5 +403,56 @@
 				<type>God of Magic</type>
 			</li>
 		</fixedDeityNameTypes>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_SteampunkRevival</defName>
+		<label>steampunk revival</label>
+		<description>With the advent of zero-emissions steam engines powered by flameless ceramic heat cells in the 22nd century, steam powered technology experienced a sudden revival. This ideoligion has kept the overall style and sentiment of that era.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_SteampunkRevival</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>parlor</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->steampunk</li>
+				<li>memeAdjective->analytical</li>
+				<li>memeAdjective->retrofuturistic</li>
+				<li>memeAdjective->aetheric</li>
+				<li>memeAdjective->neo-victorian</li>				
+				<li>memeLeaderNoun->overseer</li>
+				<li>memeLeaderNoun->cogmaster</li>				
+				<li>memeMoralist->tinkerer</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_SteampunkRevivalDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_steampunk</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>steampunk</theme>
+				<adjective>steampunk</adjective>
+				<member>worker</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_SteampunkRevival</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
 	</MemeDef>
 </Defs>

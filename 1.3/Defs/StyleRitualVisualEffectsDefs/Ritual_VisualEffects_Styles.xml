@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- <RitualVisualEffectDef ParentName="RitualGlowAbstract">
-    <defName>AM_JewishVisuals</defName>
-    <tintColor>(216, 139, 229)</tintColor>
-	<comps>
-			
-			
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>AM_JewishVisuals</defName>
+		<tintColor>(216, 139, 229)</tintColor>
+		<comps>
 			<li>
 				<compClass>CompRitualEffect_ConstantCenter</compClass>
 				<moteDef>AM_Star</moteDef>
 			</li>
 		</comps>
-  </RitualVisualEffectDef>
-  
-  <ThingDef ParentName="MoteBase">
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
 		<defName>AM_Star</defName>
 		<thingClass>MoteThrown</thingClass>
 		<altitudeLayer>VisEffects</altitudeLayer>
@@ -38,7 +34,6 @@
 			<drawSize>18</drawSize>
 		</graphicData>
 	</ThingDef>
-	
 	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
 		<defName>AM_KemeticVisuals</defName>
 		<tintColor>(198, 156, 62)</tintColor>
@@ -104,21 +99,17 @@
 			<drawSize>(1.4, 2.8)</drawSize>
 		</graphicData>
 	</ThingDef>
-	
 	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
-    <defName>AM_AtheismVisuals</defName>
-    <tintColor>(255, 255, 255)</tintColor>
-	<comps>
-			
-			
+		<defName>AM_AtheismVisuals</defName>
+		<tintColor>(255, 255, 255)</tintColor>
+		<comps>
 			<li>
 				<compClass>CompRitualEffect_ConstantCenter</compClass>
 				<moteDef>AM_AtheismSymbol</moteDef>
 			</li>
 		</comps>
-  </RitualVisualEffectDef>
-  
-  <ThingDef ParentName="MoteBase">
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
 		<defName>AM_AtheismSymbol</defName>
 		<thingClass>MoteThrown</thingClass>
 		<altitudeLayer>VisEffects</altitudeLayer>
@@ -142,21 +133,17 @@
 			<drawSize>8</drawSize>
 		</graphicData>
 	</ThingDef>
-	
-		<RitualVisualEffectDef  ParentName="RitualSmokeAbstract">
-    <defName>AM_SikhVisuals</defName>
-    <tintColor>(248, 154, 28)</tintColor>
-	<comps>
-			
-			
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_SikhVisuals</defName>
+		<tintColor>(248, 154, 28)</tintColor>
+		<comps>
 			<li>
 				<compClass>CompRitualEffect_ConstantCenter</compClass>
 				<moteDef>AM_SikhSymbol</moteDef>
 			</li>
 		</comps>
-  </RitualVisualEffectDef>
-  
-  <ThingDef ParentName="MoteBase">
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
 		<defName>AM_SikhSymbol</defName>
 		<thingClass>MoteThrown</thingClass>
 		<altitudeLayer>VisEffects</altitudeLayer>
@@ -180,12 +167,10 @@
 			<drawSize>18</drawSize>
 		</graphicData>
 	</ThingDef>
-	
-		<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
 		<defName>AM_JainVisuals</defName>
 		<tintColor>(255, 255, 255)</tintColor>
 		<comps>
-			
 			<li Class="CompProperties_RitualEffectConstantCircle">
 				<radius>10.0</radius>
 				<numCopies>8</numCopies>
@@ -197,7 +182,6 @@
 			</li>
 		</comps>
 	</RitualVisualEffectDef>
-	
 	<ThingDef ParentName="MoteBase">
 		<defName>AM_JainSpire</defName>
 		<thingClass>MoteThrown</thingClass>
@@ -220,7 +204,38 @@
 			<drawSize>(2, 4)</drawSize>
 		</graphicData>
 	</ThingDef>
-	
-	
-	
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_SteampunkRevivalVisuals</defName>
+		<tintColor>(114, 94, 62)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_Cog</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Cog</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(114, 94, 62)</color>
+			<texPath>Motes/AM_Cog</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>18</drawSize>
+		</graphicData>
+	</ThingDef>
 </Defs>

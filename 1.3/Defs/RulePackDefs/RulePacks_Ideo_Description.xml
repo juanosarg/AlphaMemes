@@ -295,4 +295,51 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_SteampunkRevivalDescription</defName>
+		<segments>
+			<li>steampunklessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_steampunklessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->lecture</li>
+				<li>book->letter</li>
+				<li>book->studies</li>
+				<li>book->encyclopedia</li>
+				<li>book->critique</li>
+				<li>concept->ancient technologies</li>
+				<li>concept->the resurgence of the past</li>
+				<li>concept->the steam engine</li>
+				<li>concept->the neo-Victorian era</li>
+				<li>concept->the analytical AI</li>
+				<li>concept->the Brass Chronicles</li>				
+				<!-- generic intro -->
+				<li>steampunklessonIntro->The perfection of the ceramic heat cell and flameless combustion ushered in an era of invention and creativity in the early days of space exploration. The great philosophers of that era taught us that</li>
+				<li>steampunklessonIntro->As we all know, the Caloric Porous Structure Cell -CPSC-, is a ceramic device to burn a fuel without flame, converting the thermal energy to mechanical work. Its refinement ushered in an era of technological wonders, with its greatest philosophers preaching that</li>
+				<li>steampunklessonIntro->There is a lot to be learned of the past, specially of that particular period in the 22nd century. It teaches us one thing:</li>				
+				<li>steampunklessonIntro->Some argue that it was the refinement of modern steam technology that led to a period of technological wonders in the mid 22nd century. Others say it was pure nostalgia for a past that never was. The mainstream sentiment among people in that era was that</li>
+				<li>steampunklessonIntro->Let's face it: humanity was drowning on its own refuse. Polluting energy sources were choking us into extinction. The ceramic heat cell ended all that, providing a fuel source with very low emissions. This affected everything, from science to philosophy, with the mainstream philosophical currents postulating that</li>
+				<li>steampunklessonIntro->The perfection of flameless combustion on the 22nd century was revolutionary. Society was shook to its core, and great philosophers arose that taught us that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>
