@@ -510,6 +510,12 @@
 				<styleDef>AM_SteampunkRevival_Minigun</styleDef>
 			</li>
 		</thingDefStyles>
+		<addDesignatorGroups>
+			
+			<li>AM_Floor_SteampunkTiles</li>
+			
+
+		</addDesignatorGroups>
 		
 	</StyleCategoryDef>
 	

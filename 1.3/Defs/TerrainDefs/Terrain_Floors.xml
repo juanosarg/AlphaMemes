@@ -309,5 +309,74 @@
 			<AM_BlocksPristineLimestone>20</AM_BlocksPristineLimestone>
 		</costList>
 	</TerrainDef>
+	
+	<!-- Steampunk -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_SteampunkTiles</defName>
+		<label>steampunk stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_SteampunkTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles in a Steampunk style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_SteampunkStoneTiles</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_SteampunkTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileSandstone</defName>
+		<label>steampunk sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileGranite</defName>
+		<label>steampunk granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileLimestone</defName>
+		<label>steampunk limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileSlate</defName>
+		<label>steampunk slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileMarble</defName>
+		<label>steampunk marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
 
 </Defs>
