@@ -123,5 +123,43 @@
     </researchPrerequisites>
   </ThingDef>
  
+<ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_SteampunkSlab_Medium</defName>
+    <label>steampunk slab (medium)</label>
+    <description>A stone bas relief of steampunk imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Steampunk/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
 
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_SteampunkSlab_Broad</defName>
+    <label>steampunk slab (broad)</label>
+    <description>A stone bas relief of steampunk imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Steampunk/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
 </Defs>

@@ -417,6 +417,81 @@
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>AM_SteampunkRevival_Table2x2c</styleDef>
 			</li>
+			
+			<li>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>AM_SteampunkRevival_Table2x4c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_SteampunkRevival_Table3x3c</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureSmall</thingDef>
+				<styleDef>AM_SteampunkRevival_SculptureSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureLarge</thingDef>
+				<styleDef>AM_SteampunkRevival_SculptureLarge</styleDef>
+			</li>
+			<li>
+				<thingDef>SculptureGrand</thingDef>
+				<styleDef>AM_SteampunkRevival_SculptureGrand</styleDef>
+			</li>
+			
+			
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_SteampunkRevival_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>AM_SteampunkRevival_StandingLamp_Red</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>AM_SteampunkRevival_StandingLamp_Green</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>AM_SteampunkRevival_StandingLamp_Blue</styleDef>
+			</li>
+			<li>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>AM_SteampunkRevival_DarklampStanding</styleDef>
+			</li>
+			<li>
+				<thingDef>Stool</thingDef>
+				<styleDef>AM_SteampunkRevival_Stool</styleDef>
+			</li>
+			<li>
+				<thingDef>DiningChair</thingDef>
+				<styleDef>AM_SteampunkRevival_Chair</styleDef>
+			</li>
+			<li>
+				<thingDef>Column</thingDef>
+				<styleDef>AM_SteampunkRevival_Column</styleDef>
+			</li>
+			<li>
+				<thingDef>WoodFiredGenerator</thingDef>
+				<styleDef>AM_SteampunkRevival_WoodFiredGenerator</styleDef>
+			</li>
+			<li>
+				<thingDef>ChemfuelPoweredGenerator</thingDef>
+				<styleDef>AM_SteampunkRevival_ChemfuelPoweredGenerator</styleDef>
+			</li>
+			<li>
+				<thingDef>SolarGenerator</thingDef>
+				<styleDef>AM_SteampunkRevival_SolarGenerator</styleDef>
+			</li>
+			<li>
+				<thingDef>GeothermalGenerator</thingDef>
+				<styleDef>AM_SteampunkRevival_GeothermalGenerator</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_PowerArmor</thingDef>
+				<styleDef>AM_SteampunkRevival_PowerArmor</styleDef>
+			</li>
 			<li>
 				<thingDef>Apparel_BowlerHat</thingDef>
 				<styleDef>AM_SteampunkRevival_BowlerHat</styleDef>
@@ -509,6 +584,14 @@
 				<thingDef>Gun_Minigun</thingDef>
 				<styleDef>AM_SteampunkRevival_Minigun</styleDef>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_Gunlink</thingDef>
+				<styleDef>AM_SteampunkRevival_Gunlink</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_CowboyHat</thingDef>
+				<styleDef>AM_SteampunkRevival_CowboyHat</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignatorGroups>
 			
@@ -516,6 +599,11 @@
 			
 
 		</addDesignatorGroups>
+		<addDesignators>
+			
+			<li>AM_SteampunkSlab_Medium</li>
+			<li>AM_SteampunkSlab_Broad</li>
+		</addDesignators>
 		
 	</StyleCategoryDef>
 	

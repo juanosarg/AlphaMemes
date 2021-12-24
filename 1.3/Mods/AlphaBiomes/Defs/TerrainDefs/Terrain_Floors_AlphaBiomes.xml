@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileRoseQuartz</defName>
+		<label>jewish rose quartz tile</label>
+		<color>(120,50,50)</color>
+		<costList>
+			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileMudstone</defName>
+		<label>jewish mudstone tile</label>
+		<color>(49,31,15)</color>
+		<costList>
+			<AB_BlocksMudstone>4</AB_BlocksMudstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileCragstone</defName>
+		<label>jewish cragstone tile</label>
+		<color>(36,35,40)</color>
+		<costList>
+			<AB_BlocksCragstone>4</AB_BlocksCragstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileObsidian</defName>
+		<label>jewish obsidian tile</label>
+		<color>(50,50,50)</color>
+		<costList>
+			<AB_BlocksObsidian>4</AB_BlocksObsidian>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileRoseQuartz</defName>
+		<label>jewish fine rose quartz tile</label>
+
+		<costList>
+			<GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileMudstone</defName>
+		<label>jewish fine mudstone tile</label>
+
+		<costList>
+			<AB_BlocksMudstone>20</AB_BlocksMudstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileCragstone</defName>
+		<label>jewish fine cragstone tile</label>
+
+		<costList>
+			<AB_BlocksCragstone>20</AB_BlocksCragstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileObsidian</defName>
+		<label>jewish fine obsidian tile</label>
+
+		<costList>
+			<AB_BlocksObsidian>20</AB_BlocksObsidian>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileRoseQuartz</defName>
+		<label>kemetic rose quartz tile</label>
+		<color>(120,50,50)</color>
+		<costList>
+			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileMudstone</defName>
+		<label>kemetic mudstone tile</label>
+		<color>(49,31,15)</color>
+		<costList>
+			<AB_BlocksMudstone>4</AB_BlocksMudstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileCragstone</defName>
+		<label>kemetic cragstone tile</label>
+		<color>(36,35,40)</color>
+		<costList>
+			<AB_BlocksCragstone>4</AB_BlocksCragstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileObsidian</defName>
+		<label>kemetic obsidian tile</label>
+		<color>(50,50,50)</color>
+		<costList>
+			<AB_BlocksObsidian>4</AB_BlocksObsidian>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileRoseQuartz</defName>
+		<label>kemetic fine rose quartz tile</label>
+		<color>(120,50,50)</color>
+		<costList>
+			<GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileMudstone</defName>
+		<label>kemetic fine mudstone tile</label>
+		<color>(49,31,15)</color>
+		<costList>
+			<AB_BlocksMudstone>20</AB_BlocksMudstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileCragstone</defName>
+		<label>kemetic fine cragstone tile</label>
+		<color>(36,35,40)</color>
+		<costList>
+			<AB_BlocksCragstone>20</AB_BlocksCragstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileObsidian</defName>
+		<label>kemetic fine obsidian tile</label>
+		<color>(50,50,50)</color>
+		<costList>
+			<AB_BlocksObsidian>20</AB_BlocksObsidian>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileRoseQuartz</defName>
+		<label>steampunk rose quartz tile</label>
+		<color>(120,50,50)</color>
+		<costList>
+			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileMudstone</defName>
+		<label>steampunk mudstone tile</label>
+		<color>(49,31,15)</color>
+		<costList>
+			<AB_BlocksMudstone>4</AB_BlocksMudstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileCragstone</defName>
+		<label>steampunk cragstone tile</label>
+		<color>(36,35,40)</color>
+		<costList>
+			<AB_BlocksCragstone>4</AB_BlocksCragstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileObsidian</defName>
+		<label>steampunk obsidian tile</label>
+		<color>(50,50,50)</color>
+		<costList>
+			<AB_BlocksObsidian>4</AB_BlocksObsidian>
+		</costList>
+	</TerrainDef>
+
+
+
+
+
+	
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_HelixienGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_Helixien</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_HelixienPump</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_HelixienPump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasTank</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_GasTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasPipe</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_GasPipes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_GasPipes_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	
+
+</Defs>
