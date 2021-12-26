@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>AM_NutrientPasteEating_Indifferent</defName>
+		<issue>NutrientPasteEating</issue>
+		<label>indifferent</label>
+		<description>Nutrient paste is a necessity on the Rim. It may not be tasty but it keeps you well fed for another day.\n\n&lt;color=#E5E54C&gt;Note:&lt;/color&gt;\n - This is just a version of the "Don't mind" rank of the precept that doesn't need Transhumanist, so you can add it to other ideos if you want.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<defaultSelectionWeight>0</defaultSelectionWeight>
+
+	</PreceptDef>
+
+
+	<PreceptDef>
+		<defName>AM_NutrientPasteEating_Preferred</defName>
+		<issue>NutrientPasteEating</issue>
+		<label>preferred</label>
+		<description>Nutrient paste is divine ambrosia. A formless glop made of reprocessed meats, vegetables and... "other things". Who could say no to that?</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>-20</displayOrderInIssue>
+		<defaultSelectionWeight>0</defaultSelectionWeight>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteNutrientPaste</eventDef>
+				<thought>AM_AteNutrientPasteMeal_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<!-- Thoughts -->
+
+	<ThoughtDef>
+		<defName>AM_AteNutrientPasteMeal_Preferred</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate nutrient paste meal</label>
+				<description>I ate a delicious nutrient paste meal of unknown composition. The wonders of modern technology!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
