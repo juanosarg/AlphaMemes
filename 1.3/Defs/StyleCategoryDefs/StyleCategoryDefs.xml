@@ -461,6 +461,10 @@
 				<styleDef>AM_SteampunkRevival_DarklampStanding</styleDef>
 			</li>
 			<li>
+				<thingDef>TorchLamp</thingDef>
+				<styleDef>AM_SteampunkRevival_TorchLamp</styleDef>
+			</li>
+			<li>
 				<thingDef>Stool</thingDef>
 				<styleDef>AM_SteampunkRevival_Stool</styleDef>
 			</li>

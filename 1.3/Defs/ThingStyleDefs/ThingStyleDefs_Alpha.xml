@@ -777,7 +777,14 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
 	
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>AM_SteampunkRevival_Column</defName>
