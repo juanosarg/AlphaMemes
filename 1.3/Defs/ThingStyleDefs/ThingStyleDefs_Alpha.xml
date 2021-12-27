@@ -794,6 +794,13 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Telescope</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTelescope</texPath>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_WoodFiredGenerator</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_WoodFired</texPath>

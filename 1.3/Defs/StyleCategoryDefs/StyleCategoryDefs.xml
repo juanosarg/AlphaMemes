@@ -439,7 +439,10 @@
 				<styleDef>AM_SteampunkRevival_SculptureGrand</styleDef>
 			</li>
 			
-			
+			<li>
+				<thingDef>Telescope</thingDef>
+				<styleDef>AM_SteampunkRevival_Telescope</styleDef>
+			</li>
 			<li>
 				<thingDef>StandingLamp</thingDef>
 				<styleDef>AM_SteampunkRevival_StandingLamp</styleDef>
