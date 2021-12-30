@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- ====== Jewish ======== -->
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Jewish_Table1x2c</defName>
 		<graphicData>
@@ -10,7 +8,6 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Jewish_Table2x2c</defName>
 		<graphicData>
@@ -18,7 +15,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Jewish_Table2x4c</defName>
 		<graphicData>
@@ -26,7 +22,6 @@
 			<drawSize>(4,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Jewish_Table3x3c</defName>
 		<graphicData>
@@ -34,7 +29,6 @@
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_SculptureSmall</defName>
 		<graphicData>
@@ -42,7 +36,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_SculptureLarge</defName>
 		<graphicData>
@@ -51,7 +44,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_SculptureGrand</defName>
 		<graphicData>
@@ -60,7 +52,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_AltarSmall</defName>
 		<graphicData>
@@ -71,7 +62,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_AltarMedium</defName>
 		<graphicData>
@@ -83,7 +73,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_AltarLarge</defName>
 		<graphicData>
@@ -95,7 +84,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_AltarGrand</defName>
 		<graphicData>
@@ -107,9 +95,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
 	<ThingStyleDef Name="AM_Jewish_StandingLampBase">
 		<defName>AM_Jewish_StandingLamp</defName>
 		<graphicData>
@@ -117,19 +102,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Jewish_StandingLampBase">
 		<defName>AM_Jewish_StandingLamp_Red</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Jewish_StandingLampBase">
 		<defName>AM_Jewish_StandingLamp_Blue</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Jewish_StandingLampBase">
 		<defName>AM_Jewish_StandingLamp_Green</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_DarklampStanding</defName>
 		<graphicData>
@@ -137,8 +118,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
 	<ThingStyleDef>
 		<defName>AM_Jewish_IdeogramA</defName>
 		<graphicData>
@@ -147,7 +126,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Jewish_IdeogramB</defName>
 		<graphicData>
@@ -156,7 +134,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_DuckBillAxe</defName>
 		<overrideLabel>duckbill axe</overrideLabel>
@@ -165,7 +142,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Javelin</defName>
 		<overrideLabel>javelin</overrideLabel>
@@ -174,7 +150,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Chanith</defName>
 		<overrideLabel>chanith</overrideLabel>
@@ -183,7 +158,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Sniper</defName>
 		<overrideLabel>dan .338 sniper rifle</overrideLabel>
@@ -192,7 +166,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Pistol</defName>
 		<overrideLabel>jericho 941 pistol</overrideLabel>
@@ -201,16 +174,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Club</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Jewish/AM_JewishClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Spear</defName>
 		<overrideLabel>kidhohn</overrideLabel>
@@ -219,7 +189,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Knife</defName>
 		<overrideLabel>leaf dagger</overrideLabel>
@@ -228,7 +197,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Sword</defName>
 		<overrideLabel>leaf sword</overrideLabel>
@@ -237,7 +205,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Rifle</defName>
 		<overrideLabel>tavor TAR-21 assault rifle</overrideLabel>
@@ -246,7 +213,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Revolver</defName>
 		<overrideLabel>webley revolver</overrideLabel>
@@ -255,7 +221,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_ChainShotgun</defName>
 		<overrideLabel>tavor TS12 bullpup shotgun</overrideLabel>
@@ -264,9 +229,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<!-- ====== Kemetic ======== -->
-	
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Table1x2c</defName>
 		<graphicData>
@@ -274,7 +237,6 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Table2x2c</defName>
 		<graphicData>
@@ -282,7 +244,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Table2x4c</defName>
 		<graphicData>
@@ -290,7 +251,6 @@
 			<drawSize>(4,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Table3x3c</defName>
 		<graphicData>
@@ -298,7 +258,6 @@
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_SculptureSmall</defName>
 		<graphicData>
@@ -306,7 +265,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_SculptureLarge</defName>
 		<graphicData>
@@ -315,7 +273,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_SculptureGrand</defName>
 		<graphicData>
@@ -324,7 +281,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_AltarSmall</defName>
 		<graphicData>
@@ -335,7 +291,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_AltarMedium</defName>
 		<graphicData>
@@ -347,7 +302,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_AltarLarge</defName>
 		<graphicData>
@@ -359,7 +313,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_AltarGrand</defName>
 		<graphicData>
@@ -371,8 +324,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
-	
 	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
 		<defName>AM_Kemetic_StandingLamp</defName>
 		<graphicData>
@@ -380,19 +331,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
 		<defName>AM_Kemetic_StandingLamp_Red</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
 		<defName>AM_Kemetic_StandingLamp_Blue</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Kemetic_StandingLampBase">
 		<defName>AM_Kemetic_StandingLamp_Green</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_DarklampStanding</defName>
 		<graphicData>
@@ -400,7 +347,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_Stool</defName>
 		<graphicData>
@@ -421,7 +367,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_TorchLamp</defName>
 		<graphicData>
@@ -430,7 +375,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>AM_Kemetic_Column</defName>
 		<graphicData>
@@ -438,7 +382,6 @@
 			<drawSize>(0.625,1.25)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_IdeogramA</defName>
 		<graphicData>
@@ -447,7 +390,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_Kemetic_IdeogramB</defName>
 		<graphicData>
@@ -456,7 +398,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_BarbedSpear</defName>
 		<overrideLabel>barbed spear</overrideLabel>
@@ -465,7 +406,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Javelin</defName>
 		<overrideLabel>javelin</overrideLabel>
@@ -474,7 +414,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ShortSword</defName>
 		<overrideLabel>short sword</overrideLabel>
@@ -483,7 +422,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_BattleAxe</defName>
 		<overrideLabel>battle axe</overrideLabel>
@@ -492,7 +430,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Mace</defName>
 		<overrideLabel>discoidal mace</overrideLabel>
@@ -501,7 +438,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Khopesh</defName>
 		<overrideLabel>khopesh</overrideLabel>
@@ -510,7 +446,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Staff</defName>
 		<overrideLabel>laser staff</overrideLabel>
@@ -519,7 +454,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PalmAxe</defName>
 		<overrideLabel>palm axe</overrideLabel>
@@ -528,7 +462,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Pistol</defName>
 		<overrideLabel>helwan 951 pistol</overrideLabel>
@@ -537,7 +470,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Rifle</defName>
 		<overrideLabel>misr assault rifle</overrideLabel>
@@ -546,7 +478,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_MachineGun</defName>
 		<overrideLabel>port said machinegun</overrideLabel>
@@ -555,7 +486,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Carbine</defName>
 		<overrideLabel>rasheed carbine</overrideLabel>
@@ -564,7 +494,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</wornGraphicPath>
@@ -629,9 +558,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<!-- ====== Steampunk ======== -->
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_SteampunkRevival_Wall</defName>
 		<graphicData>
@@ -639,14 +566,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
-		  <linkFlags>
-			<li>Wall</li>
-			<li>Rock</li>
-		  </linkFlags>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Steampunk/Wall/SteampunkWall_Icon</uiIconPath>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_SteampunkRevival_Table1x2c</defName>
 		<graphicData>
@@ -663,7 +589,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_SteampunkRevival_Table2x4c</defName>
 		<graphicData>
@@ -672,7 +597,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_SteampunkRevival_Table3x3c</defName>
 		<graphicData>
@@ -681,7 +605,20 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Autodoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Door/AM_SteampunkAutodoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+				<enabled>false</enabled>
+			</damageData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/Door/AM_SteampunkAutodoor_MenuIcon</uiIconPath>
+	</ThingStyleDef>
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_SculptureSmall</defName>
 		<graphicData>
@@ -689,7 +626,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_SculptureLarge</defName>
 		<graphicData>
@@ -698,7 +634,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_SculptureGrand</defName>
 		<graphicData>
@@ -707,9 +642,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
-	
 	<ThingStyleDef Name="AM_Steampunk_StandingLampBase">
 		<defName>AM_SteampunkRevival_StandingLamp</defName>
 		<graphicData>
@@ -717,19 +649,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Steampunk_StandingLampBase">
 		<defName>AM_SteampunkRevival_StandingLamp_Red</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Steampunk_StandingLampBase">
 		<defName>AM_SteampunkRevival_StandingLamp_Blue</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_Steampunk_StandingLampBase">
 		<defName>AM_SteampunkRevival_StandingLamp_Green</defName>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_DarklampStanding</defName>
 		<graphicData>
@@ -737,7 +665,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_Stool</defName>
 		<graphicData>
@@ -758,7 +685,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_Chair</defName>
 		<graphicData>
@@ -776,7 +702,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_TorchLamp</defName>
 		<graphicData>
@@ -785,7 +710,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>AM_SteampunkRevival_Column</defName>
 		<graphicData>
@@ -797,7 +721,6 @@
 		<defName>AM_SteampunkRevival_Telescope</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTelescope</texPath>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -832,7 +755,6 @@
 			<drawSize>(6,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkPowerArmor/AM_SteampunkPowerArmor</wornGraphicPath>
@@ -841,12 +763,19 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_BowlerHat</defName>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkBowlerHat/AM_SteampunkBowlerHat</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkBowlerHat/AM_SteampunkBowlerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_SimpleHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkSimpleHelmet/AM_SteampunkSimpleHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkSimpleHelmet/AM_SteampunkSimpleHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
@@ -866,7 +795,15 @@
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkGoggles/AM_SteampunkGoggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_AviatorHat</defName>
+		<overrideLabel>aviator hat</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkAviatorHat/AM_SteampunkAviatorHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkAviatorHat/AM_SteampunkAviatorHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -875,7 +812,6 @@
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkMask/AM_SteampunkMask</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -884,16 +820,22 @@
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkGunlink/AM_Steampunk_Gunlink</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
-		<defName>AM_SteampunkRevival_CowboyHat</defName>
+		<defName>AM_SteampunkRevival_TopHat</defName>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkTophat/AM_SteampunkTophat</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkTophat/AM_SteampunkTophat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_JumpPack</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkJumpPack/AM_SteampunkJumpPack</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkJumpPack/AM_SteampunkJumpPack_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -912,7 +854,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_Knife</defName>
 		<graphicData>
@@ -937,14 +878,13 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_ChargeRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkChargeRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>	
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_HeavySMG</defName>
 		<graphicData>
@@ -1029,5 +969,4 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 </Defs>

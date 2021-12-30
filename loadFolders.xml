@@ -10,8 +10,8 @@
 		<li IfModActive="sarg.alphabiomes_copy">1.3/Mods/AlphaBiomes</li>
 		<li IfModActive="VanillaExpanded.VFEPower">1.3/Mods/VanillaPowerExpanded</li>
 		<li IfModActive="VanillaExpanded.VFEPower_copy">1.3/Mods/VanillaPowerExpanded</li>
-		<!--<li IfModActive="Lilscoot.Wheelchairs">1.3/Mods/Wheelchairs</li>
-		<li IfModActive="Lilscoot.Wheelchairs_copy">1.3/Mods/Wheelchairs</li>-->
+		<li IfModActive="Lilscoot.Wheelchairs">1.3/Mods/Wheelchairs</li>
+		<li IfModActive="Lilscoot.Wheelchairs_copy">1.3/Mods/Wheelchairs</li>
 	</v1.3>
 </loadFolders>
 

@@ -29,6 +29,39 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autominer"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_Autominer/AM_Steampunk_Autominer</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Turret"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_MobileTurret/AM_Steampunk_MobileTurret</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autobroadcaster"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_AutoBroadcaster/AM_Steampunk_AutoBroadcaster</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>

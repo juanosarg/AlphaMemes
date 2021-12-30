@@ -444,6 +444,10 @@
 				<styleDef>AM_SteampunkRevival_Telescope</styleDef>
 			</li>
 			<li>
+				<thingDef>Autodoor</thingDef>
+				<styleDef>AM_SteampunkRevival_Autodoor</styleDef>
+			</li>
+			<li>
 				<thingDef>StandingLamp</thingDef>
 				<styleDef>AM_SteampunkRevival_StandingLamp</styleDef>
 			</li>
@@ -515,7 +519,14 @@
 				<thingDef>Apparel_VisageMask</thingDef>
 				<styleDef>AM_SteampunkRevival_Mask</styleDef>
 			</li>
-			
+			 <li>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<styleDef>AM_SteampunkRevival_SimpleHelmet</styleDef>
+			</li>	
+			<li>
+				<thingDef>Apparel_CowboyHat</thingDef>
+				<styleDef>AM_SteampunkRevival_AviatorHat</styleDef>
+			</li>			
 			<li>
 				<thingDef>MeleeWeapon_Club</thingDef>
 				<styleDef>AM_SteampunkRevival_Club</styleDef>
@@ -596,9 +607,13 @@
 				<styleDef>AM_SteampunkRevival_Gunlink</styleDef>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
-				<thingDef>Apparel_CowboyHat</thingDef>
-				<styleDef>AM_SteampunkRevival_CowboyHat</styleDef>
-			</li>
+				<thingDef>Apparel_HatTop</thingDef>
+				<styleDef>AM_SteampunkRevival_TopHat</styleDef>
+			</li>	
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_PackJump</thingDef>
+				<styleDef>AM_SteampunkRevival_JumpPack</styleDef>
+			</li>	
 		</thingDefStyles>
 		<addDesignatorGroups>
 			
