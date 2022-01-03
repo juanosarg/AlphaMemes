@@ -755,6 +755,13 @@
 			<drawSize>(6,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Components</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkComponents</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkPowerArmor/AM_SteampunkPowerArmor</wornGraphicPath>

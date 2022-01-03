@@ -500,6 +500,10 @@
 				<styleDef>AM_SteampunkRevival_GeothermalGenerator</styleDef>
 			</li>
 			<li>
+				<thingDef>ComponentIndustrial</thingDef>
+				<styleDef>AM_SteampunkRevival_Components</styleDef>
+			</li>
+			<li>
 				<thingDef>Apparel_PowerArmor</thingDef>
 				<styleDef>AM_SteampunkRevival_PowerArmor</styleDef>
 			</li>
