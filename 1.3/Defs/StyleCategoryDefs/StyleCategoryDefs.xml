@@ -484,6 +484,10 @@
 				<styleDef>AM_SteampunkRevival_Column</styleDef>
 			</li>
 			<li>
+				<thingDef>DeepDrill</thingDef>
+				<styleDef>AM_SteampunkRevival_DeepDrill</styleDef>
+			</li>
+			<li>
 				<thingDef>WoodFiredGenerator</thingDef>
 				<styleDef>AM_SteampunkRevival_WoodFiredGenerator</styleDef>
 			</li>
@@ -617,6 +621,10 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_PackJump</thingDef>
 				<styleDef>AM_SteampunkRevival_JumpPack</styleDef>
+			</li>	
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>ShipLandingBeacon</thingDef>
+				<styleDef>AM_SteampunkRevival_ShipLandingBeacon</styleDef>
 			</li>	
 		</thingDefStyles>
 		<addDesignatorGroups>

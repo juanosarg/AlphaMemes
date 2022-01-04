@@ -756,6 +756,22 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_DeepDrill</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_DeepDrill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_ShipLandingBeacon</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_ShipLandingBeacon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_Components</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkComponents</texPath>

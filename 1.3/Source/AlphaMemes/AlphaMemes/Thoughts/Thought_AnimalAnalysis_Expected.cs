@@ -13,6 +13,10 @@ namespace AlphaMemes
 
             float progressTotal = StaticCollectionsClass.databaseCompletion;
 
+            if(p.Faction!= Faction.OfPlayer)
+            {
+                return false;
+            }
 
             if (progressTotal == 0)
             {
