@@ -803,6 +803,14 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_AdvancedHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkAdvancedHelmet/AM_SteampunkAdvancedHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkAdvancedHelmet/AM_SteampunkAdvancedHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_Tuque</defName>
 		<overrideLabel>flat cap</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkTuque/AM_SteampunkTuque</wornGraphicPath>
@@ -871,8 +879,33 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_Gladius</defName>
+		<overrideLabel>rapier</overrideLabel>
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Ikwa</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Spear</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Bow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkRecurveBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

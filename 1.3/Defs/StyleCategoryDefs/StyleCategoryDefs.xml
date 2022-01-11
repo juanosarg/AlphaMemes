@@ -531,6 +531,10 @@
 				<thingDef>Apparel_SimpleHelmet</thingDef>
 				<styleDef>AM_SteampunkRevival_SimpleHelmet</styleDef>
 			</li>	
+			 <li>
+				<thingDef>Apparel_AdvancedHelmet</thingDef>
+				<styleDef>AM_SteampunkRevival_AdvancedHelmet</styleDef>
+			</li>	
 			<li>
 				<thingDef>Apparel_CowboyHat</thingDef>
 				<styleDef>AM_SteampunkRevival_AviatorHat</styleDef>
@@ -542,8 +546,19 @@
 			<li>
 				<thingDef>MeleeWeapon_Gladius</thingDef>
 				<styleDef>AM_SteampunkRevival_Gladius</styleDef>
-			</li>		
-			
+			</li>	
+<li>
+				<thingDef>MeleeWeapon_Ikwa</thingDef>
+				<styleDef>AM_SteampunkRevival_Ikwa</styleDef>
+			</li>					
+			<li>
+				<thingDef>MeleeWeapon_Spear</thingDef>
+				<styleDef>AM_SteampunkRevival_Spear</styleDef>
+			</li>
+			<li>
+				<thingDef>Bow_Recurve</thingDef>
+				<styleDef>AM_SteampunkRevival_Bow</styleDef>
+			</li>
 			<li>
 				<thingDef>MeleeWeapon_Knife</thingDef>
 				<styleDef>AM_SteampunkRevival_Knife</styleDef>

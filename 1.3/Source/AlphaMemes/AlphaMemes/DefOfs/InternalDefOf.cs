@@ -90,6 +90,7 @@ namespace AlphaMemes
 		public static DesignatorDropdownGroupDef AM_Floor_JewishFineTiles;
 		public static DesignatorDropdownGroupDef AM_Floor_KemeticTiles;
 		public static DesignatorDropdownGroupDef AM_Floor_KemeticFineTiles;
+		public static DesignatorDropdownGroupDef AM_Floor_SteampunkTiles;
 
 		[MayRequireRoyalty]
 		public static ThoughtDef AM_DeathKnellThought;
