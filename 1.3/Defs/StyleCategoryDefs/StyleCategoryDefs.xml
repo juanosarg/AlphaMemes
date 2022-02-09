@@ -535,6 +535,10 @@
 				<thingDef>Apparel_AdvancedHelmet</thingDef>
 				<styleDef>AM_SteampunkRevival_AdvancedHelmet</styleDef>
 			</li>	
+			 <li>
+				<thingDef>Apparel_ShieldBelt</thingDef>
+				<styleDef>AM_SteampunkRevival_ShieldBelt</styleDef>
+			</li>	
 			<li>
 				<thingDef>Apparel_CowboyHat</thingDef>
 				<styleDef>AM_SteampunkRevival_AviatorHat</styleDef>

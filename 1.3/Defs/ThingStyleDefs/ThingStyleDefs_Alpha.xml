@@ -870,6 +870,14 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_ShieldBelt</defName>
+	
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkShieldBelt/AM_SteampunkShieldBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_Club</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkClub</texPath>
