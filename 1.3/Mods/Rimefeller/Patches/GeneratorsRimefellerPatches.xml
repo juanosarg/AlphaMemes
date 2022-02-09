@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "OilWell"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "OilWell"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "OilWell"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "DeepOilWell"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "OilStorage"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FuelStorage"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	
+	
+</Patch>

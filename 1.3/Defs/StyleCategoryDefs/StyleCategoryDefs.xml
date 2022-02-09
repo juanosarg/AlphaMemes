@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
 	<StyleCategoryDef>
 		<defName>AM_Jewish</defName>
 		<label>jewish</label>
@@ -38,7 +35,6 @@
 				<thingDef>Altar_Grand</thingDef>
 				<styleDef>AM_Jewish_AltarGrand</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Table1x2c</thingDef>
 				<styleDef>AM_Jewish_Table1x2c</styleDef>
@@ -75,8 +71,6 @@
 				<thingDef>Darklamp</thingDef>
 				<styleDef>AM_Jewish_DarklampStanding</styleDef>
 			</li>
-		
-			
 			<li>
 				<thingDef>Ideogram</thingDef>
 				<styleDef>AM_Jewish_IdeogramA</styleDef>
@@ -85,22 +79,18 @@
 				<thingDef>Ideogram</thingDef>
 				<styleDef>AM_Jewish_IdeogramB</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Gladius</thingDef>
 				<styleDef>AM_Jewish_DuckBillAxe</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Pila</thingDef>
 				<styleDef>AM_Jewish_Javelin</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>AM_Jewish_Chanith</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Gun_SniperRifle</thingDef>
 				<styleDef>AM_Jewish_Sniper</styleDef>
@@ -137,21 +127,16 @@
 				<thingDef>Gun_ChainShotgun</thingDef>
 				<styleDef>AM_Jewish_ChainShotgun</styleDef>
 			</li>
-			
 		</thingDefStyles>
 		<addDesignatorGroups>
-			
 			<li>AM_Floor_JewishTiles</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_JewishFineTiles</li>
-			
-
 		</addDesignatorGroups>
 		<addDesignators>
 			<li>AM_JewishSlab_Medium</li>
 			<li>AM_JewishSlab_Broad</li>
 		</addDesignators>
 	</StyleCategoryDef>
-	
 	<StyleCategoryDef>
 		<defName>AM_Kemetic</defName>
 		<label>kemetic</label>
@@ -171,7 +156,6 @@
 				<thingDef>SculptureGrand</thingDef>
 				<styleDef>AM_Kemetic_SculptureGrand</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Altar_Small</thingDef>
 				<styleDef>AM_Kemetic_AltarSmall</styleDef>
@@ -248,104 +232,82 @@
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>AM_Kemetic_BarbedSpear</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Pila</thingDef>
 				<styleDef>AM_Kemetic_Javelin</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Knife</thingDef>
 				<styleDef>AM_Kemetic_ShortSword</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Gladius</thingDef>
 				<styleDef>AM_Kemetic_BattleAxe</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Mace</thingDef>
 				<styleDef>AM_Kemetic_Mace</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_LongSword</thingDef>
 				<styleDef>AM_Kemetic_Khopesh</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
 				<styleDef>AM_Kemetic_Staff</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>MeleeWeapon_Spear</thingDef>
 				<styleDef>AM_Kemetic_PalmAxe</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Gun_Autopistol</thingDef>
 				<styleDef>AM_Kemetic_Pistol</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Gun_AssaultRifle</thingDef>
 				<styleDef>AM_Kemetic_Rifle</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Gun_MachinePistol</thingDef>
 				<styleDef>AM_Kemetic_MachineGun</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Gun_BoltActionRifle</thingDef>
 				<styleDef>AM_Kemetic_Carbine</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Apparel_PowerArmor</thingDef>
 				<styleDef>AM_Kemetic_PowerArmor</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Apparel_PowerArmorHelmet</thingDef>
 				<styleDef>AM_Kemetic_PowerArmorHelmet</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorMarinePrestige</thingDef>
 				<styleDef>AM_Kemetic_PrestigePowerArmor</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorMarineHelmetPrestige</thingDef>
 				<styleDef>AM_Kemetic_PrestigePowerArmorHelmet</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorCataphract</thingDef>
 				<styleDef>AM_Kemetic_ArmorCataphract</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
 				<styleDef>AM_Kemetic_ArmorCataphractHelmet</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorCataphractPrestige</thingDef>
 				<styleDef>AM_Kemetic_PrestigeCataphract</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
 				<styleDef>AM_Kemetic_PrestigeCataphractHelmet</styleDef>
 			</li>
-			
-			
-			
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
@@ -353,16 +315,10 @@
 			<li>AM_KemeticSlab_Broad</li>
 		</addDesignators>
 		<addDesignatorGroups>
-			
 			<li>AM_Floor_KemeticTiles</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_KemeticFineTiles</li>
-			
-
 		</addDesignatorGroups>
-		
-		
 	</StyleCategoryDef>
-	
 	<StyleCategoryDef>
 		<defName>AM_Atheist</defName>
 		<label>atheist</label>
@@ -372,9 +328,7 @@
 		<thingDefStyles>
 			
 		</thingDefStyles>
-		
 	</StyleCategoryDef>
-	
 	<StyleCategoryDef>
 		<defName>AM_Jain</defName>
 		<label>jain</label>
@@ -384,7 +338,6 @@
 		<thingDefStyles>
 			
 		</thingDefStyles>
-		
 	</StyleCategoryDef>
 	<StyleCategoryDef>
 		<defName>AM_Sikh</defName>
@@ -395,9 +348,7 @@
 		<thingDefStyles>
 			
 		</thingDefStyles>
-		
 	</StyleCategoryDef>
-	
 	<StyleCategoryDef>
 		<defName>AM_SteampunkRevival</defName>
 		<label>steampunk</label>
@@ -417,7 +368,6 @@
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>AM_SteampunkRevival_Table2x2c</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Table2x4c</thingDef>
 				<styleDef>AM_SteampunkRevival_Table2x4c</styleDef>
@@ -438,7 +388,6 @@
 				<thingDef>SculptureGrand</thingDef>
 				<styleDef>AM_SteampunkRevival_SculptureGrand</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Telescope</thingDef>
 				<styleDef>AM_SteampunkRevival_Telescope</styleDef>
@@ -522,39 +471,47 @@
 			<li>
 				<thingDef>Apparel_WarVeil</thingDef>
 				<styleDef>AM_SteampunkRevival_Goggles</styleDef>
-			</li>			
+			</li>
 			<li>
 				<thingDef>Apparel_VisageMask</thingDef>
 				<styleDef>AM_SteampunkRevival_Mask</styleDef>
 			</li>
-			 <li>
+			<li>
 				<thingDef>Apparel_SimpleHelmet</thingDef>
 				<styleDef>AM_SteampunkRevival_SimpleHelmet</styleDef>
-			</li>	
-			 <li>
+			</li>
+			<li>
 				<thingDef>Apparel_AdvancedHelmet</thingDef>
 				<styleDef>AM_SteampunkRevival_AdvancedHelmet</styleDef>
-			</li>	
-			 <li>
+			</li>
+			<li>
 				<thingDef>Apparel_ShieldBelt</thingDef>
 				<styleDef>AM_SteampunkRevival_ShieldBelt</styleDef>
-			</li>	
+			</li>
 			<li>
 				<thingDef>Apparel_CowboyHat</thingDef>
 				<styleDef>AM_SteampunkRevival_AviatorHat</styleDef>
-			</li>			
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorRecon</thingDef>
+				<styleDef>AM_SteampunkRevival_FlakVest</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>AM_SteampunkRevival_FlakHelmet</styleDef>
+			</li>
 			<li>
 				<thingDef>MeleeWeapon_Club</thingDef>
 				<styleDef>AM_SteampunkRevival_Club</styleDef>
-			</li>			
+			</li>
 			<li>
 				<thingDef>MeleeWeapon_Gladius</thingDef>
 				<styleDef>AM_SteampunkRevival_Gladius</styleDef>
-			</li>	
-<li>
+			</li>
+			<li>
 				<thingDef>MeleeWeapon_Ikwa</thingDef>
 				<styleDef>AM_SteampunkRevival_Ikwa</styleDef>
-			</li>					
+			</li>
 			<li>
 				<thingDef>MeleeWeapon_Spear</thingDef>
 				<styleDef>AM_SteampunkRevival_Spear</styleDef>
@@ -575,16 +532,14 @@
 				<thingDef>MeleeWeapon_Mace</thingDef>
 				<styleDef>AM_SteampunkRevival_Mace</styleDef>
 			</li>
-		
-			
 			<li>
 				<thingDef>Gun_ChargeRifle</thingDef>
 				<styleDef>AM_SteampunkRevival_ChargeRifle</styleDef>
-			</li>			
+			</li>
 			<li>
 				<thingDef>Gun_HeavySMG</thingDef>
 				<styleDef>AM_SteampunkRevival_HeavySMG</styleDef>
-			</li>		
+			</li>
 			<li>
 				<thingDef>Gun_SniperRifle</thingDef>
 				<styleDef>AM_SteampunkRevival_SniperRifle</styleDef>
@@ -636,30 +591,22 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_HatTop</thingDef>
 				<styleDef>AM_SteampunkRevival_TopHat</styleDef>
-			</li>	
+			</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_PackJump</thingDef>
 				<styleDef>AM_SteampunkRevival_JumpPack</styleDef>
-			</li>	
+			</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>ShipLandingBeacon</thingDef>
 				<styleDef>AM_SteampunkRevival_ShipLandingBeacon</styleDef>
-			</li>	
+			</li>
 		</thingDefStyles>
 		<addDesignatorGroups>
-			
 			<li>AM_Floor_SteampunkTiles</li>
-			
-
 		</addDesignatorGroups>
 		<addDesignators>
-			
 			<li>AM_SteampunkSlab_Medium</li>
 			<li>AM_SteampunkSlab_Broad</li>
 		</addDesignators>
-		
 	</StyleCategoryDef>
-	
-
-
 </Defs>

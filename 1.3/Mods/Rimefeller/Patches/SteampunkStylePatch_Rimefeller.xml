@@ -6,28 +6,24 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
 			<value>
-
 				<li>
-					<thingDef>VPE_HelixienGenerator</thingDef>
-					<styleDef>AM_SteampunkRevival_HelixienGenerator</styleDef>
+					<thingDef>OilWell</thingDef>
+					<styleDef>AM_SteampunkRevival_OilWell</styleDef>
 				</li>
 				<li>
-					<thingDef>VPE_HelixienPump</thingDef>
-					<styleDef>AM_SteampunkRevival_HelixienPump</styleDef>
+					<thingDef>DeepOilWell</thingDef>
+					<styleDef>AM_SteampunkRevival_OilWell</styleDef>
 				</li>
 				<li>
-					<thingDef>VPE_GasTank</thingDef>
-					<styleDef>AM_SteampunkRevival_GasTank</styleDef>
+					<thingDef>OilStorage</thingDef>
+					<styleDef>AM_SteampunkRevival_OilStorage</styleDef>
 				</li>
 				<li>
-					<thingDef>VPE_GasPipe</thingDef>
-					<styleDef>AM_SteampunkRevival_GasPipe</styleDef>
+					<thingDef>FuelStorage</thingDef>
+					<styleDef>AM_SteampunkRevival_FuelStorage</styleDef>
 				</li>
-
-
+				
 			</value>
 		</match>
 	</Operation>
-
-
 </Patch>

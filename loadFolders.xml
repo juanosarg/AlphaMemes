@@ -12,6 +12,14 @@
 		<li IfModActive="VanillaExpanded.VFEPower_copy">1.3/Mods/VanillaPowerExpanded</li>
 		<li IfModActive="Lilscoot.Wheelchairs">1.3/Mods/Wheelchairs</li>
 		<li IfModActive="Lilscoot.Wheelchairs_copy">1.3/Mods/Wheelchairs</li>
+		<li IfModActive="Dubwise.Rimefeller">1.3/Mods/Rimefeller</li>
+		<li IfModActive="Dubwise.Rimefeller_copy">1.3/Mods/Rimefeller</li>
+		<li IfModActive="Tyrannical_Elmo.IndustrialMelee">1.3/Mods/IndustrialArmory</li>
+		<li IfModActive="Tyrannical_Elmo.IndustrialMelee_copy">1.3/Mods/IndustrialArmory</li>
+		<li IfModActive="Murmur.WallLight">1.3/Mods/WallLights</li>
+		<li IfModActive="Murmur.WallLight_copy">1.3/Mods/WallLights</li>
+		<li IfModActive="Owlchemist.WallUtilities">1.3/Mods/WallUtilities</li>
+		<li IfModActive="Owlchemist.WallUtilities_copy">1.3/Mods/WallUtilities</li>
 	</v1.3>
 </loadFolders>
 

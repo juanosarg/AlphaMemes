@@ -829,6 +829,24 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_FlakVest</defName>
+		
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_FlakHelmet</defName>
+		
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_AviatorHat</defName>
 		<overrideLabel>aviator hat</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkAviatorHat/AM_SteampunkAviatorHat</wornGraphicPath>
