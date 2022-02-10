@@ -94,6 +94,14 @@
 					<thingDef>VFE_TidalGenerator</thingDef>
 					<styleDef>AM_SteampunkRevival_TidalGenerator</styleDef>
 				</li>
+				<li>
+					<thingDef>VPE_GasWallLight</thingDef>
+					<styleDef>AM_SteampunkRevival_GasWallLight</styleDef>
+				</li>
+				<li>
+					<thingDef>VPE_GasWallDarkLight</thingDef>
+					<styleDef>AM_SteampunkRevival_GasWallDarkLight</styleDef>
+				</li>
 			</value>
 		</match>
 	</Operation>
