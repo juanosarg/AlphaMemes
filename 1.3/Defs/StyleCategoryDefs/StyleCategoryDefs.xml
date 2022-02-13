@@ -609,4 +609,16 @@
 			<li>AM_SteampunkSlab_Broad</li>
 		</addDesignators>
 	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>AM_Corsair</defName>
+		<label>corsair</label>
+		<iconPath>UI/Structures/AM_Corsair</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Jewish</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_JewishVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+			
+		</thingDefStyles>
+	
+	</StyleCategoryDef>
 </Defs>

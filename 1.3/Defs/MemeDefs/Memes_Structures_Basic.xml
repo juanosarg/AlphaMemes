@@ -455,4 +455,65 @@
 			</li>
 		</thingStyleCategories>
 	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Corsair</defName>
+		<label>corsair</label>
+		<description>The misguided romanticization of ages long past has been a constant through all human history. Even though the modern pirates on the Rim have nothing to do with ancient seafaring pirates the corsair aesthetics have perdured well into the space age.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Corsair</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>forecastle</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->corsair</li>
+				<li>memeAdjective->marauding</li>
+				<li>memeAdjective->sea dog</li>
+				<li>memeAdjective->freebooting</li>
+				<li>memeAdjective->roving</li>
+							
+				<li>memeLeaderNoun->shipmaster</li>
+				<li>memeLeaderNoun->commodore</li>
+				
+				<li>memeLeaderAdjective->gallant</li>
+				<li>memeLeaderAdjective->draconian</li>
+				<li>memeLeaderAdjective->callous</li>
+				<li>memeLeaderAdjective->brave</li>
+				<li>memeLeaderAdjective->ruthless</li>
+				<li>memeLeaderAdjective->daring</li>
+				<li>memeMoralist->lieutenant</li>
+				<li>memeMoralist->sargeant</li>
+				<li>memeMoralist->subaltern</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_CorsairDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_corsair</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>corsairs</theme>
+				<adjective>corsair</adjective>
+				<member>corsair</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Corsair</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
 </Defs>

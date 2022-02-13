@@ -342,4 +342,51 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_CorsairDescription</defName>
+		<segments>
+			<li>corsairlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_corsairlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->speech</li>
+				<li>book->eloquent speech</li>
+				<li>book->rant</li>
+				<li>book->tirade</li>
+				<li>book->diatribe</li>
+				<li>concept->pillaging</li>
+				<li>concept->stealing from the weak</li>
+				<li>concept->raiding</li>
+				<li>concept->walking the plank</li>
+				<li>concept->scurvy</li>
+				<li>concept->the Brass Chronicles</li>				
+				<!-- generic intro -->
+				<li>corsairlessonIntro->"Pillagin', shoutin' an' slashin' — that be how we sail! May she always be swabbin' an' riggin'." Our captain taught us that</li>
+				<li>corsairlessonIntro->"A wise knave keeps only comp'ny with a pox-ridden rascal an' a grungy anchor." The boss preached that</li>
+				<li>corsairlessonIntro->"Bucket o' bladder stench, ye blaggard! Did ye dance a jig on me scabbard?" - the captain said. Strife taught us one thing:</li>				
+				<li>corsairlessonIntro->"Begad! Why be they screamin' so cockeredly? I be broadsidin' on their bowspirit like a whoreson seadog!". The insane ramblings from the boss made us understand that</li>
+				<li>corsairlessonIntro->"Damnation seize me soul if I give ye quarters, or take any from ye." The courage of the captain was showing us that</li>
+				<li>corsairlessonIntro->"I'm yer knave, an' yer me kraken. For real, that be!." We didn't understand what the boss meant, but we were confident in the knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>
