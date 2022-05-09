@@ -310,6 +310,7 @@
     <Compile Include="Comps\CompRelicSmashingContainer.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
+    <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap_AddHumanlikeOrders.cs" />
     <Compile Include="Harmony\SketchGenUtility_PlayerCanBuildNow.cs" />

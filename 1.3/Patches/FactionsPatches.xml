@@ -22,6 +22,7 @@
 		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
 			
 		</value>
 	</Operation>
@@ -29,12 +30,14 @@
 		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
 		</value>
 	</Operation>
 	

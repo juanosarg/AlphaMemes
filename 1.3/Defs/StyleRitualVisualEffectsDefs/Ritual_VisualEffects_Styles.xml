@@ -238,4 +238,38 @@
 			<drawSize>18</drawSize>
 		</graphicData>
 	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_CorsairVisuals</defName>
+		<tintColor>(120, 120, 120)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_Skull</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Skull</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(240, 240, 240)</color>
+			<texPath>Motes/AM_Skull</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.06</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>12</drawSize>
+		</graphicData>
+	</ThingDef>
 </Defs>

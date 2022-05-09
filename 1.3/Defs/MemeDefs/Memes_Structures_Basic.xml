@@ -515,5 +515,8 @@
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
+		<addDesignators>
+			<li>AM_GrogDispenser</li>
+		</addDesignators>
 	</MemeDef>
 </Defs>

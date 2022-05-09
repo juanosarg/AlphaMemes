@@ -46,6 +46,7 @@ namespace AlphaMemes
 		public static ThingDef AM_AnimalDatabase;
 		public static ThingDef AM_BlocksPristineLimestone;
 		public static ThingDef AM_RelicSmashingAltar;
+		public static ThingDef AM_GrogDispenser;
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
@@ -65,7 +66,7 @@ namespace AlphaMemes
 		public static MemeDef AM_Iconoclast;
 		public static MemeDef Proselytizer;
 
-
+		public static ThingStyleDef AM_MealNutrientPaste;
 
 		public static HediffDef AM_CatharsisHediff;
 		public static HediffDef AM_UtilityDryadHediff;
