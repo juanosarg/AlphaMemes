@@ -592,6 +592,30 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_GreatBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	<!-- Spikecore -->
 	
@@ -884,6 +908,30 @@
 		<defName>AM_Techist_AssaultRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Techist/AM_TechistAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Techist_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Techist/AM_TechistBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Techist_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Techist/AM_TechistRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Techist_GreatBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Techist/AM_TechistGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
