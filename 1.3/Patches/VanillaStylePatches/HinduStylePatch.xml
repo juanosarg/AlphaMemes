@@ -90,6 +90,18 @@
 					<thingDef>MeleeWeapon_Spear</thingDef>
 					<styleDef>AM_Hindu_Spear</styleDef>
 				</li>
+				<li>
+					<thingDef>Bow_Short</thingDef>
+					<styleDef>AM_Hindu_Bow</styleDef>
+				</li>
+				<li>
+					<thingDef>Bow_Recurve</thingDef>
+					<styleDef>AM_Hindu_RecurveBow</styleDef>
+				</li>
+				<li>
+					<thingDef>Bow_Great</thingDef>
+					<styleDef>AM_Hindu_GreatBow</styleDef>
+				</li>
 			</value>
 		</match>
 	</Operation>

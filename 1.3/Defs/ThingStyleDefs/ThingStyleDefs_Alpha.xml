@@ -159,6 +159,13 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Mace</defName>		
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Jewish_Sniper</defName>
 		<overrideLabel>dan .338 sniper rifle</overrideLabel>
 		<graphicData>
@@ -419,6 +426,13 @@
 		<overrideLabel>short sword</overrideLabel>
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_ShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
@@ -1186,6 +1200,64 @@
 		<graphicData>
 			<texPath>Things/Item/AM_Grog</texPath>
 			<graphicClass>Graphic_MealVariants</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	<!-- ====== Sikh ======== -->
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Gladius</defName>
+		<overrideLabel>kirpan</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhKirpan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Ikwa</defName>
+		<overrideLabel>barchha nagni</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhBarchhaNagni</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Knife</defName>
+		<overrideLabel>zulfiqar</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhZulfiqar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Sword</defName>
+		<overrideLabel>khanda</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhKhanda</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Mace</defName>
+		<overrideLabel>gurj</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhGurj</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Sikh_Spear</defName>
+		<overrideLabel>barchha</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Sikh/AM_SikhBarchha</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
 </Defs>

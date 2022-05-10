@@ -20,6 +20,62 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Club</defName>
+		<overrideLabel>cudgel</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianCudgel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Gladius</defName>
+		<overrideLabel>squire sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianSquireSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Ikwa</defName>
+		<overrideLabel>halberd</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Knife</defName>
+		<overrideLabel>poignard</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianPoignard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Sword</defName>
+		<overrideLabel>knightly sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianKnightlySword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Mace</defName>
+		<overrideLabel>flanged mace</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianFlangedMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Spear</defName>
+		<overrideLabel>lance</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	<!-- Islamic -->
 	
@@ -218,6 +274,30 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_GreatBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	<!-- Morbid -->
 	
@@ -349,6 +429,30 @@
 		<defName>AM_Morbid_AssaultRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Morbid/AM_MorbidAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_GreatBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
@@ -619,6 +723,31 @@
 		<defName>AM_Spikecore_AssaultRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_GreatBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
