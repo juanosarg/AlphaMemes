@@ -1202,6 +1202,49 @@
 			<graphicClass>Graphic_MealVariants</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Corsair_Table2x2c</defName>
+		<overrideLabel>ship wheel table</overrideLabel>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corsair/Tables/AM_Corsair_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Corsair_Table3x3c</defName>
+		<overrideLabel>ship wheel table</overrideLabel>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corsair/Tables/AM_Corsair_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef Name="AM_Corsair_StandingLampBase">
+		<defName>AM_Corsair_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corsair/AM_CorsairLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_Corsair_StandingLampBase">
+		<defName>AM_Corsair_StandingLamp_Red</defName>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_Corsair_StandingLampBase">
+		<defName>AM_Corsair_StandingLamp_Blue</defName>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_Corsair_StandingLampBase">
+		<defName>AM_Corsair_StandingLamp_Green</defName>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Corsair_DarklampStanding</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Corsair/AM_CorsairDarklampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	
 	<!-- ====== Sikh ======== -->

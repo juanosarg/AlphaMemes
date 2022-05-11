@@ -6,15 +6,14 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/StyleCategoryDef[defName = "Totemic"]/thingDefStyles</xpath>
 			<value>
-
 				<li>
 					<thingDef>MeleeWeapon_Club</thingDef>
 					<styleDef>AM_Totemic_Club</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Gladius</thingDef>
 					<styleDef>AM_Totemic_Gladius</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Ikwa</thingDef>
 					<styleDef>AM_Totemic_Ikwa</styleDef>
@@ -35,15 +34,14 @@
 					<thingDef>MeleeWeapon_Spear</thingDef>
 					<styleDef>AM_Totemic_Spear</styleDef>
 				</li>
-
 				<li>
 					<thingDef>Gun_ChargeRifle</thingDef>
 					<styleDef>AM_Totemic_ChargeRifle</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>Gun_HeavySMG</thingDef>
 					<styleDef>AM_Totemic_HeavySMG</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>Gun_SniperRifle</thingDef>
 					<styleDef>AM_Totemic_SniperRifle</styleDef>
@@ -92,12 +90,11 @@
 					<thingDef>Bow_Great</thingDef>
 					<styleDef>AM_Totemic_GreatBow</styleDef>
 				</li>
-
-
-
+				<li>
+					<thingDef>Gun_ChargeLance</thingDef>
+					<styleDef>AM_Totemic_ChargeLance</styleDef>
+				</li>
 			</value>
 		</match>
 	</Operation>
-
-
 </Patch>

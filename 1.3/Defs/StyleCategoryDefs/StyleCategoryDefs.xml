@@ -671,6 +671,35 @@
 				<styleDef>AM_Corsair_Tricorn</styleDef>
 			</li>
 			<li>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>AM_Corsair_Table2x2c</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_Corsair_Table3x3c</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_Corsair_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>AM_Corsair_StandingLamp_Red</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>AM_Corsair_StandingLamp_Green</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>AM_Corsair_StandingLamp_Blue</styleDef>
+			</li>
+			<li>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>AM_Corsair_DarklampStanding</styleDef>
+			</li>
+			<li>
 				<thingDef>Apparel_PowerArmorHelmet</thingDef>
 				<styleDef>AM_Corsair_PowerArmorHelmet</styleDef>
 			</li>
