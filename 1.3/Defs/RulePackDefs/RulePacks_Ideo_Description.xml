@@ -389,4 +389,41 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_NeolithicDescription</defName>
+		<segments>
+			<li>neolithiclessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_neolithiclessonIntro] [r_lesson]. [r_lessonReinforcement]"</li>
+				
+				<!-- generic intro -->
+				<li>neolithiclessonIntro->As we huddled shivering over the meager campfire, our dearest shaman taught us that</li>
+				<li>neolithiclessonIntro->We had been hunting the mammoth worm for days now, our spears' tips glistening with the recently applied poison. The chieftain urged us to hurry, reminding us that</li>
+				<li>neolithiclessonIntro->The whole wall of the cave showed the history of our people. Strife taught us one thing:</li>				
+				<li>neolithiclessonIntro->The foolish ambition and carelessness of those who came before made us understand that</li>
+				<li>neolithiclessonIntro->We were content with our simple lives of gathering and hunting, with little need for the extravagant luxuries of our ancestors. The courage of the elders was showing us that</li>
+				<li>neolithiclessonIntro->There were some in out tribe who wanted to go beyond, explore and expand into a new settlement, but we were confident in the knowledge that</li>
+				<li>neolithiclessonIntro->Of course, we had seen the grotesque ruins of those who came before, and the elders have always taught us that it was their thirst for power that brought the downfall of their once mighty cities. By seeing their ruins we are emboldened in our knowledge that</li>
+				<li>neolithiclessonIntro->Our traditions speak of the Great Fire that engulfed the world. Of terrible weapons that burned brighter than any fire, and how everything perished in an abominable conflagration. Only few survived: those who were able to exploit their knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->Legends about our struggles will be told around campfires for many years to come.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>

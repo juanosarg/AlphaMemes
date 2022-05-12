@@ -141,4 +141,21 @@
     </subSounds>
   </SoundDef>
   
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Neolithic</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Neolithic</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
 </Defs>

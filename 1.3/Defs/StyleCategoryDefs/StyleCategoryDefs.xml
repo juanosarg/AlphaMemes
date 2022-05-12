@@ -764,4 +764,16 @@
 		</addDesignators>
 
 	</StyleCategoryDef>
+	
+	<StyleCategoryDef>
+		<defName>AM_Neolithic</defName>
+		<label>neolithic</label>
+		<iconPath>UI/Structures/AM_Neolithic</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Neolithic</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_JainVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+
+		</thingDefStyles>
+		
+	</StyleCategoryDef>
 </Defs>

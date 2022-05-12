@@ -519,4 +519,114 @@
 			<li>AM_GrogDispenser</li>
 		</addDesignators>
 	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Neolithic</defName>
+		<label>neolithic</label>
+		<description>The vast gulfs of space and time between the stars leave individual worlds vulnerable to regression. This culture has fallen from grace entirely, and reverted to stone-age, prehistoric levels of technological advancement and refinement.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Neolithic</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->ancient</li>
+				<li>memeAdjective->prehistoric</li>
+				<li>memeAdjective->primitive</li>
+				<li>memeAdjective->primeval</li>
+				<li>memeAdjective->primordial</li>			
+				<li>memeLeaderNoun->chief</li>
+				<li>memeLeaderAdjective->antediluvian</li>
+				<li>memeLeaderAdjective->primal</li>
+				<li>memeLeaderAdjective->archaic</li>
+				<li>memeMoralist->shaman</li>
+				<li>memeMoralist->medicine man</li>
+				<li>memeMoralist->witch doctor</li>
+				<li>memeMoralist->seer</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_NeolithicDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_neolithic</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>neolithic</theme>
+				<adjective>neolithic</adjective>
+				<member>caveman</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Neolithic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Aurath</name>
+				<type>The Burning Hunter</type>
+			</li>
+			<li>
+				<name>Vitali</name>
+				<type>The Marching Father</type>
+			</li>
+			<li>
+				<name>Saul</name>
+				<type>The Searching Wraith</type>
+			</li>
+			<li>
+				<name>Curce</name>
+				<type>The Raging Servant</type>
+			</li>
+			<li>
+				<name>Lyte</name>
+				<type>The Full Moon Blacksmith</type>
+			</li>
+			<li>
+				<name>Vysio</name>
+				<type>The Fiery Dancer</type>
+			</li>
+			<li>
+				<name>Blisse</name>
+				<type>The Roaming Curator</type>
+			</li>
+			<li>
+				<name>Ethe</name>
+				<type>The Waving Artist</type>
+			</li>
+			<li>
+				<name>Devo</name>
+				<type>The Tombstone Soldier</type>
+			</li>
+			<li>
+				<name>Auriel</name>
+				<type>The Crypt Clown</type>
+			</li>
+			<li>
+				<name>Spiri</name>
+				<type>The Cheerful Witch</type>
+			</li>
+			<li>
+				<name>Erie</name>
+				<type>The Mansion Reaper</type>
+			</li>
+			<li>
+				<name>Aura</name>
+				<type>The Playful Appearance</type>
+			</li>
+			
+		</fixedDeityNameTypes>
+	</MemeDef>
 </Defs>
