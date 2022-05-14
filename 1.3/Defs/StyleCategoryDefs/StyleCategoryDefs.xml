@@ -770,10 +770,21 @@
 		<label>neolithic</label>
 		<iconPath>UI/Structures/AM_Neolithic</iconPath>
 		<soundOngoingRitual>AM_RitualSustainer_Neolithic</soundOngoingRitual>
-		<ritualVisualEffectDef>AM_JainVisuals</ritualVisualEffectDef>
+		<ritualVisualEffectDef>AM_NeolithicVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 
 		</thingDefStyles>
-		
+		<addDesignators>
+			<li>AM_StoneBedroll</li>
+			<li>AM_Neolithic_StoneTable_1x2c</li>
+			<li>AM_Neolithic_StoneTable_2x2c</li>
+			<li>AM_Neolithic_StoneTable_2x4c</li>
+			<li>AM_Neolithic_StoneTable_3x3c</li>
+			<li>AM_Neolithic_WoodenTable_1x2c</li>
+			<li>AM_Neolithic_WoodenTable_2x2c</li>
+			<li>AM_Neolithic_WoodenTable_2x4c</li>
+			<li>AM_Neolithic_WoodenTable_3x3c</li>
+			
+		</addDesignators>
 	</StyleCategoryDef>
 </Defs>

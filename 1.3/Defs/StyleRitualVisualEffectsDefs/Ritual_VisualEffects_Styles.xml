@@ -272,4 +272,39 @@
 			<drawSize>12</drawSize>
 		</graphicData>
 	</ThingDef>
+	
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_NeolithicVisuals</defName>
+		<tintColor>(178, 63, 63)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_CavePaintings</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_CavePaintings</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(240, 240, 240)</color>
+			<texPath>Motes/AM_CavePaintings</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.06</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>12</drawSize>
+		</graphicData>
+	</ThingDef>
 </Defs>

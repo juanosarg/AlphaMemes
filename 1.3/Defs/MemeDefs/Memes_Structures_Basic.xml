@@ -628,5 +628,17 @@
 			</li>
 			
 		</fixedDeityNameTypes>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<removedDesignators>
+					
+					<li>Bed</li>
+					<li>Table1x2c</li>
+					<li>Table2x2c</li>
+					<li>Table2x4c</li>
+					<li>Table3x3c</li>
+				</removedDesignators>
+			</li>
+		</modExtensions>
 	</MemeDef>
 </Defs>
