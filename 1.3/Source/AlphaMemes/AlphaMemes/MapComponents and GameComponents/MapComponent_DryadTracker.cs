@@ -35,6 +35,26 @@ namespace AlphaMemes
 
             }
 
+            if (DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Stonedigger") != null)
+            {
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Stonedigger"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Gaubricmaker"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Nectarmaker"));
+                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Spitter"));
+
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Carrier"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Woodmaker"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Medicinemaker"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Berrymaker"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Stonedigger"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Nectarmaker"));
+                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Gaubricmaker"));
+                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Clawer"));
+                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Barkskin"));
+                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Spitter"));
+
+            }
+
 
 
             base.FinalizeInit();

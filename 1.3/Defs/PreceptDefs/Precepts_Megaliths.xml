@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IssueDef>
+		<defName>AM_Megaliths</defName>
+		<label>megaliths</label>
+		<iconPath>UI/Issues/AM_Megaliths</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Megaliths_Desired</defName>
+		<issue>AM_Megaliths</issue>
+		<label>desired</label>
+		<description>We honour our ancestors by erecting huge monuments that both defy and glorify nature. They will truly withstand the test of time.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists desire the construction of megalithic monuments (found in the Misc category), expecting one to be built for every three members of the colony. This requires expectations to be Moderate or higher to trigger.</description>
+		<impact>Medium</impact>
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Megaliths_Desired</thought>
+				
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	 <ThoughtDef>
+		<defName>AM_Megaliths_Desired</defName>
+		
+		<workerClass>AlphaMemes.Thought_Megaliths_Desired</workerClass>
+		<minExpectation>Moderate</minExpectation>
+		<stages>
+			<li>
+				<label>desiring megalithic constructions</label>
+				<description>We are disrespecting our ancestors, we should build more megaliths.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

@@ -354,6 +354,7 @@
     <Compile Include="Thoughts\Thought_ArtQuality_Expected.cs" />
     <Compile Include="Thoughts\Thought_Art_Desired.cs" />
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
+    <Compile Include="Thoughts\Thought_Megaliths_Desired.cs" />
     <Compile Include="Thoughts\Thought_Mood_Volatile.cs" />
     <Compile Include="Thoughts\Thought_RelicDestruction_Desired.cs" />
     <Compile Include="Thoughts\Thought_Religion_ProselytismDisliked.cs" />

@@ -26,7 +26,8 @@ namespace AlphaMemes
 				pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDefIf(InternalDefOf.AM_SleptInBarracksMonastic, (Thought_Memory thought) => thought.MoodOffset() > 0f);
 				pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDefIf(InternalDefOf.AM_SleptInPrivateRoomMonastic, (Thought_Memory thought) => thought.MoodOffset() > 0f);
 
-
+				pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDefIf(InternalDefOf.AM_SleptInBarracksPreferred, (Thought_Memory thought) => thought.MoodOffset() > 0f);
+				pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDefIf(InternalDefOf.AM_SleptInPrivateRoomPreferred, (Thought_Memory thought) => thought.MoodOffset() > 0f);
 			}
 
 

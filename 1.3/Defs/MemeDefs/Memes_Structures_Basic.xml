@@ -640,5 +640,11 @@
 				</removedDesignators>
 			</li>
 		</modExtensions>
+		<requireOne>
+			<li>
+				<li>AM_Megaliths_Desired</li>
+			
+			</li>
+		</requireOne>
 	</MemeDef>
 </Defs>

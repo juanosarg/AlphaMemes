@@ -23,7 +23,7 @@
     <label>expected</label>
     <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will receive increasing mood boosts from the number of animals scanned and stored in the animal database. You need to have a database built for this to work.</description>
     <impact>High</impact>
-  
+    <allowedForNPCFactions>false</allowedForNPCFactions>
     <displayOrderInIssue>20</displayOrderInIssue>
      <associatedMemes>
       <li>AM_BiologicalReconstructors</li>

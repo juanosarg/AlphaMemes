@@ -26,6 +26,8 @@ namespace AlphaMemes
 
         public static float reliquariesInTheMap = 0;
 
+        public static float megalithsInTheMap = 0;
+
         public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();
 
         public static List<PawnKindDef> utilityDryads = new List<PawnKindDef>() { PawnKindDefOf.Dryad_Basic, InternalDefOf.Dryad_Woodmaker, 

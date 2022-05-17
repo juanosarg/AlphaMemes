@@ -17,6 +17,8 @@ namespace AlphaMemes
         public int artInTheMap_backup = 0;
         public int reliquariesInTheMap_backup = 0;
         public float artBeautyInTheMap_backup = 0;
+        public int megalithsInTheMap_backup = 0;
+
 
 
 
@@ -32,6 +34,8 @@ namespace AlphaMemes
                 StaticCollectionsClass.artInTheMap = artInTheMap_backup;
                 StaticCollectionsClass.artBeautyInTheMap = artBeautyInTheMap_backup;
                 StaticCollectionsClass.reliquariesInTheMap = reliquariesInTheMap_backup;
+                StaticCollectionsClass.megalithsInTheMap = megalithsInTheMap_backup;
+
             }
             base.FinalizeInit();
         }
@@ -42,6 +46,8 @@ namespace AlphaMemes
             Scribe_Values.Look<int>(ref this.artInTheMap_backup, "artInTheMap_backup", 0, true);
             Scribe_Values.Look<float>(ref this.artBeautyInTheMap_backup, "artBeautyInTheMap_backup", 0, true);
             Scribe_Values.Look<int>(ref this.reliquariesInTheMap_backup, "reliquariesInTheMap_backup", 0, true);
+            Scribe_Values.Look<int>(ref this.megalithsInTheMap_backup, "megalithsInTheMap_backup", 0, true);
+
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFurniture", 0, true);
 
@@ -101,6 +107,14 @@ namespace AlphaMemes
                     int reliquaryCount = map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.Reliquary).EnumerableCount();
                     reliquariesInTheMap_backup = reliquaryCount;                 
                     StaticCollectionsClass.reliquariesInTheMap = reliquaryCount;
+
+                }
+
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Megaliths_Desired) != null))
+                {
+                    int megalithCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.AM_Megalith).EnumerableCount();
+                    megalithsInTheMap_backup = megalithCount;
+                    StaticCollectionsClass.megalithsInTheMap = megalithCount;
 
                 }
 

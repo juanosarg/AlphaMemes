@@ -1,68 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!--================================ Sculptures ======================================-->
-
-
-  <ThingDef ParentName="SculptureBase">
-    <defName>AM_Pyramid</defName>
-    <label>pyramid</label>
-    <description>A gigantic stone structure whose outer surfaces are triangular and converge to a single step at the top.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/BuildingStyles/Kemetic/AM_Pyramid</texPath>
-      <drawSize>(7.8,7.8)</drawSize>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <size>(7,7)</size>
-    <canOverlapZones>false</canOverlapZones>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-      <Beauty>800</Beauty>
-      <Mass>5000</Mass>
-	  <WorkToMake>300000</WorkToMake>
-    </statBases>
-	<altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
-    <stuffCategories>
-     
-      <li>Stony</li>
-    </stuffCategories>
-	<recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Artistic</workSkill>
-      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-      <effectWorking>Sculpt</effectWorking>
-      <soundWorking>Recipe_Sculpt</soundWorking>
-      <recipeUsers>
-        <li>TableSculpting</li>
-      </recipeUsers>
-      <defaultIngredientFilter>
-        <categories>
-          <li>Root</li>
-        </categories>
-        <disallowedThingDefs>
-          <li>Gold</li>
-          <li>Silver</li>
-          <li>Plasteel</li>
-          <li>Jade</li>
-          <li>Uranium</li>
-        </disallowedThingDefs>
-      </defaultIngredientFilter>
-	  <memePrerequisitesAny>
-	  <li>AM_Structure_Kemetism</li>
-	  </memePrerequisitesAny>
-    </recipeMaker>
-    <costStuffCount>900</costStuffCount>
-	
-  </ThingDef>
-  
-  
-
-
-
+	<!--================================ Sculptures ======================================-->
+	<ThingDef ParentName="SculptureBase">
+		<defName>AM_Pyramid</defName>
+		<label>pyramid</label>
+		<description>A gigantic stone structure whose outer surfaces are triangular and converge to a single step at the top.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_Pyramid</texPath>
+			<drawSize>(7.8,7.8)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(7,7)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<Beauty>800</Beauty>
+			<Mass>5000</Mass>
+			<WorkToMake>300000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<memePrerequisitesAny>
+				<li>AM_Structure_Kemetism</li>
+			</memePrerequisitesAny>
+		</recipeMaker>
+		<costStuffCount>900</costStuffCount>
+	</ThingDef>
+	<ThingDef ParentName="SculptureBase">
+		<defName>AM_Megalith</defName>
+		<label>megalith</label>
+		<description>A large stone used to construct a prehistoric structure or monument, either alone or together with other stones, often hewn in definite shapes for special purposes.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Neolithic/Megaliths</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(3,3)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Beauty>500</Beauty>
+			<Mass>5000</Mass>
+			<WorkToMake>200000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>550</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+	</ThingDef>
 </Defs>

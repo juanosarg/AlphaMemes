@@ -30,6 +30,8 @@ namespace AlphaMemes
 		public static PreceptDef AM_CombatProwess_Melee;
 		public static PreceptDef AM_Reliquaries_Forbidden;
 		public static PreceptDef AM_Barracks_Preferred;
+		public static PreceptDef AM_Megaliths_Desired;
+		public static PreceptDef AM_Barracks_PreferredTrue;
 
 		public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -47,6 +49,7 @@ namespace AlphaMemes
 		public static ThingDef AM_BlocksPristineLimestone;
 		public static ThingDef AM_RelicSmashingAltar;
 		public static ThingDef AM_GrogDispenser;
+		public static ThingDef AM_Megalith;
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
@@ -78,6 +81,8 @@ namespace AlphaMemes
 
 		public static ThoughtDef AM_SleptInBarracksMonastic;
 		public static ThoughtDef AM_SleptInPrivateRoomMonastic;
+		public static ThoughtDef AM_SleptInBarracksPreferred;
+		public static ThoughtDef AM_SleptInPrivateRoomPreferred;
 
 		public static PawnKindDef Dryad_Woodmaker;
 		public static PawnKindDef Dryad_Berrymaker;
