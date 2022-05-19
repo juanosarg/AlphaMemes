@@ -81,7 +81,7 @@ namespace AlphaMemes
                     List<Pawn> dryadList = new List<Pawn>();
                     for (int i = 0; i < list.Count; i++)
                     {
-                        if (list[i].RaceProps.Dryad || list[i].kindDef == InternalDefOf.AM_UnshackledDryad)
+                        if (list[i].RaceProps.Dryad || list[i].kindDef == InternalDefOf.AM_UnshackledDryad || list[i].def.defName.Contains("VDE_AwakenedDryad"))
                         {
                             dryadList.Add(list[i]);
                         }

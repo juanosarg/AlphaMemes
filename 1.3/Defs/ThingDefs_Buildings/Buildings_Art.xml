@@ -56,7 +56,7 @@
 		</recipeMaker>
 		<costStuffCount>900</costStuffCount>
 	</ThingDef>
-	<ThingDef ParentName="SculptureBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>AM_Megalith</defName>
 		<label>megalith</label>
 		<description>A large stone used to construct a prehistoric structure or monument, either alone or together with other stones, often hewn in definite shapes for special purposes.</description>
@@ -65,6 +65,76 @@
 			<texPath>Things/Building/BuildingStyles/Neolithic/Megaliths</texPath>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
 		<canOverlapZones>false</canOverlapZones>
@@ -73,6 +143,7 @@
 			<Beauty>500</Beauty>
 			<Mass>5000</Mass>
 			<WorkToMake>200000</WorkToMake>
+			<Flammability>1.0</Flammability>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
 		</statBases>
 		<altitudeLayer>Building</altitudeLayer>
@@ -93,5 +164,14 @@
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
