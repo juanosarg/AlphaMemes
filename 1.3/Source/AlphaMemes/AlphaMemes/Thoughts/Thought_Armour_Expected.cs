@@ -13,7 +13,7 @@ namespace AlphaMemes
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (wornApparel[i].Stuff?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true || wornApparel[i].def.thingCategories.Contains(ThingCategoryDefOf.ApparelArmor))
+				if (wornApparel[i].Stuff?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true || wornApparel[i].def?.thingCategories?.Contains(ThingCategoryDefOf.ApparelArmor)==true)
 				{
 					flag = true;
 				}
