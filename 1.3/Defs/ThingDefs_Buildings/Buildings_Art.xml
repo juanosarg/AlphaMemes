@@ -142,7 +142,7 @@
 			<MaxHitPoints>3000</MaxHitPoints>
 			<Beauty>500</Beauty>
 			<Mass>5000</Mass>
-			<WorkToMake>200000</WorkToMake>
+			<WorkToBuild>20000</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
 		</statBases>

@@ -36,11 +36,12 @@ namespace AlphaMemes
 
         public static List<MemeDef> listReligiousMemes = new List<MemeDef>() { InternalDefOf.AM_Structure_Jainism,InternalDefOf.AM_Structure_Jewish, InternalDefOf.AM_Structure_Kemetism, InternalDefOf.AM_Structure_Sikhism,
         InternalDefOf.Structure_Animist,InternalDefOf.Structure_Archist,InternalDefOf.Structure_OriginBuddhist,InternalDefOf.Structure_OriginChristian,InternalDefOf.Structure_OriginHindu,InternalDefOf.Structure_OriginIslamic,
-        InternalDefOf.Structure_TheistAbstract,InternalDefOf.Structure_TheistEmbodied};
+        InternalDefOf.Structure_TheistAbstract,InternalDefOf.Structure_TheistEmbodied,InternalDefOf.AM_Structure_Neolithic};
 
         public static List<MemeDef> listProselytizerMemes = new List<MemeDef>() { InternalDefOf.Proselytizer };
 
-        public static List<DesignatorDropdownGroupDef> designatorsToBeRemoved = new List<DesignatorDropdownGroupDef>() { InternalDefOf.AM_Floor_JewishTiles, InternalDefOf.AM_Floor_JewishFineTiles, InternalDefOf.AM_Floor_KemeticTiles, InternalDefOf.AM_Floor_KemeticFineTiles, InternalDefOf.AM_Floor_SteampunkTiles };
+        public static List<DesignatorDropdownGroupDef> designatorsToBeRemoved = new List<DesignatorDropdownGroupDef>() { InternalDefOf.AM_Floor_JewishTiles, InternalDefOf.AM_Floor_JewishFineTiles, InternalDefOf.AM_Floor_KemeticTiles, InternalDefOf.AM_Floor_KemeticFineTiles, InternalDefOf.AM_Floor_SteampunkTiles,
+        InternalDefOf.AM_Floor_NeolithicTiles};
 
 
         public static void AddColonistRandomMood(Pawn pawn, int mood)

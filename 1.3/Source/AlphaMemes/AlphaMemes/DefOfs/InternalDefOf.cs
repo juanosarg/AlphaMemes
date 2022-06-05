@@ -68,6 +68,7 @@ namespace AlphaMemes
 		public static MemeDef Structure_OriginBuddhist;
 		public static MemeDef AM_Iconoclast;
 		public static MemeDef Proselytizer;
+		public static MemeDef AM_Structure_Neolithic;
 
 		public static ThingStyleDef AM_MealNutrientPaste;
 
@@ -97,6 +98,7 @@ namespace AlphaMemes
 		public static DesignatorDropdownGroupDef AM_Floor_KemeticTiles;
 		public static DesignatorDropdownGroupDef AM_Floor_KemeticFineTiles;
 		public static DesignatorDropdownGroupDef AM_Floor_SteampunkTiles;
+		public static DesignatorDropdownGroupDef AM_Floor_NeolithicTiles;
 
 		[MayRequireRoyalty]
 		public static ThoughtDef AM_DeathKnellThought;
