@@ -102,6 +102,18 @@
 					<thingDef>Bow_Great</thingDef>
 					<styleDef>AM_Hindu_GreatBow</styleDef>
 				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Axe</thingDef>
+					<styleDef>AM_Hindu_Axe</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Warhammer</thingDef>
+					<styleDef>AM_Hindu_Hammer</styleDef>
+				</li>
+				<li>
+					<thingDef>MeleeWeapon_BreachAxe</thingDef>
+					<styleDef>AM_Hindu_Pickaxe</styleDef>
+				</li>
 			</value>
 		</match>
 	</Operation>

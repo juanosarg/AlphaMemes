@@ -92,6 +92,26 @@
 					<thingDef>Bow_Great</thingDef>
 					<styleDef>AM_Techist_GreatBow</styleDef>
 				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Axe</thingDef>
+					<styleDef>AM_Techist_Axe</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Warhammer</thingDef>
+					<styleDef>AM_Techist_Hammer</styleDef>
+				</li>
+				<li>
+					<thingDef>MeleeWeapon_BreachAxe</thingDef>
+					<styleDef>AM_Techist_Pickaxe</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_ChargeLance</thingDef>
+					<styleDef>AM_Techist_ChargeLance</styleDef>
+				</li>	
+				<li>
+					<thingDef>Gun_Minigun</thingDef>
+					<styleDef>AM_Techist_Minigun</styleDef>
+				</li>	
 
 
 			</value>

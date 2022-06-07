@@ -81,6 +81,39 @@
 				<styleDef>AM_Rustic_AssaultRifle</styleDef>
 			</li>
 			
+			<li>
+				<thingDef>Bow_Short</thingDef>
+				<styleDef>AM_Rustic_Bow</styleDef>
+			</li>
+			<li>
+				<thingDef>Bow_Recurve</thingDef>
+				<styleDef>AM_Rustic_RecurveBow</styleDef>
+			</li>
+			<li>
+				<thingDef>Bow_Great</thingDef>
+				<styleDef>AM_Rustic_GreatBow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_Axe</thingDef>
+				<styleDef>AM_Rustic_Axe</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_Warhammer</thingDef>
+				<styleDef>AM_Rustic_Hammer</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_BreachAxe</thingDef>
+				<styleDef>AM_Rustic_Pickaxe</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_ChargeLance</thingDef>
+				<styleDef>AM_Rustic_ChargeLance</styleDef>
+			</li>	
+<li>
+				<thingDef>Gun_Minigun</thingDef>
+				<styleDef>AM_Rustic_Minigun</styleDef>
+			</li>				
+			
 			
 			
 			</value>

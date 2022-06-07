@@ -42,8 +42,20 @@
 					<thingDef>MeleeWeapon_Spear</thingDef>
 					<styleDef>AM_Christian_Spear</styleDef>
 				</li>
-			
-			
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Axe</thingDef>
+					<styleDef>AM_Christian_Axe</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">
+					<thingDef>MeleeWeapon_Warhammer</thingDef>
+					<styleDef>AM_Christian_Hammer</styleDef>
+				</li>
+				<li>
+					<thingDef>MeleeWeapon_BreachAxe</thingDef>
+					<styleDef>AM_Christian_Pickaxe</styleDef>
+				</li>
+
+
 			</value>
 		</match>
 	</Operation>
@@ -67,6 +79,6 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
-	
+
+
 </Patch>
