@@ -23,9 +23,9 @@ namespace AlphaMemes
     public static class FuneralFramework_Pawn_HealthTracker_NotifyPlayerOfKilled_AnimalObligationTrigger
     {
         [HarmonyPostfix]
-        public static void Postfix(Pawn_HealthTracker __instance)
-        {            
-            Pawn pawn = (Pawn)AccessTools.Field(typeof(Pawn_HealthTracker), "pawn").GetValue(__instance);//Why is pawn private...
+        public static void Postfix(Pawn_HealthTracker __instance, Pawn ___pawn)
+        {
+            Pawn pawn = ___pawn;
             if (pawn.IsColonist && !pawn.RaceProps.Animal) //Should filter out the rest quickly, no robot funerals
             {
                 return;

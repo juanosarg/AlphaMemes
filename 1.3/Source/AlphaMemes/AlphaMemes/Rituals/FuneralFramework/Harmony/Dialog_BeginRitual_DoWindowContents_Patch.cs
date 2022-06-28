@@ -18,10 +18,10 @@ namespace AlphaMemes
     //This patch adds stuff selection
     public static class Dialog_BeginRitual_DoWindowContents_Patch
     {
-        public static void Postfix(Dialog_BeginRitual __instance, Rect inRect)
+        public static void Postfix(Dialog_BeginRitual __instance, Rect inRect, Precept_Ritual ___ritual)
         {
-            //I need things and they are all private =(
-            Precept_Ritual ritual = (Precept_Ritual)AccessTools.Field(typeof(Dialog_BeginRitual), "ritual").GetValue(__instance);
+
+            Precept_Ritual ritual = ___ritual;
             if (!ritual?.def.HasModExtension<FuneralPreceptExtension>()??true)//stupid rituals not being rituals
             {
                 return;

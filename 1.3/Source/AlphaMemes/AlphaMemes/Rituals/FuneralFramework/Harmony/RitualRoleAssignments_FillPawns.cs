@@ -21,7 +21,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         public static void Postfix(RitualRoleAssignments __instance)
         {
-            //Access tools
+
             if(__instance.Ritual == null)
             {
                 return; //Not all rituals are rituals neat.

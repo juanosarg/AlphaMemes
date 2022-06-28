@@ -87,7 +87,7 @@
 				</roleBehaviors>
 				<visualEffectDef>Funeral</visualEffectDef>
 				<postAction Class="RitualStageAction_Message">
-					<text>{0}: The speech is over, and the cremation is beginning.</text>
+					<text>{0}: The speech is over, the nutrient extraction has begun.</text>
 					<messageTypeDef>NeutralEvent</messageTypeDef>
 				</postAction>
 				<preAction Class="AlphaMemes.RitualStageAction_FuneralEffectSound">				

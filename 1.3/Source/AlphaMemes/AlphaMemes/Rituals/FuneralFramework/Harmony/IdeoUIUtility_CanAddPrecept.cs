@@ -21,6 +21,10 @@ namespace AlphaMemes
         [HarmonyPostfix]
         public static void Postfix(ref AcceptanceReport __result, PreceptDef def, RitualPatternDef pat, Ideo ideo)
         {
+            if(__result.Accepted == false)
+            {
+                return;
+            }
     
             if (def.HasModExtension<FuneralPreceptExtension>())
             {
