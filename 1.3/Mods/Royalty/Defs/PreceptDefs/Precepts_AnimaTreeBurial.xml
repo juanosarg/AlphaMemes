@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+
+		<PreceptDef>
+		<defName>AM_AnimaBurial</defName>
+		<label>Anima Tree Burial</label>
+		<description>A gathering to witness our friend's spirit be returned to nature</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/AnimaTreeLinking</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_AnimaBurialPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<associatedMemes> 
+			<li>TreeConnection</li>
+			<li>NaturePrimacy</li>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>HumanPrimacy</li>
+			<li>AM_PsychicVampirism</li>			
+		</conflictingMemes>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be loaded returned to nature. So {PAWN_possessive} friends and family can be confident their spirit can be put to rest.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>false</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
+			</animalObligationTrigger>		
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<conflictingPreceptDefs>
+					<li>VME_PsychicSensitivity_Lowered</li>
+					<li>Funeral</li>
+				</conflictingPreceptDefs>
+			</specialConflicts>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+
+
+</Defs>

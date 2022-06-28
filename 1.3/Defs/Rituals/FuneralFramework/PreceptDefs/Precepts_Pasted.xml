@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+
+	<PreceptDef>
+		<defName>AM_PastedFuneral</defName>
+		<label>Nutrient Paste Funeral</label>
+		<description>A gathering to ensure nothing goes to waste</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_PastedFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<associatedMemes> 
+			<li>Transhumanist</li>
+			<li>Cannibal</li>
+		</associatedMemes> 
+		<conflictingMemes>
+			<li>VME_Vegan</li>			
+		</conflictingMemes>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be turned into paste. Its what they'd want</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>			
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>true</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals><!--Probably shouldnt turn this on but you do you-->
+				<animalConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				</animalConflicts>
+			</animalObligationTrigger>
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<conflictingPreceptDefs>
+					<li>Funeral</li>
+				</conflictingPreceptDefs>
+			</specialConflicts>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+
+
+</Defs>

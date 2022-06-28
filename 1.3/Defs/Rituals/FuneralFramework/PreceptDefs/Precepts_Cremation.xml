@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_CremateFuneral</defName>
+		<label>Cremation Funeral</label>
+		<description>A gathering to witness the cremation of our friend.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_CremateFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<alsoAdds>AM_FuneralNoCorpse</alsoAdds>	
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be cremated and their dust scattered so {PAWN_possessive} friends and family can move on.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>			
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>false</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals><!--Probably shouldnt turn this on but you do you-->
+				<animalConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+					<conflictingMemes>
+						<li>HumanPrimacy</li>
+					</conflictingMemes>
+				</animalConflicts>
+			</animalObligationTrigger>
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<conflictingPreceptDefs>
+					<li>Funeral</li>
+				</conflictingPreceptDefs>
+			</specialConflicts>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+	
+	<PreceptDef ParentName="FuneralBase">
+		<defName>AM_FuneralNoCorpse</defName>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<label>funeral (no corpse)</label>
+		<visible>false</visible>
+		<listedForRoles>false</listedForRoles>
+		<ritualPatternBase>FuneralNoCorpse</ritualPatternBase>
+		<takeNameFrom>Funeral</takeNameFrom>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+
+</Defs>

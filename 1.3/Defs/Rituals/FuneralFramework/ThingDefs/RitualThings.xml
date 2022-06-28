@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_Urn</defName>
+    <label>urn</label>
+    <description>A decorative container.</description>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>30</pathCost>
+    <rotatable>false</rotatable>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <graphicData>
+      <texPath>Things/Building/Misc/Urn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0,0.3,0.9)</rect>
+      </damageData>
+    </graphicData>
+	<comps>
+		<li Class="AlphaMemes.CompProperties_CorpseContainer">
+			<transformLabel>{CORPSE}'s {LABEL}</transformLabel>
+			<inspectString>Contains the last remains of {CORPSE}</inspectString>
+			<descriptionMaker>AM_ArtDescription_Urn</descriptionMaker>
+		</li>
+		<li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Morbid</li>
+			</focusTypes>
+		   <!-- <offsets> Of course i gotta make my own offsets ask me later
+			  <li Class="FocusStrengthOffset_GraveFull">
+				<offset>0.10</offset>
+			  </li>
+			  <li Class="FocusStrengthOffset_GraveCorpseRelationship">
+				<offset>0.10</offset>
+			  </li>
+			  <li Class="FocusStrengthOffset_NearbyGraves">
+				<defs>
+				  <li>Grave</li>
+				  <li>Sarcophagus</li>
+				</defs>
+				<offsetPerBuilding>0.01</offsetPerBuilding>
+				<radius>9.9</radius>
+				<maxBuildings>4</maxBuildings>
+				<focusPerFullGrave>0.01</focusPerFullGrave>
+				<explanationKey>MeditationFocusPerGrave</explanationKey>
+				<explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+			  </li>
+			</offsets>-->
+		</li>
+	</comps>
+  </ThingDef>
+
+
+
+
+</Defs>

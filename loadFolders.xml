@@ -16,7 +16,8 @@
 		<li IfModActive="Dubwise.Rimefeller_copy">1.3/Mods/Rimefeller</li>
 		<li IfModActive="Tyrannical_Elmo.IndustrialMelee">1.3/Mods/IndustrialArmory</li>
 		<li IfModActive="Tyrannical_Elmo.IndustrialMelee_copy">1.3/Mods/IndustrialArmory</li>
-	
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.3/Mods/VanillaGeneticsExpanded</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE_copy">1.3/Mods/VanillaGeneticsExpanded</li>
 		<li IfModActive="Owlchemist.WallUtilities">1.3/Mods/WallUtilities</li>
 		<li IfModActive="Owlchemist.WallUtilities_copy">1.3/Mods/WallUtilities</li>
 	</v1.3>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+
+		<PreceptDef>
+		<defName>AM_BlastOffFuneral</defName>
+		<label>BlastOff Funeral</label>
+		<description>A gathering to witness our friend be sent of to the stars.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_BlastOff</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_BlastOffFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be loaded into a transport pod and blasted off! so {PAWN_possessive} friends and family can move on.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>	
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<conflictingPreceptDefs>
+					<li>Funeral</li>
+				</conflictingPreceptDefs>
+				<researchNeeded>
+					<li>TransportPod</li>
+				</researchNeeded>
+			</specialConflicts>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+
+
+</Defs>

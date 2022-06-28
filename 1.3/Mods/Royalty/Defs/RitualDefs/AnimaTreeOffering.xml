@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_AnimaBurialPattern</defName>
+		<nameMaker>NamerRitualFuneral</nameMaker>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss their friend return to space.</ritualExpectedDesc>
+		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
+		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AM_AnimaBurialTarget</ritualObligationTargetFilter>
+		<ritualBehavior>AM_AnimaBurialBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_AnimaBurialOutcome</ritualOutcomeEffect>
+		<maxTechLevel>Neolithic</maxTechLevel>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_AnimaBurialBehavior</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
+		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
+		<description>Spectators must be alive.</description>
+		</spectatorFilter>
+		<roles>
+		  <li Class="RitualRoleColonist">
+			<label>Shaman</label>
+			<id>AM_Shaman</id>
+			<maxCount>1</maxCount>
+			<substitutable>True</substitutable>
+			<required>True</required>
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="AlphaMemes.RitualRoleFuneralCorpse">
+			<label>Corpse</label>
+			<id>AM_RitualRoleCorpse</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<allowNonAggroMentalState>true</allowNonAggroMentalState>
+			<required>True</required>
+			<corpse>True</corpse>			
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>AM_Shaman</li>
+						</roleIds>
+					</li>	
+				</endTriggers>				
+				<roleBehaviors>
+				  <li>
+					<roleId>AM_Shaman</roleId>
+					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
+				  </li>				  
+				</roleBehaviors>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.25</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>AM_Shaman</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract"/>
+					</customPositions>
+				  </li>
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+				<postAction Class="RitualStageAction_Message">
+					<text>{0}: The speech is over, the burial is happening.</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>
+				<preAction Class="AlphaMemes.RitualStageAction_ThingEffects">				
+					<thingsToSpawnOn>
+						<li>
+							<key>p_AM_RitualRoleCorpse</key>
+							<value>SolarPinhole</value>
+						</li>
+						<li>
+							<key>t_target</key>							
+							<value>BulletShieldPsychic</value>					
+						</li>
+					</thingsToSpawnOn>
+				</preAction>
+			</li>
+			<li Class="AlphaMemes.RitualStage_AnimaBurial">
+				<defaultDuty>LinkWithAnimaTreeSecondary</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.75</percentage>
+				  </li>
+				</endTriggers>
+				<spectateDistanceOverride>4~5</spectateDistanceOverride>
+				<roleBehaviors>
+				  <li>
+					<roleId>AM_Shaman</roleId>
+					<dutyDef>AM_AnimaTreeBurial</dutyDef>
+					<customPositions>					  
+					  <li Class="RitualPosition_AnimaLinkingSpot"/>
+					</customPositions>
+				  </li>		
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_AnimaBurialOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_AnimaBurial</workerClass>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.15</chance>
+        <memory>AM_TerribleAnimaBurial</memory>
+        <description>The {0} was a terrible! We have angered the tree's spirit and it's punishing us.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.15</chance>
+        <memory>AM_LacklusterAnimaBurial</memory>
+        <description>The {0} was lackluster. we fear we may have offened the tree spirit</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.4</chance>
+        <memory>AM_GoodAnimaBurial</memory>
+        <description>The {0} was good. our friend belongs to the tree spirit now</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.25</chance>
+        <memory>AM_AmazingAnimaBurial</memory>
+        <description>The {0} was great. The tree's spirit appears pleased, and grass has grown</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+	   <li>
+        <label>Incredible</label>
+        <chance>0.05</chance>
+        <memory>AM_IncredibleAnimaBurial</memory>
+        <description>The {0} was breath taking. The tree's spirit has graced us with some of its power</description>
+        <positivityIndex>3</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="AlphaMemes.RitualOutcomeComp_PsykerLevel">
+		<label>shaman psyker level</label>
+		<roleId>AM_Shaman</roleId>
+		<curve>
+		  <points>
+			<li>(0,  0.0)</li>
+			<li>(3,  0.2)</li>
+			<li>(6, 0.4)</li>
+		  </points>
+		</curve>
+	</li>
+		<li Class="AlphaMemes.RitualOutcomeComp_PsychicSensitivity">
+		<label>deceased psychic sensitivity</label>
+		<roleId>AM_RitualRoleCorpse</roleId>
+		<curve>
+		  <points>
+			<li>(0,  0.0)</li>
+			<li>(1,  0.1)</li>
+			<li>(1.5, 0.4)</li>
+		  </points>
+		</curve>
+	</li>
+	<li Class="RitualOutcomeComp_ParticipantCount">
+		<label>participant count</label>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(5,  0.1)</li>
+			<li>(10, 0.4)</li>
+		  </points>
+		</curve>
+	</li>
+    </comps>
+	<modExtensions>
+		<li Class="AlphaMemes.OutcomeEffectExtension">
+			<stripcorpse>false</stripcorpse>
+			<worstOutcomeDesc>The {RITUAL} was a disaster! {CORPSE}'s soul angered the tree!</worstOutcomeDesc>
+			<bestOutcomeDesc>The {RITUAL} spectacular! {CORPSE} has been absorbed and a the anima tree has empowered us</bestOutcomeDesc>
+		</li>
+	</modExtensions>
+  </RitualOutcomeEffectDef>
+ 
+   <!--Ritual Obligation-->
+   	<RitualObligationTargetFilterDef>
+		<defName>AM_AnimaBurialTarget</defName>
+		<colonistThingsOnly>false</colonistThingsOnly>
+		<workerClass>RitualObligationTargetWorker_ThingDef</workerClass>		
+		<thingDefs>
+		  <li>Plant_TreeAnima</li>		  
+		</thingDefs>
+	</RitualObligationTargetFilterDef>	
+
+</Defs>

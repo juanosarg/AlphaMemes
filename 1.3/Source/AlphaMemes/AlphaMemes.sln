@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaMemes", "AlphaMemes\AlphaMemes.csproj", "{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "..\..\..\..\..\..\AssemblyProject\Assembly-CSharp\Assembly-CSharp.csproj", "{63126E57-1B02-42F7-9B18-28AC3EC01B78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,9 @@ Global
 		{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63126E57-1B02-42F7-9B18-28AC3EC01B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63126E57-1B02-42F7-9B18-28AC3EC01B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63126E57-1B02-42F7-9B18-28AC3EC01B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
