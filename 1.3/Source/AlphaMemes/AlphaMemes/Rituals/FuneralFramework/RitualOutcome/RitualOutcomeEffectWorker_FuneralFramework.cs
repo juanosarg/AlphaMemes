@@ -27,7 +27,7 @@ namespace AlphaMemes
             bool bestOutcome = outcome.BestPositiveOutcome(jobRitual);
             extraOutcomeDesc = null;
             Pawn pawn = null;
-            Corpse corpse = jobRitual.assignments.AllPawns.First(x => x.Dead).Corpse;//Only one corpse
+            Corpse corpse = jobRitual.assignments.Participants.First(x => x.Dead).Corpse;//Only one corpse
             if (outcomeExtension.roleToSpawnOn != null)
             {
                 pawn = jobRitual.PawnWithRole(outcomeExtension.roleToSpawnOn);
