@@ -35,6 +35,7 @@ namespace AlphaMemes
             {
                 if (obligationTemp.targetA.Thing == assignments.AssignedPawns(extension.corpseRitualRoleID).First().Corpse)
                 {
+                    corpse = assignments.AssignedPawns(extension.corpseRitualRoleID).First();
                     obligationToUse = obligationTemp;
                 }
             }
@@ -42,9 +43,6 @@ namespace AlphaMemes
             {
                 return;
             }
-            
-
-
             LordJob_Ritual lordJob = (LordJob_Ritual)this.CreateLordJob(target, organizer, ritual, obligationToUse, assignments);            
             LordMaker.MakeNewLord(Faction.OfPlayer, lordJob, target.Map, assignments.Participants.Where(delegate (Pawn p)
             {
@@ -147,6 +145,7 @@ namespace AlphaMemes
                     thing.Destroy();
                 }
             }
+            corpse = null;
         }
         protected override void PostExecute(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
         {
@@ -173,7 +172,10 @@ namespace AlphaMemes
             base.ExposeData();
             Scribe_Defs.Look<ThingDef>(ref stuffToUse, "stuffToUse");
             Scribe_Values.Look(ref stuffCount, "stuffCount");
+            Scribe_References.Look<Pawn>(ref corpse, "corpse",true);
+
         }
+        public Pawn corpse;
         public List<Thing> spawnEffectThings = new List<Thing>();//things spawned that need cleanup just in case
         public Sustainer soundPlaying; //Cant override set        
         public Effecter effecter;

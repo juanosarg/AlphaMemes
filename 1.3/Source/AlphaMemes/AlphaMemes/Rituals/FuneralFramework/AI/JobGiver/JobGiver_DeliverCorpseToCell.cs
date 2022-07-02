@@ -18,8 +18,9 @@ namespace AlphaMemes
 		}
 
 		protected override Job TryGiveJob(Pawn pawn)
-		{
-			Corpse pawn2 = pawn.mindState.duty.focusSecond.Pawn.Corpse;
+		{ 
+			Corpse pawn2 = pawn.mindState.duty.focusSecond.Pawn?.Corpse ?? null;
+			if(pawn2 == null) { return null; }
 			if (!pawn.CanReach(pawn2, PathEndMode.Touch, PawnUtility.ResolveMaxDanger(pawn, this.maxDanger)))
 			{
 				return null;

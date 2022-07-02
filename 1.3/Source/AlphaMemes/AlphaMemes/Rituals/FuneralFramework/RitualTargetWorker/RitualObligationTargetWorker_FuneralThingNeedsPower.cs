@@ -29,7 +29,7 @@ namespace AlphaMemes
 			{
 				if (compPowerTrader.PowerNet == null || !compPowerTrader.PowerNet.HasActivePowerSource)
 				{
-                    return "Funeral_NeedsPower".Translate(obligation.targetA.Thing.def.label);
+                    return "Funeral_NeedsPower".Translate(target.Thing.def.label);
                     
                 }				
 			}
