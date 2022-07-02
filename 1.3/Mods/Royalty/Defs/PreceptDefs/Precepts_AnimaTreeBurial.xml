@@ -7,7 +7,7 @@
 		<label>Anima Tree Burial</label>
 		<description>A gathering to witness our friend's spirit be returned to nature</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Icons/Rituals/AnimaTreeLinking</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralAnimaBurial</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_AnimaBurialPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>

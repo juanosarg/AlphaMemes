@@ -5,9 +5,9 @@
 		<PreceptDef>
 		<defName>AM_BlastOffFuneral</defName>
 		<label>BlastOff Funeral</label>
-		<description>A gathering to witness our friend be sent of to the stars.</description>
+		<description>A gathering to witness our friend be sent off to the stars.</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_BlastOff</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralBlastOff</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_BlastOffFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
@@ -18,7 +18,7 @@
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
 		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<extraTextPawnDeathLetter>{PAWN_nameDef} should be loaded into a transport pod and blasted off! so {PAWN_possessive} friends and family can move on.</extraTextPawnDeathLetter>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be loaded into a transport pod and blasted off, so {PAWN_possessive} friends and family can move on.</extraTextPawnDeathLetter>
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>

@@ -6,7 +6,7 @@
 		<label>Cremation Funeral</label>
 		<description>A gathering to witness the cremation of our friend.</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralCremation</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_CremateFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>

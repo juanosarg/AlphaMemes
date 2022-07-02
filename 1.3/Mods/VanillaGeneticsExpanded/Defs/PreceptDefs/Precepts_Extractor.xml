@@ -6,7 +6,7 @@
 		<label>Extraction Funeral</label>
 		<description>A gathering to witness the extraction of our friends genomes so they can remain with us.</description>
 		<issue>Ritual</issue>		
-		<iconPath>ui/Memes/MadScientist</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralGeneExtraction</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>GR_ExtractorFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
