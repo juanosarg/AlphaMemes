@@ -31,12 +31,12 @@ namespace AlphaMemes
 			{
 				if (!compLaunchable.FuelingPortSourceHasAnyFuel)
 				{
-                    return "Funeral_LaunchableNoFuel".Translate(obligation.targetA.Thing.def.label);
+                    return "Funeral_LaunchableNoFuel".Translate(thing.def.label);
                     
                 }
                 if(thing.Position.Roofed(thing.Map))
                 {
-                    return "Funeral_LaunchableRoofed".Translate(obligation.targetA.Thing.def.label);
+                    return "Funeral_LaunchableRoofed".Translate(thing.def.label);
                 }
 
             }

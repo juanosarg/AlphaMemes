@@ -105,12 +105,14 @@
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_SpecialConflicts.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Dialog_BeginRitual_DoWindowContents_Patch.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_NotifyAddedToLord.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualPatternDef_Fill_Patch.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Pawn_HealthTracker_NotifyPlayerOfKilled.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\IdeoUIUtility_CanAddPrecept.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_AddPrecept.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_Constructor.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_ShouldBeCalledOff.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\RitualRoleAssignments_ExposeData.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualRoleAssignments_FillPawns.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualRoleAssignments_Setup.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualActions\RitualStageAction_BlastOff.cs" />
