@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_PastedFuneralPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, they must be turned into paste to ensure they aren't wasted</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, they must be turned into paste to ensure they aren't wasted.</ritualExpectedDesc>
 		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -135,28 +135,28 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerriblePaste</memory>
-        <description>The {0} was a terrible! Most of the nutrients were wasted!</description>
+        <description>The {0} was terrible! Most of the nutrients were wasted!</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
         <chance>0.15</chance>
         <memory>AM_LacklusterPaste</memory>
-        <description>The {0} was lackluster. think we'd all rather be doing something else</description>
+        <description>The {0} was lackluster. Think we'd all rather be doing something else.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.6</chance>
         <memory>AM_GoodPaste</memory>
-        <description>The {0} was good. We got what we needed out them.</description>
+        <description>The {0} was good. We got what we needed out of them.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
         <chance>0.2</chance>
         <memory>AM_AmazingPaste</memory>
-        <description>The {0} was quite effective. They produced much more nutrients then one would've expected</description>
+        <description>The {0} was quite effective. They produced much more nutrients than one would've expected.</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>

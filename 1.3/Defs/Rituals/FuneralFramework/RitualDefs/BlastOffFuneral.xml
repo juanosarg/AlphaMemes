@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_BlastOffFuneralPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss their friend return to space.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness their friend return to space.</ritualExpectedDesc>
 		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -128,21 +128,21 @@
         <label>Terrible</label>
         <chance>0.1</chance>
         <memory>AM_TerribleBlastOff</memory>
-        <description>The {0} was a terrible! They came back down on a nearby settlement who is now furious.</description>
+        <description>The {0} was terrible! They came back down on a nearby settlement who are now furious.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
         <chance>0.1</chance>
         <memory>AM_LacklusterBlastOff</memory>
-        <description>The {0} was lackluster. we think they didnt even reach the atmosphere! Some swear they saw them come back down</description>
+        <description>The {0} was lackluster. We think they didn't even reach the atmosphere! Some swear they saw them come back down.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.6</chance>
         <memory>AM_GoodBlastOff</memory>
-        <description>The {0} was good.  The speaker's final words were satisfying, and the smell of chemfuel make was the perfect sendoff </description>
+        <description>The {0} was good. The speaker's final words were satisfying, and the smell of chemfuel was the perfect sendoff.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
@@ -174,7 +174,7 @@
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
-			<worstOutcomeDesc>The {RITUAL} was a disaster! Not only did {CORPSE} not reach the stars, they landed in {SETTLEMENT} causing a diplomatic diaster!</worstOutcomeDesc>
+			<worstOutcomeDesc>The {RITUAL} was a disaster! Not only did {CORPSE} not reach the stars, they landed in {SETTLEMENT} causing a diplomatic disaster!</worstOutcomeDesc>
 			<bestOutcomeDesc>The {RITUAL} spectacular! {CORPSE} has reached the stars, which led a trade ship to come investigate!</bestOutcomeDesc>
 		</li>
 	</modExtensions>

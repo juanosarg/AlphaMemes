@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_AnimaBurialPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss their friend return to space.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss their friend return to the earth.</ritualExpectedDesc>
 		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -137,35 +137,35 @@
         <label>Terrible</label>
         <chance>0.15</chance>
         <memory>AM_TerribleAnimaBurial</memory>
-        <description>The {0} was a terrible! We have angered the tree's spirit and it's punishing us.</description>
+        <description>The {0} was terrible! We have angered the tree's spirit and it's punishing us.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
         <chance>0.15</chance>
         <memory>AM_LacklusterAnimaBurial</memory>
-        <description>The {0} was lackluster. we fear we may have offened the tree spirit</description>
+        <description>The {0} was lackluster. We fear we may have offended the tree spirit</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.4</chance>
         <memory>AM_GoodAnimaBurial</memory>
-        <description>The {0} was good. our friend belongs to the tree spirit now</description>
+        <description>The {0} was good. Our friend belongs to the tree spirit now.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
         <chance>0.25</chance>
         <memory>AM_AmazingAnimaBurial</memory>
-        <description>The {0} was great. The tree's spirit appears pleased, and grass has grown</description>
+        <description>The {0} was great. The tree's spirit appears pleased, and grass has grown.</description>
         <positivityIndex>2</positivityIndex>
       </li>
 	   <li>
         <label>Incredible</label>
         <chance>0.05</chance>
         <memory>AM_IncredibleAnimaBurial</memory>
-        <description>The {0} was breath taking. The tree's spirit has graced us with some of its power</description>
+        <description>The {0} was breathtaking. The tree's spirit has graced us with some of its power.</description>
         <positivityIndex>3</positivityIndex>
       </li>
     </outcomeChances>
@@ -207,7 +207,7 @@
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
 			<worstOutcomeDesc>The {RITUAL} was a disaster! {CORPSE}'s soul angered the tree!</worstOutcomeDesc>
-			<bestOutcomeDesc>The {RITUAL} spectacular! {CORPSE} has been absorbed and a the anima tree has empowered us</bestOutcomeDesc>
+			<bestOutcomeDesc>The {RITUAL} was spectacular! {CORPSE} has been absorbed and the anima tree has empowered us.</bestOutcomeDesc>
 		</li>
 	</modExtensions>
   </RitualOutcomeEffectDef>

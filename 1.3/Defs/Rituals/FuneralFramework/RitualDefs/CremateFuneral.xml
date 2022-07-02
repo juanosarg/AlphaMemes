@@ -151,21 +151,21 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was a terrible! The speech was boring and the crematorium wasn't hot enough.</description>
+        <description>The {0} was terrible! The speech was boring and the crematorium wasn't hot enough.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
         <chance>0.15</chance>
         <memory>AM_LacklusterFuneral</memory>
-        <description>The {0} was lackluster. The speech was long-winded and did not honor them</description>
+        <description>The {0} was lackluster. The speech was long-winded and did not honour them.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.6</chance>
         <memory>AM_GoodFuneral</memory>
-        <description>The {0} was good.  The speaker's final words provided a path for everyone move on.</description>
+        <description>The {0} was good. The speaker's final words provided a path for everyone to move on.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
