@@ -4,7 +4,7 @@
 
 		<PreceptDef>
 		<defName>AM_AnimaBurial</defName>
-		<label>Anima Tree Burial</label>
+		<label>anima tree burial</label>
 		<description>A gathering to witness our friend's spirit be returned to nature</description>
 		<issue>Ritual</issue>		
 		<iconPath>UI/Rituals/AM_FuneralAnimaBurial</iconPath>

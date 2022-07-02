@@ -3,7 +3,7 @@
 		<!--Precepts-->
 	<PreceptDef>
 		<defName>GR_ExtractorFuneral</defName>
-		<label>Extraction Funeral</label>
+		<label>extraction funeral</label>
 		<description>A gathering to witness the extraction of our friends genomes so they can remain with us.</description>
 		<issue>Ritual</issue>		
 		<iconPath>UI/Rituals/AM_FuneralGeneExtraction</iconPath>

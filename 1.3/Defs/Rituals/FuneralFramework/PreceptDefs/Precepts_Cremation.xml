@@ -3,7 +3,7 @@
 		<!--Precepts-->
 	<PreceptDef>
 		<defName>AM_CremateFuneral</defName>
-		<label>Cremation Funeral</label>
+		<label>cremation funeral</label>
 		<description>A gathering to witness the cremation of our friend.</description>
 		<issue>Ritual</issue>		
 		<iconPath>UI/Rituals/AM_FuneralCremation</iconPath>

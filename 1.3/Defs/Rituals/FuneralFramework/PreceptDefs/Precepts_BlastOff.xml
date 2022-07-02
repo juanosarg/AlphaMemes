@@ -4,7 +4,7 @@
 
 		<PreceptDef>
 		<defName>AM_BlastOffFuneral</defName>
-		<label>BlastOff Funeral</label>
+		<label>blast off funeral</label>
 		<description>A gathering to witness our friend be sent off to the stars.</description>
 		<issue>Ritual</issue>		
 		<iconPath>UI/Rituals/AM_FuneralBlastOff</iconPath>

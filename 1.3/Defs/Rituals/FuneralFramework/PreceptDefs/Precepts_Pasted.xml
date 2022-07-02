@@ -4,7 +4,7 @@
 
 	<PreceptDef>
 		<defName>AM_PastedFuneral</defName>
-		<label>Nutrient Paste Funeral</label>
+		<label>nutrient paste funeral</label>
 		<description>A gathering to ensure nothing goes to waste</description>
 		<issue>Ritual</issue>		
 		<iconPath>UI/Rituals/AM_FuneralNutrientPaste</iconPath>
