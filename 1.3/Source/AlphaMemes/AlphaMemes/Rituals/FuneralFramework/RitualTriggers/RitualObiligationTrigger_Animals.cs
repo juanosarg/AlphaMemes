@@ -49,7 +49,7 @@ namespace AlphaMemes
                 target2 = TrainableUtility.GetAllColonistBondsFor(pawn).FirstOrDefault(x => x.Ideo == ideo);
                 flag = true;
             }
-            if ((venerated && veneratedAnimals) || namedanimals || allAnimals)
+            if ((venerated && veneratedAnimals) || (named && namedanimals) || allAnimals)
             {
                 flag = true;
             }
