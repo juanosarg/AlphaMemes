@@ -20,8 +20,7 @@ namespace AlphaMemes
         //Extends the functionality of apply extra outcome
         protected override void ApplyExtraOutcome(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)
         {
-            //Getting all the data
-                        
+            //Getting all the data                        
             outcomeExtension = def.GetModExtension<OutcomeEffectExtension>();            
             bool worstOutcome = OutcomeChanceWorst(jobRitual, outcome);
             bool bestOutcome = outcome.BestPositiveOutcome(jobRitual);
@@ -96,18 +95,18 @@ namespace AlphaMemes
         }
 
         public bool OutcomeChanceWorst(LordJob_Ritual jobRitual, OutcomeChance outcome) //Doing opposite of Vanilla check if best
-    {
-        using (List<OutcomeChance>.Enumerator enumerator = jobRitual.Ritual.outcomeEffect.def.outcomeChances.GetEnumerator())
         {
-            while (enumerator.MoveNext())
+            using (List<OutcomeChance>.Enumerator enumerator = jobRitual.Ritual.outcomeEffect.def.outcomeChances.GetEnumerator())
             {
-                if (enumerator.Current.positivityIndex < outcome.positivityIndex)
+                while (enumerator.MoveNext())
                 {
-                    return false;
+                    if (enumerator.Current.positivityIndex < outcome.positivityIndex)
+                    {
+                        return false;
+                    }
                 }
             }
-        }
-        return true;
+            return true;
         }
         public override void ExposeData()
         {

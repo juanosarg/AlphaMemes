@@ -46,7 +46,7 @@ namespace AlphaMemes
 
             return true;
         }
-        public bool PreceptConflictSimple(Ideo ideo)
+        public AcceptanceReport PreceptConflictSimple(Ideo ideo)
         {
             if(ideo.PreceptsListForReading.Any(x=> conflictingPreceptDefs?.Contains(x.def)??false))
             {
@@ -65,13 +65,16 @@ namespace AlphaMemes
 
             return false;
         }
-        public AcceptanceReport MemeConflicts(Ideo ideo)
+        public AcceptanceReport MemeConflicts(Ideo ideo, PreceptDef def = null)
         {
             if(conflictingMemes?.Any(x => ideo.memes.Contains(x))?? false)
             {
                 return "Funeral_ConflictingMemes".Translate(string.Join(", ", conflictingMemes.Where(x => ideo.memes.Contains(x)).Select(x => x.LabelCap)).Named("CONFLICTS"));
             }
-
+            if(def != null) //Adding this so that I can easily check everything with the same methods
+            {
+                return !def.conflictingMemes?.Any(x => ideo.memes.Contains(x)) ?? true;
+            }
             return true;
         }
         public AcceptanceReport ResearchConflicts(Ideo ideo)

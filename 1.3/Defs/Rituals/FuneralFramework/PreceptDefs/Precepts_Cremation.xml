@@ -17,12 +17,13 @@
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
 		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<alsoAdds>AM_FuneralNoCorpse</alsoAdds>	
+		<alsoAdds>AM_CremateFuneralNoCorpse</alsoAdds>	
 		<extraTextPawnDeathLetter>{PAWN_nameDef} should be cremated and their dust scattered so {PAWN_possessive} friends and family can move on.</extraTextPawnDeathLetter>
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>100</_weighting>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>			
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
@@ -48,18 +49,14 @@
 	
 	
 	<PreceptDef ParentName="FuneralBase">
-		<defName>AM_FuneralNoCorpse</defName>
+		<defName>AM_CremateFuneralNoCorpse</defName>
+		<classic>false</classic>
 		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
 		<label>funeral (no corpse)</label>
 		<visible>false</visible>
 		<listedForRoles>false</listedForRoles>
 		<ritualPatternBase>FuneralNoCorpse</ritualPatternBase>
-		<takeNameFrom>Funeral</takeNameFrom>
-		<modExtensions>
-		<li Class="AlphaMemes.FuneralPreceptExtension">
-			<addNoCorpseFuneral>false</addNoCorpseFuneral>
-		</li>
-		</modExtensions>
+		<takeNameFrom>AM_CremateFuneral</takeNameFrom>
 	</PreceptDef>
 
 </Defs>

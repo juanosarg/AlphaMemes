@@ -22,13 +22,13 @@
 		<impact>Medium</impact>
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
-		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<alsoAdds>AM_FuneralNoCorpse</alsoAdds>			
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>				
 		<extraTextPawnDeathLetter>{PAWN_nameDef} should be extracted and turned into a glorious creation so {PAWN_possessive} friends and family need not say farewell.</extraTextPawnDeathLetter>
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<replaceConflictRituals>true</replaceConflictRituals> <!--No weighting because it will always be used-->
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>			
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

@@ -32,6 +32,7 @@
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<_weighting>50</_weighting>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

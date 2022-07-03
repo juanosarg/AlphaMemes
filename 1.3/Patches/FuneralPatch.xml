@@ -6,6 +6,7 @@
 		<value>
 			<li Class="AlphaMemes.FuneralPreceptExtension">
 				<isColonistFuneral>true</isColonistFuneral>
+				<_weighting>100</_weighting>
 							<!--Animals-->
 				<allowAnimals>true</allowAnimals>			
 				<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

@@ -53,10 +53,7 @@ namespace AlphaMemes
             {
                 FuneralPreceptExtension extension = precept.def.GetModExtension<FuneralPreceptExtension>();
                 List<PreceptDef> ritualConflict = new List<PreceptDef>();
-                if (precept.def == InternalDefOf.AM_FuneralNoCorpse)//little hack to make the no corpse name == main ritual name without creating a unique def for each one
-                {
-                    extension.SetNoCorpseFuneralDefName(__instance, precept.def);
-                }
+
                 AcceptanceReport report = extension.specialConflicts?.PreceptConflicts(__instance, out ritualConflict, extension) ?? true;
                 if (report.Accepted)//Checks precepts first then research to not clog up small ritual UI by concatting
                 {
