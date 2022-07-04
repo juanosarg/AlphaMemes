@@ -36,7 +36,7 @@ namespace AlphaMemes
                     Corpse corpse = (Corpse)obligation.targetA.Thing;
                     if (corpse != null && !corpse.Destroyed)
                     {
-                        if(!allPawns.Contains(corpse.InnerPawn) && corpse.InnerPawn.CanBeBuried())
+                        if (!allPawns.Contains(corpse.InnerPawn) && corpse.ParentHolder as Building_Casket == null)
                         {
                             allPawns.Add(corpse.InnerPawn);
                         }                            

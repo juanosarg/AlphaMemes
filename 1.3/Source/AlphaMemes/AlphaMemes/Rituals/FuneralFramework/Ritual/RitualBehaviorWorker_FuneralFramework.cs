@@ -88,7 +88,7 @@ namespace AlphaMemes
                 Corpse corpse = (Corpse)obligation.targetA.Thing;
                 if (corpse != null && !corpse.Destroyed)
                 {
-                    if (corpse.InnerPawn.CanBeBuried())
+                    if (corpse.ParentHolder as Building_Casket == null)//Can be buried is a lie
                     {
                         flag = true;
                     }
