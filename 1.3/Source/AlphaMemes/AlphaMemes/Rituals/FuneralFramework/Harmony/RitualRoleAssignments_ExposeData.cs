@@ -19,7 +19,7 @@ namespace AlphaMemes
     public static class RitualRoleAssignments_ExposeData_Patch
     {
         [HarmonyPostfix]
-        public static void Tester(RitualRoleAssignments __instance, List<Pawn> ___allPawns, Dictionary<string, SerializablePawnList> ___assignedRoles)
+        public static void Postfix(RitualRoleAssignments __instance, List<Pawn> ___allPawns, Dictionary<string, SerializablePawnList> ___assignedRoles)
         {
             if(Scribe.mode == LoadSaveMode.PostLoadInit)
             {
@@ -27,6 +27,7 @@ namespace AlphaMemes
                 {
                     //Fixing the lists
                     RitualBehaviorWorker_FuneralFramework behavior = __instance.Ritual.behavior as RitualBehaviorWorker_FuneralFramework;
+                    if(behavior == null) { return; }    
                     Pawn pawn = behavior.corpse;
                     if (___allPawns.Any(x => x == null))
                     {

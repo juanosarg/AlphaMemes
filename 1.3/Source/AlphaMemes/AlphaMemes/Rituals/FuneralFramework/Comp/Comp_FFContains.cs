@@ -14,6 +14,7 @@ namespace AlphaMemes
         //If there was another way I couldnt find it and Im sad cause this seems like way to much effort for something so small
         private TaggedString pawnName = null;
         private TaggedString pawnNickname = null;
+        private Pawn innerPawn = null;
         private string deathDate;
         private TaleReference taleRef;
         public CompProperties_CorpseContainer Props
@@ -53,6 +54,7 @@ namespace AlphaMemes
             
             pawnName = corpse.InnerPawn.NameFullColored;
             pawnNickname = corpse.InnerPawn.NameShortColored;
+            innerPawn = corpse.InnerPawn;
             taleRef = Find.TaleManager.GetRandomTaleReferenceForArtConcerning(corpse.InnerPawn);
             deathDate = GenDate.DateFullStringAt((long)GenDate.TickGameToAbs(corpse.timeOfDeath), Find.WorldGrid.LongLatOf(corpse.Tile));
         }
@@ -76,7 +78,7 @@ namespace AlphaMemes
             Scribe_Values.Look<TaggedString>(ref pawnNickname, "pawnNickname", null, false);
             Scribe_Values.Look<string>(ref deathDate, "deathDate", null, false);
             Scribe_Deep.Look<TaleReference>(ref taleRef, "taleRef", Array.Empty<object>());
-
+            Scribe_References.Look(ref innerPawn, "innerPawn", true);
         }
     }
 }

@@ -10,7 +10,7 @@ using RimWorld;
 
 namespace AlphaMemes
 {
-	//Action to add a sound and effect to the behavior
+	//Action to add thing effects
 	public class RitualStageAction_ThingEffects : RitualStageAction
 	{
 
@@ -89,12 +89,13 @@ namespace AlphaMemes
 
 		public override void ExposeData()
 		{
-
+			Scribe_Collections.Look(ref thingsToSpawnOn, "thingsToSpawnOn", LookMode.Value, LookMode.Def, ref tmpThingsToSpawnKey, ref tmpThingsToSpawnValue);
 		}
 		private TargetInfo selectedtarget;
 		private RitualBehaviorWorker_FuneralFramework behavior;
 		public Dictionary<string,ThingDef> thingsToSpawnOn;
-
+		private List<string> tmpThingsToSpawnKey;
+		private List<ThingDef> tmpThingsToSpawnValue;
 
 	}
 }

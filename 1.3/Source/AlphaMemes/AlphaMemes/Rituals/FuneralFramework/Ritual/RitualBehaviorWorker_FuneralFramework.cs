@@ -173,6 +173,7 @@ namespace AlphaMemes
             Scribe_Defs.Look<ThingDef>(ref stuffToUse, "stuffToUse");
             Scribe_Values.Look(ref stuffCount, "stuffCount");
             Scribe_References.Look<Pawn>(ref corpse, "corpse",true);
+            Scribe_Collections.Look(ref spawnEffectThings, "spawnEffectThings", LookMode.Reference);
 
         }
         public Pawn corpse;

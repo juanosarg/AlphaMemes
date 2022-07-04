@@ -25,7 +25,12 @@ namespace AlphaMemes
             Pawn pawn = ritual.assignments.AssignedPawns(roleId).First();
             if (pawn != null)
             {
-                return pawn.GetStatValue(StatDefOf.PsychicSensitivity,true);
+                float count = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
+                if (pawn.Dead)
+                {
+                    count = count - .5f;
+                }
+                return count;
             }
             return base.Count(ritual, data);
         }
@@ -50,7 +55,39 @@ namespace AlphaMemes
 
             };
         }
+        public override Pawn BestPawnForRole(List<Pawn> pawns, RitualRoleAssignments assignments, out string roleId)
+        {
+            roleId = this.roleId;
+            if(roleId == "AM_RitualRoleCorpse")
+            {
+                return null;
+            }
+            Pawn bestPawn = pawns.First(x => !x.Dead);//Was random but eventually that'd cause an awkward situation
+            foreach (Pawn pawn in pawns)
+            {
+                bool flag = false;
+                string reason = null;
+                if (pawn.GetPsylinkLevel() > bestPawn.GetPsylinkLevel() && !pawn.Dead)
+                {
+                    Precept_Role pRole = pawn.Ideo?.GetRole(pawn);//seperated this all out because somewhere in the chain it wasnt happy about null and I wanted to see where. Dont feel like recombining
+                    if (pRole != null)
+                    {
+                        foreach (RitualRole role in assignments.Ritual.behavior.def.roles)
+                        {
+                            flag = role.AppliesToRole(pRole, out reason);
+                            if (flag) { break; }
+                        }
+                    }
+                    if (!flag)
+                    {
+                        bestPawn = pawn;
+                    }
 
+                }
+
+            }
+            return bestPawn;
+        }
         public string roleId;
 
 
