@@ -99,12 +99,14 @@
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_LoadCorpseToThing.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverStuffToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverCorpseToCell.cs" />
+    <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkStaticStartup.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_OutcomeEffectExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_ObligationTargetExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkPreceptExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_SpecialConflicts.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Dialog_BeginRitual_DoWindowContents_Patch.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\IdeoFoundation._RandomizePrecepts.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_NotifyAddedToLord.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualPatternDef_Fill_Patch.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Pawn_HealthTracker_NotifyPlayerOfKilled.cs" />
