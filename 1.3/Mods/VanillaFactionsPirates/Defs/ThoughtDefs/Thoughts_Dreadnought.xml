@@ -8,7 +8,7 @@
     <stages>
       <li>
         <label>disgraceful entombing</label>
-        <description>That entombing was a complete failure. I hope that doesnt happen to me when its my time.</description>
+        <description>That entombing was a complete failure. I hope that doesn't happen to me when it's my time.</description>
         <baseMoodEffect>-3</baseMoodEffect>
       </li>
     </stages>
@@ -50,7 +50,7 @@
     <stages>
       <li>
         <label>amazing entombing</label>
-        <description>That entombing was amazing. I hope when its my turn I have no side effects like that.</description>
+        <description>That entombing was amazing. I hope when it's my turn I have no side effects like that.</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>

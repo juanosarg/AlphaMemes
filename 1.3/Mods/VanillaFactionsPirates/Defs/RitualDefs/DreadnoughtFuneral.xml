@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_DreadnoughtFuneralPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} to see the deceased turned into a true machine of war.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} to see the deceased turned into a true machine of war.</ritualExpectedDesc>
 		<ritualObligationTriggers>
 		  <li Class="AlphaMemes.RitualObligationTrigger_DreadnoughtCapableProps">
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -156,7 +156,7 @@
         <label>Terrible</label>
         <chance>0.2</chance>
         <memory>AM_TerribleDreadnought</memory>
-        <description>The {0} was a terrible! The entombing failed and they are lost to us forever.</description>
+        <description>The {0} was terrible! The entombing failed and they are lost to us forever.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>

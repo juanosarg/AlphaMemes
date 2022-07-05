@@ -3,10 +3,10 @@
 		<!--Precepts-->
 	<PreceptDef>
 		<defName>AM_DreadnoughtFuneral</defName>
-		<label>Dreadnought Funeral</label>
+		<label>dreadnought funeral</label>
 		<description>A gathering to witness the venerated deceased be turned into a true machine of war.</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralDreadnought</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_DreadnoughtFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
