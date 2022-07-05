@@ -36,6 +36,10 @@ namespace AlphaMemes
 				return null;
 			}
 			IntVec3 cell = pawn.mindState.duty.focusThird.Thing.Position;
+			if(!pawn.CanReach(cell,PathEndMode.Touch, PawnUtility.ResolveMaxDanger(pawn, this.maxDanger)))
+			{
+				cell = pawn.mindState.duty.focusThird.Thing.InteractionCell;
+			}
 
 			Job job = JobMaker.MakeJob(InternalDefOf.AM_DeliverCorpseToCell, pawn2, cell, pawn.mindState.duty.focusThird);
 			job.locomotionUrgency = PawnUtility.ResolveLocomotion(pawn, this.locomotionUrgency);

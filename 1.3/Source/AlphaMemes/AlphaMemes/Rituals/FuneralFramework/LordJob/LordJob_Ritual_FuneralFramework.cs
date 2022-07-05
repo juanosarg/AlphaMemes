@@ -31,7 +31,7 @@ namespace AlphaMemes
                     if (!thing.def.hasInteractionCell)
                     {
 						cell = thing.InteractionCell;
-                        if (!cell.Standable(Map))
+                        if (!cell.Standable(thing.Map))
                         {
 							if(!CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 6, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell))
                             {
