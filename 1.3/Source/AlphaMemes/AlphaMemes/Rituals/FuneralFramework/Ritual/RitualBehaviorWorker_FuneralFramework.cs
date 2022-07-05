@@ -43,6 +43,7 @@ namespace AlphaMemes
             {
                 return;
             }
+            
             LordJob_Ritual_FuneralFramework lordJob = (LordJob_Ritual_FuneralFramework)CreateLordJob(target, organizer, ritual, obligationToUse, assignments);            
             LordMaker.MakeNewLord(Faction.OfPlayer, lordJob, target.Map, assignments.Participants.Where(delegate (Pawn p)
             {
@@ -64,10 +65,34 @@ namespace AlphaMemes
             }
 
         }
+
         protected override LordJob CreateLordJob(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
         {
             corpse = assignments.AssignedPawns(extension.corpseRitualRoleID).First();
-            return new LordJob_Ritual_FuneralFramework(target, ritual, obligation, def.stages, assignments, corpse, organizer);
+            IntVec3 spot = RitualSpot(target, organizer, ritual, obligation, assignments);
+            return new LordJob_Ritual_FuneralFramework(target, ritual, obligation, def.stages, assignments, corpse, spot, organizer);
+        }
+        public virtual IntVec3 RitualSpot(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
+        {
+            Thing thing = target.Thing;
+            IntVec3 cell = thing.OccupiedRect().CenterCell;
+            if (def.HasModExtension<FuneralFramework_BehaviorExtension>())
+            {
+                var extension = def.GetModExtension<FuneralFramework_BehaviorExtension>();
+                cell = thing.Position + extension.spotOffset.RotatedBy(thing.Rotation);
+            }
+            else if (thing.def.passability != Traversability.Standable)
+            {
+                cell = thing.InteractionCell;
+            }
+            if (!cell.Standable(thing.Map))
+            {
+                if (!CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 6, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell))
+                {
+                    cell = thing.OccupiedRect().AdjacentCellsCardinal.RandomElement();//If all of this fails \o/
+                }
+            }
+            return cell;
         }
         public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
         {

@@ -56,8 +56,7 @@
 				<endTriggers>
 					<li Class="StageEndTrigger_RolesArrived">
 						<roleIds>
-						  <li>moralist</li>
-						 
+						  <li>moralist</li>						 
 						</roleIds>
 					</li>	
 				</endTriggers>				
@@ -65,8 +64,12 @@
 				  <li>
 					<roleId>moralist</roleId>
 					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
-				  </li>	
-				 			  
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_CorpsePosition">
+						<corpeOffset>(0,0,-3)</corpeOffset>
+					  </li>
+					</customPositions>
+				  </li> 
 				</roleBehaviors>
 			</li>    
 			<li>
@@ -114,6 +117,11 @@
 				<visualEffectDef>Funeral</visualEffectDef>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="AlphaMemes.FuneralFramework_BehaviorExtension">
+				<spotOffset>(0,0,-4)</spotOffset><!--Has to be standable offset based on thing Position-->
+			</li>
+		</modExtensions>
   </RitualBehaviorDef>
    
 

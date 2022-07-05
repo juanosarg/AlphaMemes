@@ -13,6 +13,9 @@
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
 		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_Structure_Kemetism</li>
+		</requiredMemes>
 		<impact>Medium</impact>
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>

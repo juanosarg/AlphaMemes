@@ -102,6 +102,7 @@
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverStuffToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverCorpseToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkStaticStartup.cs" />
+    <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_BehaviorExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_OutcomeEffectExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_ObligationTargetExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkPreceptExtension.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralBlastOff.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralFramework.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualPositions\RitualPosition_CorpsePosition.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualPositions\RitualPosition_BesideThing.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualPositions\RitualPosition_CenterPos.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualPositions\RitualPosition_InteractingOnCell.cs" />

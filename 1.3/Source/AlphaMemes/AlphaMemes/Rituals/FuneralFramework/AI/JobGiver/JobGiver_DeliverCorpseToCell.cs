@@ -30,16 +30,31 @@ namespace AlphaMemes
 				return null;
             }
 			Lord lord = pawn.GetLord();//adding this cause somehow its still job spamming ughhh
-			LordJob_Ritual lordJob_Ritual = ((lord != null) ? lord.LordJob : null) as LordJob_Ritual;
-			if (lordJob_Ritual.PawnTagSet(pawn, "Arrived"))
+			LordJob_Ritual ritual = ((lord != null) ? lord.LordJob : null) as LordJob_Ritual;
+			if (ritual.PawnTagSet(pawn, "Arrived"))
 			{
 				return null;
 			}
 			IntVec3 cell = pawn.mindState.duty.focusThird.Thing.Position;
-			if(!pawn.CanReach(cell,PathEndMode.Touch, PawnUtility.ResolveMaxDanger(pawn, this.maxDanger)))
-			{
-				cell = pawn.mindState.duty.focusThird.Thing.InteractionCell;
+			//Getting custom position is fun
+			//I love when fields are private for no reason
+			//Im hoping the index of lordjob always matches the def. it should, unless expose data someone orders them wrong but that seems impossible cause everything would break
+			int stage = ritual.StageIndex;
+			RitualBehaviorWorker_FuneralFramework behavior = ritual.Ritual.behavior as RitualBehaviorWorker_FuneralFramework;
+			string roleId = ritual.assignments.RoleForPawn(pawn).id;
+			RitualPosition_CorpsePosition corpsePosition = behavior.def.stages[stage]?.BehaviorForRole(roleId)?.CustomPositionsForReading?.FirstOrDefault() as RitualPosition_CorpsePosition;
+			if (corpsePosition != null)
+            {
+				cell = corpsePosition.CorpseCell(pawn, ritual, null);
+            }
+            else
+            {
+				if (!pawn.CanReach(cell, PathEndMode.Touch, PawnUtility.ResolveMaxDanger(pawn, this.maxDanger)))
+				{
+					cell = pawn.mindState.duty.focusThird.Thing.InteractionCell;
+				}
 			}
+
 
 			Job job = JobMaker.MakeJob(InternalDefOf.AM_DeliverCorpseToCell, pawn2, cell, pawn.mindState.duty.focusThird);
 			job.locomotionUrgency = PawnUtility.ResolveLocomotion(pawn, this.locomotionUrgency);

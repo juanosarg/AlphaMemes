@@ -18,38 +18,13 @@ namespace AlphaMemes
     public class LordJob_Ritual_FuneralFramework : LordJob_Ritual
     {
 
-        public LordJob_Ritual_FuneralFramework(TargetInfo selectedTarget, Precept_Ritual ritual, RitualObligation obligation, List<RitualStage> allStages, RitualRoleAssignments assignments,Pawn corpse, Pawn organizer = null) : base(selectedTarget, ritual, obligation, allStages, assignments, organizer)
+        public LordJob_Ritual_FuneralFramework(TargetInfo selectedTarget, Precept_Ritual ritual, RitualObligation obligation, List<RitualStage> allStages, RitualRoleAssignments assignments,Pawn corpse, IntVec3 spot ,Pawn organizer = null) : base(selectedTarget, ritual, obligation, allStages, assignments, organizer)
         {
             this.corpse = corpse;
-            if (selectedTarget.HasThing)
-            {
-                Thing thing = selectedTarget.Thing;
-                IntVec3 cell = thing.OccupiedRect().CenterCell;
+			this.spot = spot;
 
-                if (thing.def.passability != Traversability.Standable)
-                {
-                    if (!thing.def.hasInteractionCell)
-                    {
-						cell = thing.InteractionCell;
-                        if (!cell.Standable(thing.Map))
-                        {
-							if(!CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 6, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell))
-                            {
-								cell = thing.OccupiedRect().AdjacentCellsCardinal.RandomElement();//If all of this fails \o/
-                            }
-						}
-						
-                    }
-                    else
-                    {
-                        cell = thing.InteractionCell;
-                    }
 
-                    spot = cell;
-                }
-            }
-
-        }
+		}
 		public LordJob_Ritual_FuneralFramework()
         {
         }
