@@ -30,7 +30,15 @@ namespace AlphaMemes
                 {
                     if (!thing.def.hasInteractionCell)
                     {
-                        CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 1, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell);//Random spot can cause weird positioning of the progress bar
+						cell = thing.InteractionCell;
+                        if (!cell.Standable(Map))
+                        {
+							if(!CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 6, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell))
+                            {
+								cell = thing.OccupiedRect().AdjacentCellsCardinal.RandomElement();//If all of this fails \o/
+                            }
+						}
+						
                     }
                     else
                     {
