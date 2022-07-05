@@ -127,7 +127,7 @@
 					<roleId>AM_Crafter</roleId>
 					<dutyDef>ArriveToCell</dutyDef>				  
 					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_InterctingOnCell"/>
+					  <li Class="AlphaMemes.RitualPosition_InteractingOnCell"/>
 					</customPositions>
 				  </li>
 				</roleBehaviors>

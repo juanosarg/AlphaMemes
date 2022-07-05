@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AlphaMemes
 {    //simple override to make the position always facing interaction spot
-    public class RitualPosition_InterctingOnCell : RitualPosition_OnInteractionCell
+    public class RitualPosition_InteractingOnCell : RitualPosition_OnInteractionCell
     {
 		public override PawnStagePosition GetCell(IntVec3 spot, Pawn p, LordJob_Ritual ritual)
 		{

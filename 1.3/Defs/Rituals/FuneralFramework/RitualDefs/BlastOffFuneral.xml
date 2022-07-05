@@ -103,7 +103,7 @@
 					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
 					<speakerInteraction>Speech_Funeral</speakerInteraction>
 					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_InterctingOnCell" />
+					  <li Class="AlphaMemes.RitualPosition_InteractingOnCell" />
 					</customPositions>
 				  </li>		
 				</roleBehaviors>

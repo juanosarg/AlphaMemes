@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_MummificationPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} return to dust.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} return to dust.</ritualExpectedDesc>
 		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -127,7 +127,7 @@
 					<roleId>AM_Crafter</roleId>
 					<dutyDef>ArriveToCell</dutyDef>				  
 					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_InterctingOnCell"/>
+					  <li Class="AlphaMemes.RitualPosition_InteractingOnCell"/>
 					</customPositions>
 				  </li>
 				</roleBehaviors>
