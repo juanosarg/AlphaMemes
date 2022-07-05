@@ -11,11 +11,14 @@ namespace AlphaMemes
     {
        
         public bool isColonistFuneral = false; //Can only have 1 colonist funeral type
-        public bool replaceConflictRituals = false; //Decides whether to replace vanilla funeral on generation
-        public float _weighting = 0f;//This is for replacing vanilla funeral on RNG generation.
-
+        public bool replaceConflictRituals = false; //Decides whether to replace vanilla funeral on generation       
         public bool addNoCorpseFuneral = true;//Adds the base game funeral for no corpse (empty grave)
         public string corpseRitualRoleID = "AM_RitualRoleCorpse"; //add the role here if its not default
+
+        //Weighting stuff
+        public float _weighting = 0f;//This is for replacing vanilla funeral on RNG generation.
+        public Dictionary<StyleCategoryDef,float> associatedStyles = new Dictionary<StyleCategoryDef, float>();//Used only for weighting purposes
+        public Dictionary<MemeDef, float> associatedMemes = new Dictionary<MemeDef, float>();//Used only for weighting purposes
 
         //Animals
         public RitualObiligationTrigger_Animals animalObligationTrigger;
@@ -26,13 +29,30 @@ namespace AlphaMemes
 
         public float Weighting(Ideo ideo, PreceptDef def)
         {
-            if(def.associatedMemes != null)
+            float mod = 0f;
+            if(!associatedMemes.NullOrEmpty())
             {
-                if (ideo.memes.Any(x => def.associatedMemes.Contains(x)))//5 times more likely if there's associated
+                foreach (KeyValuePair<MemeDef, float> kvp in associatedMemes)
                 {
-                    return _weighting * 5f;
+                    if (ideo.memes.Contains(kvp.Key))
+                    {
+                        mod += kvp.Value;
+                    }
                 }
-
+            }
+            if (!associatedStyles.NullOrEmpty())
+            {
+                foreach(KeyValuePair<StyleCategoryDef, float> kvp in associatedStyles)
+                {
+                    if (ideo.thingStyleCategories.Any(x => x.category == kvp.Key))
+                    {
+                        mod += kvp.Value;
+                    }
+                }
+            }
+            if(mod > 0f)
+            {
+               return _weighting * mod;
             }
             return _weighting;
         }

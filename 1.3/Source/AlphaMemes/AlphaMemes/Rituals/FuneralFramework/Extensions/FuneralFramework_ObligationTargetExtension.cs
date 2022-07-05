@@ -11,7 +11,8 @@ namespace AlphaMemes
     {
 
         public List<RitualObligationTargetFilterDef> filters;
-
+        //Target
+        public RitualObligationTarget_CorpseStillValid validCorpse;
     }
 
 

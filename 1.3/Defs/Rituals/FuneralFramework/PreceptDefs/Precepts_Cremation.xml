@@ -24,6 +24,12 @@
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>true</addNoCorpseFuneral>
 			<_weighting>100</_weighting>
+			<associatedMemes>
+				<li>
+					<key>Structure_OriginHindu</key>
+					<value>2</value>
+				</li>
+			</associatedMemes>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>			
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+
+  <HediffDef>
+    <defName>AM_WarCasketLifeSupport</defName>
+    <label>Warcasket Life Support</label>
+    <description>This person is alive against all odds, without the warcasket they would perish immediately.</description>
+    <hediffClass>Hediff</hediffClass>
+    <defaultLabelColor>(132, 67, 148)</defaultLabelColor>
+    <initialSeverity>1</initialSeverity>
+  </HediffDef>
+
+
+
+</Defs>

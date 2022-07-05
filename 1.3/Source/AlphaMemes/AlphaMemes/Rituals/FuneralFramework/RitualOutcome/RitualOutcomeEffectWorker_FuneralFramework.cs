@@ -43,9 +43,11 @@ namespace AlphaMemes
             {
                 foreach (FuneralFramework_ThingToSpawn getThing in outcomeExtension.outcomeSpawners)
                 {
-                    Thing thingToSpawn = getThing?.GetThingToSpawn(jobRitual, bestOutcome, worstOutcome, pawn, corpse);
+                    getThing.DestroyThingsUsed(jobRitual, bestOutcome, worstOutcome);
+                    Thing thingToSpawn = getThing?.GetThingToSpawn(jobRitual, bestOutcome, worstOutcome, pawn, corpse);                    
                     if (thingToSpawn != null)
                     {
+                        getThing.initComps(thingToSpawn, corpse, jobRitual, bestOutcome, worstOutcome, outcome,this);
                         thingsToSpawn.Add(thingToSpawn);
                     }
                 }
@@ -55,8 +57,25 @@ namespace AlphaMemes
             ApplyOn(pawn, corpse, thingsToSpawn, totalPresence, jobRitual, outcome);
 
         }
-
-
+        //Outcome worker doesnt have this and it was annoying me needing for loops always
+        public T GetComp<T>() where T : RitualOutcomeComp 
+        {
+            if(def.comps != null)
+            {
+                int index = 0;
+                int count = def.comps.Count;
+                while (index < count)
+                {
+                    T comp = def.comps[index] as T;
+                    if (comp != null)
+                    {
+                        return comp;
+                    }
+                    index++;
+                }
+            }
+            return default(T);
+        }
         public virtual void ApplyOn(Pawn pawn, Corpse corpse, List<Thing> thingsToSpawn, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome)
         {
             if (outcomeExtension.stripcorpse == true)
@@ -81,6 +100,8 @@ namespace AlphaMemes
             
 
         }
+
+        
         public virtual void ExtraOutcomeDesc(Pawn pawn, Corpse corpse, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, ref string extraOutcomeDesc, ref LookTargets letterLookTargets)
         {
             if (OutcomeChanceWorst(jobRitual, outcome) && outcomeExtension.worstOutcomeDesc != null)

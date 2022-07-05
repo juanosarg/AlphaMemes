@@ -21,8 +21,8 @@ namespace AlphaMemes
         [HarmonyPrefix]
         public static void SelectViableCorpse(RitualRoleAssignments __instance, ref List<Pawn> allPawns, ref Dictionary<string, Pawn> forcedRoles)
         {
-            //Access tools
-            if(__instance.Ritual == null)
+            
+            if (__instance.Ritual == null)
             {
                 return; //Not all rituals are rituals neat.
             }

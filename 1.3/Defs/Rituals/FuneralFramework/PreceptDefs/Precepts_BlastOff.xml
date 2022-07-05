@@ -24,6 +24,12 @@
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>false</addNoCorpseFuneral>
 			<_weighting>25</_weighting>
+			<associatedStyles>
+				<li>
+					<key>AM_SteampunkRevival</key>
+					<value>3</value>
+				</li>
+			</associatedStyles>
 			<!--Animals-->
 			<allowAnimals>false</allowAnimals>	
 			<!--Conflicts-->

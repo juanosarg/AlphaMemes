@@ -28,7 +28,7 @@
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>true</addNoCorpseFuneral>
-			<replaceConflictRituals>true</replaceConflictRituals> <!--No weighting because it will always be used-->
+			<replaceConflictRituals>true</replaceConflictRituals> <!--No weighting because it will always be used when avaliable-->
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>			
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

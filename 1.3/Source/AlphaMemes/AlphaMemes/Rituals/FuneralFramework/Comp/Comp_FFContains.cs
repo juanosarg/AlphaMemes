@@ -46,7 +46,17 @@ namespace AlphaMemes
             {
                 return base.TransformLabel(label);
             }
-            string returnString = Props.transformLabel.Formatted(pawnNickname.CapitalizeFirst().Named("CORPSE"), label.Named("LABEL")).Resolve();
+            QualityCategory quality;
+            string returnString = label;
+            if (parent.TryGetQuality(out quality))
+            {
+                returnString = Props.transformLabel.Formatted(pawnNickname.CapitalizeFirst().Named("CORPSE"), label.Named("LABEL"),quality.GetLabel().CapitalizeFirst().Named("QUALITY")).Resolve();
+            }
+            else
+            {
+                returnString = Props.transformLabel.Formatted(pawnNickname.CapitalizeFirst().Named("CORPSE"), label.Named("LABEL")).Resolve();
+            }
+            
             return base.TransformLabel(returnString);
         }
         public void InitComp_CorpseContainer(Corpse corpse)
@@ -63,6 +73,10 @@ namespace AlphaMemes
             if (!Active)
             {
                 return base.GetDescriptionPart();
+            }
+            if(parent.GetComp<CompArt>() != null) //So we dont double up
+            {
+                return "CasketContains".Translate() + ": " + pawnName.CapitalizeFirst();
             }
             return "CasketContains".Translate() + ": " + pawnName.CapitalizeFirst() + "\n\n" + GenerateImageDescription();
         }

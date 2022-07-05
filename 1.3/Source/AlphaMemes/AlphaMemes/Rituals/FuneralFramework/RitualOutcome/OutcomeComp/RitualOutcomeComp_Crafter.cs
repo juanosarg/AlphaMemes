@@ -35,7 +35,7 @@ namespace AlphaMemes
             float quality = this.curve.Evaluate((float)count);
             return new ExpectedOutcomeDesc
             {
-                label = "AM_RitualCrafterOutcome".Translate(skill.LabelCap.Named("SKILL")),
+                label = "AM_RitualCrafterOutcome".Translate(label.Named("LABEL"),skill.LabelCap.Named("SKILL")),
                 count = Mathf.Min((float)count, base.MaxValue) + " / " + base.MaxValue,
                 effect = this.ExpectedOffsetDesc(true, quality),
                 quality = quality,

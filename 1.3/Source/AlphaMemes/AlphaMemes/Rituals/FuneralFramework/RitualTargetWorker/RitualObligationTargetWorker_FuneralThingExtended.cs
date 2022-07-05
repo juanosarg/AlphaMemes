@@ -20,6 +20,7 @@ namespace AlphaMemes
         public virtual void initFilters(Precept_Ritual ritual)
         {
             extension = def.GetModExtension<ObligationTargetExtension>();
+
             foreach (RitualObligationTargetFilterDef filter in extension.filters)
             {
                 RitualObligationTargetFilter instance = filter.GetInstance();
@@ -35,6 +36,7 @@ namespace AlphaMemes
         public override IEnumerable<TargetInfo> GetTargets(RitualObligation obligation, Map map)
         {
             extension = def.GetModExtension<ObligationTargetExtension>();
+
             foreach (RitualObligationTargetFilter worker in filters)
             {
                 foreach(TargetInfo target in worker.GetTargets(obligation, map))
@@ -44,7 +46,7 @@ namespace AlphaMemes
             }
         }
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
-        {            
+        {
 
             extension = def.GetModExtension<ObligationTargetExtension>();
 
@@ -61,6 +63,16 @@ namespace AlphaMemes
                     failReasons.AppendInNewLine(temp.failReason);                   
                 }
             }
+            //Do Corpse reasons
+            if(extension.validCorpse != null)
+            {
+                temp = extension.validCorpse.CanUseTarget(target, obligation);
+                if (!temp.canUse) { canUse = false; }
+                if (temp.failReason != null)
+                {
+                    failReasons.AppendInNewLine(temp.failReason);
+                }
+            }
             if (failReasons.Length>0)
             {
                 return failReasons.ToStringSafe();
@@ -72,10 +84,16 @@ namespace AlphaMemes
         {
 
             extension = def.GetModExtension<ObligationTargetExtension>();
-            
             foreach (RitualObligationTargetFilter worker in filters)
             {
                 foreach(string str in worker.GetTargetInfos(obligation))
+                {
+                    yield return str;
+                }
+            }
+            if (extension.validCorpse != null)
+            {
+                foreach (string str in extension.validCorpse.GetTargetInfos(obligation))
                 {
                     yield return str;
                 }

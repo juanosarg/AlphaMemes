@@ -18,6 +18,11 @@
     <reportString>delivering TargetA.</reportString>
     <casualInterruptible>false</casualInterruptible>
   </JobDef>
-
+  <JobDef>
+    <defName>AM_DeliverThingsToCell</defName>
+    <driverClass>AlphaMemes.JobDriver_DeliverThingsToCell</driverClass>
+    <reportString>delivering TargetB.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
 
 </Defs>

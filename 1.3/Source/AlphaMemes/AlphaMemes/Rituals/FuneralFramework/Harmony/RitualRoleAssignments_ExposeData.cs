@@ -43,6 +43,7 @@ namespace AlphaMemes
                         serializablePawnList.Pawns.Add(pawn);
                         ___assignedRoles.Add(key, serializablePawnList);                        
                     }
+                    
                 }
             }
 

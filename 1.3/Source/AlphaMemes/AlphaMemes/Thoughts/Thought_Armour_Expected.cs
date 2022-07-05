@@ -13,12 +13,19 @@ namespace AlphaMemes
 			List<Apparel> wornApparel = p.apparel.WornApparel;
 			for (int i = 0; i < wornApparel.Count; i++)
 			{
-				if (wornApparel[i].Stuff?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true || wornApparel[i].def?.thingCategories?.Contains(ThingCategoryDefOf.ApparelArmor)==true)
+				if (wornApparel[i].Stuff?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true || wornApparel[i].def?.thingCategories?.Contains(ThingCategoryDefOf.ApparelArmor) == true)
 				{
 					flag = true;
 				}
+				if (FuneralFrameWork_StaticStartup.VFEPLoaded)//Since I have this anyway I thought I might make bulwark work with caskets
+				{
+                    if (wornApparel[i].def?.thingSetMakerTags?.Contains("Warcasket")??false)//Bit of a wonky way to check but I wanted to do it without any reflection and thats an easy string in the warcasket def
+                    {
+						flag = true;
+                    }
+                    
+				}
 			}
-
 			if (flag)
 			{
 

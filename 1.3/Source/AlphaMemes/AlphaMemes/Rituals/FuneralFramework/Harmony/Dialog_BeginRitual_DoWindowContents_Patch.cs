@@ -40,6 +40,7 @@ namespace AlphaMemes
                         {
                             continue;
                         }
+                        spawner.FindStuffForThing(true);
                         foreach (Thing thing in Find.CurrentMap.listerThings.AllThings.Where(x => spawner.stuffOptions.Contains(x.def)))
                         {
                             stuffOptions.Add(thing, spawner.stuffCount);

@@ -31,6 +31,16 @@
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>false</addNoCorpseFuneral>
 			<_weighting>25</_weighting>
+			<associatedMemes>
+				<li>
+					<key>Transhumanist</key>
+					<value>3</value>
+				</li>
+				<li>
+					<key>Cannibal</key>
+					<value>6</value>
+				</li>
+			</associatedMemes>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>			
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

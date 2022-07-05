@@ -27,12 +27,26 @@
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
 		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<extraTextPawnDeathLetter>{PAWN_nameDef} should be loaded returned to nature. So {PAWN_possessive} friends and family can be confident their spirit can be put to rest.</extraTextPawnDeathLetter>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be returned to nature. So {PAWN_possessive} friends and family can be confident their spirit can be put to rest.</extraTextPawnDeathLetter>
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
 			<addNoCorpseFuneral>false</addNoCorpseFuneral>
 			<_weighting>50</_weighting>
+			<associatedMemes>
+				<li>
+					<key>TreeConnection</key>
+					<value>6</value>
+				</li>
+				<li>
+					<key>NaturePrimacy</key>
+					<value>3</value>
+				</li>
+				<li>
+					<key>VME_PsychicFocus</key>
+					<value>3</value>
+				</li>
+			</associatedMemes>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>
 			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">

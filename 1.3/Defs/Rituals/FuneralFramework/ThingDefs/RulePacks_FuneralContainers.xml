@@ -3,7 +3,7 @@
 
 <!--Somethingsomething scopecreep-->
 
-	<RulePackDef>
+  <RulePackDef>
     <defName>AM_ArtDescription_Urn</defName>
     <rulePack>
       <rulesStrings>
@@ -14,6 +14,16 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-
+  <RulePackDef>
+    <defName>AM_ArtDescription_Mummy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->The plaque is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The plaque has a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The plaque is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->An engraving on the plaque [depicts] [image]. [desc_sentence_group]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

@@ -18,6 +18,7 @@
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>5</Beauty>
+	  <MeditationFocusStrength>0.2</MeditationFocusStrength>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -78,6 +79,98 @@
   </ThingDef>
 
 
+  <ThingDef ParentName="BuildingBase" Name="AM_MummyBase" Abstract="True">
 
-
+	<label>Mummified</label>
+	<description>An embalmed and mummified corpse</description>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+	<thingCategories>
+	  <li>BuildingsArt</li>
+	</thingCategories>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<fillPercent>0.40</fillPercent>
+	<statBases>
+	  <MaxHitPoints>50</MaxHitPoints>
+	  <WorkToMake>5000</WorkToMake>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <Mass>5</Mass>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>50</Beauty>
+	  <MeditationFocusStrength>0.0</MeditationFocusStrength>
+	</statBases>
+	<stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+	<costStuffCount>50</costStuffCount>
+	<canOverlapZones>false</canOverlapZones>
+	<rotatable>false</rotatable>
+	<building>
+	  <isInert>true</isInert>
+	  <ai_chillDestination>false</ai_chillDestination>
+	</building>
+	<placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>AM_ArtDescription_Mummy</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+	  <li Class="AlphaMemes.CompProperties_CorpseContainer">
+			<transformLabel>Mummified {CORPSE} ({QUALITY})</transformLabel>
+			<inspectString>Is the last remains of of {CORPSE}</inspectString>
+			<descriptionMaker>AM_ArtDescription_Mummy</descriptionMaker>
+	  </li>
+	  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Morbid</li>
+			</focusTypes>
+			<offsets>
+			  <li Class="FocusStrengthOffset_Quality">
+				<curve>
+				  <points>
+					<li>(0,0.12)</li> <!-- awful -->
+					<li>(1,0.16)</li> <!-- poor -->
+					<li>(2,0.20)</li> <!-- normal -->
+					<li>(3,0.22)</li> <!-- good -->
+					<li>(4,0.24)</li> <!-- excellent -->
+					<li>(5,0.26)</li> <!-- masterwork -->
+					<li>(6,0.28)</li> <!-- legendary -->
+				  </points>
+				</curve>
+			  </li>
+			</offsets>
+	    </li>	  
+	</comps>	
+  </ThingDef>
+  <ThingDef ParentName="AM_MummyBase">
+	<defName>AM_MummyMale</defName>
+	<graphicData>
+		<texPath>Things/Building/Misc/AM_MummyMale</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.5,1.5)</drawSize>
+	</graphicData>
+  </ThingDef>
+    <ThingDef ParentName="AM_MummyBase">
+	<defName>AM_MummyFemale</defName>
+	<graphicData>
+		<texPath>Things/Building/Misc/AM_MummyFemale</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.5,1.5)</drawSize>
+	</graphicData>
+  </ThingDef>
 </Defs>
