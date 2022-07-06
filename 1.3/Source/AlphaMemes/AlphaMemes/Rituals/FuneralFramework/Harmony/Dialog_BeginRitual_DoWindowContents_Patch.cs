@@ -43,7 +43,11 @@ namespace AlphaMemes
                         spawner.FindStuffForThing(true);
                         foreach (Thing thing in Find.CurrentMap.listerThings.AllThings.Where(x => spawner.stuffOptions.Contains(x.def)))
                         {
-                            stuffOptions.Add(thing, spawner.stuffCount);
+                            if (!stuffOptions.Keys.Any(x=>x.def==thing.def))//To not double up on options
+                            {
+                                stuffOptions.Add(thing, spawner.stuffCount);
+                            }
+                            
                             if (behavior.stuffToUse == null)//Doing this because I cant easily make a selection mandatory so if they dont select its just one of the options
                             {
                                 behavior.stuffToUse = thing.def;

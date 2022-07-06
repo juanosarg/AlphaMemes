@@ -136,6 +136,7 @@
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_PsykerLevel.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_Crafter.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_FuneralFramework.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_Fleshcrafting.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_PyramidBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralBlastOff.cs" />
@@ -191,7 +192,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.1</Version>
-	   <ExcludeAssets>runtime</ExcludeAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

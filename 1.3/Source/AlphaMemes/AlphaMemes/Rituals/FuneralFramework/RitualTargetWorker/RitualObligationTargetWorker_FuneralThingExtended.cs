@@ -47,17 +47,17 @@ namespace AlphaMemes
         }
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
         {
-
+            //Slight change here making note of. Return of false = dont show gizo, return of fail string = show gizmo + fail reason. If any of the filters return false we need to not show gizmo at all even if another returns string
             extension = def.GetModExtension<ObligationTargetExtension>();
 
             RitualTargetUseReport temp;
-            bool canUse = true;
+            bool cansShowGizmo = true;
             StringBuilder failReasons = new StringBuilder();
 
             foreach(RitualObligationTargetFilter worker in filters)
             {
                 temp = worker.CanUseTarget(target, obligation);
-                if(!temp.canUse) { canUse = false; }
+                if(!temp.canUse && temp.failReason == null) { cansShowGizmo = false; }
                 if(temp.failReason != null)
                 {
                     failReasons.AppendInNewLine(temp.failReason);                   
@@ -67,17 +67,20 @@ namespace AlphaMemes
             if(extension.validCorpse != null)
             {
                 temp = extension.validCorpse.CanUseTarget(target, obligation);
-                if (!temp.canUse) { canUse = false; }
+                if (!temp.canUse && temp.failReason == null) { cansShowGizmo = false; }
                 if (temp.failReason != null)
                 {
                     failReasons.AppendInNewLine(temp.failReason);
                 }
             }
-            if (failReasons.Length>0)
+            if (!cansShowGizmo)
+            {
+                return false;
+            }
+            else if (failReasons.Length > 0) 
             {
                 return failReasons.ToStringSafe();
             }
-            else if (!canUse) { return false; }
             return true;
 		}
         public override IEnumerable<string> GetTargetInfos(RitualObligation obligation)
