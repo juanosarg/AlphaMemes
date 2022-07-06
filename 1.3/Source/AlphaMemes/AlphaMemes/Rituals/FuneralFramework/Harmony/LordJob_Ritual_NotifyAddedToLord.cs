@@ -30,12 +30,15 @@ namespace AlphaMemes
 
             if (ritual.def.HasModExtension<FuneralPreceptExtension>())
             {
-                Pawn corpse = __instance.assignments.Participants.First(x => x.Dead);
-                foreach(RitualStagePositions positions in ___ritualStagePositions)
+                Pawn corpse = __instance.assignments.Participants.FirstOrDefault(x => x.Dead);
+                if (corpse != null)
                 {
-                    if (positions.positions.ContainsKey(corpse))
+                    foreach (RitualStagePositions positions in ___ritualStagePositions)
                     {
-                        positions.positions.Remove(corpse);
+                        if (positions.positions.ContainsKey(corpse))
+                        {
+                            positions.positions.Remove(corpse);
+                        }
                     }
                 }
 
