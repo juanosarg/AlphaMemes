@@ -3,10 +3,10 @@
 		<!--Precepts-->
 	<PreceptDef>
 		<defName>AM_PyramidBurial</defName>
-		<label>pyramid burial</label>
+		<label>pyramid burial funeral</label>
 		<description>A gathering to entomb our colleague within a subterranean burial chamber underneath a pyramid</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_FuneralMummification</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralPyramid</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_PyramidBurialPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>

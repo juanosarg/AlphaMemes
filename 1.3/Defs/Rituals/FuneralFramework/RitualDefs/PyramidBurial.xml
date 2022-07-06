@@ -132,14 +132,14 @@
     <RitualOutcomeEffectDef>
 	<defName>AM_PyramidBurialOutcome</defName>
     <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
-    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_FuneralFramework</workerClass>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_PyramidBurial</workerClass>
     <allowAttachableOutcome>false</allowAttachableOutcome>
     <outcomeChances>
       <li>
         <label>Terrible</label>
         <chance>0.15</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and the entombing was very sloppy.</description>
+        <description>The {0} was terrible! The speech was boring and the entombing was very sloppy. This horrible experience will forever affect our opinion of this pyramid.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
@@ -160,7 +160,7 @@
         <label>Amazing</label>
         <chance>0.15</chance>
         <memory>AM_AmazingFuneral</memory>
-        <description>The {0} was heartwarming. The speech was captivating and heartfelt, and everyone came away focused on good memories.</description>
+        <description>The {0} was heartwarming. The speech was captivating and heartfelt, and everyone came away focused on good memories. This pyramid will forever be part of our people's history.</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>
@@ -187,7 +187,7 @@
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
 			<worstOutcomeDesc>The {RITUAL} was a disaster! The entombing of {CORPSE} was sloppy, and the pyramid will forever be tainted by this botched ritual.</worstOutcomeDesc>
-			<bestOutcomeDesc>The {RITUAL} spectacular! The pyramid of {CORPSE} will forever stand the test of time.</bestOutcomeDesc>
+			<bestOutcomeDesc>The {RITUAL} spectacular! The pyramid of {CORPSE} will forever stand the test of time. It's apparent quality has increased.</bestOutcomeDesc>
 		</li>
 	</modExtensions>
 	

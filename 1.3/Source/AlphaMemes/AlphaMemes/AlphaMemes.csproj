@@ -33,13 +33,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <Reference Include="VFECore">
       <HintPath>References\VFECore.dll</HintPath>
       <Private>False</Private>
@@ -139,6 +136,7 @@
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_PsykerLevel.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_Crafter.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_FuneralFramework.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_PyramidBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralBlastOff.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralDreadnought.cs" />
@@ -193,6 +191,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.1</Version>
+	   <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

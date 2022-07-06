@@ -39,6 +39,7 @@
               "version": "[1.3.3389, )"
             },
             "Lib.Harmony": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[2.2.1, )"
             }
