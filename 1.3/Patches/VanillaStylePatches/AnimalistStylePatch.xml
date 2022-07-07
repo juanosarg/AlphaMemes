@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Style Revised - Animalist</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
-
-
 				<li Class="PatchOperationConditional">
 					<success>Always</success>
 					<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
@@ -33,10 +29,6 @@
 								<styleDef>AM_Animalist_BoltActionRifle</styleDef>
 							</li>
 							<li>
-								<thingDef>Bow_Short</thingDef>
-								<styleDef>AM_Animalist_Bow</styleDef>
-							</li>
-							<li>
 								<thingDef>Gun_ChainShotgun</thingDef>
 								<styleDef>AM_Animalist_ChainShotgun</styleDef>
 							</li>
@@ -45,16 +37,56 @@
 								<styleDef>AM_Animalist_ChargeLance</styleDef>
 							</li>
 							<li>
+								<thingDef>Gun_Autopistol</thingDef>
+								<styleDef>AM_Animalist_Autopistol</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_ChargeRifle</thingDef>
+								<styleDef>AM_Animalist_ChargeRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_HeavySMG</thingDef>
+								<styleDef>AM_Animalist_HeavySMG</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_SniperRifle</thingDef>
+								<styleDef>AM_Animalist_SniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_Revolver</thingDef>
+								<styleDef>AM_Animalist_Revolver</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_MachinePistol</thingDef>
+								<styleDef>AM_Animalist_MachinePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_LMG</thingDef>
+								<styleDef>AM_Animalist_LMG</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_PumpShotgun</thingDef>
+								<styleDef>AM_Animalist_PumpShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_AssaultRifle</thingDef>
+								<styleDef>AM_Animalist_AssaultRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_Minigun</thingDef>
+								<styleDef>AM_Animalist_Minigun</styleDef>
+							</li>
+							<li>
 								<thingDef>MeleeWeapon_Club</thingDef>
 								<styleDef>AM_Animalist_Club</styleDef>
 							</li>
 							<li>
-								<thingDef>Bow_Great</thingDef>
-								<styleDef>AM_Animalist_GreatBow</styleDef>
+								<thingDef>Bow_Short</thingDef>
+								<styleDef>AM_Animalist_Bow</styleDef>
 							</li>
 							<li>
-								<thingDef>Gun_Autopistol</thingDef>
-								<styleDef>AM_Animalist_Autopistol</styleDef>
+								<thingDef>Bow_Great</thingDef>
+								<styleDef>AM_Animalist_GreatBow</styleDef>
 							</li>
 							<li>
 								<thingDef>MeleeWeapon_Ikwa</thingDef>
@@ -84,19 +116,10 @@
 								<thingDef>MeleeWeapon_LongSword</thingDef>
 								<styleDef>AM_Animalist_Sword</styleDef>
 							</li>
-
 						</value>
 					</match>
 				</li>
-
-
 			</operations>
 		</nomatch>
 	</Operation>
-
-
-
-
-
-
 </Patch>
