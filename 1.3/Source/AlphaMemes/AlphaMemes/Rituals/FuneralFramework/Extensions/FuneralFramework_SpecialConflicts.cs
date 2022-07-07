@@ -18,19 +18,14 @@ namespace AlphaMemes
            
             List<PreceptDef> preceptConflicts = new List<PreceptDef>();
             ritualConflicts = new List<PreceptDef>();
-            foreach (Precept p in ideo.PreceptsListForReading.Where<Precept>(x => x.def.HasModExtension<FuneralPreceptExtension>()))
+            foreach (Precept p in ideo.PreceptsListForReading.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()))
             {
-                if (preceptExtension?.isColonistFuneral ?? false && p.def.GetModExtension<FuneralPreceptExtension>().isColonistFuneral)
+                if (conflictingPreceptDefs?.Contains<PreceptDef>(p.def)?? false)//No longer need to prevent 2 funerals
                 {
                     if (p.def.issue.defName == "Ritual")
                     {
                         ritualConflicts.Add(p.def);
-                    }                   
-                    preceptConflicts.Add(p.def);
-                    continue;
-                }
-                if (conflictingPreceptDefs?.Contains<PreceptDef>(p.def)?? false)
-                {
+                    }
                     preceptConflicts.Add(p.def);
                 }
             }

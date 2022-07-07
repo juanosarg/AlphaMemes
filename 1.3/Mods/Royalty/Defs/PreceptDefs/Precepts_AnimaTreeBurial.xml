@@ -59,7 +59,6 @@
 			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
 				<conflictingPreceptDefs>
 					<li>VME_PsychicSensitivity_Lowered</li>
-					<li>Funeral</li>
 				</conflictingPreceptDefs>
 			</specialConflicts>
 		</li>

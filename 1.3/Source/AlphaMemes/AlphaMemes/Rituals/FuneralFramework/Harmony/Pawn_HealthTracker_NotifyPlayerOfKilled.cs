@@ -31,42 +31,32 @@ namespace AlphaMemes
                 return;
             }
             //Have to do some work to get what I need as animals dont have the ideo
-            foreach(Ideo ideo in Faction.OfPlayer.ideos.AllIdeos) //Doing all ideos so it still triggers for minor ideos. : Fairly certain first ideo is always primary ideo based on how the enumerable is built
-            {   
+            foreach(Ideo ideo in Faction.OfPlayer.ideos.AllIdeos) //Doing all ideos so it still triggers for minor ideos.
+            {       
                 bool createdObligation = false;
+                bool sendLetter = Faction.OfPlayer.ideos.IsPrimary(ideo);//Only send letter for primary ideo so we dont spam letters if multipe ideos all have a claim to the animal's funeral
                 foreach (Precept_Ritual ritual in ideo.GetAllPreceptsOfType<Precept_Ritual>().Where(x => x.def.HasModExtension<FuneralPreceptExtension>() ? x.def.GetModExtension<FuneralPreceptExtension>().allowAnimals : false))
-                {   //Doing for each for as I might allow multiple animal funerals but still only 1 per type eg 1 bonded 1 venerated though probably not because it will clutter up rituals and max 6
-                    if(ritual.activeObligations != null)
-                    {
-                        if (ritual.activeObligations.Any(x => x.targetA.Thing is Corpse ? (Corpse)x.targetA.Thing == pawn.Corpse : false))
-                        {//just in case this somehow gets called twice for same pawn
-                            createdObligation = true;
-                            break;
-                        }
-                    }                      
-                    
-                    
+                {   
                     RitualObiligationTrigger_Animals trigger = ritual.def.GetModExtension<FuneralPreceptExtension>().animalObligationTrigger;
                     Pawn target2 = null;
                     bool canAdd = trigger.CanAddPawn(pawn, ideo, ritual, out target2);
                     if (canAdd && target2 != null)
                     {
-                        ritual.AddObligation(new RitualObligation(ritual, pawn.Corpse, target2, true));
+                        ritual.AddObligation(new RitualObligation(ritual, pawn.Corpse, target2, sendLetter));
                         createdObligation = true; //Target 2 is not used at all currently, but added in case I wanted to make something where target 2 replaces the moralist role for quality eg animal's master does the service
-                                                  //But it's tricky because Outcome Comps is set by defs and I dont want to duplicate every ritual into animal due to list clutter and limit 6 rituals
-                                                  //Probably just need to make my own role comp
                     }                  
                     else if (canAdd)
                     {
-                        ritual.AddObligation(new RitualObligation(ritual, pawn.Corpse,true));
+                        ritual.AddObligation(new RitualObligation(ritual, pawn.Corpse, sendLetter));//Obligation Utility will get set when we send this
                         createdObligation = true;
                     }
 
                 }
-                if (createdObligation)//Once an obligation is made stop searching so we never create 2 obligations
+                if (createdObligation && sendLetter)
                 {
-                    break;
+                    FuneralFramework_ObligationUtility.SendLetter(ideo, ___pawn);                  
                 }
+                FuneralFramework_ObligationUtility.Cleanup(); //Just in case
             }
 
         }

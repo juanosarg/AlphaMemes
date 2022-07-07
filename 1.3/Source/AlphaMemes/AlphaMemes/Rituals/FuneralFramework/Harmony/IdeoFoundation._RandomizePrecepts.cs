@@ -25,24 +25,25 @@ namespace AlphaMemes
             if (__instance.ideo.PreceptsListForReading.Any(x => x.def.HasModExtension<FuneralPreceptExtension>()))
             {
                 
-                Precept ritual = __instance.ideo.PreceptsListForReading.First(x => x.def.HasModExtension<FuneralPreceptExtension>());//There can never be more then one based on other harmony so this should be fine
-                if (!ritual.def.GetModExtension<FuneralPreceptExtension>().replaceConflictRituals) //If the ritual is one that replaces we leave it
+                List<Precept>rituals = __instance.ideo.PreceptsListForReading.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).ToList();//There can never be more then one based on other harmony so this should be fine
+                foreach(Precept ritual in rituals)//Now removing all funerals because change to CanAdd to allow multiple now means it adds all of them on random
                 {
-                    __instance.ideo.RemovePrecept(ritual);//remove this one so it doesn't cause ritual conflict flags
-                    List<PreceptDef> validDefs = (from x in FuneralFrameWork_StaticStartup.funeralDefs
-                                                  where x.GetModExtension<FuneralPreceptExtension>()._weighting > 0 &&
-                                                  x.GetModExtension<FuneralPreceptExtension>().CanAddPrecept(__instance.ideo, x, parms.forFaction)
-                                                  select x).ToList();
-                    PreceptDef def = validDefs.RandomElementByWeight(x => x.GetModExtension<FuneralPreceptExtension>().Weighting(__instance.ideo, x));
-                    if(def != null)
-                    {                        
-                        __instance.ideo.AddPrecept(PreceptMaker.MakePrecept(def),true,null,def.ritualPatternBase);
-                    }
-                    else //I dont think this can ever get hit, but just in case it fails readd the one we removed
+                    if (!ritual.def.GetModExtension<FuneralPreceptExtension>().replaceConflictRituals) //Still leave replaceConflict
                     {
-                        __instance.ideo.AddPrecept(ritual, true, null, def.ritualPatternBase);
+                        __instance.ideo.RemovePrecept(ritual);                    
                     }
+
                 }
+                List<PreceptDef> validDefs = (from x in FuneralFrameWork_StaticStartup.funeralDefs
+                                              where x.GetModExtension<FuneralPreceptExtension>()._weighting > 0 &&
+                                              x.GetModExtension<FuneralPreceptExtension>().CanAddPrecept(__instance.ideo, x, parms.forFaction)
+                                              select x).ToList();
+                PreceptDef def = validDefs.RandomElementByWeight(x => x.GetModExtension<FuneralPreceptExtension>().Weighting(__instance.ideo, x));
+                if (def != null)
+                {
+                    __instance.ideo.AddPrecept(PreceptMaker.MakePrecept(def), true, null, def.ritualPatternBase);
+                }
+
             }
 
 

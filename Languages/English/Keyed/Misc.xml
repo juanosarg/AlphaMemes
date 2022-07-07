@@ -49,10 +49,12 @@
 	<Funeral_ThingLaunchable>A fueled and unroofed: {0}</Funeral_ThingLaunchable>
 	<Funeral_NoHopper>No reachable hopper around the nutrient paste dispenser</Funeral_NoHopper>
 	<Funeral_NutrientPaste>A nutrient paste dispenser, powered and with hoppers</Funeral_NutrientPaste>
-	<Funeral_NotEnoughThings>Not enough materials, Missing: ({Missing})</Funeral_NotEnoughThings>
+	<Funeral_NotEnoughThings>Not enough materials, Missing: {Missing}</Funeral_NotEnoughThings>
 	<Funeral_DreadnoughtFailure>{CORPSE} could not handle the integration to the warcasket. They have been lost forever</Funeral_DreadnoughtFailure>
 	<Funeral_DreadnoughtViable>The Corpse retains their brain, and has not rotted beyond all recognition</Funeral_DreadnoughtViable>
 	<Funeral_DreadnoughtDessicated>{CORPSE} is too far gone to even attempt</Funeral_DreadnoughtDessicated>
 	<Funeral_DreadnoughtBrainGone>{CORPSE}'s brain has been destroyed, there's nothing to be done</Funeral_DreadnoughtBrainGone>
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
+	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
+	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>
 </LanguageData>

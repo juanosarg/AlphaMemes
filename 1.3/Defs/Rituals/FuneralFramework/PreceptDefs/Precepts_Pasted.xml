@@ -52,11 +52,6 @@
 				</animalConflicts>
 			</animalObligationTrigger>
 			<!--Conflicts-->
-			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
-				<conflictingPreceptDefs>
-					<li>Funeral</li>
-				</conflictingPreceptDefs>
-			</specialConflicts>
 		</li>
 		</modExtensions>
 	</PreceptDef>

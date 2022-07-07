@@ -59,10 +59,13 @@ namespace AlphaMemes
         //Simple way to find if we can add it
         public bool CanAddPrecept(Ideo ideo,PreceptDef def,FactionDef faction = null)
         {
-            
-            bool flag = specialConflicts.PreceptConflictSimple(ideo).Accepted;
-            flag = flag ? specialConflicts.ResearchConflicts(ideo).Accepted : false;
-            flag = flag ? specialConflicts.MemeConflicts(ideo,def).Accepted : false;
+            bool flag = true;
+            if (specialConflicts != null)
+            {
+                flag = flag ? specialConflicts.PreceptConflictSimple(ideo).Accepted : false;
+                flag = flag ? specialConflicts.ResearchConflicts(ideo).Accepted : false;
+                flag = flag ? specialConflicts.MemeConflicts(ideo, def).Accepted : false;
+            }            
             if(faction != null)
             {
                 flag = flag ? def.ritualPatternBase.CanFactionUse(faction) : false;

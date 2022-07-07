@@ -31,7 +31,7 @@ namespace AlphaMemes
             if (ritual.def.HasModExtension<FuneralPreceptExtension>())
             {
                 Pawn corpse = __instance.assignments.Participants.FirstOrDefault(x => x.Dead);
-                if (corpse != null)
+                if(corpse != null)
                 {
                     foreach (RitualStagePositions positions in ___ritualStagePositions)
                     {
@@ -41,6 +41,7 @@ namespace AlphaMemes
                         }
                     }
                 }
+
 
 
             }      

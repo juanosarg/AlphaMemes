@@ -44,9 +44,6 @@
 			<allowAnimals>false</allowAnimals>
 			<!--Conflicts-->
 			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
-				<conflictingPreceptDefs>
-					<li>Funeral</li>
-				</conflictingPreceptDefs>
 				<researchNeeded>
 					<li>VFEP_SpacerWarcaskets</li>
 				</researchNeeded>

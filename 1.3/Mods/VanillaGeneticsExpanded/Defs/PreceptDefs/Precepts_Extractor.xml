@@ -38,11 +38,7 @@
 				<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
 			</animalObligationTrigger>
 			<!--Conflicts-->
-			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
-				<conflictingPreceptDefs>
-					<li>Funeral</li>
-				</conflictingPreceptDefs>
-			</specialConflicts>
+
 		</li>
 		</modExtensions>		
 	</PreceptDef>

@@ -19,9 +19,6 @@ namespace AlphaMemes
         {
         }
      
-
-
-
         public override void ApplyOn(Pawn pawn, Corpse corpse, List<Thing> thingsToSpawn, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome)
         {
             pawn = corpse.InnerPawn;
@@ -59,6 +56,14 @@ namespace AlphaMemes
             behavior.project = null;
 
         }
+/*        //This is maybe a bad idea. But If there's an alternative funeral. It will create the obligation for them now it cant create this one becaue brains gone
+        //Could possibly make this smarter by looping just my extensions. But for compatability reasons I wont until there's a clear reason to.
+        //It should be fine based on what I can tell. - it wasnt
+        //To clarify it actually worked fine but I blow away the obligations I just made with the postfix \o/ I might still do it through other means but really not important
+        public void AlternateObligation(Pawn pawn)
+        {  
+            pawn.ideo.Ideo.Notify_MemberDied(pawn);
+        }*/
         public override void ExtraOutcomeDesc(Pawn pawn, Corpse corpse, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, ref string extraOutcomeDesc, ref LookTargets letterLookTargets)
         {
             if (OutcomeChanceWorst(jobRitual, outcome) && outcomeExtension.worstOutcomeDesc != null)
