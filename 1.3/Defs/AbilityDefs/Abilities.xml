@@ -111,7 +111,7 @@
 	
 	<AbilityGroupDef>
 		<defName>AM_ChangeStyle</defName>
-		<cooldownTicks>200</cooldownTicks>
+		<cooldownTicks>50</cooldownTicks>
 	</AbilityGroupDef>
 	
 	<AbilityDef>

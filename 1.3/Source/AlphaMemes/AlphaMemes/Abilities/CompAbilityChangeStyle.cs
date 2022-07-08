@@ -29,18 +29,14 @@ namespace AlphaMemes
                     if (thing != null && thing.def.CanBeStyled())
                     {
 
-                        if (AlphaMemes_Settings.makeChangeStyleAbilityUseAllStyles) {
 
-                           
+                        Dialog_ChangeStyles window = new Dialog_ChangeStyles(thing);
+                        Find.WindowStack.Add(window);
 
-                            List<StyleCategoryDef> listStylesAll = (from x in DefDatabase<StyleCategoryDef>.AllDefsListForReading
-                                                                   where x.GetStyleForThingDef(thing.def) != null select x).ToList();
 
-                            thing.StyleDef = listStylesAll.RandomElement().GetStyleForThingDef(thing.def); 
-                        } else { 
-                            thing.StyleDef = listStyles.RandomElement().category.GetStyleForThingDef(thing.def); 
-                        }
-                        thing.DirtyMapMesh(thing.Map);
+
+
+                       
                     }
 
                 }

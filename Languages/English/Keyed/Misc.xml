@@ -56,5 +56,10 @@
 	<Funeral_DreadnoughtBrainGone>{CORPSE}'s brain has been destroyed, there's nothing to be done</Funeral_DreadnoughtBrainGone>
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
-	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>
+	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
+	
+	<!-- Style changing ability -->
+	<AM_DefaultStyle>Default style</AM_DefaultStyle>
+	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
+	<AM_NoStyles>No valid styles available for this object</AM_NoStyles>
 </LanguageData>
