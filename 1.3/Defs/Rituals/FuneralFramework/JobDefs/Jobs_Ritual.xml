@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>AM_DeliverCorpseToCell</defName>
+    <driverClass>AlphaMemes.JobDriver_DeliverCorpseToCell</driverClass>
+    <reportString>delivering TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+    <JobDef>
+    <defName>AM_DeliverStuffToCell</defName>
+    <driverClass>AlphaMemes.JobDriver_DeliverStuffToCell</driverClass>
+    <reportString>delivering TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+   <JobDef>
+    <defName>AM_LoadCorpseToThing</defName>
+    <driverClass>AlphaMemes.JobDriver_LoadCorpseToThing</driverClass>
+    <reportString>delivering TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>AM_DeliverThingsToCell</defName>
+    <driverClass>AlphaMemes.JobDriver_DeliverThingsToCell</driverClass>
+    <reportString>delivering TargetB.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+</Defs>

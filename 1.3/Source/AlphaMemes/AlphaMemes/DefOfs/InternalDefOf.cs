@@ -101,9 +101,20 @@ namespace AlphaMemes
 		public static DesignatorDropdownGroupDef AM_Floor_NeolithicTiles;
 
 		[MayRequireRoyalty]
+		public static ThoughtDef AM_AnimaScreamLesser;
+		[MayRequireRoyalty]
+		public static JobDef AM_AnimaBurialLink;
+		[MayRequireRoyalty]
 		public static ThoughtDef AM_DeathKnellThought;
 
 		[MayRequireRoyalty]
 		public static PreceptDef AM_Abilities_DeathKnell;
+		//Funeral stuff
+		public static JobDef AM_DeliverCorpseToCell;
+		public static JobDef AM_DeliverStuffToCell;
+		public static JobDef AM_LoadCorpseToThing;
+		public static JobDef AM_DeliverThingsToCell;
+		public static ThingDef AM_MummyMale;
+		public static ThingDef AM_MummyFemale;
 	}
 }

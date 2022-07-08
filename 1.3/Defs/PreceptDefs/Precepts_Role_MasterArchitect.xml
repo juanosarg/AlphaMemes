@@ -3,7 +3,7 @@
 	<PreceptDef ParentName="PreceptRoleSingleBase">
 		<defName>AM_IdeoRole_MasterArchitect</defName>
 		<label>master architect</label>
-		<description>A master builder, capable of designing amnd planning intricate designs and turning them into huge structures to awe even the most skeptical bystanders.</description>
+		<description>A master builder, capable of designing and planning intricate designs and turning them into huge structures to awe even the most skeptical bystanders.</description>
 		<iconPath>UI/Roles/AM_MasterArchitectRole</iconPath>
 		<nameMaker>AM_MasterArchitect</nameMaker>
 

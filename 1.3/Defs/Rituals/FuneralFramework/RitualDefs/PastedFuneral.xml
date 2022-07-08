@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_PastedFuneralPattern</defName>
+		<nameMaker>NamerRitualFuneral</nameMaker>
+		<ritualExpectedDesc>Once a {IDEO} member dies, they must be turned into paste to ensure they aren't wasted.</ritualExpectedDesc>
+		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
+		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AM_PastedFuneralTargetFilter</ritualObligationTargetFilter>
+		<ritualBehavior>AM_PastedFuneralBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_PastedFuneralOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_PastedFuneralBehavior</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
+		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
+			<description>Spectators must be alive.</description>
+		</spectatorFilter>
+		<roles>
+		  <li Class="RitualRoleTag">
+			<label>speaker</label>
+			<id>moralist</id>
+			<precept>IdeoRole_Moralist</precept>
+			<tag>Moralist</tag>
+			<maxCount>1</maxCount>
+			<substitutable>True</substitutable>
+			<required>True</required>
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="AlphaMemes.RitualRoleFuneralCorpse">
+			<label>Corpse</label>
+			<id>AM_RitualRoleCorpse</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<allowNonAggroMentalState>true</allowNonAggroMentalState>
+			<required>True</required>
+			<corpse>True</corpse>			
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<spectateDistanceOverride>3~4</spectateDistanceOverride>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>moralist</li>
+						</roleIds>
+					</li>	
+				</endTriggers>				
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>AM_DeliverCorpseToHopper</dutyDef>
+				  </li>
+				</roleBehaviors>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<spectateDistanceOverride>3~4</spectateDistanceOverride>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.3</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract"/>
+					</customPositions>
+				  </li>
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+				<postAction Class="RitualStageAction_Message">
+					<text>{0}: The speech is over, the nutrient extraction has begun.</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>
+				<preAction Class="AlphaMemes.RitualStageAction_FuneralEffectSound">				
+					  <sound>Recipe_Cremate</sound>
+					  <effect>ButcherFlesh</effect>
+					  <targetRitual>false</targetRitual>
+					  <roleID>AM_RitualRoleCorpse</roleID>
+				</preAction>				
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<spectateDistanceOverride>3~4</spectateDistanceOverride>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.7</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_InteractingOnCell"/>
+					</customPositions>
+				  </li>				
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_PastedFuneralOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_FuneralFramework</workerClass>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>AM_TerriblePaste</memory>
+        <description>The {0} was terrible! Most of the nutrients were wasted!</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.15</chance>
+        <memory>AM_LacklusterPaste</memory>
+        <description>The {0} was lackluster. Think we'd all rather be doing something else.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.6</chance>
+        <memory>AM_GoodPaste</memory>
+        <description>The {0} was good. We got what we needed out of them.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.2</chance>
+        <memory>AM_AmazingPaste</memory>
+        <description>The {0} was quite effective. They produced much more nutrients than one would've expected.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+		<roleId>moralist</roleId>
+		<label>moral guide present</label>
+		<qualityOffset>0.2</qualityOffset>
+		<disableInClassicMode>true</disableInClassicMode>
+	</li>
+	<li Class="RitualOutcomeComp_ParticipantCount">
+		<label>participant count</label>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(5,  0.3)</li>
+			<li>(10, 0.6)</li>
+		  </points>
+		</curve>
+	</li>
+	</comps>
+	<modExtensions>
+		<li Class="AlphaMemes.OutcomeEffectExtension">
+			<stripcorpse>true</stripcorpse>
+			<roleToSpawnOn>moralist</roleToSpawnOn>
+			<!--Spawners-->
+			<outcomeSpawners>
+				<li Class="AlphaMemes.FuneralFramework_ThingToSpawnPaste">				
+					<thingDefToSpawn>MealNutrientPaste</thingDefToSpawn>
+					<thingCount>1</thingCount> <!--Custom-->				
+					<bestOutcomeMulti>3</bestOutcomeMulti>
+					<worstOutcomeMulti>0.5</worstOutcomeMulti>
+				</li>
+			</outcomeSpawners>
+		</li>
+	</modExtensions>
+  </RitualOutcomeEffectDef>
+ 
+   <!--Ritual Obligation-->
+	
+	<RitualObligationTargetFilterDef>
+		<defName>AM_PastedFuneralTargetFilter</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_NutrientPaste</workerClass>		
+		<thingDefs>
+		  <li>NutrientPasteDispenser</li>		  
+		</thingDefs>
+	</RitualObligationTargetFilterDef>
+	
+</Defs>

@@ -28,6 +28,38 @@
 	<AM_AbilityNeedsMeme>This ability can't be used if the colonist's ideo doesn't have the necessary meme</AM_AbilityNeedsMeme>
 	<AM_MakeChangeStyleAbilityUseAllStyles>Make the "Change Style" ability use styles not possessed by the player's main ideoligion</AM_MakeChangeStyleAbilityUseAllStyles>
 	<AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>Make the "Change Style" ability use styles not possessed by the player's main ideoligion. By default this leader role ability will swap an item's style through the styles present in the colony's main ideo. By activating this toggle you will make it use ALL styles currently present in the game (vanilla or modded)</AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>
-
+	<Funeral_NeedsPower>{0} is not powered</Funeral_NeedsPower>
+	<Funeral_ThingInfoPower>Needs {0} for last rites. Which must be powered or fueled</Funeral_ThingInfoPower>
+	<Funeral_WorstResult>{RITUAL} was a disaster!</Funeral_WorstResult>
+	<Funeral_BestResult>{RITUAL} was spectacular!</Funeral_BestResult>
+	<Funeral_RoleNotDead>{0} Requires the pawn to be dead</Funeral_RoleNotDead>
+	<Funeral_ConflictingPrecepts> (Conflicts with Precepts: {CONFLICTS})</Funeral_ConflictingPrecepts>
+	<Funeral_ConflictingMemes> (Conflicts with Memes: {CONFLICTS})</Funeral_ConflictingMemes>
+	<Funeral_MissingResearch> (Requires Research: {RESARCH})</Funeral_MissingResearch>
+	<Funeral_DisabledCorpseInaccessible>No accessible dead colonists, recover their body if possible</Funeral_DisabledCorpseInaccessible>
+	<AM_SelectStuffToUse>Select Stuff To Use</AM_SelectStuffToUse>
+	<Funeral_XOf>{0} of type:</Funeral_XOf>
+	<Funeral_XOfThing>Requires:</Funeral_XOfThing>
+	<Funeral_NotEnoughStuff>Not enough stuff: need {COUNT} of {STUFF}:</Funeral_NotEnoughStuff>
+	<AM_RitualCrafterOutcome>{LABEL} with {SKILL}</AM_RitualCrafterOutcome>
+	<AM_RitualRolePsyker>Psyker level</AM_RitualRolePsyker>
+	<AM_PsychicSensitivty>Deceased's Psycic sensitivty</AM_PsychicSensitivty>
+	<Funeral_LaunchableRoofed>Unable to launch due to roof above pod</Funeral_LaunchableRoofed>
+	<Funeral_LaunchableNoFuel>Unable to launch due to no fuel for pod</Funeral_LaunchableNoFuel>
+	<Funeral_ThingLaunchable>A fueled and unroofed: {0}</Funeral_ThingLaunchable>
+	<Funeral_NoHopper>No reachable hopper around the nutrient paste dispenser</Funeral_NoHopper>
+	<Funeral_NutrientPaste>A nutrient paste dispenser, powered and with hoppers</Funeral_NutrientPaste>
+	<Funeral_NotEnoughThings>Not enough materials, Missing: {Missing}</Funeral_NotEnoughThings>
+	<Funeral_DreadnoughtFailure>{CORPSE} could not handle the integration to the warcasket. They have been lost forever</Funeral_DreadnoughtFailure>
+	<Funeral_DreadnoughtViable>The Corpse retains their brain, and has not rotted beyond all recognition</Funeral_DreadnoughtViable>
+	<Funeral_DreadnoughtDessicated>{CORPSE} is too far gone to even attempt</Funeral_DreadnoughtDessicated>
+	<Funeral_DreadnoughtBrainGone>{CORPSE}'s brain has been destroyed, there's nothing to be done</Funeral_DreadnoughtBrainGone>
+	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
+	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
+	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
 	
+	<!-- Style changing ability -->
+	<AM_DefaultStyle>Default style</AM_DefaultStyle>
+	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
+	<AM_NoStyles>No valid styles available for this object</AM_NoStyles>
 </LanguageData>

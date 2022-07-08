@@ -304,7 +304,6 @@
 				<thingDef>MeleeWeapon_Spear</thingDef>
 				<styleDef>AM_Kemetic_PalmAxe</styleDef>
 			</li>
-
 			<li>
 				<thingDef>Gun_Minigun</thingDef>
 				<styleDef>AM_Kemetic_Minigun</styleDef>
@@ -325,7 +324,6 @@
 				<thingDef>Gun_Revolver</thingDef>
 				<styleDef>AM_Kemetic_Revolver</styleDef>
 			</li>
-
 			<li>
 				<thingDef>Gun_LMG</thingDef>
 				<styleDef>AM_Kemetic_LMG</styleDef>
@@ -338,8 +336,6 @@
 				<thingDef>Gun_PumpShotgun</thingDef>
 				<styleDef>AM_Kemetic_PumpShotgun</styleDef>
 			</li>
-
-
 			<li>
 				<thingDef>Gun_ChargeLance</thingDef>
 				<styleDef>AM_Kemetic_ChargeLance</styleDef>
@@ -655,7 +651,6 @@
 				<thingDef>Bow_Short</thingDef>
 				<styleDef>AM_SteampunkRevival_Bow</styleDef>
 			</li>
-
 			<li>
 				<thingDef>Bow_Great</thingDef>
 				<styleDef>AM_SteampunkRevival_GreatBow</styleDef>
@@ -860,15 +855,49 @@
 				<thingDef>MeleeWeapon_MonoSword</thingDef>
 				<styleDef>AM_Corsair_Monosword</styleDef>
 			</li>
-
 			<li>
 				<thingDef>Gun_Revolver</thingDef>
 				<styleDef>AM_Corsair_Revolver</styleDef>
 			</li>
-
 			<li>
 				<thingDef>Gun_PumpShotgun</thingDef>
 				<styleDef>AM_Corsair_PumpShotgun</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_ChargeRifle</thingDef>
+				<styleDef>AM_Corsair_ChargeRifle</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_HeavySMG</thingDef>
+				<styleDef>AM_Corsair_HeavySMG</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_MachinePistol</thingDef>
+				<styleDef>AM_Corsair_MachinePistol</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_LMG</thingDef>
+				<styleDef>AM_Corsair_LMG</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_ChainShotgun</thingDef>
+				<styleDef>AM_Corsair_ChainShotgun</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_Autopistol</thingDef>
+				<styleDef>AM_Corsair_Autopistol</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_AssaultRifle</thingDef>
+				<styleDef>AM_Corsair_AssaultRifle</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_ChargeLance</thingDef>
+				<styleDef>AM_Corsair_ChargeLance</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_Minigun</thingDef>
+				<styleDef>AM_Corsair_Minigun</styleDef>
 			</li>
 		</thingDefStyles>
 		<addDesignators>

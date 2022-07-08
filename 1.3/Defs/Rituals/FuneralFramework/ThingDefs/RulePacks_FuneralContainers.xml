@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Somethingsomething scopecreep-->
+
+  <RulePackDef>
+    <defName>AM_ArtDescription_Urn</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->The Urn is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The Urn bears a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The Urn is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->An engraving on this Urn [depicts] [image]. [desc_sentence_group]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>AM_ArtDescription_Mummy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->The plaque is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The plaque has a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->The plaque is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->An engraving on the plaque [depicts] [image]. [desc_sentence_group]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
