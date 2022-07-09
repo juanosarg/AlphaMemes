@@ -9,8 +9,11 @@
 		<nameMaker>NamerRitualFuneral</nameMaker>
 		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} to see the deceased turned into a true machine of war.</ritualExpectedDesc>
 		<ritualObligationTriggers>
-		  <li Class="AlphaMemes.RitualObligationTrigger_DreadnoughtCapableProps">
-			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  <li Class="AlphaMemes.RitualObligationTrigger_AlsoAddsDreadnoughtProps">
+			<tryAddBoth>true</tryAddBoth>
+			<AltTriggerProps Class="RitualObligationTrigger_DreadnoughtCapableProps">
+				<mustBePlayerIdeo>true</mustBePlayerIdeo>
+			</AltTriggerProps>
 		  </li>
 		</ritualObligationTriggers>
 		<ritualObligationTargetFilter>AM_DreadnoughtFuneralObligation</ritualObligationTargetFilter>

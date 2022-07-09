@@ -17,7 +17,7 @@ namespace AlphaMemes
 
         public RitualObligationTriggerProperties otherRitTriggerProps; //If you want to call an alternate trigger for the alsoAdd Ritual instead
         public RitualObligationTriggerProperties AltTriggerProps; //If you want to call an alternate trigger for the main Ritual instead
-
+        public bool tryAddBoth = false;
 
     }
 

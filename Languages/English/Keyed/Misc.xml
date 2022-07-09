@@ -54,6 +54,7 @@
 	<Funeral_DreadnoughtViable>The Corpse retains their brain, and has not rotted beyond all recognition</Funeral_DreadnoughtViable>
 	<Funeral_DreadnoughtDessicated>{CORPSE} is too far gone to even attempt</Funeral_DreadnoughtDessicated>
 	<Funeral_DreadnoughtBrainGone>{CORPSE}'s brain has been destroyed, there's nothing to be done</Funeral_DreadnoughtBrainGone>
+	<Funeral_DreadnoughtBrainGoneMessage>{PAWN}'s brain has been destroyed! We can't hold a {RITUAL} for them!</Funeral_DreadnoughtBrainGoneMessage>
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
 	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	

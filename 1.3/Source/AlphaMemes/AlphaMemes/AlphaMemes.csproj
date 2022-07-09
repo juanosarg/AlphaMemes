@@ -14,8 +14,8 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\..\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -162,10 +162,12 @@
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralLaunchable.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_HaveRequiredStuff.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralThingNeedsPower.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAdds.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnoughtProps.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAddsProps.cs" />
-    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_DreadnoughtCapableProps.cs" />
-    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_DreadnoughtCapable.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapableProps.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapable.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObiligationTrigger_Animals.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFramework.cs" />

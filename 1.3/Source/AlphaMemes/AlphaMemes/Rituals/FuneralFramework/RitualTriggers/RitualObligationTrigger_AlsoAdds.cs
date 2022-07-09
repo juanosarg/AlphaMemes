@@ -38,18 +38,22 @@ namespace AlphaMemes
                 if (otherRitTrigger != null)
                 {
                     otherRitTrigger.Notify_MemberDied(p);
-                    return;
+                    if (!tryAddBoth) { return; }
                 }
-                PreceptDef otherRitualDef = ritual.def.alsoAdds;
-                Precept_Ritual othRitual = p.ideo.Ideo.GetAllPreceptsOfType<Precept_Ritual>().FirstOrDefault(x => x.def == otherRitualDef);
-                if(ShouldTrigger(p) && othRitual != null)
+                else
                 {
-                    othRitual.AddObligation(new RitualObligation(othRitual, p.Corpse, true)
+                    PreceptDef otherRitualDef = ritual.def.alsoAdds;
+                    Precept_Ritual othRitual = p.ideo.Ideo.GetAllPreceptsOfType<Precept_Ritual>().FirstOrDefault(x => x.def == otherRitualDef);
+                    if (ShouldTrigger(p) && othRitual != null)
                     {
-                        sendLetter = !p.IsSlave
-                    });
-                    return;
+                        othRitual.AddObligation(new RitualObligation(othRitual, p.Corpse, true)
+                        {
+                            sendLetter = !p.IsSlave
+                        });
+                        if (!tryAddBoth) { return; }
+                    }
                 }
+
             }
             if(AltTrigger != null)
             {
@@ -80,14 +84,24 @@ namespace AlphaMemes
             }
             return true;
         }
+        //Pretty sure this is needed for reform to work right.
+        public override void CopyTo(RitualObligationTrigger other)
+        {
+            base.CopyTo(other);
+            var other1 = other as RitualObligationTrigger_AlsoAdds;
+            other1.otherRitTrigger = otherRitTrigger;
+            other1.AltTrigger = AltTrigger;
+            other1.tryAddBoth = tryAddBoth;
+        }
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Deep.Look(ref otherRitTrigger, "otherRitTrigger");
             Scribe_Deep.Look(ref AltTrigger, "AltTrigger");
+            Scribe_Values.Look(ref tryAddBoth, "tryAddBoth");
         }
 
-
+        public bool tryAddBoth = false;//Will try to add both obligations. Only do this if you have it setup so only one can send ritual
         public RitualObligationTrigger otherRitTrigger; //If you want to call an alternate trigger for the alsoAdd Ritual instead
         public RitualObligationTrigger AltTrigger; //If you want to call an alternate trigger for the main Ritual instead
     }
