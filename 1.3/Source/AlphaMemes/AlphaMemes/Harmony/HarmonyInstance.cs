@@ -28,9 +28,12 @@ namespace AlphaMemes
         {
             //Occupant patch
             var postfix = typeof(Building_WarcasketFoundry_OccupantAliveAndPresent_Patch).GetMethod("Postfix");
-            if (postfix != null)
+            
+            var type = AccessTools.TypeByName("VFEPirates.Building_WarcasketFoundry");
+            var method = AccessTools.PropertyGetter(type,"OccupantAliveAndPresent");
+            if (postfix != null && method != null)
             {
-                harmony.Patch(AccessTools.PropertyGetter("VFEPirates.Building_WarcasketFoundry:OccupantAliveAndPresent"), postfix: new HarmonyMethod(postfix));
+                harmony.Patch(method, postfix: new HarmonyMethod(postfix));
             }
             //Draw Patch          
             postfix = typeof(Building_WarcasketFoundry_Draw_Patch).GetMethod("Postfix");
