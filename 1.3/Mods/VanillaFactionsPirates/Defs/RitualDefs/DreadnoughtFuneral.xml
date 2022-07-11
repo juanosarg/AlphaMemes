@@ -11,7 +11,7 @@
 		<ritualObligationTriggers>
 		  <li Class="AlphaMemes.RitualObligationTrigger_AlsoAddsDreadnoughtProps">
 			<tryAddBoth>true</tryAddBoth>
-			<AltTriggerProps Class="RitualObligationTrigger_DreadnoughtCapableProps">
+			<AltTriggerProps Class="AlphaMemes.RitualObligationTrigger_DreadnoughtCapableProps">
 				<mustBePlayerIdeo>true</mustBePlayerIdeo>
 			</AltTriggerProps>
 		  </li>
