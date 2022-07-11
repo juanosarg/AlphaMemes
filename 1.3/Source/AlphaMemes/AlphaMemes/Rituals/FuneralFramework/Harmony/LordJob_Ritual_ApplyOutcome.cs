@@ -35,7 +35,8 @@ namespace AlphaMemes
                 {
                     foreach (Precept_Ritual precept in ideo.GetAllPreceptsOfType<Precept_Ritual>())
                     {
-                        if (!precept.activeObligations.NullOrEmpty())
+                        if (!precept.activeObligations.NullOrEmpty() && 
+                            (precept.def.alsoAdds != __instance.Ritual.def))//To not remove alsoadds obligations for things like cryptosleep
                         {
                             foreach (RitualObligation obligation in precept.activeObligations.ToList())
                             {

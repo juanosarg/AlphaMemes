@@ -16,6 +16,10 @@ namespace AlphaMemes
         public override RitualTargetUseReport CanUseTarget(TargetInfo target, RitualObligation obligation)
         {
             //Not desiccated, has brain, has research
+            if (obligation?.targetA.Thing.ParentHolder is Building_CryptosleepCasket)
+            {
+                return false;//If cryptosleeped dont show the gizmo
+            }
             Corpse corpse = (Corpse)obligation.targetA.Thing;
             if (corpse.Destroyed)
             {
@@ -29,11 +33,12 @@ namespace AlphaMemes
             {
                 return "Funeral_DreadnoughtBrainGone".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }
-            ResearchProjectDef research = DefDatabase<ResearchProjectDef>.GetNamed("VFEP_SpacerWarcaskets",false);
-            if(!research?.IsFinished ?? true)
+            ResearchProjectDef research = FuneralFrameWork_StaticStartup.VFEP_SpacerWarcaskets;
+            if (!research?.IsFinished ?? true)
             {
                 return "Funeral_ResearchNotCompleted".Translate(research.label);
             }
+
             return true;
 		}
 
@@ -45,8 +50,9 @@ namespace AlphaMemes
             yield break;
         }
 
-       
 
+        public BodyPartRecord brain;
+        public int lastCheck;
         
     }
 }

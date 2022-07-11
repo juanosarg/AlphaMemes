@@ -39,24 +39,27 @@ namespace AlphaMemes
         public override void Tick()
         {
             base.Tick();
-            //I dont like this but hopefuly impact is negligable. I'd like to have my own ritual oblgiation for this. But there's nothing virtual in that and since they essentially all tick anyway I figured this is less impact then harmony
-            foreach(RitualObligation obligation in ritual.activeObligations?.ToList())
+            //Really dont need to check very often, but this was only ticking thing I had access to since I cant have my own obligation class for it.
+            if(Find.TickManager.TicksGame - lastCheck > 300)
             {
-                Corpse corpse = obligation.targetA.Thing as Corpse;
-                if (corpse != null)
+                lastCheck = Find.TickManager.TicksGame;
+                foreach (RitualObligation obligation in ritual.activeObligations?.ToList())
                 {
-                    if (corpse.ParentHolder is Building_CryptosleepCasket) { continue; }//if crypto burial no issue
-                    if(corpse.Age >= (30 * 60000))//30 days is max they can get before that brain is too freezerburnt
+                    Corpse corpse = obligation.targetA.Thing as Corpse;
+                    if (corpse != null)
                     {
-                        ritual.activeObligations.Remove(obligation);
+                        if (corpse.ParentHolder is Building_CryptosleepCasket) { continue; }//if crypto burial no issue
+                        if (corpse.Age >= (30 * 60000))//30 days is max they can get before that brain is too freezerburnt
+                        {
+                            ritual.activeObligations.Remove(obligation);
+                        }
                     }
                 }
             }
 
+
         }
-
-
-
+        public int lastCheck;
 
     }
 

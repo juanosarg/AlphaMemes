@@ -15,10 +15,12 @@ namespace AlphaMemes
         public override void Init(RitualObligationTriggerProperties props)
         {
             base.Init(props);
+            
             var props1 = props as RitualObligationTrigger_AlsoAddsProps;
-            if(props1.AltTriggerProps != null)
+            tryAddBoth = props1.tryAddBoth;
+            if (props1.AltTriggerProps != null)
             {
-                AltTrigger = props1.AltTriggerProps.GetInstance(ritual);
+                AltTrigger = props1.AltTriggerProps.GetInstance(ritual);                
             }
             if (props1.otherRitTriggerProps != null)
             {

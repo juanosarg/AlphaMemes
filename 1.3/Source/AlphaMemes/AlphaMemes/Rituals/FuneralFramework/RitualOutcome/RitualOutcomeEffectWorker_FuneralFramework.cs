@@ -94,8 +94,11 @@ namespace AlphaMemes
                     GenPlace.TryPlaceThing(thingToSpawn, cell, jobRitual.Map, ThingPlaceMode.Near);
                 }                
             }
+            if (outcomeExtension.destroyCorpse)
+            {
+                corpse.Destroy();
+            }
             
-            corpse.Destroy();
            
             
 

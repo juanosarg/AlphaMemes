@@ -61,10 +61,13 @@ namespace AlphaMemes
     public static class FuneralFramework_IdeoUIUtility_AddPreceptOption_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(List<FloatMenuOption> options, RitualPatternDef patternDef)
+        public static void Postfix(List<FloatMenuOption> options,PreceptDef def)
         {
-            //Fun fact patternDef is always null even for rituals. Whyyyyyy Guess we're sorting everything on if its enabled
-            options.SortBy(x => x.Disabled);
+            if(def.issue.defName == "Ritual")
+            {
+                options.SortBy(x => x.Disabled);
+            }
+            
 
         }
     }

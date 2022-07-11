@@ -157,6 +157,7 @@
     <Compile Include="Rituals\FuneralFramework\RitualStage\RitualStage_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_DreadnoughtCorpseStillValid.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_CorpseStillValid.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralHolderThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_HaveRequiredThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_NutrientPaste.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralThingExtended.cs" />

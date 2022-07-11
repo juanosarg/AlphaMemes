@@ -8,7 +8,7 @@
 	<RitualPatternDef>
 		<defName>AM_CryptoFuneralPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} return to dust.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} to perfectly preserve the body</ritualExpectedDesc>
 		<ritualObligationTargetFilter>AM_FuneralTargetCrypto</ritualObligationTargetFilter>
 		<ritualBehavior>AM_CryptoFuneralBehavior</ritualBehavior>
 		<ritualOutcomeEffect>AM_CryptoFuneralOutcome</ritualOutcomeEffect>
@@ -99,7 +99,7 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and the crematorium wasn't hot enough.</description>
+        <description>The {0} was terrible! The speech was boring and it was disprespected their legacy.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
@@ -145,6 +145,7 @@
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
+			<destroyCorpse>false</destroyCorpse>
 		</li>
 	</modExtensions>
   </RitualOutcomeEffectDef>
@@ -153,7 +154,7 @@
 	
 	<RitualObligationTargetFilterDef>
 		<defName>AM_FuneralTargetCrypto</defName>
-		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralThingNeedsPower</workerClass>		
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralHolderThings</workerClass>		
 		<thingDefs>
 		  <li>AncientCryptosleepCasket</li>
 		  <li>CryptosleepCasket</li>			  

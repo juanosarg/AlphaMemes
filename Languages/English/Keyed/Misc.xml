@@ -58,7 +58,7 @@
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
 	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
-	
+	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>	
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
