@@ -29,6 +29,12 @@ namespace AlphaMemes
                 otherRitTrigger = props1.otherRitTriggerProps.GetInstance(othRitual);
             }
         }
+        public override void Tick()
+        {
+            base.Tick();
+            otherRitTrigger?.Tick();
+            AltTrigger?.Tick();
+        }
         public override void Notify_MemberDied(Pawn p)
         {
             RitualObligation obligation = new RitualObligation(ritual, p.Corpse, true)

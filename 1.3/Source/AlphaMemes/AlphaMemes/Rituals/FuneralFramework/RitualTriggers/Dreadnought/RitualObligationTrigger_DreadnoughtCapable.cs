@@ -43,6 +43,10 @@ namespace AlphaMemes
             if(Find.TickManager.TicksGame - lastCheck > 300)
             {
                 lastCheck = Find.TickManager.TicksGame;
+                if (ritual.activeObligations.NullOrEmpty())
+                {
+                    return;
+                }
                 foreach (RitualObligation obligation in ritual.activeObligations?.ToList())
                 {
                     Corpse corpse = obligation.targetA.Thing as Corpse;
@@ -58,6 +62,11 @@ namespace AlphaMemes
             }
 
 
+        }
+        public override void ExposeData()
+        {
+            Scribe_References.Look(ref ritual, "ritual", false);
+            base.ExposeData();
         }
         public int lastCheck;
 
