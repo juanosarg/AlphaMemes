@@ -25,13 +25,14 @@ namespace AlphaMemes
         public List<ThingDef> stuffOptions = new List<ThingDef>(); 
         public List<StuffCategoryDef> stuffCategoryDefs;
         public Dictionary<ThingDef, int> thingsRequired = new Dictionary<ThingDef, int>();//For specific things needed to start a ritual
-     
-        
+        public bool stuffLastResult; 
+    
         public virtual bool CanStartStuff(bool recheck = true)
         {
             Map map = Find.CurrentMap;
             if (stuffDefToSpawn != null && recheck)
             {
+  
                 recheck = map.resourceCounter.GetCount(stuffDefToSpawn) <= stuffCount;
                 if (!recheck)
                 {
@@ -44,13 +45,9 @@ namespace AlphaMemes
             {
                 if(stuffCategoryDefs.Count>0 || stuffToUse != null)
                 {
-                    FindStuffForThing(recheck);
-                    foreach (ThingDef thing in stuffOptions)
+                    if (FindStuffForThing(recheck))
                     {
-                        if (map.resourceCounter.GetCount(thing) >= stuffCount)
-                        {
-                            return true;
-                        }
+                        return true;
                     }
                     return false;
                 }
@@ -81,21 +78,20 @@ namespace AlphaMemes
             }
             return true;
         }
-        public virtual void FindStuffForThing(bool recheck)
+        public virtual bool FindStuffForThing(bool recheck)
         {//
             
             if (stuffToUse != null)
             {
 
                 stuffDefToSpawn = stuffToUse;
-                return;
+                return false;
             }
             if(stuffOptions.Count>0 && !recheck)//Obligation filters get called a lot so dont check resource list unless we have to
             {
-                return;
+                return true;
             }
             stuffOptions.Clear();
-
             foreach (KeyValuePair<ThingDef, int> allCountedAmount in Find.CurrentMap.resourceCounter.AllCountedAmounts) 
             {
                 if (allCountedAmount.Key.IsStuff && stuffCategoryDefs.Any(x=> allCountedAmount.Key.stuffProps.categories.Contains(x)) && allCountedAmount.Value >= stuffCount)
@@ -106,9 +102,10 @@ namespace AlphaMemes
             if(stuffOptions.Count() > 0)
             {
                 stuffDefToSpawn = stuffOptions.RandomElement();
+                return true;
                 
             }            
-            
+            return false;
         }
         public virtual void DestroyThingsUsed(LordJob_Ritual ritual, bool bestOutcome, bool worstOutcome)
         {

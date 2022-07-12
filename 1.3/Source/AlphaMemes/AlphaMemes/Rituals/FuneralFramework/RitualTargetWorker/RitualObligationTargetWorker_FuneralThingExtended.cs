@@ -48,6 +48,11 @@ namespace AlphaMemes
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
         {
             //Slight change here making note of. Return of false = dont show gizo, return of fail string = show gizmo + fail reason. If any of the filters return false we need to not show gizmo at all even if another returns string
+            if(Find.TickManager.TicksGame < checkTick && cacheTarget == target) //In profiling this 1 method can be .1-.2 ms because it gets called every frame when any thing is selected * # of funerals.
+            {                
+                return lastResult;
+            }
+            checkTick = Find.TickManager.TicksGame + 300;
             extension = def.GetModExtension<ObligationTargetExtension>();
 
             RitualTargetUseReport temp;
@@ -75,12 +80,15 @@ namespace AlphaMemes
             }
             if (!cansShowGizmo)
             {
+                lastResult = false;
                 return false;
             }
             else if (failReasons.Length > 0) 
             {
+                lastResult = failReasons.ToStringSafe();
                 return failReasons.ToStringSafe();
             }
+            lastResult = true;
             return true;
 		}
         public override IEnumerable<string> GetTargetInfos(RitualObligation obligation)
@@ -110,5 +118,8 @@ namespace AlphaMemes
         }
         ObligationTargetExtension extension;
         List<RitualObligationTargetFilter> filters = new List<RitualObligationTargetFilter>();
+        public int checkTick;
+        public RitualTargetUseReport lastResult;
+        private TargetInfo cacheTarget;
     }
 }

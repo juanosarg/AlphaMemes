@@ -101,17 +101,24 @@ namespace AlphaMemes
             {
                 return null;
             }
+
+            bool flag = false;
+            if (Find.TickManager.TicksGame < checkTick)
+            {                
+                return lastResult;
+            }
+            checkTick = Find.TickManager.TicksGame + 300;//This is too heavy to check often
+
             using (List<LordJob_Ritual>.Enumerator enumerator = Find.IdeoManager.GetActiveRituals(target.Map).GetEnumerator())
             {
                 while (enumerator.MoveNext())
                 {
                     if (enumerator.Current.Ritual == ritual)
                     {
-                        return "CantStartRitualAlreadyInProgress".Translate(ritual.Label).CapitalizeFirst();
+                        return lastResult = "CantStartRitualAlreadyInProgress".Translate(ritual.Label).CapitalizeFirst();
                     }
                 }
             }
-            bool flag = false;
             //Same as harmony patch use obligation as that basically saved our criteria for animals so no need to recheck everything
             foreach (RitualObligation obligation in ritual.activeObligations)
             {
@@ -124,15 +131,71 @@ namespace AlphaMemes
                     }
                 }
             }
-
             if (!flag)
             {
-                return "Funeral_DisabledCorpseInaccessible".Translate();
+                return lastResult = "Funeral_DisabledCorpseInaccessible".Translate();
             }
-           
-            return null; 
+
+            if (ritual.outcomeEffect.def.HasModExtension<OutcomeEffectExtension>())
+            {
+                outcomeExt = ritual.outcomeEffect.def.GetModExtension<OutcomeEffectExtension>();
+                if(outcomeExt.outcomeSpawners?.Any(x=>x.stuffCount >0)??false)
+                {
+                    
+                    return lastResult = CanStartStuff(target, ritual, selectedPawn, forcedForRole);
+                }
+
+                if (outcomeExt.outcomeSpawners?.Any(x => x.thingsRequired.Count > 0)?? false)
+                {
+                    return lastResult = CanStartThing(target, ritual, selectedPawn, forcedForRole);
+                }
+            }
+
+            return lastResult = null; 
         }
-      
+        //No longer using obligation target workers for stuff/things/corpses. This only gets call 1 per frame, not n*obligation+1 plus giving it long wait between checks
+        public virtual string CanStartStuff(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
+        {
+            OutcomeEffectExtension data = outcomeExt;
+            StringBuilder failReasons = new StringBuilder();
+            foreach (FuneralFramework_ThingToSpawn spawner in data.outcomeSpawners.Where(x => x.stuffCount > 0))
+            {
+                if (!spawner.CanStartStuff())
+                {
+                    failReasons.AppendInNewLine("Funeral_NotEnoughStuff".Translate(string.Join(", ", spawner.stuffCategoryDefs.Select(x => x.label)).Named("STUFF"), spawner.stuffCount.ToString().Named("COUNT")));
+                }
+            }
+
+            if (failReasons.Length > 0)
+            {
+                lastResult = failReasons.ToString();
+                return failReasons.ToString();
+            }
+            return null;
+        }
+
+        public virtual string CanStartThing(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
+        {
+            OutcomeEffectExtension data = outcomeExt;
+            StringBuilder failReasons = new StringBuilder();
+            foreach (FuneralFramework_ThingToSpawn spawner in data.outcomeSpawners.Where(x => x.thingsRequired.Count > 0))
+            {
+                AcceptanceReport report = spawner.CanStartThings();
+                if (!report.Accepted)
+                {
+                    failReasons.AppendInNewLine("Funeral_NotEnoughThings".Translate(report.Reason.Named("Missing")));
+                }
+            }
+
+            if (failReasons.Length > 0)
+            {
+                return failReasons.ToString();
+            }
+            return null;
+        }
+
+        public int checkTick;
+        public string lastResult;
         public override void Tick(LordJob_Ritual ritual)
         {
             base.Tick(ritual);
@@ -213,5 +276,6 @@ namespace AlphaMemes
         public FuneralPreceptExtension extension;
         public ThingDef stuffToUse;
         public int stuffCount;
+        public OutcomeEffectExtension outcomeExt;
     }
 }

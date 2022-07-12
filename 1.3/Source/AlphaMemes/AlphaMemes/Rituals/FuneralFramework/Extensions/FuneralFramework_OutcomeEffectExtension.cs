@@ -10,6 +10,7 @@ namespace AlphaMemes
     public class OutcomeEffectExtension : DefModExtension
     {   //Every funeral is going to have their down outcome effect def anyway 
         public bool stripcorpse = false;
+        public bool destroyCorpse = true; //Default true, false for something like a thing container
         public string roleToSpawnOn = "AM_RitualRoleCorpse";
         public string bestOutcomeDesc = null;
         public string worstOutcomeDesc = null;
