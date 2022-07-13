@@ -50,13 +50,28 @@ namespace AlphaMemes
                 }
                 
             }
-
-
-
-
         }
 
     }
+    //The fact the rituals window is not sorted is annoys me so Im fixing it.
+    //DoPreceptsInt would be the better method but it's a shitshow that'd need a complicated transpiler 
+    //This is worse cause I keep sorting over and over, but this only runs in the UI so whatever
+    [HarmonyPatch(typeof(IdeoUIUtility))]
+    [HarmonyPatch("AddPreceptOption")]
+    public static class FuneralFramework_IdeoUIUtility_AddPreceptOption_Patch
+    {
+        [HarmonyPostfix]
+        public static void Postfix(List<FloatMenuOption> options,PreceptDef def)
+        {
+            if(def.issue.defName == "Ritual")
+            {
+                options.SortBy(x => x.Disabled);
+            }
+            
+
+        }
+    }
+
 
 
 }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YPQb7o5FoU6g46B0/Sm0OQJe4Wg5eegJWzmQ2QqpFSCUBvPENhhF7UAYgJKw6BZHkGvD6Yz9Z/P2sD4qJoXRsg==",
+  "dgSpecHash": "REnV7hgw1Fmom8nHN9bNy8oltF350HrUuB7y/ia0e/i/Jz90UwmmvK9/mRWXHWAM++U+75CVswY6OLfNX8/R/g==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.3\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+  "projectFilePath": "C:\\Rimworld_Debug\\RimWorld\\Mods\\AlphaMemes\\1.3\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sarg\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3389\\krafs.rimworld.ref.1.3.3389.nupkg.sha512",
-    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.2.1\\lib.harmony.2.2.1.nupkg.sha512"
+    "C:\\Users\\Allie\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3389\\krafs.rimworld.ref.1.3.3389.nupkg.sha512",
+    "C:\\Users\\Allie\\.nuget\\packages\\lib.harmony\\2.2.1\\lib.harmony.2.2.1.nupkg.sha512"
   ],
   "logs": []
 }

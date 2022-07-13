@@ -22,27 +22,8 @@ namespace AlphaMemes
         }
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
         {
-            if (!def.thingDefs.NullOrEmpty()) //Only check base if we passed thingdef. This doesnt have to have a thing def
-            {
-                if (!base.CanUseTargetInternal(target, obligation).canUse)
-                {
-                    return false;
-                }
-            }
-            OutcomeEffectExtension data = parent.outcomeEffect.def.GetModExtension<OutcomeEffectExtension>();            
-            StringBuilder failReasons = new StringBuilder();
-            foreach (FuneralFramework_ThingToSpawn spawner in data.outcomeSpawners.Where(x=> x.stuffCount>0))
-            {
-                if (!spawner.CanStartStuff())
-                {                    
-                    failReasons.AppendInNewLine("Funeral_NotEnoughStuff".Translate(string.Join(", ", spawner.stuffCategoryDefs.Select(x => x.label)).Named("STUFF"), spawner.stuffCount.ToString().Named("COUNT")));
-                }
-            }
+            //No longer using, use behavior worker canStartNow
 
-            if (failReasons.Length > 0)
-            {
-                return failReasons.ToString();
-            }
             return true;
 		}
 
@@ -62,8 +43,7 @@ namespace AlphaMemes
             yield break;
         }
 
-    
-        
-        
+
+
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Comps\CompRelicSmashingContainer.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
+    <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap_AddHumanlikeOrders.cs" />
@@ -156,16 +157,19 @@
     <Compile Include="Rituals\FuneralFramework\RitualStage\RitualStage_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_DreadnoughtCorpseStillValid.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_CorpseStillValid.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralHolderThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_HaveRequiredThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_NutrientPaste.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralThingExtended.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralLaunchable.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_HaveRequiredStuff.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralThingNeedsPower.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAdds.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnoughtProps.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAddsProps.cs" />
-    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_DreadnoughtCapableProps.cs" />
-    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_DreadnoughtCapable.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapableProps.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapable.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObiligationTrigger_Animals.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFramework.cs" />
@@ -199,7 +203,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.1</Version>
-	   <ExcludeAssets>runtime</ExcludeAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

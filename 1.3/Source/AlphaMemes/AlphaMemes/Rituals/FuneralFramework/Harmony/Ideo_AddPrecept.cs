@@ -36,6 +36,17 @@ namespace AlphaMemes
                 }
                 return true;
             }
+            //I think this is a fix for an obscure bug that I've only seen twice, and never when Im trying to get it. Happens in world gen, did over 50 worldgen iterations without being able to trigger it when i was in a position to trace it
+            //But looking at the log I saved from it, I'm 99% sure whats happening is something is adding a no corpse but for whatever reason that no corpse failed to pass validation here.
+            //I can't really see how with how randomise patch is setup but this cant hurt as Precept:GenerateNewName is First() on below criteria so it will error if a precept like below is added
+            if(precept.def.takeNameFrom != null)
+            {
+                if(!__instance.PreceptsListForReading.Any(x=> x.def == precept.def.takeNameFrom))
+                {
+                    return false;
+                }
+            }
+
 
             //Fix for vanilla bug, adding arguments for rituals that dont get passed during reform when they are need
             if (fillWith == null)

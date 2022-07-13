@@ -41,6 +41,18 @@
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>AM_Kemetic_ChargeMinigun</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Kemetic_AntiMaterialRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Kemetic_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Kemetic_LongBow</styleDef>
+							</li>
 							
 
 						</value>

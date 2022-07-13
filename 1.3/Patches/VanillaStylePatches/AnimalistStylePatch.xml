@@ -119,6 +119,29 @@
 						</value>
 					</match>
 				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Weapons Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationConditional">
+								<success>Always</success>
+								<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+								<match Class="PatchOperationAdd">
+									<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+									<value>
+										<li>
+											<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+											<styleDef>AM_Animalist_AntiMaterialRifle</styleDef>
+										</li>
+										
+									</value>
+								</match>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</nomatch>
 	</Operation>
