@@ -493,9 +493,30 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_CompoundBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticCompoundbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LongBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLongbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_RecurveBow</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticAntiMaterialRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
@@ -1281,6 +1302,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	<!-- ====== Corsair ======== -->
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -1400,7 +1428,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	
 	

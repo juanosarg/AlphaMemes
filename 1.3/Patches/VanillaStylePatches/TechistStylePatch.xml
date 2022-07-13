@@ -6,15 +6,14 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/StyleCategoryDef[defName = "Techist"]/thingDefStyles</xpath>
 			<value>
-
 				<li>
 					<thingDef>MeleeWeapon_Club</thingDef>
 					<styleDef>AM_Techist_Club</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Gladius</thingDef>
 					<styleDef>AM_Techist_Gladius</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Ikwa</thingDef>
 					<styleDef>AM_Techist_Ikwa</styleDef>
@@ -35,15 +34,14 @@
 					<thingDef>MeleeWeapon_Spear</thingDef>
 					<styleDef>AM_Techist_Spear</styleDef>
 				</li>
-
 				<li>
 					<thingDef>Gun_ChargeRifle</thingDef>
 					<styleDef>AM_Techist_ChargeRifle</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>Gun_HeavySMG</thingDef>
 					<styleDef>AM_Techist_HeavySMG</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>Gun_SniperRifle</thingDef>
 					<styleDef>AM_Techist_SniperRifle</styleDef>
@@ -107,16 +105,66 @@
 				<li>
 					<thingDef>Gun_ChargeLance</thingDef>
 					<styleDef>AM_Techist_ChargeLance</styleDef>
-				</li>	
+				</li>
 				<li>
 					<thingDef>Gun_Minigun</thingDef>
 					<styleDef>AM_Techist_Minigun</styleDef>
-				</li>	
-
-
+				</li>
 			</value>
 		</match>
 	</Operation>
-
-
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Techist"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Techist"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Techist_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Techist_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Techist_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Techist_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Techist_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Techist_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Techist_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Techist_LongBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Techist_AntiMaterialRifle</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

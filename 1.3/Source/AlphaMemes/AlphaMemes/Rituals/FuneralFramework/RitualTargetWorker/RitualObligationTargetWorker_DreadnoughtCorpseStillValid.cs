@@ -15,26 +15,32 @@ namespace AlphaMemes
         }
         public override RitualTargetUseReport CanUseTarget(TargetInfo target, RitualObligation obligation)
         {
-            //Not desiccated, has brain, has research
-            Corpse corpse = (Corpse)obligation.targetA.Thing;
-            if (corpse.Destroyed)
-            {
-                return true; //stop gap for obligations on destroyed corpses
+            if (Find.TickManager.TicksGame < checkTick)
+            {                
+                return lastResult;
             }
+            checkTick = Find.TickManager.TicksGame + 600;//None of this is changing very often
+            //Not desiccated, has brain, has research
+            if (obligation?.targetA.Thing.ParentHolder is Building_CryptosleepCasket)
+            {
+                return lastResult = false;//If cryptosleeped dont show the gizmo
+            }
+            Corpse corpse = (Corpse)obligation.targetA.Thing;
             if (corpse.IsDessicated() && !allowDesiccated)
             {
-                return "Funeral_DreadnoughtDessicated".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
+                return lastResult = "Funeral_DreadnoughtDessicated".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }
             if(corpse.InnerPawn.health.hediffSet.GetBrain() == null)
             {
-                return "Funeral_DreadnoughtBrainGone".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
+                return lastResult = "Funeral_DreadnoughtBrainGone".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }
-            ResearchProjectDef research = DefDatabase<ResearchProjectDef>.GetNamed("VFEP_SpacerWarcaskets",false);
-            if(!research?.IsFinished ?? true)
+            ResearchProjectDef research = FuneralFrameWork_StaticStartup.VFEP_SpacerWarcaskets;
+            if (!research?.IsFinished ?? true)
             {
-                return "Funeral_ResearchNotCompleted".Translate(research.label);
+                return lastResult = "Funeral_ResearchNotCompleted".Translate(research.label);
             }
-            return true;
+
+            return lastResult = true;
 		}
 
 
@@ -45,8 +51,9 @@ namespace AlphaMemes
             yield break;
         }
 
-       
 
-        
+        public int checkTick;
+        public RitualTargetUseReport lastResult;
+
     }
 }

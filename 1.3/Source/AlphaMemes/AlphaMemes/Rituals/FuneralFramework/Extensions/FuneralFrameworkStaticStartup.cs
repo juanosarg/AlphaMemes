@@ -20,6 +20,7 @@ namespace AlphaMemes
             if (VFEPLoaded)
             {
                 AM_WarCasketLifeSupport = DefDatabase<HediffDef>.GetNamed("AM_WarCasketLifeSupport");
+                VFEP_SpacerWarcaskets = DefDatabase<ResearchProjectDef>.GetNamed("VFEP_SpacerWarcaskets", false);
             }
         }
 
@@ -27,6 +28,7 @@ namespace AlphaMemes
         public static List<PreceptDef> funeralDefs = new List<PreceptDef>();
         public static bool VFEPLoaded;
         public static HediffDef AM_WarCasketLifeSupport;
+        public static ResearchProjectDef VFEP_SpacerWarcaskets;
     }
 
 

@@ -59,36 +59,27 @@ namespace AlphaMemes
         //Simple way to find if we can add it
         public bool CanAddPrecept(Ideo ideo,PreceptDef def,FactionDef faction = null)
         {
+            //I think i've lost my mind. Something in here null errored during world generation randomly while I wasnt even testing. and I couldnt replicate it in about 50+ new world gens when I actually had debugger attached
+            //So if you look at this and go why is this bubble wrap extreme. Thats why
+            //My best guess, is ritual pattern base or memes didnt fill right from Vanilla random generation that one time somehow...
             bool flag = true;
             if (specialConflicts != null)
             {
-                flag = flag ? specialConflicts.PreceptConflictSimple(ideo).Accepted : false;
-                flag = flag ? specialConflicts.ResearchConflicts(ideo).Accepted : false;
-                flag = flag ? specialConflicts.MemeConflicts(ideo, def).Accepted : false;
+                flag = flag ? specialConflicts?.PreceptConflictSimple(ideo).Accepted ?? true: false;
+                flag = flag ? specialConflicts?.ResearchConflicts(ideo).Accepted ?? true: false;
+                flag = flag ? specialConflicts?.MemeConflicts(ideo, def).Accepted ?? true: false;
             }            
             if(faction != null)
             {
-                flag = flag ? def.ritualPatternBase.CanFactionUse(faction) : false;
+                flag = flag ? def?.ritualPatternBase?.CanFactionUse(faction) ?? true: false;
             }
-            if (!def.requiredMemes.NullOrEmpty())
+            if (!def?.requiredMemes?.NullOrEmpty() ?? false)
             {
-                flag = flag ? ideo.memes.Any(x => def.requiredMemes.Contains(x)) : false;
+                flag = flag ? ideo?.memes?.Any(x => def.requiredMemes.Contains(x)) ?? true: false;
             }
             
             return flag;
         }
-        //Changed mind on this. Make a unique precept def for no corpse
-        //This will cause headaches on fluid ideos.
-/*        public void SetNoCorpseFuneralDefName(Ideo ideo,PreceptDef precept)
-        {
-            //Used to make No Corpse Funeral have the same name as main funeral
-            Precept_Ritual ritual = ideo.GetAllPreceptsOfType<Precept_Ritual>().First(
-                x => x.def.HasModExtension<FuneralPreceptExtension>() ? x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral : false);
-            if (ritual != null) { 
-                
-                precept.takeNameFrom = ritual.def;
-            }
-        }*/
 
     }
 
