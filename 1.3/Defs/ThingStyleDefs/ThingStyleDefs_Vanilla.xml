@@ -764,7 +764,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_CompoundBow</defName>
 		<graphicData>
-			<texPath>Things/Weapons/Totemic/AM_TotemicCompoundbow</texPath>
+			<texPath>Things/Weapons/Totemic/AM_Totemic_Compoundbow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
