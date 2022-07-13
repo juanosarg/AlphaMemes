@@ -116,6 +116,45 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Morbid"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Morbid"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Morbid_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Morbid_LongBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Morbid_AntiMaterialRifle</styleDef>
+							</li>
+							
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
 
 
 </Patch>
