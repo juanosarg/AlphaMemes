@@ -817,6 +817,50 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HeavyClub</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticGreatClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LightClub</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLightClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_TribalAxe</defName>
+		<overrideLabel>crude bronze axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticTribalAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Shiv</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Sling</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSling</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
 
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
