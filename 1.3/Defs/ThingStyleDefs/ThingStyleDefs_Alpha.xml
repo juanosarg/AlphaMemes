@@ -891,7 +891,7 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
+	<ThingStyleDef>
 		<defName>AM_Kemetic_CanopicJars</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_CanopicJar</texPath>
