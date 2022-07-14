@@ -388,6 +388,10 @@
 				<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
 				<styleDef>AM_Kemetic_PrestigeCataphractHelmet</styleDef>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_HatTop</thingDef>
+				<styleDef>AM_Kemetic_TopHat</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
