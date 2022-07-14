@@ -760,6 +760,63 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSemiAutomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
@@ -831,6 +888,14 @@
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/TopHat/AM_KemeticHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_CanopicJars</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_CanopicJar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
 	<!-- ====== Steampunk ======== -->
