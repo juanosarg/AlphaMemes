@@ -107,6 +107,7 @@
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkPreceptExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_SpecialConflicts.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralHaulUtility.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_ExposeData.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\VFEPPatches\Building_WarcasketFoundry_Draw.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_Notify_Patches.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_ApplyOutcome.cs" />

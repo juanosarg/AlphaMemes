@@ -11,13 +11,13 @@
 		<allowDuplicates>false</allowDuplicates>
 		<visible>false</visible>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
-		<selectionWeight>1.0</selectionWeight>
+		<selectionWeight>0</selectionWeight>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<impact>Medium</impact>
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
 		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<alsoAdds>AM_CremateFuneralNoCorpse</alsoAdds>	
 		<extraTextPawnDeathLetter>{PAWN_nameDef} should be saved in crypto sleep so {PAWN_possessive} friends and family can know they are safe</extraTextPawnDeathLetter>
 	</PreceptDef>	
 	
