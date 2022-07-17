@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 
 namespace AlphaMemes
 { 
-    public class CompProperties_CorpseContainerMulti : CompProperties
+    public class CompProperties_CorpseContainerMulti : CompProperties_CorpseContainer
     {
 
         //spawning properties of the outcome
-        public string transformLabel = null;
-        public string inspectString = null;
         public int maxCorpse = 5;
 
         public CompProperties_CorpseContainerMulti()

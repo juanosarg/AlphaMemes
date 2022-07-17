@@ -17,20 +17,24 @@ namespace AlphaMemes
         private Pawn innerPawn = null;
         private string deathDate;
         private TaleReference taleRef;
-        public virtual CompProperties_CorpseContainer Props
+        private CompProperties_CorpseContainer Props
         {
             get
             {
                 return (CompProperties_CorpseContainer)props;
             }
         }
-        public bool Active //This is probably a good idea, who knows what wonky things can happen addings things
+        public virtual Pawn VisitedPawn
         {
-            get { return taleRef != null; }
+            get{ return innerPawn; }
+        }
+        public virtual bool Active //This is probably a good idea, who knows what wonky things can happen addings things
+        {
+            get { return innerPawn != null; }
         }
         public override string CompInspectStringExtra()
         {
-            if (!Active)
+            if (!Active || Props.inspectString == null)
             {
                 return base.CompInspectStringExtra();
             }
@@ -42,7 +46,7 @@ namespace AlphaMemes
         }
         public override string TransformLabel(string label)
         {
-            if (!Active)
+            if (!Active || Props.transformLabel == null)
             {
                 return base.TransformLabel(label);
             }
@@ -59,7 +63,7 @@ namespace AlphaMemes
             
             return base.TransformLabel(returnString);
         }
-        public void InitComp_CorpseContainer(Corpse corpse)
+        public virtual void InitComp_CorpseContainer(Corpse corpse)
         {
             
             pawnName = corpse.InnerPawn.NameFullColored;

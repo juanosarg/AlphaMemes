@@ -8,19 +8,26 @@ using System.Threading.Tasks;
 
 namespace AlphaMemes
 { 
-    public class Comp_CorpseContainerMulti : ThingComp
+    public class Comp_CorpseContainerMulti : Comp_CorpseContainer
     {
 
         public List<Pawn> innerPawns = new List<Pawn>();
         public Dictionary<string, string> pawnNameDateDeath = new Dictionary<string, string>();
-        public CompProperties_CorpseContainerMulti Props
+        private CompProperties_CorpseContainerMulti Props
         {
             get
             {
                 return (CompProperties_CorpseContainerMulti)props;
             }
         }
-        public bool Active 
+        public override Pawn VisitedPawn
+        {
+            get
+            {
+                return innerPawns.RandomElement();
+            }
+        }
+        public override bool Active 
         {
             get { return innerPawns.Count> 0; }
         }
@@ -30,7 +37,7 @@ namespace AlphaMemes
         }
         public override string CompInspectStringExtra()
         {
-            if (!Active)
+            if (!Active || Props.inspectString == null)
             {
                 return base.CompInspectStringExtra();
             }       
@@ -43,7 +50,7 @@ namespace AlphaMemes
         {
             return base.TransformLabel(label);
         }
-        public void InitComp_CorpseContainer(Corpse corpse)
+        public override void InitComp_CorpseContainer(Corpse corpse)
         {
             string deathDate = GenDate.DateFullStringAt((long)GenDate.TickGameToAbs(corpse.timeOfDeath), Find.WorldGrid.LongLatOf(corpse.Tile));
             innerPawns.Add(corpse.InnerPawn);
@@ -71,7 +78,7 @@ namespace AlphaMemes
         {
             base.PostExposeData();
             Scribe_Collections.Look(ref pawnNameDateDeath, "pawnNameDateDeath", LookMode.Value, LookMode.Value);
-            Scribe_Collections.Look(ref innerPawns,true, "innerPawn",LookMode.Reference);
+            Scribe_Collections.Look(ref innerPawns,true, "innerPawns",LookMode.Reference);
         }
     }
 }

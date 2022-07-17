@@ -18,7 +18,7 @@ namespace AlphaMemes
     public static class Corpse_GiveObservedHistoryEvent
     {
         [HarmonyPostfix]
-        public static void Postfix(Corpse __instance, Pawn observer, HistoryEventDef __result)
+        public static void Postfix(Corpse __instance, Pawn observer, ref HistoryEventDef __result)
         {
             if(__result == null) { return; }
             Lord lord = observer.GetLord();

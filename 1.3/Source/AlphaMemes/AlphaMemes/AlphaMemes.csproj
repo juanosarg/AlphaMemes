@@ -89,6 +89,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rituals\Behaviours\RitualBehaviorWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_AnimaBurialLinking.cs" />
+    <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_VisitCorpseContainer.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_DeliverThingsToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_LoadCorpseToThing.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_DeliverStuffToCell.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_LoadCorpseToThing.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverStuffToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverCorpseToCell.cs" />
+    <Compile Include="Rituals\FuneralFramework\AI\JoyGiver\JoyGiver_VisitCorpseContainer.cs" />
     <Compile Include="Rituals\FuneralFramework\Buildings\Building_SkyBurialSpot.cs" />
     <Compile Include="Rituals\FuneralFramework\Comp\CompProperties_FFContainsMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\Comp\Comp_FFContainsMulti.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralHaulUtility.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\DesignationCategoryDef_AllIdeoDesignators.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_ExposeData.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\GatheringsUtility_InGatheringArea.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\VFEPPatches\Building_WarcasketFoundry_Draw.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_Notify_Patches.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\LordJob_Ritual_ApplyOutcome.cs" />
@@ -175,6 +178,8 @@
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAdds.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_AlsoAddsDreadnoughtProps.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_NoCorpse.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_NoCorpseProperties.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObligationTrigger_AlsoAddsProps.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapableProps.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\Dreadnought\RitualObligationTrigger_DreadnoughtCapable.cs" />

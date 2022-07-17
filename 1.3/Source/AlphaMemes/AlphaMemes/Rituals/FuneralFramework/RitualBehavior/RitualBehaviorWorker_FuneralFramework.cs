@@ -81,7 +81,8 @@ namespace AlphaMemes
                 var extension = def.GetModExtension<FuneralFramework_BehaviorExtension>();
                 cell = thing.Position + extension.spotOffset.RotatedBy(thing.Rotation);
             }
-            else if (thing.def.passability != Traversability.Standable)
+            //Should no longer be needed due to new harmony patch
+/*            else if (thing.def.passability != Traversability.Standable)
             {
                 cell = thing.InteractionCell;
             }
@@ -91,7 +92,7 @@ namespace AlphaMemes
                 {
                     cell = thing.OccupiedRect().AdjacentCellsCardinal.RandomElement();//If all of this fails \o/
                 }
-            }
+            }*/
             return cell;
         }
         public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)

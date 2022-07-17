@@ -29,7 +29,7 @@
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
-			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
 			<_weighting>25</_weighting>
 			<associatedMemes>
 				<li>

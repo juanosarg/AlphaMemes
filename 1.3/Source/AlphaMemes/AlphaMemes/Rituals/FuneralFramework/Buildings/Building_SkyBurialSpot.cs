@@ -22,7 +22,7 @@ namespace AlphaMemes
 
         public void Notify_CorpseBuried()
         {
-            nutrition = (float)Math.Round(Corpse.GetStatValue(StatDefOf.Nutrition, true)/30,2);//Nutrition to take based on roughly 15 munches
+            nutrition = (float)Math.Round(Corpse.GetStatValue(StatDefOf.Nutrition, true)/25,2);//Nutrition to take based on roughly 25 munches
             tickToEat = Find.TickManager.TicksGame + 2000; //So it doesnt eat immediately
         }
         public override void Draw()
