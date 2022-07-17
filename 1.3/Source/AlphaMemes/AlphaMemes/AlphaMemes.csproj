@@ -99,6 +99,9 @@
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_LoadCorpseToThing.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverStuffToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverCorpseToCell.cs" />
+    <Compile Include="Rituals\FuneralFramework\Buildings\Building_SkyBurialSpot.cs" />
+    <Compile Include="Rituals\FuneralFramework\Comp\CompProperties_FFContainsMulti.cs" />
+    <Compile Include="Rituals\FuneralFramework\Comp\Comp_FFContainsMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkStaticStartup.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_ObligationUtility.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_BehaviorExtension.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFrameworkPreceptExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_SpecialConflicts.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralHaulUtility.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\DesignationCategoryDef_AllIdeoDesignators.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_ExposeData.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\VFEPPatches\Building_WarcasketFoundry_Draw.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_Notify_Patches.cs" />
@@ -139,12 +143,14 @@
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\FuneralFramework_ThingToSpawnPaste.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\FuneralFramework_ThingToSpawnGenetics.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\FuneralFramework_ThingToSpawn.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_DistanceFromBuildings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_PsychicSensitivity.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_PsykerLevel.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_Crafter.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_FuneralFramework.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_Fleshcrafting.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_PyramidBurial.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_SkyBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralBlastOff.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_FuneralDreadnought.cs" />
@@ -158,6 +164,7 @@
     <Compile Include="Rituals\FuneralFramework\RitualStage\RitualStage_AnimaBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_DreadnoughtCorpseStillValid.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_CorpseStillValid.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_CorpseContainerMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_FuneralHolderThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_HaveRequiredThings.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\RitualObligationTargetWorker_NutrientPaste.cs" />

@@ -28,6 +28,8 @@
 	<AM_AbilityNeedsMeme>This ability can't be used if the colonist's ideo doesn't have the necessary meme</AM_AbilityNeedsMeme>
 	<AM_MakeChangeStyleAbilityUseAllStyles>Make the "Change Style" ability use styles not possessed by the player's main ideoligion</AM_MakeChangeStyleAbilityUseAllStyles>
 	<AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>Make the "Change Style" ability use styles not possessed by the player's main ideoligion. By default this leader role ability will swap an item's style through the styles present in the colony's main ideo. By activating this toggle you will make it use ALL styles currently present in the game (vanilla or modded)</AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>
+	
+	<!--Funeral Stings-->
 	<Funeral_NeedsPower>{0} is not powered</Funeral_NeedsPower>
 	<Funeral_ThingInfoPower>Needs {0} for last rites. Which must be powered or fueled</Funeral_ThingInfoPower>
 	<Funeral_WorstResult>{RITUAL} was a disaster!</Funeral_WorstResult>
@@ -58,7 +60,13 @@
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
 	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
-	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>	
+	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>
+	<Funeral_CorpseContainerFull>{0} is full</Funeral_CorpseContainerFull>
+	<AM_ArtificialBuildings>Artificial buildings</AM_ArtificialBuildings>
+	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>		
+	<AM_CorpseContainerMultiDiedOn>{NAME} died on {DATE}</AM_CorpseContainerMultiDiedOn>
+	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>	
+	
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>

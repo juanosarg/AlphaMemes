@@ -55,6 +55,12 @@
 			</memePrerequisitesAny>
 		</recipeMaker>
 		<costStuffCount>900</costStuffCount>
+		<comps>
+			<li Class="AlphaMemes.CompProperties_CorpseContainerMulti">
+				<inspectString>Contains the remains of: {CORPSES}</inspectString>
+				<maxCorpse>6</maxCorpse>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_Megalith</defName>

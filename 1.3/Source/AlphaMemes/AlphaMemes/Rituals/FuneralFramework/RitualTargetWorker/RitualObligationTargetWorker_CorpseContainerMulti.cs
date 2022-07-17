@@ -6,12 +6,12 @@ using RimWorld;
 
 namespace AlphaMemes
 {
-    public class RitualObligationTargetWorker_FuneralHolderThings : RitualObligationTargetWorker_ThingDef
+    public class RitualObligationTargetWorker_CorpseContainerMulti : RitualObligationTargetWorker_ThingDef
     {
-        public RitualObligationTargetWorker_FuneralHolderThings()
+        public RitualObligationTargetWorker_CorpseContainerMulti()
         {
         }
-        public RitualObligationTargetWorker_FuneralHolderThings(RitualObligationTargetFilterDef def) : base(def)
+        public RitualObligationTargetWorker_CorpseContainerMulti(RitualObligationTargetFilterDef def) : base(def)
         {
         }
         protected override RitualTargetUseReport CanUseTargetInternal(TargetInfo target, RitualObligation obligation)
@@ -21,17 +21,17 @@ namespace AlphaMemes
             {                
                 return base.CanUseTargetInternal(target, obligation).failReason;               
             }
-            
-            IThingHolder thing = target.Thing as IThingHolder;
-            if(thing == null)
+
+            Comp_CorpseContainerMulti comp = target.Thing.TryGetComp<Comp_CorpseContainerMulti>();
+            if (comp == null)
             {
-                return false;
+                return false;                
             }
-            if (thing.GetDirectlyHeldThings().Any)
+            if (!comp.NotFull)
             {
-                return "Funeral_ThingNotEmpty".Translate(target.Thing.Label);
-            }
-                        
+                return "Funeral_CorpseContainerFull".Translate(target.Thing.Label);
+            }            
+
             return true;
 		}
         public override IEnumerable<string> GetTargetInfos(RitualObligation obligation)

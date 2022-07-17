@@ -20,7 +20,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         public static void Postfix(Corpse __instance, Pawn observer, HistoryEventDef __result)
         {
-            if(__result != null) { return; }
+            if(__result == null) { return; }
             Lord lord = observer.GetLord();
             LordJob_Ritual ritual = ((lord != null) ? lord.LordJob : null) as LordJob_Ritual;
             if(ritual != null)

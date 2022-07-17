@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
-	
 	<!--Ritual Pattern-->
 	<RitualPatternDef>
-		<defName>AM_PyramidBurialPattern</defName>
+		<defName>AM_SkyBurialPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} desire a {RITUAL_labelDef}.</ritualExpectedDesc>
-		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} to send off their friend to nature</ritualExpectedDesc>
+		<ritualObligationTriggers> 
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
 		  </li>
 		</ritualObligationTriggers>
-		<ritualObligationTargetFilter>AM_PyramidTarget</ritualObligationTargetFilter>
-		<ritualBehavior>AM_PyramidBurialBehavior</ritualBehavior>
-		<ritualOutcomeEffect>AM_PyramidBurialOutcome</ritualOutcomeEffect>
+		<ritualObligationTargetFilter>AM_SkyBurialTarget</ritualObligationTargetFilter>
+		<ritualBehavior>AM_SkyBurialBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_SkyBurialOutcome</ritualOutcomeEffect>
 	</RitualPatternDef>
 
 	<!--Ritual Behavior-->
 	<RitualBehaviorDef>
-		<defName>AM_PyramidBurialBehavior</defName>
+		<defName>AM_SkyBurialBehavior</defName>
 		<durationTicks>5000</durationTicks>
 		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
 		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
@@ -47,7 +45,6 @@
 			<corpse>True</corpse>			
 			<countsAsParticipant>False</countsAsParticipant>
 		  </li>
-		 
 		</roles>
 		<stages>
 			<li Class="RitualStage_InteractWithRole">
@@ -56,27 +53,22 @@
 				<endTriggers>
 					<li Class="StageEndTrigger_RolesArrived">
 						<roleIds>
-						  <li>moralist</li>						 
+						  <li>moralist</li>
 						</roleIds>
 					</li>	
 				</endTriggers>				
 				<roleBehaviors>
 				  <li>
 					<roleId>moralist</roleId>
-					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
-					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_CorpsePosition">
-						<corpeOffset>(0,0,-3)</corpeOffset>
-					  </li>
-					</customPositions>
-				  </li> 
+					<dutyDef>AM_LoadCorpseToThing</dutyDef>
+				  </li>					  
 				</roleBehaviors>
 			</li>    
 			<li>
 				<defaultDuty>Spectate</defaultDuty>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
-					<percentage>0.3</percentage>
+					<percentage>1</percentage>
 				  </li>
 				</endTriggers>
 				<roleBehaviors>
@@ -89,39 +81,9 @@
 					</customPositions>
 				  </li>
 				</roleBehaviors>
-				<visualEffectDef>Funeral</visualEffectDef>
-				<postAction Class="RitualStageAction_Message">
-					<text>{0}: The speech is over, and the entombing is beginning.</text>
-					<messageTypeDef>NeutralEvent</messageTypeDef>
-				</postAction>
-				
-			</li>
-			<li>
-				<defaultDuty>Spectate</defaultDuty>
-				<endTriggers>
-				  <li Class="StageEndTrigger_DurationPercentage">
-					<percentage>0.7</percentage>
-				  </li>
-				</endTriggers>
-				<roleBehaviors>
-				  <li>
-					<roleId>moralist</roleId>
-					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
-					<speakerInteraction>Speech_Funeral</speakerInteraction>
-					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
-					</customPositions>
-				  </li>				
-				 
-				</roleBehaviors>
-				<visualEffectDef>Funeral</visualEffectDef>
+				<visualEffectDef>Funeral</visualEffectDef>	
 			</li>
 		</stages>
-		<modExtensions>
-			<li Class="AlphaMemes.FuneralFramework_BehaviorExtension">
-				<spotOffset>(0,0,-4)</spotOffset><!--Has to be standable offset based on thing Position-->
-			</li>
-		</modExtensions>
   </RitualBehaviorDef>
    
 
@@ -130,16 +92,16 @@
    
   <!--Ritual Outcome-->
     <RitualOutcomeEffectDef>
-	<defName>AM_PyramidBurialOutcome</defName>
+	<defName>AM_SkyBurialOutcome</defName>
     <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
-    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_PyramidBurial</workerClass>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_SkyBurial</workerClass>
     <allowAttachableOutcome>false</allowAttachableOutcome>
     <outcomeChances>
       <li>
         <label>Terrible</label>
-        <chance>0.15</chance>
+        <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and the entombing was very sloppy. This horrible experience will forever affect our opinion of this pyramid.</description>
+        <description>The {0} was terrible! The speech was boring and it was disprespected their legacy.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
@@ -151,16 +113,16 @@
       </li>
       <li>
         <label>Good</label>
-        <chance>0.55</chance>
+        <chance>0.6</chance>
         <memory>AM_GoodFuneral</memory>
         <description>The {0} was good. The speaker's final words provided a path for everyone to move on.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
-        <chance>0.15</chance>
+        <chance>0.2</chance>
         <memory>AM_AmazingFuneral</memory>
-        <description>The {0} was heartwarming. The speech was captivating and heartfelt, and everyone came away focused on good memories. This pyramid will forever be part of our people's history.</description>
+        <description>The {0} was heartwarming. The speech was captivating and heartfelt, and everyone came away focused on good memories.</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>
@@ -176,31 +138,40 @@
 		<curve>
 		  <points>
 			<li>(1,  0.0)</li>
-			<li>(5,  0.4)</li>
-			<li>(10, 0.6)</li>
+			<li>(5,  0.2)</li>
+			<li>(10, 0.4)</li>
 		  </points>
 		</curve>
 	</li>
-	
-    </comps>
+	<li Class="AlphaMemes.RitualOutcomeComp_DistanceFromBuildings">
+		<label>artifical buildings</label>
+		<radius>24.9</radius>
+		<curve>
+		  <points>
+                <li>(0,  0.4)</li>
+                <li>(5,  0.2)</li>
+                <li>(10, 0.10)</li>
+                <li>(50, -0.2)</li>
+		  </points>
+		</curve>
+	</li>
+	</comps>
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
-			<worstOutcomeDesc>The {RITUAL} was a disaster! The entombing of {CORPSE} was sloppy, and the pyramid will forever be tainted by this botched ritual. It's apparent quality has decreased.</worstOutcomeDesc>
-			<bestOutcomeDesc>The {RITUAL} was spectacular! The pyramid of {CORPSE} will forever stand the test of time. It's apparent quality has increased.</bestOutcomeDesc>
+			<destroyCorpse>false</destroyCorpse>
+			<bestOutcomeDesc>The {RITUAL} was spectacular! Our offering of {CORPSE} to nature has improved our ecosystem and the animal population as increased</bestOutcomeDesc>
 		</li>
 	</modExtensions>
-	
   </RitualOutcomeEffectDef>
  
-   <!--Ritual Obligation-->
 
 	
 	<RitualObligationTargetFilterDef>
-		<defName>AM_PyramidTarget</defName>
-		<workerClass>AlphaMemes.RitualObligationTargetWorker_CorpseContainerMulti</workerClass>		
+		<defName>AM_SkyBurialTarget</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralHolderThings</workerClass>		
 		<thingDefs>
-		  <li>AM_Pyramid</li>		  
+		  <li>AM_SkyBurialSpot</li>			  
 		</thingDefs>
 	</RitualObligationTargetFilterDef>
 	

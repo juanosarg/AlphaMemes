@@ -17,7 +17,7 @@ namespace AlphaMemes
         private Pawn innerPawn = null;
         private string deathDate;
         private TaleReference taleRef;
-        public CompProperties_CorpseContainer Props
+        public virtual CompProperties_CorpseContainer Props
         {
             get
             {

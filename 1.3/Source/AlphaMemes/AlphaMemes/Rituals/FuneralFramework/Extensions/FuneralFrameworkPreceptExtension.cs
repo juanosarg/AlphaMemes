@@ -9,7 +9,7 @@ namespace AlphaMemes
 
     public class FuneralPreceptExtension : DefModExtension
     {
-       
+        public List<BuildableDef> addDesignators = new List<BuildableDef>();
         public bool isColonistFuneral = false; //Can only have 1 colonist funeral type
         public bool replaceConflictRituals = false; //Decides whether to replace vanilla funeral on generation       
         public bool addNoCorpseFuneral = true;//Adds the base game funeral for no corpse (empty grave)

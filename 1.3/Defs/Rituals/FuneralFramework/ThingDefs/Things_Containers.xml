@@ -98,7 +98,7 @@
 	  <SellPriceFactor>1.10</SellPriceFactor>
 	  <Mass>5</Mass>
 	  <Flammability>1.0</Flammability>
-	  <Beauty>50</Beauty>
+	  <Beauty>25</Beauty> <!--Turning down base because some fabric has insane beauty-->
 	  <MeditationFocusStrength>0.0</MeditationFocusStrength>
 	</statBases>
 	<stuffCategories>
@@ -131,7 +131,7 @@
       </li>
 	  <li Class="AlphaMemes.CompProperties_CorpseContainer">
 			<transformLabel>Mummified {CORPSE} ({QUALITY})</transformLabel>
-			<inspectString>Is the last remains of of {CORPSE}</inspectString>
+			<inspectString>Is the last remains of {CORPSE}</inspectString>
 			<descriptionMaker>AM_ArtDescription_Mummy</descriptionMaker>
 	  </li>
 	  <li Class="CompProperties_MeditationFocus">
