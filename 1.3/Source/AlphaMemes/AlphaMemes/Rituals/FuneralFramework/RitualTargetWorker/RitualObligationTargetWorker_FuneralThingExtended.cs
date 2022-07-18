@@ -53,6 +53,7 @@ namespace AlphaMemes
                 return lastResult;
             }
             checkTick = Find.TickManager.TicksGame + 300;
+            cacheTarget = target;
             extension = def.GetModExtension<ObligationTargetExtension>();
 
             RitualTargetUseReport temp;

@@ -16,19 +16,19 @@ namespace AlphaMemes
 		
 		public override void Apply(LordJob_Ritual ritual)
 		{
-			LordJob_Ritual_FuneralFramework funeral = ritual as LordJob_Ritual_FuneralFramework;
+			var funeral = ritual as LordJob_Ritual_FuneralFramework;
 
 			Messages.Message(this.text.Formatted(ritual.Ritual.Label).CapitalizeFirst(), ritual.selectedTarget, this.messageTypeDef, false);
 			base.Apply(ritual);
 			Pawn pawn = funeral.corpse;
 			Thing thing = ritual.selectedTarget.Thing;
 
-			RitualBehaviorWorker_FuneralFrameworkDreadnought behavior = ritual.Ritual.behavior as RitualBehaviorWorker_FuneralFrameworkDreadnought;
+			var behavior = ritual.Ritual.behavior as RitualBehaviorWorker_FuneralFrameworkDreadnought;
 			behavior.foundry = thing;
 			AccessTools.Field(thing.GetType(), "occupant").SetValue(thing, pawn);
 			AccessTools.Field(thing.GetType(), "curWarcasketProject").SetValue(thing, behavior.project);
 			funeral.Map.dynamicDrawManager.DeRegisterDrawable(pawn.Corpse);//This is to hide the corpse so I can draw it in the right spot
-
+			behavior.deregisteredCorpse = true;
 		}
 
 		public override void ExposeData()

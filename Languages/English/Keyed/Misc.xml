@@ -62,6 +62,8 @@
 	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
 	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>
 	<Funeral_CorpseContainerFull>{0} is full</Funeral_CorpseContainerFull>
+	<Funeral_FreshCorpse>Corpse can't be rotted</Funeral_FreshCorpse>
+	<Funeral_CorpseNotFresh>{CORPSE} is no longer fresh, they can't be used</Funeral_CorpseNotFresh>
 	<AM_ArtificialBuildings>Artificial buildings</AM_ArtificialBuildings>
 	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>		
 	<AM_CorpseContainerMultiDiedOn>{NAME} died on {DATE}</AM_CorpseContainerMultiDiedOn>

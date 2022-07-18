@@ -138,10 +138,6 @@ namespace AlphaMemes
 
         public override void Cleanup(LordJob_Ritual ritual)
         {
-            if (!corpse.Corpse?.Bugged ?? false && !ritual.Map.dynamicDrawManager.DrawThingsForReading.Contains(corpse.Corpse))
-            {
-                ritual.Map.dynamicDrawManager.RegisterDrawable(corpse.Corpse);
-            }
             base.Cleanup(ritual);
             if(foundry != null)
             {

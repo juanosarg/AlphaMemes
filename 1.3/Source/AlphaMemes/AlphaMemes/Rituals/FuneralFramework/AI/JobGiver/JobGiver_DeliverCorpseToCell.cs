@@ -37,7 +37,6 @@ namespace AlphaMemes
 			}
 			IntVec3 cell = pawn.mindState.duty.focusThird.Thing.Position;
 			//Getting custom position is fun
-			//I love when fields are private for no reason
 			//Im hoping the index of lordjob always matches the def. it should, unless expose data someone orders them wrong but that seems impossible cause everything would break
 			int stage = ritual.StageIndex;
 			RitualBehaviorWorker_FuneralFramework behavior = ritual.Ritual.behavior as RitualBehaviorWorker_FuneralFramework;

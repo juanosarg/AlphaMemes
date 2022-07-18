@@ -46,7 +46,9 @@ namespace AlphaMemes
         }
         public override Pawn BestPawnForRole(List<Pawn> pawns, RitualRoleAssignments assignments, out string roleId)
         {
+            
             roleId = this.roleId;
+            if (!doBestPawn) { return null; }
             Pawn bestPawn = pawns.First(x => !x.Dead);//Was random but eventually that'd cause an awkward situation
             foreach(Pawn pawn in pawns)
             {
@@ -75,6 +77,7 @@ namespace AlphaMemes
         }
         public string roleId;
         public SkillDef skill;
+        public bool doBestPawn = true;
 
     }
 }

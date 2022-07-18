@@ -28,6 +28,10 @@ namespace AlphaMemes
             return ritual.Map.listerArtificialBuildingsForMeditation.GetForCell(thing.Position, radius).Count;
 
         }
+        protected override string ExpectedOffsetDesc(bool positive, float quality = 0)
+        {
+            return "QualityOutOf".Translate(quality.ToStringWithSign("0.#%"), this.curve.Points[0].y.ToStringWithSign("0.#%"));
+        }
         public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
         {
             List<Thing> things = ritualTarget.Map.listerArtificialBuildingsForMeditation.GetForCell(ritualTarget.Thing.Position, radius);

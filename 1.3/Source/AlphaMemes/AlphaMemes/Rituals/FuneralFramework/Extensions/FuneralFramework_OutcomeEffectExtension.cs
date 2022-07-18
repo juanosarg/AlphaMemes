@@ -14,6 +14,7 @@ namespace AlphaMemes
         public string roleToSpawnOn = "AM_RitualRoleCorpse";
         public string bestOutcomeDesc = null;
         public string worstOutcomeDesc = null;
+        public List<ThingDef> relevantThingDefs = new List<ThingDef>();//Just general list for if you want to put a list of thingdefs to use in outcome. Not implemented in anything generic
         public List<FuneralFramework_ThingToSpawn> outcomeSpawners;
     }
 

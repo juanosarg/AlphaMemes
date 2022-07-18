@@ -15,6 +15,25 @@ namespace AlphaMemes
 {
     public class RitualBehaviorWorker_FuneralFramework : RitualBehaviorWorker
     {
+        //Cache stuff
+        public int checkTick;
+        public string lastResult;
+        public Pawn corpse;
+
+
+        //Effect stuff
+        public bool deregisteredCorpse = false;
+        public List<Thing> spawnEffectThings = new List<Thing>();//things spawned that need cleanup just in case
+        public Sustainer soundPlaying; //Cant override set        
+        public Effecter effecter;
+        public Pawn effecterpawn;
+
+        //Spawn stuff
+        public ThingDef stuffToUse;
+        public int stuffCount;
+        public OutcomeEffectExtension outcomeExt;
+        public FuneralPreceptExtension extension;
+
         public RitualBehaviorWorker_FuneralFramework()
         {
         }
@@ -195,8 +214,7 @@ namespace AlphaMemes
             return null;
         }
 
-        public int checkTick;
-        public string lastResult;
+
         public override void Tick(LordJob_Ritual ritual)
         {
             base.Tick(ritual);
@@ -222,6 +240,13 @@ namespace AlphaMemes
         public override void Cleanup(LordJob_Ritual ritual)
         {
             base.Cleanup(ritual);
+            if (deregisteredCorpse)
+            {
+                if(!corpse.Corpse?.Bugged ?? false && !ritual.Map.dynamicDrawManager.DrawThingsForReading.Contains(corpse.Corpse))
+                {
+                    ritual.Map.dynamicDrawManager.RegisterDrawable(corpse.Corpse);
+                }                  
+            }
             if (this.soundPlaying != null)
             {
                 soundPlaying.End();
@@ -266,17 +291,12 @@ namespace AlphaMemes
             Scribe_Defs.Look<ThingDef>(ref stuffToUse, "stuffToUse");
             Scribe_Values.Look(ref stuffCount, "stuffCount");
             Scribe_References.Look<Pawn>(ref corpse, "corpse",true);
+            Scribe_References.Look(ref effecterpawn, "effecterpawn", true);
             Scribe_Collections.Look(ref spawnEffectThings, "spawnEffectThings", LookMode.Reference);
+            Scribe_Values.Look(ref deregisteredCorpse, "deregisteredCorpse");
 
         }
-        public Pawn corpse;
-        public List<Thing> spawnEffectThings = new List<Thing>();//things spawned that need cleanup just in case
-        public Sustainer soundPlaying; //Cant override set        
-        public Effecter effecter;
-        public Pawn effecterpawn;
-        public FuneralPreceptExtension extension;
-        public ThingDef stuffToUse;
-        public int stuffCount;
-        public OutcomeEffectExtension outcomeExt;
+
+             
     }
 }
