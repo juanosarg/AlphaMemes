@@ -18,7 +18,7 @@ namespace AlphaMemes
         private static int maxEatTick =24500;
         private static float radius = 24.9f;//Should probably be a comp so i could put this in a def but meh adding comp just for this seems minor
         private float nutrition = 0.2f;
-
+        public static float zOffset = 0.60f;
 
         public void Notify_CorpseBuried()
         {
@@ -31,7 +31,7 @@ namespace AlphaMemes
             if (base.HasCorpse)
             {
                 base.Corpse.InnerPawn.Drawer.renderer.wiggler.SetToCustomRotation(base.Rotation.AsAngle);
-                base.Corpse.DrawAt(base.Position.ToVector3ShiftedWithAltitude(AltitudeLayer.BuildingOnTop) + this.def.building.gibbetCorposeDrawOffset, false);
+                base.Corpse.DrawAt(base.Position.ToVector3ShiftedWithAltitude(AltitudeLayer.BuildingOnTop) + new Vector3(0,0,zOffset), false);
             }
         }
         public override void DrawExtraSelectionOverlays()

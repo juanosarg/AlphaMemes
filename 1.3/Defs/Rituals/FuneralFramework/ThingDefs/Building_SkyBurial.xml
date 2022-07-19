@@ -10,8 +10,7 @@
 	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
     <graphicData> 
       <texPath>Things/Building/Misc/AM_SkyBurialSlab</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-     
+      <graphicClass>Graphic_Multi</graphicClass>     
       <drawSize>(2,2)</drawSize>
       <damageData>
         <rect>(0,0.05,1,1.95)</rect>
@@ -41,8 +40,7 @@
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <haulToContainerDuration>300</haulToContainerDuration>
-	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-      <gibbetCorposeDrawOffset>(0, 0, 0)</gibbetCorposeDrawOffset>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>     
       <fixedStorageSettings>
         <filter>
           <categories>
