@@ -6,7 +6,7 @@
 		<label>sky burial</label>
 		<description>A gathering to witness the send off of our friend to nature.</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_FuneralCremation</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralSkyBurial</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_SkyBurialPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>

@@ -62,6 +62,63 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		<ThingDef ParentName="SculptureBase">
+		<defName>AM_Sphynx</defName>
+		<label>sphynx</label>
+		<description>A truly colossal statue of a sphynx, a mythical creature with the head of a human, and the body of a lion.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_Sphynx</texPath>
+			<drawSize>(12,18)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(12,18)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>50000</MaxHitPoints>
+			<Beauty>8000</Beauty>
+			<Mass>50000</Mass>
+			<WorkToMake>3000000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">200</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<memePrerequisitesAny>
+				<li>AM_Structure_Kemetism</li>
+			</memePrerequisitesAny>
+		</recipeMaker>
+		<costStuffCount>9000</costStuffCount>
+	</ThingDef>
+	
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_Megalith</defName>
 		<label>megalith</label>
