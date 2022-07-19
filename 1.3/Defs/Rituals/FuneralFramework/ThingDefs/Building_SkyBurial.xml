@@ -8,10 +8,10 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <altitudeLayer>Building</altitudeLayer>
 	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
-    <graphicData> <!--Replace this using VFE Slab bed for testing-->
-      <texPath>Things/Bedroom/BedSlab/BedSlab</texPath>
+    <graphicData> 
+      <texPath>Things/Building/Misc/AM_SkyBurialSlab</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
+     
       <drawSize>(2,2)</drawSize>
       <damageData>
         <rect>(0,0.05,1,1.95)</rect>
@@ -21,7 +21,7 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
-    <uiIconPath>Things/Building/Misc/GibbetCage_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Misc/AM_SkyBurialSlab_east</uiIconPath>
     <passability>PassThroughOnly</passability>
     <pathCost>42</pathCost>
     <blockWind>false</blockWind>
