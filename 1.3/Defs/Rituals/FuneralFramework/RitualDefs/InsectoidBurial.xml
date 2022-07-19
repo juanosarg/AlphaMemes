@@ -128,28 +128,28 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and the crematorium wasn't hot enough.</description>
+        <description>The {0} was terrible! The insects didnt seem to enjoy them at all.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>Lackluster</label>
         <chance>0.15</chance>
         <memory>AM_LacklusterFuneral</memory>
-        <description>The {0} was lackluster. The speech was long-winded and did not honour them.</description>
+        <description>The {0} was lackluster. The speech was long-winded, but at least it looks the insects got something out of it.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.6</chance>
         <memory>AM_GoodFuneral</memory>
-        <description>The {0} was good. The speaker's final words provided a path for everyone to move on.</description>
+        <description>The {0} was good. The insects enjoyed their meal and blessed us with a new holy creature</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
         <chance>0.2</chance>
         <memory>AM_AmazingFuneral</memory>
-        <description>The {0} was heartwarming. The speech was captivating and heartfelt, and everyone came away focused on good memories.</description>
+        <description>The {0} was heartwarming. The insects appear to have taken full advantage of their nutrients. What a wonderful creature that will become</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>

@@ -90,6 +90,7 @@ namespace AlphaMemes
                     };
                     Pawn insect = PawnGenerator.GeneratePawn(request);
                     GenSpawn.Spawn(insect, jobRitual.selectedTarget.Cell, jobRitual.Map);
+                    Messages.Message("AM_InsectBurialInsectBorn".Translate(insect.Label.Named("INSECT"),corpse.InnerPawn.NameShortColored.Named("CORPSE")), new LookTargets(insect), MessageTypeDefOf.PositiveEvent);
                     SoundDefOf.Hive_Spawn.PlayOneShot(SoundInfo.InMap(jobRitual.selectedTarget));
                     FilthMaker.TryMakeFilth(jobRitual.selectedTarget.Cell, jobRitual.Map, ThingDefOf.Filth_Slime,6);
                 }
