@@ -42,6 +42,13 @@ namespace AlphaMemes
             //Ideo Notify_memberlost does nothing but trigger obligation triggers by itself So should be safe
             public static bool Prefix(Ideo __instance, Pawn member)
             {
+                List<Precept_Ritual> rituals = __instance.GetAllPreceptsOfType<Precept_Ritual>().ToList();
+                if (rituals.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).Any(x => x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral))
+                {
+                    var noCorpse = rituals.First(x => x.def.defName == "AM_FuneralNoCorpse");
+                    noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
+                    return false;
+                }
                 LordJob_Ritual_FuneralFramework lordJob = null;
                 Map map = Find.CurrentMap;
                 if(map == null) { return true; }//Turns out this can get called when map doesnt exist yet. At least character editor did it while loading a saved pawn...

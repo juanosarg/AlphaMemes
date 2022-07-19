@@ -13,7 +13,7 @@
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
 		  </li>
 		</ritualObligationTriggers>
-		<ritualObligationTargetFilter>AM_PyramidTarget</ritualObligationTargetFilter>
+		<ritualObligationTargetFilter>AM_FuneralExtendedPyramidBurial</ritualObligationTargetFilter>
 		<ritualBehavior>AM_PyramidBurialBehavior</ritualBehavior>
 		<ritualOutcomeEffect>AM_PyramidBurialOutcome</ritualOutcomeEffect>
 	</RitualPatternDef>
@@ -195,6 +195,17 @@
  
    <!--Ritual Obligation-->
 
+	   	<RitualObligationTargetFilterDef>
+		<defName>AM_FuneralExtendedPyramidBurial</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralThingExtended</workerClass>		
+		<modExtensions>
+			<li Class="AlphaMemes.ObligationTargetExtension">
+				<filters>			
+					<li>AM_PyramidTarget</li> 							
+				</filters>							
+			</li>
+		</modExtensions>
+	</RitualObligationTargetFilterDef>
 	
 	<RitualObligationTargetFilterDef>
 		<defName>AM_PyramidTarget</defName>

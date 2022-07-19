@@ -47,8 +47,17 @@
 		</li>
 		</modExtensions>
 	</PreceptDef>
-	
-	
+	<!--Obsolete-->
+	<PreceptDef ParentName="FuneralBase">
+		<defName>AM_CremateFuneralNoCorpse</defName>
+		<classic>false</classic>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<label>funeral (no corpse)</label>
+		<visible>false</visible>
+		<listedForRoles>false</listedForRoles>
+		<ritualPatternBase>FuneralNoCorpse</ritualPatternBase>
+		<takeNameFrom>AM_CremateFuneral</takeNameFrom>
+	</PreceptDef>
 
 
 </Defs>
