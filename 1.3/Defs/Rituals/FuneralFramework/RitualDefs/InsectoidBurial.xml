@@ -142,14 +142,14 @@
         <label>Good</label>
         <chance>0.6</chance>
         <memory>AM_GoodFuneral</memory>
-        <description>The {0} was good. The insects enjoyed their meal and blessed us with a new holy creature</description>
+        <description>The {0} was good. The insects enjoyed their meal and blessed us with a new holy creature.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
         <chance>0.2</chance>
         <memory>AM_AmazingFuneral</memory>
-        <description>The {0} was heartwarming. The insects appear to have taken full advantage of their nutrients. What a wonderful creature that will become</description>
+        <description>The {0} was heartwarming. The insects appear to have taken full advantage of their nutrients. What a wonderful creature that will become.</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>

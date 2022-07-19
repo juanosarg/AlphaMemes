@@ -101,7 +101,7 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and it was disprespected their legacy.</description>
+        <description>The {0} was terrible! The speech was boring and it was disrespectful of their legacy.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
@@ -160,7 +160,7 @@
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
 			<destroyCorpse>false</destroyCorpse>
-			<bestOutcomeDesc>The {RITUAL} was spectacular! Our offering of {CORPSE} to nature has improved our ecosystem and the animal population as increased</bestOutcomeDesc>
+			<bestOutcomeDesc>The {RITUAL} was spectacular! Our offering of {CORPSE} to nature has improved our ecosystem and the animal population has increased</bestOutcomeDesc>
 		</li>
 	</modExtensions>
   </RitualOutcomeEffectDef>
