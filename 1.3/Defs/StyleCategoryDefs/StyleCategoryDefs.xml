@@ -161,6 +161,10 @@
 		<ritualVisualEffectDef>AM_KemeticVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
+				<thingDef>Wall</thingDef>
+				<styleDef>AM_Kemetic_Wall</styleDef>
+			</li>
+			<li>
 				<thingDef>SculptureSmall</thingDef>
 				<styleDef>AM_Kemetic_SculptureSmall</styleDef>
 			</li>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- Christian -->
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_ChristianPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Christian/AM_ChristianPowerArmor/AM_ChristianPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Christian/AM_ChristianPowerArmor/AM_ChristianPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_ChristianPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Christian/AM_ChristianPowerArmorHelmet/AM_ChristianPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Christian/AM_ChristianPowerArmorHelmet/AM_ChristianPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Club</defName>
+		<overrideLabel>cudgel</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianCudgel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Gladius</defName>
+		<overrideLabel>squire sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianSquireSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Ikwa</defName>
+		<overrideLabel>guisarme</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianGuisarme</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Axe</defName>
+		<overrideLabel>halberd</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Hammer</defName>
+		<overrideLabel>flail</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Pickaxe</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Knife</defName>
+		<overrideLabel>poignard</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianPoignard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Sword</defName>
+		<overrideLabel>knightly sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianKnightlySword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Mace</defName>
+		<overrideLabel>flanged mace</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianFlangedMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Christian_Spear</defName>
+		<overrideLabel>lance</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Christian/AM_ChristianLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	
+</Defs>
