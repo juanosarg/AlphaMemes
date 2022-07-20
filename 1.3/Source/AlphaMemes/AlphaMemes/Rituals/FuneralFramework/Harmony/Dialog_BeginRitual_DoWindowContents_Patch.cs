@@ -20,7 +20,7 @@ namespace AlphaMemes
     {
         public static void Postfix(Dialog_BeginRitual __instance, Rect inRect, Precept_Ritual ___ritual)
         {
-
+            if (Find.IdeoManager.classicMode) { return; }
             Precept_Ritual ritual = ___ritual;
             if (!ritual?.def.HasModExtension<FuneralPreceptExtension>()??true)//stupid rituals not being rituals
             {

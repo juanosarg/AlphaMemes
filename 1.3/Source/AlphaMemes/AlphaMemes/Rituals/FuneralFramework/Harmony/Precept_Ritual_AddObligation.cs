@@ -19,7 +19,8 @@ namespace AlphaMemes
     {
         [HarmonyPrefix]
         public static void Prefix(Precept_Ritual __instance, RitualObligation obligation)
-        {  
+        {
+            if (Find.IdeoManager.classicMode) { return; }
             if (obligation.targetA.HasThing)
             {
                 Corpse corpse = obligation.targetA.Thing as Corpse;

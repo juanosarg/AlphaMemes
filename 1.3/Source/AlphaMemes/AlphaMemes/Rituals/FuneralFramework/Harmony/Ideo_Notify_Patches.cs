@@ -22,6 +22,7 @@ namespace AlphaMemes
             //Fires our letter
             public static void Postfix(Ideo __instance, Pawn member)
             {
+                if (Find.IdeoManager.classicMode) { return; }
                 if (!FuneralFramework_ObligationUtility.obligations.NullOrEmpty())
                 {
                     if (FuneralFramework_ObligationUtility.obligations.Any(x => x.targetA.Thing == member.Corpse))
@@ -42,12 +43,19 @@ namespace AlphaMemes
             //Ideo Notify_memberlost does nothing but trigger obligation triggers by itself So should be safe
             public static bool Prefix(Ideo __instance, Pawn member)
             {
+                //I was going to blame sleepy brain, but I never would've thought of this. Good thing I was testing VOE with classic mode.
+                //Classic mode adds vanilla funeral, which has my extension. But classic mode means no universal nocorpse.
+                if (Find.IdeoManager.classicMode) { return true;}
                 List<Precept_Ritual> rituals = __instance.GetAllPreceptsOfType<Precept_Ritual>().ToList();
                 if (rituals.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).Any(x => x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral))
                 {
-                    var noCorpse = rituals.First(x => x.def.defName == "AM_FuneralNoCorpse");
-                    noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
-                    return false;
+                    var noCorpse = rituals.FirstOrDefault(x => x.def.defName == "AM_FuneralNoCorpse");
+                    if (noCorpse != null)
+                    {
+                        noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
+                        return false;
+                    }
+
                 }
                 LordJob_Ritual_FuneralFramework lordJob = null;
                 Map map = Find.CurrentMap;
@@ -67,6 +75,7 @@ namespace AlphaMemes
             //Fires our letter
             public static void Postfix(Ideo __instance, Pawn member)
             {
+                if (Find.IdeoManager.classicMode) { return; }
                 if (!FuneralFramework_ObligationUtility.obligations.NullOrEmpty())
                 {
                     if (FuneralFramework_ObligationUtility.obligations.Any(x => x.targetA.Thing == member.Corpse))

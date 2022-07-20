@@ -22,6 +22,7 @@ namespace AlphaMemes
         [HarmonyPostfix]        
         public static void Postfix(IdeoFoundation __instance, IdeoGenerationParms parms)
         {
+            if (Find.IdeoManager.classicMode) { return; }
             if (__instance.ideo.PreceptsListForReading.Any(x => x.def.HasModExtension<FuneralPreceptExtension>()))
             {
                 
