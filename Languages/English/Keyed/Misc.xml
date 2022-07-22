@@ -28,6 +28,7 @@
 	<AM_AbilityNeedsMeme>This ability can't be used if the colonist's ideo doesn't have the necessary meme</AM_AbilityNeedsMeme>
 	<AM_MakeChangeStyleAbilityUseAllStyles>Make the "Change Style" ability use styles not possessed by the player's main ideoligion</AM_MakeChangeStyleAbilityUseAllStyles>
 	<AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>Make the "Change Style" ability use styles not possessed by the player's main ideoligion. By default this leader role ability will swap an item's style through the styles present in the colony's main ideo. By activating this toggle you will make it use ALL styles currently present in the game (vanilla or modded)</AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>
+	<AM_AbilityNiceTry>This project is too ambitious for the Master Architect (haha, nice try)</AM_AbilityNiceTry>
 	
 	<!--Funeral Stings-->
 	<Funeral_NeedsPower>{0} is not powered</Funeral_NeedsPower>

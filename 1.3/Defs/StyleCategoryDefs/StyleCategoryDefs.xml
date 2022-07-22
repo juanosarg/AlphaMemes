@@ -399,6 +399,8 @@
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
+			<li>AM_GreatPyramid</li>
+			<li>AM_Sphynx</li>
 			<li>AM_KemeticSlab_Medium</li>
 			<li>AM_KemeticSlab_Broad</li>
 		</addDesignators>

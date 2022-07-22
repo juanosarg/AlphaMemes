@@ -36,7 +36,15 @@ namespace AlphaMemes
 				
 				if (resourcesLeft==0)
 				{
-					blueprint.CompleteConstruction(this.parent.pawn);
+					if(blueprint.def.entityDefToBuild != InternalDefOf.AM_GreatPyramid&& blueprint.def.entityDefToBuild != InternalDefOf.AM_Sphynx)
+                    {
+						blueprint.CompleteConstruction(this.parent.pawn);
+                    }
+                    else
+                    {
+						Messages.Message("AM_AbilityNiceTry".Translate(), MessageTypeDefOf.RejectInput, true);
+
+					}					
                 }
                 else
                 {

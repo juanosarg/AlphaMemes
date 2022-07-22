@@ -50,6 +50,8 @@ namespace AlphaMemes
 		public static ThingDef AM_RelicSmashingAltar;
 		public static ThingDef AM_GrogDispenser;
 		public static ThingDef AM_Megalith;
+		public static ThingDef AM_Sphynx;
+		public static ThingDef AM_GreatPyramid;
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
