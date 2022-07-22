@@ -263,6 +263,20 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Carbine</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 	

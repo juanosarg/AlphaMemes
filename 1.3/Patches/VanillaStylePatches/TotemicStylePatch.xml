@@ -162,6 +162,15 @@
 								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
 								<styleDef>AM_Totemic_AntiMaterialRifle</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_BattleRifle</thingDef>
+								<styleDef>AM_Totemic_BattleRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Carbine</thingDef>
+								<styleDef>AM_Totemic_Carbine</styleDef>
+							</li>
+							
 						</value>
 					</match>
 				</li>
