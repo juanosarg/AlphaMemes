@@ -70,7 +70,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_GreatPyramid</texPath>
-			<drawSize>(20,20)</drawSize>
+			<drawSize>(24,24)</drawSize>
 		</graphicData>
 		<thingClass>Building_Art</thingClass>
 		<useHitPoints>true</useHitPoints>
@@ -143,7 +143,7 @@
 			</li>
 		</comps>
 		<rotatable>false</rotatable>
-		<size>(20,20)</size>
+		<size>(24,24)</size>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
 			<MaxHitPoints>75000</MaxHitPoints>
@@ -237,7 +237,7 @@
 							<li>SculptureLarge</li>
 							<li>SculptureGrand</li>
 						</defs>
-						<radius>9.9</radius>
+						<radius>15</radius>
 						<maxBuildings>8</maxBuildings>
 						<focusPerQuality>
 							<points>
