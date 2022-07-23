@@ -98,20 +98,11 @@ namespace AlphaMemes
             if (def.HasModExtension<FuneralFramework_BehaviorExtension>())
             {
                 var extension = def.GetModExtension<FuneralFramework_BehaviorExtension>();
-                cell = thing.Position + extension.spotOffset.RotatedBy(thing.Rotation);
-            }
-            //Should no longer be needed due to new harmony patch
-/*            else if (thing.def.passability != Traversability.Standable)
-            {
-                cell = thing.InteractionCell;
-            }
-            if (!cell.Standable(thing.Map))
-            {
-                if (!CellFinder.TryFindRandomReachableCellNear(thing.Position, thing.Map, 6, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), null, null, out cell))
+                if (extension.spotOffset.TryGetValue(target.Thing.def, out var offset))
                 {
-                    cell = thing.OccupiedRect().AdjacentCellsCardinal.RandomElement();//If all of this fails \o/
-                }
-            }*/
+                    cell = thing.Position + offset.RotatedBy(thing.Rotation);
+                }                
+            }
             return cell;
         }
         public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)

@@ -56,6 +56,15 @@ namespace AlphaMemes
             {
                 comp.InitComp_CorpseContainer(corpse);
             }
+            else
+            {
+                Comp_CorpseContainer singeComp = jobRitual.selectedTarget.Thing.TryGetComp<Comp_CorpseContainer>();
+                if (singeComp != null)
+                {
+                    singeComp.InitComp_CorpseContainer(corpse);
+                }
+            }
+
             base.ApplyOn(pawn, corpse, thingsToSpawn, totalPresence, jobRitual, outcome);
         }
         protected override void ApplyExtraOutcome(Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome, out string extraOutcomeDesc, ref LookTargets letterLookTargets)

@@ -25,7 +25,16 @@ namespace AlphaMemes
             Comp_CorpseContainerMulti comp = target.Thing.TryGetComp<Comp_CorpseContainerMulti>();
             if (comp == null)
             {
-                return false;                
+                var singleComp = target.Thing.TryGetComp<Comp_CorpseContainer>();
+                if (singleComp == null)
+                {
+                    return false;
+                }
+                if (singleComp.Active)
+                {
+                    return "Funeral_CorpseContainerFull".Translate(target.Thing.Label);
+                }
+                return true;
             }
             if (!comp.NotFull)
             {

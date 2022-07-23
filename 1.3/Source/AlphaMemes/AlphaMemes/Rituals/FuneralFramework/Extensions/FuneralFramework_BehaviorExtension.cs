@@ -11,8 +11,8 @@ namespace AlphaMemes
     public class FuneralFramework_BehaviorExtension : DefModExtension
     {
 
-        public IntVec3 spotOffset = IntVec3.Zero;        
-        
+        //public IntVec3 spotOffset = IntVec3.Zero;
+        public Dictionary<ThingDef, IntVec3> spotOffset = new Dictionary<ThingDef, IntVec3>();
     }
 
 

@@ -12,6 +12,7 @@ namespace AlphaMemes
     {
 
         public List<Pawn> innerPawns = new List<Pawn>();
+        public List<Corpse> innerCorpses = new List<Corpse>();//I might do something eventually to let ppl pull a corpse out. I didnt think about resurrect purposes at first. Adding this now so if I get the urge to figure out that headache its somewhattt backwards compatible (corpse wont tick so things like decay will need to be sorted out)
         public Dictionary<string, string> pawnNameDateDeath = new Dictionary<string, string>();
         private CompProperties_CorpseContainerMulti Props
         {
@@ -54,6 +55,7 @@ namespace AlphaMemes
         {
             string deathDate = GenDate.DateFullStringAt((long)GenDate.TickGameToAbs(corpse.timeOfDeath), Find.WorldGrid.LongLatOf(corpse.Tile));
             innerPawns.Add(corpse.InnerPawn);
+            innerCorpses.Add(corpse);
             pawnNameDateDeath.Add(corpse.InnerPawn.NameFullColored.CapitalizeFirst(), deathDate);
             
         }
@@ -79,6 +81,11 @@ namespace AlphaMemes
             base.PostExposeData();
             Scribe_Collections.Look(ref pawnNameDateDeath, "pawnNameDateDeath", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref innerPawns,true, "innerPawns",LookMode.Reference);
+            if (innerCorpses.Any(x => x.Destroyed)) 
+            {
+                innerCorpses.RemoveAll(x => x.Destroyed);
+            }
+            Scribe_Collections.Look(ref innerCorpses, false, "innerCorpses", LookMode.Deep);
         }
     }
 }

@@ -209,6 +209,7 @@
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
+			<despawnCorpse>true</despawnCorpse>
 			<roleToSpawnOn>AM_RitualRoleCorpse</roleToSpawnOn>
 			<!--Spawners-->
 			<outcomeSpawners>

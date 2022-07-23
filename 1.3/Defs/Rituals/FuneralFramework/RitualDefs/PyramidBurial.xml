@@ -52,6 +52,7 @@
 		<stages>
 			<li Class="RitualStage_InteractWithRole">
 				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Down</allowedSpectateSidesOverride>
 				<targetId>AM_RitualRoleCorpse</targetId> 
 				<endTriggers>
 					<li Class="StageEndTrigger_RolesArrived">
@@ -66,7 +67,16 @@
 					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
 					<customPositions>					  
 					  <li Class="AlphaMemes.RitualPosition_CorpsePosition">
-						<corpeOffset>(0,0,-3)</corpeOffset>
+						<corpseOffset>
+							<li>
+								<key>AM_Pyramid</key>
+								<value>(0,0,-3)</value>
+							</li>
+							<li>
+								<key>AM_GreatPyramid</key>
+								<value>(1,0,-11)</value>
+							</li>
+						</corpseOffset>
 					  </li>
 					</customPositions>
 				  </li> 
@@ -74,6 +84,7 @@
 			</li>    
 			<li>
 				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Down</allowedSpectateSidesOverride>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
 					<percentage>0.3</percentage>
@@ -85,7 +96,18 @@
 					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
 					<speakerInteraction>Speech_Funeral</speakerInteraction>
 					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					  <li Class="AlphaMemes.RitualPosition_CenterPos">
+					  <thingOffset>
+						<li>
+							<key>AM_Pyramid</key>
+							<value>(0,0,-4)</value>
+						</li>
+						<li>
+							<key>AM_GreatPyramid</key>
+							<value>(1,0,-13)</value>
+						</li>
+					   </thingOffset>
+					  </li>
 					</customPositions>
 				  </li>
 				</roleBehaviors>
@@ -98,6 +120,7 @@
 			</li>
 			<li>
 				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Down</allowedSpectateSidesOverride>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
 					<percentage>0.7</percentage>
@@ -109,9 +132,20 @@
 					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
 					<speakerInteraction>Speech_Funeral</speakerInteraction>
 					<customPositions>					  
-					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					  <li Class="AlphaMemes.RitualPosition_CenterPos">
+					  <thingOffset>
+						<li>
+							<key>AM_Pyramid</key>
+							<value>(0,0,-4)</value>
+						</li>
+						<li>
+							<key>AM_GreatPyramid</key>
+							<value>(1,0,-13)</value>
+						</li>
+					   </thingOffset>
+					  </li>
 					</customPositions>
-				  </li>				
+				  </li>		
 				 
 				</roleBehaviors>
 				<visualEffectDef>Funeral</visualEffectDef>
@@ -119,7 +153,16 @@
 		</stages>
 		<modExtensions>
 			<li Class="AlphaMemes.FuneralFramework_BehaviorExtension">
-				<spotOffset>(0,0,-4)</spotOffset><!--Has to be standable offset based on thing Position-->
+				<spotOffset>
+					<li>
+						<key>AM_Pyramid</key>
+						<value>(0,0,-4)</value>
+					</li>
+					<li>
+						<key>AM_GreatPyramid</key>
+						<value>(1,0,-12)</value>
+					</li>
+				</spotOffset><!--Has to be standable offset based on thing Position-->
 			</li>
 		</modExtensions>
   </RitualBehaviorDef>
@@ -186,6 +229,7 @@
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
 			<stripcorpse>false</stripcorpse>
+			<despawnCorpse>true</despawnCorpse>
 			<worstOutcomeDesc>The {RITUAL} was a disaster! The entombing of {CORPSE} was sloppy, and the pyramid will forever be tainted by this botched ritual. It's apparent quality has decreased.</worstOutcomeDesc>
 			<bestOutcomeDesc>The {RITUAL} was spectacular! The pyramid of {CORPSE} will forever stand the test of time. It's apparent quality has increased.</bestOutcomeDesc>
 		</li>
@@ -211,7 +255,8 @@
 		<defName>AM_PyramidTarget</defName>
 		<workerClass>AlphaMemes.RitualObligationTargetWorker_CorpseContainerMulti</workerClass>		
 		<thingDefs>
-		  <li>AM_Pyramid</li>		  
+		  <li>AM_Pyramid</li>
+		  <li>AM_GreatPyramid</li>
 		</thingDefs>
 	</RitualObligationTargetFilterDef>
 	

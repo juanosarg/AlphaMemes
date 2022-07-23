@@ -141,6 +141,10 @@
 					</li>
 				</offsets>
 			</li>
+			<li Class="AlphaMemes.CompProperties_CorpseContainer">
+				<transformLabel>{CORPSE}'s {LABEL}</transformLabel>
+				<inspectString>Contains the last remains of {CORPSE}</inspectString>
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
 		<size>(24,24)</size>

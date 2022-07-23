@@ -30,7 +30,10 @@ namespace AlphaMemes
 			Thing thing = overrideThing == null ? ritual.selectedTarget.Thing : overrideThing;
 
 			IntVec3 cell = thing.Position;
-			cell += corpeOffset.RotatedBy(thing.Rotation);//we'll see if that works but its what they do for interactionCellOffset
+			if (corpseOffset.TryGetValue(thing.def, out var offset))
+            {
+				cell += offset.RotatedBy(thing.Rotation);//we'll see if that works but its what they do for interactionCellOffset
+			}			
 			if (!p.CanReach(cell, PathEndMode.Touch, PawnUtility.ResolveMaxDanger(p, Danger.Deadly))) //Using Position fallback as fallback
 			{
 				Log.Warning("Alpha Memes Funeral framework Can't reach cell position. RitualPosition_CorpsePosition:CorpseCell using fall back");
@@ -43,10 +46,11 @@ namespace AlphaMemes
         public override void ExposeData()
         {
             base.ExposeData();
-			Scribe_Values.Look(ref corpeOffset, "corpeOffset");
+			Scribe_Collections.Look(ref corpseOffset, "corpeOffset",LookMode.Value,LookMode.Value);
 			Scribe_Deep.Look(ref pawnPosition, "pawnPosition");
         }
-        public IntVec3 corpeOffset = IntVec3.Zero;
+		public Dictionary<ThingDef,IntVec3> corpseOffset = new Dictionary<ThingDef,IntVec3>();
+        //public IntVec3 corpeOffset = IntVec3.Zero;
 		public RitualPosition pawnPosition = null;
 	}
 

@@ -15,8 +15,18 @@ namespace AlphaMemes
 			Thing thing = ritual.selectedTarget.Thing;
 			IntVec3 cell = thing.OccupiedRect().CenterCell;
 			cell += offset;
+			if (this.thingOffset.TryGetValue(thing.def,out var thingOffset))
+            {
+				cell += thingOffset;
+            }
 			Rot4 rotation = thing.Rotation;
 			return new PawnStagePosition(cell, thing, rotation, this.highlight);
 		}
+        public override void ExposeData()
+        {
+            base.ExposeData();
+			Scribe_Collections.Look(ref thingOffset, "thingOffset", LookMode.Value, LookMode.Value);
+		}
+        public Dictionary<ThingDef, IntVec3> thingOffset = new Dictionary<ThingDef, IntVec3>();
 	}
 }
