@@ -9,6 +9,7 @@
 		<iconPath>UI/Rituals/AM_FuneralGeneExtraction</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>GR_ExtractorFuneralPattern</ritualPatternBase>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<allowDuplicates>false</allowDuplicates>
 		<associatedMemes>
 			<li>GR_MadScientists</li>

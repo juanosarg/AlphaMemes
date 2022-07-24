@@ -11,6 +11,7 @@
 		<ritualPatternBase>AM_InsectoidFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<selectionWeight>1.0</selectionWeight>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<impact>Medium</impact>

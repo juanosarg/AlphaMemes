@@ -13,6 +13,7 @@
 		<allowDuplicates>false</allowDuplicates>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<impact>Medium</impact>
 		<associatedMemes> 

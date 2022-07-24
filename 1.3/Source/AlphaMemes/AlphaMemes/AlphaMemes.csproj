@@ -191,6 +191,11 @@
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFramework.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
+    <Compile Include="Rituals\Tantrum\JobDriver_RitualTantrum.cs" />
+    <Compile Include="Rituals\Tantrum\JobGiver_RitualTantrum.cs" />
+    <Compile Include="Rituals\Tantrum\RitualOutcomeComp_Tantrum.cs" />
+    <Compile Include="Rituals\Tantrum\RitualOutcomeComp_TantrumData.cs" />
+    <Compile Include="Rituals\Tantrum\RitualOutcomeEffectWorker_Tantrum.cs" />
     <Compile Include="Rituals\TargetWorkers\RitualObligationTargetWorker_DestructionAltar.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
     <Compile Include="StatPartDefs\StatPart_ExtraBlunt.cs" />

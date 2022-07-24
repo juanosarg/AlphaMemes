@@ -9,6 +9,7 @@
 		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_FuneralNoCorpsePattern</ritualPatternBase>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<canGenerateAsSpecialPrecept>true</canGenerateAsSpecialPrecept><!--Unneccsary but for reminder its defualt-->
 		<allowDuplicates>false</allowDuplicates>
 		<visible>false</visible>

@@ -70,7 +70,8 @@
 	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>		
 	<AM_CorpseContainerMultiDiedOn>{NAME} died on {DATE}</AM_CorpseContainerMultiDiedOn>
 	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>	
-	
+	<AM_TantrumDestoryed>All told we have destoryed {1} worth of buildings \n\n We destroyed: {0}</AM_TantrumDestoryed>
+	<AM_TantrumOutcomeComp>Wealth Destroyed</AM_TantrumOutcomeComp>
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>

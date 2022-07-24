@@ -113,10 +113,12 @@ namespace AlphaMemes
 		public static PreceptDef AM_Abilities_DeathKnell;
 		//Funeral stuff
 		public static JobDef AM_DeliverCorpseToCell;
-		public static JobDef AM_DeliverStuffToCell;
+		public static JobDef AM_DeliverStuffToCell;		
 		public static JobDef AM_LoadCorpseToThing;
 		public static JobDef AM_DeliverThingsToCell;
 		public static ThingDef AM_MummyMale;
 		public static ThingDef AM_MummyFemale;
+		//Silly Ritual
+		public static JobDef AM_TrantrumJob;
 	}
 }

@@ -11,6 +11,7 @@
 		<ritualPatternBase>AM_FleshCraftingFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<selectionWeight>1.0</selectionWeight>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<requiredMemes>

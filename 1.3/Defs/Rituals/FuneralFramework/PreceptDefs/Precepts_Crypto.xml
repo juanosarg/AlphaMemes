@@ -11,6 +11,7 @@
 		<allowDuplicates>false</allowDuplicates>
 		<visible>false</visible>
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<selectionWeight>0</selectionWeight>
 		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
 		<displayOrderInImpact>100</displayOrderInImpact>

@@ -14,6 +14,7 @@
 		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
 		<selectionWeight>1.0</selectionWeight>
 		<displayOrderInImpact>100</displayOrderInImpact>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
 		<impact>Medium</impact>
 		<associatedMemes> 
 			<li>Transhumanist</li>
