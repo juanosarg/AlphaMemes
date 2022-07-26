@@ -58,6 +58,186 @@
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
   
+  <ThingDef ParentName="BedWithQualityBase" Name="Bed">
+    <defName>AM_AncientBed</defName>
+    <label>restored ancient bed</label>
+    <description>An old, rotted mattress on a rusty frame. Restored to be useable, though a bit uncomfortable.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,0.95)</rect>
+      </damageData>
+    </graphicData>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
+      <BedRestEffectiveness>0.9</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtableBedBase" Name="DoubleBed">
+    <defName>AM_AncientDoubleBed</defName>
+    <label>restored ancient double bed</label>
+    <description>An old, rotted mattress on a rusty frame. Restored to be useable, though a bit uncomfortable. Fits two people.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/Beds/AM_AncientDoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+     
+      <drawSize>(2.05,2.05)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+   
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>40</Mass>
+      <Comfort>0.7</Comfort>
+      <Beauty>1</Beauty>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+     
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc3</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BedWithQualityBase">
+    <defName>AM_AncientOperatingTable</defName>
+    <label>restored ancient operating table</label>
+    <description>An ancient bed once used for forgotten surgical operations. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds. Uncomfortable but efficient.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientOperatingTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+      <shadowData>
+        <volume>(0.9, 0.3, 1.9)</volume>
+      </shadowData>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2700</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.11</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Industrial</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  
+  
+  
    <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="AM_NoDesignatorTableBaseStone">
 	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 	<stuffCategories  Inherit="False">     

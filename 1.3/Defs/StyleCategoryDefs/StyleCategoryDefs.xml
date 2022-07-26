@@ -1156,6 +1156,11 @@
 			</li>
 			
 		</thingDefStyles>
-		
+		<addDesignators>
+			<li>AM_AncientBed</li>
+			<li>AM_AncientDoubleBed</li>
+			<li>AM_AncientOperatingTable</li>
+			
+		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
