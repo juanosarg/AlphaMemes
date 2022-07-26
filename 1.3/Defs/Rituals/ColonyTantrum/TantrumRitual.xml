@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_TantrumRitualPattern</defName>
 		<nameMaker>NamerRitualFestival</nameMaker>
-		<ritualExplanation>A ceremeony of destruction. This is no good, it's time to bury the memories of this place in rubble \n (Your colonists will go around destroying buildings. Dont say I didnt warn you)</ritualExplanation>
+		<ritualExplanation>A ceremony of destruction. This is no good, it's time to bury the memories of this place in rubble.\n (Your colonists will go around destroying buildings. Don't say I didn't warn you)</ritualExplanation>
 		<ritualObligationTargetFilter>GatheringSpotOrAltar</ritualObligationTargetFilter>
 		<ritualBehavior>AM_TantrumRitualBehavior</ritualBehavior>
 		<canStartAnytime>true</canStartAnytime>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Scavenger ======== -->
+
+	<ThingStyleDef>
+		<defName>AM_Scavenger_Dresser</defName>
+		<overrideLabel>ancient storage cylinder dresser</overrideLabel>
+		<graphicData>
+			<drawSize>(2,1)</drawSize>
+			<texPath>Things/Building/BuildingStyles/Scavenger/Dresser/AM_AncientStorageCylinderDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+
+
+</Defs>

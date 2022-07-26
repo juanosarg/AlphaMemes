@@ -8,7 +8,7 @@
     <stages>
       <li>
         <label>terrible tantrum</label>
-        <description>That tantrum was a waste of time. We barely did anything</description>
+        <description>That tantrum was a waste of time. We barely did anything.</description>
         <baseMoodEffect>-3</baseMoodEffect>
       </li>
     </stages>
@@ -36,7 +36,7 @@
     <stages>
       <li>
         <label>good tantrum</label>
-        <description>That tantrum was enjoyable. Got some of the anger and bad feelings out so we can move on</description>
+        <description>That tantrum was enjoyable. Got some of the anger and bad feelings out so we can move on.</description>
         <baseMoodEffect>20</baseMoodEffect>
       </li>
     </stages>
@@ -50,7 +50,7 @@
     <stages>
       <li>
         <label>amazing tantrum</label>
-        <description>That tantrum was so satisfying. I got to destroy so much, I'm excited for the new start</description>
+        <description>That tantrum was so satisfying. I got to destroy so much, I'm excited for the new start.</description>
         <baseMoodEffect>30</baseMoodEffect>
       </li>
     </stages>

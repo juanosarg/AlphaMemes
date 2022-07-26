@@ -4,9 +4,9 @@
 	<PreceptDef>
 		<defName>AM_TantrumRitual</defName>
 		<label>tantrum ritual</label>
-		<description>Enoughs enough, its time to destroy this place and its bad memories</description>
+		<description>Enough's enough, it's time to destroy this place and its bad memories</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_FuneralCremation</iconPath>
+		<iconPath>UI/Rituals/AM_TantrumRitual</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_TantrumRitualPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
