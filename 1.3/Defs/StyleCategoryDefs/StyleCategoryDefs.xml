@@ -1068,133 +1068,104 @@
 				<thingDef>Dresser</thingDef>
 				<styleDef>AM_Scavenger_Dresser</styleDef>
 			</li>
-			<li>
-				<thingDef>Altar_Medium</thingDef>
-				<styleDef>AM_Neolithic_AltarMedium</styleDef>
-			</li>
-			<li>
-				<thingDef>Altar_Large</thingDef>
-				<styleDef>AM_Neolithic_AltarLarge</styleDef>
-			</li>
-			<li>
-				<thingDef>Altar_Grand</thingDef>
-				<styleDef>AM_Neolithic_AltarGrand</styleDef>
-			</li>
+			
 			<li>
 				<thingDef>SculptureSmall</thingDef>
-				<styleDef>AM_Neolithic_SculptureSmall</styleDef>
+				<styleDef>AM_Scavenger_SculptureSmall</styleDef>
 			</li>
 			<li>
 				<thingDef>SculptureLarge</thingDef>
-				<styleDef>AM_Neolithic_SculptureLarge</styleDef>
+				<styleDef>AM_Scavenger_SculptureLarge</styleDef>
 			</li>
 			<li>
 				<thingDef>SculptureGrand</thingDef>
-				<styleDef>AM_Neolithic_SculptureGrand</styleDef>
+				<styleDef>AM_Scavenger_SculptureGrand</styleDef>
 			</li>
-			<li>
-				<thingDef>TorchLamp</thingDef>
-				<styleDef>AM_Neolithic_TorchLamp</styleDef>
-			</li>
+			
 			<li>
 				<thingDef>Stool</thingDef>
-				<styleDef>AM_Neolithic_Stool</styleDef>
+				<styleDef>AM_Scavenger_Stool</styleDef>
 			</li>
 			<li>
 				<thingDef>DiningChair</thingDef>
-				<styleDef>AM_Neolithic_Chair</styleDef>
+				<styleDef>AM_Scavenger_Chair</styleDef>
 			</li>
 			<li>
 				<thingDef>Column</thingDef>
-				<styleDef>AM_Neolithic_Column</styleDef>
+				<styleDef>AM_Scavenger_Column</styleDef>
 			</li>
 			<li>
-				<thingDef>Apparel_CollarShirt</thingDef>
-				<styleDef>AM_Neolithic_Toga</styleDef>
+				<thingDef>Table1x2c</thingDef>
+				<styleDef>AM_Scavenger_Table1x2c</styleDef>
 			</li>
 			<li>
-				<thingDef>Apparel_Jacket</thingDef>
-				<styleDef>AM_Neolithic_Jacket</styleDef>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>AM_Scavenger_Table2x2c</styleDef>
 			</li>
 			<li>
-				<thingDef>Apparel_CowboyHat</thingDef>
-				<styleDef>AM_Neolithic_Hat</styleDef>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>AM_Scavenger_Table2x4c</styleDef>
 			</li>
 			<li>
-				<thingDef>Apparel_BasicShirt</thingDef>
-				<styleDef>AM_Neolithic_Shirt</styleDef>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_Scavenger_Table3x3c</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Club</thingDef>
-				<styleDef>AM_Neolithic_Club</styleDef>
+				<thingDef>ComponentIndustrial</thingDef>
+				<styleDef>AM_Scavenger_Components</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Gladius</thingDef>
-				<styleDef>AM_Neolithic_Gladius</styleDef>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_Scavenger_StandingLamp</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Ikwa</thingDef>
-				<styleDef>AM_Neolithic_Ikwa</styleDef>
+				<thingDef>StandingLamp_Red</thingDef>
+				<styleDef>AM_Scavenger_StandingLamp_Red</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Spear</thingDef>
-				<styleDef>AM_Neolithic_Spear</styleDef>
+				<thingDef>StandingLamp_Green</thingDef>
+				<styleDef>AM_Scavenger_StandingLamp_Green</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Knife</thingDef>
-				<styleDef>AM_Neolithic_Knife</styleDef>
+				<thingDef>StandingLamp_Blue</thingDef>
+				<styleDef>AM_Scavenger_StandingLamp_Blue</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_LongSword</thingDef>
-				<styleDef>AM_Neolithic_Sword</styleDef>
+				<thingDef>Darklamp</thingDef>
+				<styleDef>AM_Scavenger_DarklampStanding</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_Mace</thingDef>
-				<styleDef>AM_Neolithic_Mace</styleDef>
+				<thingDef>EndTable</thingDef>
+				<styleDef>AM_Scavenger_EndTable</styleDef>
 			</li>
 			<li>
-				<thingDef>Pila</thingDef>
-				<styleDef>AM_Neolithic_Pila</styleDef>
+				<thingDef>Cooler</thingDef>
+				<styleDef>AM_Scavenger_Cooler</styleDef>
 			</li>
 			<li>
-				<thingDef>Bow_Short</thingDef>
-				<styleDef>AM_Neolithic_Bow</styleDef>
+				<thingDef>WoodFiredGenerator</thingDef>
+				<styleDef>AM_Scavenger_WoodFiredGenerator</styleDef>
 			</li>
 			<li>
-				<thingDef>Bow_Recurve</thingDef>
-				<styleDef>AM_Neolithic_RecurveBow</styleDef>
+				<thingDef>ChemfuelPoweredGenerator</thingDef>
+				<styleDef>AM_Scavenger_ChemfuelPoweredGenerator</styleDef>
 			</li>
 			<li>
-				<thingDef>Bow_Great</thingDef>
-				<styleDef>AM_Neolithic_GreatBow</styleDef>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">
-				<thingDef>MeleeWeapon_Axe</thingDef>
-				<styleDef>AM_Neolithic_Axe</styleDef>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">
-				<thingDef>MeleeWeapon_Warhammer</thingDef>
-				<styleDef>AM_Neolithic_Hammer</styleDef>
+				<thingDef>Sandbags</thingDef>
+				<styleDef>AM_Scavenger_Sandbags</styleDef>
 			</li>
 			<li>
-				<thingDef>MeleeWeapon_BreachAxe</thingDef>
-				<styleDef>AM_Neolithic_Pickaxe</styleDef>
+				<thingDef>Wall</thingDef>
+				<styleDef>AM_Scavenger_Wall</styleDef>
 			</li>
+			
 		</thingDefStyles>
-		<addDesignatorGroups>
-			<li>AM_Floor_NeolithicTiles</li>
-		</addDesignatorGroups>
 		<addDesignators>
-			<li>AM_Megalith</li>
-			<li>AM_StoneBedroll</li>
-			<li>AM_Neolithic_StoneTable_1x2c</li>
-			<li>AM_Neolithic_StoneTable_2x2c</li>
-			<li>AM_Neolithic_StoneTable_2x4c</li>
-			<li>AM_Neolithic_StoneTable_3x3c</li>
-			<li>AM_Neolithic_WoodenTable_1x2c</li>
-			<li>AM_Neolithic_WoodenTable_2x2c</li>
-			<li>AM_Neolithic_WoodenTable_2x4c</li>
-			<li>AM_Neolithic_WoodenTable_3x3c</li>
+			<li>AM_AncientBed</li>
+			<li>AM_AncientDoubleBed</li>
+			<li>AM_AncientOperatingTable</li>
+			<li>AM_Tile_Scavenger</li>
+			<li>AM_Tile_Scavenger_Clean</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
