@@ -105,6 +105,7 @@
     <Compile Include="Rituals\FuneralFramework\Comp\CompProperties_FFContainsMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\Comp\Comp_FFContainsMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\OutcomeWorkerExtensionMethod.cs" />
+    <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_MembersCanBuild.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_InsectoidBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\CorpseFilters\RitualObligationTargetWorker_FreshCorpse.cs" />
     <Compile Include="Rituals\FuneralFramework\Utilities\FuneralFrameworkStaticStartup.cs" />
