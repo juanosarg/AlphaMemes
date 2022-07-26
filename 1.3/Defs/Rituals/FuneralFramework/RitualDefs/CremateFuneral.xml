@@ -59,7 +59,14 @@
 		<stages>
 			<li Class="RitualStage_InteractWithRole">
 				<defaultDuty>Spectate</defaultDuty>
-				<targetId>AM_RitualRoleCorpse</targetId> 
+				<targetId>AM_RitualRoleCorpse</targetId>
+				<failTriggers>
+				  <li Class="AlphaMemes.StageFailTrigger_StuffNotReachable">
+					<takerId>AM_Crafter</takerId>
+					<desc>Selected stuff is not reachable</desc>
+					<allowanceTicks>500</allowanceTicks>
+				  </li>
+				</failTriggers>				
 				<endTriggers>
 					<li Class="StageEndTrigger_RolesArrived">
 						<roleIds>

@@ -25,8 +25,10 @@ namespace AlphaMemes
         public override void ExposeData()
         {
             base.ExposeData();
-			Scribe_Collections.Look(ref thingOffset, "thingOffset", LookMode.Value, LookMode.Value);
+			Scribe_Collections.Look(ref thingOffset, "thingOffset", LookMode.Value, LookMode.Value, ref tmpThingDefs, ref tmpVec3);
 		}
         public Dictionary<ThingDef, IntVec3> thingOffset = new Dictionary<ThingDef, IntVec3>();
+		private List<ThingDef> tmpThingDefs = new List<ThingDef>();
+		private List<IntVec3> tmpVec3 = new List<IntVec3>();
 	}
 }

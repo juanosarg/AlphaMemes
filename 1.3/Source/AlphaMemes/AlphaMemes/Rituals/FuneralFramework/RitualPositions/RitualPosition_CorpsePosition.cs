@@ -46,11 +46,13 @@ namespace AlphaMemes
         public override void ExposeData()
         {
             base.ExposeData();
-			Scribe_Collections.Look(ref corpseOffset, "corpeOffset",LookMode.Value,LookMode.Value);
+			Scribe_Collections.Look(ref corpseOffset, "corpeOffset",LookMode.Value,LookMode.Value,ref tmpThingDefs,ref tmpVec3);
 			Scribe_Deep.Look(ref pawnPosition, "pawnPosition");
         }
 		public Dictionary<ThingDef,IntVec3> corpseOffset = new Dictionary<ThingDef,IntVec3>();
-        //public IntVec3 corpeOffset = IntVec3.Zero;
+		private List<ThingDef> tmpThingDefs = new List<ThingDef>();
+		private List<IntVec3> tmpVec3 = new List<IntVec3>();
+		//public IntVec3 corpeOffset = IntVec3.Zero;
 		public RitualPosition pawnPosition = null;
 	}
 

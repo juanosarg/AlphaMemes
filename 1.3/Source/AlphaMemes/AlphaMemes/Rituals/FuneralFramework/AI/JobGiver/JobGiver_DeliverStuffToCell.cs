@@ -49,7 +49,8 @@ namespace AlphaMemes
 				return null;
 			}
 
-			Thing thingToGet = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(this.def), PathEndMode.Touch, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), 9999f, (Thing x) => x.stackCount >= toTake && !x.IsForbidden(pawn) && pawn.CanReserve(x, 10, toTake, null, true), null, 0, -1, false, RegionType.Set_Passable, false);
+			Thing thingToGet = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(this.def), PathEndMode.Touch, TraverseParms.For(pawn, Danger.Deadly), 9999f, 
+				(Thing x) => x.stackCount >= toTake && pawn.CanReserve(x, 10, toTake, null, true), null, 0, -1, false, RegionType.Set_Passable, true);
 			if (!pawn.CanReach(thingToGet, PathEndMode.Touch, PawnUtility.ResolveMaxDanger(pawn, this.maxDanger)))
 			{
 				return null;
