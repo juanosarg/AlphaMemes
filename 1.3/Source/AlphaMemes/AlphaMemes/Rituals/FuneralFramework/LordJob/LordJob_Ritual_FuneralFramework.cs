@@ -22,8 +22,6 @@ namespace AlphaMemes
         {
             this.corpse = corpse;
 			this.spot = spot;
-
-
 		}
 		public LordJob_Ritual_FuneralFramework()
         {
