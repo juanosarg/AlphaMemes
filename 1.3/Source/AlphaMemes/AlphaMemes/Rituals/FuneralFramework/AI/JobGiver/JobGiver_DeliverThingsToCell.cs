@@ -49,10 +49,14 @@ namespace AlphaMemes
 			
 			if (!FuneralHaulUtility.TryFindBestBillIngredients(thingCounts, pawn, pawn.mindState.duty.focusThird.Thing, chosen))
 			{
+				lordJob_Ritual.AddTagForPawn(pawn, "Fail");
 				return null;
 			}
 			else if (chosen.Any(x => !pawn.CanReserveAndReach(x.Thing, PathEndMode.ClosestTouch, Danger.Deadly)))
+            {
+                lordJob_Ritual.AddTagForPawn(pawn, "Fail");
 				return null;
+			}				
 			else
 			{ 
 				Job job = JobMaker.MakeJob(InternalDefOf.AM_DeliverThingsToCell);

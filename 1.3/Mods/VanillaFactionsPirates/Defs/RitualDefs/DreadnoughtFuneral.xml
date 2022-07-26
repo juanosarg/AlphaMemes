@@ -63,6 +63,14 @@
 			<li Class="RitualStage_InteractWithRole">
 				<defaultDuty>Spectate</defaultDuty>
 				<targetId>AM_RitualRoleCorpse</targetId> 
+				<failTriggers>
+				  <li Class="AlphaMemes.StageFailTrigger_TagSet">
+					<roleID>AM_Crafter</roleID>
+					<tag>Fail</tag>
+					<desc>Unable to retrieve materials</desc>
+					<allowanceTicks>500</allowanceTicks>
+				  </li>
+				</failTriggers>	
 				<endTriggers>
 					<li Class="StageEndTrigger_RolesArrived">
 						<roleIds>
