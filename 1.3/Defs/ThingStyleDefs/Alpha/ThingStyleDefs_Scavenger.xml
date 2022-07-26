@@ -196,5 +196,19 @@
       <drawSize>(1,1)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Scavenger_Wall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Scavenger/Wall/AM_RustedWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Scavenger/Wall/AM_WallSmooth_MenuIcon</uiIconPath>
+	</ThingStyleDef>
 
 </Defs>

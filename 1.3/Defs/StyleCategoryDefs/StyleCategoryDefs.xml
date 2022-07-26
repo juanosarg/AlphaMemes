@@ -1154,13 +1154,18 @@
 				<thingDef>Sandbags</thingDef>
 				<styleDef>AM_Scavenger_Sandbags</styleDef>
 			</li>
+			<li>
+				<thingDef>Wall</thingDef>
+				<styleDef>AM_Scavenger_Wall</styleDef>
+			</li>
 			
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_AncientBed</li>
 			<li>AM_AncientDoubleBed</li>
 			<li>AM_AncientOperatingTable</li>
-			
+			<li>AM_Tile_Scavenger</li>
+			<li>AM_Tile_Scavenger_Clean</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
