@@ -36,8 +36,8 @@ namespace AlphaMemes
         }
         public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
         {
-            Pawn pawn = assignments.AssignedPawns(roleId).First();
-            
+            Pawn pawn = assignments.AssignedPawns(roleId).FirstOrDefault();           
+            if(pawn == null) { return null; }
             float count = pawn.GetStatValue(StatDefOf.PsychicSensitivity,true);
             if (pawn.Dead)
             {

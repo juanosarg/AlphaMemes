@@ -22,7 +22,7 @@ namespace AlphaMemes
 
         public override float Count(LordJob_Ritual ritual, RitualOutcomeComp_Data data)
         {
-            Pawn pawn = ritual.assignments.AssignedPawns(roleId).First();
+            Pawn pawn = ritual.assignments.AssignedPawns(roleId).FirstOrDefault();
             if (pawn != null)
             {
                 return pawn.skills.GetSkill(skill).Level;
@@ -31,7 +31,12 @@ namespace AlphaMemes
         }
         public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
         {
-            int count = assignments.AssignedPawns(roleId).First().skills.GetSkill(skill).Level;
+            Pawn pawn;
+            if ((pawn = assignments.AssignedPawns(roleId).FirstOrDefault()) == null)
+            {
+                return null;
+            }
+            int count = pawn.skills.GetSkill(skill).Level;
             float quality = this.curve.Evaluate((float)count);
             return new ExpectedOutcomeDesc
             {
