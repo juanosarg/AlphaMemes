@@ -426,4 +426,41 @@
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_ScavengerDescription</defName>
+		<segments>
+			<li>scavengerlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_scavengerlessonIntro] [r_lesson]. [r_lessonReinforcement]"</li>
+				
+				<!-- generic intro -->
+				<li>scavengerlessonIntro->The ruins of ancient civilizations were ripe for the taking. This taught us that</li>
+				<li>scavengerlessonIntro->Our leader taught us how to convert useless scrap into wondrous creations, reminding us that</li>
+				<li>scavengerlessonIntro->The whole planet was poor in resources, so we had to adapt, and use whatever scraps of ancient technology were lying around. Strife taught us one thing:</li>				
+				<li>scavengerlessonIntro->The foolish ambition and carelessness of those who came before made us understand that</li>
+				<li>scavengerlessonIntro->We were content with our simple lives of scavenging, with little need for the extravagant luxuries of our ancestors. Our fight for survival was showing us that</li>
+				<li>scavengerlessonIntro->The wilderness around our settlement was devoid of natural resources, but we were confident in the knowledge that</li>
+				<li>scavengerlessonIntro->Of course, we had seen the grotesque ruins of those who came before, and we quickly raided them for scrap. By seeing their ruins we are emboldened in our knowledge that</li>
+				<li>scavengerlessonIntro->Only those who can repurpose the ancient technology of those who came before will survive: those who are able to exploit their knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->In the end, we will adapt and survive, like we've always done.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
 </Defs>

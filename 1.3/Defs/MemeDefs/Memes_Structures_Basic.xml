@@ -647,4 +647,59 @@
 			</li>
 		</requireOne>
 	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Scavenger</defName>
+		<label>scavenger</label>
+		<description>The refuse and discarded ancient technology of past civilizations can be easily recycled and repurposed. Why would be toil endlessly to create things from scratch, when we can make use of what is already there?</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Scavenger</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>scrap yard</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+								
+				<li>memeAdjective->scrapping</li>
+				<li>memeAdjective->scavenging</li>
+				<li>memeAdjective->scrounging</li>
+				<li>memeHyphenPrefix->scrap</li>
+				<li>memeHyphenPrefix->junk</li>
+				<li>memeConcept->scrap</li>
+				<li>memeLeaderNoun->scavenger</li>
+				<li>memeLeaderNoun->scrapper</li>
+				<li>memeLeaderNoun->scrounger</li>
+				<li>memeMoralist->junk rat</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_ScavengerDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_scavenger</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>scavengers</theme>
+				<adjective>scavenging</adjective>
+				<member>scavenger</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Scavenger</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		
+	</MemeDef>
 </Defs>

@@ -15,6 +15,7 @@
 					<AM_Structure_SteampunkRevival MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_SteampunkRevival>
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 					
 				</structureMemeWeights>
 			</value>
@@ -30,6 +31,7 @@
 					<AM_Structure_SteampunkRevival MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_SteampunkRevival>
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
@@ -55,6 +57,7 @@
 					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>				
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">3</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 				</structureMemeWeights>
 			</value>
 		</nomatch>
@@ -68,6 +71,7 @@
 					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>				
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">3</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
@@ -110,6 +114,7 @@
 				<structureMemeWeights>
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">2</AM_Structure_Scavenger>
 				</structureMemeWeights>
 			</value>
 		</nomatch>
@@ -118,6 +123,7 @@
 			<value>
 				<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">2</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
