@@ -81,7 +81,7 @@ namespace AlphaMemes
             base.PostExposeData();
             Scribe_Collections.Look(ref pawnNameDateDeath, "pawnNameDateDeath", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref innerPawns,true, "innerPawns",LookMode.Reference);
-            if (innerCorpses.Any(x => x.Destroyed)) 
+            if (innerCorpses?.Any(x => x.Destroyed) ?? false) 
             {
                 innerCorpses.RemoveAll(x => x.Destroyed);
             }
