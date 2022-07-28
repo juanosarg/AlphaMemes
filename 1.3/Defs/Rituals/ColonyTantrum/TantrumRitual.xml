@@ -22,13 +22,14 @@
 		<roles/>
 		<spectatorsLabel>Participants</spectatorsLabel>
 		<spectatorGerund>participate</spectatorGerund>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_Tantrum</workerClass>
 		<stages>
 			<li>
 				<defaultDuty>Spectate</defaultDuty>
 				<essential>true</essential>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
-					<percentage>0.1</percentage>
+					<percentage>0.05</percentage>
 				  </li>
 				</endTriggers>
 				<postAction Class="RitualStageAction_Message">
@@ -40,7 +41,7 @@
 				<defaultDuty>AM_TrantrumDuty</defaultDuty>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
-					<percentage>0.90</percentage>
+					<percentage>0.95</percentage>
 				  </li>
 				</endTriggers>		
 			</li>
@@ -95,7 +96,7 @@
 			<li>(0.01,  0.0)</li>
 			<li>(0.05,  0.2)</li>
 			<li>(0.10,  0.50)</li>
-			<li>(0.20,  1)</li>
+			<li>(0.40,  1)</li> <!--20% was too easy-->
 		  </points>
 		</curve>
 	</li>

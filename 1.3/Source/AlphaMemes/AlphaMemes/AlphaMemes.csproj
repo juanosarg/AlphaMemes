@@ -202,6 +202,7 @@
     <Compile Include="Rituals\Scrapper\RitualTargetFilter_AltarNotPawn.cs" />
     <Compile Include="Rituals\Tantrum\JobDriver_RitualTantrum.cs" />
     <Compile Include="Rituals\Tantrum\JobGiver_RitualTantrum.cs" />
+    <Compile Include="Rituals\Tantrum\RitualBehaviorWorker_Tantrum.cs" />
     <Compile Include="Rituals\Tantrum\RitualOutcomeComp_Tantrum.cs" />
     <Compile Include="Rituals\Tantrum\RitualOutcomeComp_TantrumData.cs" />
     <Compile Include="Rituals\Tantrum\RitualOutcomeEffectWorker_Tantrum.cs" />
