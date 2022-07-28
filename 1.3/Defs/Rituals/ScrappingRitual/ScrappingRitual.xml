@@ -136,7 +136,7 @@
      </li>
 	 <li Class="AlphaMemes.RitualOutcomeComp_Crafter">
 		<roleId>AM_Crafter</roleId>
-		<label>crafter</label>
+		<label>Scapper</label>
 		<skill>Crafting</skill>
 		<curve>
 		  <points>

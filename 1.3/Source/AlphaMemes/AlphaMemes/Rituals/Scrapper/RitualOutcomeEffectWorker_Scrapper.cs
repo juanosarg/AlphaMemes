@@ -36,6 +36,7 @@ namespace AlphaMemes
             {
                 Thing components = ThingMaker.MakeThing(ThingDefOf.ComponentIndustrial);
                 components.stackCount = numComps;
+                components.StyleDef = DefDatabase<ThingStyleDef>.GetNamed("AM_Scavenger_Components");
                 GenSpawn.Spawn(components, jobRitual.selectedTarget.Cell, jobRitual.Map);
                 comps = "AM_ScrapperComponentCount".Translate(numComps.ToString());
                 if (scrap.def.techLevel == TechLevel.Ultra || Rand.Bool)
