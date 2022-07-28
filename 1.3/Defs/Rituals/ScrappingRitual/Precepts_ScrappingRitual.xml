@@ -4,9 +4,9 @@
 	<PreceptDef>
 		<defName>AM_ScrapRitual</defName>
 		<label>scrapping ritual</label>
-		<description>We've aquired some advanced tech. We should break it down to learn more about it!</description>
+		<description>We've acquired some advanced tech. We should break it down to learn more about it!</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_TantrumRitual</iconPath>
+		<iconPath>UI/Rituals/AM_ScrapperRitual</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_ScrapRitualPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>

@@ -98,28 +98,28 @@
         <label>Terrible</label>
         <chance>0.15</chance>
         <memory>TerribleFestival</memory>
-        <description>The {0} was terrible. We've learned almost nothing and all the tech was wasted</description>
+        <description>The {0} was terrible. We've learned almost nothing and all the tech was wasted.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>
         <label>LackLuster</label>
         <chance>0.20</chance>
         <memory>BoringFestival</memory>
-        <description>The {0} was mediocre. There was a great deal of waste in the deconstruction process and little was learned</description>
+        <description>The {0} was mediocre. There was a great deal of waste in the deconstruction process and little was learned.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Good</label>
         <chance>0.50</chance>
         <memory>FunFestival</memory>
-        <description>We succesfully extracted both matierals and a great deal of knowledge from {0}</description>
+        <description>We succesfully extracted both materials and a great deal of knowledge from {0}.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
         <label>Amazing</label>
         <chance>0.15</chance>
         <memory>UnforgettableFestival</memory>
-        <description>The {0} was Spectaular. It has progressed our knowledge forward, and a great deal of useable salvage was recovered</description>
+        <description>The {0} was spectacular. It has progressed our knowledge forward, and a great deal of useable salvage was recovered.</description>
         <positivityIndex>2</positivityIndex>
       </li>
     </outcomeChances>
