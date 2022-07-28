@@ -187,15 +187,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef>
-		<overrideLabel>razor wire</overrideLabel>
-		<defName>AM_Scavenger_Sandbags</defName>
-		<graphicData>
-			<texPath>Things/Building/Ruins/AncientRazorWire</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1,1)</drawSize>
-		</graphicData>
-	</ThingStyleDef>
+	
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Scavenger_Wall</defName>
 		<graphicData>

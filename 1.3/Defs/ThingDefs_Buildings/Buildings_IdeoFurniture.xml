@@ -76,6 +76,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>EndTable</li>
+		  <li>AM_AncientLockerBank</li>
           <li>Dresser</li>
           <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
         </linkableFacilities>
@@ -132,6 +133,7 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
+		  <li>AM_AncientLockerBank</li>
           <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
         </linkableFacilities>
       </li>
@@ -232,6 +234,160 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <techLevel>Industrial</techLevel>
     <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>AM_AncientRazorwire</defName>
+    <label>ancient razor wire</label>
+    <description>A piece of ancient razor wire. It has been restored to be useable. Less efficient as cover than a barricade, but easier and less costly to build.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientRazorWire</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+   <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>42</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+   
+    <fillPercent>0.45</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>-3</Beauty>
+      <WorkToBuild>250</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+     
+    </building>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Metallic</li>
+    
+    </stuffCategories>
+    <costStuffCount>3</costStuffCount>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Security</designationCategory>
+   
+    <designationHotKey>Misc1</designationHotKey>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_AncientFence</defName>
+    <label>restored ancient fence</label>
+    <description>An ancient fence made of reinforced concrete posts joined by concrete panels.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/AncientFence/AM_AncientFence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <shadowData>
+        <volume>(1, 0.5, 0.45)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>70</WorkToBuild>
+    </statBases>
+	<uiIconPath>Things/Building/BuildingStyles/Scavenger/AncientFence/AM_AncientFence_Icon</uiIconPath>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.55</fillPercent>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fertility>0</fertility>
+	 <costStuffCount>2</costStuffCount>
+	  <stuffCategories>
+      <li>Metallic</li>
+     
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+	 <placingDraggableDimensions>1</placingDraggableDimensions>
+	 <designationCategory>Security</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>AM_AncientLockerBank</defName>
+    <label>ancient locker bank</label>
+    <description>An ancient, rusted bank of lockers. These have been restored to be at least partially functional. Gives a small comfort bonus to all nearby restored ancient beds. Placing more than one locker bank near the same ancient bed has no effect.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientLockerBank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.85, 1)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>125</costStuffCount>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>15</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+     
+    </statBases>
+    <size>(3, 1)</size>
+
+    <designationHotKey>Misc12</designationHotKey>
+  
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.025</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>10</maxDistance>
+      </li>
+    </comps>
   </ThingDef>
   
   

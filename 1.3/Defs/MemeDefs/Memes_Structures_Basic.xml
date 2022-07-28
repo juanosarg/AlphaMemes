@@ -650,7 +650,7 @@
 	<MemeDef>
 		<defName>AM_Structure_Scavenger</defName>
 		<label>scavenger</label>
-		<description>The refuse and discarded ancient technology of past civilizations can be easily recycled and repurposed. Why would be toil endlessly to create things from scratch, when we can make use of what is already there?</description>
+		<description>The refuse and discarded ancient technology of past civilizations can be easily recycled and repurposed. Why would be toil endlessly to create things from scratch, when we can make use of what is already there?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This structure (and associated style) make the Scrapper meme easier to use, allowing the player to just build things that count for the Scrapper meme.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_Scavenger</iconPath>
 		<impact>0</impact>

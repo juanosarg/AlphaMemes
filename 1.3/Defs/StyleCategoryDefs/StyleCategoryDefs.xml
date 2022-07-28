@@ -1150,10 +1150,7 @@
 				<thingDef>ChemfuelPoweredGenerator</thingDef>
 				<styleDef>AM_Scavenger_ChemfuelPoweredGenerator</styleDef>
 			</li>
-			<li>
-				<thingDef>Sandbags</thingDef>
-				<styleDef>AM_Scavenger_Sandbags</styleDef>
-			</li>
+			
 			<li>
 				<thingDef>Wall</thingDef>
 				<styleDef>AM_Scavenger_Wall</styleDef>
@@ -1271,6 +1268,8 @@
 			<li>AM_AncientOperatingTable</li>
 			<li>AM_Tile_Scavenger</li>
 			<li>AM_Tile_Scavenger_Clean</li>
+			<li>AM_AncientRazorwire</li>
+			<li>AM_AncientFence</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
