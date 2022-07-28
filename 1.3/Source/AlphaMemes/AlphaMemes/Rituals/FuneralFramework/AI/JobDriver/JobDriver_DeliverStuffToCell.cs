@@ -51,10 +51,5 @@ namespace AlphaMemes
 		}
 
 
-
-		private const TargetIndex StuffIndex = TargetIndex.A;
-
-		
-		private const TargetIndex TargetCellIndex = TargetIndex.B;
 	}
 }

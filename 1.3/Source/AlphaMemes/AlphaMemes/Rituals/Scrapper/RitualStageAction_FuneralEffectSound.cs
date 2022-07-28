@@ -11,13 +11,13 @@ using RimWorld;
 namespace AlphaMemes
 {
 	//Action to add a sound and effect to the behavior
-	public class RitualStageAction_FuneralEffectSound : RitualStageAction
+	public class RitualStageAction_ScrapperEffectSound : RitualStageAction
 	{
 
 		public override void Apply(LordJob_Ritual ritual)
 		{
 			//Start Sound
-			this.behavior = (RitualBehaviorWorker_FuneralFramework)ritual.Ritual.behavior;
+			this.behavior = (RitualBehaviorWorker_Scrapper)ritual.Ritual.behavior;
 			Sustainer sustainer = behavior.SoundPlaying;
 			selectedtarget = ritual.selectedTarget;
 			if (sustainer == null)
@@ -72,7 +72,7 @@ namespace AlphaMemes
 			Scribe_Values.Look(ref targetRitual, "targetRitual");
 		}
 		private TargetInfo selectedtarget;
-		private RitualBehaviorWorker_FuneralFramework behavior;
+		private RitualBehaviorWorker_Scrapper behavior;
 		public SoundDef sound;
 		public bool targetRitual = true;
 		public string roleID;

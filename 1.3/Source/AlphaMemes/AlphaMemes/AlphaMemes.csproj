@@ -194,6 +194,12 @@
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFramework.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
+    <Compile Include="Rituals\Scrapper\JobGiver_DeliverThingsToCell.cs" />
+    <Compile Include="Rituals\Scrapper\RitualBehaviorWorker_Scrapper.cs" />
+    <Compile Include="Rituals\Scrapper\RitualObligationTargetWorker_HighTechThing.cs" />
+    <Compile Include="Rituals\Scrapper\RitualOutcomeEffectWorker_Scrapper.cs" />
+    <Compile Include="Rituals\Scrapper\RitualStageAction_FuneralEffectSound.cs" />
+    <Compile Include="Rituals\Scrapper\RitualTargetFilter_AltarNotPawn.cs" />
     <Compile Include="Rituals\Tantrum\JobDriver_RitualTantrum.cs" />
     <Compile Include="Rituals\Tantrum\JobGiver_RitualTantrum.cs" />
     <Compile Include="Rituals\Tantrum\RitualOutcomeComp_Tantrum.cs" />

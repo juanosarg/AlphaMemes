@@ -72,6 +72,10 @@
 	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>	
 	<AM_TantrumDestoryed>All told we have destoryed {1} worth of buildings \n\n We destroyed: {0}</AM_TantrumDestoryed>
 	<AM_TantrumOutcomeComp>Wealth Destroyed</AM_TantrumOutcomeComp>
+	<AM_ScrapperHighTechThing>A valuable, hightech piece of technology that we can haul</AM_ScrapperHighTechThing>	
+	<AM_ScrapperRitualOutcome>We have salvaged {0} {1} {2}.</AM_ScrapperRitualOutcome>
+	<AM_ScrapperComponentCount>resulting in {0} components</AM_ScrapperComponentCount>
+	<AM_ScrapperAdvComponentCount>and {0} advanced components</AM_ScrapperAdvComponentCount>
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
