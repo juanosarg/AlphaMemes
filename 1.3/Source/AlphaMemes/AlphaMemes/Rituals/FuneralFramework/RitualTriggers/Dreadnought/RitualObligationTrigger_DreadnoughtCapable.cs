@@ -13,6 +13,10 @@ namespace AlphaMemes
         public override void Notify_MemberDied(Pawn p)
         {
             //Dont create obligation if no research or brain was destroyed
+            if ((this.mustBePlayerIdeo && !Faction.OfPlayer.ideos.Has(this.ritual.ideo)) || (p.HomeFaction != Faction.OfPlayer && !p.IsSlave) || !p.IsFreeColonist || p.IsKidnapped())
+            {
+                return;
+            }
             if (p.health.hediffSet.GetBrain() == null)
             {
                 Messages.Message("Funeral_DreadnoughtBrainGoneMessage".Translate(p.NameShortColored.Named("PAWN"),ritual.Label.Named("RITUAL")),MessageTypeDefOf.NeutralEvent);//Trying to convey why obligation was not created

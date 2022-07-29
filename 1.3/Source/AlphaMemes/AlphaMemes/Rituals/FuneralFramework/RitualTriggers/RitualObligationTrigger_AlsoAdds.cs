@@ -43,7 +43,7 @@ namespace AlphaMemes
             };
             if (UseAlternate(p, obligation))
             {
-                if (otherRitTrigger != null)
+                if ( otherRitTrigger != null)
                 {
                     otherRitTrigger.Notify_MemberDied(p);
                     if (!tryAddBoth) { return; }
