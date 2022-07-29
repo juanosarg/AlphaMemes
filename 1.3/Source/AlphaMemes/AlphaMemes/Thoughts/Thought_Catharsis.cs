@@ -23,7 +23,7 @@ namespace AlphaMemes
         {
             get
             {
-                if (this.pawn.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true)
+                if (this.pawn?.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true) //Pawn could be null depending on how the memory is created. TryGainMemory assigned the this.Pawn. So VTE was causing a call to it before pawn could be assigned
                 {
                     return 1;
                 }
@@ -37,7 +37,7 @@ namespace AlphaMemes
             if (!appliedOnce)
             {
 
-                if (this.pawn.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true)
+                if (this.pawn?.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true)
                 {
                     this.pawn.health.AddHediff(InternalDefOf.AM_CatharsisHediff);
                     pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.AM_CatharsisHediff, false).Severity += 1;
