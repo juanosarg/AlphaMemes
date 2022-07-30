@@ -10,6 +10,11 @@
 		<ritualExplanation>We'll tear apart this technology and make good use of it</ritualExplanation>
 		<ritualObligationTargetFilter>AM_ScrapperObligationTargetFilter</ritualObligationTargetFilter>
 		<ritualBehavior>AM_ScrapRitualBehavior</ritualBehavior>
+		<ritualObligationTriggers>
+		  <li Class="RitualObligationTrigger_DateProperties">
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
 		<canStartAnytime>true</canStartAnytime>
 		<alwaysStartAnytime>false</alwaysStartAnytime>
 		<ritualOutcomeEffect>AM_ScrapRitualOutcome</ritualOutcomeEffect>
