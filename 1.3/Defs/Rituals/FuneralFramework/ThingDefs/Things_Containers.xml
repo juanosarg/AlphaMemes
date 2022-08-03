@@ -133,6 +133,7 @@
 			<transformLabel>Mummified {CORPSE} ({QUALITY})</transformLabel>
 			<inspectString>Is the last remains of {CORPSE}</inspectString>
 			<descriptionMaker>AM_ArtDescription_Mummy</descriptionMaker>
+			<destroyOnOpen>true</destroyOnOpen>
 	  </li>
 	  <li Class="CompProperties_MeditationFocus">
 			<statDef>MeditationFocusStrength</statDef>

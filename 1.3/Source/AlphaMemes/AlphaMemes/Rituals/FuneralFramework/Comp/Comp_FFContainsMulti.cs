@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Verse;
 using RimWorld;
-using System.Threading.Tasks;
+using UnityEngine;
 
 namespace AlphaMemes
 { 
@@ -36,6 +36,18 @@ namespace AlphaMemes
         {
             get { return innerPawns.Count < Props.maxCorpse; }
         }
+        public override void RemoveCorpse(Corpse corpse)
+        {
+            base.RemoveCorpse(corpse);
+            innerCorpses.Remove(corpse);
+            innerPawns.Remove(corpse.InnerPawn);
+            var key = corpse.InnerPawn.NameFullColored.CapitalizeFirst();//Why did I do it like this...Stupid me
+            if (pawnNameDateDeath.ContainsKey(key))
+            {
+                pawnNameDateDeath.Remove(key);
+            }
+
+        }
         public override string CompInspectStringExtra()
         {
             if (!Active || Props.inspectString == null)
@@ -46,10 +58,49 @@ namespace AlphaMemes
             
             return Props.inspectString.Formatted(corpses.Named("CORPSES"));
         }
+        public override void CompTickRare()
+        {
+            if (Active)
+            {
+                foreach (var corpse in innerCorpses)
+                {
+                    if (!corpse.Destroyed)
+                    {
+                        var compRot = corpse.GetComp<CompRottable>();
+                        compRot.CompTickRare();
+                    }
+                }
+            }
 
+        }
         public override string TransformLabel(string label)
         {
             return base.TransformLabel(label);
+        }
+        public override bool CanOpen => innerCorpses.Any(x=>!x.Destroyed);
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            if (CanOpen && Prefs.DevMode)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DesignatorOpen".Translate(),
+                    defaultDesc = "AM_CorpseContainerOpen".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/Designators/Open", true),
+                    action = () =>
+                    {
+                        var options = new List<FloatMenuOption>();
+                        foreach (var corpse in innerCorpses)
+                        {
+                            if (!corpse.Destroyed)
+                            {
+                                options.Add(new FloatMenuOption(corpse.InnerPawn.NameFullColored, () => RemoveCorpse(corpse)));
+                            }
+                        }
+                        Find.WindowStack.Add(new FloatMenu(options));
+                    }
+                };
+            }
         }
         public override void InitComp_CorpseContainer(Corpse corpse)
         {

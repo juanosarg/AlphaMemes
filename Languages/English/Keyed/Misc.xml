@@ -63,6 +63,8 @@
 	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
 	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>
 	<Funeral_CorpseContainerFull>{0} is full</Funeral_CorpseContainerFull>
+	<AM_CorpseContainerOpen>This is not reversible! Once the body is out they can not be put back in</AM_CorpseContainerOpen>
+	<AM_CorpseContainerFailedToEject>Unable to remove corpse; try moving thing if possible</AM_CorpseContainerFailedToEject>
 	<Funeral_FreshCorpse>Corpse can't be rotted</Funeral_FreshCorpse>
 	<Funeral_CorpseNotFresh>{CORPSE} is no longer fresh, they can't be used</Funeral_CorpseNotFresh>
 	<AM_InsectBurialInsectBorn>The insects have made quick work of {CORPSE}'s nutrients! {INSECT} has hatched</AM_InsectBurialInsectBorn>

@@ -15,7 +15,8 @@ namespace AlphaMemes
         public string transformLabel = null;
         public string inspectString = null;
         public RulePackDef descriptionMaker;
-
+        public int ticksToOpen = 300;
+        public bool destroyOnOpen = false;
         public CompProperties_CorpseContainer()
         {
             this.compClass = typeof(Comp_CorpseContainer);
