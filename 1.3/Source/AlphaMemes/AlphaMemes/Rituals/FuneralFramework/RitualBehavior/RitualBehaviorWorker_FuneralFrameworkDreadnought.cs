@@ -134,8 +134,16 @@ namespace AlphaMemes
                 }
             }
 
-        }   
-
+        }
+        public override string CanStartRitualNow(TargetInfo target, Precept_Ritual ritual, Pawn selectedPawn = null, Dictionary<string, Pawn> forcedForRole = null)
+        {
+            ResearchProjectDef research = FuneralFrameWork_StaticStartup.VFEP_SpacerWarcaskets;
+            if (!research?.IsFinished ?? true)
+            {
+                return "Funeral_ResearchNotCompleted".Translate(research.label);
+            }
+            return base.CanStartRitualNow(target, ritual, selectedPawn, forcedForRole);
+        }
         public override void Cleanup(LordJob_Ritual ritual)
         {
             base.Cleanup(ritual);

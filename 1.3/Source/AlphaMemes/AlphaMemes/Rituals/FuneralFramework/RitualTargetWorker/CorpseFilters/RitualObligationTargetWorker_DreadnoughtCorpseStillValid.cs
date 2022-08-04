@@ -34,11 +34,6 @@ namespace AlphaMemes
             {
                 return lastResult = "Funeral_DreadnoughtBrainGone".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }
-            ResearchProjectDef research = FuneralFrameWork_StaticStartup.VFEP_SpacerWarcaskets;
-            if (!research?.IsFinished ?? true)
-            {
-                return lastResult = "Funeral_ResearchNotCompleted".Translate(research.label);
-            }
 
             return lastResult = true;
 		}
