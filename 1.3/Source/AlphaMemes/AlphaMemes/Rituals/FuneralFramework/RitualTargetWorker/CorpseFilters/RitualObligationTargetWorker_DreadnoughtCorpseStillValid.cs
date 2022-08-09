@@ -15,10 +15,11 @@ namespace AlphaMemes
         }
         public override RitualTargetUseReport CanUseTarget(TargetInfo target, RitualObligation obligation)
         {
+            if (obligation?.targetA == TargetInfo.Invalid){ return false; }
             if (Find.TickManager.TicksGame < checkTick)
             {                
                 return lastResult;
-            }
+            }            
             checkTick = Find.TickManager.TicksGame + 600;//None of this is changing very often
             //Not desiccated, has brain, has research
             if (obligation?.targetA.Thing.ParentHolder is Building_CryptosleepCasket)
@@ -30,7 +31,7 @@ namespace AlphaMemes
             {
                 return lastResult = "Funeral_DreadnoughtDessicated".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }
-            if(corpse.InnerPawn.health.hediffSet.GetBrain() == null)
+            if(corpse.InnerPawn?.health?.hediffSet?.GetBrain() == null)
             {
                 return lastResult = "Funeral_DreadnoughtBrainGone".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
             }

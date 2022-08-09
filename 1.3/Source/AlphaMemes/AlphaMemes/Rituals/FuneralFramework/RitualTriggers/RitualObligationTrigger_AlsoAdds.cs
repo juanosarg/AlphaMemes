@@ -86,7 +86,7 @@ namespace AlphaMemes
         //Copied from base MemberDied
         public virtual bool ShouldTrigger(Pawn p)
         {
-            if ((this.mustBePlayerIdeo && !Faction.OfPlayer.ideos.Has(this.ritual.ideo)) || (p.HomeFaction != Faction.OfPlayer && !p.IsSlave) || !p.IsFreeColonist || p.IsKidnapped()) 
+            if ((!Faction.OfPlayer.ideos.Has(this.ritual.ideo)) || (p.HomeFaction != Faction.OfPlayer && !p.IsSlave) || !p.IsFreeColonist || p.IsKidnapped()) 
             {
                 return false;
             }

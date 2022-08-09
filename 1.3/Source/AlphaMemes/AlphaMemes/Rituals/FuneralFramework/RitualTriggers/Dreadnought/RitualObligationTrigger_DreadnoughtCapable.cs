@@ -13,7 +13,7 @@ namespace AlphaMemes
         public override void Notify_MemberDied(Pawn p)
         {
             //Dont create obligation if no research or brain was destroyed
-            if ((this.mustBePlayerIdeo && !Faction.OfPlayer.ideos.Has(this.ritual.ideo)) || (p.HomeFaction != Faction.OfPlayer && !p.IsSlave) || !p.IsFreeColonist || p.IsKidnapped())
+            if ((!Faction.OfPlayer.ideos.Has(this.ritual.ideo)) || (p.HomeFaction != Faction.OfPlayer && !p.IsSlave) || !p.IsFreeColonist || p.IsKidnapped())
             {
                 return;
             }

@@ -133,7 +133,7 @@ namespace AlphaMemes
             //Same as harmony patch use obligation as that basically saved our criteria for animals so no need to recheck everything
             foreach (RitualObligation obligation in ritual.activeObligations)
             {
-                Corpse corpse = (Corpse)obligation.targetA.Thing;
+                Corpse corpse = obligation.targetA.Thing as Corpse;
                 if (corpse != null && !corpse.Destroyed)
                 {
                     if (corpse.ParentHolder as Building_Casket == null)//Can be buried is a lie
