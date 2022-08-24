@@ -310,6 +310,31 @@
 		</costList>
 	</TerrainDef>
 
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Futuristic_Kemetic</defName>
+		<label>futuristic kemetic tile</label>
+		<description>Fine steel plates with a hexagonal pattern for that ultra-technological look.</description>
+		<texturePath>Terrain/Surfaces/AM_FutureKemeticFloor</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<Steel>12</Steel>
+		</costList>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
 	<!-- Steampunk -->
 
 	<DesignatorDropdownGroupDef>

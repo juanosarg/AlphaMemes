@@ -403,6 +403,11 @@
 			<li>AM_Sphynx</li>
 			<li>AM_KemeticSlab_Medium</li>
 			<li>AM_KemeticSlab_Broad</li>
+			<li>AM_Tile_Futuristic_Kemetic</li>
+			<li>AM_FuturisticPyramid</li>
+			<li>AM_FuturisticObelisk</li>
+			<li>AM_FuturisticStele</li>
+			<li>AM_GrandGate</li>
 		</addDesignators>
 		<addDesignatorGroups>
 			<li>AM_Floor_KemeticTiles</li>
