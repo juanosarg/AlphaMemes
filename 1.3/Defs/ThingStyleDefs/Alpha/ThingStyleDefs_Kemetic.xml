@@ -697,6 +697,14 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Recon</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 
 </Defs>

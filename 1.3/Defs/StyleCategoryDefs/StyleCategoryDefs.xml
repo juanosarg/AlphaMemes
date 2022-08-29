@@ -396,6 +396,10 @@
 				<thingDef>Apparel_HatTop</thingDef>
 				<styleDef>AM_Kemetic_TopHat</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_ArmorRecon</thingDef>
+				<styleDef>AM_Kemetic_Recon</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
