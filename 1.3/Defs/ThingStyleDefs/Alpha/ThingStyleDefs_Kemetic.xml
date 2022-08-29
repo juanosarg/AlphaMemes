@@ -705,6 +705,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Plate</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/Plate/AM_KemeticPlate</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/Plate/AM_KemeticPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 
 </Defs>
