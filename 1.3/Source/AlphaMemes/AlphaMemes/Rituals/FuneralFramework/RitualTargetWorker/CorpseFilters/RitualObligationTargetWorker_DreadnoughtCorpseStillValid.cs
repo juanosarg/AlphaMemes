@@ -16,11 +16,12 @@ namespace AlphaMemes
         public override RitualTargetUseReport CanUseTarget(TargetInfo target, RitualObligation obligation)
         {
             if (obligation?.targetA == TargetInfo.Invalid){ return false; }
-            if (Find.TickManager.TicksGame < checkTick)
+            if (Find.TickManager.TicksGame < checkTick && cachedObli == obligation)
             {                
                 return lastResult;
             }            
             checkTick = Find.TickManager.TicksGame + 600;//None of this is changing very often
+            cachedObli = obligation;
             //Not desiccated, has brain, has research
             if (obligation?.targetA.Thing.ParentHolder is Building_CryptosleepCasket)
             {
@@ -50,6 +51,6 @@ namespace AlphaMemes
 
         public int checkTick;
         public RitualTargetUseReport lastResult;
-
+        private RitualObligation cachedObli;
     }
 }
