@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  
+  
+
+  <!--Copied from AA as there's no red slime filth, just a gas-->
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>AM_Filth_OcularGoo</defName>
+    <label>ocular goo</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(196, 71, 50, 170)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+  
+    
+
+
+
+</Defs>

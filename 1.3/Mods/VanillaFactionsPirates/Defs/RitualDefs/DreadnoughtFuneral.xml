@@ -51,7 +51,7 @@
 			<countsAsParticipant>False</countsAsParticipant>
 		  </li>
 		  <li Class="RitualRoleColonist">
-			<label>Apothecary</label>
+			<label>apothecary (any colonist)</label>
 			<id>AM_Crafter</id>        
 			<maxCount>1</maxCount>
 			<allowOtherIdeos>false</allowOtherIdeos>

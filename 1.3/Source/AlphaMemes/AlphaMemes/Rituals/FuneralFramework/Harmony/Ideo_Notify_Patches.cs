@@ -43,20 +43,8 @@ namespace AlphaMemes
             //Ideo Notify_memberlost does nothing but trigger obligation triggers by itself So should be safe
             public static bool Prefix(Ideo __instance, Pawn member)
             {
-                //I was going to blame sleepy brain, but I never would've thought of this. Good thing I was testing VOE with classic mode.
-                //Classic mode adds vanilla funeral, which has my extension. But classic mode means no universal nocorpse.
                 if (Find.IdeoManager.classicMode) { return true;}
-                List<Precept_Ritual> rituals = __instance.GetAllPreceptsOfType<Precept_Ritual>().ToList();
-                if (rituals.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).Any(x => x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral))
-                {
-                    var noCorpse = rituals.FirstOrDefault(x => x.def.defName == "AM_FuneralNoCorpse");
-                    if (noCorpse != null)
-                    {
-                        noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
-                        return false;
-                    }
 
-                }
                 LordJob_Ritual_FuneralFramework lordJob = null;
                 Map map = Find.CurrentMap;
                 if(map == null) { return true; }//Turns out this can get called when map doesnt exist yet. At least character editor did it while loading a saved pawn...
@@ -68,6 +56,17 @@ namespace AlphaMemes
                     {
                         return false;
                     }
+                }
+                List<Precept_Ritual> rituals = __instance.GetAllPreceptsOfType<Precept_Ritual>().ToList();
+                if (rituals.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).Any(x => x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral))
+                {
+                    var noCorpse = rituals.FirstOrDefault(x => x.def.defName == "AM_FuneralNoCorpse");
+                    if (noCorpse != null)
+                    {
+                        noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
+                        return false;
+                    }
+
                 }
                 return true;
             }

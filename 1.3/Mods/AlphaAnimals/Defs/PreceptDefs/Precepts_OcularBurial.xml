@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_OcularFuneral</defName>
+		<label>ocular funeral</label>
+		<description>A gathering to witness the deceased be offered to the ocular lands!</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_OcularFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<associatedMemes> 
+			<li>AA_BiologicalCorruptors</li>
+		</associatedMemes> 
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>		
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be offered to the ocular lands, so it may reward us with wonderous creatures</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>10</_weighting>
+			<associatedMemes>
+				<li>
+					<key>AA_BiologicalCorruptors</key>
+					<value>100</value>
+				</li>
+			</associatedMemes>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>
+		</li>
+		</modExtensions>		
+	</PreceptDef>
+</Defs>

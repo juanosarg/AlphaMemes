@@ -116,7 +116,8 @@ namespace AlphaMemes
 		public static JobDef AM_DeliverStuffToCell;		
 		public static JobDef AM_LoadCorpseToThing;
 		public static JobDef AM_DeliverThingsToCell;
-		public static ThingDef AM_MummyMale;
+     
+        public static ThingDef AM_MummyMale;
 		public static ThingDef AM_MummyFemale;
 		//Silly Ritual
 		public static JobDef AM_TrantrumJob;
