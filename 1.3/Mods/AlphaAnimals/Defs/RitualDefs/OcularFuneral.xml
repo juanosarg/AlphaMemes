@@ -13,7 +13,7 @@
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
 		  </li>
 		</ritualObligationTriggers>
-		<ritualObligationTargetFilter>GatheringSpotOrAltar</ritualObligationTargetFilter>
+		<ritualObligationTargetFilter>AM_GauranlenOrAltar</ritualObligationTargetFilter>
 		<ritualBehavior>AM_OcularFuneralBehavior</ritualBehavior>
 		<ritualOutcomeEffect>AM_OcularFuneralOutcome</ritualOutcomeEffect>
 	</RitualPatternDef>
@@ -162,10 +162,16 @@
 		  <points>
 			<li>(1,  0.0)</li>
 			<li>(5,  0.15)</li>
-			<li>(10, 0.3)</li>
+			<li>(10, 0.6)</li>
 		  </points>
 		</curve>
 	</li>
+	  <li Class="AlphaMemes.RitualOutcomeComp_CorruptGauranlen">
+        <allowAltars>false</allowAltars>
+		<defs><li>Plant_TreeGauranlen</li></defs>
+        <label>A corrupt gauranlen tree</label>
+        <qualityOffset>0.2</qualityOffset>
+      </li>
     </comps>
 	<modExtensions>
 		<li Class="AlphaMemes.OutcomeEffectExtension">
@@ -178,6 +184,10 @@
 	</modExtensions>
   </RitualOutcomeEffectDef>
  
-
+   	<RitualObligationTargetFilterDef>
+		<defName>AM_GauranlenOrAltar</defName>
+		<colonistThingsOnly>false</colonistThingsOnly>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_GauralenOrAltar</workerClass>		
+	</RitualObligationTargetFilterDef>	
 
 </Defs>

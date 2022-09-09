@@ -26,7 +26,7 @@ namespace AlphaMemes
         public override void ApplyOn(Pawn pawn, Corpse corpse, List<Thing> thingsToSpawn, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome)
         {
             //This is the max combat power
-            float combatPower = 20f; 
+            float combatPower = 10f; 
             switch (outcome.positivityIndex)
             {
                 case -2:
@@ -36,10 +36,10 @@ namespace AlphaMemes
                     combatPower *= 2; 
                     break;
                 case 1:
-                    combatPower *= 4;
+                    combatPower *= 8;
                     break;
                 case 2:
-                    combatPower *= 10;
+                    combatPower *= 20;
                     break;
             }
             

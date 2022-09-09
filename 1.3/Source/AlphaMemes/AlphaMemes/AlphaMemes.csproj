@@ -110,9 +110,11 @@
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_TagSet.cs" />
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_ThingNotReachable.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_MembersCanBuild.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_CorruptGauranlen.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_OcularBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_InsectoidBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\CorpseFilters\RitualObligationTargetWorker_FreshCorpse.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\TargetFilters\RitualObligationTargetWorker_GauralenOrAltar.cs" />
     <Compile Include="Rituals\FuneralFramework\Utilities\FuneralFrameworkStaticStartup.cs" />
     <Compile Include="Rituals\FuneralFramework\Utilities\FuneralFramework_ObligationUtility.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_BehaviorExtension.cs" />
