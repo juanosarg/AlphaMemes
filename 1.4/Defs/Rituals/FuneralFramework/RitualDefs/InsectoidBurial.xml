@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_InsectoidFuneralPattern</defName>
+		<nameMaker>NamerRitualFuneral</nameMaker>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} be offered to the insectoids.</ritualExpectedDesc>
+		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
+		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AM_InsectoidFuneralExtended</ritualObligationTargetFilter>
+		<ritualBehavior>AM_InsectoidFuneralBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_InsectoidFuneralOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_InsectoidFuneralBehavior</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
+		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
+		<description>Spectators must be alive.</description>
+		</spectatorFilter>
+		<roles>
+		  <li Class="RitualRoleTag">
+			<label>insectoid herder</label>
+			<id>insectoidHerder</id>
+			<precept>VME_IdeoRole_InsectoidHerder</precept>
+			<tag>InsectoidHerder</tag>
+			<maxCount>1</maxCount>
+			<substitutable>false</substitutable>
+			<required>True</required>
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="AlphaMemes.RitualRoleFuneralCorpse">
+			<label>Corpse</label>
+			<id>AM_RitualRoleCorpse</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<allowNonAggroMentalState>true</allowNonAggroMentalState>
+			<required>True</required>
+			<corpse>True</corpse>			
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>insectoidHerder</li>
+						</roleIds>
+					</li>	
+				</endTriggers>				
+				<roleBehaviors>
+				  <li>
+					<roleId>insectoidHerder</roleId>
+					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
+				  </li>				  
+				</roleBehaviors>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.3</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>insectoidHerder</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					</customPositions>
+				  </li>
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+				<postAction Class="RitualStageAction_Message">
+					<text>{0}: The speech is over, the insects are taking the corpse</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>
+				<preAction Class="AlphaMemes.RitualStageAction_Insectoid">	
+				</preAction>				
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.7</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>insectoidHerder</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					</customPositions>
+				  </li>	
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_InsectoidFuneralOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_InsectoidBurial</workerClass>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>AM_TerribleFuneral</memory>
+        <description>The {0} was terrible! The insects didnt seem to enjoy them at all.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.15</chance>
+        <memory>AM_LacklusterFuneral</memory>
+        <description>The {0} was lackluster. The speech was long-winded, but at least it looks the insects got something out of it.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.6</chance>
+        <memory>AM_GoodFuneral</memory>
+        <description>The {0} was good. The insects enjoyed their meal and blessed us with a new holy creature.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.2</chance>
+        <memory>AM_AmazingFuneral</memory>
+        <description>The {0} was heartwarming. The insects appear to have taken full advantage of their nutrients. What a wonderful creature that will become.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="AlphaMemes.RitualOutcomeComp_Crafter">
+		<roleId>insectoidHerder</roleId>
+		<label>Insectoid Herder</label>
+		<skill>Animals</skill>
+		<doBestPawn>false</doBestPawn>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(10, 0.15)</li>
+			<li>(20, 0.6)</li>
+		  </points>
+		</curve>
+	</li>
+	<li Class="RitualOutcomeComp_ParticipantCount">
+		<label>participant count</label>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(5,  0.2)</li>
+			<li>(10, 0.4)</li>
+		  </points>
+		</curve>
+	</li>
+    </comps>
+	<modExtensions>
+		<li Class="AlphaMemes.OutcomeEffectExtension">
+			<stripcorpse>false</stripcorpse>
+			<roleToSpawnOn>AM_RitualRoleCorpse</roleToSpawnOn>
+		</li>
+	</modExtensions>
+  </RitualOutcomeEffectDef>
+ 
+   <!--Ritual Obligation-->
+   	<RitualObligationTargetFilterDef>
+		<defName>AM_InsectoidFuneralExtended</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralThingExtended</workerClass>		
+		<modExtensions>
+			<li Class="AlphaMemes.ObligationTargetExtension">
+				<filters>			
+					<li>AM_InsectoidBurialTarget</li>
+				</filters>
+				<validCorpse Class="AlphaMemes.RitualObligationTarget_FreshCorpse">
+				</validCorpse>					
+			</li>
+		</modExtensions>
+	</RitualObligationTargetFilterDef>	
+
+	<RitualObligationTargetFilterDef>
+		<defName>AM_InsectoidBurialTarget</defName>
+		<colonistThingsOnly>false</colonistThingsOnly>
+		<workerClass>RitualObligationTargetWorker_ThingDef</workerClass>		
+		<thingDefs>
+		  <li>VME_InsectNest</li>
+		  <li>Hive</li>		  
+		</thingDefs>
+	</RitualObligationTargetFilterDef>	
+
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_SkyBurialSpot</defName>
+    <label>sky burial spot</label>
+    <description>A place to leave the last remains of a colonist for them to be consumed by nature</description>
+    <thingClass>AlphaMemes.Building_SkyBurialSpot</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <graphicData> 
+      <texPath>Things/Building/Misc/AM_SkyBurialSlab</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>     
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <uiIconPath>Things/Building/Misc/AM_SkyBurialSlab_east</uiIconPath>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability> 
+      <Mass>25</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <size>(1,2)</size>
+    <designationCategory>Misc</designationCategory>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>true</rotatable>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <haulToContainerDuration>300</haulToContainerDuration>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>     
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+
+</Defs>

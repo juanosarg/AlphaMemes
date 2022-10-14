@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Steampunk ======== -->
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_SteampunkRevival_Wall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Wall/SteampunkWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/Wall/SteampunkWall_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_SteampunkRevival_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Tables/AM_Steampunk_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_SteampunkRevival_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Tables/AM_Steampunk_Table2x2c</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_SteampunkRevival_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Tables/AM_Steampunk_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_SteampunkRevival_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Tables/AM_Steampunk_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Autodoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Door/AM_SteampunkAutodoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+				<enabled>false</enabled>
+			</damageData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/Door/AM_SteampunkAutodoor_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef Name="AM_Steampunk_StandingLampBase">
+		<defName>AM_SteampunkRevival_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Stool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Stool/AM_SteampunkStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Chair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Chair/AM_Steampunk_Chair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>AM_SteampunkRevival_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkColumn</texPath>
+			<drawSize>(0.625,1.25)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Telescope</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkTelescope</texPath>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_WoodFiredGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_WoodFired</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_ChemfuelPoweredGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_Chemfuel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_SolarGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_Solar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GeothermalGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_Geothermal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_DeepDrill</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_DeepDrill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_ShipLandingBeacon</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_ShipLandingBeacon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Components</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/AM_SteampunkComponents</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_PowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkPowerArmor/AM_SteampunkPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkPowerArmor/AM_SteampunkPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_BowlerHat</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkBowlerHat/AM_SteampunkBowlerHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkBowlerHat/AM_SteampunkBowlerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_SimpleHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkSimpleHelmet/AM_SteampunkSimpleHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkSimpleHelmet/AM_SteampunkSimpleHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_AdvancedHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkAdvancedHelmet/AM_SteampunkAdvancedHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkAdvancedHelmet/AM_SteampunkAdvancedHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Tuque</defName>
+		<overrideLabel>flat cap</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkTuque/AM_SteampunkTuque</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkTuque/AM_SteampunkTuque</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Goggles</defName>
+		<overrideLabel>steampunk goggles</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkGoggles/AM_SteampunkGoggles</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkGoggles/AM_SteampunkGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_FlakVest</defName>
+
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_FlakHelmet</defName>
+
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_AviatorHat</defName>
+		<overrideLabel>aviator hat</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkAviatorHat/AM_SteampunkAviatorHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkAviatorHat/AM_SteampunkAviatorHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Mask</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkMask/AM_SteampunkMask</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkMask/AM_SteampunkMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Gunlink</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkGunlink/AM_Steampunk_Gunlink</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkGunlink/AM_Steampunk_Gunlink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_TopHat</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkTophat/AM_SteampunkTophat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkTophat/AM_SteampunkTophat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_JumpPack</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkJumpPack/AM_SteampunkJumpPack</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkJumpPack/AM_SteampunkJumpPack_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_ShieldBelt</defName>
+
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkShieldBelt/AM_SteampunkShieldBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Gladius</defName>
+		<overrideLabel>rapier</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Ikwa</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Axe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Spear</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_RecurveBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Bow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_GreatBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Knife</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Hammer</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Pickaxe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Sword</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Mace</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkHeavyMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_MachinePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkMachinePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_BoltActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkBoltRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	
+
+
+</Defs>

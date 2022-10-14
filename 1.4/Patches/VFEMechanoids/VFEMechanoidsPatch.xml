@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Mechanoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autocleaner"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_Autocleaner/AM_Steampunk_Autocleaner</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autohauler"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_Autohauler/AM_Steampunk_Autohauler</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autominer"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_Autominer/AM_Steampunk_Autominer</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Turret"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_MobileTurret/AM_Steampunk_MobileTurret</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autobroadcaster"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_GraphicByStyle">
+							<style>AM_SteampunkRevival</style>
+							<newImagePath>Things/Pawn/AM_Steampunk_AutoBroadcaster/AM_Steampunk_AutoBroadcaster</newImagePath>
+							<changeGraphicsInterval>3000</changeGraphicsInterval>
+						</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

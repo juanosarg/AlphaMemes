@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HistoryEventDef>
+		<defName>AM_TameAnimal</defName>
+		<label>taming animal</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_TrainAnimal</defName>
+		<label>training animal</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Bonding_Abhorrent</defName>
+		<issue>Bonding</issue>
+		<label>abhorrent</label>
+		<description>Humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth. These genetically modified animals should be destroyed, and relying on them for anything is obscene.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive no bonus mood from animal nuzzling.</description>
+		<impact>High</impact>
+		<requiredMemes>
+			<li>AM_BiologicalDefilers</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>Bonded</eventDef>
+			</li>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_TameAnimal</eventDef>
+			</li>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_TrainAnimal</eventDef>
+			</li>
+		</comps>
+		<statFactors>			
+			<AnimalGatherYield>0</AnimalGatherYield>
+			<AnimalsLearningFactor>0</AnimalsLearningFactor>
+		</statFactors>
+		<statOffsets>
+			<AnimalProductsSellImprovement>-0.3</AnimalProductsSellImprovement>
+		</statOffsets>
+	</PreceptDef>
+</Defs>

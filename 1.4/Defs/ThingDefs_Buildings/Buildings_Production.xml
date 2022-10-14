@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!--======================== Nutrient dispenser ==============================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_GrogDispenser</defName>
+    <label>grog dispenser</label>
+    <description>A dispenser of grog, an alcoholic liquor usually made with rum cut with water and often served hot with lemon juice and sugar, as well as other additives. May contain one or more of the following: kerosene, propylene glycol, artificial sweeteners, sulphuric acid, acetone, red dye no. 2, scumm, axle grease, battery acid, pepperoni. This barrel ferments organic feedstocks placed in adjacent hoppers. It consumes less ingredients and time than any other meal production method - but nobody likes actually drinking grog. Accepts raw food, but not rough plant matter like hay.</description>
+    <thingClass>Building_NutrientPasteDispenser</thingClass>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Corsair/AM_NutrientDispenser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+   
+      <drawSize>(5,6)</drawSize>
+      <damageData>
+        <rect>(0.02,0.25,2.96,2.85)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+      <shadowData>
+        <volume>(2.87,0.75,3.05)</volume>
+        <offset>(0,0,0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <statBases>
+	<StyleDominance>10</StyleDominance>
+      <WorkToBuild>2200</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <building>
+      <isMealSource>true</isMealSource>
+      <wantsHopperAdjacent>true</wantsHopperAdjacent>
+      <nutritionCostPerDispense>0.3</nutritionCostPerDispense>
+      <soundDispense>DispensePaste</soundDispense>
+      <forceShowRoomStats>true</forceShowRoomStats>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <size>(3,4)</size>
+    <costList>
+      <WoodLog>250</WoodLog>
+   
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <interactionCellOffset>(0,0,3)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc6</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>NutrientPaste</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+ 
+
+</Defs>

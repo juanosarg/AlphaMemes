@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_ArtProductionSpeed</defName>
+    <label>art production speed</label>
+    <iconPath>UI/Issues/AM_ArtProductionSpeed</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>AM_ArtProductionSpeed_Increased</defName>
+    <issue>AM_ArtProductionSpeed</issue>
+    <label>increased</label>
+    <description>All art must come from a place of hard work. Inspiration exists, but it has to find you working.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Art bench work table speed: +25%.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>AM_Artist</li>
+	
+    </associatedMemes>
+	
+   
+  </PreceptDef>
+  
+ 
+
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace"> 
+	<success>Always</success>
+		<xpath>/Defs/MemeDef[defName="VME_Elders"]/groupDef</xpath>
+		<value>
+			<groupDef>AM_AgeRelated</groupDef>
+			
+		</value>
+	</Operation>
+
+
+</Patch>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_TantrumRitual</defName>
+		<label>tantrum ritual</label>
+		<description>Enough's enough, it's time to destroy this place and its bad memories</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_TantrumRitual</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_TantrumRitualPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept> <!--So it cant generate randomly-->
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>0</selectionWeight> 
+		<defaultSelectionWeight>0</defaultSelectionWeight> 
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+	</PreceptDef>
+
+
+
+</Defs>

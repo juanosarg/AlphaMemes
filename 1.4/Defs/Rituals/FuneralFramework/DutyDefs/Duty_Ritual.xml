@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Duty Defs-->
+   <DutyDef>
+    <defName>AM_DeliverCorpseToCellDuty</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_DeliverCorpseToCell">
+          <exactCell>true</exactCell>
+          <locomotionUrgency>Jog</locomotionUrgency>
+        </li>
+		<li Class="JobGiver_Idle">
+          <ticks>60</ticks>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+   <DutyDef>
+    <defName>AM_DeliverStuffToCellDuty</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_DeliverStuffToCell">
+          <exactCell>true</exactCell>
+          <locomotionUrgency>Jog</locomotionUrgency>
+        </li>
+		<li Class="JobGiver_Idle">
+          <ticks>60</ticks>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+   <DutyDef>
+    <defName>AM_DeliverCorpseToHopper</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_LoadCorpseToHopper">
+          <exactCell>true</exactCell>
+          <locomotionUrgency>Jog</locomotionUrgency>
+        </li>
+		<li Class="JobGiver_Idle">
+          <ticks>60</ticks>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+   <DutyDef>
+    <defName>AM_LoadCorpseToThing</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_LoadCorpseToThing">
+          <exactCell>true</exactCell>
+          <locomotionUrgency>Jog</locomotionUrgency>
+        </li>
+		<li Class="JobGiver_Idle">
+          <ticks>60</ticks>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+   <DutyDef>
+    <defName>AM_DeliverThingsToCellDuty</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_DeliverThingsToCell">
+          <exactCell>true</exactCell>
+          <locomotionUrgency>Jog</locomotionUrgency>
+        </li>
+		<li Class="JobGiver_Idle">
+          <ticks>60</ticks>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  
+</Defs>

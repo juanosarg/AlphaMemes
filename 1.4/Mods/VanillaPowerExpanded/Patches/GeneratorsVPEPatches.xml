@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasPipe"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasPipe"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasPipe"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasTank"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasTank"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasTank"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_HelixienPump"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_HelixienPump"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_HelixienPump"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_HelixienGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_HelixienGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_HelixienGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasStove"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasStove"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasStove"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasSmelter"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasCrematorium"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasCrematorium"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasCrematorium"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasCooler"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasCooler"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasCooler"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasHeater"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasHeater"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasHeater"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasSunLamp"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasSunLamp"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasSunLamp"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_LightningRod"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_LightningRod"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_LightningRod"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_ChemfuelPump"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_ChemfuelPump"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_ChemfuelPump"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasDrill"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasDrill"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasDrill"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasWallLight"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasWallLight"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasWallLight"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_GasWallDarkLight"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasWallDarkLight"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "VPE_GasWallDarkLight"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

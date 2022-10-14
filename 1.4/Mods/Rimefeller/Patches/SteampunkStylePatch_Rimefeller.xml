@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>OilWell</thingDef>
+					<styleDef>AM_SteampunkRevival_OilWell</styleDef>
+				</li>
+				<li>
+					<thingDef>DeepOilWell</thingDef>
+					<styleDef>AM_SteampunkRevival_OilWell</styleDef>
+				</li>
+				<li>
+					<thingDef>OilStorage</thingDef>
+					<styleDef>AM_SteampunkRevival_OilStorage</styleDef>
+				</li>
+				<li>
+					<thingDef>FuelStorage</thingDef>
+					<styleDef>AM_SteampunkRevival_FuelStorage</styleDef>
+				</li>
+				
+			</value>
+		</match>
+	</Operation>
+</Patch>

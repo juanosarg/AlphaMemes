@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_AnimalDatabase</defName>
+    <label>animal database</label>
+	<thingClass>AlphaMemes.Building_AnimalDatabase</thingClass>
+    <description>An animal database containing detailed data of all scanned animals.\n\nIf the database gets somehow destroyed it will lose all its data, so you'd better protect it well.\n\nIt will display a total database completion on its infobox. Bear in mind you ABSOLUTELY do not need 100% completion, as it will most likely be impossible to attain, specially if you are using modded animals that only appear under special circumstances.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Misc/AM_AnimalDatabase</texPath>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(0.8, 1, 0.8)</volume>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <designationCategory>Misc</designationCategory>
+    <fillPercent>0.35</fillPercent>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <size>(3,1)</size>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+	  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	<tickerType>Rare</tickerType>
+   <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>30</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Flammability>1.0</Flammability>
+      <Mass>25</Mass>
+    </statBases>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <placeWorkers>
+      <li>AlphaMemes.PlaceWorker_OnlyOne</li>     
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>

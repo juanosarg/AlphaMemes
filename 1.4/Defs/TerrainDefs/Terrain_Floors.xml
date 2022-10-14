@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Jewish -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_JewishTiles</defName>
+		<label>jewish stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_JewishTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles in a Jewish style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_JewishTile</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_JewishTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileSandstone</defName>
+		<label>jewish sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileGranite</defName>
+		<label>jewish granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileLimestone</defName>
+		<label>jewish limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileSlate</defName>
+		<label>jewish slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishTileStoneBase">
+		<defName>AM_JewishTileMarble</defName>
+		<label>jewish marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_JewishFineTiles</defName>
+		<label>jewish fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="AM_JewishFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a jewish style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/AM_BlueJewishTile</texturePath>
+		<designatorDropdown>AM_Floor_JewishFineTiles</designatorDropdown>
+		<dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileSandstone</defName>
+		<label>jewish fine sandstone tile</label>
+
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileGranite</defName>
+		<label>jewish fine granite tile</label>
+
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileLimestone</defName>
+		<label>jewish fine limestone tile</label>
+
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileSlate</defName>
+		<label>jewish fine slate tile</label>
+
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_JewishFineStoneTiles">
+		<defName>AM_JewishFineTileMarble</defName>
+		<label>jewish fine marble tile</label>
+
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+
+	<!-- Kemetic -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_KemeticTiles</defName>
+		<label>kemetic stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_KemeticTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles in a Kemetic style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_KemeticStoneTiles</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_KemeticTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileSandstone</defName>
+		<label>kemetic sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileGranite</defName>
+		<label>kemetic granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileLimestone</defName>
+		<label>kemetic limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileSlate</defName>
+		<label>kemetic slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTileMarble</defName>
+		<label>kemetic marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticTileStoneBase">
+		<defName>AM_KemeticTilePristineLimestone</defName>
+		<label>kemetic pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>4</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+
+
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_KemeticFineTiles</defName>
+		<label>kemetic fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="AM_KemeticFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a kemetic style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/AM_KemeticFineStoneTiles</texturePath>
+		<designatorDropdown>AM_Floor_KemeticFineTiles</designatorDropdown>
+		<dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileSandstone</defName>
+		<label>kemetic fine sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileGranite</defName>
+		<label>kemetic fine granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileLimestone</defName>
+		<label>kemetic fine limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileSlate</defName>
+		<label>kemetic fine slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTileMarble</defName>
+		<label>kemetic fine marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
+		<defName>AM_KemeticFineTilePristineLimestone</defName>
+		<label>kemetic fine pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>20</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Futuristic_Kemetic</defName>
+		<label>futuristic kemetic tile</label>
+		<description>Fine steel plates with a hexagonal pattern for that ultra-technological look.</description>
+		<texturePath>Terrain/Surfaces/AM_FutureKemeticFloor</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<Steel>12</Steel>
+		</costList>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
+	<!-- Steampunk -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_SteampunkTiles</defName>
+		<label>steampunk stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_SteampunkTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles in a Steampunk style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_SteampunkStoneTiles</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_SteampunkTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileSandstone</defName>
+		<label>steampunk sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileGranite</defName>
+		<label>steampunk granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileLimestone</defName>
+		<label>steampunk limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileSlate</defName>
+		<label>steampunk slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
+		<defName>AM_SteampunkTileMarble</defName>
+		<label>steampunk marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+
+	<!-- Neolithic -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_NeolithicTiles</defName>
+		<label>neolithic dirt floors</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_NeolithicTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Rough, ugly packed dirt. Very cheeap and quick to build, but barely better than regular dirt.</description>
+		<texturePath>Terrain/Surfaces/AM_PackedDirt</texturePath>
+		<statBases>
+			<WorkToBuild>75</WorkToBuild>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_NeolithicTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_Neolithic</dominantStyleCategory>
+
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_NeolithicTileStoneBase">
+		<defName>AM_NeolithicTileSandstone</defName>
+		<label>neolithic sandstone packed dirt floor</label>
+
+		<costList>
+			<BlocksSandstone>1</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_NeolithicTileStoneBase">
+		<defName>AM_NeolithicTileGranite</defName>
+		<label>neolithic granite packed dirt floor</label>
+
+		<costList>
+			<BlocksGranite>1</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_NeolithicTileStoneBase">
+		<defName>AM_NeolithicTileLimestone</defName>
+		<label>neolithic limestone packed dirt floor</label>
+
+		<costList>
+			<BlocksLimestone>1</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_NeolithicTileStoneBase">
+		<defName>AM_NeolithicTileSlate</defName>
+		<label>neolithic slate packed dirt floor</label>
+
+		<costList>
+			<BlocksSlate>1</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="AM_NeolithicTileStoneBase">
+		<defName>AM_NeolithicTileMarble</defName>
+		<label>neolithic marble packed dirt floor</label>
+
+		<costList>
+			<BlocksMarble>1</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Scavenger</defName>
+		<label>restored rusted tile</label>
+		<description>Rusted steel plates scavenged from local materials. Small beauty bonus, but no cleanliness.</description>
+		<texturePath>Terrain/Surfaces/AM_PavedTile</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>1</Beauty>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Scavenger_Clean</defName>
+		<label>restored tile</label>
+		<description>Steel plates scavenged from local materials. No beauty bonus, but small bonus to cleanliness.</description>
+		<texturePath>Terrain/Surfaces/AM_PavedTileClean</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+
+	</TerrainDef>
+
+</Defs>

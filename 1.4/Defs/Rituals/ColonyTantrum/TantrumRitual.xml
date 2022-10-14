@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_TantrumRitualPattern</defName>
+		<nameMaker>NamerRitualFestival</nameMaker>
+		<ritualExplanation>A ceremony of destruction. This is no good, it's time to bury the memories of this place in rubble.\n (Your colonists will go around destroying buildings. Don't say I didn't warn you)</ritualExplanation>
+		<ritualObligationTargetFilter>GatheringSpotOrAltar</ritualObligationTargetFilter>
+		<ritualBehavior>AM_TantrumRitualBehavior</ritualBehavior>
+		<ritualObligationTriggers>
+		  <li Class="RitualObligationTrigger_DateProperties">
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<canStartAnytime>true</canStartAnytime>
+		<alwaysStartAnytime>false</alwaysStartAnytime>
+		<ritualOutcomeEffect>AM_TantrumRitualOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_TantrumRitualBehavior</defName>
+		<durationTicks>15000</durationTicks>
+		<roles/>
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_Tantrum</workerClass>
+		<stages>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>true</essential>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.05</percentage>
+				  </li>
+				</endTriggers>
+				<postAction Class="RitualStageAction_Message">
+					<text>{0}: Everyone has gathered. Time to begin the destruction</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>				
+			</li>    
+			<li>
+				<defaultDuty>AM_TrantrumDuty</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.95</percentage>
+				  </li>
+				</endTriggers>		
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_TantrumRitualOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_Tantrum</workerClass>
+    <allowAttachableOutcome>true</allowAttachableOutcome>
+    <outcomeChances>
+	  <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>AM_TerribleTantrum</memory>
+        <description>The {0} was terrible. We hardly destroyed anything, sore fists for nothing</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>LackLuster</label>
+        <chance>0.20</chance>
+        <memory>AM_LacklusterTantrum</memory>
+        <description>The {0} was mediocre. Wasn't as fun as one could've hoped to destroy all that</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.50</chance>
+        <memory>AM_GoodTantrum</memory>
+        <description>The {0} was good. We've left a decent pile of rubble behind and the stress has been released</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.25</chance>
+        <memory>AM_AmazingTantrum</memory>
+        <description>The {0} was invigorating. We've destroyed a great deal of what made this place horrible. A real fresh start!</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="AlphaMemes.RitualOutcomeComp_Tantrum">
+		<label>wealth destroyed</label>
+		<curve>
+		  <points>
+			<li>(0.01,  0.0)</li>
+			<li>(0.05,  0.2)</li>
+			<li>(0.10,  0.50)</li>
+			<li>(0.40,  1)</li> <!--20% was too easy-->
+		  </points>
+		</curve>
+	</li>
+    </comps>
+  </RitualOutcomeEffectDef>
+ 
+   <!--Ritual Obligation-->	
+
+	
+
+</Defs>

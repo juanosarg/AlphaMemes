@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>AM_OcularBurial</defName>
+    <driverClass>AlphaMemes.JobDriver_OcularBurial</driverClass>
+    <reportString>burying TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+
+</Defs>

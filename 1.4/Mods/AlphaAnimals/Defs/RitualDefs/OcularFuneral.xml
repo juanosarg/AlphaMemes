@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_OcularFuneralPattern</defName>
+		<nameMaker>NamerRitualFuneral</nameMaker>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} to see the deceased turned into a beautiful beast of corruption</ritualExpectedDesc>
+		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
+		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AM_GauranlenOrAltar</ritualObligationTargetFilter>
+		<ritualBehavior>AM_OcularFuneralBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_OcularFuneralOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_OcularFuneralBehavior</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
+		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
+			<description>Spectators must be alive.</description>
+		</spectatorFilter>
+		<roles>
+		  <li Class="RitualRoleTag">
+			<label>occultist</label>
+			<id>moralist</id>
+			<precept>IdeoRole_Moralist</precept>
+			<tag>Moralist</tag>
+			<maxCount>1</maxCount>
+			<substitutable>True</substitutable>
+			<required>True</required>
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="AlphaMemes.RitualRoleFuneralCorpse">
+			<label>Corpse</label>
+			<id>AM_RitualRoleCorpse</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<allowNonAggroMentalState>true</allowNonAggroMentalState>
+			<required>True</required>
+			<corpse>True</corpse>			
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>moralist</li>
+						</roleIds>
+					</li>	
+				</endTriggers>				
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
+				  </li>		  
+				</roleBehaviors>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.3</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					</customPositions>
+				  </li>				  
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>			
+			</li>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.7</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>AM_OcularBurial</dutyDef>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_CenterPos">
+						<offset>(0,0,-1)</offset>
+					  </li>
+					</customPositions>
+				  </li>				
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_OcularFuneralOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_OcularBurial</workerClass>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.2</chance>
+        <memory>AM_TerribleFuneral</memory>
+        <description>The {0} was terrible! The resurrection has failed in an awful way. All that remains is this gross goo</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.2</chance>
+        <memory>AM_LacklusterFuneral</memory>
+        <description>The {0} was disappointing, we were hoping for more great creatures!</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.5</chance>
+        <memory>AM_GoodFuneral</memory>
+        <description>The {0} was good. We were able to welcome more creatures to our glorious collection!</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.1</chance>
+        <memory>AM_AmazingFuneral</memory>
+        <description>The {0} was Amazing. The ocular lands smile upon us! That body has served their true purpose!</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+		<roleId>moralist</roleId>
+		<label>moral guide present</label>
+		<qualityOffset>0.2</qualityOffset>
+		<disableInClassicMode>true</disableInClassicMode>
+		</li>
+	<li Class="RitualOutcomeComp_ParticipantCount">
+		<label>participant count</label>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(5,  0.15)</li>
+			<li>(10, 0.6)</li>
+		  </points>
+		</curve>
+	</li>
+	  <li Class="AlphaMemes.RitualOutcomeComp_CorruptGauranlen">
+        <allowAltars>false</allowAltars>
+		<defs><li>Plant_TreeGauranlen</li></defs>
+        <label>A corrupt gauranlen tree</label>
+        <qualityOffset>0.2</qualityOffset>
+      </li>
+    </comps>
+	<modExtensions>
+		<li Class="AlphaMemes.OutcomeEffectExtension">
+			<stripcorpse>false</stripcorpse>
+			<roleToSpawnOn>AM_RitualRoleCorpse</roleToSpawnOn>
+			<bestOutcomeDesc>{RITUAL} was spectacular! {CORPSE} has pleased the beyond</bestOutcomeDesc>
+			<worstOutcomeDesc>{RITUAL} was a disaster! {CORPSE} has been lost forever, now we just have a mess!.</worstOutcomeDesc>
+			<!--Spawners-->
+		</li>
+	</modExtensions>
+  </RitualOutcomeEffectDef>
+ 
+   	<RitualObligationTargetFilterDef>
+		<defName>AM_GauranlenOrAltar</defName>
+		<colonistThingsOnly>false</colonistThingsOnly>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_GauralenOrAltar</workerClass>		
+	</RitualObligationTargetFilterDef>	
+
+</Defs>

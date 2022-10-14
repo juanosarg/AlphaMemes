@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  <ThoughtDef>
+    <defName>AM_RationalMaddeningChant</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>rational maddening chant</label>
+        <description>What was that? There was no shared insanity, no cackling forbidden whispers of madness. What a bore.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_DerangedMaddeningChant</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>deranged maddening chant</label>
+        <description>One person's craziness is another person's reality.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_PsychoticMaddeningChant</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>psychotic maddening chant</label>
+        <description>There's a fine line between genius and insanity. We have erased this line.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_InsaneMaddeningChant</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>insane maddening chant</label>
+        <description>Sweet, crazy conversations full of half sentences, daydreams and misunderstandings more thrilling than understanding could ever be.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

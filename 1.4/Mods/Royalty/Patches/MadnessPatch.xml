@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/MemeDef[defName="AM_Madness"]/requireOne</xpath>
+		<value>
+			<li>
+				<li>AM_PsychicSensitivity_Affinity</li>
+			</li>
+		</value>
+	</Operation>
+	
+	
+
+
+</Patch>

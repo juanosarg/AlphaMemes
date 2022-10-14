@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>AM_NamerDeityJewish</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName(p=3)->Yahweh</li>
+				<li>r_deityName->Elohim</li>
+				<li>r_deityName->YHWH</li>
+				<li>r_deityName->El</li>
+				<li>r_deityName->Eloah</li>
+				<li>r_deityName->Shaddai</li>
+				<li>r_deityName->Ehyeh</li>
+				<li>r_deityName->Tzevaot</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>AM_NamerDeitySikh</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->Akal Purakh</li>
+				<li>r_deityName->Ek Onkar</li>
+				<li>r_deityName->Satnam</li>
+				<li>r_deityName->Waheguru</li>
+				<li>r_deityName->Bhao Khandan</li>
+				<li>r_deityName->Dukh Bhanjno</li>
+				<li>r_deityName->Bhagat Vachhal</li>
+				<li>r_deityName->Hari</li>
+				<li>r_deityName->Govinda</li>
+				<li>r_deityName->Bhagavan</li>
+				<li>r_deityName->Rabh</li>
+				<li>r_deityName->Uppar Valah</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>AM_DeityTypeMakerSikh</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->Timeless Primal Being</li>
+				<li>r_deityType->One Creator</li>
+				<li>r_deityType->True Name</li>
+				<li>r_deityType->Wonderful Teacher</li>
+				<li>r_deityType->Destroyer of Fear</li>
+				<li>r_deityType->Dispeller of Pain</li>
+				<li>r_deityType->Lover of His Saints</li>
+				<li>r_deityType->Preserver of the World</li>
+				<li>r_deityType->Supreme being</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+
+	
+	
+</Defs>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  
+ 
+
+  
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_MaddeningChant</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_MaddeningChant</clipPath>
+          </li>
+        </grains>
+        <volumeRange>22</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Jewish</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Jewish_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Kemetic</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Kemetic_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Atheism</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Atheist_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Jain</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Jain_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Sikh</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Sikh_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_SteampunkRevival</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_SteampunkRevival</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Corsair</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Corsair_Loop</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Neolithic</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Neolithic</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_Scavenger</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_Scavenger</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

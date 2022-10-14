@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualOutcomeEffectDef>
+    <defName>AM_RelicDestructionOutcome</defName>
+    <description>If the relic destruction ritual goes well (positive outcome) it will provide a mood bonus. A negative outcome will cause a mood penalty. In any case, the relic will be destroyed and all followers of the same ideo will get a permanent stat bonus.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_RelicDestruction</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.3)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>leader</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+     
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Boring</label>
+        <chance>0.5</chance>
+        <memory>AM_BoringRelicDestruction</memory>
+        <description>The {0} was a bit boring, but we got rid of an obscene idol, and that will only make our beliefs stronger.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Entertaining</label>
+        <chance>0.5</chance>
+        <memory>AM_EntertainingRelicDestruction</memory>
+        <description>The {0} was entertaining. We got rid of an obscene idol, and that will only make our beliefs stronger.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+     
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

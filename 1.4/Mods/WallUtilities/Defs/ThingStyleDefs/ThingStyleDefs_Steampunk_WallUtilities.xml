@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Heater</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/WallUtilities/AM_SteampunkWallHeater</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>			
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		 
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Cooler</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/WallUtilities/AM_SteampunkCoolerB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>			
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_Vent</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/WallUtilities/AM_SteampunkVentB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>			
+		</graphicData>
+	</ThingStyleDef>
+
+
+
+</Defs>

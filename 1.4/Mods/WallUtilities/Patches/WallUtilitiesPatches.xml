@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Owl_Heater"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Vent"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Vent"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Vent"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable"/>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	
+</Patch>

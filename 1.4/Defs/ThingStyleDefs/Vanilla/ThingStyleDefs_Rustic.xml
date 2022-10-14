@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+
+	<!-- Rustic -->
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Gladius</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Ikwa</defName>
+		<overrideLabel>crude polearm</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Knife</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Sword</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Mace</defName>
+		<overrideLabel>mallet</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Spear</defName>
+		<overrideLabel>partisan</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticHeavyMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_MachinePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticMachinePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_BoltActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticBoltRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Bow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_RecurveBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_GreatBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Axe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Hammer</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Pickaxe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+
+</Defs>

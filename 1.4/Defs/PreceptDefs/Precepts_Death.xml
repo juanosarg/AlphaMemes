@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<PreceptDef>
+		<defName>AM_Death_Desired</defName>
+		<issue>VME_Death</issue>
+		<label>desired</label>
+		<description>Death is what makes us truly human. It shouldn't be avoided, but actively sought.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if ANY human casualties take place on the colony.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Sadist</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Sadist</li>
+		</requiredMemes>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_SomeoneDied</eventDef>
+				<thought>AM_Death_Desired</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Death_Desired</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>someone died</label>
+				<description>The grim spectre of death is welcome among us, for it reveals to us what it means to be truly human.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

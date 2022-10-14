@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+	<!-- Buddhist -->
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_BuddhistPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmor/AM_BuddhistPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmor/AM_BuddhistPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_BuddhistPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmorHelmet/AM_BuddhistPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Buddhist/AM_BuddhistPowerArmorHelmet/AM_BuddhistPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+</Defs>

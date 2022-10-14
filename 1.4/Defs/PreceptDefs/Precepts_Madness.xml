@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Madness</defName>
+    <label>madness</label>
+    <iconPath>UI/Issues/AM_MadnessIssue</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>AM_Madness_Exalted</defName>
+    <issue>AM_Madness</issue>
+    <label>exalted</label>
+    <description>A twisted mind is a sign of holiness. Distrust those who call themselves "sane", for they are just fools.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The catharsis status will have an increased effect of +60 mood.\n - Upon recovering from a mental break colonists will receive a huge stat bonus to most categories that lasts for a whole day.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>AM_Madness</li>	
+    </associatedMemes>
+	<requiredMemes>
+      <li>AM_Madness</li>	
+    </requiredMemes>
+	<statOffsets>
+      <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  
+    </statOffsets>
+   
+  </PreceptDef>
+  
+
+
+</Defs>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>AM_CombatProwess</defName>
+		<label>combat prowess</label>
+		<iconPath>UI/Issues/AM_CombatProwess</iconPath>
+	</IssueDef>
+	
+	<HistoryEventDef>
+		<defName>AM_UsedMelee</defName>
+		<label>used non-ranged attack</label>
+	</HistoryEventDef>
+	
+	<HistoryEventDef>
+		<defName>AM_UsedRanged</defName>
+		<label>used ranged attack</label>
+	</HistoryEventDef>
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>AM_CombatProwess_Reduced</defName>
+		<issue>AM_CombatProwess</issue>
+		<label>reduced</label>
+		<description>Although we won't hesitate to defend ourselves if the situation warrants it, we have grown dependent on our dryads for our defense.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_GauranlenSupremacy</li>
+
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_GauranlenSupremacy</li>
+
+		</requiredMemes>
+		<statOffsets>
+			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.2</AimingDelayFactor>
+			<MeleeHitChance>-0.2</MeleeHitChance>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_CombatProwess_Increased</defName>
+		<issue>AM_CombatProwess</issue>
+		<label>distance</label>
+		<description>Sniper rifles, carbines, revolvers, all ranged weapons are our expertise. We will master their use and defend ourselves from anyone who dares oppose us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any ranged weapons used by colonists receive a 20% range increase. Mortars and other artillery weapons are not counted as ranged for this purpose.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_Sharpshooter</li>
+
+		</associatedMemes>
+		
+		<statOffsets>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			
+		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_UsedMelee</eventDef>
+				<thought>AM_CombatProwess_Increased_UsedMelee</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>AM_CombatProwess_Increased_UsedMelee</defName>
+		<durationDays>2</durationDays>
+		<stages>
+			<li>
+				<label>used a non-ranged attack</label>
+				<description>I had to defend myself using a melee weapon, like some kind of savage caveman. Disgusting.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>AM_CombatProwess_Melee</defName>
+		<issue>AM_CombatProwess</issue>
+		<label>melee</label>
+		<description>Swords, maces, axes, all melee weapons are our expertise. We will master their use and defend ourselves from anyone who dares oppose us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any melee attacks by colonists have a 20% stun chance.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_Gladiator</li>
+
+		</associatedMemes>
+		
+		<statOffsets>
+			<ShootingAccuracyPawn>-0.3</ShootingAccuracyPawn>
+			<MeleeHitChance>0.2</MeleeHitChance>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_UsedRanged</eventDef>
+				<thought>AM_CombatProwess_Melee_UsedRanged</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>AM_CombatProwess_Melee_UsedRanged</defName>
+		<durationDays>2</durationDays>
+		<stages>
+			<li>
+				<label>used a ranged attack</label>
+				<description>I had to defend myself using a ranged weapon, like some kind of coward. Disgusting.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+
+</Defs>

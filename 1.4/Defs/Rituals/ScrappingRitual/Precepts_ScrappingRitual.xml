@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_ScrapRitual</defName>
+		<label>scrapping ritual</label>
+		<description>We've acquired some advanced tech. We should break it down to learn more about it!</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_ScrapperRitual</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_ScrapRitualPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept> <!--So it cant generate randomly-->
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>0</selectionWeight> 
+		<defaultSelectionWeight>0</defaultSelectionWeight> 
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>		
+			<li>AM_Structure_Scavenger</li>
+		</requiredMemes>
+		<impact>Medium</impact>
+	</PreceptDef>
+
+
+
+</Defs>

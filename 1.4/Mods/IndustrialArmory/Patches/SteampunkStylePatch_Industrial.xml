@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>IM_MeleeWeapon_PowerFist</thingDef>
+					<styleDef>AM_SteampunkRevival_PowerFist</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_ChainSword</thingDef>
+					<styleDef>AM_SteampunkRevival_ChainSword</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_ImpactBlade</thingDef>
+					<styleDef>AM_SteampunkRevival_ImpactBlade</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_HeaterSaw</thingDef>
+					<styleDef>AM_SteampunkRevival_HeaterSaw</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_ImpactAxe</thingDef>
+					<styleDef>AM_SteampunkRevival_ImpactAxe</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_ImpactHammer</thingDef>
+					<styleDef>AM_SteampunkRevival_ImpactHammer</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_GoliathSledge</thingDef>
+					<styleDef>AM_SteampunkRevival_GoliathSledge</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_DrillSpear</thingDef>
+					<styleDef>AM_SteampunkRevival_DrillSpear</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_RocketLance</thingDef>
+					<styleDef>AM_SteampunkRevival_RocketLance</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_Cyrogatana</thingDef>
+					<styleDef>AM_SteampunkRevival_Cryogatana</styleDef>
+				</li>
+				<li>
+					<thingDef>IM_MeleeWeapon_GunLance</thingDef>
+					<styleDef>AM_SteampunkRevival_GunLance</styleDef>
+				</li>
+				
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_FuneralNoCorpsePattern</defName>
+		<ritualExpectedDesc>Once a {IDEO} member dies and the body is lost, other {MEMBERS} gather around an empty grave for {RITUAL_labelDef}.</ritualExpectedDesc>
+		<ritualObligationTriggers>
+		  <li Class="AlphaMemes.RitualObligationTrigger_NoCorpseProperties">
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AnyEmptyGrave</ritualObligationTargetFilter>
+		<ritualBehavior>Funeral</ritualBehavior>
+		<ritualOutcomeEffect>AttendedFuneralNoCorpse</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+
+</Defs>

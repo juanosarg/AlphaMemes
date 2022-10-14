@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IssueDef>
+		<defName>AM_Barracks</defName>
+		<label>barracks</label>
+		<iconPath>UI/Issues/AM_Barracks</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Barracks_Preferred</defName>
+		<issue>AM_Barracks</issue>
+		<label>monastic</label>
+		<description>A communal living space allows us to meditate and contemplate the meaning of this life together. Private rooms are an unnecessary frivolity.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists receive positive mood by sleeping in barracks, but the room should be above Awful and below Extremely impressive.\n - Colonists receive negative mood by sleeping in a private room.</description>
+		<impact>Medium</impact>
+	
+		
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_Barracks_PreferredTrue</defName>
+		<issue>AM_Barracks</issue>
+		<label>preferred</label>
+		<description>Sharing a bedroom bring a certain sensation of security in the Rim. Who would want to sleep alone in such a terrible world?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists receive small positive mood boosts by sleeping in barracks.\n - Colonists receive negative mood by sleeping in a private room.</description>
+		<impact>Low</impact>
+	
+		
+		
+	</PreceptDef>
+	
+	
+</Defs>

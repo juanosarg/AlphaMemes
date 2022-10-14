@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+    <defName>AM_TerribleTantrum</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>terrible tantrum</label>
+        <description>That tantrum was a waste of time. We barely did anything.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_LacklusterTantrum</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>lackluster tantrum</label>
+        <description>That tantrum could've been a lot better. I think I chose my targets wrong.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_GoodTantrum</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>good tantrum</label>
+        <description>That tantrum was enjoyable. Got some of the anger and bad feelings out so we can move on.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_AmazingTantrum</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>amazing tantrum</label>
+        <description>That tantrum was so satisfying. I got to destroy so much, I'm excited for the new start.</description>
+        <baseMoodEffect>30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

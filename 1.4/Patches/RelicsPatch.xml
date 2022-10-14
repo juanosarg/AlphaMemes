@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "RelicsCollected"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicsCollected"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_RelicDestruction_Desired</li>
+
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicsCollected"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_RelicDestruction_Desired</li>
+
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "RelicAtRitual"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicAtRitual"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_RelicDestruction_Desired</li>
+
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicAtRitual"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_RelicDestruction_Desired</li>
+
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "RelicDestroyed"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicDestroyed"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_RelicDestruction_Desired</li>
+
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicDestroyed"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_RelicDestruction_Desired</li>
+
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "RelicLost"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicLost"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_RelicDestruction_Desired</li>
+
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "RelicLost"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_RelicDestruction_Desired</li>
+
+			</value>
+		</match>
+	</Operation>
+
+
+
+</Patch>

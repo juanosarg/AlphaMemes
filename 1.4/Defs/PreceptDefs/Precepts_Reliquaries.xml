@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IssueDef>
+		<defName>AM_Reliquaries</defName>
+		<label>reliquaries</label>
+		<iconPath>UI/Issues/AM_Reliquaries</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_BuildingReliquary</defName>
+		<label>building a reliquary</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Reliquaries_Forbidden</defName>
+		<issue>AM_Reliquaries</issue>
+		<label>forbidden</label>
+		<description>Relic worship and idolatry are obscene. We refuse to have a reliquary on our colony, as the only acceptable reason to have a relic is to destroy it as soon as possible.</description>
+		<impact>Medium</impact>
+		
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_BuildingReliquary</eventDef>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Reliquaries_Forbidden</thought>
+				
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	 <ThoughtDef>
+		<defName>AM_Reliquaries_Forbidden</defName>
+		
+		<workerClass>AlphaMemes.Thought_Reliquaries_Forbidden</workerClass>
+		<stages>
+			<li>
+				<label>reliquary nearby</label>
+				<description>We have a reliquary in the colony. This is blasphemy, it should be dismantled as soon as possible.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			
+			
+		</stages>
+	</ThoughtDef>
+</Defs>

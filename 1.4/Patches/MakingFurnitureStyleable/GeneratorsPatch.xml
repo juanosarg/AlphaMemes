@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable" />
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable" />
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable" />
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ChemfuelPoweredGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable" />
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable" />
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "SolarGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable" />
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "GeothermalGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GeothermalGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Styleable" />
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GeothermalGenerator"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Styleable" />
+			</value>
+		</match>
+	</Operation>
+
+
+
+</Patch>

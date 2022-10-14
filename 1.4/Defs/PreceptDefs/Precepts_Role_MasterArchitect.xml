@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>AM_IdeoRole_MasterArchitect</defName>
+		<label>master architect</label>
+		<description>A master builder, capable of designing and planning intricate designs and turning them into huge structures to awe even the most skeptical bystanders.</description>
+		<iconPath>UI/Roles/AM_MasterArchitectRole</iconPath>
+		<nameMaker>AM_MasterArchitect</nameMaker>
+
+		<roleTags>
+			<li>Fleshcrafter</li>
+		</roleTags>
+		<requiredMemes>
+			<li>AM_Structure_Kemetism</li>
+		</requiredMemes>
+
+
+		<displayOrderInImpact>2</displayOrderInImpact>
+
+		<grantedAbilities>
+			<li>AM_ConvertStone</li>
+			<li>AM_FinishConstruction</li>
+		</grantedAbilities>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Construction>6</Construction>
+				</skills>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTagAny>
+			<li>Constructing</li>
+		</roleRequiredWorkTagAny>
+		 <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>ConstructionSpeed</statDef>
+        <modifier>0.6</modifier>
+      </li>
+     
+    </roleEffects>
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Headwrap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Broadwrap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Neck</li>
+						<li>Shoulders</li>
+						<li>Arms</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Robe</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_HatHood</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_BowlerHat</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredTags>
+						<li>Cape</li>
+					</requiredTags>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+		<roleApparelRequirementCountCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(1, 1)</li>
+			</points>
+		</roleApparelRequirementCountCurve>
+	</PreceptDef>
+
+</Defs>

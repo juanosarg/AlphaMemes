@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_DreadnoughtFuneralPattern</defName>
+		<nameMaker>NamerRitualFuneral</nameMaker>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} to see the deceased turned into a true machine of war.</ritualExpectedDesc>
+		<ritualObligationTriggers>
+		  <li Class="AlphaMemes.RitualObligationTrigger_AlsoAddsDreadnoughtProps">
+			<tryAddBoth>true</tryAddBoth>
+			<AltTriggerProps Class="AlphaMemes.RitualObligationTrigger_DreadnoughtCapableProps">
+				<mustBePlayerIdeo>true</mustBePlayerIdeo>
+			</AltTriggerProps>
+		  </li>
+		</ritualObligationTriggers>
+		<ritualObligationTargetFilter>AM_DreadnoughtFuneralObligation</ritualObligationTargetFilter>
+		<ritualBehavior>AM_DreadnoughtFuneralBehavior</ritualBehavior>
+		<ritualOutcomeEffect>AM_DreadnoughtFuneralOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+		<RitualBehaviorDef>
+		<defName>AM_DreadnoughtFuneralBehavior</defName>
+		<durationTicks>4500</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFrameworkDreadnought</workerClass>
+		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
+		<description>Spectators must be alive.</description>
+		</spectatorFilter>
+		<roles>
+		  <li Class="RitualRoleTag">
+			<label>speaker</label>
+			<id>moralist</id>
+			<precept>IdeoRole_Moralist</precept>
+			<tag>Moralist</tag>
+			<maxCount>1</maxCount>
+			<substitutable>True</substitutable>
+			<required>True</required>
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="AlphaMemes.RitualRoleFuneralCorpse">
+			<label>Corpse</label>
+			<id>AM_RitualRoleCorpse</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<allowNonAggroMentalState>true</allowNonAggroMentalState>
+			<required>True</required>
+			<corpse>True</corpse>			
+			<countsAsParticipant>False</countsAsParticipant>
+		  </li>
+		  <li Class="RitualRoleColonist">
+			<label>apothecary (any colonist)</label>
+			<id>AM_Crafter</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<required>true</required>		
+			<countsAsParticipant>true</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li Class="RitualStage_InteractWithRole">
+				<defaultDuty>Spectate</defaultDuty>
+				<targetId>AM_RitualRoleCorpse</targetId> 
+				<failTriggers>
+				  <li Class="AlphaMemes.StageFailTrigger_TagSet">
+					<roleID>AM_Crafter</roleID>
+					<tag>Fail</tag>
+					<desc>Unable to retrieve materials</desc>
+					<allowanceTicks>500</allowanceTicks>
+				  </li>
+				</failTriggers>	
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>moralist</li>
+						  <li>AM_Crafter</li>
+						</roleIds>
+					</li>	
+				</endTriggers>				
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>AM_DeliverCorpseToCellDuty</dutyDef>
+				  </li>
+				  <li>
+					<roleId>AM_Crafter</roleId>
+					<dutyDef>AM_DeliverThingsToCellDuty</dutyDef>
+				  </li>				  
+				</roleBehaviors>
+				<postAction Class="AlphaMemes.RitualStageAction_StripCorpse">
+
+				</postAction>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.3</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />
+					</customPositions>
+				  </li>				  
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+				<postAction Class="AlphaMemes.RitualStageAction_Dreadnought">
+					<text>{0}: The speech is over, and the welding has commenced.</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>
+				<preAction Class="AlphaMemes.RitualStageAction_FuneralEffectSound">				
+					  <sound>Recipe_Cremate</sound>
+					  <effect>ConstructMetal</effect>
+					  <roleID>AM_Crafter</roleID>
+				</preAction>				
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>0.7</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>moralist</roleId>
+					<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+					<speakerInteraction>Speech_Funeral</speakerInteraction>
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_BesideInteract" />						
+					</customPositions>
+				  </li>				
+				  <li>
+					<roleId>AM_Crafter</roleId>
+					<dutyDef>ArriveToCell</dutyDef>				  
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_CenterPos">
+						<offset>(0,0,-1)</offset>
+					  </li>
+					</customPositions>
+				  </li>
+				</roleBehaviors>
+				<visualEffectDef>Funeral</visualEffectDef>
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_DreadnoughtFuneralOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_FuneralDreadnought</workerClass>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.2</chance>
+        <memory>AM_TerribleDreadnought</memory>
+        <description>The {0} was terrible! The entombing failed and they are lost to us forever.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.2</chance>
+        <memory>AM_LacklusterDreadnought</memory>
+        <description>The {0} was messy, I hope if I ever end up in that situation they do a better job.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.5</chance>
+        <memory>AM_GoodDreadnought</memory>
+        <description>The {0} was good. I'm sure they'll be up on their feet any time now.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.1</chance>
+        <memory>AM_AmazingDreadnought</memory>
+        <description>The {0} was Amazing. I've never seen such skill, they walked right out as if nothing had happened.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+	<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+		<roleId>moralist</roleId>
+		<label>moral guide present</label>
+		<qualityOffset>0.2</qualityOffset>
+		<disableInClassicMode>true</disableInClassicMode>
+		</li>
+	<li Class="RitualOutcomeComp_ParticipantCount">
+		<label>participant count</label>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(5,  0.15)</li>
+			<li>(10, 0.3)</li>
+		  </points>
+		</curve>
+	</li>
+	<li Class="AlphaMemes.RitualOutcomeComp_Crafter">
+		<roleId>AM_Crafter</roleId>
+		<label>doctor</label><!--I dont understand how this causes so much confusion but you win ppl no more fitting apothecary-->
+		<skill>Medicine</skill>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(10, 0.15)</li>
+			<li>(20, 0.5)</li>
+		  </points>
+		</curve>
+	</li>
+    </comps>
+	<modExtensions>
+		<li Class="AlphaMemes.OutcomeEffectExtension">
+			<stripcorpse>true</stripcorpse>
+			<roleToSpawnOn>AM_RitualRoleCorpse</roleToSpawnOn>
+			<bestOutcomeDesc>{RITUAL} was spectacular! {CORPSE} had 0 side effects</bestOutcomeDesc>
+			<worstOutcomeDesc>{RITUAL} was a disaster! {CORPSE} has been lost forever.</worstOutcomeDesc>
+			<!--Spawners-->
+			<outcomeSpawners>
+				<li Class="AlphaMemes.FuneralFramework_ThingToSpawn">				
+					<thingsRequired>
+						<li>
+							<key>Plasteel</key>
+							<value>265</value>
+						</li>
+						<li>
+							<key>Uranium</key>
+							<value>50</value>
+						</li>
+						<li>
+							<key>ComponentSpacer</key>
+							<value>8</value>
+						</li>
+						<li>
+							<key>MedicineUltratech</key>
+							<value>10</value>
+						</li>							
+					</thingsRequired>
+				</li>
+			</outcomeSpawners>
+		</li>
+	</modExtensions>
+  </RitualOutcomeEffectDef>
+ 
+   <!--Ritual Obligation-->
+	<RitualObligationTargetFilterDef>
+		<defName>AM_DreadnoughtFuneralObligation</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralThingExtended</workerClass>
+		<modExtensions>
+			<li Class="AlphaMemes.ObligationTargetExtension">
+				<filters>			
+					<li>AM_DreadnoughtFuneralObligationFoundry</li>
+					<li>AM_DreadnoughtFuneralObligationThings</li>				
+				</filters>
+			<!--Custom Target-->
+			<validCorpse Class="AlphaMemes.RitualObligationTarget_DreadnoughtCorpseStillValid">
+				<allowDesiccated>false</allowDesiccated>
+			</validCorpse>				
+			</li>
+		</modExtensions>
+	</RitualObligationTargetFilterDef>
+	
+	<RitualObligationTargetFilterDef>
+		<defName>AM_DreadnoughtFuneralObligationFoundry</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_FuneralThingNeedsPower</workerClass>		
+		<thingDefs>
+		  <li>VFEP_WarcasketFoundry</li>		  
+		</thingDefs>
+	</RitualObligationTargetFilterDef>
+	
+	<RitualObligationTargetFilterDef>
+		<defName>AM_DreadnoughtFuneralObligationThings</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_HaveRequiredThings</workerClass>		
+		<thingDefs>
+		  <li>VFEP_WarcasketFoundry</li>		  
+		</thingDefs>
+	</RitualObligationTargetFilterDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_PyramidBurial</defName>
+		<label>pyramid burial funeral</label>
+		<description>A gathering to entomb our colleague within a subterranean burial chamber underneath a pyramid</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralPyramid</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_PyramidBurialPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_Structure_Kemetism</li>
+		</requiredMemes>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be entombed so {PAWN_pronoun} can watch us all from the afterlife.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>50</_weighting>
+			<associatedMemes>
+				<li>
+					<key>AM_Structure_Kemetism</key>
+					<value>10</value>
+				</li>
+			</associatedMemes>
+			<associatedStyles>
+				<li>
+					<key>AM_Kemetic</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>Morbid</key>
+					<value>2</value>
+				</li>
+			</associatedStyles>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>			
+
+		</li>
+		</modExtensions>
+	</PreceptDef>	
+
+
+</Defs>

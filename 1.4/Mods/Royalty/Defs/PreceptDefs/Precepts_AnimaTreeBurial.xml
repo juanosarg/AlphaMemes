@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+
+		<PreceptDef>
+		<defName>AM_AnimaBurial</defName>
+		<label>anima tree burial</label>
+		<description>A gathering to witness our friend's spirit be returned to nature</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralAnimaBurial</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_AnimaBurialPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<associatedMemes> 
+			<li>TreeConnection</li>
+			<li>NaturePrimacy</li>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>HumanPrimacy</li>
+			<li>AM_PsychicVampirism</li>			
+		</conflictingMemes>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be returned to nature. So {PAWN_possessive} friends and family can be confident their spirit can be put to rest.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<_weighting>50</_weighting>
+			<associatedMemes>
+				<li>
+					<key>TreeConnection</key>
+					<value>6</value>
+				</li>
+				<li>
+					<key>NaturePrimacy</key>
+					<value>3</value>
+				</li>
+				<li>
+					<key>VME_PsychicFocus</key>
+					<value>3</value>
+				</li>
+			</associatedMemes>
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>false</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
+			</animalObligationTrigger>		
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<conflictingPreceptDefs>
+					<li>VME_PsychicSensitivity_Lowered</li>
+				</conflictingPreceptDefs>
+			</specialConflicts>
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+
+
+</Defs>

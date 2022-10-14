@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>AM_JewishVisuals</defName>
+		<tintColor>(216, 139, 229)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_Star</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Star</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(0, 56, 184)</color>
+			<texPath>Motes/AM_StarOfDavidMote</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>18</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_KemeticVisuals</defName>
+		<tintColor>(198, 156, 62)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_EyeOfHorus</moteDef>
+			</li>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>7.0</radius>
+				<numCopies>5</numCopies>
+				<moteDef>AM_Obelisk</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(0, 0, 0.5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_EyeOfHorus</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(198, 156, 62)</color>
+			<texPath>Motes/AM_EyeOfHorus</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>15</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Obelisk</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/AM_Obelisk</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(1.4, 2.8)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>AM_AtheismVisuals</defName>
+		<tintColor>(255, 255, 255)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_AtheismSymbol</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_AtheismSymbol</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(250, 250, 250)</color>
+			<texPath>Motes/AM_UniversalAtheism</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>8</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_SikhVisuals</defName>
+		<tintColor>(248, 154, 28)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_SikhSymbol</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_SikhSymbol</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(23, 72, 152)</color>
+			<texPath>Motes/AM_Khanda</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>18</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>AM_JainVisuals</defName>
+		<tintColor>(255, 255, 255)</tintColor>
+		<comps>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>10.0</radius>
+				<numCopies>8</numCopies>
+				<moteDef>AM_JainSpire</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(0, 0, 0.5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_JainSpire</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/AM_JainSpire</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(2, 4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_SteampunkRevivalVisuals</defName>
+		<tintColor>(114, 94, 62)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_Cog</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Cog</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(114, 94, 62)</color>
+			<texPath>Motes/AM_Cog</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>18</drawSize>
+		</graphicData>
+	</ThingDef>
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_CorsairVisuals</defName>
+		<tintColor>(120, 120, 120)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_Skull</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_Skull</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(240, 240, 240)</color>
+			<texPath>Motes/AM_Skull</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.06</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>12</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>AM_NeolithicVisuals</defName>
+		<tintColor>(178, 63, 63)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_CavePaintings</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_CavePaintings</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(240, 240, 240)</color>
+			<texPath>Motes/AM_CavePaintings</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.06</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>12</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+	<RitualVisualEffectDef ParentName="RitualGlowAbstract">
+		<defName>AM_ScavengerVisuals</defName>
+		<tintColor>(150, 155, 155)</tintColor>
+		<comps>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>3.0</radius>
+				<numCopies>2</numCopies>
+				<moteDef>AM_ScavengerMoteA</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(0, 0, 4.5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>5.0</radius>
+				<numCopies>5</numCopies>
+				<moteDef>AM_ScavengerMoteB</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(2, 0, -3)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>10.0</radius>
+				<numCopies>3</numCopies>
+				<moteDef>AM_ScavengerMoteC</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(1, 0, -5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_ScavengerMoteA</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/AM_ScavengerMoteA</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_ScavengerMoteB</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/AM_ScavengerMoteB</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_ScavengerMoteC</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<texPath>Motes/AM_ScavengerMoteC</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.5</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

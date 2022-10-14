@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_RelicDestructionPrecept</defName>
+		<label>relic destruction</label>
+		<description>A ceremony of relic destruction. Colonists will receive a permanent bonus for each relic that gets destroyed.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>AM_RelicDestructionPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_RelicDestruction</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>		
+			<li>AM_Iconoclast</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

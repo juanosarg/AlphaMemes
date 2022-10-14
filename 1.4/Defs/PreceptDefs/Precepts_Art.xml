@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Art</defName>
+		<label>art</label>
+		<iconPath>UI/Issues/AM_Art</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Art_Desired</defName>
+		<issue>AM_Art</issue>
+		<label>desired</label>
+		<description>A true work of art is the revelation of a new conception of life arising in the artist's soul, which, when expressed, lights up the path along which humanity progresses.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will demand art pieces around the colony, at the very least one per colonist.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Artist</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Art_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>No art nearby</li>
+					<li>Very little art around (less than 1 per colonist)</li>
+					<li>A few art pieces around (less than 1,5 per colonist)</li>
+					<li>Several art pieces around (less than 2 per colonist)</li>
+					<li>Lots of art pieces around (less than 3 per colonist)</li>
+					<li>Surrounded by art</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Art_Desired</defName>
+		<minExpectation>Low</minExpectation>
+		<workerClass>AlphaMemes.Thought_Art_Desired</workerClass>
+		<stages>
+			<li>
+				<label>no art nearby</label>
+				<description>This colony is barren of fine art. A disgrace.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>very little art around</label>
+				<description>There are only a bunch of art pieces around: where the spirit does not work with the hand, there is no art.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>a few art pieces around</label>
+				<description>This colony is starting to look like a proper art gallery. Life beats down and crushes the soul and art reminds you that you have one.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>several art pieces around</label>
+				<description>The colony is adorned with several art pieces. Human life is full of chaos and suffering and the name of the remedy is ‘beauty’.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>lots of art pieces around</label>
+				<description>There are a lot of art pieces in this colony. This warms my soul.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by art</label>
+				<description>Art washes away from the soul the dust of everyday life.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

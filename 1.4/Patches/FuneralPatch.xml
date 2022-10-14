@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/PreceptDef[defName="Funeral"]</xpath>
+		<value>
+			<li Class="AlphaMemes.FuneralPreceptExtension">
+				<isColonistFuneral>true</isColonistFuneral>
+				<_weighting>100</_weighting>
+							<!--Animals-->
+				<allowAnimals>true</allowAnimals>			
+				<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+					<bondedAnimals>true</bondedAnimals>
+					<veneratedAnimals>true</veneratedAnimals>
+					<namedanimals>false</namedanimals><!--This is pushing it-->
+					<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
+				</animalObligationTrigger>
+				<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+
+				</specialConflicts>
+			</li>
+		</value>
+	</Operation>
+	
+
+
+</Patch>

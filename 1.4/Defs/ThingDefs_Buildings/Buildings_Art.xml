@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--================================ Sculptures ======================================-->
+	<ThingDef ParentName="SculptureBase">
+		<defName>AM_Pyramid</defName>
+		<label>pyramid</label>
+		<description>A gigantic stone structure whose outer surfaces are triangular and converge to a single step at the top.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_Pyramid</texPath>
+			<drawSize>(7.8,7.8)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<size>(7,7)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<Beauty>800</Beauty>
+			<Mass>5000</Mass>
+			<WorkToMake>300000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<memePrerequisitesAny>
+				<li>AM_Structure_Kemetism</li>
+			</memePrerequisitesAny>
+		</recipeMaker>
+		<costStuffCount>900</costStuffCount>
+		<comps>
+			<li Class="AlphaMemes.CompProperties_CorpseContainerMulti">
+				<inspectString>Contains the remains of: {CORPSES}</inspectString>
+				<maxCorpse>6</maxCorpse>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_GrandGate</defName>
+		<label>grand gate</label>
+		<description>A huge entrance for a kemetic city.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_GrandGate</texPath>
+			<drawSize>(7,7)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>1</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(3,3)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Beauty>500</Beauty>
+			<Mass>2000</Mass>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">80</StyleDominance>
+		</statBases>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_Gate_UIIcon</uiIconPath>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>500</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_FuturisticObelisk</defName>
+		<label>futuristic obelisk</label>
+		<description>A huge metallic obelisk.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_FutureObelisk</texPath>
+			<drawSize>(7,7)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>1</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+
+		</comps>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_FutureObelisk_UIIcon</uiIconPath>
+		<rotatable>false</rotatable>
+		<size>(1,4)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>250</Beauty>
+			<Mass>200</Mass>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">60</StyleDominance>
+		</statBases>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+	
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>400</costStuffCount>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_FuturisticStele</defName>
+		<label>futuristic stele</label>
+		<description>A huge metallic stele.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_FutureStele</texPath>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(3,3)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>250</Beauty>
+			<Mass>200</Mass>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">60</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>400</costStuffCount>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_FuturisticPyramid</defName>
+		<label>futuristic great pyramid</label>
+		<description>A truly colossal metallic structure whose outer surfaces are triangular and converge to a single step at the top.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_FuturePyramid</texPath>
+			<drawSize>(24,24)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.24)</li>
+								<!-- awful -->
+								<li>(1,0.30)</li>
+								<!-- poor -->
+								<li>(2,0.32)</li>
+								<!-- normal -->
+								<li>(3,0.4)</li>
+								<!-- good -->
+								<li>(4,0.5)</li>
+								<!-- excellent -->
+								<li>(5,0.6)</li>
+								<!-- masterwork -->
+								<li>(6,0.7)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>40</radius>
+						<maxBuildings>12</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.015)</li>
+								<!-- normal -->
+								<li>(3,0.02)</li>
+								<!-- good -->
+								<li>(4,0.02)</li>
+								<!-- excellent -->
+								<li>(5,0.03)</li>
+								<!-- masterwork -->
+								<li>(6,0.04)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="AlphaMemes.CompProperties_CorpseContainer">
+				<transformLabel>{CORPSE}'s {LABEL}</transformLabel>
+				<inspectString>Contains the last remains of {CORPSE}</inspectString>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(24,24)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>100000</MaxHitPoints>
+			<Beauty>9000</Beauty>
+			<Mass>300000</Mass>
+			<WorkToBuild>800000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">200</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>7500</costStuffCount>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_GreatPyramid</defName>
+		<label>great pyramid</label>
+		<description>A truly colossal stone structure whose outer surfaces are triangular and converge to a single step at the top.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_GreatPyramid</texPath>
+			<drawSize>(24,24)</drawSize>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.16)</li>
+								<!-- awful -->
+								<li>(1,0.24)</li>
+								<!-- poor -->
+								<li>(2,0.28)</li>
+								<!-- normal -->
+								<li>(3,0.30)</li>
+								<!-- good -->
+								<li>(4,0.32)</li>
+								<!-- excellent -->
+								<li>(5,0.36)</li>
+								<!-- masterwork -->
+								<li>(6,0.4)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>30</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.015)</li>
+								<!-- normal -->
+								<li>(3,0.02)</li>
+								<!-- good -->
+								<li>(4,0.02)</li>
+								<!-- excellent -->
+								<li>(5,0.03)</li>
+								<!-- masterwork -->
+								<li>(6,0.04)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="AlphaMemes.CompProperties_CorpseContainer">
+				<transformLabel>{CORPSE}'s {LABEL}</transformLabel>
+				<inspectString>Contains the last remains of {CORPSE}</inspectString>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(24,24)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>75000</MaxHitPoints>
+			<Beauty>7000</Beauty>
+			<Mass>100000</Mass>
+			<WorkToBuild>400000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">150</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>9000</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_Sphynx</defName>
+		<label>sphinx</label>
+		<description>A truly colossal statue of a sphinx, a mythical creature with the head of a human, and the body of a lion.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_Sphynx</texPath>
+			<drawSize>(12,18)</drawSize>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>15</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(12,18)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>50000</MaxHitPoints>
+			<Beauty>5000</Beauty>
+			<Mass>50000</Mass>
+			<WorkToBuild>200000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">100</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>4500</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_Megalith</defName>
+		<label>megalith</label>
+		<description>A large stone used to construct a prehistoric structure or monument, either alone or together with other stones, often hewn in definite shapes for special purposes.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Neolithic/Megaliths</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(3,3)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Beauty>500</Beauty>
+			<Mass>5000</Mass>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>550</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

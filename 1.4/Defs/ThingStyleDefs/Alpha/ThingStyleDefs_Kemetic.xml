@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Kemetic ======== -->
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Wall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Wall/AM_KemeticWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Wall/AM_KemeticWall_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Tables/AM_Kemetic_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Altars/AM_KemeticAltar3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef Name="AM_Kemetic_StandingLampBase">
+		<defName>AM_Kemetic_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_Stool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Stool/AM_KemeticStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>AM_Kemetic_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticColumn</texPath>
+			<drawSize>(0.625,1.25)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_IdeogramA</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_IconKemeticA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_IdeogramB</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_IconKemeticB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_BarbedSpear</defName>
+		<overrideLabel>barbed spear</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_BarbedSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Javelin</defName>
+		<overrideLabel>javelin</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Javelin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ShortSword</defName>
+		<overrideLabel>short sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Knife</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Hammer</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Pickaxe</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Bow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_CompoundBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticCompoundbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LongBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLongbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_RecurveBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_GreatBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_BattleAxe</defName>
+		<overrideLabel>battle axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_BattleAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Mace</defName>
+		<overrideLabel>discoidal mace</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_DiscoidalMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Khopesh</defName>
+		<overrideLabel>khopesh</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Khopesh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Staff</defName>
+		<overrideLabel>laser staff</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_LaserStaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PalmAxe</defName>
+		<overrideLabel>palm axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_PalmAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Pistol</defName>
+		<overrideLabel>helwan 951 pistol</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Helwan951Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticHeavyMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Rifle</defName>
+		<overrideLabel>misr assault rifle</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_MisrAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_MachineGun</defName>
+		<overrideLabel>port said machinegun</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_PortSaidMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Carbine</defName>
+		<overrideLabel>rasheed carbine</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_RasheedCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticCombatPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_CarbineVWE</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Crossbow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSemiAutomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HeavyClub</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticGreatClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_LightClub</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticLightClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_TribalAxe</defName>
+		<overrideLabel>crude bronze axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticTribalAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Shiv</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Sling</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSling</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorBHelmet/JaffaArmorBHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/JaffaArmorBHelmet/JaffaArmorBHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PrestigePowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorC/JaffaArmorC</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/JaffaArmorC/JaffaArmorC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PrestigePowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorCHelmet/JaffaArmorCHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/JaffaArmorCHelmet/JaffaArmorCHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ArmorCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/Cataphract/Cataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/Cataphract/Cataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ArmorCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/CataphractHelmet/CataphractHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/CataphractHelmet/CataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PrestigeCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphract/PrestigeCataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/PrestigeCataphract/PrestigeCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_PrestigeCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/PrestigeCataphractHelmet/PrestigeCataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_TopHat</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/TopHat/AM_KemeticHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/TopHat/AM_KemeticHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Kemetic_CanopicJars</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_CanopicJar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Recon</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Plate</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/Plate/AM_KemeticPlate</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/Plate/AM_KemeticPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+
+</Defs>

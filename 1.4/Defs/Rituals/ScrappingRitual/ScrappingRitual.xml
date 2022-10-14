@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<!--Ritual Pattern-->
+	<RitualPatternDef>
+		<defName>AM_ScrapRitualPattern</defName>
+		<nameMaker>NamerRitualFestival</nameMaker>
+		<ritualExplanation>We'll tear apart this technology and make good use of it</ritualExplanation>
+		<ritualObligationTargetFilter>AM_ScrapperObligationTargetFilter</ritualObligationTargetFilter>
+		<ritualBehavior>AM_ScrapRitualBehavior</ritualBehavior>
+		<ritualObligationTriggers>
+		  <li Class="RitualObligationTrigger_DateProperties">
+			<mustBePlayerIdeo>true</mustBePlayerIdeo>
+		  </li>
+		</ritualObligationTriggers>
+		<canStartAnytime>true</canStartAnytime>
+		<alwaysStartAnytime>false</alwaysStartAnytime>
+		<ritualOutcomeEffect>AM_ScrapRitualOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+
+	<!--Ritual Behavior-->
+	<RitualBehaviorDef>
+		<defName>AM_ScrapRitualBehavior</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_Scrapper</workerClass>
+		<spectatorsLabel>Spectators</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<roles>
+		  <li Class="RitualRoleColonist">
+			<label>Scrapper</label>
+			<id>AM_Crafter</id>        
+			<maxCount>1</maxCount>
+			<allowOtherIdeos>false</allowOtherIdeos>
+			<required>true</required>		
+			<countsAsParticipant>true</countsAsParticipant>
+		  </li>
+		</roles>
+		<stages>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+						  <li>AM_Crafter</li>
+						</roleIds>
+					</li>	
+				</endTriggers>
+				<failTriggers>
+				  <li Class="AlphaMemes.StageFailTrigger_TagSet">
+					<roleID>AM_Crafter</roleID>
+					<tag>Fail</tag>
+					<desc>Unable to retrieve materials</desc>
+					<allowanceTicks>500</allowanceTicks>
+				  </li>
+				</failTriggers>
+				<roleBehaviors>
+				  <li>
+					<roleId>AM_Crafter</roleId>
+					<dutyDef>AM_DeliverScrapperDeliverThing</dutyDef>
+				  </li>				  
+				</roleBehaviors>
+				<preAction Class="AlphaMemes.RitualStageAction_ScrapperEffectSound">				
+					  <sound>Interact_ConstructMetal</sound>
+					  <effect>ConstructMetal</effect>
+					  <roleID>AM_Crafter</roleID>
+				</preAction>
+			</li>    
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+				  <li Class="StageEndTrigger_DurationPercentage">
+					<percentage>1</percentage>
+				  </li>
+				</endTriggers>
+				<roleBehaviors>		
+				  <li>
+					<roleId>AM_Crafter</roleId>
+					<dutyDef>ArriveToCell</dutyDef>				  
+					<customPositions>					  
+					  <li Class="AlphaMemes.RitualPosition_CenterPos">
+					  </li>
+					</customPositions>
+				  </li>
+				</roleBehaviors>				
+			</li>
+		</stages>
+  </RitualBehaviorDef>
+   
+
+
+
+   
+  <!--Ritual Outcome-->
+    <RitualOutcomeEffectDef>
+	<defName>AM_ScrapRitualOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_Scrapper</workerClass>
+    <allowAttachableOutcome>true</allowAttachableOutcome>
+    <outcomeChances>
+	  <li>
+        <label>Terrible</label>
+        <chance>0.15</chance>
+        <memory>TerribleFestival</memory>
+        <description>The {0} was terrible. We've learned almost nothing and all the tech was wasted.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>LackLuster</label>
+        <chance>0.20</chance>
+        <memory>BoringFestival</memory>
+        <description>The {0} was mediocre. There was a great deal of waste in the deconstruction process and little was learned.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.50</chance>
+        <memory>FunFestival</memory>
+        <description>We succesfully extracted both materials and a great deal of knowledge from {0}.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Amazing</label>
+        <chance>0.15</chance>
+        <memory>UnforgettableFestival</memory>
+        <description>The {0} was spectacular. It has progressed our knowledge forward, and a great deal of useable salvage was recovered.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+	<comps>
+    <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.4)</li>
+            <li>(10, 0.6)</li>
+          </points>
+        </curve>
+     </li>
+	 <li Class="AlphaMemes.RitualOutcomeComp_Crafter">
+		<roleId>AM_Crafter</roleId>
+		<label>Scapper</label>
+		<skill>Crafting</skill>
+		<curve>
+		  <points>
+			<li>(1,  0.0)</li>
+			<li>(10, 0.15)</li>
+			<li>(20, 0.5)</li>
+		  </points>
+		</curve>
+	</li>
+    </comps>
+  </RitualOutcomeEffectDef> 
+
+	<RitualObligationTargetFilterDef>
+		<defName>AM_ScrapperObligationTargetFilter</defName>
+		<workerClass>AlphaMemes.RitualObligationTargetWorker_HighTechThing</workerClass>
+		<modExtensions>
+			<li Class="AlphaMemes.ObligationTargetExtension">
+				<targetFilter>AM_ScrapperTargetFilter</targetFilter>
+			</li>
+		</modExtensions>
+	</RitualObligationTargetFilterDef>
+   <RitualTargetFilterDef>
+    <defName>AM_ScrapperTargetFilter</defName>
+    <workerClass>AlphaMemes.RitualTargetFilter_AltarNotPawn</workerClass>
+  </RitualTargetFilterDef>
+
+</Defs>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- History events -->
+
+	<HistoryEventDef>
+		<defName>AM_AnimalReleased</defName>
+		<label>animal released</label>
+	</HistoryEventDef>
+
+	<!-- Issue -->
+
+	<IssueDef>
+		<defName>AM_AnimalRelease</defName>
+		<label>animal release</label>
+		<iconPath>UI/Issues/AM_AnimalRelease</iconPath>
+	</IssueDef>
+
+
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>AM_AnimalRelease_Encouraged</defName>
+		<issue>AM_AnimalRelease</issue>
+		<label>encouraged</label>
+		<description>Releasing animals to the wild is a noble endeavour. By raising or rescuing animals and them freeing them to repopulate the ecosystem we are enriching the amazing biodiversity around us.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_BiologicalReconstructors</li>
+
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_AnimalReleased</eventDef>
+				<thought>AM_AnimalRelease_Encouraged</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>AM_AnimalRelease_Encouraged</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>animal released</label>
+				<description>We released an animal into the wild, enriching the ecosystem.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>AM_AnimalRelease_Discouraged</defName>
+		<issue>AM_AnimalRelease</issue>
+		<label>discouraged</label>
+		<description>Releasing animals to the wild is like releasing a dangerous plague. The last thing the fragile, unnatural ecosystems around us need is yet more genetic abominations roaming around.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_BiologicalDefilers</li>
+
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_AnimalReleased</eventDef>
+				<thought>AM_AnimalRelease_Discouraged</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>AM_AnimalRelease_Discouraged</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>animal released</label>
+				<description>We released an animal into the wild, damaging the ecosystem.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+</Defs>

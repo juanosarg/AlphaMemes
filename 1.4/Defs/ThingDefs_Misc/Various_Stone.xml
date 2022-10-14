@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<ThingDef ParentName="ResourceBase" Name="AM_StoneBlocksBase" Abstract="True">
+		<description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/StoneBlocks</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>0.9</MarketValue>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+			<Beauty>-12</Beauty>
+			 <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+		</statBases>
+		<thingCategories>
+			<li>StoneBlocks</li>
+		</thingCategories>
+		 <burnableByRecipe>false</burnableByRecipe>
+		<stuffProps>
+			<categories>
+				
+				<li>Stony</li>
+			</categories>
+			<commonality>0</commonality>
+			<!-- because there are so many stone types -->
+			<appearance>Bricks</appearance>
+			<statOffsets>
+				<WorkToBuild>140</WorkToBuild>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>0.4</MarketValue>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToBuild>6.0</WorkToBuild>
+				<WorkToMake>1.3</WorkToMake>
+				<DoorOpenSpeed>0.45</DoorOpenSpeed>
+				<BedRestEffectiveness>0.9</BedRestEffectiveness>
+				<MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		  <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="AM_StoneBlocksBase">
+		<defName>AM_BlocksPristineLimestone</defName>
+		<label>pristine limestone blocks</label>
+		<description>Blocks of pristine limestone.</description>
+		<graphicData>
+			<color>(170,157,125)</color>
+		</graphicData>
+		<statBases>
+			
+			<Mass>1.1</Mass>
+			
+		</statBases>
+	
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<stuffProps>
+			<commonality>0</commonality>
+
+			<color>(170,157,125)</color>
+			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>pristine limestone</stuffAdjective>
+			<statFactors>
+
+				<Beauty>1.4</Beauty>  
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<WorkToBuild>5.5</WorkToBuild>
+				<WorkToMake>1.15</WorkToMake>
+				<MarketValue>0.4</MarketValue>
+			
+			
+			</statFactors>
+		</stuffProps>
+		<modExtensions>
+		<li Class="VFECore.StuffExtension">
+			<structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>			
+			<structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+			
+		</li>
+</modExtensions>
+	</ThingDef>
+
+	
+
+</Defs>

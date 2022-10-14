@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="BedWithQualityBase">
+    <defName>AM_StoneBedroll</defName>
+    <label>stone-framed bedroll</label>
+    <description>A cozy mattress and sheets on a frame for resting.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Beds/AM_StoneFramedBedroll</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>50</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>AM_AncientBed</defName>
+    <label>restored ancient bed</label>
+    <description>An old, rotted mattress on a rusty frame. Restored to be useable, though a bit uncomfortable.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/Beds/AncientBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0,0.05,1,0.95)</rect>
+      </damageData>
+    </graphicData>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+		  <li>AM_AncientLockerBank</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
+      <BedRestEffectiveness>0.9</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>AM_AncientDoubleBed</defName>
+    <label>restored ancient double bed</label>
+    <description>An old, rotted mattress on a rusty frame. Restored to be useable, though a bit uncomfortable. Fits two people.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/Beds/AM_AncientDoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+     <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>AM_AncientLockerBank</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+   
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>40</Mass>
+      <Comfort>0.7</Comfort>
+      <Beauty>1</Beauty>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+     
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc3</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BedWithQualityBase">
+    <defName>AM_AncientOperatingTable</defName>
+    <label>restored ancient operating table</label>
+    <description>An ancient bed once used for forgotten surgical operations. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds. Uncomfortable but efficient.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/Beds/AncientOperatingTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,2)</drawSize>
+    <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2700</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.11</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Industrial</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>AM_AncientRazorwire</defName>
+    <label>ancient razor wire</label>
+    <description>A piece of ancient razor wire. It has been restored to be useable. Less efficient as cover than a barricade, but easier and less costly to build.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientRazorWire</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+   <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>42</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+   
+    <fillPercent>0.45</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>-3</Beauty>
+      <WorkToBuild>250</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+     
+    </building>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Metallic</li>
+    
+    </stuffCategories>
+    <costStuffCount>3</costStuffCount>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Security</designationCategory>
+   
+    <designationHotKey>Misc1</designationHotKey>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_AncientFence</defName>
+    <label>restored ancient fence</label>
+    <description>An ancient fence made of reinforced concrete posts joined by concrete panels.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Scavenger/AncientFence/AM_AncientFence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <shadowData>
+        <volume>(1, 0.5, 0.45)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>70</WorkToBuild>
+    </statBases>
+	<uiIconPath>Things/Building/BuildingStyles/Scavenger/AncientFence/AM_AncientFence_Icon</uiIconPath>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.55</fillPercent>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fertility>0</fertility>
+	 <costStuffCount>2</costStuffCount>
+	  <stuffCategories>
+      <li>Metallic</li>
+     
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+	 <placingDraggableDimensions>1</placingDraggableDimensions>
+	 <designationCategory>Security</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>AM_AncientLockerBank</defName>
+    <label>ancient locker bank</label>
+    <description>An ancient, rusted bank of lockers. These have been restored to be at least partially functional. Gives a small comfort bonus to all nearby restored ancient beds. Placing more than one locker bank near the same ancient bed has no effect.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientLockerBank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.85, 1)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>125</costStuffCount>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>15</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+     
+    </statBases>
+    <size>(3, 1)</size>
+
+    <designationHotKey>Misc12</designationHotKey>
+  
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.025</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>10</maxDistance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+   <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="AM_NoDesignatorTableBaseStone">
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	<stuffCategories  Inherit="False">     
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="AM_NoDesignatorTableBaseWood">
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	<stuffCategories  Inherit="False">     
+      <li>Woody</li>
+    </stuffCategories>
+  </ThingDef>
+  
+   <ThingDef ParentName="AM_NoDesignatorTableBaseStone">
+    <defName>AM_Neolithic_StoneTable_1x2c</defName>
+    <label>crude stone table (1x2)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_StoneTable_1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(1,2)</size>
+	
+    <costStuffCount>28</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseStone">
+    <defName>AM_Neolithic_StoneTable_2x2c</defName>
+    <label>crude stone table (2x2)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_StoneTable_2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseStone">
+    <defName>AM_Neolithic_StoneTable_2x4c</defName>
+    <label>crude stone table (2x4)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_StoneTable_2x4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>95</costStuffCount>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseStone">
+    <defName>AM_Neolithic_StoneTable_3x3c</defName>
+    <label>crude stone table (3x3)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_StoneTable_3x3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5, 5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <statBases>
+      <MaxHitPoints>175</MaxHitPoints>
+      <WorkToBuild>3300</WorkToBuild>
+      <Mass>22</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <size>(3,3)</size>
+    <costStuffCount>100</costStuffCount>
+    <rotatable>false</rotatable>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="AM_NoDesignatorTableBaseWood">
+    <defName>AM_Neolithic_WoodenTable_1x2c</defName>
+    <label>crude wooden table (1x2)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_WoodenTable_1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(1,2)</size>
+	
+    <costStuffCount>28</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseWood">
+    <defName>AM_Neolithic_WoodenTable_2x2c</defName>
+    <label>crude wooden table (2x2)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_WoodenTable_2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseWood">
+    <defName>AM_Neolithic_WoodenTable_2x4c</defName>
+    <label>crude wooden table (2x4)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_WoodenTable_2x4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>95</costStuffCount>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="AM_NoDesignatorTableBaseWood">
+    <defName>AM_Neolithic_WoodenTable_3x3c</defName>
+    <label>crude wooden table (3x3)</label>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Tables/AM_Neolithic_WoodenTable_3x3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5, 5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <statBases>
+      <MaxHitPoints>175</MaxHitPoints>
+      <WorkToBuild>3300</WorkToBuild>
+      <Mass>22</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    <size>(3,3)</size>
+    <costStuffCount>100</costStuffCount>
+    <rotatable>false</rotatable>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+  </ThingDef>
+</Defs>

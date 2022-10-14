@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_FleshCraftingFuneral</defName>
+		<label>fleshcrafting funeral</label>
+		<description>A gathering to butcher our colleague's corpse for spare parts</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralFleshcrafting</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_FleshCraftingFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>VME_Fleshcrafters</li>
+		</requiredMemes>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be butchered so {PAWN_possessive} parts can be repurposed.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<_weighting>50</_weighting>
+			<associatedMemes>
+				<li>
+					<key>VME_Fleshcrafters</key>
+					<value>10</value>
+				</li>
+			</associatedMemes>
+			<associatedStyles>
+				
+				<li>
+					<key>Morbid</key>
+					<value>2</value>
+				</li>
+			</associatedStyles>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>			
+			<!--Conflicts-->
+		</li>
+		</modExtensions>
+	</PreceptDef>	
+
+
+</Defs>

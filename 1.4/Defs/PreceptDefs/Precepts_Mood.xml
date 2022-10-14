@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Mood_Volatile</defName>
+		<issue>VME_Mood</issue>
+		<label>volatile</label>
+		<description>We won't let our fragile egos dictate our lives. We refuse to be shackled by the thin veil of reality. We will peer beyond.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonist mood will fluctuate every day at random between -15 and +15.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>AM_Madness</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Madness</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">				
+				<thought>AM_Mood_Volatile</thought>
+				<thoughtStageDescriptions>
+					<li>Spiders in my face</li>
+					<li>Clown in the sky looking at me</li>
+					<li>Liquorice tastes like betrayal</li>
+					<li>The voices won't stop</li>
+					<li>I feel like turpentine</li>
+					<li>All cheese is obnoxious</li>
+					<li>Have you ever seen tomorrow?</li>
+					<li>I can feel the inside of my skin</li>
+					<li>My flesh vessel is itchy</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Mood_Volatile</defName>
+		<workerClass>AlphaMemes.Thought_Mood_Volatile</workerClass>
+		
+		<stages>
+			<li>
+				<label>spiders in my face</label>
+				<description>Did you know you swallow at least two spiders every night? I enjoy it. They taste like cinnamon.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>clown in the sky looking at me</label>
+				<description>There is a stern-looking clown dressed like a pirate looking at me, licking his lips. It craves my attention.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>liquorice tastes like betrayal</label>
+				<description>I have been betrayed by my fiercest enemy: croutons. They will be slaughtered by the thousands.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+			<li>
+				<label>the voices won't stop</label>
+				<description>They could be telling me to kill everyone, but instead they recite stock exchange transactions in ancient languages. A beet smiles upon my portfolio.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>I feel like turpentine</label>
+				<description>It's a slick feeling, like a raspy cat's tongue licking the inside of my organs. It reminds me of my grandma's stew.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>all cheese is obnoxious</label>
+				<description>Specially blue cheese. It refuses to let other people talk and interrupts constantly.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>have you ever seen tomorrow?</label>
+				<description>It's blue. All blue. With hints of a colour that is between stygian blue and hyperbolic orange.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>I can feel the inside of my skin</label>
+				<description>It feels like home. I can even see the fireplace burning with the smell of freshly baked kerosene.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>my flesh vessel is itchy</label>
+				<description>It burns.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

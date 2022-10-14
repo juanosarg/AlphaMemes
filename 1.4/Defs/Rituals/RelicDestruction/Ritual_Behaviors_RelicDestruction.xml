@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+ <RitualBehaviorDef>
+    <defName>AM_RelicDestructionBehavior</defName>
+   
+    <durationTicks>7500</durationTicks>
+    <preceptRequirements><li Class="PreceptRequirement_Altar"/></preceptRequirements>
+    <roles Inherit="False">
+      <li Class="RitualRoleTag">
+        <label>speaker</label>
+        <id>leader</id>
+        <tag>Leader</tag>
+        <precept>IdeoRole_Leader</precept>
+        <required>True</required>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+      
+    </roles>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+		<spectateDistanceOverride>3~5</spectateDistanceOverride>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+       
+        <roleBehaviors>
+          <li>
+            <roleId>leader</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_DateRitual</speakerInteraction>
+            <customPositions>
+             
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      
+    </stages>
+  </RitualBehaviorDef>
+ 
+
+</Defs>

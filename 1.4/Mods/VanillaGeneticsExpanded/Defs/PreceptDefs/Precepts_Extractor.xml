@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>GR_ExtractorFuneral</defName>
+		<label>extraction funeral</label>
+		<description>A gathering to witness the extraction of our friends' genomes so they can remain with us.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralGeneExtraction</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>GR_ExtractorFuneralPattern</ritualPatternBase>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<allowDuplicates>false</allowDuplicates>
+		<associatedMemes>
+			<li>GR_MadScientists</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>GR_MadScientists</li>
+		</requiredMemes>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>				
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be extracted and turned into a glorious creation so {PAWN_possessive} friends and family need not say farewell.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<replaceConflictRituals>true</replaceConflictRituals> <!--No weighting because it will always be used when avaliable-->
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>			
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>false</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
+			</animalObligationTrigger>
+			<!--Conflicts-->
+
+		</li>
+		</modExtensions>		
+	</PreceptDef>
+</Defs>

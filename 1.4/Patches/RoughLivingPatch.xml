@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/associatedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]</xpath>
+			<value>
+				<associatedMemes>
+					<li>AM_Monastic</li>
+				</associatedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/associatedMemes</xpath>
+			<value>
+				<li>AM_Monastic</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/requiredMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]</xpath>
+			<value>
+				<requiredMemes>
+					<li>AM_Monastic</li>
+				</requiredMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/requiredMemes</xpath>
+			<value>
+				<li>AM_Monastic</li>
+			</value>
+		</match>
+	</Operation>
+
+
+
+</Patch>

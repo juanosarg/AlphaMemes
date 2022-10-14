@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Style Revised - Animalist</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Royalty">
+								<thingDef>MeleeWeapon_Axe</thingDef>
+								<styleDef>AM_Animalist_Axe</styleDef>
+							</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">
+								<thingDef>MeleeWeapon_Warhammer</thingDef>
+								<styleDef>AM_Animalist_Hammer</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_BreachAxe</thingDef>
+								<styleDef>AM_Animalist_Pickaxe</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_BoltActionRifle</thingDef>
+								<styleDef>AM_Animalist_BoltActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_ChainShotgun</thingDef>
+								<styleDef>AM_Animalist_ChainShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_ChargeLance</thingDef>
+								<styleDef>AM_Animalist_ChargeLance</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_Autopistol</thingDef>
+								<styleDef>AM_Animalist_Autopistol</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_ChargeRifle</thingDef>
+								<styleDef>AM_Animalist_ChargeRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_HeavySMG</thingDef>
+								<styleDef>AM_Animalist_HeavySMG</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_SniperRifle</thingDef>
+								<styleDef>AM_Animalist_SniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_Revolver</thingDef>
+								<styleDef>AM_Animalist_Revolver</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_MachinePistol</thingDef>
+								<styleDef>AM_Animalist_MachinePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_LMG</thingDef>
+								<styleDef>AM_Animalist_LMG</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_PumpShotgun</thingDef>
+								<styleDef>AM_Animalist_PumpShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_AssaultRifle</thingDef>
+								<styleDef>AM_Animalist_AssaultRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>Gun_Minigun</thingDef>
+								<styleDef>AM_Animalist_Minigun</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Club</thingDef>
+								<styleDef>AM_Animalist_Club</styleDef>
+							</li>
+							<li>
+								<thingDef>Bow_Short</thingDef>
+								<styleDef>AM_Animalist_Bow</styleDef>
+							</li>
+							<li>
+								<thingDef>Bow_Great</thingDef>
+								<styleDef>AM_Animalist_GreatBow</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Ikwa</thingDef>
+								<styleDef>AM_Animalist_Ikwa</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Knife</thingDef>
+								<styleDef>AM_Animalist_Knife</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Mace</thingDef>
+								<styleDef>AM_Animalist_Mace</styleDef>
+							</li>
+							<li>
+								<thingDef>Bow_Recurve</thingDef>
+								<styleDef>AM_Animalist_RecurveBow</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Gladius</thingDef>
+								<styleDef>AM_Animalist_Gladius</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_Spear</thingDef>
+								<styleDef>AM_Animalist_Spear</styleDef>
+							</li>
+							<li>
+								<thingDef>MeleeWeapon_LongSword</thingDef>
+								<styleDef>AM_Animalist_Sword</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Weapons Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationConditional">
+								<success>Always</success>
+								<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+								<match Class="PatchOperationAdd">
+									<xpath>/Defs/StyleCategoryDef[defName = "Animalist"]/thingDefStyles</xpath>
+									<value>
+										<li>
+											<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+											<styleDef>AM_Animalist_AntiMaterialRifle</styleDef>
+										</li>
+										
+									</value>
+								</match>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

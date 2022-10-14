@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "Buddhist"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "Buddhist"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>Apparel_PowerArmor</thingDef>
+					<styleDef>AM_BuddhistPowerArmor</styleDef>
+				</li>
+				<li>
+					<thingDef>Apparel_PowerArmorHelmet</thingDef>
+					<styleDef>AM_BuddhistPowerArmorHelmet</styleDef>
+				</li>
+				
+			
+			
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "Buddhist"]/addDesignators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "Buddhist"]/addDesignators</xpath>
+			<value>
+				<li>AM_BuddhistSlab_Medium</li>
+				<li>AM_BuddhistSlab_Broad</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "Buddhist"]</xpath>
+			<value>
+				<addDesignators>
+					<li>AM_BuddhistSlab_Medium</li>
+					<li>AM_BuddhistSlab_Broad</li>
+				</addDesignators>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

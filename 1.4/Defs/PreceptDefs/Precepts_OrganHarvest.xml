@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issue -->
+
+  <HistoryEventDef>
+    <defName>AM_HarvestedNonColonistOrgan</defName>
+    <label>harvested non-colonist organ</label>
+  </HistoryEventDef>
+
+ 
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_OrganUse_Torturous</defName>
+    <issue>OrganUse</issue>
+    <label>torturous</label>
+    <description>Harvesting the organs of a still-living enemy is exquisite torture that should be encouraged.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>AM_Sadist</li>
+    </associatedMemes>
+	<requiredMemes>
+      <li>AM_Sadist</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AM_HarvestedNonColonistOrgan</eventDef>
+        <thought>AM_OrganUse_Torturous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AM_HarvestedNonColonistOrgan</eventDef>
+        <thought>AM_OrganUse_Know_Torturous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AM_HarvestedNonColonistOrgan</eventDef>
+        <thought>AM_OrganUse_Know_Torturous_Mood</thought>
+        <description>Someone harvested an organ</description>
+      </li>
+     
+     
+    </comps>
+  </PreceptDef>
+
+ 
+
+
+  
+
+
+  <!-- Harvested organ -->
+
+  <ThoughtDef>
+    <defName>AM_OrganUse_Torturous</defName>
+    <durationDays>5</durationDays>    
+    <stages>
+      <li>
+        <label>harvested organ</label>
+        <description>I tortured someone and harvested organs while he was still alive. What an exquisite deliverance of suffering.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_OrganUse_Know_Torturous</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>10</durationDays>
+    <stackLimit>2</stackLimit>
+    <stackLimitForSameOtherPawn>2</stackLimitForSameOtherPawn>
+    
+    <stages>
+      <li>
+        <label>harvested organ</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_OrganUse_Know_Torturous_Mood</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+  
+    <stages>
+      <li>
+        <label>organ harvested</label>
+        <description>A colonist tortured someone and harvested organs while he was still alive. Glorious!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+</Defs>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====== Jewish ======== -->
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Jewish_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Tables/AM_Jewish_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Jewish_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Tables/AM_Jewish_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Jewish_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Tables/AM_Jewish_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Jewish_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Tables/AM_Jewish_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_SculptureSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Sculptures/Small</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_SculptureLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Sculptures/Large</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_SculptureGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Sculptures/Grand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Altars/AM_AltarJewish1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Altars/AM_AltarJewish1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Altars/AM_AltarJewish2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/Altars/AM_AltarJewish3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef Name="AM_Jewish_StandingLampBase">
+		<defName>AM_Jewish_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/AM_JewishLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_Jewish_IdeogramA</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/AM_IconJewishA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Jewish_IdeogramB</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Jewish/AM_IconJewishB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_DuckBillAxe</defName>
+		<overrideLabel>duckbill axe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_DuckBillAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Hammer</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Pickaxe</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_ShortSword</defName>
+		<overrideLabel>leaf short sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Javelin</defName>
+		<overrideLabel>javelin</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Javelin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Chanith</defName>
+		<overrideLabel>chanith</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_Chanith</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Mace</defName>		
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Sniper</defName>
+		<overrideLabel>dan .338 sniper rifle</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_Dan338Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Pistol</defName>
+		<overrideLabel>jericho 941 pistol</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_Jericho941Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_JewishClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Spear</defName>
+		<overrideLabel>kidhohn</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_Kidhohn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Knife</defName>
+		<overrideLabel>leaf dagger</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_LeafDagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Sword</defName>
+		<overrideLabel>leaf sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_LeafSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Rifle</defName>
+		<overrideLabel>tavor TAR-21 assault rifle</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_TavorTar21AssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_Revolver</defName>
+		<overrideLabel>webley revolver</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_WebleyRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Jewish_ChainShotgun</defName>
+		<overrideLabel>tavor TS12 bullpup shotgun</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Jewish/AM_TavorTS12Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+</Defs>

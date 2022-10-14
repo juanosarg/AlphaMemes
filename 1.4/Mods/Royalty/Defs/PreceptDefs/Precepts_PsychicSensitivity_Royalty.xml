@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_PsychicSensitivity_Affinity</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>affinity</label>
+		<description>Our minds will be like a bulwark against the psychic powers. A labyrinth that only the most skilled will be able to navigate.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - A colony starting with this precept will start the gameplay with a free psylink neuroformer.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Madness</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Madness</li>
+		</requiredMemes>
+		<statOffsets>
+			<PsychicSensitivity>-0.1</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_PsychicSensitivity_Heightened</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>increased</label>
+		<description>Our minds will stay wide open to the vast universe of possibilities we are facing. We are not afraid.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_PsychicVampirism</li>
+		</associatedMemes>
+		<statOffsets>
+			<PsychicSensitivity>+0.25</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

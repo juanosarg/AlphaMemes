@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<TraitDef>
+		<defName>AM_Ahimsa</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>vow of nonviolence</label>
+				<description>A strict principle of nonviolence which applies to all living things.</description>
+			</li>
+		</degreeDatas>
+		<disabledWorkTags>			
+			<li>Violent</li>			
+		</disabledWorkTags>
+	</TraitDef>
+</Defs>

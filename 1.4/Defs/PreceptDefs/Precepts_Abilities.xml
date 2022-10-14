@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Abilities</defName>
+    <label>abilities</label>
+    <iconPath>UI/Issues/AM_Abilities</iconPath>
+	<allowMultiplePrecepts>true</allowMultiplePrecepts>
+  </IssueDef>
+
+ <PreceptDef>
+    <defName>AM_Abilities_AnalyzeCreature</defName>
+    <issue>AM_Abilities</issue>
+    <label>analyze creature</label>
+    <description>It is our solemn duty to catalogue and analyze all the incredible genetically modified creatures created by our ancestors.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists that adopt this precept will get the Analyze creature ability, which allows them to scan animals in the map and add them to a genetic database, receiving bonuses depending on the number of animals scanned.</description>
+    <impact>Medium</impact>
+  
+    <displayOrderInIssue>10</displayOrderInIssue>
+     <associatedMemes>
+      <li>AM_BiologicalReconstructors</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_BiologicalReconstructors</li>
+      
+    </requiredMemes>
+   
+  </PreceptDef>
+
+
+</Defs>

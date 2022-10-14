@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_Mummification</defName>
+		<label>mummification funeral</label>
+		<description>A gathering to witness the mummification of our friend</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralMummification</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_MummificationPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be mummmified so {PAWN_possessive} friends and family can visit them whenever they want.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>50</_weighting>
+			<associatedMemes>
+				<li>
+					<key>AM_Structure_Kemetism</key>
+					<value>10</value>
+				</li>
+			</associatedMemes>
+			<associatedStyles>
+				<li>
+					<key>AM_Kemetic</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>Morbid</key>
+					<value>2</value>
+				</li>
+			</associatedStyles>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>			
+			<!--Conflicts-->
+
+		</li>
+		</modExtensions>
+	</PreceptDef>	
+
+
+</Defs>

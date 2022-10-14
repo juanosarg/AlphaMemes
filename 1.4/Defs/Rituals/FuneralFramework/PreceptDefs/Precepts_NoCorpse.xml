@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--This is for the universal No Corpse-->
+	<PreceptDef>
+		<defName>AM_FuneralNoCorpse</defName>
+		<label>funeral (no corpse)</label>
+		<description>A gathering to witness the cremation of our friend.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_FuneralNoCorpsePattern</ritualPatternBase>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<canGenerateAsSpecialPrecept>true</canGenerateAsSpecialPrecept><!--Unneccsary but for reminder its defualt-->
+		<allowDuplicates>false</allowDuplicates>
+		<visible>false</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+	</PreceptDef>
+	
+
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_SteampunkRevival_Wheelchair</defName>
+		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkWheelchair/AM_SteampunkWheelchair</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Steampunk/AM_SteampunkWheelchair/AM_SteampunkWheelchair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+</Defs>

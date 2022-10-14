@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Dryads</defName>
+    <label>dryads</label>
+    <iconPath>UI/Issues/AM_DryadsIssue</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_Dryads_Enhanced</defName>
+    <issue>AM_Dryads</issue>
+    <label>enhanced</label>
+    <description>Dryads are sacred creatures, and they can help us defend the colony and protect ourselves from those who try to do us harm.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All dryads in the colony will get a huge boost, making them extremely useful in combat.</description>
+    <impact>Medium</impact>
+  
+    <displayOrderInIssue>20</displayOrderInIssue>
+     <associatedMemes>
+      <li>AM_GauranlenSupremacy</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_GauranlenSupremacy</li>
+      
+    </requiredMemes>
+   <statFactors>
+      <PruningSpeed>1.2</PruningSpeed>
+     
+    </statFactors>
+  </PreceptDef>
+  
+  
+</Defs>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- meditative -->
+
+
+  <JoyGiverDef>
+    <defName>AM_VisitCorpseContainer</defName>
+    <giverClass>AlphaMemes.JoyGiver_VisitCorpseContainer</giverClass>
+    <baseChance>1</baseChance>
+    <jobDef>AM_VisitCorpseContainer</jobDef>
+    <joyKind>Meditative</joyKind>
+  </JoyGiverDef>
+
+   <JobDef>
+    <defName>AM_VisitCorpseContainer</defName>
+    <driverClass>AlphaMemes.JobDriver_VisitCorpseContainer</driverClass>
+    <reportString>visiting grave.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyKind>Meditative</joyKind>
+    <taleOnCompletion>VisitedGrave</taleOnCompletion>
+  </JobDef>
+  
+  
+</Defs>

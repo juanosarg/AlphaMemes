@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_Corpses_Sublime</defName>
+    <issue>Corpses</issue>
+    <label>sublime</label>
+    <description>The sight of a dead person is a beautiful thing. There is nothing more sublime than decorating our colony with the corpses of our vanquished foes.</description>
+    <impact>Medium</impact>
+   
+    <displayOrderInIssue>20</displayOrderInIssue>
+     <associatedMemes>
+      <li>AM_Sadist</li>
+     
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_Sadist</li>
+      
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>ObservedLayingCorpse</eventDef>
+        <thought>AM_Corpses_Sublime_ObservedLayingCorpse</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>ObservedLayingRottingCorpse</eventDef>
+        <thought>AM_Corpses_Sublime_ObservedLayingRottingCorpse</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <ThoughtDef>
+    <defName>AM_Corpses_Sublime_ObservedLayingCorpse</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>3</stackLimit>
+   
+    <stages>
+      <li>
+        <label>observed corpse</label>
+        <description>I saw a dead body laying on the ground. What a glorious sight!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_Corpses_Sublime_ObservedLayingRottingCorpse</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>5</stackLimit>
+   
+    <stages>
+      <li>
+        <label>observed rotting corpse</label>
+        <description>I saw a rotting corpse laying on the ground. What a glorious sight!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

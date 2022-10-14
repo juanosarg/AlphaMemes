@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_Structure_Atheist</defName>
+		<label>atheism</label>
+		<description>There are no gods, no supernatural beings guiding our path or watching over us. Unfalsifiable concepts cannot be used as a basis for a rational society.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Atheist</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>forum</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->atheist</li>
+				<li>memeAdjective->godless</li>
+				<li>memeAdjective->irreligious</li>
+				<li>memeAdjective->nonreligious</li>
+				<li>memeAdjective->unbelieving</li>
+				<li>memeAdjective->secular</li>
+				<li>memeLeaderNoun->overseer</li>
+				<li>memeLeaderNoun->theorizer</li>
+				<li>memeLeaderAdjective->secular</li>
+				<li>memeLeaderAdjective->laic</li>
+				<li>memeMoralist->theoretician</li>
+				<li>memeMoralist->thinker</li>
+				<li>memeMoralist->moralist</li>
+				<li>memeMoralist->speculator</li>
+				<li>memeMoralist->theorist</li>
+				<li>memeMoralist->academic</li>
+				<li>memeMoralist->dialectician</li>
+			</rulesStrings>
+		</generalRules>
+		<requireOne>
+			<li>
+				<li>AM_Religion_Despised</li>
+				<li>AM_Religion_Disliked</li>
+				<li>AM_Religion_ProselytismDisliked</li>
+			</li>
+		</requireOne>
+		<exclusionTags>
+			<li>VME_GodEmperor</li>
+			<li>VME_Proselytism</li>
+			
+		</exclusionTags>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_AtheismDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_atheism</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>atheism</theme>
+				<adjective>atheist</adjective>
+				<member>atheist</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Atheist</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Jewish</defName>
+		<label>jewish origin</label>
+		<description>This ideoligion is a descendant of ancient Judaism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Jewish</iconPath>
+		<impact>0</impact>
+		<deityNameMakerOverride>AM_NamerDeityJewish</deityNameMakerOverride>
+		<deityTypeMakerOverride>DietyTypeMakerAbrahamic</deityTypeMakerOverride>
+		<worshipRoomLabel>synagogue</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1</deityCount>
+		<exclusionTags>
+			<li>AM_Ascetic</li>
+			
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->traditional</li>
+				<li>memeAdjective->orthodox</li>
+				<li>memeAdjective->rabbinical</li>
+				<li>memeAdjective->spiritual</li>
+				<li>memeLeaderNoun->rabbi</li>
+				<li>memeLeaderNoun->rebbe</li>
+				<li>memeLeaderAdjective->wise</li>
+				<li>memeLeaderAdjective->sagely</li>
+				<li>memeLeaderAdjective->respected</li>
+				<li>memeMoralist->kohen</li>
+				<li>memeMoralist->chazzan</li>
+				<li>memeMoralist->kohein</li>
+				<li>memeMoralist->gabbai</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_JewishDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_jewish</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>judaism</theme>
+				<adjective>jewish</adjective>
+				<member>jew</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Jewish</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Jainism</defName>
+		<label>jain origin</label>
+		<description>This ideoligion is a descendant of ancient Jainism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_JainOrigins</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>derasar</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->pacifist</li>
+				<li>memeAdjective->nonviolent</li>
+				<li>memeAdjective->mendicant</li>
+				<li>memeLeaderNoun->acharya</li>
+				<li>memeLeaderNoun->tirthankara</li>
+				<li>memeLeaderNoun->jina</li>
+				<li>memeLeaderAdjective->learned</li>
+				<li>memeLeaderAdjective->ascetic</li>
+				<li>memeLeaderAdjective->venerable</li>
+				<li>memeMoralist->upadhyay</li>
+				<li>memeMoralist->sthavira</li>
+				<li>memeMoralist->pravartaka</li>
+				<li>memeMoralist->panyasa</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_JainistDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_jainism</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>jainism</theme>
+				<adjective>jain</adjective>
+				<member>jain</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Jain</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Sikhism</defName>
+		<label>Sikh origin</label>
+		<description>This ideoligion is a descendant of ancient Sikhism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_SikhOrigins</iconPath>
+		<impact>0</impact>
+		<deityNameMakerOverride>AM_NamerDeitySikh</deityNameMakerOverride>
+		<deityTypeMakerOverride>AM_DeityTypeMakerSikh</deityTypeMakerOverride>
+		<worshipRoomLabel>gurdwara</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->true</li>
+				<li>memeAdjective->righteous</li>
+				<li>memeAdjective->spiritual</li>
+				<li>memeLeaderNoun->granthi</li>
+				<li>memeMoralist->Guru Granth Sahib scholar</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_SikhDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_sikh</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>sikhism</theme>
+				<adjective>sikh</adjective>
+				<member>sikh</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Sikh</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Kemetism</defName>
+		<label>Kemetic origin</label>
+		<description>This ideoligion is a descendant of Egyptian Neopaganism, also known as Kemetism. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_KemeticOrigins</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->reconstructed</li>
+				<li>memeAdjective->revised</li>
+				<li>memeHyphenPrefix->neo</li>
+				<li>memeLeaderNoun->pharaoh</li>
+				<li>memeLeaderAdjective->solemn</li>
+				<li>memeLeaderAdjective->absolute</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeMoralist->lector priest</li>
+				<li>memeMoralist->hem-netjer</li>
+				<li>memeMoralist->wab priest</li>
+				<li>memeMoralist->sem priest</li>
+				<li>memeMoralist->ka-priest</li>
+				<li>memeMoralist->swnw</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_KemeticDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_kemetic</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>kemetism</theme>
+				<adjective>kemetic</adjective>
+				<member>kemetic</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Kemetic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Amun</name>
+				<type>The Creator God</type>
+			</li>
+			<li>
+				<name>Ra</name>
+				<type>God of the Sun</type>
+			</li>
+			<li>
+				<name>Nut</name>
+				<type>Goddess of Earth</type>
+			</li>
+			<li>
+				<name>Shu</name>
+				<type>God of Air</type>
+			</li>
+			<li>
+				<name>Tefnut</name>
+				<type>Goddess of Moisture</type>
+			</li>
+			<li>
+				<name>Osiris</name>
+				<type>God of Justice</type>
+			</li>
+			<li>
+				<name>Isis</name>
+				<type>Goddess of Motherhood</type>
+			</li>
+			<li>
+				<name>Horus</name>
+				<type>God of the Sky</type>
+			</li>
+			<li>
+				<name>Set</name>
+				<type>God of Deception</type>
+			</li>
+			<li>
+				<name>Ma</name>
+				<type>Goddess of Balance</type>
+			</li>
+			<li>
+				<name>Anubis</name>
+				<type>God of Death</type>
+			</li>
+			<li>
+				<name>Nephthys</name>
+				<type>Goddess of Funerals</type>
+			</li>
+			<li>
+				<name>Hathor</name>
+				<type>Goddess of Drunkenness</type>
+			</li>
+			<li>
+				<name>Bastet</name>
+				<type>Goddess of Beauty</type>
+			</li>
+			<li>
+				<name>Thoth</name>
+				<type>God of Intellect</type>
+			</li>
+			<li>
+				<name>Ptah</name>
+				<type>God of Memphis</type>
+			</li>
+			<li>
+				<name>Khonsu</name>
+				<type>God of the Moon</type>
+			</li>
+			<li>
+				<name>Khnum</name>
+				<type>God of Potters</type>
+			</li>
+			<li>
+				<name>Hapi</name>
+				<type>God of Fertility</type>
+			</li>
+			<li>
+				<name>Sobek</name>
+				<type>God of the Nile</type>
+			</li>
+			<li>
+				<name>Bes</name>
+				<type>God of Entertainment</type>
+			</li>
+			<li>
+				<name>Tawaret</name>
+				<type>Goddess of Childbirth</type>
+			</li>
+			<li>
+				<name>Neith</name>
+				<type>Goddess of Arrows</type>
+			</li>
+			<li>
+				<name>Nekhbet</name>
+				<type>Goddess of Vultures</type>
+			</li>
+			<li>
+				<name>Wadjet</name>
+				<type>Goddess of Kingship</type>
+			</li>
+			<li>
+				<name>Kherty</name>
+				<type>God of the Underworld</type>
+			</li>
+			<li>
+				<name>Nefertum</name>
+				<type>God of Perfume</type>
+			</li>
+			<li>
+				<name>Renenutet</name>
+				<type>Goddess of Nursing</type>
+			</li>
+			<li>
+				<name>Heka</name>
+				<type>God of Magic</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_SteampunkRevival</defName>
+		<label>steampunk revival</label>
+		<description>With the advent of zero-emissions steam engines powered by flameless ceramic heat cells in the 22nd century, steam powered technology experienced a sudden revival. This ideoligion has kept the overall style and sentiment of that era.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_SteampunkRevival</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>parlor</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->steampunk</li>
+				<li>memeAdjective->analytical</li>
+				<li>memeAdjective->retrofuturistic</li>
+				<li>memeAdjective->aetheric</li>
+				<li>memeAdjective->neo-victorian</li>				
+				<li>memeLeaderNoun->overseer</li>
+				<li>memeLeaderNoun->cogmaster</li>				
+				<li>memeMoralist->tinkerer</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_SteampunkRevivalDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_steampunk</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>steampunk</theme>
+				<adjective>steampunk</adjective>
+				<member>worker</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_SteampunkRevival</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Corsair</defName>
+		<label>corsair</label>
+		<description>The misguided romanticization of ages long past has been a constant through all human history. Even though the modern pirates on the Rim have nothing to do with ancient seafaring pirates the corsair aesthetics have perdured well into the space age.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Corsair</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>forecastle</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->corsair</li>
+				<li>memeAdjective->marauding</li>
+				<li>memeAdjective->sea dog</li>
+				<li>memeAdjective->freebooting</li>
+				<li>memeAdjective->roving</li>
+							
+				<li>memeLeaderNoun->shipmaster</li>
+				<li>memeLeaderNoun->commodore</li>
+				
+				<li>memeLeaderAdjective->gallant</li>
+				<li>memeLeaderAdjective->draconian</li>
+				<li>memeLeaderAdjective->callous</li>
+				<li>memeLeaderAdjective->brave</li>
+				<li>memeLeaderAdjective->ruthless</li>
+				<li>memeLeaderAdjective->daring</li>
+				<li>memeMoralist->lieutenant</li>
+				<li>memeMoralist->sargeant</li>
+				<li>memeMoralist->subaltern</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_CorsairDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_corsair</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>corsairs</theme>
+				<adjective>corsair</adjective>
+				<member>corsair</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Corsair</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<addDesignators>
+			<li>AM_GrogDispenser</li>
+		</addDesignators>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Neolithic</defName>
+		<label>neolithic</label>
+		<description>The vast gulfs of space and time between the stars leave individual worlds vulnerable to regression. This culture has fallen from grace entirely, and reverted to stone-age, prehistoric levels of technological advancement and refinement.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind that this structure is NOT a technology locker in ANY way. This culture has kept the style of their stone age origins, but they can make weapons, build a spaceship, etc. Use a different mod to lock research to certain tech levels.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Neolithic</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->ancient</li>
+				<li>memeAdjective->prehistoric</li>
+				<li>memeAdjective->primitive</li>
+				<li>memeAdjective->primeval</li>
+				<li>memeAdjective->primordial</li>			
+				<li>memeLeaderNoun->chief</li>
+				<li>memeLeaderAdjective->antediluvian</li>
+				<li>memeLeaderAdjective->primal</li>
+				<li>memeLeaderAdjective->archaic</li>
+				<li>memeMoralist->shaman</li>
+				<li>memeMoralist->medicine man</li>
+				<li>memeMoralist->witch doctor</li>
+				<li>memeMoralist->seer</li>
+			
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_NeolithicDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_neolithic</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>neolithic</theme>
+				<adjective>neolithic</adjective>
+				<member>caveman</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Neolithic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Aurath</name>
+				<type>The Burning Hunter</type>
+			</li>
+			<li>
+				<name>Vitali</name>
+				<type>The Marching Father</type>
+			</li>
+			<li>
+				<name>Saul</name>
+				<type>The Searching Wraith</type>
+			</li>
+			<li>
+				<name>Curce</name>
+				<type>The Raging Servant</type>
+			</li>
+			<li>
+				<name>Lyte</name>
+				<type>The Full Moon Blacksmith</type>
+			</li>
+			<li>
+				<name>Vysio</name>
+				<type>The Fiery Dancer</type>
+			</li>
+			<li>
+				<name>Blisse</name>
+				<type>The Roaming Curator</type>
+			</li>
+			<li>
+				<name>Ethe</name>
+				<type>The Waving Artist</type>
+			</li>
+			<li>
+				<name>Devo</name>
+				<type>The Tombstone Soldier</type>
+			</li>
+			<li>
+				<name>Auriel</name>
+				<type>The Crypt Clown</type>
+			</li>
+			<li>
+				<name>Spiri</name>
+				<type>The Cheerful Witch</type>
+			</li>
+			<li>
+				<name>Erie</name>
+				<type>The Magnanimous Reaper</type>
+			</li>
+			<li>
+				<name>Aura</name>
+				<type>The Playful Appearance</type>
+			</li>
+			
+		</fixedDeityNameTypes>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<removedDesignators>
+					
+					<li>Bed</li>
+					<li>Table1x2c</li>
+					<li>Table2x2c</li>
+					<li>Table2x4c</li>
+					<li>Table3x3c</li>
+				</removedDesignators>
+			</li>
+		</modExtensions>
+		<requireOne>
+			<li>
+				<li>AM_Megaliths_Desired</li>
+			
+			</li>
+		</requireOne>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Structure_Scavenger</defName>
+		<label>scavenger</label>
+		<description>The refuse and discarded ancient technology of past civilizations can be easily recycled and repurposed. Why would be toil endlessly to create things from scratch, when we can make use of what is already there?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This structure (and associated style) make the Scrapper meme easier to use, allowing the player to just build things that count for the Scrapper meme.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Scavenger</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>scrap yard</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>0</deityCount>
+		<generalRules>
+			<rulesStrings>
+								
+				<li>memeAdjective->scrapping</li>
+				<li>memeAdjective->scavenging</li>
+				<li>memeAdjective->scrounging</li>
+				<li>memeHyphenPrefix->scrap</li>
+				<li>memeHyphenPrefix->junk</li>
+				<li>memeConcept->scrap</li>
+				<li>memeLeaderNoun->scavenger</li>
+				<li>memeLeaderNoun->scrapper</li>
+				<li>memeLeaderNoun->scrounger</li>
+				<li>memeMoralist->junk rat</li>
+				
+			</rulesStrings>
+		</generalRules>
+		
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_ScavengerDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_scavenger</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>scavengers</theme>
+				<adjective>scavenging</adjective>
+				<member>scavenger</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Scavenger</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		
+	</MemeDef>
+</Defs>

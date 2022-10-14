@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  
+  	<ThoughtDef>
+    <defName>AM_TerribleAnimaBurial</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>disgraceful burial</label>
+        <description>That anima burial was devastating, I hope the tree spirit will forgive us some day.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_LacklusterAnimaBurial</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>lackluster burial</label>
+        <description>That anima burial was quite disappointing. The tree spirit seemed displeased.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_GoodAnimaBurial</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>good burial</label>
+        <description>The burial went well, a good sendoff and I believe my friend is with the tree's spirit now.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AM_AmazingAnimaBurial</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>amazing burial</label>
+        <description>The burial was amazing. I could feel the tree spirit embracing our friend.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	<ThoughtDef>
+	<defName>AM_IncredibleAnimaBurial</defName>
+	<thoughtClass>Thought_AttendedRitual</thoughtClass>
+	<durationDays>6</durationDays>
+	<stackLimit>3</stackLimit>
+	<stages>
+	  <li>
+		<label>incredible burial</label>
+		<description>That burial was enlightening, the tree spirit graced us with some of its power.</description>
+		<baseMoodEffect>12</baseMoodEffect>
+	  </li>
+	</stages>
+	</ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>AM_AnimaScreamLesser</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>3</stackLimit>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <stages>
+      <li>
+        <label>anima scream</label>
+        <description>Such a pain in my head. We shouldn't have angered the tree.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+ 
+
+</Defs>

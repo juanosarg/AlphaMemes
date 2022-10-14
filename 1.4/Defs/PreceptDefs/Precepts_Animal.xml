@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- History events -->
+
+
+
+  <!-- Issue -->
+
+  <IssueDef>
+    <defName>AM_AnimalsDespised</defName>
+    <label>despised animal</label>
+    <allowMultiplePrecepts>true</allowMultiplePrecepts>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>AM_DespisedAnimalDied</defName>
+    <label>despised animal died</label>
+  </HistoryEventDef>
+  
+  <HistoryEventDef>
+    <defName>AM_AnimalDied</defName>
+    <label>animal died</label>
+  </HistoryEventDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_AnimalDespised</defName>
+    <issue>AM_AnimalsDespised</issue>
+    <label>despised</label>
+    <description>This animal is considered by believers to be specially abhorrent, which means it must be hunted and exterminated at all costs.</description>
+    <preceptClass>AlphaMemes.Precept_DespisedAnimal</preceptClass>
+    <workerClass>AlphaMemes.PreceptWorker_DespisedAnimal</workerClass>
+    <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <impact>Medium</impact>
+    <maxCount>6</maxCount>
+    <comps>
+     
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AM_DespisedAnimalDied</eventDef>
+        <thought>AM_AnimalDespised_Died_Despised</thought>
+      </li>
+	  <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AM_AnimalDied</eventDef>
+        <thought>AM_AnimalDespised_Died_Normal</thought>
+      </li>
+     
+    </comps>
+  </PreceptDef>
+  
+   <ThoughtDef>
+    <defName>AM_AnimalDespised_Died_Despised</defName>
+   
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+   
+    <stages>
+      <li>
+        <label>despised animal died</label>
+        <description>A despised animal died. The death of such a grotesque abomination is something to celebrate.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>AM_AnimalDespised_Died_Normal</defName>   
+    <durationDays>5</durationDays> 
+	<stackLimit>2</stackLimit>	
+    <stages>
+      <li>
+        <label>animal died</label>
+        <description>An animal died. The sooner we get rid of these misguided genetic creations the sooner the galaxy will be safe.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+ 
+
+</Defs>

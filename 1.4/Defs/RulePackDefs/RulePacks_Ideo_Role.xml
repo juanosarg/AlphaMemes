@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  
+  <RulePackDef>
+    <defName>AM_MasterArchitect</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Master architect</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+ 
+
+</Defs>

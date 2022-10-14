@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_DreadnoughtFuneral</defName>
+		<label>dreadnought funeral</label>
+		<description>A gathering to witness the venerated deceased be turned into a true machine of war.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralDreadnought</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_DreadnoughtFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<alsoAdds>AM_DreadnoughtCryptoFuneral</alsoAdds>
+		<impact>Medium</impact>
+		<associatedMemes> 
+			<li>Transhumanist</li>
+			<li>AM_Bulwark</li>
+		</associatedMemes> 
+		<conflictingMemes>
+			<li>FleshPurity</li>			
+		</conflictingMemes>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>		
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be put in a sarcophagus warcasket, so even in death they can serve!</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>25</_weighting>
+			<associatedMemes>
+				<li>
+					<key>Transhumanist</key>
+					<value>5</value>
+				</li>
+				<li>
+					<key>AM_Bulwark</key>
+					<value>3</value>
+				</li>
+			</associatedMemes>
+			<!--Animals-->
+			<allowAnimals>false</allowAnimals>
+			<!--Conflicts-->
+			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+				<researchNeeded>
+					<li>VFEP_SpacerWarcaskets</li>
+				</researchNeeded>
+			</specialConflicts>
+		</li>
+		</modExtensions>		
+	</PreceptDef>
+	<PreceptDef ParentName ="AM_CryptoFuneralBase">
+		<defName>AM_DreadnoughtCryptoFuneral</defName>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
+			<_weighting>0</_weighting>
+			<allowAnimals>false</allowAnimals>
+		</li>
+		</modExtensions>		
+	</PreceptDef>
+</Defs>

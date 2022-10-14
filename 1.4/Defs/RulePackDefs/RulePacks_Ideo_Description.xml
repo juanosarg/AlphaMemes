@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoStoryPatternDef>
+		<defName>AM_AtheismDescription</defName>
+		<segments>
+			<li>atheismlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>atheismlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_atheismlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_atheismlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->lecture</li>
+				<li>book->letter</li>
+				<li>book->conference</li>
+				<li>book->address</li>
+				<li>book->discourse</li>
+				<li>concept->the Death of God</li>
+				<li>concept->Non-belief</li>
+				<li>concept->Scepticism</li>
+				<li>concept->Irreligion</li>
+				<li>concept->Godlessness</li>
+				<li>concept->the Rejection of Magical Thinking</li>
+				<li>concept->Enlightened Humanism</li>
+				<!-- generic intro -->
+				<li>atheismlessonIntro->... thus what is wanted are blindness and intoxication and an eternal song over the waves in which reason has drowned. The objective of religion is clear, hiding to us that</li>
+				<li>atheismlessonIntro->Human decency is not derived from religion. It precedes it. Once you understand that it becomes clear:</li>
+				<li>atheismlessonIntro->Atheism is more than just the knowledge that gods do not exist, and that religion is either a mistake or a fraud. Atheism is an attitude. It teaches us one thing:</li>
+				<li>atheismlessonIntro->Religion is excellent stuff for keeping common people quiet. The more controlled they are the longer it takes them to realize that</li>
+				<li>atheismlessonIntro->There is something infantile in the presumption that somebody else has a responsibility to give your life meaning and point. Only you can realize that</li>
+				<li>atheismlessonIntro->Being a Humanist means trying to behave decently without expectation of rewards or punishment after you are dead. You will show everyone that</li>
+				<li>atheismlessonIntro->When one person suffers from a delusion, it is called insanity. When many people suffer from a delusion it is called a Religion. Only those who are free from magical thinking can see that</li>
+				<li>atheismlessonIntro->I believe the simplest explanation is, there is no God. No one created the universe and no one directs our fate. This leads me to a profound realization that</li>
+				<!-- generic reinforcement -->
+				<li>atheismlessonReinforcement->We can judge our progress by the courage of our questions and the depth of our answers, our willingness to embrace what is true rather than what feels good.</li>
+				<li>atheismlessonReinforcement->The more I learn about the universe, the less convinced I am that there's any sort of benevolent force that has anything to do with it, at all.</li>
+				<li>atheismlessonReinforcement->After coming into contact with a religious man I always feel I must wash my hands.</li>
+				<li>atheismlessonReinforcement->I don't want to believe. I want to know.</li>
+				<li>atheismlessonReinforcement->With or without religion, good people can behave well and bad people can do evil; but for good people to do evil - that takes religion.</li>
+				<li>atheismlessonReinforcement->Civilization will not attain to its perfection until the last stone from the last church falls on the last priest.</li>
+				<li>atheismlessonReinforcement->We must question the story logic of having an all-knowing all-powerful God, who creates faulty Humans, and then blames them for his own mistakes.</li>
+				<li>atheismlessonReinforcement->If there is a God, atheism must seem to Him as less of an insult than religion.</li>
+				<li>atheismlessonReinforcement->When people ask me if a god created the universe, I tell them that the question itself makes no sense.</li> 
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_JewishDescription</defName>
+		<segments>
+			<li>jewishlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>jewlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_jewishlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_jewlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+				<li>revision->revision</li>
+				<li>revision->emendation</li>
+				<li>revision->edition</li>
+				<li>revision->correction</li>
+				<li>revision->alteration</li>
+				<li>book->Tanakh</li>
+				<li>book->Torah</li>
+				<li>book->Pentateuch</li>
+				<li>book->Nevi'im</li>
+				<li>book->Ketuvim</li>
+				<li>book->Talmud</li>
+				<li>edition->25th Edition</li>
+				<li>edition->3rd Edition</li>
+				<li>edition->12nd Edition</li>
+				<li>edition->37th Edition</li>
+				<!-- generic intro -->
+				<li>jewishlessonIntro->Do not seek revenge or bear a grudge against anyone among your people, but love your neighbor as yourself. I am the LORD. I want you to understand:</li>
+				<li>jewishlessonIntro->Then Moses said, 'Now show me your glory.' And the Lord said, 'I will cause all my goodness to pass in front of you, and I will proclaim my name, the Lord, in your presence. I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.' This teaches us that</li>
+				<li>jewishlessonIntro->The LORD bless you and keep you; the LORD make his face shine upon you and be gracious to you; the LORD turn his face toward you and give you peace. The LORD did teach me one thing:</li>
+				<li>jewishlessonIntro->By teaching the Torah on the [place_summary] [place_name], I realized that</li>
+				<li>jewishlessonIntro->God is not a human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill? You will realize that</li>
+				<li>jewishlessonIntro->And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth. He was teaching that</li>
+				<li>jewishlessonIntro->For the life of a creature is in the blood, and I have given it to you to make atonement for yourselves on the altar; it is the blood that makes atonement for one's life. One thing will become increasingly clear then: that</li>
+				<li>jewishlessonIntro->Any man or woman who wrongs another in any way and so is unfaithful to the Lord is guilty and must confess the sin they have committed. Then they'll see that</li>
+				<li>jewishlessonIntro->In your unfailing love, you will lead the people you have redeemed. In your strength, you will guide them to your holy dwelling. Once that is achieved you will see that</li>
+				<!-- generic reinforcement -->
+				<li>jewlessonReinforcement->A righteous man falls down seven times and gets up.</li>
+				<li>jewlessonReinforcement->If you don't know what you're living for, you haven't yet lived.</li>
+				<li>jewlessonReinforcement->Gam zu l'tova. This too is for the good.</li>
+				<li>jewlessonReinforcement->I don't speak because I have the power to speak; I speak because I don't have the power to remain silent.</li>
+				<li>jewlessonReinforcement->There are no problems, only opportunities for growth.</li>
+				<li>jewlessonReinforcement->The salvation of God is like the blink of an eye.</li>
+				<li>jewlessonReinforcement->L’fum tzara agra, according to the effort is the reward.</li>
+				<li>jewlessonReinforcement->L’Chaim!</li>
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_JainistDescription</defName>
+		<segments>
+			<li>jainistlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>jainlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_jainistlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_jainlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+				<li>lessonAttribution->[founder_nameFull]'s memorized sutras</li>
+				<li>revision->interpretation</li>
+				<li>revision->preserved meditations</li>
+				<li>revision->theological musings</li>
+				<li>revision->reflection</li>
+				<li>revision->rumination</li>
+				<li>book->teachings of Mahavira</li>
+				<li>book->Agamas</li>
+				<li>book->compiled sutras</li>
+				<li>book->Purvas</li>
+				<li>edition->32nd Edition</li>
+				<li>edition->43rd Edition</li>
+				<li>edition->52nd Edition</li>
+				<li>edition->57th Edition</li>
+				<!-- generic intro -->
+				<li>jainistlessonIntro->This is my country, that is your country; these are the conceptions of narrow souls - to the liberal minded the whole world is a family. I want you to understand:</li>
+				<li>jainistlessonIntro->In happiness and suffering, in joy and grief, we should regard all creatures as we regard our own self. This teaches us that</li>
+				<li>jainistlessonIntro->Some foolish men declare that a creator made the world. The doctrine that the world was created is ill advised and should be rejected. If God created the world, where was he before the creation? These musings did teach me one thing:</li>
+				<li>jainistlessonIntro->By teaching the sacred Agamas on the [place_summary] [place_name], I realized that</li>
+				<li>jainistlessonIntro->May peace rule the universe; may peace rule in kingdoms and empires; may peace rule in states and in the lands of the potentates; may peace rule in the house of friends and may peace also rule in the house of enemies. In peace you will realize that</li>
+				<li>jainistlessonIntro->We preach and practice brotherhood — not only of man but of all living beings — not on Sundays only but on all the days of the week. We believe in the law of universal justice. We preach that</li>
+				<li>jainistlessonIntro->If a person's mind is controlled by forces of revenge and jealousy, it cannot express love and sympathy. One thing will become increasingly clear then: that</li>
+				<li>jainistlessonIntro->A man is seated on top of a tree in the midst of a burning forest. He sees all living beings perish. But he doesn’t realize that the same fate is soon to overtake him also. That man is a fool. He needs to realize that</li>
+				<li>jainistlessonIntro->Attachment and aversion are the root cause of karma, and karma originates from infatuation. Karma is the root cause of birth and death, and these are said to be the source of misery. None can escape the effect of their own past karma. Once you free yourself from attachment you will see that</li>
+				<!-- generic reinforcement -->
+				<li>jainlessonReinforcement->Live and allow others to live; hurt no one; life is dear to all living beings.</li>
+				<li>jainlessonReinforcement->By sincerity, a man gains physical, mental and linguistic straightforwardness, and harmonious tendency; that is, congruence of speech and action.</li>
+				<li>jainlessonReinforcement->All souls are equal and alike and have the similar nature and qualities.</li>
+				<li>jainlessonReinforcement->Start the practice of self-control with some penance; begin with fasting.</li>
+				<li>jainlessonReinforcement->The nature of things is dharma.</li>
+				<li>jainlessonReinforcement->One who neglects or disregards the existence of earth, air, fire, water and vegetation disregards his own existence which is entwined with them.</li>
+				<li>jainlessonReinforcement->Soul is the central point of spiritual discipline.</li>
+				<li>jainlessonReinforcement->Eating constitutes the greatest obstacle to self-control; it gives rise to indolence.</li>
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_SikhDescription</defName>
+		<segments>
+			<li>sikhlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>sikhlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_sikhlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_sikhlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book]</li>
+				<li>lessonAttribution->[founder_nameFull]'s [revision] of the [book], [edition]</li>
+				<li>revision->writings</li>
+				<li>revision->contemplations</li>
+				<li>revision->theological debates</li>
+				<li>revision->pondering</li>
+				<li>revision->meditation</li>
+				<li>book->Guru Granth Sahib</li>
+				<li>book->Sarbloh Granth</li>
+				<li>book->Adi Sri Granth Sahib</li>
+				<li>book->Dasam Granth</li>
+				<li>edition->2nd Edition</li>
+				<li>edition->13th Edition</li>
+				<li>edition->38th Edition</li>
+				<li>edition->49th Edition</li>
+				<!-- generic intro -->
+				<li>sikhlessonIntro->Truth is the highest of all virtues, but higher than truth is true conduct. I want you to understand:</li>
+				<li>sikhlessonIntro->The fool indulges in sensual pleasures which in the end lead to pain. Easy and sinful life is the Cause of diseases. This teaches us that</li>
+				<li>sikhlessonIntro->Neither do I call myself good nor I see any one bad. These contemplations did teach me one thing:</li>
+				<li>sikhlessonIntro->By teaching the sacred words of the Guru Granth Sahib on the [place_summary] [place_name], I realized that</li>
+				<li>sikhlessonIntro->In this life our actions are the ink and mind the paper, we inscribe on it the two writings of good and evil. In time you will realize that</li>
+				<li>sikhlessonIntro->When the mind is not pure, what is the good of practicing outward cleanliness? We preach that</li>
+				<li>sikhlessonIntro->There is only one air, earth and only one light of the God in each being. One thing will become increasingly clear then: that</li>
+				<li>sikhlessonIntro->The word (Shabad) is the Guru, And the mind attuned to the Shabad is the disciple. He needs to realize that</li>
+				<li>sikhlessonIntro->For the sake of wealth, the mortals become servants and thieves. But it goes not with them and remains behind for another. Once you free yourself from material attachment you will see that</li>
+				<!-- generic reinforcement -->
+				<li>sikhlessonReinforcement->The glories are in the Lord’s own hand. He blesses those with whom He is pleased.</li>
+				<li>sikhlessonReinforcement->He alone is a wise man, who gains spiritual knowledge through meditation upon the divine virtues.</li>
+				<li>sikhlessonReinforcement->Every one say that the Lord is one, but each one is engrossed in ego and pride.</li>
+				<li>sikhlessonReinforcement->If he who plays the tyrant, is honoured, then deem it to be the surest sign of the Dark Age.</li>
+				<li>sikhlessonReinforcement->A saint is better off without bathing. A thief is always a thief whether he bathes in sacred waters, or not.</li>
+				<li>sikhlessonReinforcement->We are men of but one breath and know not the appointed time and moment of our departure from this world.</li>
+				<li>sikhlessonReinforcement->Meet the Lord through contemplation and your anxieties will be dispelled.</li>
+				<li>sikhlessonReinforcement->When man abandons desire, then alone does he become a true renouncer.</li>
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	<IdeoStoryPatternDef>
+		<defName>AM_KemeticDescription</defName>
+		<segments>
+			<li>kemeticlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>kemeticlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_kemeticlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_kemeticlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->fragment of a [edited] [book] found [museum]</li>
+				<li>edited->heavily edited</li>
+				<li>edited->poorly translated</li>
+				<li>edited->ruined</li>
+				<li>edited->forgotten</li>
+				<li>edited->recovered</li>
+				<li>book->Book of the Dead</li>
+				<li>book->papyrus</li>
+				<li>book->funerary text</li>
+				<li>museum->in the archeological museum of Kalthas IV</li>
+				<li>museum->in the black market of Irithir</li>
+				<li>museum->in the hold of an imperial ship from Sophiamunda</li>
+				<li>museum->in the Novo Mosteiro dos Jerónimos in Aracena VI</li>
+				<li>museum->in ancient ruins on Ticonderoga</li>
+				<li>museum->by an artifact hunter on Ilwaba</li>
+				<!-- generic intro -->
+				<li>kemeticlessonIntro->O you young men of Shu of the morning, who have power over those who flash among the sun-folk, whose arms move about and whose heads sway to and fro, may I move about every day. Understand:</li>
+				<li>kemeticlessonIntro->Behold Osiris Ani the scribe who recordeth the holy offerings of all the gods, who saith:</li>
+				<li>kemeticlessonIntro->Hail all ye gods of the Temple of the Soul, who weigh heaven and earth in the balance, and who provide food and abundance of meat. They teach us one thing:</li>
+				<li>kemeticlessonIntro->The House of the Prince keepeth festival, and the sound of those who rejoice is in the mighty dwelling. The gods are glad when we realize that</li>
+				<li>kemeticlessonIntro->Behold Osiris, Qenna the merchant, who saith: "Homage to thee, in thy rising thou Tmu in thy crowns of beauty. Thou risest, thou risest, thou Ra shinest, thou shinest, at dawn of day. Preach that</li>
+				<li>kemeticlessonIntro->Homage to thee, O thou glorious Being, thou who art provided with all things. O Tmu-Heru-khuti, when thou risest in the horizon of heaven, a cry cometh out of the mouth of all peoples:</li>
+				<li>kemeticlessonIntro->I am Tmu-Khepera, who gave birth unto himself upon the thigh of his divine mother. Those who are in Nu are made wolves, and those who are among the godlike rulers are become. Realize that</li>
+				<li>kemeticlessonIntro->Hail, Bull of Amenta. I am brought unto thee, I am the oar of Ra wherewith he ferried over the aged ones; let me not be buried nor consumed. I thus declare:</li>
+				<!-- generic reinforcement -->
+				<li>kemeticlessonReinforcement->Hail, Tmu, grant thou unto me the sweet breath which is in thy two nostrils.</li>
+				<li>kemeticlessonReinforcement->Thou risest, O still heart! Thou shinest, O still heart!</li>
+				<li>kemeticlessonReinforcement->The blood of Isis, the charms of Isis, the power of Isis, are a protection unto me, the chief, and they crush that which I abhor.</li>
+				<li>kemeticlessonReinforcement->I am the soul of Ra, and the guide of the gods into the underworld. The souls come forth upon earth to do the will of their ka's.</li>
+				<li>kemeticlessonReinforcement->O Lord of Amentet, I am in thy presence. There is no sin in me.</li>
+				<li>kemeticlessonReinforcement->Hail, thou bearer of the sistrum, who comest forth from Nu, I have not spoken scornfully.</li>
+				<li>kemeticlessonReinforcement->Homage to you, O ye gods who live in your hall of Right and Truth, and who have no evil in your bodies.</li>
+				<li>kemeticlessonReinforcement->I have rested in Hemet, on the north of the field of the grasshoppers, wherein the holy mariners do purify themselves in the night season.</li>
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_SteampunkRevivalDescription</defName>
+		<segments>
+			<li>steampunklessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_steampunklessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->lecture</li>
+				<li>book->letter</li>
+				<li>book->studies</li>
+				<li>book->encyclopedia</li>
+				<li>book->critique</li>
+				<li>concept->ancient technologies</li>
+				<li>concept->the resurgence of the past</li>
+				<li>concept->the steam engine</li>
+				<li>concept->the neo-Victorian era</li>
+				<li>concept->the analytical AI</li>
+				<li>concept->the Brass Chronicles</li>				
+				<!-- generic intro -->
+				<li>steampunklessonIntro->The perfection of the ceramic heat cell and flameless combustion ushered in an era of invention and creativity in the early days of space exploration. The great philosophers of that era taught us that</li>
+				<li>steampunklessonIntro->As we all know, the Caloric Porous Structure Cell -CPSC-, is a ceramic device to burn a fuel without flame, converting the thermal energy to mechanical work. Its refinement ushered in an era of technological wonders, with its greatest philosophers preaching that</li>
+				<li>steampunklessonIntro->There is a lot to be learned of the past, specially of that particular period in the 22nd century. It teaches us one thing:</li>				
+				<li>steampunklessonIntro->Some argue that it was the refinement of modern steam technology that led to a period of technological wonders in the mid 22nd century. Others say it was pure nostalgia for a past that never was. The mainstream sentiment among people in that era was that</li>
+				<li>steampunklessonIntro->Let's face it: humanity was drowning on its own refuse. Polluting energy sources were choking us into extinction. The ceramic heat cell ended all that, providing a fuel source with very low emissions. This affected everything, from science to philosophy, with the mainstream philosophical currents postulating that</li>
+				<li>steampunklessonIntro->The perfection of flameless combustion on the 22nd century was revolutionary. Society was shook to its core, and great philosophers arose that taught us that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_CorsairDescription</defName>
+		<segments>
+			<li>corsairlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_corsairlessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->speech</li>
+				<li>book->eloquent speech</li>
+				<li>book->rant</li>
+				<li>book->tirade</li>
+				<li>book->diatribe</li>
+				<li>concept->pillaging</li>
+				<li>concept->stealing from the weak</li>
+				<li>concept->raiding</li>
+				<li>concept->walking the plank</li>
+				<li>concept->scurvy</li>
+				<li>concept->the Brass Chronicles</li>				
+				<!-- generic intro -->
+				<li>corsairlessonIntro->"Pillagin', shoutin' an' slashin' — that be how we sail! May she always be swabbin' an' riggin'." Our captain taught us that</li>
+				<li>corsairlessonIntro->"A wise knave keeps only comp'ny with a pox-ridden rascal an' a grungy anchor." The boss preached that</li>
+				<li>corsairlessonIntro->"Bucket o' bladder stench, ye blaggard! Did ye dance a jig on me scabbard?" - the captain said. Strife taught us one thing:</li>				
+				<li>corsairlessonIntro->"Begad! Why be they screamin' so cockeredly? I be broadsidin' on their bowspirit like a whoreson seadog!". The insane ramblings from the boss made us understand that</li>
+				<li>corsairlessonIntro->"Damnation seize me soul if I give ye quarters, or take any from ye." The courage of the captain was showing us that</li>
+				<li>corsairlessonIntro->"I'm yer knave, an' yer me kraken. For real, that be!." We didn't understand what the boss meant, but we were confident in the knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->No one can argue with that.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_NeolithicDescription</defName>
+		<segments>
+			<li>neolithiclessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_neolithiclessonIntro] [r_lesson]. [r_lessonReinforcement]"</li>
+				
+				<!-- generic intro -->
+				<li>neolithiclessonIntro->As we huddled shivering over the meager campfire, our dearest shaman taught us that</li>
+				<li>neolithiclessonIntro->We had been hunting the mammoth worm for days now, our spears' tips glistening with the recently applied poison. The chieftain urged us to hurry, reminding us that</li>
+				<li>neolithiclessonIntro->The whole wall of the cave showed the history of our people. Strife taught us one thing:</li>				
+				<li>neolithiclessonIntro->The foolish ambition and carelessness of those who came before made us understand that</li>
+				<li>neolithiclessonIntro->We were content with our simple lives of gathering and hunting, with little need for the extravagant luxuries of our ancestors. The courage of the elders was showing us that</li>
+				<li>neolithiclessonIntro->There were some in out tribe who wanted to go beyond, explore and expand into a new settlement, but we were confident in the knowledge that</li>
+				<li>neolithiclessonIntro->Of course, we had seen the grotesque ruins of those who came before, and the elders have always taught us that it was their thirst for power that brought the downfall of their once mighty cities. By seeing their ruins we are emboldened in our knowledge that</li>
+				<li>neolithiclessonIntro->Our traditions speak of the Great Fire that engulfed the world. Of terrible weapons that burned brighter than any fire, and how everything perished in an abominable conflagration. Only few survived: those who were able to exploit their knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->Legends about our struggles will be told around campfires for many years to come.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_ScavengerDescription</defName>
+		<segments>
+			<li>scavengerlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_scavengerlessonIntro] [r_lesson]. [r_lessonReinforcement]"</li>
+				
+				<!-- generic intro -->
+				<li>scavengerlessonIntro->The ruins of ancient civilizations were ripe for the taking. This taught us that</li>
+				<li>scavengerlessonIntro->Our leader taught us how to convert useless scrap into wondrous creations, reminding us that</li>
+				<li>scavengerlessonIntro->The whole planet was poor in resources, so we had to adapt, and use whatever scraps of ancient technology were lying around. Strife taught us one thing:</li>				
+				<li>scavengerlessonIntro->The foolish ambition and carelessness of those who came before made us understand that</li>
+				<li>scavengerlessonIntro->We were content with our simple lives of scavenging, with little need for the extravagant luxuries of our ancestors. Our fight for survival was showing us that</li>
+				<li>scavengerlessonIntro->The wilderness around our settlement was devoid of natural resources, but we were confident in the knowledge that</li>
+				<li>scavengerlessonIntro->Of course, we had seen the grotesque ruins of those who came before, and we quickly raided them for scrap. By seeing their ruins we are emboldened in our knowledge that</li>
+				<li>scavengerlessonIntro->Only those who can repurpose the ancient technology of those who came before will survive: those who are able to exploit their knowledge that</li>
+				<!-- generic reinforcement -->
+				
+				<li>lessonReinforcement->In the end, we will adapt and survive, like we've always done.</li>
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+</Defs>

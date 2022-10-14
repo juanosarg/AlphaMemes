@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Duty Defs-->
+   <DutyDef>
+    <defName>AM_DeliverScrapperDeliverThing</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_ScrapperDeliverThing">
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  
+</Defs>

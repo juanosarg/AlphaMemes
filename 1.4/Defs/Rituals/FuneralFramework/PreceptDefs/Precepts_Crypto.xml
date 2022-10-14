@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef Abstract="True" Name="AM_CryptoFuneralBase">
+		<label>crypto funeral</label>
+		<description>A gathering to witness our friend be preserved for the future.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Icons/Rituals/RitualFuneral</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_CryptoFuneralPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<visible>false</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>0</selectionWeight>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be saved in crypto sleep so {PAWN_possessive} friends and family can know they are safe</extraTextPawnDeathLetter>
+	</PreceptDef>	
+	
+
+</Defs>

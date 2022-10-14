@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_Reputation</defName>
+    <label>reputation</label>
+    <iconPath>UI/Issues/AM_Reputation</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>AM_Reputation_Lowered</defName>
+    <issue>AM_Reputation</issue>
+    <label>lowered</label>
+    <description>Our ruthlessness is not appreciated by other factions, who justly fear us for our power.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony starts play receiving a one-time -50 opinion penalty with all other factions.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+		<li>AM_Sadist</li>
+	</associatedMemes>
+	
+   
+  </PreceptDef>
+  
+ 
+
+</Defs>

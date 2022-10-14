@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_MaddeningChantPrecept</defName>
+		<label>maddening chant</label>
+		<description>A maddening chant. Participants will suffer an immediate mental breakdown.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>AM_MaddeningChantPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_MaddeningChant</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>		
+			<li>AM_Madness</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

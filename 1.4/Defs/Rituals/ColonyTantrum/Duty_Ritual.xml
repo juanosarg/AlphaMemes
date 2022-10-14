@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Duty Defs-->
+   <DutyDef>
+    <defName>AM_TrantrumDuty</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Goto pawn -->
+        <li Class="AlphaMemes.JobGiver_RitualTantrum">
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+    <JobDef>
+    <defName>AM_TrantrumJob</defName>
+    <driverClass>AlphaMemes.JobDriver_RitualTantrum</driverClass>
+    <reportString>destorying TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!--Precepts-->
+	<PreceptDef>
+		<defName>AM_SkyBurial</defName>
+		<label>sky burial</label>
+		<description>A gathering to witness the send off of our friend to nature.</description>
+		<issue>Ritual</issue>		
+		<iconPath>UI/Rituals/AM_FuneralSkyBurial</iconPath>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>AM_SkyBurialPattern</ritualPatternBase>
+		<allowDuplicates>false</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<ignoreNameUniqueness>true</ignoreNameUniqueness>
+		<selectionWeight>1.0</selectionWeight>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<impact>Medium</impact>
+		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be left in a secluded area and left to nature so {PAWN_possessive} friends and family can move on as their.</extraTextPawnDeathLetter>
+		<modExtensions>
+		<li Class="AlphaMemes.FuneralPreceptExtension">
+			<isColonistFuneral>true</isColonistFuneral>
+			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<_weighting>100</_weighting>
+			<associatedMemes>
+				<li>
+					<key>Structure_Animist</key>
+					<value>5</value>
+				</li>
+				<li>
+					<key>Structure_OriginBuddhist</key>
+					<value>5</value>
+				</li>
+			</associatedMemes>
+			<addDesignators>
+				<li>AM_SkyBurialSpot</li>
+			</addDesignators>
+			<!--Animals-->
+			<allowAnimals>true</allowAnimals>			
+			<animalObligationTrigger Class="AlphaMemes.RitualObiligationTrigger_Animals">
+				<bondedAnimals>true</bondedAnimals>
+				<veneratedAnimals>true</veneratedAnimals>
+				<namedanimals>false</namedanimals><!--This is pushing it-->
+				<allAnimals>false</allAnimals><!--Probably shouldnt turn this on but you do you-->
+				<animalConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
+					<conflictingMemes>
+						<li>HumanPrimacy</li>
+					</conflictingMemes>
+				</animalConflicts>
+			</animalObligationTrigger>
+			<!--Conflicts-->
+
+		</li>
+		</modExtensions>
+	</PreceptDef>
+	
+
+</Defs>

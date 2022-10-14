@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<MemeGroupDef>
+		<defName>AM_Psychic</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	
+	<MemeDef>
+		<defName>AM_PsychicVampirism</defName>
+		<label>psychic vampirism</label>
+		
+		<description>Meditation is useless and a waste of time. If we want to master the powers of the mind we will have to rip the psychic energy from the still pulsating brains of our enemies.</description>
+		<iconPath>UI/Memes/AM_PsychicVampirism</iconPath>
+		<groupDef>AM_Psychic</groupDef>
+		<exclusionTags>
+		
+			<li>VME_AffinityVsVampires</li>
+			<li>VME_NonViolenceVoteVsPsychicVampires</li>
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->draining</li>
+				<li>memeAdjective->psychic</li>				
+				<li>memeHyphenPrefix->mind</li>
+				<li>memeConcept->psychic draining</li>
+				<li>memeLeaderNoun->thaumaturge</li>			
+				<li>memeMoralist->sorcerer</li>
+				<li>memeMoralist->warlock</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_PsychicVampirism)        ->[deity0_name] gifted humanity with psychic powers so we can follow [deity0_possessive] will.</li>
+					<li>episode(uses=1,tag=meme_PsychicVampirism)  ->[deity0_name] said to all the [memberNamePlural], "The power of the mind is limitless. Drain the mind of your enemies and you will be unstoppable."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_PsychicVampirism)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], a place of learning and a school to hone one's psychic powers to exalt [deity0_name]'s will.</li>
+					<li>conflict(tag=meme_PsychicVampirism)        ->A coward [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to attack [deity0_name]'s followers with insane psychic powers.</li>
+					<li>founderJoin(tag=meme_PsychicVampirism)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] uncanny mental prowess, and [founder_pronoun] drained the mental energies of the attackers, leaving them powerless.</li>
+					<li>victory(tag=meme_PsychicVampirism)         ->[founderName] approached the kneeling [foeLeader] and slaughtered [foeLeader_objective] for the glory of [deity0_name].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_PsychicVampirism)           ->Our founder [founderName] was a psychic warrior living in the shattered ruins of a fallen Glitterworld. [founder_pronoun] had an incredible mental discipline, that manifested in wild psychic powers.</li>
+					<li>story(uses=1,tag=meme_PsychicVampirism)    ->[founder_pronoun] undertood that your mind must be honed to be used as a weapon, and that psychic power is something that must be acquired by force. No senseless meditation technique will turn you into a bastion of psychic powers.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_PsychicVampirism)         ->In all my years teaching the discipline of mind combat, I learned one lesson that is more important than anything else:</li>
+					<li>lesson(tag=meme_PsychicVampirism)              ->psychic powers must be acquired by force, pried from the still pulsating mind of a fallen enemy</li>
+					<li>lessonReinforcement(tag=meme_PsychicVampirism) ->Others will try to convince you that ancient techniques of meditation are somehow more useful than laying the mind of your enemies bare and ripping their psychic power for your own use. They are fools.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_PsychicVampirism)    ->The archotechs are pure minds, pristine intellects that are so far beyond anything else as to be like gods. They didn't get to their stage by playing nice.</li>
+					<li>archistFact(tag=meme_PsychicVampirism)     ->Psychic powers are a gift from the archotechs. But it is a gift that we will need to pry from the still pulsating minds of our fallen enemies.</li>
+					<li>archistProphecy(tag=meme_PsychicVampirism) ->[inTheEnd], the archotechs will choose those with the greatest psychic powers, and only them will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_PsychicVampirism)     ->The spirits are the ultimate minds, and by prying the psychic power from the still pulsating minds of our fallen enemies we can commune with them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_PsychicVampirism)->[itIsSaid] we will pry the psychic power from the still pulsating minds of our fallen enemies, and use those newfound powers to venerate our beloved insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_PsychicVampirism)->These eldritch entities are the ultimate intellects, as vast and deep as entire nebulae, their madness engulfing a thousand stars. Only by prying the psychic power from the still pulsating minds of our fallen enemies can we hope to stand against them.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_PsychicVampirism)->We will pry the psychic power from the still pulsating minds of our fallen enemies to unlock all these secrets, baring them for all to see.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_PsychicVampirism)->We will pryg the psychic power from the still pulsating minds of our fallen enemies and use our destructive powers to slaughter everyone who stands in our way.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_PsychicVampirism)->There have been rumours floating around that a competing company is using psychics to try and uncover some of our corporate secrets. This cannot be allowed to stand, so if you have any info that could lead to apprehending these disgusting corporate spies feel free to contact us ASAP.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_PsyfocusGain_Dampened</li>
+			</li>
+			<li>
+				<li>AM_PsychicSensitivity_Heightened</li>
+			</li>
+			<li>
+				<li>AM_Abilities_DeathKnell</li>
+			</li>
+		</requireOne>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Psychics</ideoName>
+				<theme>pshychic powers</theme>
+				<adjective>psychic</adjective>
+				<member>psychic</member>
+			</li>
+			<li>
+				<ideoName>Mentalism</ideoName>
+				<theme>mentalism</theme>
+				<adjective>mentalist</adjective>
+				<member>mentalist</member>
+			</li>
+			<li>
+				<ideoName>Psionics</ideoName>
+				<theme>psionics</theme>
+				<adjective>psionic</adjective>
+				<member>psion</member>
+			</li>
+		</symbolPacks>
+		<modExtensions>
+			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+				<abilitiesGiven><li>AM_PsychicDeathKnell</li></abilitiesGiven>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ 
+  
+  <AbilityDef ParentName="SpeechBase">
+    <defName>AM_PsychicDeathKnell</defName>
+    <label>psychic death knell</label>
+    <description>Forcefully extract the latent psychic energy from a downed foe. Animals don't have enough intelligence to be of any use in this regard.\n\nIf the person casting the ability doesn't have psychic powers, they'll just receive a minor healing effect and a mood boost. If the person does have at least level 1 psychic powers this ability will recharge his or her focus, but will generate 30% of maximum psychic heat.</description>
+    <iconPath>UI/Abilities/AM_DeathKnell</iconPath>  
+    <overrideGroupCooldown>True</overrideGroupCooldown>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <targetRequired>True</targetRequired>
+    <gizmoClass>Command_Ability</gizmoClass>
+    <comps>
+      <li Class = "AlphaMemes.CompProperties_AbilityPsychicDeathKnell">
+				
+			</li>
+    </comps>
+    <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
+      <targetParams>
+	  
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+       
+      </targetParams>
+    </verbProperties>
+    <requiredMemes>
+      <li>AM_PsychicVampirism</li>
+    </requiredMemes>
+  </AbilityDef>
+
+ 
+  
+</Defs>

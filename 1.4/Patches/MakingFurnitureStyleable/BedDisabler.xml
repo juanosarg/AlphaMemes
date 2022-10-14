@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>C0ffeeRIA</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName = "Bed"]/placeWorkers</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Bed"]</xpath>
+						<value>
+							<placeWorkers>
+								<li>VanillaMemesExpanded.PlaceWorker_DisabledByMeme</li>
+							</placeWorkers>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Bed"]/placeWorkers</xpath>
+						<value>
+							<li>VanillaMemesExpanded.PlaceWorker_DisabledByMeme</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>
+
+

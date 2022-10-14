@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<AbilityDef ParentName="SpeechBase">
+		<defName>AM_AnalyzeCreature</defName>
+		<label>analyze creature</label>
+		<description>This ability allows the colonist to scan animals in the map and add them to a genetic database, receiving bonuses depending on the number of animals scanned.\n\nIt is very low range and some animals will move out of range constantly, so they can be downed first to make it easier.\n\nNote however that it won't work on dead animals, and it will also fail if no database has been built yet.</description>
+		<iconPath>UI/Abilities/AM_AnalyzeCreature</iconPath>  
+		<overrideGroupCooldown>True</overrideGroupCooldown>
+		<cooldownTicksRange>20000</cooldownTicksRange>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<comps>
+			<li Class = "AlphaMemes.CompProperties_AbilityAnalyzeCreature">
+
+			</li>
+		</comps>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>3</range>
+			<targetParams>
+
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+
+			</targetParams>
+		</verbProperties>
+		<requiredMemes>
+			<li>AM_BiologicalReconstructors</li>
+		</requiredMemes>
+	</AbilityDef>
+
+	<AbilityGroupDef>
+		<defName>AM_ArchitectStone</defName>
+		<cooldownTicks>30000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_ArchitectFinishBuilding</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>AM_ConvertStone</defName>
+		<label>convert to pristine limestone</label>
+		<description>This ability allows the master architect to convert any stone block (for mod compatibility defined as anything with "Blocks" in its defName) to Pristine limestone, a stone that is both beautiful and damage resistant.\n\nTo do this, the architect uses... err... mechanites... or something... Look, I just wanted a new rock type to build pretty pyramids with, ok?</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>AM_ArchitectStone</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AM_CreatePristineLimestone</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>10</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "AlphaMemes.CompProperties_AbilityConvertStone">
+
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>AM_Structure_Kemetism</li>
+		</requiredMemes>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>AM_FinishConstruction</defName>
+		<label>finish construction</label>
+		<description>Once every 10 days the master architect can use this ability to finish the construction of a blueprint.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>AM_ArchitectFinishBuilding</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>		
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AM_AccelerateConstruction</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>10</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "AlphaMemes.CompProperties_AbilityFinishConstruction">
+
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>AM_Structure_Kemetism</li>
+		</requiredMemes>
+	</AbilityDef>
+	
+	<AbilityGroupDef>
+		<defName>AM_ChangeStyle</defName>
+		<cooldownTicks>50</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityDef>
+		<defName>AM_ChangeStyle</defName>
+		<label>change style</label>
+		<description>The leader of the colony has the ability to change the styling of an item or building. Bear in mind that only the styles present in the colony's primary ideo can be used to swap (this can be changed in mod options to allow ALL possible styles).</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>AM_ChangeStyle</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>		
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AM_ChangeStyle</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>10</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetItems>True</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "AlphaMemes.CompProperties_AbilityChangeStyle">
+
+			</li>
+		</comps>
+		
+	</AbilityDef>
+
+
+
+
+</Defs>

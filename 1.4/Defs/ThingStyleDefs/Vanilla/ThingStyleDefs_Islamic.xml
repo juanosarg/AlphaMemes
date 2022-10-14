@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+
+	<!-- Islamic -->
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_IslamicPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Islamic/AM_IslamicPowerArmor/AM_IslamicPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Islamic/AM_IslamicPowerArmor/AM_IslamicPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_IslamicPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Islamic/AM_IslamicPowerArmorHelmet/AM_IslamicPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Islamic/AM_IslamicPowerArmorHelmet/AM_IslamicPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	
+</Defs>

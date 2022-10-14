@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_JewishSlab_Medium</defName>
+    <label>jewish slab (medium)</label>
+    <description>A stone bas relief of jewish imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Jewish/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_JewishSlab_Broad</defName>
+    <label>jewish slab (broad)</label>
+    <description>A stone bas relief of jewish imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Jewish/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_KemeticSlab_Medium</defName>
+    <label>kemetic slab (medium)</label>
+    <description>A stone bas relief of kemetic imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Kemetic/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_KemeticSlab_Broad</defName>
+    <label>kemetic slab (broad)</label>
+    <description>A stone bas relief of kemetic imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Kemetic/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+ <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_HinduSlab_Medium</defName>
+    <label>hindu slab (medium)</label>
+    <description>A stone bas relief of hindu imagery for decorating a floor.</description>
+    <dominantStyleCategory>Hindu</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Hindu/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_HinduSlab_Broad</defName>
+    <label>hindu slab (broad)</label>
+    <description>A stone bas relief of hindu imagery for decorating a floor.</description>
+    <dominantStyleCategory>Hindu</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Hindu/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+ 
+<ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_SteampunkSlab_Medium</defName>
+    <label>steampunk slab (medium)</label>
+    <description>A stone bas relief of steampunk imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Steampunk/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_SteampunkSlab_Broad</defName>
+    <label>steampunk slab (broad)</label>
+    <description>A stone bas relief of steampunk imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Steampunk/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_CorsairSlab_Medium</defName>
+    <label>corsair slab (medium)</label>
+    <description>A stone bas relief of corsair imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Corsair</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Corsair/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_CorsairSlab_Broad</defName>
+    <label>corsair slab (broad)</label>
+    <description>A stone bas relief of corsair imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Corsair</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Corsair/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_JainSlab_Medium</defName>
+    <label>jain slab (medium)</label>
+    <description>A stone bas relief of jain imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Jain</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Jain/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_JainSlab_Broad</defName>
+    <label>jain slab (broad)</label>
+    <description>A stone bas relief of jain imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Jain</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Jain/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_SikhSlab_Medium</defName>
+    <label>sikh slab (medium)</label>
+    <description>A stone bas relief of sikh imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Sikh</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Sikh/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_SikhSlab_Broad</defName>
+    <label>sikh slab (broad)</label>
+    <description>A stone bas relief of sikh imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Sikh</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Sikh/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_IslamicSlab_Medium</defName>
+    <label>islamic slab (medium)</label>
+    <description>A stone bas relief of islamic imagery for decorating a floor.</description>
+    <dominantStyleCategory>Islamic</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Islamic/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_IslamicSlab_Broad</defName>
+    <label>islamic slab (broad)</label>
+    <description>A stone bas relief of islamic imagery for decorating a floor.</description>
+    <dominantStyleCategory>Islamic</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Islamic/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_ChristianSlab_Medium</defName>
+    <label>christian slab (medium)</label>
+    <description>A stone bas relief of christian imagery for decorating a floor.</description>
+    <dominantStyleCategory>Christian</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Christian/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+	 
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_ChristianSlab_Broad</defName>
+    <label>christian slab (broad)</label>
+    <description>A stone bas relief of christian imagery for decorating a floor.</description>
+    <dominantStyleCategory>Christian</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Christian/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+	 
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_BuddhistSlab_Medium</defName>
+    <label>buddhist slab (medium)</label>
+    <description>A stone bas relief of buddhist imagery for decorating a floor.</description>
+    <dominantStyleCategory>Buddhist</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Buddhist/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+	 
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_BuddhistSlab_Broad</defName>
+    <label>buddhist slab (broad)</label>
+    <description>A stone bas relief of buddhist imagery for decorating a floor.</description>
+    <dominantStyleCategory>Buddhist</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Buddhist/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+	 
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Kemetic_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Kemetic_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Kemetic_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Kemetic_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Kemetic_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Kemetic_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Kemetic_AntiMaterialRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Kemetic_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Kemetic_LongBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HandCannon</thingDef>
+								<styleDef>AM_Kemetic_HandCannon</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_CombatHandgun</thingDef>
+								<styleDef>AM_Kemetic_CombatHandgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Flamethrower</thingDef>
+								<styleDef>AM_Kemetic_Flamethrower</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_BattleRifle</thingDef>
+								<styleDef>AM_Kemetic_BattleRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Carbine</thingDef>
+								<styleDef>AM_Kemetic_CarbineVWE</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Crossbow</thingDef>
+								<styleDef>AM_Kemetic_Crossbow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Flintlock</thingDef>
+								<styleDef>AM_Kemetic_Flintlock</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HMG</thingDef>
+								<styleDef>AM_Kemetic_HMG</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_SawedOffShotgun</thingDef>
+								<styleDef>AM_Kemetic_SawedOffShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+								<styleDef>AM_Kemetic_SemiAutomaticRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+								<styleDef>AM_Kemetic_LeverActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LightSMG</thingDef>
+								<styleDef>AM_Kemetic_LightSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SMG</thingDef>
+								<styleDef>AM_Kemetic_SMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ServiceRifle</thingDef>
+								<styleDef>AM_Kemetic_ServiceRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+								<styleDef>AM_Kemetic_MarksmanRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Musket</thingDef>
+								<styleDef>AM_Kemetic_Musket</styleDef>
+							</li>
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>DankPyon_RoyalChest</thingDef>
+								<styleDef>AM_Kemetic_CanopicJars</styleDef>
+							</li>
+							
+							
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Tribal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Kemetic"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_HeavyClub</thingDef>
+								<styleDef>AM_Kemetic_HeavyClub</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_MeleeWeapon_LightClub</thingDef>
+								<styleDef>AM_Kemetic_LightClub</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_MeleeWeapon_TribalAxe</thingDef>
+								<styleDef>AM_Kemetic_TribalAxe</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
+								<styleDef>AM_Kemetic_Shiv</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Sling</thingDef>
+								<styleDef>AM_Kemetic_Sling</styleDef>
+							</li>
+							
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+
+
+
+
+</Patch>

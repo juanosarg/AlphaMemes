@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <JobDef>
+    <defName>AM_InstallRelic</defName>
+    <driverClass>AlphaMemes.JobDriver_InstallRelicInSmashingAltar</driverClass>
+    <reportString>installing TargetA in TargetB</reportString>
+  </JobDef>
+
+ 
+</Defs>

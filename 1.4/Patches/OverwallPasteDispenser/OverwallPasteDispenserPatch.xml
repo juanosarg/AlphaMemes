@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Over-Wall Nutrient Paste Dispenser (Continued)</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RitualObligationTargetFilterDef[defName = "AM_PastedFuneralTargetFilter"]/thingDefs</xpath>
+			<value>
+				<li>OverWallNutrientPaste</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

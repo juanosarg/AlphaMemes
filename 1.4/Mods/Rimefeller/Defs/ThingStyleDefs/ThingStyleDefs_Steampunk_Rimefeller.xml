@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_OilWell</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Rimefeller/AM_Steampunk_OilDerrick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>(4,7)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_OilStorage</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Rimefeller/AM_Steampunk_OilStorage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_FuelStorage</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Rimefeller/AM_Steampunk_ChemTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+
+
+</Defs>

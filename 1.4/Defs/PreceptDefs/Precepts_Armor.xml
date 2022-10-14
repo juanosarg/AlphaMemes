@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Armour</defName>
+		<label>armor</label>
+		<iconPath>UI/Issues/AM_Armour</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Armour_Blunt</defName>
+		<issue>AM_Armour</issue>
+		<label>blunt</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% blunt armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Armour_Expected</thought>
+				<thoughtStageDescriptions>
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_Armour_Sharp</defName>
+		<issue>AM_Armour</issue>
+		<label>sharp</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% sharp armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Armour_Expected</thought>
+				<thoughtStageDescriptions>
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>AM_Armour_Heat</defName>
+		<issue>AM_Armour</issue>
+		<label>heat</label>
+		<description>Defense is paramount to any military strategy. We will be like a bulwark that stops all attacks our enemies try to direct against us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists wearing any kind of apparel will get +25% heat armour bonus.</description>
+		<impact>Medium</impact>
+		<statOffsets>
+			
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		
+		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Armour_Expected</thought>
+				<thoughtStageDescriptions>
+					<li>No metallic armor</li>
+					<li>Strong armor</li>			
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	
+	
+	<ThoughtDef>
+		<defName>AM_Armour_Expected</defName>
+		<minExpectation>Low</minExpectation>
+		<workerClass>AlphaMemes.Thought_Armour_Expected</workerClass>
+		<stages>
+			<li>
+				<label>no metallic armor</label>
+				<description>You call this protection? I feel naked.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>strong armor</label>
+				<description>I feel well protected.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

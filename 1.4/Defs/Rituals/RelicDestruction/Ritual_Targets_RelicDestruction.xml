@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualObligationTargetFilterDef>
+    <defName>AM_DestructionAltarTarget</defName>
+    <workerClass>AlphaMemes.RitualObligationTargetWorker_DestructionAltar</workerClass>
+    <thingDefs>
+      <li>AM_RelicSmashingAltar</li>
+    </thingDefs>
+  </RitualObligationTargetFilterDef>
+
+ 
+
+</Defs>

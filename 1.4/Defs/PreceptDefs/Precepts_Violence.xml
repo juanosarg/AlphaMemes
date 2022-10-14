@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HistoryEventDef>
+		<defName>AM_SomeoneDied</defName>
+		<label>someone died</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Violence_Abhorrent_Strict</defName>
+		<issue>VME_Violence</issue>
+		<label>abhorrent (strict)</label>
+		<description>Strive for peace within yourself. Refuse to retaliate in the face of provocation and violence. Persevere in nonviolence of tongue and heart.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All persons joining this ideoligion will take a solemn nonviolence vow.\n - The only mental break allowed is psychotic wander.\n - Colonists will receive negative mood if ANY human casualties take place on the colony.</description>
+		<impact>High</impact>
+		<associatedMemes>
+			<li>AM_NonViolence</li>
+
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_NonViolence</li>
+
+		</requiredMemes>
+		<displayOrderInIssue>70</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_SomeoneDied</eventDef>
+				<thought>AM_Violence_Abhorrent_Strict</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Violence_Abhorrent_Strict</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>someone died</label>
+				<description>The grim reality of death reminds us that this world is a cruel place, and makes us believe more firmly in our path of nonviolence.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

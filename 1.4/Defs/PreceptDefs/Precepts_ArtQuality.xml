@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>AM_ArtQuality</defName>
+    <label>art quality</label>
+    <iconPath>UI/Issues/AM_ArtQuality</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>AM_ArtQuality_Expected</defName>
+    <issue>AM_ArtQuality</issue>
+    <label>expected</label>
+    <description>The true work of art is but a shadow of divine perfection. There is no valid excuse for shoddily executed art, and we shouldn't have to suffer it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "High" expectations or higher will demand high quality art. Art quality will be averaged between all art pieces present in the colony.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>AM_Artist</li>	
+    </associatedMemes>
+	<comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>AM_ArtQuality_Expected</thought>
+		<thoughtStageDescriptions>
+					<li>Awful art</li>
+					<li>Poor art</li>
+					<li>Normal art</li>
+					<li>Good art</li>
+					<li>Excellent art</li>
+					<li>Masterwork art</li>
+					<li>Legendary art</li>
+				</thoughtStageDescriptions>
+      </li>
+    </comps>
+	
+   
+  </PreceptDef>
+  
+<ThoughtDef>
+		<defName>AM_ArtQuality_Expected</defName>
+		<minExpectation>High</minExpectation>
+		<workerClass>AlphaMemes.Thought_ArtQuality_Expected</workerClass>
+		<stages>
+			<li>
+				<label>awful art</label>
+				<description>They say that art is not useless as long as it provokes any emotional response. The problem comes when that response is disgust...</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>poor art</label>
+				<description>I'm not gonna lie... this art is VERY poorly done.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>normal art</label>
+				<description>The colony has some significant art pieces.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>good art</label>
+				<description>There are some art pieces in this colony that are very high quality, I'm impressed.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>excellent art</label>
+				<description>Wow! Some of the art pieces in this colony are incredible examples of fine art! Amazing!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>masterwork art</label>
+				<description>Some of these pieces of art are going to be considered a masterwork in the future, like the famed Mona Lisa or Michelangelo's David.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>legendary art</label>
+				<description>Our colony is renowned the world over for its incredible collection of fine art. No museum of old Earth could even compare.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+
+
+</Defs>
