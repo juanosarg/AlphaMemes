@@ -809,10 +809,10 @@
 				<thingDef>MeleeWeapon_LongSword</thingDef>
 				<styleDef>AM_Corsair_Sword</styleDef>
 			</li>
-			<!--<li>
+			<li>
 				<thingDef>MealNutrientPaste</thingDef>
 				<styleDef>AM_MealNutrientPaste</styleDef>
-			</li>-->
+			</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>MeleeWeapon_MonoSword</thingDef>
 				<styleDef>AM_Corsair_Monosword</styleDef>

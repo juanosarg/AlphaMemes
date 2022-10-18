@@ -218,14 +218,14 @@
 
 		</graphicData>
 	</ThingStyleDef>
-	<!--<ThingStyleDef>
+	<ThingStyleDef>
 		<defName>AM_MealNutrientPaste</defName>
 		<overrideLabel>grog</overrideLabel>
 		<graphicData>
 			<texPath>Things/Item/AM_Grog</texPath>
 			<graphicClass>Graphic_MealVariants</graphicClass>
 		</graphicData>
-	</ThingStyleDef>-->
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Corsair_Table2x2c</defName>
 		<overrideLabel>ship wheel table</overrideLabel>
