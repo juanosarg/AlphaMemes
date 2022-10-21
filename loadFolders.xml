@@ -33,6 +33,8 @@
 		<li IfModActive="sarg.alphabiomes_copy">1.4/Mods/AlphaBiomes</li>
 		<li IfModActive="VanillaExpanded.VFEPower">1.4/Mods/VanillaPowerExpanded</li>
 		<li IfModActive="VanillaExpanded.VFEPower_copy">1.4/Mods/VanillaPowerExpanded</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.4/Mods/VanillaHelixienGas</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.4/Mods/VanillaHelixienGas</li>
 		<li IfModActive="Lilscoot.Wheelchairs">1.4/Mods/Wheelchairs</li>
 		<li IfModActive="Lilscoot.Wheelchairs_copy">1.4/Mods/Wheelchairs</li>
 		<li IfModActive="Dubwise.Rimefeller">1.4/Mods/Rimefeller</li>

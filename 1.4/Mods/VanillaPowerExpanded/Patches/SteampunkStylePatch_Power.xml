@@ -7,22 +7,6 @@
 			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
 			<value>
 				<li>
-					<thingDef>VPE_HelixienGenerator</thingDef>
-					<styleDef>AM_SteampunkRevival_HelixienGenerator</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_HelixienPump</thingDef>
-					<styleDef>AM_SteampunkRevival_HelixienPump</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasTank</thingDef>
-					<styleDef>AM_SteampunkRevival_GasTank</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasPipe</thingDef>
-					<styleDef>AM_SteampunkRevival_GasPipe</styleDef>
-				</li>
-				<li>
 					<thingDef>VPE_NuclearGenerator</thingDef>
 					<styleDef>AM_SteampunkRevival_NuclearGenerator</styleDef>
 				</li>
@@ -33,18 +17,6 @@
 				<li>
 					<thingDef>VFE_AdvancedWindTurbine</thingDef>
 					<styleDef>AM_SteampunkRevival_AdvancedWindTurbine</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasStove</thingDef>
-					<styleDef>AM_SteampunkRevival_GasStove</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasSmelter</thingDef>
-					<styleDef>AM_SteampunkRevival_GasSmelter</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasCrematorium</thingDef>
-					<styleDef>AM_SteampunkRevival_GasCrematorium</styleDef>
 				</li>
 				<li>
 					<thingDef>VFE_LargeBattery</thingDef>
@@ -63,44 +35,12 @@
 					<styleDef>AM_SteampunkRevival_AdvancedBattery</styleDef>
 				</li>
 				<li>
-					<thingDef>VPE_GasCooler</thingDef>
-					<styleDef>AM_SteampunkRevival_GasCooler</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasHeater</thingDef>
-					<styleDef>AM_SteampunkRevival_GasHeater</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasSunLamp</thingDef>
-					<styleDef>AM_SteampunkRevival_GasSunLamp</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_LightningRod</thingDef>
-					<styleDef>AM_SteampunkRevival_LightningRod</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_ChemfuelPump</thingDef>
-					<styleDef>AM_SteampunkRevival_ChemfuelPump</styleDef>
-				</li>
-				<li>
 					<thingDef>VFE_AdvancedWatermillGenerator</thingDef>
 					<styleDef>AM_SteampunkRevival_AdvancedWatermillGenerator</styleDef>
 				</li>
 				<li>
-					<thingDef>VPE_GasDrill</thingDef>
-					<styleDef>AM_SteampunkRevival_GasDrill</styleDef>
-				</li>
-				<li>
 					<thingDef>VFE_TidalGenerator</thingDef>
 					<styleDef>AM_SteampunkRevival_TidalGenerator</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasWallLight</thingDef>
-					<styleDef>AM_SteampunkRevival_GasWallLight</styleDef>
-				</li>
-				<li>
-					<thingDef>VPE_GasWallDarkLight</thingDef>
-					<styleDef>AM_SteampunkRevival_GasWallDarkLight</styleDef>
 				</li>
 			</value>
 		</match>
