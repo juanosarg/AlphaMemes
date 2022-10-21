@@ -17,7 +17,7 @@ namespace AlphaMemes
 
         public override RitualTargetUseReport CanUseTarget(TargetInfo target, RitualObligation obligation)
         {
-            Corpse corpse = obligation.targetA.Thing as Corpse;
+            Corpse corpse = (obligation.targetA.Thing as Pawn).Corpse;
             if (corpse.IsNotFresh())
             {
                 return "Funeral_CorpseNotFresh".Translate(corpse.InnerPawn.NameShortColored.Named("CORPSE"));

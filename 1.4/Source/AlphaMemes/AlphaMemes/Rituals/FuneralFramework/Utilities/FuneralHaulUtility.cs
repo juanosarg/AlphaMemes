@@ -18,7 +18,7 @@ namespace AlphaMemes
         public static bool TryFindBestBillIngredients(List<IngredientCount> ingredients, Pawn pawn, Thing billGiver, List<ThingCount> chosen)
         {
             return TryFindBestIngredientsHelper((Thing t) => ingredients.Any((IngredientCount ingNeed) => ingNeed.filter.Allows(t)),				
-				(List<Thing> foundThings) => tryFindBestIngredientsInSet_NoMixHelper(foundThings, ingredients, chosen, billGiver.Position,false)
+				(List<Thing> foundThings) => tryFindBestIngredientsInSet_NoMixHelper(foundThings, ingredients, chosen, billGiver.Position,false,null)
 				, ingredients, pawn, billGiver, chosen, 999f);
         }
 
@@ -104,7 +104,7 @@ namespace AlphaMemes
 
 		
 		//I straight stole this from VFEP hope they dont mind but saved me much harmony hair pulling
-		public delegate bool TryFindBestIngredientsInSet_NoMixHelper(List<Thing> availableThings, List<IngredientCount> ingredients, List<ThingCount> chosen, IntVec3 rootCell, bool alreadySorted, Bill bill = null);
+		public delegate bool TryFindBestIngredientsInSet_NoMixHelper(List<Thing> availableThings, List<IngredientCount> ingredients, List<ThingCount> chosen, IntVec3 rootCell, bool alreadySorted, List<IngredientCount> missingIngredients, Bill bill = null);
 		public static readonly TryFindBestIngredientsInSet_NoMixHelper tryFindBestIngredientsInSet_NoMixHelper =
 	AccessTools.MethodDelegate<TryFindBestIngredientsInSet_NoMixHelper>(AccessTools.Method(typeof(WorkGiver_DoBill), "TryFindBestIngredientsInSet_NoMixHelper"));
 

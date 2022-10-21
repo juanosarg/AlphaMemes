@@ -34,7 +34,7 @@ namespace AlphaMemes
             RitualObligation obligationToUse = obligation;
             foreach (RitualObligation obligationTemp in ritual.activeObligations)
             {
-                if (obligationTemp.targetA.Thing == assignments.AssignedPawns(extension.corpseRitualRoleID).First().Corpse)
+                if (obligationTemp.targetA.Thing == assignments.AssignedPawns(extension.corpseRitualRoleID).First())
                 {
                     obligationToUse = obligationTemp;
                     corpse = assignments.AssignedPawns(extension.corpseRitualRoleID).First();
