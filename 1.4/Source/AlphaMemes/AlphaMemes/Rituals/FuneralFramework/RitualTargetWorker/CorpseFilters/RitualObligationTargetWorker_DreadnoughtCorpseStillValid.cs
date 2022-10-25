@@ -28,6 +28,7 @@ namespace AlphaMemes
                 return lastResult = false;//If cryptosleeped dont show the gizmo
             }
             Corpse corpse = (obligation.targetA.Thing as Pawn).Corpse;
+            if(corpse == null) { return lastResult = false; }
             if(corpse.InnerPawn.DevelopmentalStage != DevelopmentalStage.Adult) //Hahaha no baby dreadnought warcrimes and it's because of the game and not me. I win! If VFEP updates that, I will pretend I never saw it
             {
                 return lastResult = "Funeral_DreadnoughtToYoung".Translate(corpse.InnerPawn.NameFullColored.Named("CORPSE"));
