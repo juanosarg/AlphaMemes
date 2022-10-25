@@ -17,7 +17,7 @@
 				<li>
 					<thingDef>IM_MeleeWeapon_ImpactBlade</thingDef>
 					<styleDef>AM_SteampunkRevival_ImpactBlade</styleDef>
-				</li>
+				</li> 
 				<li>
 					<thingDef>IM_MeleeWeapon_HeaterSaw</thingDef>
 					<styleDef>AM_SteampunkRevival_HeaterSaw</styleDef>
