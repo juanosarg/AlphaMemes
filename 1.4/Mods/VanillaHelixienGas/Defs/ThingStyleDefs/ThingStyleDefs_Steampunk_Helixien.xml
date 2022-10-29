@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_HelixienGenerator</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_Steampunk_Helixien</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_HelixienPump</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_Steampunk_HelixienPump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasTank</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_Steampunk_GasTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasPipe</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_Steampunk_GasPipes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Steampunk/Power/AM_Steampunk_GasPipes_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasStove</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkTableStoveGas</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasSmelter</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkGasSmelter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+		</graphicData>		
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasCrematorium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkGasCrematorium</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>		
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasCooler</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkGasCooler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasHeater</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkGasHeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasSunLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Power/AM_SteampunkGasSunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevival_GasWallLight</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/WallLights/AM_SteampunkWallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>			
+		</graphicData>
+		 <uiIconPath>Things/Building/BuildingStyles/Steampunk/WallLights/AM_SteampunkWallLight</uiIconPath>
+	</ThingStyleDef>
+
+	
+	
+
+</Defs>

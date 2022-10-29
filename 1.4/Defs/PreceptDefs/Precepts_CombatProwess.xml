@@ -38,13 +38,13 @@
 			<li>AM_GauranlenSupremacy</li>
 
 		</requiredMemes>
-		<statOffsets>
-			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
-			<AimingDelayFactor>0.2</AimingDelayFactor>
-			<MeleeHitChance>-0.2</MeleeHitChance>
-			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		<statFactors>
+			<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
+			<AimingDelayFactor>1.2</AimingDelayFactor>
+			<MeleeHitChance>0.8</MeleeHitChance>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
 		
-		</statOffsets>
+		</statFactors>
 	</PreceptDef>
 	
 	<PreceptDef>
@@ -60,10 +60,10 @@
 
 		</associatedMemes>
 		
-		<statOffsets>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		<statFactors>
+			<ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
 			
-		</statOffsets>
+		</statFactors>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>AM_UsedMelee</eventDef>
@@ -98,12 +98,12 @@
 
 		</associatedMemes>
 		
-		<statOffsets>
-			<ShootingAccuracyPawn>-0.3</ShootingAccuracyPawn>
-			<MeleeHitChance>0.2</MeleeHitChance>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<statFactors>
+			<ShootingAccuracyPawn>0.7</ShootingAccuracyPawn>
+			<MeleeHitChance>1.2</MeleeHitChance>
+			<MeleeDodgeChance>1.1</MeleeDodgeChance>
 		
-		</statOffsets>
+		</statFactors>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>AM_UsedRanged</eventDef>
