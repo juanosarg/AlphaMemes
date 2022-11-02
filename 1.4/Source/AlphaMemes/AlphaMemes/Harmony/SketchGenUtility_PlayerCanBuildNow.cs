@@ -32,7 +32,7 @@ namespace AlphaMemes
                 foreach (var meme in ideo.memes)
                 {
                     var ext = meme.GetModExtension<ExtendedMemeProperties>();
-                    if (ext!=null && ext.removedDesignators.Any(x=>x == (buildable as ThingDef)))
+                    if (ext!=null && (ext.removedDesignators?.Any(x=>x == (buildable as ThingDef) ) ?? false))
                     {
                         __result = false;
                     }
