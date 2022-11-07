@@ -82,6 +82,9 @@
 		<defName>AM_Armour_Expected</defName>
 		<minExpectation>Low</minExpectation>
 		<workerClass>AlphaMemes.Thought_Armour_Expected</workerClass>
+		<nullifyingTraits>
+      <li>Nudist</li>
+    </nullifyingTraits>
 		<stages>
 			<li>
 				<label>no metallic armor</label>

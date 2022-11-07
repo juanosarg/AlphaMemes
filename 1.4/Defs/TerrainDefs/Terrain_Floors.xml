@@ -334,6 +334,24 @@
 			<li>FineFloor</li>
 		</tags>
 	</TerrainDef>
+	
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>AM_TilePristineLimestone</defName>
+		<label>pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>4</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>AM_FlagstonePristineLimestone</defName>
+		<label>pristine limestone flagstone</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>4</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
 
 	<!-- Steampunk -->
 
