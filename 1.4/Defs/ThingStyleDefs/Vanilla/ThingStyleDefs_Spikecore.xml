@@ -205,6 +205,48 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	
 </Defs>

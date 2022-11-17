@@ -135,7 +135,22 @@
 											<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
 											<styleDef>AM_Animalist_AntiMaterialRifle</styleDef>
 										</li>
-										
+										<li>
+											<thingDef>VWE_Gun_HandCannon</thingDef>
+											<styleDef>AM_Animalist_HandCannon</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_Flamethrower</thingDef>
+											<styleDef>AM_Animalist_Flamethrower</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_HMG</thingDef>
+											<styleDef>AM_Animalist_HMG</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+											<styleDef>AM_Animalist_LeverActionRifle</styleDef>
+										</li>
 									</value>
 								</match>
 							</li>

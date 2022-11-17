@@ -277,6 +277,106 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicCombatPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Crossbow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicSemiAutomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 	

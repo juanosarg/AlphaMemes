@@ -148,6 +148,10 @@
 								<thingDef>VWE_Bow_Crossbow</thingDef>
 								<styleDef>AM_Morbid_Crossbow</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_HandCannon</thingDef>
+								<styleDef>AM_Morbid_HandCannon</styleDef>
+							</li>
 							
 
 						</value>

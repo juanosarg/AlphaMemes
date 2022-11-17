@@ -224,4 +224,34 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_AnimalistHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_AnimalistFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_AnimalistHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_AnimalistLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

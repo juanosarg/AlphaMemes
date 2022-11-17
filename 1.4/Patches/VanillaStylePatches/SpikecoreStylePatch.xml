@@ -133,6 +133,30 @@
 								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
 								<styleDef>AM_Spikecore_AntiMaterialRifle</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Spikecore_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Spikecore_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Spikecore_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Spikecore_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Spikecore_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Spikecore_ChargeMinigun</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>
