@@ -211,6 +211,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_CompoundBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_RusticCompoundBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_ChargePistol</defName>

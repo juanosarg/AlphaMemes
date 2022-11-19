@@ -253,6 +253,59 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Bow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_RecurveBow</defName>
+		
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_GreatBow</defName>
+	
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairGreaterBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Axe</defName>
+		
+		<graphicData>
+			
+			<texPath>Things/Weapons/Corsair/AM_CorsairAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Hammer</defName>
+
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Weapons/Corsair/AM_CorsairHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Pickaxe</defName>
+		
+		<graphicData>
+			
+			<texPath>Things/Weapons/Corsair/AM_CorsairPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 

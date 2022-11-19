@@ -861,6 +861,30 @@
 				<thingDef>Gun_Minigun</thingDef>
 				<styleDef>AM_Corsair_Minigun</styleDef>
 			</li>
+			<li>
+				<thingDef>Bow_Short</thingDef>
+				<styleDef>AM_Corsair_Bow</styleDef>
+			</li>
+			<li>
+				<thingDef>Bow_Recurve</thingDef>
+				<styleDef>AM_Corsair_RecurveBow</styleDef>
+			</li>
+			<li>
+				<thingDef>Bow_Great</thingDef>
+				<styleDef>AM_Corsair_GreatBow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_Axe</thingDef>
+				<styleDef>AM_Corsair_Axe</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_Warhammer</thingDef>
+				<styleDef>AM_Corsair_Hammer</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_BreachAxe</thingDef>
+				<styleDef>AM_Corsair_Pickaxe</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_GrogDispenser</li>
