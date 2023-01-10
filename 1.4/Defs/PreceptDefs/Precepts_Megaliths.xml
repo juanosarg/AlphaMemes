@@ -12,7 +12,7 @@
 		<defName>AM_Megaliths_Desired</defName>
 		<issue>AM_Megaliths</issue>
 		<label>desired</label>
-		<description>We honour our ancestors by erecting huge monuments that both defy and glorify nature. They will truly withstand the test of time.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists desire the construction of megalithic monuments (found in the Misc category), expecting one to be built for every three members of the colony. This requires expectations to be Moderate or higher to trigger.</description>
+		<description>We honour our ancestors by erecting huge monuments that both defy and glorify nature. They will truly withstand the test of time.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists desire the construction of megalithic monuments (found in the Misc category), expecting one to be built for every three members of the colony. This requires expectations to be Moderate or higher to trigger.\n\n&lt;color=#E5E54C&gt;NOTE:&lt;/color&gt;\n - To build the megaliths you NEED the Neolithic structure, without it you won't be able to build them and colonists will just be sad.</description>
 		<impact>Medium</impact>
 		<comps>
 			
