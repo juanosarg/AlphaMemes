@@ -249,7 +249,7 @@ namespace AlphaMemes
             }
             foreach(Thing thing in spawnEffectThings)
             {
-                if (!thing.Destroyed)
+                if (thing != null && !thing.Destroyed)
                 {
                     thing.Destroy();
                 }

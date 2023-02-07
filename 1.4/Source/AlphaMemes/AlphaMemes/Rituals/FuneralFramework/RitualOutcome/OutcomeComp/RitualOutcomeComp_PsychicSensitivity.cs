@@ -62,7 +62,8 @@ namespace AlphaMemes
             {
                 return null;
             }
-            Pawn bestPawn = pawns.First(x => !x.Dead);//Was random but eventually that'd cause an awkward situation
+            Pawn bestPawn = pawns.FirstOrDefault(x => !x.Dead);//Was random but eventually that'd cause an awkward situation
+            if (bestPawn == null) { return null; }
             foreach (Pawn pawn in pawns)
             {
                 bool flag = false;
