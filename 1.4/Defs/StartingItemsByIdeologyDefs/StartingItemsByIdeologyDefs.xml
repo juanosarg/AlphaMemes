@@ -2,11 +2,7 @@
 <Defs>
 
 
-	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
-		<defName>AM_StartingItemsNonViolent</defName>
-		<associatedMeme>AM_NonViolence</associatedMeme>	
-		<thingSetMaker>AM_StartingItemsNonViolent</thingSetMaker>		
-	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+	
 	
 	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
 		<defName>AM_StartingItemsGauranlen</defName>

@@ -16,7 +16,6 @@
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
 					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
-					
 				</structureMemeWeights>
 			</value>
 		</nomatch>
@@ -24,21 +23,21 @@
 			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/structureMemeWeights</xpath>
 			<value>
 				<AM_Structure_Atheist MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Atheist>
-					<AM_Structure_Jewish MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jewish>
-					<AM_Structure_Jainism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jainism>
-					<AM_Structure_Sikhism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Sikhism>
-					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
-					<AM_Structure_SteampunkRevival MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_SteampunkRevival>
-					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
-					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
-					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
+				<AM_Structure_Jewish MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jewish>
+				<AM_Structure_Jainism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jainism>
+				<AM_Structure_Sikhism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Sikhism>
+				<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
+				<AM_Structure_SteampunkRevival MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_SteampunkRevival>
+				<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
+				<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+				<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
 		<value>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+		
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_GauranlenSupremacy</li>
 		</value>
@@ -54,7 +53,7 @@
 					<AM_Structure_Jewish MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jewish>
 					<AM_Structure_Jainism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jainism>
 					<AM_Structure_Sikhism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Sikhism>
-					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>				
+					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
 					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">3</AM_Structure_Neolithic>
 					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
@@ -65,45 +64,70 @@
 			<xpath>/Defs/FactionDef[@Name="TribeBase"]/structureMemeWeights</xpath>
 			<value>
 				<AM_Structure_Atheist MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Atheist>
-					<AM_Structure_Jewish MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jewish>
-					<AM_Structure_Jainism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jainism>
-					<AM_Structure_Sikhism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Sikhism>
-					<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>				
-					<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
-					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">3</AM_Structure_Neolithic>
-					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
+				<AM_Structure_Jewish MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jewish>
+				<AM_Structure_Jainism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Jainism>
+				<AM_Structure_Sikhism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Sikhism>
+				<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
+				<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
+				<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">3</AM_Structure_Neolithic>
+				<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
 		<value>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_GauranlenSupremacy</li>
-	
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
 			
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
 		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
-		<value>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
-		</value>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+					
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+				
+			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
 		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
-		<value>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
-		</value>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+					
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Artist</li>
+				
+			</value>
+		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
@@ -122,8 +146,8 @@
 			<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/structureMemeWeights</xpath>
 			<value>
 				<AM_Structure_Corsair MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Corsair>
-					<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
-					<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">2</AM_Structure_Scavenger>
+				<AM_Structure_Neolithic MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Neolithic>
+				<AM_Structure_Scavenger MayRequire="Ludeon.RimWorld.Ideology">2</AM_Structure_Scavenger>
 			</value>
 		</match>
 	</Operation>
@@ -131,7 +155,6 @@
 		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/allowedMemes</xpath>
 		<value>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
-		
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationFindMod">
@@ -147,23 +170,21 @@
 						<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
 						<value>
 							<structureMemeWeights>
-								<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>	
+								<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
 							</structureMemeWeights>
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
 						<xpath>/Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
 						<value>
-							<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>	
+							<AM_Structure_Kemetism MayRequire="Ludeon.RimWorld.Ideology">1</AM_Structure_Kemetism>
 						</value>
 					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
 					<value>
-						
 						<li MayRequire="Ludeon.RimWorld.Ideology">AM_Bulwark</li>
-						
 					</value>
 				</li>
 			</operations>

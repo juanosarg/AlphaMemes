@@ -21,7 +21,7 @@
 			<li>Cannibal</li>
 		</associatedMemes> 
 		<conflictingMemes>
-			<li>VME_Vegan</li>			
+					
 		</conflictingMemes>
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>

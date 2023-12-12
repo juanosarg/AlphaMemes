@@ -7,7 +7,7 @@
 	<RitualPatternDef>
 		<defName>AM_InsectoidFuneralPattern</defName>
 		<nameMaker>NamerRitualFuneral</nameMaker>
-		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} be offered to the insectoids.</ritualExpectedDesc>
+		<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witness {RITUAL_labelDef} be offered to the insectoids.</ritualExpectedDesc>
 		<ritualObligationTriggers> <!--Only does colonists, animal trigger in prcepept def mod ext-->
 		  <li Class="RitualObligationTrigger_MemberDiedProperties"> 
 			<mustBePlayerIdeo>true</mustBePlayerIdeo>
@@ -30,7 +30,7 @@
 		  <li Class="RitualRoleTag">
 			<label>insectoid herder</label>
 			<id>insectoidHerder</id>
-			<precept>VME_IdeoRole_InsectoidHerder</precept>
+			<precept>IdeoRole_Moralist</precept>
 			<tag>InsectoidHerder</tag>
 			<maxCount>1</maxCount>
 			<substitutable>false</substitutable>
@@ -206,7 +206,7 @@
 		<colonistThingsOnly>false</colonistThingsOnly>
 		<workerClass>RitualObligationTargetWorker_ThingDef</workerClass>		
 		<thingDefs>
-		  <li>VME_InsectNest</li>
+		  
 		  <li>Hive</li>		  
 		</thingDefs>
 	</RitualObligationTargetFilterDef>	

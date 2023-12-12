@@ -1,121 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<MemeDef>
-		<defName>AM_NonViolence</defName>
-		<label>vow of nonviolence</label>
-		<description>We are committed to bringing about a world of peace, harmony, laughter, and love. We take this vow to be nonviolent in our thoughts, our speech, and our actions.\n\n&lt;color=#33d733&gt;This is a very challenging meme, as ALL colonists of this ideoligion will be incapable of combat, and can only defend themselves in three ways: traps, turrets, and having a multi-ideo colony with some "defenders" who don't share the same values.&lt;/color&gt;\n\nOskar quote: "please no xd this is actually game breaking".</description>
-		<iconPath>UI/Memes/AM_NonViolence</iconPath>
-		<groupDef>Misc</groupDef>
-		<exclusionTags>
-			<li>VME_TooViolent</li>
-			<li>VME_PacifistsNotViolentConverters</li>
-			<li>VME_TooHonourable</li>
-			<li>VME_NotRaiders</li>
-			<li>VME_NoCannibalsAndNonviolenceVow</li>
-			<li>VME_NonViolenceVoteVsRancher</li>
-			<li>AM_NonViolenceVowVsSupremacist</li>
-			<li>VME_NonViolenceVoteVsDefilers</li>
-			<li>VME_NonViolenceVowVsNationalists</li>
-			<li>VME_NonViolenceVoteVsPsychicVampires</li>
-			<li>VME_SadistVsNonviolence</li>
-			<li>AM_NonViolenceVowVsSharpshooter</li>
-			<li>AM_NonViolenceVowVsGladiator</li>
-		</exclusionTags>
-		<impact>3</impact>
-		<generalRules>
-			<rulesStrings>
-				<li>memeAdjective->nonviolent</li>
-				<li>memeAdjective->peace-loving</li>
-				<li>memeAdjective->harmonious</li>
-				<li>memeLeaderNoun->conscientious objector</li>
-				<li>memeMoralist->passive resister</li>
-				<li>memeConcept->nonviolence</li>
-			</rulesStrings>
-		</generalRules>
-		<descriptionMaker>
-			<rules>
-				<rulesStrings>
-					<!-- theist myth -->
-					<li>creation(tag=meme_NonViolence)        ->[deity0_name] made all of [deity0_possessive] followers swear a solemn vow of nonviolence.</li>
-					<li>episode(uses=1,tag=meme_NonViolence)  ->Speaking to the believers, [deity0_name] said: "Violence is the ultimate sin. It is preferable to be slaughtered than to raise a hand against other human being".</li>
-					<!-- theist founder -->
-					<li>intro(tag=meme_NonViolence)           ->[place_summary] [place_name] was always fraught with conflict. The [memberNamePlural] were besieged constantly by terrible warmongers, and this deeply saddened [deity0_name].</li>
-					<li>conflict(tag=meme_NonViolence)        ->[deity0_name] witnessed the contant assaults of a terrible [foeLeader], a war leader, and how [foeLeader_pronoun] was always planning some sort of violence.</li>
-					<li>founderJoin(tag=meme_NonViolence)     ->[deity0_name], tired of all the violence, infused the [foeLeader] with [deity0_pronoun] love, and [foeLeader_pronoun] immediately had a change of heart. From that point on, the [foeLeader] took [foeLeader_possessive] new name as the [deity0_name]'s speaker: [founderName] the Nonviolent.</li>
-					<li>victory(tag=meme_NonViolence)         ->[founderName] made us all understand that love is the only way forward, and we all swore a solemn vow of nonviolence.</li>
-					<!-- ideological founder -->
-					<li>setup(tag=meme_NonViolence)           ->[founderName] was a monk. [founder_pronoun] spent decades of [founder_possessive] life teaching that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
-					<li>story(uses=1,tag=meme_NonViolence)    ->[founderName] understood better than anyone else that violence is a poison to the soul, and that we must refuse to retaliate in the face of provocation and violence.</li>
-					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_NonViolence)         ->The ancient sages of Earth were absolutely right. They teach us that</li>
-					<li>lesson(tag=meme_NonViolence)              ->a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms</li>
-					<li>lessonReinforcement(tag=meme_NonViolence) ->We must refuse to retaliate in the face of provocation and violence.</li>
-					<!-- archist -->
-					<li>archistBasis(tag=meme_NonViolence)    ->Archotechs are pure minds, and they didn't get to their state by imposing their will upon others.</li>
-					<li>archistFact(tag=meme_NonViolence)     ->Violence is inherently abhorrent to advanced minds, the last resort of the weak of spirit.</li>
-					<li>archistProphecy(tag=meme_NonViolence) ->[inTheEnd], only those who refuse to retaliate in the face of provocation and violence will be ready to transcend.</li>
-					<!-- animist -->
-					<li>animistBasis(tag=meme_NonViolence)    ->The spirits teach us that a world of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
-					<li>animistFact(tag=meme_NonViolence)     ->Feeding the spirit of violence is senseless and wasteful, for violence is the ultimate sin.</li>
-					<li>animistProphecy(tag=meme_NonViolence) ->[itIsSaid] only those who refuse to retaliate in the face of provocation and violence will be ready to commune with the spirits.</li>
-					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_NonViolence)->[itIsSaid] we will understand that a hive of peace, harmony, laughter, and love can only be created by outright rejecting all violence, in all its forms.</li>
-					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_NonViolence)->Violence is just sustenance for these ancient entities, for they feed on terror. We must refuse to retaliate in the face of their provocation and violence.</li>
-					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_NonViolence)->Occult knowledge can't enter a mind occupied by violence and strife. Violence is a poison to the soul, and we must refuse to retaliate in the face of provocation and violence.</li>
-					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_NonViolence)->However, we are not killers. If we become murderers, how are we any better than this cursed Universe? We will be witnesses to the coming Apocalypse, but we won't be bearers of the weapons that bring its justice.</li>
-					<!-- corporate -->
-					<li>introMemo(tag=meme_NonViolence)->We are writing to remind you that the mandatory online anger management seminar has been rescheduled to this next Tuesday. Remember, people, in this company we are committed to bringing about a world of peace, harmony, laughter, and love!</li>					
-					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_NonViolence)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
-
-				</rulesStrings>
-			</rules>
-		</descriptionMaker>
-		<requireOne>
-			<li>
-				<li>VME_Raiding_Abhorrent</li>
-			</li>
-			<li>
-				<li>Slavery_Abhorrent</li>
-			</li>
-			<li>
-				<li>AM_Violence_Abhorrent_Strict</li>
-			</li>
-			<li>
-				<li>Execution_Abhorrent</li>
-			</li>
-			<li>
-				<li>VME_MeatEating_Abhorrent_Strict</li>
-			</li>
-			<li>
-				<li>AnimalSlaughter_Prohibited</li>
-				<li>AnimalSlaughter_Horrible</li>
-			</li>
-			<li>
-				<li>KillingInnocentAnimals_Abhorrent</li>
-			</li>
-			
-		</requireOne>
-		<symbolPacks>
-			<li>
-				<ideoName>Nonviolence</ideoName>
-				<theme>nonviolence</theme>
-				<adjective>nonviolent</adjective>
-				<member>pacifist</member>
-			</li>
-		</symbolPacks>
-		<addDesignators>
-			<li>AM_TrapBlunt</li>
-		</addDesignators>
-		<modExtensions>
-			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
-				<forcedTrait>AM_Ahimsa</forcedTrait>
-			</li>
-		</modExtensions>
-	</MemeDef>
+	
 	<MemeDef>
 		<defName>AM_Artist</defName>
 		<label>artist</label>
@@ -187,9 +72,7 @@
 			<li>
 				<li>AM_ArtQuality_Expected</li>
 			</li>
-			<li>
-				<li>VME_AutomationEfficiency_Decreased</li>
-			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -367,9 +250,7 @@
 			<li>
 				<li>AM_Reputation_Lowered</li>
 			</li>
-			<li>
-				<li>VME_CraftingQuality_Decreased</li>
-			</li>
+			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -397,87 +278,7 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
-	<MemeGroupDef>
-		<defName>AM_AgeRelated</defName>
-		<drawOffset>(0.65, 0.23)</drawOffset>
-		<maxRows>1</maxRows>
-		<renderOrder>2000</renderOrder>
-	</MemeGroupDef>
-	<MemeDef>
-		<defName>AM_Youth</defName>
-		<label>youth</label>
-		<description>The future of the world belongs to the youth, and it is from the youth and not from the old that the fire of life will warm and enlighten the world.</description>
-		<iconPath>UI/Memes/AM_Youth</iconPath>
-		<groupDef>AM_AgeRelated</groupDef>
-		<impact>1</impact>
-		<exclusionTags>
-			<li>VME_EldersOrYouth</li>
-		</exclusionTags>
-		<generalRules>
-			<rulesStrings>
-				<li>memeAdjective->young</li>
-				<li>memeAdjective->youthful</li>
-				<li>memeAdjective->youngster</li>
-				<li>memeConcept->age</li>
-				<li>memeHyphenPrefix->young</li>
-				<li>memeLeaderNoun->junior</li>
-			</rulesStrings>
-		</generalRules>
-		<descriptionMaker>
-			<rules>
-				<rulesStrings>
-					<!-- theist myth -->
-					<li>creation(tag=meme_Youth)        ->[deity0_name] spoke to [deity0_possessive] followers: "Youth comes but once in a lifetime."</li>
-					<li>episode(uses=1,tag=meme_Youth)  ->Following [deity0_name]'s teachings, we honoured our youth, putting their needs above those of others.</li>
-					<!-- theist founder -->
-					<li>intro(tag=meme_Youth)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic nursery, so that the youngsters could spend their early years in peace.</li>
-					<li>conflict(tag=meme_Youth)        ->An old [foeLeader], jealous of the wisdom of [deity0_name]'s followers, tried to spread a deadly plague that only affected children.</li>
-					<li>founderJoin(tag=meme_Youth)     ->[founderName], a great scientist, developed a cure in a record time, saving many lives in the process.</li>
-					<li>victory(tag=meme_Youth)         ->[foeLeader] was imprisoned, and [foeLeader_possessive] tale will forever be used as a cautinary tale against those who try to deny the sanctity of youth.</li>
-					<!-- ideological founder -->
-					<li>setup(tag=meme_Youth)           ->[founderName] was a social scientist in one of the Glitterworlds. [founder_pronoun] always advised the youth to not get influenced or forced by their elders, and that they should have their own political views and choices and the courage to pick the right leader.</li>
-					<li>story(uses=1,tag=meme_Youth)    ->[founderName] thus created a great school of thought, where the bounty of youth is always respected and considered.</li>
-					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Youth)         ->The youngest man to be chosen as leader in our community once taught me the history of civilization, how older men declare war, but it is the youth that must fight and die. He was leading me to understand that</li>
-					<li>lesson(tag=meme_Youth)              ->we want our legacy to stand upon the youth. We want to give knowledge to the younger generation and be a part of changing the game</li>
-					<li>lessonReinforcement(tag=meme_Youth) ->Good habits formed at youth make all the difference.</li>
-					<!-- archist -->
-					<li>archistBasis(tag=meme_Youth)    ->The archotechs are supreme beings, existing beyond concepts like age and time.</li>
-					<li>archistFact(tag=meme_Youth)     ->Whirling through a vortex of infinite time, their wisdom grows far larger than anything possible for a mere human, but they were human in their infancy.</li>
-					<li>archistProphecy(tag=meme_Youth) ->[inTheEnd], the archotechs will allow only the youngest of us to transcend, for we remind them of their own origins.</li>
-					<!-- animist -->
-					<li>animistBasis(tag=meme_Youth)    ->The spirits value vitality above anything else, for only those who are truly alive can properly communicate with them.</li>
-					<li>animistFact(tag=meme_Youth)     ->Our children, with their infinite energy, will act as a conduit to the world of the spirits.</li>
-					<li>animistProphecy(tag=meme_Youth) ->[itIsSaid] the liveliest of our children will one day commune fully with the spirits, becoming one with them.</li>
-					<!-- serketist -->
-					<li>serketistProphecy(tag=meme_Youth)->[itIsSaid] we will become as eternal as the greatest ant colony. With vitality and exhuberance beyond measure.</li>
-					<!-- eldritch / chthonian -->
-					<li>chthonianProphecy(tag=meme_Youth)->The eldritch entities are old and wise beyond all imagining, and we are but children to them. Perhaps the innocence of the youth will shield us from their unwanted attention.</li>
-					<!-- esoteric -->
-					<li>esotericismProphecy(tag=meme_Youth)->Such occult knowledge can only be acquired with time and study. Only the youngest among us will have enough time in their lives to pierce the barrier between reality and the realms beyond.</li>
-					<!-- eschatologism -->
-					<li>eschatologismFact(tag=meme_Youth)->We shall honour our youth, for the process to bring about the end of days will be long and arduous, and only them may witness it before they themselves succumb to age.</li>
-					<!-- corporate -->
-					<li>introMemo(tag=meme_Youth)->We are gladly informing you that we have decided to relax the previous rules regarding minimum acceptable employee age. If he walks, he can work!</li>
-					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_Youth)->These poor wayward creations of humanity are a fine example of vitality and exhuberance beyond measure.</li>
-				</rulesStrings>
-			</rules>
-		</descriptionMaker>
-		<requireOne>
-			<li>
-				<li>VME_Elders_Despised</li>
-			</li>
-		</requireOne>
-		<symbolPacks>
-			<li>
-				<ideoName>Youth</ideoName>
-				<theme>youth</theme>
-				<adjective>young</adjective>
-				<member>young one</member>
-			</li>
-		</symbolPacks>
-	</MemeDef>
+	
 	<MemeGroupDef>
 		<defName>AA_Biological</defName>
 		<drawOffset>(0.65, 0.23)</drawOffset>
@@ -1177,17 +978,13 @@
 			<li>
 				<li>RoughLiving_Welcomed</li>
 			</li>
-			<li>
-				<li>VME_Alcohol_MildAbstinence</li>
-			</li>
+			
 			<li>
 				<li>DrugUse_MedicalOrSocial</li>
 				<li>DrugUse_MedicalOnly</li>
 				<li>DrugUse_Prohibited</li>
 			</li>
-			<li>
-				<li>VME_AutomationEfficiency_Decreased</li>
-			</li>
+			
 			<li>
 				<li>AM_Barracks_Preferred</li>
 			</li>

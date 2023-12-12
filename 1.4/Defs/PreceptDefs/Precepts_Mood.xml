@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+	<IssueDef>
+		<defName>AM_Mood</defName>
+		<label>mood</label>
+		<iconPath>UI/Issues/AM_MoodIssue</iconPath>
+	</IssueDef>
 	
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>AM_Mood_Volatile</defName>
-		<issue>VME_Mood</issue>
+		<issue>AM_Mood</issue>
 		<label>volatile</label>
 		<description>We won't let our fragile egos dictate our lives. We refuse to be shackled by the thin veil of reality. We will peer beyond.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonist mood will fluctuate every day at random between -15 and +15.</description>
 		<impact>High</impact>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PreceptDef[defName="AM_PsyfocusGain_Dampened"]/issue</xpath>
+					<value>
+						<issue>VME_PsyfocusGain</issue>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PreceptDef[defName="AM_PsychicSensitivity_Affinity"]/issue</xpath>
+					<value>
+						<issue>VME_PsychicSensitivity</issue>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PreceptDef[defName="AM_PsychicSensitivity_Heightened"]/issue</xpath>
+					<value>
+						<issue>VME_PsychicSensitivity</issue>
+					</value>
+				</li>
+				
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

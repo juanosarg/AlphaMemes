@@ -312,7 +312,9 @@
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
+    <Compile Include="Harmony\Dialog_BeginRitual_BlockingIssues_Patch.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap_AddHumanlikeOrders.cs" />
+    <Compile Include="Harmony\RitualRoleAssignments_PawnNotAssignableReason.cs" />
     <Compile Include="Harmony\SketchGenUtility_PlayerCanBuildNow.cs" />
     <Compile Include="Harmony\GenConstruct_CanConstruct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />

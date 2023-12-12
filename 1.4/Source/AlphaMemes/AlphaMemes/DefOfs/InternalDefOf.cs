@@ -15,7 +15,9 @@ namespace AlphaMemes
 
 		public static JobDef AM_InstallRelic;
 
-		public static PreceptDef AM_Violence_Abhorrent_Strict;
+        [MayRequire("VanillaExpanded.VMemesE")]
+        public static PreceptDef AM_Violence_Abhorrent_Strict;
+
 		public static PreceptDef AM_ArtProductionSpeed_Increased;
 		public static PreceptDef AM_Art_Desired;
 		public static PreceptDef AM_ArtQuality_Expected;
@@ -32,8 +34,9 @@ namespace AlphaMemes
 		public static PreceptDef AM_Barracks_Preferred;
 		public static PreceptDef AM_Megaliths_Desired;
 		public static PreceptDef AM_Barracks_PreferredTrue;
+        public static PreceptDef AM_SkyBurial;
 
-		public static HistoryEventDef AM_SomeoneDied;
+        public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
 		public static HistoryEventDef AM_DespisedAnimalDied;
 		public static HistoryEventDef AM_AnimalDied;

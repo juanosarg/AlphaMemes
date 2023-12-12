@@ -522,7 +522,7 @@
 	<MemeDef>
 		<defName>AM_Structure_Neolithic</defName>
 		<label>neolithic</label>
-		<description>The vast gulfs of space and time between the stars leave individual worlds vulnerable to regression. This culture has fallen from grace entirely, and reverted to stone-age, prehistoric levels of technological advancement and refinement.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind that this structure is NOT a technology locker in ANY way. This culture has kept the style of their stone age origins, but they can make weapons, build a spaceship, etc. Use a different mod to lock research to certain tech levels.</description>
+		<description>The vast gulfs of space and time between the stars leave individual worlds vulnerable to regression. This culture has fallen from grace entirely, and reverted to stone-age, prehistoric levels of technological advancement and refinement.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind that this structure is NOT a technology locker in ANY way. This culture has kept the style of their stone age origins, but they can make weapons, build a spaceship, etc. Use a different mod to lock research to certain tech levels.\n- Also bear in mind that this structure disables normal tables and beds.</description>
 		<category>Structure</category>
 		<iconPath>UI/Structures/AM_Neolithic</iconPath>
 		<impact>0</impact>

@@ -19,7 +19,7 @@
 		<associatedMemes> 
 			<li>TreeConnection</li>
 			<li>NaturePrimacy</li>
-			<li>VME_PsychicFocus</li>
+			
 		</associatedMemes>
 		<conflictingMemes>
 			<li>HumanPrimacy</li>
@@ -43,10 +43,7 @@
 					<key>NaturePrimacy</key>
 					<value>3</value>
 				</li>
-				<li>
-					<key>VME_PsychicFocus</key>
-					<value>3</value>
-				</li>
+				
 			</associatedMemes>
 			<!--Animals-->
 			<allowAnimals>true</allowAnimals>
@@ -56,12 +53,7 @@
 				<namedanimals>false</namedanimals><!--This is pushing it-->
 				<allAnimals>false</allAnimals> <!--Probably shouldnt turn this on but you do you-->
 			</animalObligationTrigger>		
-			<!--Conflicts-->
-			<specialConflicts Class="AlphaMemes.FuneralFramework_SpecialConflicts">
-				<conflictingPreceptDefs>
-					<li>VME_PsychicSensitivity_Lowered</li>
-				</conflictingPreceptDefs>
-			</specialConflicts>
+			
 		</li>
 		</modExtensions>
 	</PreceptDef>

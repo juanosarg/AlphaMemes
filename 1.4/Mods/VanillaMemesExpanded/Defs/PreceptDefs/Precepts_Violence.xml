@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HistoryEventDef>
-		<defName>AM_SomeoneDied</defName>
-		<label>someone died</label>
-	</HistoryEventDef>
+	
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>AM_Violence_Abhorrent_Strict</defName>

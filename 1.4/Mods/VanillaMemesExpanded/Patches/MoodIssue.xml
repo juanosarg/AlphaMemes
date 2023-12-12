@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PreceptDef[defName="AM_Mood_Volatile"]/issue</xpath>
+		<value>
+			<issue>VME_Mood</issue>
+		</value>
+	</Operation>
+</Patch>
+

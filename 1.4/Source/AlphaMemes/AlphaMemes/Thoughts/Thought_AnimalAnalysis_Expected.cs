@@ -17,6 +17,10 @@ namespace AlphaMemes
             {
                 return false;
             }
+            if (p.IsQuestHelper()|| p.IsQuestLodger())
+            {
+                return false;
+            }
 
             if (progressTotal == 0)
             {

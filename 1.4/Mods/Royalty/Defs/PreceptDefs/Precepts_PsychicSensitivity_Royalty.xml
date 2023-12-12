@@ -6,11 +6,15 @@
 
 	<!-- Precepts -->
 
-
+	<IssueDef>
+		<defName>AM_PsychicSensitivity</defName>
+		<label>psychic sensitivity</label>
+		<iconPath>UI/Issues/AM_PsySensitivityIssue</iconPath>
+	</IssueDef>
 
 	<PreceptDef>
 		<defName>AM_PsychicSensitivity_Affinity</defName>
-		<issue>VME_PsychicSensitivity</issue>
+		<issue>AM_PsychicSensitivity</issue>
 		<label>affinity</label>
 		<description>Our minds will be like a bulwark against the psychic powers. A labyrinth that only the most skilled will be able to navigate.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - A colony starting with this precept will start the gameplay with a free psylink neuroformer.</description>
 		<impact>Medium</impact>
@@ -28,7 +32,7 @@
 	
 	<PreceptDef>
 		<defName>AM_PsychicSensitivity_Heightened</defName>
-		<issue>VME_PsychicSensitivity</issue>
+		<issue>AM_PsychicSensitivity</issue>
 		<label>increased</label>
 		<description>Our minds will stay wide open to the vast universe of possibilities we are facing. We are not afraid.</description>
 		<impact>Medium</impact>

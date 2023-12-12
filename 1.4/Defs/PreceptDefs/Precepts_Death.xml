@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<PreceptDef>
+
+
+	<IssueDef>
+		<defName>AM_Death</defName>
+		<label>death</label>
+		<iconPath>UI/Issues/AM_DeathIssue</iconPath>
+	</IssueDef>
+	
+	<HistoryEventDef>
+		<defName>AM_SomeoneDied</defName>
+		<label>someone died</label>
+	</HistoryEventDef>
+
+	<PreceptDef>
 		<defName>AM_Death_Desired</defName>
-		<issue>VME_Death</issue>
+		<issue>AM_Death</issue>
 		<label>desired</label>
 		<description>Death is what makes us truly human. It shouldn't be avoided, but actively sought.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if ANY human casualties take place on the colony.</description>
 		<impact>Medium</impact>

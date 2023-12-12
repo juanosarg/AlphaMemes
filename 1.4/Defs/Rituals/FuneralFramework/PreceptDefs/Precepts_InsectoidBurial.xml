@@ -6,7 +6,7 @@
 		<label>hive burial</label>
 		<description>A gathering to witness our friend offered to the greater powers; Insects!</description>
 		<issue>Ritual</issue>		
-		<iconPath>UI/Rituals/AM_FuneralCremation</iconPath>
+		<iconPath>UI/Rituals/AM_FuneralInsectoid</iconPath>
 		<preceptClass>Precept_Ritual</preceptClass>
 		<ritualPatternBase>AM_InsectoidFuneralPattern</ritualPatternBase>
 		<allowDuplicates>false</allowDuplicates>
@@ -16,12 +16,12 @@
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<impact>Medium</impact>
 		<requiredMemes>
-			<li>VME_InsectoidSupremacy</li>
+			
 		</requiredMemes>
 		<ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
 		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
 		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
-		<extraTextPawnDeathLetter>{PAWN_nameDef} should be offered to the insectiods so {PAWN_possessive} friends and family will know they are with the superior race</extraTextPawnDeathLetter>
+		<extraTextPawnDeathLetter>{PAWN_nameDef} should be offered to the insectoids so {PAWN_possessive} friends and family will know they are with the superior race</extraTextPawnDeathLetter>
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
