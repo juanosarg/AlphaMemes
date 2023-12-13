@@ -35,6 +35,10 @@ namespace AlphaMemes
 		public static PreceptDef AM_Megaliths_Desired;
 		public static PreceptDef AM_Barracks_PreferredTrue;
         public static PreceptDef AM_SkyBurial;
+        [MayRequire("Sarg.AlphaPrefabs")]
+        public static PreceptDef AM_PrefabBuying_Preferred;
+		[MayRequire("Sarg.AlphaPrefabs")]
+		public static PreceptDef AM_PrefabAcquisition_Easy;
 
         public static HistoryEventDef AM_SomeoneDied;
 		public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -46,8 +50,10 @@ namespace AlphaMemes
 		public static HistoryEventDef AM_UsedMelee;
 		public static HistoryEventDef AM_UsedRanged;
 		public static HistoryEventDef AM_BuildingReliquary;
+        [MayRequire("Sarg.AlphaPrefabs")]
+        public static HistoryEventDef AM_BoughtPrefabOnMerchant;
 
-		public static ThingDef AM_TrapBlunt;
+        public static ThingDef AM_TrapBlunt;
 		public static ThingDef AM_AnimalDatabase;
 		public static ThingDef AM_BlocksPristineLimestone;
 		public static ThingDef AM_RelicSmashingAltar;

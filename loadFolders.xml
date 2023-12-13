@@ -37,6 +37,7 @@
 		<li IfModActive="OskarPotocki.VFE.Pirates">1.4/Mods/VanillaFactionsPirates</li>
 		<li IfModActive="Owlchemist.WallUtilities">1.4/Mods/WallUtilities</li>
 		<li IfModActive="VanillaExpanded.VMemesE">1.4/Mods/VanillaMemesExpanded</li>
+		<li IfModActive="Sarg.AlphaPrefabs">1.4/Mods/AlphaPrefabs</li>
 	</v1.4>
 </loadFolders>
 

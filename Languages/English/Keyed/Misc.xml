@@ -29,6 +29,8 @@
 	<AM_MakeChangeStyleAbilityUseAllStyles>Make the "Change Style" ability use styles not possessed by the player's main ideoligion</AM_MakeChangeStyleAbilityUseAllStyles>
 	<AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>Make the "Change Style" ability use styles not possessed by the player's main ideoligion. By default this leader role ability will swap an item's style through the styles present in the colony's main ideo. By activating this toggle you will make it use ALL styles currently present in the game (vanilla or modded)</AM_MakeChangeStyleAbilityUseAllStyles_Tooltip>
 	<AM_AbilityNiceTry>This project is too ambitious for the Master Architect (haha, nice try)</AM_AbilityNiceTry>
+	<AM_LetterLabelPrefabDelivered>Prefab delivered</AM_LetterLabelPrefabDelivered>
+	<AM_LetterPrefabDelivered>One of our contacts in orbit has delivered a brand new prefab, free of cost!\n\nIf you have any caravan hitching spots it will be airdropped nearby. If not, it will be dropped wherever. YOLO.</AM_LetterPrefabDelivered>
 	
 	<!--Funeral Stings-->
 	<Funeral_NeedsPower>{0} is not powered</Funeral_NeedsPower>

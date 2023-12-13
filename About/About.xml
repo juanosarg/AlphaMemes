@@ -22,12 +22,7 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
-		<li>
-			<packageId>VanillaExpanded.VMemesE</packageId>
-			<displayName>Vanilla Ideology Expanded - Memes and Structures</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500</steamWorkshopUrl>
-			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaIdeologyExpanded-Memes</downloadUrl>
-		</li>
+		
 	</modDependencies>
 	<loadAfter>
 		<li>VanillaExpanded.VMemesE</li>		
@@ -38,7 +33,7 @@
 &lt;size=24&gt;Features&lt;/size&gt;
 
 - Adds 9 new structures: Jewish origins, Kemetic origins, Steampunk revival, Jain origins, Sikh origins, Corsair, Neolithic, Scavenger and Atheism.
-- Adds 14 new memes: Vow of Nonviolence, Artist, Sadist, Youth, Madness, Biological defilers, Biological reconstructors, Psychic vampirism (needs Royalty), Gauranlen supremacy, Bulwark, Sharpshooter, Gladiator, Iconoclast and Monastic. 
+- Adds 15 new memes: Vow of Nonviolence, Artist, Sadist, Youth, Madness, Biological defilers, Biological reconstructors, Psychic vampirism (needs Royalty), Gauranlen supremacy, Bulwark, Sharpshooter, Gladiator, Iconoclast, Monastic and Prefab preference. 
 - Greatly expands all vanilla Ideology styles (Techist, Morbid, etc) with more than 300 individual styled weapons, buildings, etc
 
 &lt;size=24&gt;Credits&lt;/size&gt;

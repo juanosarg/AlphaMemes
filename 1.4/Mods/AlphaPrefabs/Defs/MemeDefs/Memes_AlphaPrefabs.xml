@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_PrefabPreference</defName>
+		<label>prefab preference</label>
+		<description>Opting for precision in urban development, we favor the swift integration of prefabricated structures for our city. Rather than traditional construction, we choose ready-made buildings for homes, workshops, and leisure spots. This approach enables us to expedite the city-building process, providing accessible and inclusive spaces for everyone's needs.</description>
+		<iconPath>UI/Memes/AM_PrefabPreference</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->practical</li>
+				<li>memeAdjective->pragmatic</li>
+				<li>memeAdjective->workable</li>
+				<li>memeLeaderNoun->organizer</li>
+				<li>memeMoralist->scheduler</li>
+				<li>memeConcept->practicality</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_PrefabPreference)        ->[deity0_name] taught all of [deity0_possessive] followers to be practical and to avoid wasting time in needless tasks.</li>
+					<li>episode(uses=1,tag=meme_PrefabPreference)  ->Speaking to the believers, [deity0_name] said: "Thou shalt honor the efficiency of swift assembly. In the realm of prefabs, time is sacred; therefore, build with haste and precision".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_PrefabPreference)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name] whispering to them through a well designed building.</li>
+					<li>conflict(tag=meme_PrefabPreference)        ->A foreman [foeLeader] envied the automated building processes of the [memberNamePlural], and [foeLeader_possessive] [foeSoldiers] destroyed their workshops with [place_personalWeapon]s.</li>
+					<li>founderJoin(tag=meme_PrefabPreference)     ->A cunning [place_job] named [founderName] created an amazing prefabricated defensive emplacement to warn the [memberNamePlural] of the approach of the [foeSoldiers].</li>
+					<li>victory(tag=meme_PrefabPreference)         ->[founderName] received divine technological knowledge from [deity0_name], and used it to replicate the prefabricated defensive emplacement so they could defeat the [foeSoldiers].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_PrefabPreference)           ->[founderName] was aen engineer. [founder_pronoun] spent decades of [founder_possessive] life teaching others to embrace the diversity of design. To let no structure exclude, and ensure that every prefab bears the mark of inclusivity, welcoming all into its preordained walls.</li>
+					<li>story(uses=1,tag=meme_PrefabPreference)    ->[founderName] understood better than anyone else that one should forsake the temptation of unnecessary customization, for in simplicity lies the strength and harmony of prefabricated creations.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_PrefabPreference)         ->The ancient builders of Earth were absolutely right. They teach us that</li>
+					<li>lesson(tag=meme_PrefabPreference)              ->one should utilize materials wisely, for in the realm of prefabs, sustainability is the cornerstone of efficient construction</li>
+					<li>lessonReinforcement(tag=meme_PrefabPreference) ->We must strive for functional elegance over unnecessary embellishments.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_PrefabPreference)    ->Archotechs show us that we must ensure that every edifice accommodates the diverse data patterns of inhabitants, fostering a harmonious blend of functionality and adaptability.</li>
+					<li>archistFact(tag=meme_PrefabPreference)     ->Fusion of functional aesthetics is essential.</li>
+					<li>archistProphecy(tag=meme_PrefabPreference) ->[inTheEnd], only those who infuse self-learning mechanisms within structures, enabling them to dynamically adapt and evolve in response to the ever-changing needs of the sentient entities within the urban nexus will be ready to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_PrefabPreference)    ->Invoke the swift spirits in the crafting of our dwellings. Let the rhythm of the unseen guide our hands to build swiftly, creating shelters that resonate with the heartbeat of the earth.</li>
+					<li>animistFact(tag=meme_PrefabPreference)     ->Design structures that welcome all, ensuring the flow of positive energies through every nook and cranny.</li>
+					<li>animistProphecy(tag=meme_PrefabPreference) ->[itIsSaid] only those who adorned our structures with symbols that resonate with the ancient energies, weaving a tapestry of purpose and meaning into the fabric of our tribal existence, will be ready to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_PrefabPreference)->[itIsSaid] we will understand that we should construct shelters interwoven with the exoskeletons of sacred insects, fostering a symbiotic bond that resonates with the collective heartbeat of the hive.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_PrefabPreference)->We will embrace the eldritch aesthetic in our constructions and invoke the cosmic energies to infuse structures with the otherworldly, creating architectural marvels.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_PrefabPreference)->We will imbibe occult wisdom into the very foundations of our abodes. Encode esoteric symbols and mystic runes in the architectural design, forging structures that resonate with the arcane energies of the unseen realms.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_PrefabPreference)->We will prepare for the inevitable end in every dwelling. Construct shelters as sanctuaries against the impending cataclysm, where the echoes of doom reverberate in every stone, serving as both a testament and refuge in the face of the impending apocalypse.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_PrefabPreference)->Make a note in your calendars: the new line of corporate prefabs is now available for purchase for all departments. Please fill a request with your nearest Provisions office and remember to include Form A12-B to expedite the process.</li>
+					
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_PrefabBuying_Preferred</li>
+			</li>
+			<li>
+				<li>AM_PrefabAcquisition_Easy</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Prefabrication</ideoName>
+				<theme>prefabrication</theme>
+				<adjective>prefabricated</adjective>
+				<member>builder</member>
+			</li>
+		</symbolPacks>
+		
+	</MemeDef>
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_PrefabBuying</defName>
+		<label>prefab buying</label>
+		<iconPath>UI/Issues/AM_PrefabBuying</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_BoughtPrefabOnMerchant</defName>
+		<label>bought prefab on trader</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_PrefabBuying_Preferred</defName>
+		<issue>AM_PrefabBuying</issue>
+		<label>preferred</label>
+		<description>Acquiring prefab structures from merchants is a good use of our money.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Provides a mood bonus when acquiring prefabs from merchants. This only applies to trading them, not buying them from the prefab catalog.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_PrefabPreference</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_PrefabPreference</li>
+		</requiredMemes>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_BoughtPrefabOnMerchant</eventDef>
+				<thought>AM_PrefabBuying_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_PrefabBuying_Preferred</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>1</stackLimit>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>acquired new prefab</label>
+				<description>We bought an awesome new prefab from a trader! We should deploy it and see what's inside!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<IssueDef>
+		<defName>AM_PrefabAcquisition</defName>
+		<label>prefab acquisition</label>
+		<iconPath>UI/Issues/AM_PrefabAcquisition</iconPath>
+	</IssueDef>
+	<PreceptDef>
+		<defName>AM_PrefabAcquisition_Easy</defName>
+		<issue>AM_PrefabAcquisition</issue>
+		<label>easy</label>
+		<description>In a pioneering deal with orbital supply enterprises, our colony has secured lucrative contracts that extend beyond mere financial gains. Annually, as part of this groundbreaking alliance, these out-of-world companies generously provide our settlement with a supply of free prefabricated structures.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Will get a free prefab once a year, assuming the colony has the necessary research to build all its components.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_PrefabPreference</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_PrefabPreference</li>
+		</requiredMemes>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+	</PreceptDef>
+</Defs>
