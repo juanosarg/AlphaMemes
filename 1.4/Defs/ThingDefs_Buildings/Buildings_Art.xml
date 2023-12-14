@@ -256,6 +256,7 @@
 		<defName>AM_FuturisticPyramid</defName>
 		<label>futuristic great pyramid</label>
 		<description>A truly colossal metallic structure whose outer surfaces are triangular and converge to a single step at the top.</description>
+		<drawOffscreen>true</drawOffscreen>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_FuturePyramid</texPath>
@@ -385,6 +386,7 @@
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_GreatPyramid</texPath>
 			<drawSize>(24,24)</drawSize>
 		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
 		<thingClass>Building_Art</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<pathCost>50</pathCost>
@@ -510,6 +512,7 @@
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_Sphynx</texPath>
 			<drawSize>(12,18)</drawSize>
 		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
 		<thingClass>Building_Art</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<pathCost>50</pathCost>

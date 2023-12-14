@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<!-- ====== Kemetic ======== -->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Wall</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/Wall/AM_KemeticWall</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -194,7 +192,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Knife</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticKnife</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -202,7 +199,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Hammer</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticHammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -210,13 +206,11 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Pickaxe</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticPickaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Club</defName>
 		<graphicData>
@@ -499,7 +493,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_SawedOffShotgun</defName>
 		<graphicData>
@@ -558,7 +551,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_HeavyClub</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticGreatClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -566,7 +558,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_LightClub</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticLightClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -581,26 +572,20 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Shiv</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticShiv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Sling</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticSling</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</wornGraphicPath>
@@ -673,7 +658,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_Kemetic_CanopicJars</defName>
 		<graphicData>
@@ -697,6 +681,107 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-
+	<ThingStyleDef>
+		<defName>AM_KemeticShelf</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Shelf/AM_KemeticShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticShelfSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/ShelfSmall/AM_KemeticShelfSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticDresser</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Dresser/AM_KemeticDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticPew</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Pew/AM_KemeticPew</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticEndTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/EndTable/AM_KemeticEndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticDoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Door/AM_KemeticDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Door/AM_KemeticDoor_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticArmchair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Armchair/AM_KemeticArmchair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticChair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Chair/AM_KemeticChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticPlantPot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticPlantpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.65, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
