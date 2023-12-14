@@ -6,7 +6,7 @@
 		<description>Opting for precision in urban development, we favor the swift integration of prefabricated structures for our city. Rather than traditional construction, we choose ready-made buildings for homes, workshops, and leisure spots. This approach enables us to expedite the city-building process, providing accessible and inclusive spaces for everyone's needs.</description>
 		<iconPath>UI/Memes/AM_PrefabPreference</iconPath>
 		<groupDef>Misc</groupDef>
-		<impact>2</impact>
+		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->practical</li>
