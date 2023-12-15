@@ -368,6 +368,7 @@
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_TagSet.cs" />
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_ThingNotReachable.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_MembersCanBuild.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_SkyBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_CorruptGauranlen.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_OcularBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_InsectoidBurial.cs" />

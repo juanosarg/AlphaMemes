@@ -20,7 +20,7 @@
 	<RitualBehaviorDef>
 		<defName>AM_SkyBurialBehavior</defName>
 		<durationTicks>5000</durationTicks>
-		<workerClass>AlphaMemes.RitualBehaviorWorker_FuneralFramework</workerClass>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_SkyBurial</workerClass>
 		<spectatorFilter Class="AlphaMemes.RitualRoleFuneralCorpse_RitualSpectatorFilterNotCorpse">
 		<description>Spectators must be alive.</description>
 		</spectatorFilter>
