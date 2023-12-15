@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathAlly"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathAlly"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathAlly"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathNonAlly"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathNonAlly"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathNonAlly"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathFamily"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathFamily"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathFamily"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathBloodlust"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathBloodlust"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathBloodlust"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_Death_Desired</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_Death_Desired</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+
+
+</Patch>

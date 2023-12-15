@@ -24,9 +24,7 @@
 		</li>
 		
 	</modDependencies>
-	<loadAfter>
-		<li>VanillaExpanded.VMemesE</li>		
-	</loadAfter>
+	
 	<packageId>Sarg.AlphaMemes</packageId>
 	<description>Adds new memes and structures to Rimworld.
 
@@ -59,6 +57,7 @@ Oh you can bet I will add new things!
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v2.2: Added new meme. Removed VE as a dependency. Added new Kemetic furniture. (15/12/23) 
 v2.0: Updated to RW 1.4 (14/10/22) 
 v1.7: Added scavenger structure and style (28/07/22)
 v1.6: Added 9 new funeral types. New change style ability. New Animalist and Corsair weapons (08/07/22)
