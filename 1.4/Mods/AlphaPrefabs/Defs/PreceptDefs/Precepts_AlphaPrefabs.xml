@@ -40,7 +40,7 @@
 			<li>
 				<label>acquired new prefab</label>
 				<description>We bought an awesome new prefab from a trader! We should deploy it and see what's inside!</description>
-				<baseMoodEffect>10</baseMoodEffect>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
