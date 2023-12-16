@@ -15,7 +15,7 @@ namespace AlphaMemes
             }
 
 
-            if (StaticCollectionsClass.megalithsInTheMap*3 < PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_OfPlayerFaction.Count)
+            if (StaticCollectionsClass.megalithsInTheMap*3 < PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.Count)
             {
                 return ThoughtState.ActiveAtStage(0); 
 
