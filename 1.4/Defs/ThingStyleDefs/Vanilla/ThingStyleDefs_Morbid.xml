@@ -234,6 +234,112 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Carbine</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidCombatPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Morbid_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Morbid/AM_MorbidFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

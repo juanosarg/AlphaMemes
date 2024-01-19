@@ -247,6 +247,143 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+		<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecorePilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+		<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreCombatPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_CarbineVWE</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Crossbow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	
 </Defs>

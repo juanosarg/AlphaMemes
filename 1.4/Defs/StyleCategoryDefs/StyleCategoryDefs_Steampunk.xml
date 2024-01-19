@@ -259,6 +259,47 @@
 				<thingDef>ShipLandingBeacon</thingDef>
 				<styleDef>AM_SteampunkRevival_ShipLandingBeacon</styleDef>
 			</li>
+			
+			<li>
+				<thingDef>Weapon_GrenadeFrag</thingDef>
+				<styleDef>AM_Steampunk_Grenade</styleDef>
+			</li>
+				<li>
+				<thingDef>Weapon_GrenadeEMP</thingDef>
+				<styleDef>AM_Steampunk_EMPGrenades</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeMolotov</thingDef>
+				<styleDef>AM_Steampunk_Molotovs</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_IncendiaryLauncher</thingDef>
+				<styleDef>AM_Steampunk_FlameLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_SmokeLauncher</thingDef>
+				<styleDef>AM_Steampunk_SmokeLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_EmpLauncher</thingDef>
+				<styleDef>AM_Steampunk_EMPLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Pila</thingDef>
+				<styleDef>AM_Steampunk_Pila</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Flamebow</thingDef>
+				<styleDef>AM_Steampunk_Flamebow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Weapon_GrenadeTox</thingDef>
+				<styleDef>AM_Steampunk_ToxGrenades</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Gun_ToxbombLauncher</thingDef>
+				<styleDef>AM_Steampunk_ToxLauncher</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignatorGroups>
 			<li>AM_Floor_SteampunkTiles</li>

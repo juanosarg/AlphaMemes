@@ -784,4 +784,71 @@
 			</damageData>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
 </Defs>

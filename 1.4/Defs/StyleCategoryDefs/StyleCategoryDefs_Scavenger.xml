@@ -190,6 +190,47 @@
 				<styleDef>AM_Scavenger_Minigun</styleDef>
 			</li>
 			
+			<li>
+				<thingDef>Weapon_GrenadeFrag</thingDef>
+				<styleDef>AM_Scavenger_Grenade</styleDef>
+			</li>
+				<li>
+				<thingDef>Weapon_GrenadeEMP</thingDef>
+				<styleDef>AM_Scavenger_EMPGrenades</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeMolotov</thingDef>
+				<styleDef>AM_Scavenger_Molotovs</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_IncendiaryLauncher</thingDef>
+				<styleDef>AM_Scavenger_FlameLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_SmokeLauncher</thingDef>
+				<styleDef>AM_Scavenger_SmokeLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_EmpLauncher</thingDef>
+				<styleDef>AM_Scavenger_EMPLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Pila</thingDef>
+				<styleDef>AM_Scavenger_Pila</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Flamebow</thingDef>
+				<styleDef>AM_Scavenger_Flamebow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Weapon_GrenadeTox</thingDef>
+				<styleDef>AM_Scavenger_ToxGrenades</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Gun_ToxbombLauncher</thingDef>
+				<styleDef>AM_Scavenger_ToxLauncher</styleDef>
+			</li>
+			
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_AncientBed</li>

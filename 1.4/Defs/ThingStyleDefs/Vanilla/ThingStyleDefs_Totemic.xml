@@ -377,6 +377,85 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+			<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_TotemicFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 	

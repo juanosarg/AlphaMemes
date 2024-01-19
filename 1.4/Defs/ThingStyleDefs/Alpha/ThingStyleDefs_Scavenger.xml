@@ -381,5 +381,99 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Scavenger_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Scavenger/AM_ScavengerFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 </Defs>

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-	
-	
 	<StyleCategoryDef>
 		<defName>AM_Corsair</defName>
 		<label>corsair</label>
@@ -156,6 +151,39 @@
 				<thingDef>MeleeWeapon_BreachAxe</thingDef>
 				<styleDef>AM_Corsair_Pickaxe</styleDef>
 			</li>
+			<li>
+				<thingDef>Weapon_GrenadeEMP</thingDef>
+				<styleDef>AM_Corsair_EMPGrenades</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeMolotov</thingDef>
+				<styleDef>AM_Corsair_Molotovs</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_IncendiaryLauncher</thingDef>
+				<styleDef>AM_Corsair_FlameLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_SmokeLauncher</thingDef>
+				<styleDef>AM_Corsair_SmokeLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_EmpLauncher</thingDef>
+				<styleDef>AM_Corsair_EMPLauncher</styleDef>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Flamebow</thingDef>
+				<styleDef>AM_Corsair_Flamebow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Weapon_GrenadeTox</thingDef>
+				<styleDef>AM_Corsair_ToxGrenades</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Gun_ToxbombLauncher</thingDef>
+				<styleDef>AM_Corsair_ToxLauncher</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_GrogDispenser</li>
@@ -163,5 +191,4 @@
 			<li>AM_CorsairSlab_Broad</li>
 		</addDesignators>
 	</StyleCategoryDef>
-	
 </Defs>

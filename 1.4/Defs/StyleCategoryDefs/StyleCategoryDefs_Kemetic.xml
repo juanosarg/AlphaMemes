@@ -269,6 +269,44 @@
 				<styleDef>AM_KemeticPlantPot</styleDef>
 			</li>
 			
+			<li>
+				<thingDef>Weapon_GrenadeFrag</thingDef>
+				<styleDef>AM_Kemetic_Grenade</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeEMP</thingDef>
+				<styleDef>AM_Kemetic_EMPGrenades</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeMolotov</thingDef>
+				<styleDef>AM_Kemetic_Molotovs</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_IncendiaryLauncher</thingDef>
+				<styleDef>AM_Kemetic_FlameLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_SmokeLauncher</thingDef>
+				<styleDef>AM_Kemetic_SmokeLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_EmpLauncher</thingDef>
+				<styleDef>AM_Kemetic_EMPLauncher</styleDef>
+			</li>
+		
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Flamebow</thingDef>
+				<styleDef>AM_Kemetic_Flamebow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Weapon_GrenadeTox</thingDef>
+				<styleDef>AM_Kemetic_ToxGrenades</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Gun_ToxbombLauncher</thingDef>
+				<styleDef>AM_Kemetic_ToxLauncher</styleDef>
+			</li>
+			
 			
 			
 		</thingDefStyles>

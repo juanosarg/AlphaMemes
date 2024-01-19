@@ -111,6 +111,47 @@
 					<thingDef>Gun_Minigun</thingDef>
 					<styleDef>AM_Totemic_Minigun</styleDef>
 				</li>	
+				
+				<li>
+					<thingDef>Weapon_GrenadeFrag</thingDef>
+					<styleDef>AM_Totemic_Grenade</styleDef>
+				</li>
+				<li>
+					<thingDef>Weapon_GrenadeEMP</thingDef>
+					<styleDef>AM_Totemic_EMPGrenades</styleDef>
+				</li>
+				<li>
+					<thingDef>Weapon_GrenadeMolotov</thingDef>
+					<styleDef>AM_Totemic_Molotovs</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_IncendiaryLauncher</thingDef>
+					<styleDef>AM_Totemic_FlameLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_SmokeLauncher</thingDef>
+					<styleDef>AM_Totemic_SmokeLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_EmpLauncher</thingDef>
+					<styleDef>AM_Totemic_EMPLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Pila</thingDef>
+					<styleDef>AM_Totemic_Pila</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Flamebow</thingDef>
+					<styleDef>AM_Totemic_Flamebow</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Weapon_GrenadeTox</thingDef>
+					<styleDef>AM_Totemic_ToxGrenades</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Gun_ToxbombLauncher</thingDef>
+					<styleDef>AM_Totemic_ToxLauncher</styleDef>
+				</li>
 			</value>
 		</match>
 	</Operation>
@@ -229,6 +270,28 @@
 								<styleDef>AM_Totemic_Musket</styleDef>
 							</li>
 							
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Tribal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Totemic"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Totemic"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
+								<styleDef>AM_Totemic_Shiv</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>

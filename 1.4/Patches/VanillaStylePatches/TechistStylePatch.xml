@@ -110,6 +110,47 @@
 					<thingDef>Gun_Minigun</thingDef>
 					<styleDef>AM_Techist_Minigun</styleDef>
 				</li>
+				<li>
+					<thingDef>Weapon_GrenadeFrag</thingDef>
+					<styleDef>AM_Techist_Grenade</styleDef>
+				</li>
+				<li>
+					<thingDef>Weapon_GrenadeEMP</thingDef>
+					<styleDef>AM_Techist_EMPGrenades</styleDef>
+				</li>
+				<li>
+					<thingDef>Weapon_GrenadeMolotov</thingDef>
+					<styleDef>AM_Techist_Molotovs</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_IncendiaryLauncher</thingDef>
+					<styleDef>AM_Techist_FlameLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_SmokeLauncher</thingDef>
+					<styleDef>AM_Techist_SmokeLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Gun_EmpLauncher</thingDef>
+					<styleDef>AM_Techist_EMPLauncher</styleDef>
+				</li>
+				<li>
+					<thingDef>Pila</thingDef>
+					<styleDef>AM_Techist_Pila</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Flamebow</thingDef>
+					<styleDef>AM_Techist_Flamebow</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Weapon_GrenadeTox</thingDef>
+					<styleDef>AM_Techist_ToxGrenades</styleDef>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<thingDef>Gun_ToxbombLauncher</thingDef>
+					<styleDef>AM_Techist_ToxLauncher</styleDef>
+				</li>
+				
 			</value>
 		</match>
 	</Operation>
@@ -225,6 +266,28 @@
 							<li>
 								<thingDef>VWE_Gun_Musket</thingDef>
 								<styleDef>AM_Techist_Musket</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Tribal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Techist"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Techist"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
+								<styleDef>AM_Techist_Shiv</styleDef>
 							</li>
 						</value>
 					</match>

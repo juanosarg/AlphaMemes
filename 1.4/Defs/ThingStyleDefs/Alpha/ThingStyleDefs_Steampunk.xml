@@ -525,6 +525,94 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	
+	
+			<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+		<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_SteampunkFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 	
 
