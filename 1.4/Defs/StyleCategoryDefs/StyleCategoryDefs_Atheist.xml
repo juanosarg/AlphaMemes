@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StyleCategoryDef>
+		<defName>AM_Atheist</defName>
+		<label>atheist</label>
+		<iconPath>UI/Structures/AM_Atheist</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Atheism</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_AtheismVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+
+		</thingDefStyles>
+	</StyleCategoryDef>
+	
+</Defs>

@@ -306,6 +306,176 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairCombatPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_CarbineVWE</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Crossbow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairSemiAutomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_CompoundBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairCompoundbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_LongBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_CorsairLongbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
 
 

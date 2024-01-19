@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<StyleCategoryDef>
+		<defName>AM_Jain</defName>
+		<label>jain</label>
+		<iconPath>UI/Structures/AM_JainOrigins</iconPath>
+		<soundOngoingRitual>AM_RitualSustainer_Jain</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_JainVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+
+		</thingDefStyles>
+		<addDesignators>
+			<li>AM_JainSlab_Medium</li>
+			<li>AM_JainSlab_Broad</li>
+		</addDesignators>
+	</StyleCategoryDef>
+	
+</Defs>
