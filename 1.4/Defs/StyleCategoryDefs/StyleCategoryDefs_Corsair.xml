@@ -32,6 +32,14 @@
 				<styleDef>AM_Corsair_AdvancedHelmet</styleDef>
 			</li>
 			<li>
+				<thingDef>Apparel_Duster</thingDef>
+				<styleDef>AM_Corsair_Duster</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_BasicShirt</thingDef>
+				<styleDef>AM_Corsair_Shirt</styleDef>
+			</li>
+			<li>
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>AM_Corsair_Table2x2c</styleDef>
 			</li>

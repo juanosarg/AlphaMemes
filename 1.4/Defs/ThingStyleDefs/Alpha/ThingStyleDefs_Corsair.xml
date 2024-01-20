@@ -559,4 +559,24 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Duster</defName>
+		
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairDuster/AM_CorsairDuster</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairDuster/AM_CorsairDuster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Shirt</defName>
+		
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairShirt/AM_CorsairShirt</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairShirt/AM_CorsairShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

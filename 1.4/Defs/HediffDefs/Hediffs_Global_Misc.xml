@@ -1,22 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<HediffDef>
 		<defName>AM_CatharsisHediff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>cathartic adrenaline</label>
 		<description>The exhilaration caused after a mental break is causing this person to have increased pain tolerance and strength. This will last for about a day.</description>
-		
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
-			 <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-			
-			
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -45,7 +41,7 @@
 					<li>
 						<capacity>BloodPumping</capacity>
 						<offset>2</offset>
-					</li>					
+					</li>
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>0.10</offset>
@@ -54,16 +50,14 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>AM_UtilityDryadHediff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>utility dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
-		
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
@@ -74,12 +68,10 @@
 				</statOffsets>
 				<painFactor>0.75</painFactor>
 				<capMods>
-					
 					<li>
 						<capacity>Moving</capacity>
 						<offset>0.20</offset>
 					</li>
-					
 				</capMods>
 			</li>
 		</stages>
@@ -89,23 +81,20 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>combat dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
-		
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
 					<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>					
+					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 					<InjuryHealingFactor>0.25</InjuryHealingFactor>
 					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.75</AimingDelayFactor>
-					
 				</statOffsets>
 				<painFactor>0.6</painFactor>
 				<capMods>
-					
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>0.20</offset>
@@ -114,32 +103,28 @@
 						<capacity>Manipulation</capacity>
 						<offset>0.40</offset>
 					</li>
-					
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>AM_GenericDryadHediff</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>generic dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
-		
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
 					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>					
-					<InjuryHealingFactor>0.25</InjuryHealingFactor>					
-					<MeleeDPS>0.2</MeleeDPS>					
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<InjuryHealingFactor>0.25</InjuryHealingFactor>
+					<MeleeDPS>0.2</MeleeDPS>
 				</statOffsets>
 				<painFactor>0.75</painFactor>
 				<capMods>
-					
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>0.1</offset>
@@ -148,24 +133,19 @@
 						<capacity>Moving</capacity>
 						<offset>0.1</offset>
 					</li>
-					
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>AM_IconoclastHediff</defName>
-		
 		<label>feeling righteous</label>
 		<description>The destruction of an ancient relic is filling this person with increased confidence and righteousness.</description>
-		
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
-		
 		<stages>
-			<li>				
+			<li>
 				<painFactor>0.95</painFactor>
 				<capMods>
 					<li>
@@ -187,14 +167,14 @@
 					<li>
 						<capacity>BloodPumping</capacity>
 						<offset>0.03</offset>
-					</li>					
+					</li>
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>0.03</offset>
 					</li>
 				</capMods>
 			</li>
-			<li>				
+			<li>
 				<painFactor>0.9</painFactor>
 				<minSeverity>0.29</minSeverity>
 				<capMods>
@@ -217,14 +197,14 @@
 					<li>
 						<capacity>BloodPumping</capacity>
 						<offset>0.06</offset>
-					</li>					
+					</li>
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>0.06</offset>
 					</li>
 				</capMods>
 			</li>
-			<li>				
+			<li>
 				<painFactor>0.85</painFactor>
 				<minSeverity>0.59</minSeverity>
 				<capMods>
@@ -247,7 +227,7 @@
 					<li>
 						<capacity>BloodPumping</capacity>
 						<offset>0.10</offset>
-					</li>					
+					</li>
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>0.10</offset>
@@ -255,6 +235,25 @@
 				</capMods>
 			</li>
 		</stages>
-		
+	</HediffDef>
+	<HediffDef>
+		<defName>AM_Eyepatch</defName>
+		<label>eyepatch</label>
+		<description>An eyepatch is blocking this person's vision.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<isBad>false</isBad>
 	</HediffDef>
 </Defs>
