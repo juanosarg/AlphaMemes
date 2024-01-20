@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
 	<!-- ====== Corsair ======== -->
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_PowerArmor</defName>
@@ -56,7 +54,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ChargeRifle</defName>
 		<graphicData>
@@ -127,9 +124,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Grenade</defName>
 		<graphicData>
@@ -215,7 +209,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Corsair/AM_Monosaber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -235,7 +228,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Corsair_Table3x3c</defName>
 		<overrideLabel>ship wheel table</overrideLabel>
@@ -245,7 +237,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef Name="AM_Corsair_StandingLampBase">
 		<defName>AM_Corsair_StandingLamp</defName>
 		<graphicData>
@@ -253,10 +244,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Bow</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Corsair/AM_CorsairBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -264,7 +253,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_RecurveBow</defName>
-		
 		<graphicData>
 			<texPath>Things/Weapons/Corsair/AM_CorsairRecurveBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -272,7 +260,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_GreatBow</defName>
-	
 		<graphicData>
 			<texPath>Things/Weapons/Corsair/AM_CorsairGreaterBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -280,33 +267,26 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Axe</defName>
-		
 		<graphicData>
-			
 			<texPath>Things/Weapons/Corsair/AM_CorsairAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Hammer</defName>
-
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
 			<texPath>Things/Weapons/Corsair/AM_CorsairHammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Pickaxe</defName>
-		
 		<graphicData>
-			
 			<texPath>Things/Weapons/Corsair/AM_CorsairPickaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ChargePistol</defName>
 		<graphicData>
@@ -349,7 +329,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_HandCannon</defName>
 		<graphicData>
@@ -525,7 +504,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Shiv</defName>
 		<graphicData>
@@ -541,7 +519,44 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-
-
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_BowlerHat</defName>
+		<overrideLabel>brown pirate hat</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairBowlerHat/AM_CorsairBowlerHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairBowlerHat/AM_CorsairBowlerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Tuque</defName>
+		<overrideLabel>pirate bandana</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairTuque/AM_CorsairTuque</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairTuque/AM_CorsairTuque</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_SimpleHelmet</defName>
+		<overrideLabel>pirate hat</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairSimpleHelmet/AM_CorsairSimpleHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairSimpleHelmet/AM_CorsairSimpleHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_AdvancedHelmet</defName>
+		<overrideLabel>flak pirate hat</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairAdvancedHelmet/AM_CorsairAdvancedHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairAdvancedHelmet/AM_CorsairAdvancedHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

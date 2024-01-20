@@ -15,6 +15,22 @@
 				<thingDef>Apparel_CowboyHat</thingDef>
 				<styleDef>AM_Corsair_Tricorn</styleDef>
 			</li>
+				<li>
+				<thingDef>Apparel_BowlerHat</thingDef>
+				<styleDef>AM_Corsair_BowlerHat</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Tuque</thingDef>
+				<styleDef>AM_Corsair_Tuque</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<styleDef>AM_Corsair_SimpleHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_AdvancedHelmet</thingDef>
+				<styleDef>AM_Corsair_AdvancedHelmet</styleDef>
+			</li>
 			<li>
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>AM_Corsair_Table2x2c</styleDef>
