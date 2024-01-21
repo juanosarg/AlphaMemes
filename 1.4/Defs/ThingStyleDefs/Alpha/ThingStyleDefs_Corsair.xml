@@ -579,4 +579,14 @@
 			
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_Jacket</defName>
+		
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairJacket/AM_CorsairJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairJacket/AM_CorsairJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

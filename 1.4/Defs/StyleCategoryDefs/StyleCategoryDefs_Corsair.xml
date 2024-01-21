@@ -36,6 +36,10 @@
 				<styleDef>AM_Corsair_Duster</styleDef>
 			</li>
 			<li>
+				<thingDef>Apparel_Jacket</thingDef>
+				<styleDef>AM_Corsair_Jacket</styleDef>
+			</li>
+			<li>
 				<thingDef>Apparel_BasicShirt</thingDef>
 				<styleDef>AM_Corsair_Shirt</styleDef>
 			</li>
