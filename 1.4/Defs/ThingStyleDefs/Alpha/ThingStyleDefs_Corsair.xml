@@ -10,6 +10,50 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ArmorCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairCataphract/AM_CorsairCataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairCataphract/AM_CorsairCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ArmorMarinePrestige</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigePowerArmor/AM_CorsairPrestigePowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigePowerArmor/AM_CorsairPrestigePowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_PrestigeCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphract/AM_CorsairPrestigeCataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphract/AM_CorsairPrestigeCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ArmorMarineHelmetPrestige</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_Corsair_PrestigeMarineHelmet/AM_Corsair_PrestigeMarineHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_Corsair_PrestigeMarineHelmet/AM_Corsair_PrestigeMarineHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ArmorRecon</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairReconArmor/AM_CorsairReconArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairReconArmor/AM_CorsairReconArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_Tricorn</defName>
 		<overrideLabel>tricorn</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_Tricorn/AM_Tricorn</wornGraphicPath>
@@ -24,6 +68,31 @@
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPowerArmorHelmet/AM_CorsairPowerArmorHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ReconArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairReconHelm/AM_CorsairReconHelm</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairReconHelm/AM_CorsairReconHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ArmorCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairCataphractHelm/AM_CorsairCataphractHelm</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairCataphractHelm/AM_CorsairCataphractHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_PrestigeCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphractHelm/AM_CorsairPrestigeCataphractHelm</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphractHelm/AM_CorsairPrestigeCataphractHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -575,6 +644,16 @@
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairShirt/AM_CorsairShirt</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairShirt/AM_CorsairShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_ButtonShirt</defName>
+		
+		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairButtonShirt/AM_CorsairButtonShirt</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Corsair/AM_CorsairButtonShirt/AM_CorsairButtonShirt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			
 		</graphicData>

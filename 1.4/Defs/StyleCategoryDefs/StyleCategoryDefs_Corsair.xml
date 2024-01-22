@@ -48,6 +48,10 @@
 				<styleDef>AM_Corsair_Shirt</styleDef>
 			</li>
 			<li>
+				<thingDef>Apparel_CollarShirt</thingDef>
+				<styleDef>AM_Corsair_ButtonShirt</styleDef>
+			</li>
+			<li>
 				<thingDef>Table2x2c</thingDef>
 				<styleDef>AM_Corsair_Table2x2c</styleDef>
 			</li>
@@ -223,6 +227,38 @@
 			<li>
 				<thingDef>Stool</thingDef>
 				<styleDef>AM_CorsairStool</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorMarinePrestige</thingDef>
+				<styleDef>AM_Corsair_ArmorMarinePrestige</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorMarineHelmetPrestige</thingDef>
+				<styleDef>AM_Corsair_ArmorMarineHelmetPrestige</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorRecon</thingDef>
+				<styleDef>AM_Corsair_ArmorRecon</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>AM_Corsair_ReconArmorHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorCataphract</thingDef>
+				<styleDef>AM_Corsair_ArmorCataphract</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorCataphractPrestige</thingDef>
+				<styleDef>AM_Corsair_PrestigeCataphract</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+				<styleDef>AM_Corsair_ArmorCataphractHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
+				<styleDef>AM_Corsair_PrestigeCataphractHelmet</styleDef>
 			</li>
 		</thingDefStyles>
 		<addDesignators>
