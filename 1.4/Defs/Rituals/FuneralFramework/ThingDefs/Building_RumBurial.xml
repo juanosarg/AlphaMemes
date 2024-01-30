@@ -3,7 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AM_RumBurialSpot</defName>
     <label>corpse rum vat</label>
-    <description>pirates have to use everything to get rum, this invention turns corpses into delicious rum!</description>
+    <description>Pirates have to use everything to get rum, this invention turns corpses into delicious rum!</description>
     <thingClass>AlphaMemes.Building_RumVat</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <altitudeLayer>Building</altitudeLayer>

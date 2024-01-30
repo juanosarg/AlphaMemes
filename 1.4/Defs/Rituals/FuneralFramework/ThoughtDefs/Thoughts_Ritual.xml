@@ -119,7 +119,7 @@
     <stages>
       <li>
         <label>{0}'s rum</label>
-        <description>The rum was so delicious, that {0} feels their comrade {1} watching over them as they plunder.</description>
+        <description>The rum was so delicious that {0} feels their comrade {1} watching over them as they plunder.</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>
