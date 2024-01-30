@@ -361,6 +361,7 @@
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverStuffToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobGiver\JobGiver_DeliverCorpseToCell.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JoyGiver\JoyGiver_VisitCorpseContainer.cs" />
+    <Compile Include="Rituals\FuneralFramework\Buildings\Building_RumVat.cs" />
     <Compile Include="Rituals\FuneralFramework\Buildings\Building_SkyBurialSpot.cs" />
     <Compile Include="Rituals\FuneralFramework\Comp\CompProperties_FFContainsMulti.cs" />
     <Compile Include="Rituals\FuneralFramework\Comp\Comp_FFContainsMulti.cs" />
@@ -368,10 +369,13 @@
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_TagSet.cs" />
     <Compile Include="Rituals\FuneralFramework\FailTriggers\StageFailTrigger_ThingNotReachable.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\Ideo_MembersCanBuild.cs" />
+    <Compile Include="Rituals\FuneralFramework\IngestestionOutcomeDoer_AddMoodRum.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_RumBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_SkyBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\OutcomeComp\RitualOutcomeComp_CorruptGauranlen.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_OcularBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_InsectoidBurial.cs" />
+    <Compile Include="Rituals\FuneralFramework\RitualOutcome\RitualOutcomeEffectWorker_RumBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\CorpseFilters\RitualObligationTargetWorker_FreshCorpse.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualTargetWorker\TargetFilters\RitualObligationTargetWorker_GauralenOrAltar.cs" />
     <Compile Include="Rituals\FuneralFramework\Utilities\FuneralFrameworkStaticStartup.cs" />

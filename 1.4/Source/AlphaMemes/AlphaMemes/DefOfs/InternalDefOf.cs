@@ -61,6 +61,8 @@ namespace AlphaMemes
 		public static ThingDef AM_Megalith;
 		public static ThingDef AM_Sphynx;
 		public static ThingDef AM_GreatPyramid;
+		public static ThingDef AM_CorpseRumBasic;
+		public static ThingDef AM_CorpseRumFine;
 
 		public static MemeDef AM_Madness;
 		public static MemeDef AM_BiologicalDefilers;
@@ -95,6 +97,7 @@ namespace AlphaMemes
 		public static ThoughtDef AM_SleptInPrivateRoomMonastic;
 		public static ThoughtDef AM_SleptInBarracksPreferred;
 		public static ThoughtDef AM_SleptInPrivateRoomPreferred;
+		public static ThoughtDef AM_CorpseRumThought;
 
 		public static PawnKindDef Dryad_Woodmaker;
 		public static PawnKindDef Dryad_Berrymaker;
