@@ -20,9 +20,8 @@ namespace AlphaMemes
         public bool isFuneral = false;
         public static float zOffset = 0.51f;
         public static float xOffset = 0.51f;
-        public static float topZOffset = 0.0f;
+        public static float topYOffset = 1.15f;
         public static float topXOffset = 0.0f;
-        public static float topYOffset = 1.0f;
         private static readonly int maxAge = 3;
         public static readonly Material vatTop = MaterialPool.MatFrom("Things/Building/Misc/AM_RumBarrel");
 
@@ -39,17 +38,16 @@ namespace AlphaMemes
                 Corpse.DrawAt(Position.ToVector3ShiftedWithAltitude(AltitudeLayer.BuildingOnTop) + new Vector3(xOffset, 0, zOffset), false);
             }
             var pos = this.TrueCenter();
-            pos.y += topZOffset;
+            pos.y += topYOffset;
             pos.z += topXOffset;  
             var matrix = default(Matrix4x4);
-            matrix.SetTRS(pos, Quaternion.identity, new Vector3(2, topYOffset, 2));
+            matrix.SetTRS(pos, Quaternion.identity, new Vector3(2, 1, 2));
             Graphics.DrawMesh(MeshPool.plane10, matrix, vatTop, 0);
         }
         private int FermentTime
         {
             get
             {
-       
                 if(age == 0)
                 {
                     return 180000;
@@ -69,6 +67,10 @@ namespace AlphaMemes
         {
             if (HasCorpse)
             {
+                if( tickToFerment == 0)
+                {
+                    Notify_CorpseBuried();//Because the job driver doesn't actually call anything when hauled
+                }
                 if (tickToFerment > 0 && tickToFerment < Find.TickManager.TicksGame && tickToFerment > 0 && age < maxAge)
                 {
                     age++;
@@ -146,13 +148,10 @@ namespace AlphaMemes
             }
             return false;
         }
+        //Soooo this is actaully never used, its only used for cyrpto casket, not making my own job for this so adding to tick
         public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
         {
-            if(base.TryAcceptThing(thing, allowSpecialEffects))
-            {
-                Notify_CorpseBuried();
-            }            
-            return false;
+            return base.TryAcceptThing(thing, allowSpecialEffects);
         }
         public override string GetInspectString()
         {
@@ -165,13 +164,18 @@ namespace AlphaMemes
                     //! not max Fermenting x days left
                     //! 0 age, open to recieve x rum
                     var ticksLeft = tickToFerment - Find.TickManager.TicksGame;
-                    float progress = ticksLeft / FermentTime;     
+                    float ticksPassed = FermentTime - ticksLeft;
+                    float progress = ticksPassed / FermentTime;     
                     if(tickToFerment != 0)
                     {
                         stringBuilder.AppendInNewLine("FermentationProgress".Translate(progress.ToStringPercent(), ticksLeft.ToStringTicksToPeriod()));
                         if(age > 0)
                         {
                             stringBuilder.AppendInNewLine("AM_RumOutput".Translate(RumCount));                             
+                        }
+                        if (age == 3)
+                        {
+                            stringBuilder.AppendInNewLine("AM_RumComplete".Translate());
                         }
                     }                   
                  }

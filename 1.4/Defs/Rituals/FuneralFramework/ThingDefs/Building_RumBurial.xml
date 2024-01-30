@@ -20,7 +20,7 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
-    <uiIconPath>Things/Building/Misc/AM_RumBarrel</uiIconPath>
+    <uiIconPath>Things/Building/Misc/AM_RumBarrel_UI</uiIconPath>
     <passability>PassThroughOnly</passability>
     <pathCost>42</pathCost>
     <blockWind>false</blockWind>

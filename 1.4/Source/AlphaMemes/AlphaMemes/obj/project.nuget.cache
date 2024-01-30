@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SE2kaywy7dxRhy6Jn+UxG718bP0Xd7ePnVPYEushMsORqyX/htG4UmKMm+O/tXfL5mvPtc9xS5oCv2xKtzuPLg==",
+  "dgSpecHash": "kxZK1Qf6/PupglCpJb96+rkN0io7vMWz4qRUvwHW2KsBCboRsHT5ukdSq6VDKSexBbMc/evmA/T8RclkskoGoA==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.4\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+  "projectFilePath": "C:\\Rimworld_Debug\\RimWorld\\Mods\\AlphaMemes\\1.4\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+    "C:\\Users\\Allie\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
   ],
   "logs": []
 }

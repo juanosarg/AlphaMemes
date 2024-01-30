@@ -85,7 +85,7 @@
 	<AM_ScrapperAdvComponentCount>and {0} advanced components</AM_ScrapperAdvComponentCount>
 	<AM_RumVatInteruptFerment>The rum is not ready, the corpse could still be salvaged, but any rum will be lost.</AM_RumVatInteruptFerment>
 	<AM_RumComplete>The rum is ready to be extracted</AM_RumComplete>
-	<AM_RumOutput>{0} rum</AM_RumOutput>
+	<AM_RumOutput>{0} rum produced if extracted now</AM_RumOutput>
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>

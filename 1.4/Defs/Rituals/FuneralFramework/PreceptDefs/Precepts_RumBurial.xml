@@ -23,7 +23,7 @@
 		<modExtensions>
 		<li Class="AlphaMemes.FuneralPreceptExtension">
 			<isColonistFuneral>true</isColonistFuneral>
-			<addNoCorpseFuneral>true</addNoCorpseFuneral>
+			<addNoCorpseFuneral>false</addNoCorpseFuneral>
 			<_weighting>100</_weighting>
 			<addDesignators>
 				<li>AM_RumBurialSpot</li>
