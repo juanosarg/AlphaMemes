@@ -113,13 +113,13 @@
   
   <ThoughtDef>
     <defName>AM_CorpseRumThought</defName>
-    <thoughtClass>Thought_Memory</thoughtClass>
+    <thoughtClass>AlphaMemes.Thought_MemoryRum</thoughtClass>
     <durationDays>1</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
       <li>
-        <label>reminiscent rum</label>
-        <description>The rum was so delicious, you it allows you to reminise fondly on our fallen comrads.</description>
+        <label>{0}'s rum</label>
+        <description>The rum was so delicious, that {0} feels their comrade {1} watching over them as they plunder.</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>

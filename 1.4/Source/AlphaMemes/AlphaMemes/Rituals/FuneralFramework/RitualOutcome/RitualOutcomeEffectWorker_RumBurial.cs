@@ -28,7 +28,7 @@ namespace AlphaMemes
         public override void ApplyOn(Pawn pawn, Corpse corpse, List<Thing> thingsToSpawn, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual, OutcomeChance outcome)
         {
             var rumVat = jobRitual.selectedTarget.Thing as Building_RumVat;
-            rumVat.Notify_CorpseBuried();
+            //rumVat.Notify_CorpseBuried();
             rumVat.isFuneral = true;
             base.ApplyOn(pawn, corpse, thingsToSpawn, totalPresence, jobRitual, outcome);
         }

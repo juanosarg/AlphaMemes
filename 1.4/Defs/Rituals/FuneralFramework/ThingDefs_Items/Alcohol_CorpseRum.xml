@@ -109,7 +109,8 @@
 		<needLevelOffset>0.9</needLevelOffset>
 		<listOrder>10</listOrder>
 	  </li>
-	  <li Class="CompProperties_HasSources">			
+	  <li Class="CompProperties_HasPawnSources">		
+		<affectLabel>true</affectLabel>
 	  </li>
 	 </comps>
     <allowedArchonexusCount>50</allowedArchonexusCount>

@@ -27,7 +27,7 @@ namespace AlphaMemes
 
         public void Notify_CorpseBuried()
         {
-            tickToFerment = Find.TickManager.TicksGame + 180000;        
+            tickToFerment = Find.TickManager.TicksGame + FermentTime;        
         }
         public override void Draw()
         {
@@ -117,10 +117,10 @@ namespace AlphaMemes
             }
             GenPlace.TryPlaceThing(skull, PositionHeld, Map, ThingPlaceMode.Near, null, null, default(Rot4));//place skull
             var rum = ThingMaker.MakeThing(rumDef);
-            compSource = rum.TryGetComp<CompHasSources>();
-            if( compSource != null)
+            var pawnSource = rum.TryGetComp<CompHasPawnSources>();
+            if(pawnSource != null)
             {
-                compSource.AddSource(Corpse.InnerPawn.LabelShort);
+                pawnSource.AddSource(Corpse.InnerPawn);
             }
             rum.stackCount = RumCount;
             GenPlace.TryPlaceThing(rum,PositionHeld,Map, ThingPlaceMode.Near, null, null, default(Rot4));
@@ -164,6 +164,7 @@ namespace AlphaMemes
                     //! not max Fermenting x days left
                     //! 0 age, open to recieve x rum
                     var ticksLeft = tickToFerment - Find.TickManager.TicksGame;
+                    ticksLeft = ticksLeft < 0 ? 0 : ticksLeft;
                     float ticksPassed = FermentTime - ticksLeft;
                     float progress = ticksPassed / FermentTime;     
                     if(tickToFerment != 0)
