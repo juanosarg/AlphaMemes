@@ -35,7 +35,8 @@ namespace AlphaMemes
 		public static PreceptDef AM_Megaliths_Desired;
 		public static PreceptDef AM_Barracks_PreferredTrue;
         public static PreceptDef AM_SkyBurial;
-        [MayRequire("Sarg.AlphaPrefabs")]
+		public static PreceptDef AM_RumBurial;
+		[MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
 		[MayRequire("Sarg.AlphaPrefabs")]
 		public static PreceptDef AM_PrefabAcquisition_Easy;

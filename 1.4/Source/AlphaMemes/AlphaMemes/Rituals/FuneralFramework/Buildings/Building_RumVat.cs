@@ -12,11 +12,11 @@ using UnityEngine;
 namespace AlphaMemes
 {
     [StaticConstructorOnStartup]
-    public class Building_RumVat : Building_CorpseCasket
+    public class Building_RumVat : Building_Grave
     {
         public int tickToFerment;
         public int age = 0;
-        public int tickFilled;
+        public int tickFilled;        
         public bool isFuneral = false;
         public static float zOffset = 0.51f;
         public static float xOffset = 0.51f;
@@ -24,10 +24,12 @@ namespace AlphaMemes
         public static float topXOffset = 0.0f;
         private static readonly int maxAge = 3;
         public static readonly Material vatTop = MaterialPool.MatFrom("Things/Building/Misc/AM_RumBarrel");
+        private bool needFix = false;
 
         public void Notify_CorpseBuried()
         {
-            tickToFerment = Find.TickManager.TicksGame + FermentTime;        
+            
+            
         }
         public override void Draw()
         {
@@ -84,6 +86,18 @@ namespace AlphaMemes
                         tickToFerment = Find.TickManager.TicksGame + FermentTime;
                     }                    
                 }
+                if (needFix)
+                {
+                    needFix = false;
+                    var corpse = Corpse;
+                    for(int i = 0; i < innerContainer.Count; i++)
+                    {
+                        if (innerContainer[i] != corpse)
+                        {
+                            innerContainer.TryDrop(innerContainer[i], ThingPlaceMode.Near, innerContainer[i].stackCount, out var outThing);
+                        }
+                    }
+                }
             }
             base.TickRare();
         }
@@ -93,6 +107,15 @@ namespace AlphaMemes
             {
                 return age * 25;
             }
+        }
+        public override void Notify_CorpseBuried(Pawn worker)
+        {
+            tickToFerment = Find.TickManager.TicksGame + FermentTime;
+            if (Corpse.AnythingToStrip())
+            {
+                Corpse.Strip();
+            }            
+            base.Notify_CorpseBuried(worker);
         }
         public override void Open()
         {
@@ -134,25 +157,48 @@ namespace AlphaMemes
             tickToFerment = 0;
             isFuneral = false;
         }
+
         public override bool Accepts(Thing thing)
         {
             //has to be a fresh corpse
-            if (base.Accepts(thing))
+            if (!base.Accepts(thing))
             {
-                var comp = thing.TryGetComp<CompRottable>();
-                if (comp?.Stage != RotStage.Fresh)
+                return false;
+            }
+            var comp = thing.TryGetComp<CompRottable>();
+            if (comp?.Stage != RotStage.Fresh)
+            {
+                return false;
+            }
+            //All of this is to prevent the vat from being loaded with a colonist with an active funeral from being auto loaded
+            var corpse = thing as Corpse;
+            if (corpse.InnerPawn.IsColonist)
+            {
+                var precept = corpse.InnerPawn.Faction.ideos.GetPrecept(InternalDefOf.AM_RumBurial) as Precept_Ritual;
+                if(precept != null)
                 {
-                    return false;
+                    var obligations = precept.activeObligations;
+                    if(!obligations.NullOrEmpty())
+                    {
+                        if(obligations.Any(x=>x.targetA == corpse.InnerPawn))
+                        {
+                            return false;
+                        }
+                    }
                 }
+            }
+            return true;
+        }
+
+        public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
+        {
+            if (base.TryAcceptThing(thing, allowSpecialEffects))
+            {
                 return true;
             }
             return false;
         }
-        //Soooo this is actaully never used, its only used for cyrpto casket, not making my own job for this so adding to tick
-        public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
-        {
-            return base.TryAcceptThing(thing, allowSpecialEffects);
-        }
+    
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -189,6 +235,16 @@ namespace AlphaMemes
             Scribe_Values.Look(ref tickToFerment, "tickToFerment");
             Scribe_Values.Look(ref isFuneral, "isFuneral");
             Scribe_Values.Look(ref age, "age");
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                foreach(var thing in innerContainer)
+                {
+                    if(thing != Corpse)
+                    {
+                        needFix = true;
+                    }
+                }
+            }
         }
     }
 
