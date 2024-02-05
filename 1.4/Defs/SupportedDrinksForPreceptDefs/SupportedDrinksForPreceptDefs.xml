@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaMemesExpanded.SupportedDrinksForPreceptDefs>
+		<defName>AM_SupportedDrinksForPreceptDef</defName>
+		<supportedDrinksForPrecept>
+			<li>AM_CorpseRumBasic</li>
+			<li>AM_CorpseRumFine</li>
+		</supportedDrinksForPrecept>
+	</VanillaMemesExpanded.SupportedDrinksForPreceptDefs>
+</Defs>
