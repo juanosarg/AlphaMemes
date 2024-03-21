@@ -35,7 +35,7 @@ namespace AlphaMemes
                 {
                     foreach (RitualStagePositions positions in ___ritualStagePositions)
                     {
-                        foreach (PawnRitualReference pawnRitualReference in positions.referencePositions.Keys)
+                        foreach (PawnRitualReference pawnRitualReference in positions.referencePositions.Keys.ToList())
                         {
                             if (pawnRitualReference.pawn == corpse)
 

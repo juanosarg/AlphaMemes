@@ -12,14 +12,14 @@ using System;
 
 namespace AlphaMemes
 {
-/*
-    [HarmonyPatch(typeof(Dialog_BeginRitual))]
+
+    [HarmonyPatch(typeof(PawnPortraitIconsDrawer))]
     [HarmonyPatch("CalculatePawnPortraitIcons")]
 
     //This patch removes the sleeping icon for dead pawns
     public static class FuneralFramework_Dialog_BeginRitual_CalculatePawnPortraitIcons_Patch
     {
-      
+
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             MethodInfo IsAwake = AccessTools.Method(typeof(RestUtility), nameof(RestUtility.Awake));
@@ -30,7 +30,7 @@ namespace AlphaMemes
                 yield return codes[i];
                 if (!found && codes[i].opcode == OpCodes.Call && codes[i].operand == (object)IsAwake)
                 {
-                    
+
                     found = true;
                     codes[i].opcode = OpCodes.Nop;
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(FuneralFramework_Dialog_BeginRitual_CalculatePawnPortraitIcons_Patch), nameof(IsAwakeNotDead)));
@@ -42,12 +42,12 @@ namespace AlphaMemes
 
         public static bool IsAwakeNotDead(Pawn pawn)
         {
-            if(pawn.Dead == true)
+            if (pawn.Dead == true)
             {
                 return true;
             }
             return pawn.Awake();
         }
     }
-*/
+
 }
