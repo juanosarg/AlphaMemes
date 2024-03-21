@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Hindu -->
+
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_HinduPowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Hindu/AM_HinduPowerArmor/AM_HinduPowerArmor</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Hindu/AM_HinduPowerArmor/AM_HinduPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_HinduPowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Hindu/AM_HinduPowerArmorHelmet/AM_HinduPowerArmorHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Hindu/AM_HinduPowerArmorHelmet/AM_HinduPowerArmorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Hindu_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/Tables/AM_Hindu_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Hindu_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/Tables/AM_Hindu_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Hindu_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/Tables/AM_Hindu_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Hindu_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/Tables/AM_Hindu_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef Name="AM_Hindu_StandingLampBase">
+		<defName>AM_Hindu_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/AM_HinduLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Hindu_Stool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/Stool/AM_HinduStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Hindu_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/AM_HinduTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Hindu/AM_HinduTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>AM_Hindu_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Hindu/AM_HinduColumn</texPath>
+			<drawSize>(0.625,1.25)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Club</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Gladius</defName>
+		<overrideLabel>short sword</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduShortSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Ikwa</defName>
+		<overrideLabel>tabar</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduTabar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Knife</defName>
+		<overrideLabel>katar</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduKatar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Sword</defName>
+		<overrideLabel>talwar</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduTalwar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Mace</defName>
+		<overrideLabel>gada</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduGada</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Spear</defName>
+		<overrideLabel>trishula</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduTrishula</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Bow</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_RecurveBow</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_GreatBow</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Axe</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Hammer</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Hindu_Pickaxe</defName>
+
+		<graphicData>
+			<texPath>Things/Weapons/Hindu/AM_HinduPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+</Defs>

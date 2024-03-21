@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AM_PoisonBolt</defName>
+		<label>venomous spit</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AM_PoisonBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AM_ToxicBolt</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+	
+</Defs>

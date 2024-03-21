@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	
+	
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsGauranlen</defName>
+		<associatedMeme>AM_GauranlenSupremacy</associatedMeme>	
+		<thingSetMaker>AM_StartingItemsGauranlen</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+	
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsCorruptors</defName>
+		<associatedMeme>AM_BiologicalCorruptors</associatedMeme>	
+		<thingSetMaker>AM_ThingSetMakerEyelings</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

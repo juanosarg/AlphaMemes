@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VPE_NuclearGenerator"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedSolarGenerator"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWindTurbine"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_LargeBattery"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_LargeAdvancedBattery"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_SmallBattery"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedBattery"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_AdvancedWatermillGenerator"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable"/>
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VFE_TidalGenerator"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable"/>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	
+</Patch>

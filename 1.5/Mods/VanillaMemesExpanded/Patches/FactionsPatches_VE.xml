@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+		
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
+		<value>
+	
+			<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]</xpath>
+			<value>
+				<disallowedMemes>
+		
+					<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+			<value>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]</xpath>
+			<value>
+				<disallowedMemes>
+			
+					<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+			<value>
+	
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_NonViolence</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

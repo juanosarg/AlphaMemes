@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName="AM_Artist"]/requireOne</xpath>
+		<value>
+			<li>
+				<li>VME_AutomationEfficiency_Decreased</li>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName="AM_Sadist"]/requireOne</xpath>
+		<value>
+			<li>
+				<li>VME_CraftingQuality_Decreased</li>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName="AM_Monastic"]/requireOne</xpath>
+		<value>
+			<li>
+				<li>VME_Alcohol_MildAbstinence</li>
+			</li>
+			<li>
+				<li>VME_AutomationEfficiency_Decreased</li>
+			</li>
+		</value>
+	</Operation>
+</Patch>

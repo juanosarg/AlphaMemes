@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.4\Assemblies\AlphaMemes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.4\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.4\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.4\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Assemblies\AlphaMemes.dll
+E:\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Assemblies\AlphaMemes.dll
+E:\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\15AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.5\Assemblies\AlphaMemes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMemes\1.5\Source\AlphaMemes\AlphaMemes\obj\Debug\AlphaMemes.dll

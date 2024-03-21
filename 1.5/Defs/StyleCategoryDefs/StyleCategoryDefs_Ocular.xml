@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <StyleCategoryDef>
+    <defName>AM_Ocular</defName>
+    <label>ocular</label>
+    <iconPath>UI/StyleCategories/AM_StyleOcular</iconPath>
+    <soundOngoingRitual>AM_RitualSustainer_Ocular</soundOngoingRitual>
+    <ritualVisualEffectDef>AM_Ocular</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li>
+        <thingDef>SculptureSmall</thingDef>
+        <styleDef>AM_Ocular_SculptureSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>SculptureLarge</thingDef>
+        <styleDef>AM_Ocular_SculptureLarge</styleDef>
+      </li>
+      <li>
+        <thingDef>SculptureGrand</thingDef>
+        <styleDef>AM_Ocular_SculptureGrand</styleDef>
+      </li>
+      <li>
+        <thingDef>Altar_Small</thingDef>
+        <styleDef>AM_Ocular_AltarSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Altar_Medium</thingDef>
+        <styleDef>AM_Ocular_AltarMedium</styleDef>
+      </li>
+      <li>
+        <thingDef>Altar_Large</thingDef>
+        <styleDef>AM_Ocular_AltarLarge</styleDef>
+      </li>
+      <li>
+        <thingDef>Altar_Grand</thingDef>
+        <styleDef>AM_Ocular_AltarGrand</styleDef>
+      </li>
+	  
+     
+      <li>
+        <thingDef>Table1x2c</thingDef>
+        <styleDef>AM_Ocular_Table1x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>AM_Ocular_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x4c</thingDef>
+        <styleDef>AM_Ocular_Table2x4c</styleDef>
+      </li>
+      <li>
+        <thingDef>Table3x3c</thingDef>
+        <styleDef>AM_Ocular_Table3x3c</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>AM_Ocular_StandingLamp</styleDef>
+      </li>
+     
+      <li>
+        <thingDef>TorchLamp</thingDef>
+        <styleDef>AM_Ocular_TorchLamp</styleDef>
+      </li>
+     
+      
+      <li>
+        <thingDef>Ideogram</thingDef>
+        <styleDef>AM_Ocular_IdeogramA</styleDef>
+      </li>
+      <li>
+        <thingDef>Ideogram</thingDef>
+        <styleDef>AM_Ocular_IdeogramB</styleDef>
+      </li>
+	  <li>
+        <thingDef>MeleeWeapon_Club</thingDef>
+        <styleDef>AM_Ocular_Club</styleDef>
+      </li>
+	   <li>
+        <thingDef>MeleeWeapon_Mace</thingDef>
+        <styleDef>AM_Ocular_Mace</styleDef>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">
+        <thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
+        <styleDef>AM_Ocular_EltexStaff</styleDef>
+      </li>
+    </thingDefStyles>
+	 <addDesignatorGroups>
+      <li>AM_Floor_Ocular_Stone</li>
+      
+    </addDesignatorGroups>
+    
+  </StyleCategoryDef>
+  
+ 
+
+ 
+
+</Defs>

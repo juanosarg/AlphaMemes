@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_RelicSmashingAltar</defName>
+		<label>relic smashing altar</label>
+		<description>A small bowl with capacity for one relic. Relics can be slotted in the altar to start a relic destruction ritual, but the colonists won't extract the relic from it.</description>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>40000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Misc/AM_RelicSmashingAltar</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<category>Building</category>
+		<size>(1,1)</size>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<uiIconOffset>(0, -0.02)</uiIconOffset>
+		<uiIconScale>1.2</uiIconScale>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Gold>15</Gold>
+		</costList>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<designationCategory>Misc</designationCategory>
+		<comps>
+			<li Class="CompProperties_ThingContainer">
+				<compClass>AlphaMemes.CompRelicSmashingContainer</compClass>
+				<containedThingOffset>(0,0,0)</containedThingOffset>
+				<stackLimit>1</stackLimit>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef>
+		<defName>AM_CorruptedGaumakerCocoon</defName>
+		<label>corrupted pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>The result of the merging of several Corruptor dryads, this symbiotic plant/animal pod is an essential part of the corrupted Gauranlen life cycle. After some time, it will flower into a mature Gauranlen pod which can be harvested to plant a new Gauranlen tree.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/AM_CorruptedGaumakerCocoon</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+			<li Class="CompProperties_DryadCocoon">
+				<compClass>AlphaMemes.CompCorruptedPod</compClass>
+				<daysToComplete>4</daysToComplete>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VFECore.OptionalFeatures.ModDef>
+        <defName>AM_AlphaMemesIdeoMenuFeatures</defName>
+        <label>Alpha Memes</label>
+        <description>VE Framework new Ideo menu options for Alpha Memes</description>
+        <Activate>
+            <li>IdeoFloatMenuPlus</li>
+        </Activate>
+    </VFECore.OptionalFeatures.ModDef>
+</Defs>

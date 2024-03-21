@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<!-- Ideoligions -->
-	
 	<AM_ArtTableExtraSpeed>Art production speed: increased precept</AM_ArtTableExtraSpeed>
 	<AM_ExtraBluntArmorFactor>Armour: blunt precept</AM_ExtraBluntArmorFactor>
 	<AM_ExtraSharpArmorFactor>Armour: sharp precept</AM_ExtraSharpArmorFactor>
@@ -31,8 +30,14 @@
 	<AM_AbilityNiceTry>This project is too ambitious for the Master Architect (haha, nice try)</AM_AbilityNiceTry>
 	<AM_LetterLabelPrefabDelivered>Prefab delivered</AM_LetterLabelPrefabDelivered>
 	<AM_LetterPrefabDelivered>One of our contacts in orbit has delivered a brand new prefab, free of cost!\n\nIf you have any caravan hitching spots it will be airdropped nearby. If not, it will be dropped wherever. YOLO.</AM_LetterPrefabDelivered>
+	<AM_OtherAlphaModsNeeded>You will need either Alpha Animals or Alpha Biomes to use this ability</AM_OtherAlphaModsNeeded>
+	<AM_Detonate>Detonate</AM_Detonate>
+	<AM_DetonateDesc>Force this animal to detonate. This will kill the animal and cause an explosion.</AM_DetonateDesc>
+	<AM_MessageRitualRoleNeedsDryad>Your colony needs to have an ocular dryad from a corrupted Gauranlen tree to start this ritual.</AM_MessageRitualRoleNeedsDryad>
+	<AM_DryadUnlinked>The ocular dryad needs to be linked to a Gauranlen tree.</AM_DryadUnlinked>
 	
 	<!--Funeral Stings-->
+	
 	<Funeral_NeedsPower>{0} is not powered</Funeral_NeedsPower>
 	<Funeral_ThingInfoPower>Needs {0} for last rites. Which must be powered or fueled</Funeral_ThingInfoPower>
 	<Funeral_WorstResult>{RITUAL} was a disaster!</Funeral_WorstResult>
@@ -63,7 +68,7 @@
 	<Funeral_DreadnoughtToYoung>{PAWN} tragically didnt make it to an age where they could fill; We can't hold a {RITUAL} for them!</Funeral_DreadnoughtToYoung>
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
-	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>	
+	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>
 	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>
 	<Funeral_CorpseContainerFull>{0} is full</Funeral_CorpseContainerFull>
 	<Funeral_Gauralen>A Gauralen Tree</Funeral_Gauralen>
@@ -73,21 +78,34 @@
 	<Funeral_CorpseNotFresh>{CORPSE} is no longer fresh, they can't be used</Funeral_CorpseNotFresh>
 	<AM_InsectBurialInsectBorn>The insects have made quick work of {CORPSE}'s nutrients! {INSECT} has hatched</AM_InsectBurialInsectBorn>
 	<AM_ArtificialBuildings>Artificial buildings</AM_ArtificialBuildings>
-	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>		
+	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>
 	<AM_CorpseContainerMultiDiedOn>{NAME} died on {DATE}</AM_CorpseContainerMultiDiedOn>
-	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>	
+	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>
 	<AM_TantrumDestoryed>All told we have destoryed {1} worth of buildings \n\n We destroyed: {0}</AM_TantrumDestoryed>
 	<AM_TantrumOutcomeComp>Wealth Destroyed</AM_TantrumOutcomeComp>
 	<AM_TantrumMustBePlayerHome>Has to be started in your home colony</AM_TantrumMustBePlayerHome>
-	<AM_ScrapperHighTechThing>A valuable, hightech piece of technology that we can haul</AM_ScrapperHighTechThing>	
+	<AM_ScrapperHighTechThing>A valuable, hightech piece of technology that we can haul</AM_ScrapperHighTechThing>
 	<AM_ScrapperRitualOutcome>We have salvaged {0} {1} {2}.</AM_ScrapperRitualOutcome>
 	<AM_ScrapperComponentCount>resulting in {0} components</AM_ScrapperComponentCount>
 	<AM_ScrapperAdvComponentCount>and {0} advanced components</AM_ScrapperAdvComponentCount>
 	<AM_RumVatInteruptFerment>The rum is not ready, the corpse could still be salvaged, but any rum will be lost.</AM_RumVatInteruptFerment>
 	<AM_RumComplete>The rum is ready to be extracted</AM_RumComplete>
-	<AM_RumOutput>{0} rum produced if extracted now</AM_RumOutput>
+	<AM_RumOutput>{0} rum</AM_RumOutput>
+	
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
 	<AM_NoStyles>No valid styles available for this object</AM_NoStyles>
+	
+	<!-- Animal Stats -->
+	<AM_PrimaryRole>Primary Role</AM_PrimaryRole>
+	<AM_RangedAttacks>Uses Ranged Attacks</AM_RangedAttacks>
+	<AM_No>No</AM_No>
+	<AM_NoRanged>This animal doesn't have ranged attacks. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal attack in melee.</AM_NoRanged>
+	
+	<!-- Roles -->
+	<AM_Pet>Pet</AM_Pet>
+	
+	<!-- Roles Descriptions -->
+	<AM_PetDesc>This animal is a pet. Isn't he cute?</AM_PetDesc>
 </LanguageData>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>VPE_NuclearGenerator</thingDef>
+					<styleDef>AM_SteampunkRevival_NuclearGenerator</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_AdvancedSolarGenerator</thingDef>
+					<styleDef>AM_SteampunkRevival_AdvancedSolarGenerator</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_AdvancedWindTurbine</thingDef>
+					<styleDef>AM_SteampunkRevival_AdvancedWindTurbine</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_LargeBattery</thingDef>
+					<styleDef>AM_SteampunkRevival_LargeBattery</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_LargeAdvancedBattery</thingDef>
+					<styleDef>AM_SteampunkRevival_AdvancedBatteryLarge</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_SmallBattery</thingDef>
+					<styleDef>AM_SteampunkRevival_SmallBattery</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_AdvancedBattery</thingDef>
+					<styleDef>AM_SteampunkRevival_AdvancedBattery</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_AdvancedWatermillGenerator</thingDef>
+					<styleDef>AM_SteampunkRevival_AdvancedWatermillGenerator</styleDef>
+				</li>
+				<li>
+					<thingDef>VFE_TidalGenerator</thingDef>
+					<styleDef>AM_SteampunkRevival_TidalGenerator</styleDef>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

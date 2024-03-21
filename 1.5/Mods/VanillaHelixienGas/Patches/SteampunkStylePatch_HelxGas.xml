@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/StyleCategoryDef[defName = "AM_SteampunkRevival"]/thingDefStyles</xpath>
+			<value>
+				<li>
+					<thingDef>VHGE_HelixienGenerator</thingDef>
+					<styleDef>AM_SteampunkRevival_HelixienGenerator</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_HelixienPump</thingDef>
+					<styleDef>AM_SteampunkRevival_HelixienPump</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasTank</thingDef>
+					<styleDef>AM_SteampunkRevival_GasTank</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_HelixienPipe</thingDef>
+					<styleDef>AM_SteampunkRevival_GasPipe</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasPoweredStove</thingDef>
+					<styleDef>AM_SteampunkRevival_GasStove</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasPoweredSmelter</thingDef>
+					<styleDef>AM_SteampunkRevival_GasSmelter</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasPoweredCrematorium</thingDef>
+					<styleDef>AM_SteampunkRevival_GasCrematorium</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasCooler</thingDef>
+					<styleDef>AM_SteampunkRevival_GasCooler</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasHeater</thingDef>
+					<styleDef>AM_SteampunkRevival_GasHeater</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasSunLamp</thingDef>
+					<styleDef>AM_SteampunkRevival_GasSunLamp</styleDef>
+				</li>
+				<li>
+					<thingDef>VHGE_GasWallLamp</thingDef>
+					<styleDef>AM_SteampunkRevival_GasWallLight</styleDef>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
