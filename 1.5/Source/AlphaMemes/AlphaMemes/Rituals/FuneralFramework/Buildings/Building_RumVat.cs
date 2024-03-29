@@ -6,6 +6,7 @@ using Verse.Sound;
 using System.Text;
 using RimWorld;
 using UnityEngine;
+using LudeonTK;
 
 
 
@@ -19,10 +20,10 @@ namespace AlphaMemes
         public int tickFilled;
         public bool isFuneral = false;
         public static float zOffset = 0.51f;
-        public static float xOffset = 0.51f;
-        public static float topZOffset = 0.0f;
+        public static float xOffset = 0.51f; 
         public static float topXOffset = 0.0f;
-        public static float topYOffset = 1.0f;
+        //[TweakValue("00", -10, 10)] public static float topYOffset = 1.0f;
+        public static float topYOffset = .80f;
         private static readonly int maxAge = 3;
         public static readonly Material vatTop = MaterialPool.MatFrom("Things/Building/Misc/AM_RumBarrel");
 
@@ -39,10 +40,9 @@ namespace AlphaMemes
                 Corpse.DynamicDrawPhaseAt(DrawPhase.Draw,Position.ToVector3ShiftedWithAltitude(AltitudeLayer.BuildingOnTop) + new Vector3(xOffset, 0, zOffset), false);
             }
             var pos = this.TrueCenter();
-            pos.y += topZOffset;
-            pos.z += topXOffset;  
-            var matrix = default(Matrix4x4);
-            matrix.SetTRS(pos, Quaternion.identity, new Vector3(2, topYOffset, 2));
+            pos.y += topYOffset;
+            pos.z += topXOffset;
+            var matrix = Matrix4x4.TRS(pos, Rotation.AsQuat, new Vector3(2, 1f, 2));
             Graphics.DrawMesh(MeshPool.plane10, matrix, vatTop, 0);
         }
         private int FermentTime
