@@ -7,7 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				
-				
+				<!--
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="VFE_Mechanoids_Autocleaner"]/comps</xpath>
 					<value>
@@ -60,7 +60,7 @@
 							<changeGraphicsInterval>3000</changeGraphicsInterval>
 						</li>
 					</value>
-				</li>
+				</li>-->
 				
 			</operations>
 		</match>
