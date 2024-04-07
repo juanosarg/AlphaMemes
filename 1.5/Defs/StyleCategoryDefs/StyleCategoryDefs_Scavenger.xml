@@ -240,6 +240,7 @@
 			<li>AM_Tile_Scavenger_Clean</li>
 			<li>AM_AncientRazorwire</li>
 			<li>AM_AncientFence</li>
+			<li>AM_AncientLockerBank</li>
 		</addDesignators>
 	</StyleCategoryDef>
 	

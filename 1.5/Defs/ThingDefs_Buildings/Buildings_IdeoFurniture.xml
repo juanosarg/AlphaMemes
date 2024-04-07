@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <ThingDef ParentName="BedWithQualityBase">
+ <ThingDef ParentName="BasicBedBase">
     <defName>AM_StoneBedroll</defName>
     <label>stone-framed bedroll</label>
     <description>A cozy mattress and sheets on a frame for resting.</description>
@@ -14,15 +14,7 @@
         <rect>(0,0.05,1,1.95)</rect>
       </damageData>
     </graphicData>
-    <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
-          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-        </linkableFacilities>
-      </li>
-    </comps>
+   
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>0.3</Flammability>
@@ -30,19 +22,61 @@
       <WorkToBuild>1500</WorkToBuild>
       <Mass>50</Mass>
       <BedRestEffectiveness>1</BedRestEffectiveness>
-      <Comfort>0.75</Comfort>
+   
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+	  <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
+    </statBases>
+    <size>(1,2)</size>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+   
+    <costStuffCount>45</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+   <ThingDef ParentName="BasicBedBase">
+    <defName>AM_DoubleStoneBedroll</defName>
+    <label>double stone-framed bedroll</label>
+    <description>A cozy mattress and sheets on a frame for resting.</description>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Neolithic/Beds/AM_DoubleStoneFramedBedroll</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+  
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Beauty>2</Beauty>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>75</Mass>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+    
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
 	   <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
     </statBases>
-    <size>(1,2)</size>
+      <size>(2,2)</size>
 	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>45</costStuffCount>
+   
+    <costStuffCount>85</costStuffCount>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
@@ -374,7 +408,7 @@
     <size>(3, 1)</size>
 
     <designationHotKey>Misc12</designationHotKey>
-  
+  	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
     <placeWorkers>

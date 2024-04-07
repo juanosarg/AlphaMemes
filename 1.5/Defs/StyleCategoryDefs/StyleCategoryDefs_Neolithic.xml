@@ -134,6 +134,7 @@
 		<addDesignators>
 			<li>AM_Megalith</li>
 			<li>AM_StoneBedroll</li>
+			<li>AM_DoubleStoneBedroll</li>
 			<li>AM_Neolithic_StoneTable_1x2c</li>
 			<li>AM_Neolithic_StoneTable_2x2c</li>
 			<li>AM_Neolithic_StoneTable_2x4c</li>
