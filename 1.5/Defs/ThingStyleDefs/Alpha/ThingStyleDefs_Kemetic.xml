@@ -589,6 +589,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/JaffaArmorB/JaffaArmorB</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -597,6 +598,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorBHelmet/JaffaArmorBHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/JaffaArmorBHelmet/JaffaArmorBHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -605,6 +607,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigePowerArmor</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorC/JaffaArmorC</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/JaffaArmorC/JaffaArmorC</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -613,6 +616,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigePowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/JaffaArmorCHelmet/JaffaArmorCHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/JaffaArmorCHelmet/JaffaArmorCHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -621,6 +625,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ArmorCataphract</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/Cataphract/Cataphract</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/Cataphract/Cataphract</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -629,6 +634,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ArmorCataphractHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/CataphractHelmet/CataphractHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/CataphractHelmet/CataphractHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -637,6 +643,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigeCataphract</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphract/PrestigeCataphract</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/PrestigeCataphract/PrestigeCataphract</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -645,6 +652,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_PrestigeCataphractHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/PrestigeCataphractHelmet/PrestigeCataphractHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -668,6 +676,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_Recon</defName>
 		<wornGraphicPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/Recon/AM_KemeticRecon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -257,7 +257,7 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_FlakVest</defName>
-
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakJacket/AM_SteampunkFlakJacket</texPath>
@@ -266,7 +266,7 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_FlakHelmet</defName>
-
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkFlakHelmet/AM_SteampunkFlakHelmet</texPath>

@@ -20,6 +20,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ArmorMarinePrestige</defName>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigePowerArmor/AM_CorsairPrestigePowerArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigePowerArmor/AM_CorsairPrestigePowerArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -29,6 +30,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_PrestigeCataphract</defName>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphract/AM_CorsairPrestigeCataphract</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphract/AM_CorsairPrestigeCataphract</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -38,6 +40,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ArmorMarineHelmetPrestige</defName>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_Corsair_PrestigeMarineHelmet/AM_Corsair_PrestigeMarineHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_Corsair_PrestigeMarineHelmet/AM_Corsair_PrestigeMarineHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -65,6 +68,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPowerArmorHelmet/AM_CorsairPowerArmorHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPowerArmorHelmet/AM_CorsairPowerArmorHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -89,6 +93,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_PrestigeCataphractHelmet</defName>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphractHelm/AM_CorsairPrestigeCataphractHelm</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPrestigeCataphractHelm/AM_CorsairPrestigeCataphractHelm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -592,6 +597,7 @@
 		<defName>AM_Corsair_BowlerHat</defName>
 		<overrideLabel>brown pirate hat</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairBowlerHat/AM_CorsairBowlerHat</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairBowlerHat/AM_CorsairBowlerHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -602,6 +608,7 @@
 		<defName>AM_Corsair_Tuque</defName>
 		<overrideLabel>pirate bandana</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairTuque/AM_CorsairTuque</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairTuque/AM_CorsairTuque</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -611,6 +618,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_SimpleHelmet</defName>
 		<overrideLabel>pirate hat</overrideLabel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairSimpleHelmet/AM_CorsairSimpleHelmet</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairSimpleHelmet/AM_CorsairSimpleHelmet</texPath>
@@ -622,6 +630,7 @@
 		<defName>AM_Corsair_AdvancedHelmet</defName>
 		<overrideLabel>flak pirate hat</overrideLabel>
 		<wornGraphicPath>Things/Apparel/Corsair/AM_CorsairAdvancedHelmet/AM_CorsairAdvancedHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairAdvancedHelmet/AM_CorsairAdvancedHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
