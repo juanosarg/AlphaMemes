@@ -21,6 +21,7 @@
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
 		<li IfModActive="sarg.alphabiomes">1.5/Mods/AlphaBiomes</li>
 		<li IfModActive="VanillaExpanded.VFEPower">1.5/Mods/VanillaPowerExpanded</li>
 		<li IfModActive="VanillaExpanded.HelixienGas">1.5/Mods/VanillaHelixienGas</li>

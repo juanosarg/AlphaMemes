@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>AM_CubicBed</defName>
+		<label>cubic bed</label>
+		<description>Rest in the loving embrace of the Cube.</description>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+	
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>45</costStuffCount>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiOrder>2010</uiOrder>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<building>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>AM_DoubleCubicBed</defName>
+		<label>double cubic bed</label>
+		<description>Rest in the loving embrace of the Cube.</description>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_DoubleCubicBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>2</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>85</costStuffCount>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<designationHotKey>Misc3</designationHotKey>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<building>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+		</building>
+	</ThingDef>
+	  <ThingDef ParentName="BedWithQualityBase">
+    <defName>AM_CubicHospitalBed</defName>
+    <label>cubic hospital bed</label>
+    <description>Rest in the loving embrace of the Cube. Specially designed for use in hospitals. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicHospitalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.80</Comfort>
+      <ImmunityGainSpeedFactor>1.11</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+      <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+     
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Industrial</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+</Defs>

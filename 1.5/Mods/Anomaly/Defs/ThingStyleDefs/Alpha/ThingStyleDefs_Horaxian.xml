@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====== Horaxian ======== -->
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Wall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Wall/AM_HoraxianWall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<shaderType>CutoutComplex</shaderType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/Wall/AM_HoraxianWall_Icon</uiIconPath>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_Horaxian_AltarSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Altars/AM_HoraxianAltar1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_AltarMedium</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Altars/AM_HoraxianAltar1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_AltarLarge</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Altars/AM_HoraxianAltar2x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,2)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 1.6)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_AltarGrand</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Altars/AM_HoraxianAltar3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(2.4, 1, 2.4)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Tables/AM_Horaxian_Table1x2c</texPath>
+			<drawSize>(3,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Tables/AM_Horaxian_Table2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Tables/AM_Horaxian_Table2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Tables/AM_Horaxian_Table3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef Name="AM_Horaxian_StandingLampBase">
+		<defName>AM_Horaxian_StandingLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianLampStanding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_Stool</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Stool/AM_HoraxianStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_TorchLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>AM_Horaxian_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianColumn</texPath>
+			<drawSize>(0.625,1.25)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_IdeogramA</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_IconHoraxianA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianShelf</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Shelf/AM_HoraxianShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianShelfSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/ShelfSmall/AM_HoraxianShelfSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianDresser</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Dresser/AM_HoraxianDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianPew</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Pew/AM_HoraxianPew</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianEndTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/EndTable/AM_HoraxianEndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianDoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Door/AM_HoraxianDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/Door/AM_HoraxianDoor_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianAutodoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Door/AM_HoraxianAutoDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/Door/AM_HoraxianAutoDoor_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianArmchair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Armchair/AM_HoraxianArmchair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianChair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Chair/AM_HoraxianChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianPlantPot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianPlantpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.65, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_HoraxianCouch</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Couch/AM_HoraxianCouch</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			 <drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>AM_HoraxianWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/WallLamp/AM_HoraxianWallLamp</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/WallLamp/AM_HoraxianWallLamp_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianFloodLight</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianFloodLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			 <drawSize>2.5</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_HoraxianSunLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_HoraxianSunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Ikwa</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Hammer</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Pickaxe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Bow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_RecurveBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_GreatBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_LongBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianLongbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_CompoundBow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianCompoundBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianAntimaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Sword</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Staff</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianEltexStaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Spear</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianHeavyMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_MachinePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMachinePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_BoltActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianBoltRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianCombatHandgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_CarbineVWE</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Crossbow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianCrossbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSemiAutomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Shiv</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianShiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<!--<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Sling</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSling</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/JaffaArmorB/JaffaArmorB</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/JaffaArmorB/JaffaArmorB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/JaffaArmorBHelmet/JaffaArmorBHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/JaffaArmorBHelmet/JaffaArmorBHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PrestigePowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/JaffaArmorC/JaffaArmorC</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/JaffaArmorC/JaffaArmorC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PrestigePowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/JaffaArmorCHelmet/JaffaArmorCHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/JaffaArmorCHelmet/JaffaArmorCHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ArmorCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/Cataphract/Cataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/Cataphract/Cataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ArmorCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/CataphractHelmet/CataphractHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/CataphractHelmet/CataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PrestigeCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/PrestigeCataphract/PrestigeCataphract</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/PrestigeCataphract/PrestigeCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_PrestigeCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/PrestigeCataphractHelmet/PrestigeCataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_TopHat</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/TopHat/AM_HoraxianHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/TopHat/AM_HoraxianHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Horaxian_CanopicJars</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/AM_CanopicJar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Recon</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/Recon/AM_HoraxianRecon</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/Recon/AM_HoraxianRecon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Plate</defName>
+		<wornGraphicPath>Things/Apparel/Horaxian/Plate/AM_HoraxianPlate</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Horaxian/Plate/AM_HoraxianPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>-->
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_HoraxianFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+</Defs>

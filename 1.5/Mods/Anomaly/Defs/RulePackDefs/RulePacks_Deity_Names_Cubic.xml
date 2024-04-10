@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>AM_NamerDeityCubic</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Cube</li>
+				<li>r_deityName->The Tetragold</li>
+				<li>r_deityName->The Auric Sanctum</li>
+				<li>r_deityName->The Gilded Ascendancy</li>
+				<li>r_deityName->The Archonic Reliquary</li>
+				<li>r_deityName->The Golden Luminae Devotion</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+
+	
+	
+</Defs>

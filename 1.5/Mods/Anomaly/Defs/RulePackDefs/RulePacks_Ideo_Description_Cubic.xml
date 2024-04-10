@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoStoryPatternDef>
+		<defName>AM_CubicDescription</defName>
+		<segments>
+			<li>cubicismlessonIntro</li>
+			<li>lesson</li>
+		
+			<li>cubicismlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_cubicismlessonIntro] [r_lesson]. [r_cubicismlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->discourse</li>
+				<li>book->sermon</li>
+				<li>book->conclave</li>
+				<li>book->congregation</li>
+				
+				<li>concept->Cubic Enlightenment</li>
+				<li>concept->Archotech Revelation</li>
+				<li>concept->Geometric Mysticism</li>
+				<li>concept->Transcendent Geometry</li>
+				<li>concept->The Sacred Angles</li>
+				<li>concept->Divine Symmetry</li>
+				<li>concept->Esoteric Constructs</li>
+				<!-- generic intro -->
+				<li>cubicismlessonIntro->Welcome, faithful congregants, to today's sermon of enlightenment and revelation. As we gather in the sanctified halls of the Cubic Enclave, let us open our hearts and minds to the divine wisdom that emanates from the sacred Golden Cube. The Cube shows us that</li>
+				<li>cubicismlessonIntro->Blessings upon you, beloved disciples, as we come together in communion with the mysteries of the universe. Within these hallowed walls, we shall delve into the depths of Cubic Enlightenment. It will then become clear:</li>
+				<li>cubicismlessonIntro->Greetings, seekers of truth and enlightenment. Today, as we gather in the presence of the divine Cube, let us embark on a journey of discovery and introspection. It teaches us one thing:</li>
+				<li>cubicismlessonIntro->Dear friends, as we gather in the embrace of the Cubic Sanctuary, let us reflect upon the sacred teachings that have been passed down through generations. In the radiance of the Golden Cube you can realize that</li>
+				<li>cubicismlessonIntro->Beloved brethren, as we come together in fellowship and devotion, let us heed the call of the Cube and embrace its timeless wisdom. Within its sacred geometry lies the key to unlocking the mysteries of creation. You will show everyone that</li>
+				
+				<!-- generic reinforcement -->
+				<li>cubicismlessonReinforcement->Go forth, disciples, and let the wisdom of the Cube guide your steps.</li>
+				<li>cubicismlessonReinforcement->Carry the light of the Cube with you as you journey through life.</li>
+				<li>cubicismlessonReinforcement->Embrace the teachings of the Cube and share its message of harmony.</li>
+				<li>cubicismlessonReinforcement->Until we gather again, may the presence of the Cube be your constant companion.</li>
+				<li>cubicismlessonReinforcement->With the Cube's blessings, may you find peace and enlightenment in all your endeavors.</li>
+				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+
+  
+</Defs>
