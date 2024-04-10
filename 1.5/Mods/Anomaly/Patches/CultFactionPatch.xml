@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FactionDef[defName="HoraxCult"]/styles</xpath>
+		<value>
+			<styles>
+				<li>AM_Horaxian</li>
+				<li>Morbid</li>
+				<li>Techist</li>
+			</styles>
+		</value>
+	</Operation>
+</Patch>
