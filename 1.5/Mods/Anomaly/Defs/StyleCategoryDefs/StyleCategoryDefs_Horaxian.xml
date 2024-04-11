@@ -274,6 +274,7 @@
 			<li>AM_Tile_Horaxian</li>
 			<li>AM_HoraxianSlab_Medium</li>
 			<li>AM_HoraxianSlab_Broad</li>
+			<li>AM_GrayStatueDecorative</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
