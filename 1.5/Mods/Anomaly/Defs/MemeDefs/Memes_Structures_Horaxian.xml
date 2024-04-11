@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MemeDef>
+		<defName>AM_Structure_Horaxian</defName>
+		<label>void-touched</label>
+		<description>Space to you is a sterile grid, governed by logic. But we perceive the truth—a boundless sea of nightmares beneath the facade. From its depths, a mind rules, its tendrils stretching from the abyss to bless those who heed its call.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Horaxian</iconPath>
+		<impact>0</impact>
+		<deityNameMakerOverride>AM_NamerDeityHoraxian</deityNameMakerOverride>
+		<deityTypeMakerOverride>DietyTypeMakerAbrahamic</deityTypeMakerOverride>
+		<worshipRoomLabel>abyssal sanctum</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1</deityCount>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->shadowed</li>
+				<li>memeAdjective->abyssal</li>
+				<li>memeAdjective->corrupt</li>
+				<li>memeAdjective->tainted</li>
+				<li>memeLeaderNoun->shadowcaller</li>
+				<li>memeLeaderNoun->darkseer</li>
+			
+				<li>memeMoralist->shadowbound acolyte</li>
+				<li>memeMoralist->netherseeker</li>
+				<li>memeMoralist->darkwatcher</li>
+				<li>memeMoralist->voidweaver</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_HoraxianDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_horaxian</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>void-touched</theme>
+				<adjective>void-touched</adjective>
+				<member>nightmare devotee</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Horaxian</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	
+	
+	
+</Defs>

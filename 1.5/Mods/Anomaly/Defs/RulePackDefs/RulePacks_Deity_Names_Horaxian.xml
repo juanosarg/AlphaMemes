@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>AM_NamerDeityHoraxian</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Voidbringer</li>
+				<li>r_deityName->The Nightmare Sovereign</li>
+				<li>r_deityName->The Shadowed Monarch</li>
+				<li>r_deityName->The Umbral Tyrant</li>
+				<li>r_deityName->The Darkened Emperor</li>
+				<li>r_deityName->The Tenebrous Divinity</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+
+	
+	
+</Defs>
