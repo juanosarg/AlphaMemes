@@ -272,6 +272,8 @@
 			<li>AM_HoraxianBed</li>
 			<li>AM_DoubleHoraxianBed</li>
 			<li>AM_Tile_Horaxian</li>
+			<li>AM_HoraxianSlab_Medium</li>
+			<li>AM_HoraxianSlab_Broad</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
