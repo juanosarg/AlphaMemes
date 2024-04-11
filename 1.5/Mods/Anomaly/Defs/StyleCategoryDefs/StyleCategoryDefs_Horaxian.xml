@@ -8,6 +8,10 @@
 		<ritualVisualEffectDef>AM_HoraxianVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
+				<styleDef>AM_Horaxian_Staff</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_Axe</thingDef>
 				<styleDef>Horaxian_Axe</styleDef>
 			</li>
