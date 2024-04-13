@@ -12,29 +12,31 @@ namespace AlphaMemes
 
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
-			Frame blueprint = target.Thing as Frame;
-			
-			if (blueprint != null && blueprint.Faction== Faction.OfPlayer)
+            Frame blueprint = target.Thing as Frame;
+
+
+            if (blueprint != null && blueprint.Faction== Faction.OfPlayer)
 			{
 
-				List<ThingDefCountClass> list = blueprint.def.entityDefToBuild.CostListAdjusted(blueprint.Stuff);
-				
-				int resourcesLeft = 0;
-				for (int i = 0; i < list.Count; i++)
+				List<ThingDefCountClass> materialsNeeded = blueprint.TotalMaterialCost();
+
+				bool resourcesDelivered = true;
+				for (int i = 0; i < materialsNeeded.Count; i++)
 				{
-					ThingDefCountClass need = list[i];
-					int num = need.count;
-					
-					foreach (ThingDefCountClass item in from needed in blueprint.TotalMaterialCost()
-														where needed.thingDef == need.thingDef
-														select needed)
+					ThingDefCountClass material = materialsNeeded[i];
+					int numMaterial = material.count;
+					int materialsDelivered = blueprint.resourceContainer.TotalStackCountOfDef(material.thingDef);
+					if(numMaterial!= materialsDelivered)
 					{
-						resourcesLeft += item.count;
-					}
+						resourcesDelivered = false;
+
+                    }
+
+
 					
 				}
 				
-				if (resourcesLeft==0)
+				if (resourcesDelivered)
 				{
 					if(blueprint.def.entityDefToBuild != InternalDefOf.AM_GreatPyramid&& blueprint.def.entityDefToBuild != InternalDefOf.AM_Sphynx)
                     {
