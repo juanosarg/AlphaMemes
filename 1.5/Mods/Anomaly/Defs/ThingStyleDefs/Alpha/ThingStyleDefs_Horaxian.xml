@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ====== Horaxian ======== -->
+	
+	
+	
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_Bed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_HoraxianBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_HoraxianBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Horaxian_DoubleBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_DoubleHoraxianBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_DoubleHoraxianBed_south</uiIconPath>
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Horaxian_Wall</defName>
 		<graphicData>

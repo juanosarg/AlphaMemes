@@ -16,6 +16,16 @@
     </rulePack>
   </RulePackDef>
   
- 
+  <RulePackDef>
+    <defName>AM_MasterStylist</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Master stylist</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

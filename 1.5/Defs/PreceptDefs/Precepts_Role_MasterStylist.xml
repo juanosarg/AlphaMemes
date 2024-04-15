@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>AM_IdeoRole_MasterStylist</defName>
+		<label>master stylist</label>
+		<description>An adept at transforming the aesthetic of various objects, infusing them with fresh style and flair through skillful design alterations.</description>
+		<iconPath>UI/Roles/AM_MasterStylistRole</iconPath>
+		<nameMaker>AM_MasterStylist</nameMaker>
+
+		<roleTags>
+			<li>MasterStylist</li>
+		</roleTags>
+		
+
+		<displayOrderInImpact>2</displayOrderInImpact>
+
+		<grantedAbilities>
+			<li>AM_ChangeStyle</li>
+			<li>AM_ChangeStyleRandom</li>
+			<li>AM_ChangeStyleRadius</li>
+			<li>AM_ChangeStyle_AllMap</li>
+		</grantedAbilities>
+		
+		
+		
+	</PreceptDef>
+
+</Defs>

@@ -141,5 +141,7 @@ namespace AlphaMemes
         public static JobDef AM_TrantrumJob;
         public static JobDef AM_MergeIntoCorruptedPod;
         public static JobDef AM_InstallRelic;
+
+		public static AbilityDef AM_ChangeStyleRadius;
     }
 }

@@ -6,12 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/StyleCategoryDef[defName="AM_Cubic"]/addDesignators</xpath>
-					<value>
-						<li>AM_CubicCrib</li>
-					</value>
-				</li>
+				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
@@ -35,6 +30,7 @@
 									<volume>(0.8,0.4,0.9)</volume>
 								</shadowData>
 							</graphicData>
+							<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 							<staticSunShadowHeight>0</staticSunShadowHeight>
 							<statBases>
 								<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">0</BirthRitualQualityOffset>

@@ -2,6 +2,46 @@
 <Defs>
 	<!-- ====== Cubic ======== -->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Cubic_Bed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Cubic_DoubleBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_DoubleCubicBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/Beds/AM_DoubleCubicBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Cubic_HospitalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicHospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicHospitalBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Cubic_Crib</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Crib/AM_CubicCrib</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/Crib/AM_CubicCrib_east</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Cubic_Wall</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Cubic/Wall/AM_CubicWall</texPath>
@@ -440,7 +480,6 @@
 			<texPath>Things/Building/BuildingStyles/Cubic/Throne/AM_CubicThrone</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			
 			<drawSize>(2.4,2.4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>

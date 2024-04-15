@@ -7,6 +7,14 @@
 		<soundOngoingRitual>AM_RitualSustainer_Horaxian</soundOngoingRitual>
 		<ritualVisualEffectDef>AM_HoraxianVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
+			<li>
+                <thingDef>Bed</thingDef>
+                <styleDef>AM_Horaxian_Bed</styleDef>
+            </li>
+			<li>
+                <thingDef>DoubleBed</thingDef>
+                <styleDef>AM_Horaxian_DoubleBed</styleDef>
+            </li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
 				<styleDef>AM_Horaxian_Staff</styleDef>
@@ -269,8 +277,7 @@
 			</li>
 		</thingDefStyles>
 		<addDesignators>
-			<li>AM_HoraxianBed</li>
-			<li>AM_DoubleHoraxianBed</li>
+			
 			<li>AM_Tile_Horaxian</li>
 			<li>AM_HoraxianSlab_Medium</li>
 			<li>AM_HoraxianSlab_Broad</li>

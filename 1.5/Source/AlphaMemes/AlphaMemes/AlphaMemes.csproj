@@ -322,6 +322,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_RedAcidExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
+    <Compile Include="Dialogs\Dialog_ChangeStyles_Area.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
@@ -339,6 +340,7 @@
     <Compile Include="Harmony\MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
+    <Compile Include="Harmony\Verb_CastAbility_DrawHighlight.cs" />
     <Compile Include="Harmony\Verb_EffectiveRange.cs" />
     <Compile Include="Harmony\ThoughtUtility_RemovePositiveBedroomThoughts.cs" />
     <Compile Include="Harmony\Toils_LayDown_ApplyBedThoughts.cs" />

@@ -8,6 +8,22 @@
 		<ritualVisualEffectDef>AM_CubicVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
+                <thingDef>Bed</thingDef>
+                <styleDef>AM_Cubic_Bed</styleDef>
+            </li>
+			<li>
+                <thingDef>DoubleBed</thingDef>
+                <styleDef>AM_Cubic_DoubleBed</styleDef>
+            </li>
+			<li>
+                <thingDef>HospitalBed</thingDef>
+                <styleDef>AM_Cubic_HospitalBed</styleDef>
+            </li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+                <thingDef>Crib</thingDef>
+                <styleDef>AM_Cubic_Crib</styleDef>
+            </li>
+			<li>
 				<thingDef>Wall</thingDef>
 				<styleDef>AM_Cubic_Wall</styleDef>
 			</li>
@@ -380,9 +396,7 @@
 			<li>AM_CubicSlab_Medium</li>
 			<li>AM_CubicSlab_Broad</li>
 			<li>AM_Tile_Cubic</li>
-			<li>AM_CubicBed</li>
-			<li>AM_DoubleCubicBed</li>
-			<li>AM_CubicHospitalBed</li>
+			
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>

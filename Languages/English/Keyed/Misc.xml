@@ -95,6 +95,7 @@
 	<!-- Style changing ability -->
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
+	<AM_ChooseStyle_Multiple>Choose style for these objects, if available</AM_ChooseStyle_Multiple>
 	<AM_NoStyles>No valid styles available for this object</AM_NoStyles>
 	
 	<!-- Animal Stats -->
