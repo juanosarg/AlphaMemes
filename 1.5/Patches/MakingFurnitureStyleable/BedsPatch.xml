@@ -70,4 +70,28 @@
 			</match>
 		</nomatch>
 	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RoyalBed"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable" />
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable" />
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	
 </Patch>

@@ -8,6 +8,7 @@ using Verse;
 
 namespace AlphaMemes
 {
+    [StaticConstructorOnStartup]
     public class Dialog_ChangeStyles_Area : Window
     {
 

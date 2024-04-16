@@ -22,6 +22,16 @@
 		<uiIconPath>Things/Building/BuildingStyles/Cubic/Beds/AM_DoubleCubicBed_south</uiIconPath>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Cubic_RoyalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicRoyalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicRoyalBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Cubic_HospitalBed</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Cubic/Beds/AM_CubicHospitalBed</texPath>
@@ -197,6 +207,51 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Cubic/AM_CubicTorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Cubic_Darktorch</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/AM_CubicTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/AM_CubicDarkTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_CubicFirefoamPopper</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/AM_CubicFirefoamPopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		
+		</graphicData>
+	
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Cubic_Lectern</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/Lectern/AM_CubicLectern</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Cubic_Multianalyzer</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/AM_CubicMultianalyzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.46875</drawSize>
+		</graphicData>
+	
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Cubic_HoldingPlatform</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/AM_CubicHoldingPlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(3, 3)</drawSize>
+		</graphicData>
+	
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>AM_Cubic_Column</defName>
 		<graphicData>
@@ -358,6 +413,14 @@
 			<texPath>Things/Building/BuildingStyles/Cubic/WallLamp/AM_CubicWallLamp</texPath>
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Cubic/WallLamp/AM_CubicWallLamp_Icon</uiIconPath>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>AM_Cubic_TorchWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Cubic/WallTorch/AM_CubicWallTorch</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Cubic/WallTorch/AM_CubicWallTorch_MenuIcon</uiIconPath>
 	</ThingStyleDef>
 	<ThingStyleDef>
 		<defName>AM_CubicFloodLight</defName>
