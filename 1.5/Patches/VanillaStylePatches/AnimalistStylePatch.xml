@@ -144,6 +144,10 @@
 								<thingDef>Pila</thingDef>
 								<styleDef>AM_Animalist_Pila</styleDef>
 							</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">
+								<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
+								<styleDef>AM_Animalist_Staff</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>
@@ -186,6 +190,78 @@
 										<li>
 											<thingDef>VWE_Bow_Long</thingDef>
 											<styleDef>AM_Animalist_LongBow</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargePistol</thingDef>
+											<styleDef>AM_Animalist_ChargePistol</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+											<styleDef>AM_Animalist_ChargeShotgun</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargeSMG</thingDef>
+											<styleDef>AM_Animalist_ChargeSMG</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargeLMG</thingDef>
+											<styleDef>AM_Animalist_ChargeLMG</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+											<styleDef>AM_Animalist_ChargeSniperRifle</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+											<styleDef>AM_Animalist_ChargeMinigun</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_CombatHandgun</thingDef>
+											<styleDef>AM_Animalist_CombatHandgun</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_BattleRifle</thingDef>
+											<styleDef>AM_Animalist_BattleRifle</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_Carbine</thingDef>
+											<styleDef>AM_Animalist_CarbineVWE</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Bow_Crossbow</thingDef>
+											<styleDef>AM_Animalist_Crossbow</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_Flintlock</thingDef>
+											<styleDef>AM_Animalist_Flintlock</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_SawedOffShotgun</thingDef>
+											<styleDef>AM_Animalist_SawedOffShotgun</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+											<styleDef>AM_Animalist_SemiAutomaticRifle</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_LightSMG</thingDef>
+											<styleDef>AM_Animalist_LightSMG</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_SMG</thingDef>
+											<styleDef>AM_Animalist_SMG</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_ServiceRifle</thingDef>
+											<styleDef>AM_Animalist_ServiceRifle</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+											<styleDef>AM_Animalist_MarksmanRifle</styleDef>
+										</li>
+										<li>
+											<thingDef>VWE_Gun_Musket</thingDef>
+											<styleDef>AM_Animalist_Musket</styleDef>
 										</li>
 									</value>
 								</match>
