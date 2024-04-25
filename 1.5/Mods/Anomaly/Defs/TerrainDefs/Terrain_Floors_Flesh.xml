@@ -3,9 +3,29 @@
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>AM_Tile_Flesh</defName>
-		<label>flesh tile</label>
+		<label>flesh covering</label>
 		<description>Cheap imitation flesh. Smells weird.</description>
 		<texturePath>Terrain/Surfaces/Flesh</texturePath>
+		<renderPrecedence>340</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>0</Beauty>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+		
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Flesh_Metal</defName>
+		<label>flesh tile</label>
+		<description>Cheap imitation flesh. Smells weird.</description>
+		<texturePath>Terrain/Surfaces/AM_Flesh_Tile2</texturePath>
 		<renderPrecedence>340</renderPrecedence>
 		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>

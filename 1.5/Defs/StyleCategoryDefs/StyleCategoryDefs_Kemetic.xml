@@ -8,6 +8,43 @@
 		<soundOngoingRitual>AM_RitualSustainer_Kemetic</soundOngoingRitual>
 		<ritualVisualEffectDef>AM_KemeticVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
+		
+			<li>
+                <thingDef>Bed</thingDef>
+                <styleDef>AM_Kemetic_Bed</styleDef>
+            </li>
+			<li>
+                <thingDef>DoubleBed</thingDef>
+                <styleDef>AM_Kemetic_DoubleBed</styleDef>
+            </li>
+			<li>
+                <thingDef>RoyalBed</thingDef>
+                <styleDef>AM_Kemetic_RoyalBed</styleDef>
+            </li>
+			<li>
+                <thingDef>HospitalBed</thingDef>
+                <styleDef>AM_Kemetic_HospitalBed</styleDef>
+            </li>
+			<li>
+				<thingDef>PlantPot_Bonsai</thingDef>
+				<styleDef>AM_KemeticBonsaiTreePot</styleDef>
+			</li>
+			<li>
+				<thingDef>Bookcase</thingDef>
+				<styleDef>AM_KemeticBookcase</styleDef>
+			</li>
+			<li>
+				<thingDef>BookcaseSmall</thingDef>
+				<styleDef>AM_KemeticBookcaseSmall</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Drape</thingDef>
+				<styleDef>AM_KemeticDrape</styleDef>
+			</li>
+			<li>
+				<thingDef>ChessTable</thingDef>
+				<styleDef>AM_KemeticChessTable</styleDef>
+			</li>
 			<li>
 				<thingDef>Wall</thingDef>
 				<styleDef>AM_Kemetic_Wall</styleDef>
@@ -67,6 +104,30 @@
 			<li>
 				<thingDef>TorchLamp</thingDef>
 				<styleDef>AM_Kemetic_TorchLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>Darktorch</thingDef>
+				<styleDef>AM_Kemetic_Darktorch</styleDef>
+			</li>
+			<li>
+				<thingDef>TorchWallLamp</thingDef>
+				<styleDef>AM_Kemetic_TorchWallLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>Couch</thingDef>
+				<styleDef>AM_KemeticCouch</styleDef>
+			</li>
+			<li>
+				<thingDef>WallLamp</thingDef>
+				<styleDef>AM_KemeticWallLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>FloodLight</thingDef>
+				<styleDef>AM_KemeticFloodLight</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>HoldingPlatform</thingDef>
+				<styleDef>AM_Kemetic_HoldingPlatform</styleDef>
 			</li>
 			<li>
 				<thingDef>Column</thingDef>
@@ -255,6 +316,10 @@
 			<li>
 				<thingDef>Door</thingDef>
 				<styleDef>AM_KemeticDoor</styleDef>
+			</li>
+			<li>
+				<thingDef>Autodoor</thingDef>
+				<styleDef>AM_KemeticAutodoor</styleDef>
 			</li>
 			<li>
 				<thingDef>Armchair</thingDef>

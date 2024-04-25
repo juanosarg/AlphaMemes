@@ -2,6 +2,83 @@
 <Defs>
 	<!-- ====== Kemetic ======== -->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_Bed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_DoubleBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticDoubleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticDoubleBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_RoyalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticRoyalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticRoyalBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Kemetic_HospitalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticHospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Beds/AM_KemeticHospitalBed_south</uiIconPath>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_KemeticBonsaiTreePot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticBonsaiTreePot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticBookcase</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Bookcases/AM_KemeticBookcase</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticBookcaseSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Bookcases/AM_KemeticBookcaseSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticDrape</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Drape/AM_KemeticDrape</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.2,4.2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_Kemetic_Wall</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/Wall/AM_KemeticWall</texPath>
@@ -142,6 +219,56 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_Darktorch</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticTorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticDarkTorchLamp_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>AM_Kemetic_TorchWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/WallTorch/AM_KemeticWallTorch</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/WallTorch/AM_KemeticWallTorch_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticCouch</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Couch/AM_KemeticCouch</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>AM_KemeticWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/WallLamp/AM_KemeticWallLamp</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/WallLamp/AM_KemeticWallLamp_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_Kemetic_HoldingPlatform</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticHoldingPlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(3, 3)</drawSize>
+		</graphicData>
+	
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>AM_KemeticFloodLight</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticFloodLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.5</drawSize>
+		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>AM_Kemetic_Column</defName>
@@ -746,6 +873,18 @@
 		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Door/AM_KemeticDoor_Icon</uiIconPath>
 	</ThingStyleDef>
 	<ThingStyleDef>
+		<defName>AM_KemeticAutodoor</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Door/AM_KemeticAutoDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Kemetic/Door/AM_KemeticAutoDoor_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
 		<defName>AM_KemeticArmchair</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/Armchair/AM_KemeticArmchair</texPath>
@@ -784,6 +923,7 @@
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticPlantpot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
 				<volume>(0.65, 0.35, 0.3)</volume>
 				<offset>(0, 0, -0.28)</offset>
@@ -792,6 +932,15 @@
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticChessTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/AM_KemeticChessTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<overrideLabel>senet board</overrideLabel>
 	</ThingStyleDef>
 	
 	<ThingStyleDef ParentName="AM_RotateWeapons">

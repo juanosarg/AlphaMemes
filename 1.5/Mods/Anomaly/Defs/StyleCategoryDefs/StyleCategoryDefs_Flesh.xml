@@ -13,11 +13,117 @@
 				<styleDef>AM_Flesh_Wall</styleDef>
 			</li>
 			
+			<li>
+                <thingDef>Bed</thingDef>
+                <styleDef>AM_Flesh_Bed</styleDef>
+            </li>
+			<li>
+                <thingDef>DoubleBed</thingDef>
+                <styleDef>AM_Flesh_DoubleBed</styleDef>
+            </li>
+			<li>
+                <thingDef>HospitalBed</thingDef>
+                <styleDef>AM_Flesh_HospitalBed</styleDef>
+            </li>
+			
+			<li>
+				<thingDef>Table1x2c</thingDef>
+				<styleDef>AM_Flesh_Table1x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x2c</thingDef>
+				<styleDef>AM_Flesh_Table2x2c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table2x4c</thingDef>
+				<styleDef>AM_Flesh_Table2x4c</styleDef>
+			</li>
+			<li>
+				<thingDef>Table3x3c</thingDef>
+				<styleDef>AM_Flesh_Table3x3c</styleDef>
+			</li>
+			<li>
+				<thingDef>StandingLamp</thingDef>
+				<styleDef>AM_Flesh_StandingLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>Stool</thingDef>
+				<styleDef>AM_Flesh_Stool</styleDef>
+			</li>
+			<li>
+				<thingDef>TorchLamp</thingDef>
+				<styleDef>AM_Flesh_TorchLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>Column</thingDef>
+				<styleDef>AM_Flesh_Column</styleDef>
+			</li>
+			<li>
+				<thingDef>Ideogram</thingDef>
+				<styleDef>AM_Flesh_IdeogramA</styleDef>
+			</li>
+			<li>
+				<thingDef>Shelf</thingDef>
+				<styleDef>AM_FleshShelf</styleDef>
+			</li>
+			<li>
+				<thingDef>ShelfSmall</thingDef>
+				<styleDef>AM_FleshShelfSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>Dresser</thingDef>
+				<styleDef>AM_FleshDresser</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>EndTable</thingDef>
+				<styleDef>AM_FleshEndTable</styleDef>
+			</li>
+			<li>
+				<thingDef>Door</thingDef>
+				<styleDef>AM_FleshDoor</styleDef>
+			</li>
+			<li>
+				<thingDef>Autodoor</thingDef>
+				<styleDef>AM_FleshAutodoor</styleDef>
+			</li>
+			<li>
+				<thingDef>Armchair</thingDef>
+				<styleDef>AM_FleshArmchair</styleDef>
+			</li>
+			<li>
+				<thingDef>DiningChair</thingDef>
+				<styleDef>AM_FleshChair</styleDef>
+			</li>
+			<li>
+				<thingDef>PlantPot</thingDef>
+				<styleDef>AM_FleshPlantPot</styleDef>
+			</li>
+			<li>
+				<thingDef>Couch</thingDef>
+				<styleDef>AM_FleshCouch</styleDef>
+			</li>
+			<li>
+				<thingDef>WallLamp</thingDef>
+				<styleDef>AM_FleshWallLamp</styleDef>
+			</li>
+			<li>
+				<thingDef>FloodLight</thingDef>
+				<styleDef>AM_FleshFloodLight</styleDef>
+			</li>
+			<li>
+				<thingDef>SunLamp</thingDef>
+				<styleDef>AM_FleshSunLamp</styleDef>
+			</li>
+			
+			
 		</thingDefStyles>
 		<addDesignators>
 			
 			<li>AM_Tile_Flesh</li>
-			
+			<li>AM_Tile_Flesh_Metal</li>
+			<li>AM_FleshSlab_Medium</li>
+			<li>AM_FleshSlab_Broad</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
