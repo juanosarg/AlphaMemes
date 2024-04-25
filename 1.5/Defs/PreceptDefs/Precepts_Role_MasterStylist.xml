@@ -6,7 +6,7 @@
 		<description>An adept at transforming the aesthetic of various objects, infusing them with fresh style and flair through skillful design alterations.</description>
 		<iconPath>UI/Roles/AM_MasterStylistRole</iconPath>
 		<nameMaker>AM_MasterStylist</nameMaker>
-
+		<createsRoleEmptyThought>False</createsRoleEmptyThought>
 		<roleTags>
 			<li>MasterStylist</li>
 		</roleTags>
