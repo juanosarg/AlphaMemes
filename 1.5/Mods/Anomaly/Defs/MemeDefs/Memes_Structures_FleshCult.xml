@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MemeDef>
+		<defName>AM_Structure_FleshCult</defName>
+		<label>flesh cult</label>
+		<description>We worship the pulsating flesh and the twisted abominations it births. Our devotees revel in the putrid embrace of decaying sinew and the writhing tendrils of fleshbeasts. Let the screams of the damned be our hymns, and the stench of decay our incense, as we embrace the primordial chaos of the flesh.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_FleshCult</iconPath>
+		<impact>0</impact>
+		<deityNameMakerOverride>AM_NamerDeityFlesh</deityNameMakerOverride>
+		<deityTypeMakerOverride>DietyTypeMakerAbrahamic</deityTypeMakerOverride>
+		<worshipRoomLabel>flesh chamber</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1</deityCount>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->bloodsoaked</li>
+				<li>memeAdjective->visceral</li>
+				<li>memeAdjective->fleshy</li>
+				<li>memeAdjective->tumorous</li>
+				<li>memeLeaderNoun->fleshprophet</li>
+				<li>memeLeaderNoun->sanguimancer</li>
+			
+				<li>memeMoralist->gorepriest</li>
+				<li>memeMoralist->tendrilith</li>
+				<li>memeMoralist->fleshbinder</li>
+				<li>memeMoralist->rotseer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_FleshDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_flesh</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>flesh cult</theme>
+				<adjective>fleshy</adjective>
+				<member>flesh devotee</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Flesh</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	
+	
+	
+</Defs>

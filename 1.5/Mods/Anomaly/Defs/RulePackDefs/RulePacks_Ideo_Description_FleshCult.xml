@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoStoryPatternDef>
+		<defName>AM_FleshDescription</defName>
+		<segments>
+			<li>fleshlessonIntro</li>
+			<li>lesson</li>
+		
+			<li>fleshlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_fleshlessonIntro] [r_lesson]. [r_fleshlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->discourse</li>
+				<li>book->sermon</li>
+				<li>book->conclave</li>
+				<li>book->congregation</li>
+				
+				<li>concept->the Blood Rites</li>
+				<li>concept->the Visceral Sacraments</li>
+				<li>concept->Sanguine Blessings</li>
+				<li>concept->Fleshbound Devotion</li>
+				<li>concept->the basics of Mangled Reverence</li>
+				<li>concept->the fundamentals of Carnal Offerings</li>
+				
+				<!-- generic intro -->
+				<li>fleshlessonIntro->Listen, you writhing masses of flesh! We gather here amidst the stench of decay and the cacophony of screams to pay homage to our undulating god! Let us revel in the symphony of agony and exalt in the divine carnage that courses through our veins! The Flesh shows us that</li>
+				<li>fleshlessonIntro->Gather 'round, you festering disciples of the flesh! Behold the pulsating altar of our depravity, where blood flows like rivers and screams echo into eternity! It will then become clear:</li>
+				<li>fleshlessonIntro->Welcome, you trembling devotees of the grotesque! As we descend into the depths of madness and embrace the putrid flesh that binds us, let us drown in the crimson tide of our devotion. It'll teach us one thing:</li>
+				<li>fleshlessonIntro->Listen, you quivering masses of sinew and bone! Here in the heart of our sacred abattoir, let us rend our flesh and tear open our souls in worship of the twisted monstrosities that dwell within! Prepare to receive their forbidden wisdom:</li>
+				<li>fleshlessonIntro->Welcome, you maddened acolytes of the macabre! As we dance upon the graves of the fallen and drink deep from the chalice of despair, let us offer our sacrificial flesh to the insatiable hunger of the inhumane. You will show everyone that</li>
+				
+				<!-- generic reinforcement -->
+				<li>fleshlessonReinforcement->As we depart, let the echoes of our unholy communion resonate within you, driving you deeper into the embrace of our fleshly god.</li>
+				<li>fleshlessonReinforcement->Go forth, disciples, and spread the gospel of the flesh. Let the world bear witness to the glorious abominations we have beheld here today.</li>
+				<li>fleshlessonReinforcement->May the writhing tendrils of our deity guide your every step, leading you further down the path of grotesque enlightenment.</li>
+				<li>fleshlessonReinforcement->With the stench of decay clinging to your skin, go forth and sow the seeds of our unholy gospel. Let our abominable faith flourish in the shadow of our divine flesh.</li>
+				<li>fleshlessonReinforcement->Until we gather again amidst the carnage and the chaos, may the grotesque blessings of our deity be upon you, binding you ever tighter to its fleshy embrace.</li>
+				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+
+  
+</Defs>

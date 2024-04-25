@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>AM_Flesh</defName>
+		<label>flesh</label>
+		<iconPath>UI/Structures/AM_FleshCult</iconPath>
+		<!--<soundOngoingRitual>AM_RitualSustainer_Cubicism</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_CubicVisuals</ritualVisualEffectDef>-->
+		<thingDefStyles>
+			
+			<li>
+				<thingDef>Wall</thingDef>
+				<styleDef>AM_Flesh_Wall</styleDef>
+			</li>
+			
+		</thingDefStyles>
+		<addDesignators>
+			
+			<li>AM_Tile_Flesh</li>
+			
+		</addDesignators>
+	</StyleCategoryDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====== Flesh ======== -->
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>AM_Flesh_Wall</defName>
+		<graphicData>
+			<texPath>Things/Building/Linked/Fleshmass_Atlas</texPath> 
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerOverlay</linkType>
+			
+			<linkFlags>
+        <li>Fleshmass</li>
+      </linkFlags>
+      <cornerOverlayPath>Things/Building/Linked/FleshmassPiece</cornerOverlayPath>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0.15, 0.15, 0.75, 0.75)</rect>
+        <scratches>
+          <li>Damage/FleshScratch1</li>
+          <li>Damage/FleshScratch2</li>
+          <li>Damage/FleshScratch3</li>
+        </scratches>
+      </damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Flesh/Wall/AM_FleshWall_Icon</uiIconPath>
+	</ThingStyleDef>
+	
+</Defs>

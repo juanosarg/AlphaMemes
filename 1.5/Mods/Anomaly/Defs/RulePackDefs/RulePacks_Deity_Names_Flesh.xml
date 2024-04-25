@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>AM_NamerDeityFlesh</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Gorefather</li>
+				<li>r_deityName->The Sinewlord</li>
+				<li>r_deityName->The Fleshtyrant</li>
+				<li>r_deityName->The Carnagebringer</li>
+				<li>r_deityName->The Rotgiver</li>
+				<li>r_deityName->The Fleshrend</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+
+	
+	
+</Defs>
