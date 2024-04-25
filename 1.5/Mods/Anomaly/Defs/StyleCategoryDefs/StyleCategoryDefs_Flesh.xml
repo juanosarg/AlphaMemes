@@ -4,8 +4,8 @@
 		<defName>AM_Flesh</defName>
 		<label>flesh</label>
 		<iconPath>UI/Structures/AM_FleshCult</iconPath>
-		<!--<soundOngoingRitual>AM_RitualSustainer_Cubicism</soundOngoingRitual>
-		<ritualVisualEffectDef>AM_CubicVisuals</ritualVisualEffectDef>-->
+		<soundOngoingRitual>AM_RitualSustainer_Flesh</soundOngoingRitual>
+		<ritualVisualEffectDef>AM_FleshVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
 			
 			<li>
