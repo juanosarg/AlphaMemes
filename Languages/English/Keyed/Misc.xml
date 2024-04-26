@@ -96,6 +96,8 @@
 	<AM_DefaultStyle>Default style</AM_DefaultStyle>
 	<AM_ChooseStyle>Choose style for this object</AM_ChooseStyle>
 	<AM_ChooseStyle_Multiple>Choose style for these objects, if available</AM_ChooseStyle_Multiple>
+	<AM_ChooseStyle_Swap_First>Choose style A, the style that will be affected by the ability</AM_ChooseStyle_Swap_First>
+	<AM_ChooseStyle_Swap_Second>Choose style B, the style that will be applied to the items</AM_ChooseStyle_Swap_Second>
 	<AM_NoStyles>No valid styles available for this object</AM_NoStyles>
 	
 	<!-- Animal Stats -->

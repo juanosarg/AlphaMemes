@@ -322,6 +322,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_RedAcidExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
+    <Compile Include="Dialogs\Dialog_ChangeStyles_Swap.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles_Area.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />

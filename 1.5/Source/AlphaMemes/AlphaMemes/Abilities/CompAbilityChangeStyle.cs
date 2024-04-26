@@ -80,9 +80,19 @@ namespace AlphaMemes
                 }
                 if (!thingsToChange.NullOrEmpty())
                 {
-                    Dialog_ChangeStyles_Area window = new Dialog_ChangeStyles_Area(thingsToChange);
-                    Find.WindowStack.Add(window);
+                    if (Props.doStyleSwap)
+                    {
+                        Dialog_ChangeStyles_Swap window = new Dialog_ChangeStyles_Swap(thingsToChange);
+                        Find.WindowStack.Add(window);
+                    }
+                    else
+                    {
+                        Dialog_ChangeStyles_Area window = new Dialog_ChangeStyles_Area(thingsToChange);
+                        Find.WindowStack.Add(window);
+
+                    }
                 }
+                
 
             }
             else

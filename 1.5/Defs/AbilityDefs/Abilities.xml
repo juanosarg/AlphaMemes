@@ -255,4 +255,34 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	<AbilityDef>
+		<defName>AM_ChangeStyle_AllMap_Swap</defName>
+		<label>swap style A with style B, map-wide</label>
+		<description>Swaps all objects in the map belonging to style A to style B, leaving all other styled objects untouched. Bear in mind that only the styles present in the colony's primary ideo can be used to swap (this can be changed in mod options to allow ALL possible styles).</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<groupDef>AM_ChangeStyle</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<targetRequired>False</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AM_ChangeStyleMapSwap</iconPath>
+		<uiOrder>3</uiOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>1</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AlphaMemes.CompProperties_AbilityChangeStyle">
+				<affectAllMap>true</affectAllMap>
+				<doStyleSwap>true</doStyleSwap>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>

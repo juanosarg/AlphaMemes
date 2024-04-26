@@ -10,6 +10,7 @@ namespace AlphaMemes
 
 		public bool affectArea = false;
 		public bool affectAllMap = false;
+		public bool doStyleSwap = false;
 		public bool randomStyle = false;
 
         public float area;

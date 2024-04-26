@@ -19,6 +19,7 @@
 			<li>AM_ChangeStyleRandom</li>
 			<li>AM_ChangeStyleRadius</li>
 			<li>AM_ChangeStyle_AllMap</li>
+			<li>AM_ChangeStyle_AllMap_Swap</li>
 		</grantedAbilities>
 		
 		
