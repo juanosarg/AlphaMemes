@@ -78,7 +78,7 @@
 		<defName>AM_Horaxian_AltarGrand</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Horaxian/Altars/AM_HoraxianAltar3x3</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
 			<shadowData>

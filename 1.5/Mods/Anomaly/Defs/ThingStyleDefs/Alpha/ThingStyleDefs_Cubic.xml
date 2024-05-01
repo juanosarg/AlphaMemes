@@ -130,7 +130,7 @@
 		<defName>AM_Cubic_AltarGrand</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Cubic/Altars/AM_CubicAltar3x3</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
 			<shadowData>
