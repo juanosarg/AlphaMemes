@@ -290,6 +290,12 @@
 				<styleDef>AM_Kemetic_TopHat</styleDef>
 			</li>
 			<li>
+				<thingDef>Apparel_PlateArmor</thingDef>
+				<styleDef>AM_Kemetic_Plate</styleDef>
+			</li>
+			
+			
+			<li>
 				<thingDef>Apparel_ArmorRecon</thingDef>
 				<styleDef>AM_Kemetic_Recon</styleDef>
 			</li>
