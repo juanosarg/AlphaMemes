@@ -10,16 +10,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RitualObligationTargetFilterDef[defName="AM_InsectoidBurialTarget"]/thingDefs</xpath>
 					<value>
-						<li>VFEI2_KemianHive</li>
-						<li>VFEI2_ChelisHive</li>
-						<li>VFEI2_XanidesHive</li>
-						<li>VFEI2_NuchadusHive</li>
-						<li>VFEI2_ArtificialBasicHive</li>
-						<li>VFEI2_ArtificialSorneHive</li>
-						<li>VFEI2_ArtificialNuchadusHive</li>
-						<li>VFEI2_ArtificialChelisHive</li>
-						<li>VFEI2_ArtificialKemianHive</li>
-						<li>VFEI2_ArtificialXanidesHive</li>
+						<li>VFEI_LargeHive</li>
 					</value>
 				</li>		
 			</operations>
