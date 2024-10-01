@@ -58,8 +58,7 @@ namespace AlphaMemes
 
                         } else if (dinfo.Weapon?.IsMeleeWeapon == true || dinfo.Weapon?.IsNaturalOrgan == true)
                         {
-                            System.Random random = new System.Random();
-                            if (random.NextDouble() < 0.2)
+                            if (Rand.Value < 0.2)
                             {
 
                                 DamageInfo dinfo2 = dinfo;

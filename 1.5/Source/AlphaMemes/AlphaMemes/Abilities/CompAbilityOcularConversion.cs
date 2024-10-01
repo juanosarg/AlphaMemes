@@ -8,8 +8,6 @@ namespace AlphaMemes
 {
     public class CompAbilityOcularConversion : CompAbilityEffect
     {
-        private System.Random rand = new System.Random();
-
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
         {
             bool alphaAnimalsFound = DefDatabase<ThingDef>.GetNamedSilentFail("AA_AlienTree") != null;
@@ -71,21 +69,22 @@ namespace AlphaMemes
                                && (plantTarget.def.defName != "AA_AlienGrass") && (plantTarget.def.defName != "AA_RedLeaves") && (plantTarget.def.defName != "AA_RedPlantsTall") && (plantTarget.def.defName != "Plant_GrassAnima")
                                )
                             {
-                                if (rand.NextDouble() < 0.4)
+                                var value = Rand.Value;
+                                if (value < 0.4)
                                 {
                                     Plant thing2 = (Plant)GenSpawn.Spawn(grassDef, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
                                     Plant thingToDestroy = (Plant)plantTarget;
                                     thing2.Growth = thingToDestroy.Growth;
                                     plantTarget.Destroy();
                                 }
-                                else if (rand.NextDouble() > 0.4 && rand.NextDouble() < 0.7)
+                                else if (value < 0.7)
                                 {
                                     Plant thing2 = (Plant)GenSpawn.Spawn(plant1Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
                                     Plant thingToDestroy = (Plant)plantTarget;
                                     thing2.Growth = thingToDestroy.Growth;
                                     plantTarget.Destroy();
                                 }
-                                else if (rand.NextDouble() > 0.7)
+                                else
                                 {
                                     Plant thing2 = (Plant)GenSpawn.Spawn(plant2Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
                                     Plant thingToDestroy = (Plant)plantTarget;

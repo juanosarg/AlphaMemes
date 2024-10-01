@@ -55,8 +55,7 @@ namespace AlphaMemes
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.InRandomOrder())
                     {
-                        System.Random random = new System.Random(Current.Game.tickManager.TicksAbs + PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.IndexOf(pawn));
-                        int randomMood = random.Next(0, 9);
+                        int randomMood = Rand.RangeSeeded(0, 9, Current.Game.tickManager.TicksAbs + PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.IndexOf(pawn));
                         StaticCollectionsClass.AddColonistRandomMood(pawn, randomMood);
 
 
