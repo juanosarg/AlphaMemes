@@ -46,7 +46,7 @@ namespace AlphaMemes
         public override void ExposeData()
         {
             base.ExposeData();
-			Scribe_Collections.Look(ref corpseOffset, "corpeOffset",LookMode.Value,LookMode.Value,ref tmpThingDefs,ref tmpVec3);
+			Scribe_Collections.Look(ref corpseOffset, "corpeOffset",LookMode.Def,LookMode.Value,ref tmpThingDefs,ref tmpVec3);
 			Scribe_Deep.Look(ref pawnPosition, "pawnPosition");
         }
 		public Dictionary<ThingDef,IntVec3> corpseOffset = new Dictionary<ThingDef,IntVec3>();
