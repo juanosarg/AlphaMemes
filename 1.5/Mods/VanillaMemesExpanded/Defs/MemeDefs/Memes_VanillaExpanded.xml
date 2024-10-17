@@ -6,6 +6,7 @@
 		<description>We are committed to bringing about a world of peace, harmony, laughter, and love. We take this vow to be nonviolent in our thoughts, our speech, and our actions.\n\n&lt;color=#33d733&gt;This is a very challenging meme, as ALL colonists of this ideoligion will be incapable of combat, and can only defend themselves in three ways: traps, turrets, and having a multi-ideo colony with some "defenders" who don't share the same values.&lt;/color&gt;\n\nOskar quote: "please no xd this is actually game breaking".</description>
 		<iconPath>UI/Memes/AM_NonViolence</iconPath>
 		<groupDef>Misc</groupDef>
+		<randomizationSelectionWeightFactor >0</randomizationSelectionWeightFactor>
 		<exclusionTags>
 			<li>VME_TooViolent</li>
 			<li>VME_PacifistsNotViolentConverters</li>
