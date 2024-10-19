@@ -25,13 +25,9 @@ namespace AlphaMemes
             Thing thing = target.Thing;
            
             CompPowerTrader compPowerTrader = thing.TryGetComp<CompPowerTrader>();
-			if (compPowerTrader != null)
+			if (compPowerTrader != null && !compPowerTrader.PowerOn)
 			{
-				if (compPowerTrader.PowerNet == null || !compPowerTrader.PowerNet.HasActivePowerSource)
-				{
-                    return "Funeral_NeedsPower".Translate(target.Thing.def.label);
-                    
-                }				
+                return "Funeral_NeedsPower".Translate(target.Thing.def.label);
 			}
             
             return true;
