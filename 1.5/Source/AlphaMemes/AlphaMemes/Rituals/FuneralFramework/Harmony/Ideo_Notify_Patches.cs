@@ -45,28 +45,16 @@ namespace AlphaMemes
             {
                 if (Find.IdeoManager.classicMode) { return true;}
 
-                LordJob_Ritual_FuneralFramework lordJob = null;
-                Map map = Find.CurrentMap;
-                if(map == null) { return true; }//Turns out this can get called when map doesnt exist yet. At least character editor did it while loading a saved pawn...
-                var lord = map.lordManager.lords.FirstOrDefault(x => x.LordJob is LordJob_Ritual_FuneralFramework);
-                if(lord != null)
+                if (!Find.Maps.NullOrEmpty())
                 {
-                    lordJob = lord.LordJob as LordJob_Ritual_FuneralFramework;
-                    if(lordJob.corpse == member)
+                    foreach (var map in Find.Maps)
                     {
-                        return false;
+                        var lordJob = map.lordManager.lords.Select(x => x.LordJob).OfType<LordJob_Ritual_FuneralFramework>().FirstOrDefault();
+                        if(lordJob?.corpse == member)
+                        {
+                            return false;
+                        }
                     }
-                }
-                List<Precept_Ritual> rituals = __instance.GetAllPreceptsOfType<Precept_Ritual>().ToList();
-                if (rituals.Where(x => x.def.HasModExtension<FuneralPreceptExtension>()).Any(x => x.def.GetModExtension<FuneralPreceptExtension>().addNoCorpseFuneral))
-                {
-                    var noCorpse = rituals.FirstOrDefault(x => x.def.defName == "AM_FuneralNoCorpse");
-                    if (noCorpse != null)
-                    {
-                        noCorpse.obligationTriggers.First().Notify_MemberCorpseDestroyed(member);
-                        return false;
-                    }
-
                 }
                 return true;
             }

@@ -31,7 +31,7 @@
 			<label>insectoid herder</label>
 			<id>insectoidHerder</id>
 			<precept>IdeoRole_Moralist</precept>
-			<tag>InsectoidHerder</tag>
+			<tag>Moralist</tag>
 			<maxCount>1</maxCount>
 			<substitutable>false</substitutable>
 			<required>True</required>

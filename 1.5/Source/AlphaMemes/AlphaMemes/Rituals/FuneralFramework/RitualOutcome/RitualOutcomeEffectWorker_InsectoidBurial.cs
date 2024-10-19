@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,23 +55,70 @@ namespace AlphaMemes
                         faction = null;
                     }
                 }
-                List<PawnKindDef> insects;
+                List<PawnKindDef> insects = null;
                 //If the ritual thing has a spawnablePawnKinds use that
-                //Access tools to give better compatability then is Hive (Or at least Alpha Animals/VFEI has the exact same field so it adds compat for that. No idea about other mod hives)
+                //Access tools to give better compatability then is Hive (Or at least Alpha Animals/VFEI-1 has the exact same field so it adds compat for that. No idea about other mod hives)
                 //They would also need a patch operation anyway to make work with ritual so \o/
                 FieldInfo info = AccessTools.Field(ritualThing.GetType(), "spawnablePawnKinds");
-                if(info != null)
+                if (info != null && !info.IsStatic)
                 {
-                    //This is because some hives dont expose their data
+                    //This is because some hives don't expose their data
                     MethodInfo method = AccessTools.Method(ritualThing.GetType(), "ResetStaticData");
-                    if(method != null)
+                    if (method != null && !method.IsStatic && method.GetParameters().Length == 0)
                     {
-                        method.Invoke(ritualThing,new object[]{});
+                        method.Invoke(ritualThing, Array.Empty<object>());
                     }
-                    insects = info.GetValue(ritualThing) as List<PawnKindDef>;
-                    insects.RemoveAll(x=>x.combatPower >= combatPower);
+
+                    if (info.GetValue(ritualThing) is List<PawnKindDef> list)
+                    {
+                        insects = list.Where(x => x.combatPower <= combatPower).ToList();
+                    }
                 }
-                else
+                // Handle vanilla CompSpawnerPawn and possible subtypes
+                CompSpawnerPawn comp = ritualThing.TryGetComp<CompSpawnerPawn>();
+                if(insects.NullOrEmpty() && comp?.props is CompProperties_SpawnerPawn props)
+                {
+                    // VFE-I2 compat. The mod stores the pawns in an insectTypes field, but uses
+                    // its own type to store PawnKindDef and the type of the insectoid. This
+                    // getter will only get all the defs without the types.
+                    var method = AccessTools.PropertyGetter(comp.GetType(), "AllAvailableInsects");
+                    if (method != null && !method.IsStatic && method.Invoke(comp, Array.Empty<object>()) is List<PawnKindDef> list)
+                    {
+                        insects = list.Where(x => x.combatPower <= combatPower).ToList();
+                    }
+                    // Handle vanilla hives with VFE-I2, as it has a custom insect hive
+                    // comp (CompInsectSpawner) that it replaces the vanilla comp with.
+                    var field = AccessTools.Field(props.GetType(), "geneline");
+                    if (field != null && !field.IsStatic && field.GetValue(props) is Def genelineDef)
+                    {
+                        field = AccessTools.Field(genelineDef.GetType(), "insects");
+                        if (field != null && !field.IsStatic && field.GetValue(genelineDef) is IList possibleInsects && possibleInsects.Count > 0)
+                        {
+                            field = AccessTools.Field(possibleInsects[0].GetType(), "kind");
+                            if (field != null && !field.IsStatic && field.FieldType == typeof(PawnKindDef))
+                            {
+                                insects = new List<PawnKindDef>();
+                                foreach (var insect in possibleInsects)
+                                {
+                                    // Prevent queens, as the mod does not allow the hives to spawn them
+                                    if (field.GetValue(insect) is PawnKindDef def && def.combatPower <= combatPower && def.defName != "VFEI2_Queen")
+                                    {
+                                        insects.Add(def);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Handle the vanilla hives/spawners that aren't using VFE-I2 comp.
+                    // In case it's VFE-I2 hive, but has no specified pawns - attempt to use vanilla field.
+                    if (insects.NullOrEmpty())
+                    {
+                        insects = props.spawnablePawnKinds.Where(x => x.combatPower <= combatPower).ToList();
+                    }
+                }
+                // A fallback if the thing does not have supported PawnKindDef list
+                if (insects.NullOrEmpty())
                 {
                     //Has genders is to filter out VFE Insect vat grown. LifeStages is so its only things that have a larve form
                     insects = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Insect && x.RaceProps.hasGenders
@@ -78,15 +126,12 @@ namespace AlphaMemes
                 }
                 if (!insects.NullOrEmpty())
                 {
-                    PawnKindDef insectKind = insects.RandomElementByWeight(delegate (PawnKindDef x)
+                    PawnKindDef insectKind = insects.RandomElementByWeight(x => GetWeight(x, x.combatPower / combatPower));
+                    PawnGenerationRequest request = new PawnGenerationRequest(insectKind)
                     {
-                        return GetWeight(x, x.combatPower / combatPower);
-                    });
-                    PawnGenerationRequest request = new PawnGenerationRequest()
-                    {
-                        KindDef = insectKind,
                         Faction = faction,
                         AllowedDevelopmentalStages = DevelopmentalStage.Newborn,
+                        Context = PawnGenerationContext.NonPlayer,
                     };
                     Pawn insect = PawnGenerator.GeneratePawn(request);
                     GenSpawn.Spawn(insect, jobRitual.selectedTarget.Cell, jobRitual.Map);

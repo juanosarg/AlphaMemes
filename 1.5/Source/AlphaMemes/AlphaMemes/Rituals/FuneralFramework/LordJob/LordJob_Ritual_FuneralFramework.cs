@@ -93,7 +93,7 @@ namespace AlphaMemes
 		}
 		protected override bool ShouldCallOffBecausePawnNoLongerOwned(Pawn p)
         {
-            return !(p == corpse);
+            return p != corpse;
         }
 
         public override void ExposeData()

@@ -232,7 +232,7 @@ namespace AlphaMemes
             base.Cleanup(ritual);
             if (deregisteredCorpse)
             {
-                if(!corpse.Corpse?.Bugged ?? false && !ritual.Map.dynamicDrawManager.DrawThings.Contains(corpse.Corpse))
+                if((!corpse.Corpse?.Bugged ?? false) && !ritual.Map.dynamicDrawManager.DrawThings.Contains(corpse.Corpse))
                 {
                     ritual.Map.dynamicDrawManager.RegisterDrawable(corpse.Corpse);
                 }                  
