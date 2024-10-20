@@ -60,7 +60,7 @@ namespace AlphaMemes
             tmpDryads.Clear();
             for (int i = 0; i < dryads.Count; i++)
             {
-                if (dryads[i].kindDef == PawnKindDef.Named("AA_Dryad_Corruptor"))
+                if (dryads[i].kindDef == PawnKindDef.Named("AM_Dryad_Corruptor"))
                 {
                     tmpDryads.Add(dryads[i]);
                 }

@@ -1,0 +1,1473 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\comps\\compcorruptedpod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\comps\\compcorruptedpod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\ai\\jobgiver_mergeintogaumakerpodcorruptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\ai\\jobgiver_mergeintogaumakerpodcorruptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\staticcollectionsclass\\staticcollectionsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\staticcollectionsclass\\staticcollectionsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\dialogs\\dialog_changestyles_swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\dialogs\\dialog_changestyles_swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\dialogs\\dialog_changestyles_area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\dialogs\\dialog_changestyles_area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilitychangestyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilitychangestyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\properties\\compproperties_abilitychangestyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\properties\\compproperties_abilitychangestyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\dialogs\\dialog_animaldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\dialogs\\dialog_animaldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\dialogs\\dialog_changestyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\dialogs\\dialog_changestyles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\dialog_beginritual_calculatepawnportraiticons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\dialog_beginritual_calculatepawnportraiticons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilityfinishconstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilityfinishconstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\pawncapacityutility_calculatecapacitylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\pawncapacityutility_calculatecapacitylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\building_warcasketfoundry_occupantaliveandpresent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\building_warcasketfoundry_occupantaliveandpresent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\building_warcasketfoundry_draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\building_warcasketfoundry_draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\recipeworker_warcasketremoval_availableonnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\vfeppatches\\recipeworker_warcasketremoval_availableonnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\dialog_beginritual_dowindowcontents_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\dialog_beginritual_dowindowcontents_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\dialog_beginritual_blockingissues_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\dialog_beginritual_blockingissues_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AlphaMemes||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\ocularwarping\\ritualoutcomeeffectworker_warping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\ocularwarping\\ritualoutcomeeffectworker_warping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_corruptgauranlen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_corruptgauranlen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\mapcomponents and gamecomponents\\mapcomponent_dryadtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\mapcomponents and gamecomponents\\mapcomponent_dryadtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilityocularconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilityocularconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thingsetmakers\\thingsetmaker_eyelings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thingsetmakers\\thingsetmaker_eyelings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\ocularwarping\\ritualstage_interactwithdryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\ocularwarping\\ritualstage_interactwithdryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\ocularwarping\\ritualstage_interactwithanimalnotdryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\ocularwarping\\ritualstage_interactwithanimalnotdryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\ocularwarping\\ritualroledryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\ocularwarping\\ritualroledryad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\comps\\compgauranlengrassgraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\comps\\compgauranlengrassgraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\comps\\properties\\compproperties_gauranlengrassgraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\comps\\properties\\compproperties_gauranlengrassgraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\comps\\compgauranlengraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\comps\\compgauranlengraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\comps\\properties\\compproperties_gauranlengraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\comps\\properties\\compproperties_gauranlengraphicchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\deathactionworkers\\deathactionworker_redacidexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\deathactionworkers\\deathactionworker_redacidexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\pawn classes\\pawn_detonator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\pawn classes\\pawn_detonator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilityconvertstone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilityconvertstone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\ai\\jobdriver_mergeintocorruptedpod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\ai\\jobdriver_mergeintocorruptedpod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughts\\thoughtworker_oculartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughts\\thoughtworker_oculartrees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilitypsychicdeathknell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilitypsychicdeathknell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\compabilityanalyzecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\compabilityanalyzecreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\abilities\\properties\\compproperties_abilityocularconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\abilities\\properties\\compproperties_abilityocularconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughts\\thought_reliquaries_forbidden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughts\\thought_reliquaries_forbidden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\genconstruct_canconstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\genconstruct_canconstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\tantrum\\ritualoutcomecomp_tantrumdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\tantrum\\ritualoutcomecomp_tantrumdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualactions\\ritualstageaction_insectoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualactions\\ritualstageaction_insectoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\ritualroleassignments_fillpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\ritualroleassignments_fillpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\lordjob_ritual_notifyaddedtolord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\lordjob_ritual_notifyaddedtolord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\comp\\comp_ffcontainsmulti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\comp\\comp_ffcontainsmulti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\utils\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\utils\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_insectoidburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_insectoidburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeraldreadnought.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeraldreadnought.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\tantrum\\ritualoutcomecomp_tantrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\tantrum\\ritualoutcomecomp_tantrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_ocularburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_ocularburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_fleshcrafting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_fleshcrafting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_psykerlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_psykerlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_psychicsensitivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_psychicsensitivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_crafter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_crafter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_distancefrombuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\outcomecomp\\ritualoutcomecomp_distancefrombuildings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ingestestionoutcomedoer_addmoodrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ingestestionoutcomedoer_addmoodrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\harmony\\ritualroleassignments_exposedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\harmony\\ritualroleassignments_exposedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\buildings\\building_skyburialspot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\buildings\\building_skyburialspot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\tantrum\\ritualoutcomeeffectworker_tantrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\tantrum\\ritualoutcomeeffectworker_tantrum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\buildings\\building_rumvat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\buildings\\building_rumvat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_rumburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_rumburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_pyramidburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_pyramidburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\scrapper\\ritualoutcomeeffectworker_scrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\scrapper\\ritualoutcomeeffectworker_scrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_skyburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_skyburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeralframework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeralblastoff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_funeralblastoff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_animaburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\ritualoutcomeeffectworker_animaburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\thingtospawn\\funeralframework_thingtospawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\thingtospawn\\funeralframework_thingtospawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\mapcomponents and gamecomponents\\gamecomponent_prefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\mapcomponents and gamecomponents\\gamecomponent_prefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_rumburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_rumburial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualtargetworker\\corpsefilters\\ritualobligationtargetworker_freshcorpse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualtargetworker\\corpsefilters\\ritualobligationtargetworker_freshcorpse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_funeralframeworkdreadnought.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualbehavior\\ritualbehaviorworker_funeralframeworkdreadnought.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualtargetworker\\ritualobligationtargetworker_funeralthingextended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualtargetworker\\ritualobligationtargetworker_funeralthingextended.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\funeralframework\\ritualoutcome\\thingtospawn\\funeralframework_thingtospawnpaste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\funeralframework\\ritualoutcome\\thingtospawn\\funeralframework_thingtospawnpaste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughts\\thought_megaliths_desired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughts\\thought_megaliths_desired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\tradedeal_tryexecute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\tradedeal_tryexecute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughts\\thought_animalanalysis_expected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughts\\thought_animalanalysis_expected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\mapcomponents and gamecomponents\\gamecomponent_randommood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\mapcomponents and gamecomponents\\gamecomponent_randommood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\ritualroleassignments_pawnnotassignablereason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\ritualroleassignments_pawnnotassignablereason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughts\\thought_mood_volatile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughts\\thought_mood_volatile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\basegenutility_tryrandominexpensivefloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\basegenutility_tryrandominexpensivefloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\floatmenumakermap_addhumanlikeorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\floatmenumakermap_addhumanlikeorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\sketchgenutility_playercanbuildnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\sketchgenutility_playercanbuildnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_RelicDestruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_MaddeningChant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompAbilityChangeStyle.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityChangeStyle.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityChangeStyle.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityChangeStyle.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityChangeStyle.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAABBwFUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Building_WarcasketFoundry_OccupantAliveAndPresent.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_OccupantAliveAndPresent.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_OccupantAliveAndPresent.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_OccupantAliveAndPresent.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_OccupantAliveAndPresent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dialog_ChangeStyles.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles.cs",
+              "RelativeToolTip": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaticCollectionsClass.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollectionsClass\\StaticCollectionsClass.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\StaticCollectionsClass\\StaticCollectionsClass.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollectionsClass\\StaticCollectionsClass.cs",
+              "RelativeToolTip": "AlphaMemes\\StaticCollectionsClass\\StaticCollectionsClass.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobGiver_MergeIntoGaumakerPodCorruptor.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AI\\JobGiver_MergeIntoGaumakerPodCorruptor.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\AI\\JobGiver_MergeIntoGaumakerPodCorruptor.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AI\\JobGiver_MergeIntoGaumakerPodCorruptor.cs",
+              "RelativeToolTip": "AlphaMemes\\AI\\JobGiver_MergeIntoGaumakerPodCorruptor.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAD4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompCorruptedPod.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompCorruptedPod.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Comps\\CompCorruptedPod.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompCorruptedPod.cs",
+              "RelativeToolTip": "AlphaMemes\\Comps\\CompCorruptedPod.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwE0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Building_WarcasketFoundry_Draw.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_Draw.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_Draw.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_Draw.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\Building_WarcasketFoundry_Draw.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dialog_ChangeStyles_Area.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Area.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Area.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Area.cs",
+              "RelativeToolTip": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Area.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dialog_ChangeStyles_Swap.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Swap.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Swap.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Swap.cs",
+              "RelativeToolTip": "AlphaMemes\\Dialogs\\Dialog_ChangeStyles_Swap.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAABBwK0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompProperties_AbilityChangeStyle.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityChangeStyle.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityChangeStyle.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityChangeStyle.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityChangeStyle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompAbilityFinishConstruction.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityFinishConstruction.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityFinishConstruction.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityFinishConstruction.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityFinishConstruction.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAABBwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dialog_AnimalDatabase.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_AnimalDatabase.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Dialogs\\Dialog_AnimalDatabase.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Dialogs\\Dialog_AnimalDatabase.cs",
+              "RelativeToolTip": "AlphaMemes\\Dialogs\\Dialog_AnimalDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HarmonyInstance.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\HarmonyInstance.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\HarmonyInstance.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\HarmonyInstance.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\HarmonyInstance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PawnCapacityUtility_CalculateCapacityLevel.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\PawnCapacityUtility_CalculateCapacityLevel.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\PawnCapacityUtility_CalculateCapacityLevel.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\PawnCapacityUtility_CalculateCapacityLevel.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\PawnCapacityUtility_CalculateCapacityLevel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RecipeWorker_WarcasketRemoval_AvailableOnNow.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\RecipeWorker_WarcasketRemoval_AvailableOnNow.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\RecipeWorker_WarcasketRemoval_AvailableOnNow.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\RecipeWorker_WarcasketRemoval_AvailableOnNow.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\VFEPPatches\\RecipeWorker_WarcasketRemoval_AvailableOnNow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dialog_BeginRitual_CalculatePawnPortraitIcons.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_CalculatePawnPortraitIcons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RitualOutcomeEffectWorker_Warping.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualOutcomeEffectWorker_Warping.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\OcularWarping\\RitualOutcomeEffectWorker_Warping.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualOutcomeEffectWorker_Warping.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\OcularWarping\\RitualOutcomeEffectWorker_Warping.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAABBwEkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ThingSetMaker_Eyelings.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\ThingSetMakers\\ThingSetMaker_Eyelings.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\ThingSetMakers\\ThingSetMaker_Eyelings.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\ThingSetMakers\\ThingSetMaker_Eyelings.cs",
+              "RelativeToolTip": "AlphaMemes\\ThingSetMakers\\ThingSetMaker_Eyelings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RitualOutcomeComp_CorruptGauranlen.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_CorruptGauranlen.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_CorruptGauranlen.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_CorruptGauranlen.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_CorruptGauranlen.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAABBwB0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dialog_BeginRitual_BlockingIssues_Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Dialog_BeginRitual_BlockingIssues_Patch.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\Dialog_BeginRitual_BlockingIssues_Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Dialog_BeginRitual_BlockingIssues_Patch.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\Dialog_BeginRitual_BlockingIssues_Patch.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwBoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dialog_BeginRitual_DoWindowContents_Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_DoWindowContents_Patch.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_DoWindowContents_Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_DoWindowContents_Patch.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\Dialog_BeginRitual_DoWindowContents_Patch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InternalDefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\DefOfs\\InternalDefOf.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\DefOfs\\InternalDefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\DefOfs\\InternalDefOf.cs",
+              "RelativeToolTip": "AlphaMemes\\DefOfs\\InternalDefOf.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwHwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RitualStage_InteractWithAnimalNotDryad.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithAnimalNotDryad.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithAnimalNotDryad.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithAnimalNotDryad.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithAnimalNotDryad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AlphaMemes",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+              "RelativeDocumentMoniker": "AlphaMemes\\AlphaMemes.csproj",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+              "RelativeToolTip": "AlphaMemes\\AlphaMemes.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-10T08:47:55.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RitualStage_InteractWithDryad.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithDryad.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithDryad.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithDryad.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\OcularWarping\\RitualStage_InteractWithDryad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MapComponent_DryadTracker.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\MapComponent_DryadTracker.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and GameComponents\\MapComponent_DryadTracker.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\MapComponent_DryadTracker.cs",
+              "RelativeToolTip": "AlphaMemes\\MapComponents and GameComponents\\MapComponent_DryadTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RitualRoleDryad.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualRoleDryad.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\OcularWarping\\RitualRoleDryad.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\OcularWarping\\RitualRoleDryad.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\OcularWarping\\RitualRoleDryad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CompAbilityOcularConversion.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityOcularConversion.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityOcularConversion.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityOcularConversion.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityOcularConversion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CompGauranlenGrassGraphicChanger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompGauranlenGrassGraphicChanger.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Comps\\CompGauranlenGrassGraphicChanger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompGauranlenGrassGraphicChanger.cs",
+              "RelativeToolTip": "AlphaMemes\\Comps\\CompGauranlenGrassGraphicChanger.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAABBwCkAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CompProperties_GauranlenGrassGraphicChanger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGrassGraphicChanger.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGrassGraphicChanger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGrassGraphicChanger.cs",
+              "RelativeToolTip": "AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGrassGraphicChanger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CompGauranlenGraphicChanger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompGauranlenGraphicChanger.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Comps\\CompGauranlenGraphicChanger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompGauranlenGraphicChanger.cs",
+              "RelativeToolTip": "AlphaMemes\\Comps\\CompGauranlenGraphicChanger.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAABBwCgAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CompProperties_GauranlenGraphicChanger.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGraphicChanger.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGraphicChanger.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGraphicChanger.cs",
+              "RelativeToolTip": "AlphaMemes\\Comps\\Properties\\CompProperties_GauranlenGraphicChanger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DeathActionWorker_RedAcidExplosion.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\DeathActionWorkers\\DeathActionWorker_RedAcidExplosion.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\DeathActionWorkers\\DeathActionWorker_RedAcidExplosion.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\DeathActionWorkers\\DeathActionWorker_RedAcidExplosion.cs",
+              "RelativeToolTip": "AlphaMemes\\DeathActionWorkers\\DeathActionWorker_RedAcidExplosion.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwB0AAADJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Pawn_Detonator.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Pawn Classes\\Pawn_Detonator.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Pawn Classes\\Pawn_Detonator.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Pawn Classes\\Pawn_Detonator.cs",
+              "RelativeToolTip": "AlphaMemes\\Pawn Classes\\Pawn_Detonator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CompAbilityConvertStone.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityConvertStone.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityConvertStone.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityConvertStone.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityConvertStone.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "JobDriver_MergeIntoCorruptedPod.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AI\\JobDriver_MergeIntoCorruptedPod.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\AI\\JobDriver_MergeIntoCorruptedPod.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AI\\JobDriver_MergeIntoCorruptedPod.cs",
+              "RelativeToolTip": "AlphaMemes\\AI\\JobDriver_MergeIntoCorruptedPod.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CompAbilityAnalyzeCreature.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityAnalyzeCreature.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityAnalyzeCreature.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityAnalyzeCreature.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityAnalyzeCreature.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ThoughtWorker_OcularTrees.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\ThoughtWorker_OcularTrees.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Thoughts\\ThoughtWorker_OcularTrees.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\ThoughtWorker_OcularTrees.cs",
+              "RelativeToolTip": "AlphaMemes\\Thoughts\\ThoughtWorker_OcularTrees.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CompProperties_AbilityOcularConversion.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityOcularConversion.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityOcularConversion.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityOcularConversion.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\Properties\\CompProperties_AbilityOcularConversion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CompAbilityPsychicDeathKnell.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityPsychicDeathKnell.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Abilities\\CompAbilityPsychicDeathKnell.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Abilities\\CompAbilityPsychicDeathKnell.cs",
+              "RelativeToolTip": "AlphaMemes\\Abilities\\CompAbilityPsychicDeathKnell.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Thought_Reliquaries_Forbidden.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Reliquaries_Forbidden.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Thoughts\\Thought_Reliquaries_Forbidden.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Reliquaries_Forbidden.cs",
+              "RelativeToolTip": "AlphaMemes\\Thoughts\\Thought_Reliquaries_Forbidden.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RitualOutcomeComp_TantrumData.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_TantrumData.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_TantrumData.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_TantrumData.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_TantrumData.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABEAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RitualBehaviorWorker_FuneralFramework.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFramework.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFramework.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFramework.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFramework.cs",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAAACMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GenConstruct_CanConstruct.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\GenConstruct_CanConstruct.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\GenConstruct_CanConstruct.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\GenConstruct_CanConstruct.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\GenConstruct_CanConstruct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RitualStageAction_Insectoid.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualActions\\RitualStageAction_Insectoid.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualActions\\RitualStageAction_Insectoid.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualActions\\RitualStageAction_Insectoid.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualActions\\RitualStageAction_Insectoid.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RitualRoleAssignments_FillPawns.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_FillPawns.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_FillPawns.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_FillPawns.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_FillPawns.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAADAAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RitualOutcomeComp_FuneralFramework.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_FuneralFramework.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_FuneralFramework.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_FuneralFramework.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_FuneralFramework.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "LordJob_Ritual_NotifyAddedToLord.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\LordJob_Ritual_NotifyAddedToLord.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\LordJob_Ritual_NotifyAddedToLord.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\LordJob_Ritual_NotifyAddedToLord.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\LordJob_Ritual_NotifyAddedToLord.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAC8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Comp_FFContainsMulti.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Comp\\Comp_FFContainsMulti.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Comp\\Comp_FFContainsMulti.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Comp\\Comp_FFContainsMulti.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Comp\\Comp_FFContainsMulti.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAAAIoAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Utils\\Utils.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Utils\\Utils.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Utils\\Utils.cs",
+              "RelativeToolTip": "AlphaMemes\\Utils\\Utils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RitualOutcomeEffectWorker_InsectoidBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_InsectoidBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_InsectoidBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_InsectoidBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_InsectoidBurial.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAK0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RitualOutcomeEffectWorker_OcularBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_OcularBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_OcularBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_OcularBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_OcularBurial.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAE0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RitualOutcomeEffectWorker_FuneralDreadnought.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralDreadnought.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralDreadnought.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralDreadnought.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralDreadnought.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RitualOutcomeComp_Tantrum.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_Tantrum.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_Tantrum.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_Tantrum.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeComp_Tantrum.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RitualOutcomeEffectWorker_Fleshcrafting.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_Fleshcrafting.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_Fleshcrafting.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_Fleshcrafting.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_Fleshcrafting.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RitualOutcomeComp_PsykerLevel.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsykerLevel.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsykerLevel.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsykerLevel.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsykerLevel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RitualOutcomeComp_PsychicSensitivity.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsychicSensitivity.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsychicSensitivity.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsychicSensitivity.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_PsychicSensitivity.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RitualOutcomeComp_Crafter.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_Crafter.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_Crafter.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_Crafter.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_Crafter.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "RitualOutcomeComp_DistanceFromBuildings.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_DistanceFromBuildings.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_DistanceFromBuildings.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_DistanceFromBuildings.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\OutcomeComp\\RitualOutcomeComp_DistanceFromBuildings.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "RitualRoleAssignments_ExposeData.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_ExposeData.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_ExposeData.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_ExposeData.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Harmony\\RitualRoleAssignments_ExposeData.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Building_SkyBurialSpot.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_SkyBurialSpot.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_SkyBurialSpot.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_SkyBurialSpot.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_SkyBurialSpot.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "RitualOutcomeEffectWorker_Tantrum.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeEffectWorker_Tantrum.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeEffectWorker_Tantrum.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeEffectWorker_Tantrum.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\Tantrum\\RitualOutcomeEffectWorker_Tantrum.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Building_RumVat.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_RumVat.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_RumVat.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_RumVat.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\Buildings\\Building_RumVat.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "RitualOutcomeEffectWorker_PyramidBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_PyramidBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_PyramidBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_PyramidBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_PyramidBurial.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABcAAACfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IngestestionOutcomeDoer_AddMoodRum.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\IngestestionOutcomeDoer_AddMoodRum.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\IngestestionOutcomeDoer_AddMoodRum.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\IngestestionOutcomeDoer_AddMoodRum.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\IngestestionOutcomeDoer_AddMoodRum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "RitualOutcomeEffectWorker_Scrapper.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Scrapper\\RitualOutcomeEffectWorker_Scrapper.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\Scrapper\\RitualOutcomeEffectWorker_Scrapper.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Scrapper\\RitualOutcomeEffectWorker_Scrapper.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\Scrapper\\RitualOutcomeEffectWorker_Scrapper.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAhwBkAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "RitualOutcomeEffectWorker_RumBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_RumBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_RumBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_RumBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_RumBurial.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABsAAACxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "RitualOutcomeEffectWorker_RelicDestruction.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_RelicDestruction.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_RelicDestruction.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAhwCMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T10:09:11.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "RitualOutcomeEffectWorker_MaddeningChant.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_MaddeningChant.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\15AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Outcomes\\RitualOutcomeEffectWorker_MaddeningChant.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAhwCQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T10:09:11.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "RitualOutcomeEffectWorker_FuneralBlastOff.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralBlastOff.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralBlastOff.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralBlastOff.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralBlastOff.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAhwEYAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "RitualOutcomeEffectWorker_SkyBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_SkyBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_SkyBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_SkyBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_SkyBurial.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAhwC8AAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "RitualOutcomeEffectWorker_FuneralFramework.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralFramework.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralFramework.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralFramework.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_FuneralFramework.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAhwH8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "RitualOutcomeEffectWorker_AnimaBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_AnimaBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_AnimaBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_AnimaBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\RitualOutcomeEffectWorker_AnimaBurial.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAhwEkAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "FuneralFramework_ThingToSpawn.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawn.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawn.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawn.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawn.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAAAKcAAACWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "RitualObligationTargetWorker_FreshCorpse.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\CorpseFilters\\RitualObligationTargetWorker_FreshCorpse.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\CorpseFilters\\RitualObligationTargetWorker_FreshCorpse.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\CorpseFilters\\RitualObligationTargetWorker_FreshCorpse.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\CorpseFilters\\RitualObligationTargetWorker_FreshCorpse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "RitualBehaviorWorker_RumBurial.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_RumBurial.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_RumBurial.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_RumBurial.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_RumBurial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "GameComponent_Prefabs.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\GameComponent_Prefabs.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and GameComponents\\GameComponent_Prefabs.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\GameComponent_Prefabs.cs",
+              "RelativeToolTip": "AlphaMemes\\MapComponents and GameComponents\\GameComponent_Prefabs.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAFAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "RitualObligationTargetWorker_FuneralThingExtended.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\RitualObligationTargetWorker_FuneralThingExtended.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\RitualObligationTargetWorker_FuneralThingExtended.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\RitualObligationTargetWorker_FuneralThingExtended.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualTargetWorker\\RitualObligationTargetWorker_FuneralThingExtended.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "RitualBehaviorWorker_FuneralFrameworkDreadnought.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualBehavior\\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "FuneralFramework_ThingToSpawnPaste.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawnPaste.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawnPaste.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawnPaste.cs",
+              "RelativeToolTip": "AlphaMemes\\Rituals\\FuneralFramework\\RitualOutcome\\ThingToSpawn\\FuneralFramework_ThingToSpawnPaste.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "TradeDeal_TryExecute.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\TradeDeal_TryExecute.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\TradeDeal_TryExecute.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\TradeDeal_TryExecute.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\TradeDeal_TryExecute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Thought_Megaliths_Desired.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Megaliths_Desired.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Thoughts\\Thought_Megaliths_Desired.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Megaliths_Desired.cs",
+              "RelativeToolTip": "AlphaMemes\\Thoughts\\Thought_Megaliths_Desired.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "RitualRoleAssignments_PawnNotAssignableReason.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\RitualRoleAssignments_PawnNotAssignableReason.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\RitualRoleAssignments_PawnNotAssignableReason.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\RitualRoleAssignments_PawnNotAssignableReason.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\RitualRoleAssignments_PawnNotAssignableReason.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Thought_AnimalAnalysis_Expected.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_AnimalAnalysis_Expected.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Thoughts\\Thought_AnimalAnalysis_Expected.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_AnimalAnalysis_Expected.cs",
+              "RelativeToolTip": "AlphaMemes\\Thoughts\\Thought_AnimalAnalysis_Expected.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "GameComponent_RandomMood.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\GameComponent_RandomMood.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and GameComponents\\GameComponent_RandomMood.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and GameComponents\\GameComponent_RandomMood.cs",
+              "RelativeToolTip": "AlphaMemes\\MapComponents and GameComponents\\GameComponent_RandomMood.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAmwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Thought_Mood_Volatile.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Mood_Volatile.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Thoughts\\Thought_Mood_Volatile.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Thoughts\\Thought_Mood_Volatile.cs",
+              "RelativeToolTip": "AlphaMemes\\Thoughts\\Thought_Mood_Volatile.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAmwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "BaseGenUtility_TryRandomInexpensiveFloor.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\BaseGenUtility_TryRandomInexpensiveFloor.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\BaseGenUtility_TryRandomInexpensiveFloor.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\BaseGenUtility_TryRandomInexpensiveFloor.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\BaseGenUtility_TryRandomInexpensiveFloor.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "FloatMenuMakerMap_AddHumanlikeOrders.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\FloatMenuMakerMap_AddHumanlikeOrders.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\FloatMenuMakerMap_AddHumanlikeOrders.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\FloatMenuMakerMap_AddHumanlikeOrders.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\FloatMenuMakerMap_AddHumanlikeOrders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "SketchGenUtility_PlayerCanBuildNow.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\SketchGenUtility_PlayerCanBuildNow.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\SketchGenUtility_PlayerCanBuildNow.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\SketchGenUtility_PlayerCanBuildNow.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\SketchGenUtility_PlayerCanBuildNow.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:04.766Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
