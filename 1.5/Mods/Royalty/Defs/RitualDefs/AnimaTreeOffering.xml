@@ -101,7 +101,7 @@
 				</preAction>
 			</li>
 			<li Class="AlphaMemes.RitualStage_AnimaBurial">
-				<defaultDuty>LinkWithAnimaTreeSecondary</defaultDuty>
+				<defaultDuty>Spectate</defaultDuty>
 				<endTriggers>
 				  <li Class="StageEndTrigger_DurationPercentage">
 					<percentage>0.75</percentage>
