@@ -17,7 +17,7 @@
 		<li IfModActive="VanillaExpanded.VMemesE">1.4/Mods/VanillaMemesExpanded</li>
 		<li IfModActive="Sarg.AlphaPrefabs">1.4/Mods/AlphaPrefabs</li>
 	</v1.4>
-	<v1.5>
+	<v1.5> 
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>
