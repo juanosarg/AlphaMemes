@@ -378,7 +378,7 @@
 	<MemeDef>
 		<defName>AM_GauranlenSupremacy</defName>
 		<label>gauranlen supremacy</label>		
-		<description>The symbiotic relationship between humanity, gauranlen trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme is chosen too (alternatively, the Biological Corruptors meme in Alpha Animals).\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
+		<description>The symbiotic relationship between humanity, gauranlen trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme or the Biological Corruptors meme are chosen too .\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
 		<iconPath>UI/Memes/AM_GauranlenSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
