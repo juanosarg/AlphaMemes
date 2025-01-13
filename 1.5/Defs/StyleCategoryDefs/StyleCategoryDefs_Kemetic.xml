@@ -378,6 +378,46 @@
 				<styleDef>AM_Kemetic_ToxLauncher</styleDef>
 			</li>
 			
+			<li>
+				<thingDef>Apparel_Tuque</thingDef>
+				<styleDef>AM_Kemetic_SimpleHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<styleDef>AM_Kemetic_Helmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_AdvancedHelmet</thingDef>
+				<styleDef>AM_Kemetic_AdvancedHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_FlakVest</thingDef>
+				<styleDef>AM_Kemetic_FlakVest</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Pants</thingDef>
+				<styleDef>AM_Kemetic_Pants</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_FlakPants</thingDef>
+				<styleDef>AM_Kemetic_FlakPants</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_BasicShirt</thingDef>
+				<styleDef>AM_Kemetic_Shirt</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_CollarShirt</thingDef>
+				<styleDef>AM_Kemetic_ButtonShirt</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Jacket</thingDef>
+				<styleDef>AM_Kemetic_Jacket</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Duster</thingDef>
+				<styleDef>AM_Kemetic_Duster</styleDef>
+			</li>
 			
 			
 		</thingDefStyles>

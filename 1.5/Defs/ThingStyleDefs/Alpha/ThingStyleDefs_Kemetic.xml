@@ -1008,5 +1008,95 @@
 		</graphicData>
 	</ThingStyleDef>
 	
-	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_SimpleHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_SimpleHelmet_Kemetic/AM_SimpleHelmet_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_SimpleHelmet_Kemetic/AM_SimpleHelmet_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_AdvancedHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_AdvancedHelmet_Kemetic/AM_AdvancedHelmet_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_AdvancedHelmet_Kemetic/AM_AdvancedHelmet_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Helmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_Helmet_Kemetic/AM_Helmet_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Helmet_Kemetic/AM_Helmet_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_FlakVest</defName>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_FlakVest_Kemetic/AM_FlakVest_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_FlakVest_Kemetic/AM_FlakVest_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Pants</defName>
+		<overrideLabel>short kilt</overrideLabel>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Kemetic_Pants/AM_Kemetic_Pants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_FlakPants</defName>
+		<overrideLabel>flak short kilt</overrideLabel>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Kemetic_FlakPants/AM_Kemetic_FlakPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Shirt</defName>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticShirt/AM_KemetiicShirt</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_KemeticShirt/AM_KemetiicShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ButtonShirt</defName>
+		
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticButtonShirt/AM_KemeticButtonShirt</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_KemeticButtonShirt/AM_KemeticButtonShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Jacket</defName>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticJacket/AM_KemeticJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_KemeticJacket/AM_KemeticJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_Duster</defName>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticDuster/AM_KemeticDuster</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_KemeticDuster/AM_KemeticDuster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
