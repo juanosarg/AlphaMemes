@@ -1099,4 +1099,54 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_FlakJacket</defName>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticFlakJacket/AM_KemeticFlakJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_KemeticFlakJacket/AM_KemeticFlakJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_BowlerHat</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_BowlerHat_Kemetic/AM_BowlerHat_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_BowlerHat_Kemetic/AM_BowlerHat_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_CowboyHat</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_CowboyHat_Kemetic/AM_CowboyHat_Kemetic</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_CowboyHat_Kemetic/AM_CowboyHat_Kemetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_ReconArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_Kemetic_ReconHelmet/AM_Kemetic_ReconHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Kemetic_ReconHelmet/AM_Kemetic_ReconHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_TripleRocket</defName>
+	
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticRocketLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_DoomsdayRocket</defName>
+	
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_KemeticDoomsdayLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

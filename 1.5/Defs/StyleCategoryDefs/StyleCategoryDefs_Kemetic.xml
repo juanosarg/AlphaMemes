@@ -418,7 +418,30 @@
 				<thingDef>Apparel_Duster</thingDef>
 				<styleDef>AM_Kemetic_Duster</styleDef>
 			</li>
-			
+			<li>
+				<thingDef>Apparel_FlakJacket</thingDef>
+				<styleDef>AM_Kemetic_FlakJacket</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_BowlerHat</thingDef>
+				<styleDef>AM_Kemetic_BowlerHat</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_CowboyHat</thingDef>
+				<styleDef>AM_Kemetic_CowboyHat</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>AM_Kemetic_ReconArmorHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_TripleRocket</thingDef>
+				<styleDef>AM_Kemetic_TripleRocket</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_DoomsdayRocket</thingDef>
+				<styleDef>AM_Kemetic_DoomsdayRocket</styleDef>
+			</li>
 			
 		</thingDefStyles>
 		<addDesignators>
