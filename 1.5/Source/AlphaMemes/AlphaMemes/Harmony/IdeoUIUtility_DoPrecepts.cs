@@ -19,7 +19,7 @@ namespace AlphaMemes
     public static class AlphaMemes_IdeoUIUtility_DoPrecepts_Patch
     {
         [HarmonyPostfix]
-        static void AddDespisedAnimalPrecepts(ref float curY, float width, Ideo ideo, IdeoEditMode editMode)
+        public static void AddDespisedAnimalPrecepts(ref float curY, float width, Ideo ideo, IdeoEditMode editMode)
         {
             if (ideo.HasMeme(InternalDefOf.AM_BiologicalDefilers))
             {
