@@ -111,4 +111,23 @@
 	
 	<!-- Roles Descriptions -->
 	<AM_PetDesc>This animal is a pet. Isn't he cute?</AM_PetDesc>
+	
+	<!-- Mod options -->
+	
+	<VME_Reset>Reset</VME_Reset>
+	<VME_Meme>max memes</VME_Meme>
+	<VME_Ritual>max rituals</VME_Ritual>
+	<VME_Styles>max styles</VME_Styles>
+	<VME_Relics>max relics</VME_Relics>
+	<VME_Buildings>max buildings</VME_Buildings>
+	<VME_MemeAmount>Max number of memes allowed (default is 4)</VME_MemeAmount>
+	<VME_MemeAmountTooltip>Max number of memes allowed. Note that this only applies to player ideoligions.</VME_MemeAmountTooltip>
+	<VME_RitualAmount>Max number non-meme specific rituals allowed (default is 6) (requires game reload)</VME_RitualAmount>
+	<VME_RitualAmountTooltip>Max number non-meme specific rituals allowed. Rituals that are forced by a meme USUALLY don't count towards this limit, though there can be exceptions (requires game reload).</VME_RitualAmountTooltip>
+	<VME_StylesAmount>Max number of ideo visual styles allowed (default is 3) (requires game reload)</VME_StylesAmount>
+	<VME_StylesAmountTooltip>Max number of ideo visual styles allowed. Note that we set this to start in the mod as 5 by default, up from base game's 3, because we add quite a lot of them (requires game reload).</VME_StylesAmountTooltip>
+	<VME_RelicsAmount>Max number of ideo relics allowed (default is 3)</VME_RelicsAmount>
+	<VME_RelicsAmountTooltip>Max number of ideo relics allowed</VME_RelicsAmountTooltip>
+	<VME_BuildingsAmount>Max number of ideo buildings allowed (default is 2)</VME_BuildingsAmount>
+	<VME_BuildingsAmountTooltip>Max number of ideo buildings allowed. This includes altars, pictograms and such, but not buildings added through memes.</VME_BuildingsAmountTooltip>
 </LanguageData>

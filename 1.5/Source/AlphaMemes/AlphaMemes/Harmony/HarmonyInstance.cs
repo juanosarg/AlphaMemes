@@ -21,6 +21,10 @@ namespace AlphaMemes
             {
                 PatchVFEPirate(harmony);
             }
+            if (!ModLister.HasActiveModWithName("Vanilla Ideology Expanded - Memes and Structures"))
+            {
+                PatchVEMemesOptions(harmony);
+            }
 
         }
 
@@ -60,6 +64,33 @@ namespace AlphaMemes
                 harmony.Patch(AccessTools.Method("Verse.PawnCapacityUtility:CalculateCapacityLevel"), postfix: harmonyPostfix);
             }
         }
-    }
+
+        public static void PatchVEMemesOptions(Harmony harmony)
+        {
+            var method = AccessTools.PropertyGetter(typeof(Dialog_ChooseMemes), "MemeCountRangeAbsolute");
+            var postfix = typeof(AlphaMemes_Dialog_ChooseMemes_MemeCountRangeAbsolute_Patch).GetMethod("SetMaxToOptions");
+            harmony.Patch(method, postfix: postfix);
+
+            method = AccessTools.Method(typeof(IdeoUIUtility), "DoMemes");
+            var prefix = typeof(AlphaMemes_IdeoUIUtility_DoMemes_Patch).GetMethod("MakeBoxSmaller");
+            postfix = typeof(AlphaMemes_IdeoUIUtility_DoMemes_Patch).GetMethod("MakeBoxBigger");
+            harmony.Patch(method, prefix: prefix);
+            harmony.Patch(method, postfix: postfix);
+
+            method = AccessTools.Method(typeof(IdeoUIUtility), "DoPrecepts");         
+            postfix = typeof(AlphaMemes_IdeoUIUtility_DoPrecepts_Amount_Patch).GetMethod("EnableMorePrecepts");       
+            harmony.Patch(method, postfix: postfix);
+ 
+            method = AccessTools.Method(typeof(IdeoUIUtility), "DoPreceptsInt");
+            var transpiler = typeof(AlphaMemes_IdeoUIUtility_DoPreceptsInt_Patch).GetMethod("TranspilePreceptInt");
+            harmony.Patch(method, transpiler: transpiler);
+
+            method = AccessTools.Method(typeof(IdeoUIUtility), "DoStyles");
+            transpiler = typeof(AlphaMemes_IdeoUIUtility_DoStyles_Patch).GetMethod("TranspileStyles");
+            harmony.Patch(method, transpiler: transpiler);
+
+        }
+
+     }
 
 }

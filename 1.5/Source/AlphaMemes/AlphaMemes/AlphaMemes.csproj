@@ -327,6 +327,11 @@
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
+    <Compile Include="Harmony\ConditionalPatches\Dialog_ChooseMemes_MemeCountRangeAbsolute.cs" />
+    <Compile Include="Harmony\ConditionalPatches\IdeoUIUtility_DoMemes.cs" />
+    <Compile Include="Harmony\ConditionalPatches\IdeoUIUtility_DoPrecepts.cs" />
+    <Compile Include="Harmony\ConditionalPatches\IdeoUIUtility_DoPreceptsInt.cs" />
+    <Compile Include="Harmony\ConditionalPatches\IdeoUIUtility_DoStyles.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
     <Compile Include="Harmony\Dialog_BeginRitual_BlockingIssues_Patch.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap_AddHumanlikeOrders.cs" />
@@ -354,6 +359,7 @@
     <Compile Include="MapComponents and GameComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="Options\AlphaMemes_Settings.cs" />
     <Compile Include="Options\AlphaMemes_SettingsController.cs" />
+    <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Pawn Classes\Pawn_Detonator.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnlyOne.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />

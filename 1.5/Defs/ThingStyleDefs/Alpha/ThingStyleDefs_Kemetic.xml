@@ -1071,12 +1071,12 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Kemetic_ButtonShirt</defName>
-		
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Apparel/Kemetic/AM_KemeticButtonShirt/AM_KemeticButtonShirt</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Apparel/Kemetic/AM_KemeticButtonShirt/AM_KemeticButtonShirt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -1146,6 +1146,22 @@
 	
 		<graphicData>
 			<texPath>Things/Weapons/Kemetic/AM_KemeticDoomsdayLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_VisageMask</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_Kemetic_VisageMask/AM_Kemetic_VisageMask</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Kemetic_VisageMask/AM_Kemetic_VisageMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_WarMask</defName>
+		<wornGraphicPath>Things/Apparel/Kemetic/AM_Kemetic_WarMask/AM_Kemetic_WarMask</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Kemetic/AM_Kemetic_WarMask/AM_Kemetic_WarMask</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>

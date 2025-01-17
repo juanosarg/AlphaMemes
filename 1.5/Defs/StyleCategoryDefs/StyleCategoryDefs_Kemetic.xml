@@ -442,6 +442,16 @@
 				<thingDef>Gun_DoomsdayRocket</thingDef>
 				<styleDef>AM_Kemetic_DoomsdayRocket</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_VisageMask</thingDef>
+				<styleDef>AM_Kemetic_VisageMask</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_WarMask</thingDef>
+				<styleDef>AM_Kemetic_WarMask</styleDef>
+			</li>
+			
+			
 			
 		</thingDefStyles>
 		<addDesignators>
