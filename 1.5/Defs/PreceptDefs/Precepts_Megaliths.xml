@@ -29,7 +29,7 @@
 	 <ThoughtDef>
 		<defName>AM_Megaliths_Desired</defName>
 		
-		<workerClass>AlphaMemes.Thought_Megaliths_Desired</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Megaliths</workerClass>
 		<minExpectation>Moderate</minExpectation>
 		<stages>
 			<li>

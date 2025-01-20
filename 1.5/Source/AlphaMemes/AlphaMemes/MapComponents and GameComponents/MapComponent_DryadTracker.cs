@@ -10,54 +10,13 @@ namespace AlphaMemes
     public class MapComponent_DryadTracker : MapComponent
     {
 
-
-
-        public int tickCounter = 0;
-        public int tickInterval = 10000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 10000;
      
-
-
 
         public MapComponent_DryadTracker(Map map) : base(map)
         {
 
-        }
-
-        public override void FinalizeInit()
-        {
-            if (DefDatabase<PawnKindDef>.GetNamedSilentFail("AA_Dryad_Ocular") != null)
-            {
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("AM_Dryad_Ocular"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("AM_Dryad_Corruptor"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("AM_Dryad_Spitter"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("AM_Dryad_Unstable"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("AM_Dryad_Tumorous"));
-
-            }
-
-            if (DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Stonedigger") != null)
-            {
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Stonedigger"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Gaubricmaker"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Nectarmaker"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_Dryad_Spitter"));
-
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Carrier"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Woodmaker"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Medicinemaker"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Berrymaker"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Stonedigger"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Nectarmaker"));
-                StaticCollectionsClass.AddUtilityDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Gaubricmaker"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Clawer"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Barkskin"));
-                StaticCollectionsClass.AddCombatDryad(DefDatabase<PawnKindDef>.GetNamedSilentFail("VDE_AwakenedDryad_Spitter"));
-
-            }
-
-
-
-            base.FinalizeInit();
         }
 
         public override void ExposeData()
@@ -69,7 +28,6 @@ namespace AlphaMemes
         }
         public override void MapComponentTick()
         {
-
 
             tickCounter++;
             if ((tickCounter > tickInterval))
@@ -90,13 +48,13 @@ namespace AlphaMemes
 
                     foreach (Pawn dryad in dryadList)
                     {
-                        if (StaticCollectionsClass.utilityDryads.Contains(dryad.kindDef))
+                        if (StaticCollections.utilityDryads.Contains(dryad.kindDef))
                         {
                             if (dryad.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.AM_UtilityDryadHediff) == null)
                             {
                                 dryad.health.AddHediff(InternalDefOf.AM_UtilityDryadHediff);
                             }
-                        }else if (StaticCollectionsClass.combatDryads.Contains(dryad.kindDef))
+                        }else if (StaticCollections.combatDryads.Contains(dryad.kindDef))
                         {
                             if (dryad.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.AM_CombatDryadHediff) == null)
                             {

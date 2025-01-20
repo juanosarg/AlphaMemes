@@ -36,7 +36,7 @@
 	<ThoughtDef>
 		<defName>AM_RelicDestruction_Desired</defName>
 		
-		<workerClass>AlphaMemes.Thought_RelicDestruction_Desired</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_RelicDestruction</workerClass>
 		<stages>
 			<li>
 				<label>destroyed a relic</label>

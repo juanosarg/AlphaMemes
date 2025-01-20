@@ -16,7 +16,7 @@
     <defName>AM_Abilities_AnalyzeCreature</defName>
     <issue>AM_Abilities</issue>
     <label>analyze creature</label>
-    <description>It is our solemn duty to catalogue and analyze all the incredible genetically modified creatures created by our ancestors.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists that adopt this precept will get the Analyze creature ability, which allows them to scan animals in the map and add them to a genetic database, receiving bonuses depending on the number of animals scanned.</description>
+    <description>It is our solemn duty to catalogue and analyze all the incredible genetically modified creatures created by our ancestors.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists that adopt this precept will get the Analyze creature ability, which allows them to scan animals in the map and add them to a genetic database, receiving bonuses depending on the number of animals scanned. Animals that have been scanned will also receive a bonus to filth rate, caravan riding speed and minimum handling skill needed to tame and train them.</description>
     <impact>Medium</impact>
   
     <displayOrderInIssue>10</displayOrderInIssue>

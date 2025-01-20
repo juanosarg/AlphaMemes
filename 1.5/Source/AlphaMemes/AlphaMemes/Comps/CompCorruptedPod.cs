@@ -75,7 +75,7 @@ namespace AlphaMemes
                 text = string.Concat(new object[]
                 {
                     text,
-                    GenLabel.BestKindLabel(PawnKindDef.Named("AM_Dryad_Corruptor"), Gender.Male, true, -1).CapitalizeFirst(),
+                    GenLabel.BestKindLabel(InternalDefOf.AM_Dryad_Corruptor, Gender.Male, true, -1).CapitalizeFirst(),
                     ": ",
                     this.innerContainer.Count,
                     "/",

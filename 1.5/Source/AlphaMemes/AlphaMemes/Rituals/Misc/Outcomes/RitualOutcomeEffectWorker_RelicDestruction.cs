@@ -47,7 +47,7 @@ namespace AlphaMemes
 				base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
 				
 			}
-            if (StaticCollectionsClass.relicsDestroyedThisGame < 3)
+            if (WorldComponent_Relics.Instance.relicsDestroyedThisGame < 3)
             {
 				foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.InRandomOrder())
 				{
@@ -74,17 +74,12 @@ namespace AlphaMemes
 			CompRelicSmashingContainer comp = altar.TryGetComp<CompRelicSmashingContainer>();
 			if (comp != null)
             {
-				StaticCollectionsClass.relicsDestroyedThisGame += 1;
-				Current.Game.GetComponent<GameComponent_ReligiousMemesAndRelics>().relicsDestroyedThisGame += 1;
+
+                WorldComponent_Relics.Instance.relicsDestroyedThisGame += 1;
 				Thing relic = comp.ContainedThing;
 				comp.innerContainer.TryDropAll(altar.Position, altar.Map, ThingPlaceMode.Near);
 				relic.Destroy();
 			}
-
-
-
-
-
 
 			string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
 			string text3 = this.def.OutcomeMoodBreakdown(outcome);

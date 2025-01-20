@@ -62,8 +62,9 @@ namespace AlphaMemes
         {
             base.TickRare();
             if (tickCounter>tickTotal && totalAnimals!=0) {
-				StaticCollectionsClass.databaseCompletion = (float)this.analyzedAnimalList.Count / (float)this.totalAnimals;
-				tickCounter = 0;
+				StaticCollections.databaseCompletion = (float)this.analyzedAnimalList.Count / (float)this.totalAnimals;
+				StaticCollections.analyzedAnimals = analyzedAnimalList;
+                tickCounter = 0;
 			}
 			tickCounter++;
 			

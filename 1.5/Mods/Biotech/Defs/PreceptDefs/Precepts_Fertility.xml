@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+
+	<!-- Precepts -->
+
+	<IssueDef>
+		<defName>AM_FertilityIssue</defName>
+		<label>fertility</label>
+		<iconPath>UI/Issues/AM_FertilityIssue</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>AM_FertilityIssue_Increased</defName>
+		<issue>AM_FertilityIssue</issue>
+		<label>increased</label>
+		<description>We believe in the boundless potential of life. Our efforts to enhance fertility will ensure that the future is abundant with new beginnings.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_Fertility</li>
+		</associatedMemes>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<statOffsets>
+			<Fertility>0.2</Fertility>
+			
+		</statOffsets>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>AM_FertilityIssue_Normal</defName>
+		<issue>AM_FertilityIssue</issue>
+		<label>normal</label>
+		<description>We respect the natural rhythms of life.</description>
+		<impact>Low</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>AM_FertilityIssue_Decreased</defName>
+		<issue>AM_FertilityIssue</issue>
+		<label>decreased</label>
+		<description>While the drive for reproduction is natural, we must temper our urges. The unchecked spread of life can overwhelm our resources and disrupt the balance.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<statOffsets>
+			<Fertility>-0.2</Fertility>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

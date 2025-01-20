@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Creep</defName>
+		<label>creep</label>
+		<iconPath>UI/Issues/AM_Creep</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Creep_Disliked</defName>
+		<issue>AM_Creep</issue>
+		<label>disliked</label>
+		<description>Creep is disgusting. We have to tolerate it if we want to create our own insectoid hive, but the less we have to experience its stench, the better.</description>
+		<impact>Low</impact>
+		<classic>true</classic>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+  <PreceptDef>
+		<defName>AM_Creep_DontCare</defName>
+		<issue>AM_Creep</issue>
+		<label>don't care</label>
+		<description>Creep is disgusting, but we have to tolerate it if we want to create our own insectoid hive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Insectoid creep will now have a beauty of 0.</description>
+		<impact>Low</impact>		
+		<displayOrderInIssue>10</displayOrderInIssue>
+		
+	</PreceptDef>
+  <PreceptDef>
+		<defName>AM_Creep_Sublime</defName>
+		<issue>AM_Creep</issue>
+		<label>sublime</label>
+		<description>We will fully embrace our insectoid brethren and bathe in the magnificence of their excretions.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Insectoid creep will now have a beauty of 3.</description>
+		<impact>Medium</impact>		
+		<displayOrderInIssue>20</displayOrderInIssue>
+		
+	</PreceptDef>
+  
+
+
+</Defs>

@@ -71,6 +71,7 @@ namespace AlphaMemes
                         {
                             GUI.color = Color.green;
                             Widgets.Label(rectTextAcquired, "AM_Analyzed".Translate());
+                            TooltipHandler.TipRegion(rectTextAcquired, "AM_AnalyzedAnimalBonuses".Translate());
                         }
                         else {
                             GUI.color = Color.red;

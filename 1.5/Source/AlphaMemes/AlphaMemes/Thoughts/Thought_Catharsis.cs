@@ -23,7 +23,9 @@ namespace AlphaMemes
         {
             get
             {
-                if (this.pawn?.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true) //Pawn could be null depending on how the memory is created. TryGainMemory assigned the this.Pawn. So VTE was causing a call to it before pawn could be assigned
+                if (this.pawn?.Ideo?.HasMeme(InternalDefOf.AM_Madness) == true) //Pawn could be null depending on how the memory is created.
+                                                                                //TryGainMemory assigned the this.Pawn. So VTE was causing a call to it
+                                                                                //before pawn could be assigned
                 {
                     return 1;
                 }

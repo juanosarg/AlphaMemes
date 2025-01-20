@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_Fertility</defName>
+		<label>fertility</label>
+		<description>Life begets life, and the cycle of creation is the eternal heartbeat of existence. From fertile soil to fertile wombs, the promise of tomorrow is seeded in the abundance of today.</description>
+		<iconPath>UI/Memes/AM_Fertility</iconPath>
+		<exclusionTags>
+		
+		</exclusionTags>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->fertile</li>
+				<li>memeAdjective->bountiful</li>
+				<li>memeAdjective->fruitful</li>
+				<li>memeConcept->growth</li>
+				<li>memeHyphenPrefix->life</li>
+				<li>memeLeaderNoun->progenitor</li>
+				<li>memeMoralist->nurturer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Fertility)        ->[deity0_name] declared: "Be fruitful and multiply, for the strength of the faithful lies in their numbers."</li>
+					<li>episode(uses=1,tag=meme_Fertility)  ->Following [deity0_name]'s teachings, we celebrated each birth as a divine blessing, growing stronger with every child born.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Fertility)           ->On the [place_summary] [place_name], the [memberNamePlural] established a tradition of large families, believing each child to be a gift from the divine.</li>
+					<li>conflict(tag=meme_Fertility)        ->A rival [foeLeader], envious of our growing population, sought to divide families and undermine our unity.</li>
+					<li>founderJoin(tag=meme_Fertility)     ->[founderName], a wise midwife, united the community and ensured every family thrived, even in times of hardship.</li>
+					<li>victory(tag=meme_Fertility)         ->[foeLeader] was overthrown, and [foeLeader_possessive] attempt to disrupt our families only strengthened our resolve.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Fertility)           ->[founderName], a visionary leader, argued that a strong community is built on large families and the nurturing of many children.</li>
+					<li>story(uses=1,tag=meme_Fertility)    ->[founderName] created policies and customs that celebrated fertility and ensured that every child could thrive.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Fertility)         ->A mother of twelve once told me that the measure of a person’s legacy is not in riches or fame, but in the children they leave behind. She taught me that</li>
+					<li>lesson(tag=meme_Fertility)              ->raising strong, united families is the foundation of any enduring community.</li>
+					<li>lessonReinforcement(tag=meme_Fertility) ->Children are the lifeblood of our future; each new life brings hope and strength.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Fertility)    ->The archotechs value exponential growth, and large families mirror the boundless potential of their creations.</li>
+					<li>archistFact(tag=meme_Fertility)     ->In their algorithms, a thriving population is key to achieving transcendent stability.</li>
+					<li>archistProphecy(tag=meme_Fertility) ->[inTheEnd], only the most populous and fertile communities will earn the archotechs' favor.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Fertility)    ->The spirits smile upon those who bring new life into the world, for they see children as the essence of vitality.</li>
+					<li>animistFact(tag=meme_Fertility)     ->Our ancestors guide us to cherish every child, as they are the bridge between the living and the spirit world.</li>
+					<li>animistProphecy(tag=meme_Fertility) ->[itIsSaid] the most fertile families will be blessed with wisdom from the spirits themselves.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Fertility)->[itIsSaid] a colony that embraces fertility will thrive as an unstoppable collective, like the most prolific ant colony.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Fertility)->The eldritch entities watch our numbers grow with fascination, for they understand that strength lies in multitudes.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Fertility)->Only through generations of growth can the secrets of the cosmos be unraveled and preserved.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Fertility)->We must grow our numbers, for only through countless generations can we see the end of days fulfilled.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Fertility)->We are excited to introduce our new "Family Growth Incentive Program," designed to encourage employees to contribute to our population goals.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Fertility)->The alien species we encounter remind us of the beauty of diversity and the importance of expanding our own families.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_FertilityIssue_Increased</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Fertility</ideoName>
+				<theme>fertility</theme>
+				<adjective>fertile</adjective>
+				<member>fertile</member>
+			</li>
+			<li>
+				<ideoName>Progenitor</ideoName>
+				<theme>creation</theme>
+				<adjective>progenitor</adjective>
+				<member>progenitor</member>
+			</li>
+			<li>
+				<ideoName>Gestation</ideoName>
+				<theme>gestation</theme>
+				<adjective>gestational</adjective>
+				<member>gestator</member>
+			</li>
+			<li>
+				<ideoName>Reproduction</ideoName>
+				<theme>reproduction</theme>
+				<adjective>reproductive</adjective>
+				<member>reproducer</member>
+			</li>
+		</symbolPacks>
+		
+	</MemeDef>
+</Defs>

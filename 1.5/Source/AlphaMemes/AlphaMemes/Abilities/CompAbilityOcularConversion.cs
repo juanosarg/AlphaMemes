@@ -10,8 +10,8 @@ namespace AlphaMemes
     {
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
         {
-            bool alphaAnimalsFound = DefDatabase<ThingDef>.GetNamedSilentFail("AA_AlienTree") != null;
-            bool alphaBiomesFound = DefDatabase<ThingDef>.GetNamedSilentFail("AB_AlienTree") != null;
+            bool alphaAnimalsFound = InternalDefOf.AA_AlienTree != null;
+            bool alphaBiomesFound = InternalDefOf.AB_AlienTree != null;
 
             if(!alphaAnimalsFound && !alphaBiomesFound)
             {
@@ -26,76 +26,80 @@ namespace AlphaMemes
             base.Apply(target, dest);
             FleckMaker.Static(target.Cell, this.parent.pawn.Map, InternalDefOf.PsycastPsychicEffect);
 
-            bool alphaAnimalsFound = DefDatabase<ThingDef>.GetNamedSilentFail("AA_AlienTree") != null;
-            ThingDef treeDef;
-            ThingDef grassDef;
-            ThingDef plant1Def;
-            ThingDef plant2Def;
+            bool alphaAnimalsFound = InternalDefOf.AA_AlienTree != null;
+          
+            ThingDef treeDef = null;
+            ThingDef grassDef = null;
+            ThingDef plant1Def = null;
+            ThingDef plant2Def = null;
             if (alphaAnimalsFound)
             {
-                treeDef = DefDatabase<ThingDef>.GetNamedSilentFail("AA_AlienTree");
-                grassDef = DefDatabase<ThingDef>.GetNamedSilentFail("AA_AlienGrass");
-                plant1Def = DefDatabase<ThingDef>.GetNamedSilentFail("AA_RedLeaves");
-                plant2Def = DefDatabase<ThingDef>.GetNamedSilentFail("AA_RedPlantsTall");
+                treeDef = InternalDefOf.AA_AlienTree;
+                grassDef = InternalDefOf.AA_AlienGrass;
+                plant1Def = InternalDefOf.AA_RedLeaves;
+                plant2Def = InternalDefOf.AA_RedPlantsTall;
             }
-            else
+            else 
             {
-                treeDef = DefDatabase<ThingDef>.GetNamedSilentFail("GU_AlienTree");
-                grassDef = DefDatabase<ThingDef>.GetNamedSilentFail("GU_AlienGrass");
-                plant1Def = DefDatabase<ThingDef>.GetNamedSilentFail("GU_RedLeaves");
-                plant2Def = DefDatabase<ThingDef>.GetNamedSilentFail("GU_RedPlantsTall");
+                treeDef = InternalDefOf.AB_AlienTree;
+                grassDef = InternalDefOf.AB_AlienGrass;
+                plant1Def = InternalDefOf.AB_RedLeaves;
+                plant2Def = InternalDefOf.AB_RedPlantsTall;
             }
-
-            HashSet<Thing> hashSet = new HashSet<Thing>(target.Cell.GetThingList(this.parent.pawn.Map));
-            if (hashSet != null)
-            {
-                foreach (Thing current in hashSet)
+          
+                HashSet<Thing> hashSet = new HashSet<Thing>(target.Cell.GetThingList(this.parent.pawn.Map));
+                if (hashSet != null)
                 {
-                    Plant plantTarget = current as Plant;
-                    if (plantTarget != null)
+                    foreach (Thing current in hashSet)
                     {
-                        PlantProperties plant = plantTarget.def.plant;
-                        bool flag = (plant != null);
-                        if (flag)
+                        Plant plantTarget = current as Plant;
+                        if (plantTarget != null)
                         {
-                            if (plant.IsTree && (plantTarget.def.defName != "GU_AlienTree") && (plantTarget.def.defName != "AA_AlienTree") && (plantTarget.def.defName != "Plant_TreeAnima") && (plantTarget.def.defName != "Plant_TreeGauranlen"))
+                            PlantProperties plant = plantTarget.def.plant;
+                            bool flag = (plant != null);
+                            if (flag)
                             {
-                                Plant thing2 = (Plant)GenSpawn.Spawn(treeDef, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
-                                Plant thingToDestroy = (Plant)plantTarget;
-                                thing2.Growth = thingToDestroy.Growth;
-                                plantTarget.Destroy();
-                            }
-                            else if (!plant.IsTree && (plantTarget.def.defName != "GU_AlienGrass") && (plantTarget.def.defName != "GU_RedLeaves") && (plantTarget.def.defName != "GU_RedPlantsTall")
-                               && (plantTarget.def.defName != "AA_AlienGrass") && (plantTarget.def.defName != "AA_RedLeaves") && (plantTarget.def.defName != "AA_RedPlantsTall") && (plantTarget.def.defName != "Plant_GrassAnima")
-                               )
-                            {
-                                var value = Rand.Value;
-                                if (value < 0.4)
+                                if (plant.IsTree && (plantTarget.def != InternalDefOf.AB_AlienTree) && (plantTarget.def != InternalDefOf.AA_AlienTree) && (plantTarget.def != ThingDefOf.Plant_TreeAnima) && (plantTarget.def != ThingDefOf.Plant_TreeGauranlen))
                                 {
-                                    Plant thing2 = (Plant)GenSpawn.Spawn(grassDef, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
+                                    Plant thing2 = (Plant)GenSpawn.Spawn(treeDef, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
                                     Plant thingToDestroy = (Plant)plantTarget;
                                     thing2.Growth = thingToDestroy.Growth;
                                     plantTarget.Destroy();
                                 }
-                                else if (value < 0.7)
+                                else if (!plant.IsTree && (plantTarget.def != InternalDefOf.AB_AlienGrass) && (plantTarget.def != InternalDefOf.AB_RedLeaves) && (plantTarget.def != InternalDefOf.AB_RedPlantsTall)
+                                   && (plantTarget.def != InternalDefOf.AA_AlienGrass) && (plantTarget.def != InternalDefOf.AA_RedLeaves) && (plantTarget.def != InternalDefOf.AA_RedPlantsTall) && (plantTarget.def != ThingDefOf.Plant_GrassAnima) && (plantTarget.def != ThingDefOf.Plant_PodGauranlen)
+                                   && (plantTarget.def != InternalDefOf.AM_Plant_CorruptedPodGauranlen)
+                                   )
                                 {
-                                    Plant thing2 = (Plant)GenSpawn.Spawn(plant1Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
-                                    Plant thingToDestroy = (Plant)plantTarget;
-                                    thing2.Growth = thingToDestroy.Growth;
-                                    plantTarget.Destroy();
-                                }
-                                else
-                                {
-                                    Plant thing2 = (Plant)GenSpawn.Spawn(plant2Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
-                                    Plant thingToDestroy = (Plant)plantTarget;
-                                    thing2.Growth = thingToDestroy.Growth;
-                                    plantTarget.Destroy();
+                                    var value = Rand.Value;
+                                    if (value < 0.4)
+                                    {
+                                        Plant thing2 = (Plant)GenSpawn.Spawn(grassDef, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
+                                        Plant thingToDestroy = (Plant)plantTarget;
+                                        thing2.Growth = thingToDestroy.Growth;
+                                        plantTarget.Destroy();
+                                    }
+                                    else if (value < 0.7)
+                                    {
+                                        Plant thing2 = (Plant)GenSpawn.Spawn(plant1Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
+                                        Plant thingToDestroy = (Plant)plantTarget;
+                                        thing2.Growth = thingToDestroy.Growth;
+                                        plantTarget.Destroy();
+                                    }
+                                    else
+                                    {
+                                        Plant thing2 = (Plant)GenSpawn.Spawn(plant2Def, plantTarget.Position, plantTarget.Map, WipeMode.Vanish);
+                                        Plant thingToDestroy = (Plant)plantTarget;
+                                        thing2.Growth = thingToDestroy.Growth;
+                                        plantTarget.Destroy();
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
+           
+            
         }
     }
 }

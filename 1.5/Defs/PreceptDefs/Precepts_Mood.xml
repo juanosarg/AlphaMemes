@@ -40,7 +40,7 @@
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>AM_Mood_Volatile</defName>
-		<workerClass>AlphaMemes.Thought_Mood_Volatile</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Mood_Volatile</workerClass>
 		
 		<stages>
 			<li>

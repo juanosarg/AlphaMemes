@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace AlphaMemes
 {
-
-
     [HarmonyPatch(typeof(ReleaseAnimalToWildUtility))]
     [HarmonyPatch("DoReleaseAnimal")]
     public static class AlphaMemes_ReleaseAnimalToWildUtility_DoReleaseAnimal_Patch
@@ -20,22 +16,14 @@ namespace AlphaMemes
         [HarmonyPostfix]
         static void AnnounceAnimalReleased(Pawn animal)
         {
-
-            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AnimalReleased, new SignalArgs(animal.Named(HistoryEventArgsNames.Subject))), true);
-
-
-
-
-
-
+            if (StaticCollections.analyzedAnimals.Contains(animal.kindDef))
+            {
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AnimalAnalyzedAndReleased, new SignalArgs(animal.Named(HistoryEventArgsNames.Subject))), true);
+            }
+            else
+            {
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AnimalReleased, new SignalArgs(animal.Named(HistoryEventArgsNames.Subject))), true);
+            }
         }
     }
-
-
-
-
-
-
-
-
 }

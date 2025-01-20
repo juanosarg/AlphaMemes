@@ -26,7 +26,7 @@ namespace AlphaMemes
 
         public static void Postfix(Precept_Ritual ritual, Pawn p, ref string __result)
         {
-            if (ritual?.def == InternalDefOf.AM_SkyBurial)
+            if (ritual?.def.GetModExtension<FuneralPreceptExtension>()?.isColonistFuneral == true)
             {
 
                 if (__result == "MessageRitualWontAttendExtremeTemperature".Translate(p))

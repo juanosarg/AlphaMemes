@@ -22,7 +22,7 @@ namespace AlphaMemes
         static void DisableIdeoFloors(ref bool __result, BuildableDef buildable)
         {
 
-            if (StaticCollectionsClass.designatorsToBeRemoved.Contains(buildable.designatorDropdown))
+            if (StaticCollections.designatorsToBeRemoved.Contains(buildable.designatorDropdown))
             {
                 __result = false;
             }

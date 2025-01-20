@@ -5,6 +5,7 @@
 	<AM_ExtraBluntArmorFactor>Armour: blunt precept</AM_ExtraBluntArmorFactor>
 	<AM_ExtraSharpArmorFactor>Armour: sharp precept</AM_ExtraSharpArmorFactor>
 	<AM_ExtraHeatArmorFactor>Armour: heat precept</AM_ExtraHeatArmorFactor>
+	<AM_MeditationFocusStrengthFactor>Psyfocus gain: dampened precept</AM_MeditationFocusStrengthFactor>
 	<AM_DespisedAnimals>Despised Animals</AM_DespisedAnimals>
 	<AM_AddDespisedAnimals>Despised Animal</AM_AddDespisedAnimals>
 	<AM_AbilityNeedsADownedPawn>This ability must target a downed sapient humanoid</AM_AbilityNeedsADownedPawn>
@@ -15,6 +16,8 @@
 	<AM_NotAnalyzed>Not scanned</AM_NotAnalyzed>
 	<AM_Analyzed>Genome analyzed</AM_Analyzed>
 	<AM_OnlyTaggedAnimals>Only tagged animals</AM_OnlyTaggedAnimals>
+	<AM_StatsReport_Analyzed>Animal analyzed</AM_StatsReport_Analyzed>
+	<AM_AnalyzedAnimalBonuses>Since this animal has been analyzed, it will have from now on -2 to Minimum handling skill, -25% Filth rate and +25% Caravan riding speed.</AM_AnalyzedAnimalBonuses>
 	<AM_ShowAnimalAnalysis>Show genome analysis</AM_ShowAnimalAnalysis>
 	<AM_ShowAnimalAnalysisDesc>This will show you a list of possible animals that need to be scanned.</AM_ShowAnimalAnalysisDesc>
 	<AM_OnlyOneDatabase>Only one database can be built</AM_OnlyOneDatabase>
@@ -130,4 +133,7 @@
 	<VME_RelicsAmountTooltip>Max number of ideo relics allowed</VME_RelicsAmountTooltip>
 	<VME_BuildingsAmount>Max number of ideo buildings allowed (default is 2)</VME_BuildingsAmount>
 	<VME_BuildingsAmountTooltip>Max number of ideo buildings allowed. This includes altars, pictograms and such, but not buildings added through memes.</VME_BuildingsAmountTooltip>
+	<AM_AllowHighImpactMemesForFluidIdeos>Allow high impact memes for fluid ideos</AM_AllowHighImpactMemesForFluidIdeos>
+	<AM_AllowHighImpactMemesForFluidIdeos_Tooltip>By default, fluid ideos only let you choose one meme with impact 1 or 2, blocking impact 3 memes from being chosen. With this option toggle you can make it so impact 3 memes are available too.</AM_AllowHighImpactMemesForFluidIdeos_Tooltip>
+
 </LanguageData>

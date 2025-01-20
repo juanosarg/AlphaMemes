@@ -12,9 +12,8 @@ namespace AlphaMemes
 
     {
 
-
-
         public static bool makeChangeStyleAbilityUseAllStyles = false;
+        public static bool allowHighImpactMemesForFluidIdeos = false;
 
         public static float memeAmount = baseGameMemeAmount;
         public const float baseGameMemeAmount = 4;
@@ -44,6 +43,8 @@ namespace AlphaMemes
         {
             base.ExposeData();
             Scribe_Values.Look(ref makeChangeStyleAbilityUseAllStyles, "makeChangeStyleAbilityUseAllStyles", false, true);
+            Scribe_Values.Look(ref allowHighImpactMemesForFluidIdeos, "allowHighImpactMemesForFluidIdeos", false, true);
+
             Scribe_Values.Look(ref memeAmount, "memeAmount", baseGameMemeAmount, true);
             Scribe_Values.Look(ref ritualsAmount, "ritualsAmount", baseGameRitualsAmount, true);
             Scribe_Values.Look(ref stylesAmount, "stylesAmount", maxStylesAmount, true);
@@ -64,8 +65,11 @@ namespace AlphaMemes
 
             ls.CheckboxLabeled("AM_MakeChangeStyleAbilityUseAllStyles".Translate(), ref makeChangeStyleAbilityUseAllStyles, "AM_MakeChangeStyleAbilityUseAllStyles_Tooltip".Translate());
 
-            if(!ModLister.HasActiveModWithName("Vanilla Ideology Expanded - Memes and Structures"))
+            if (!ModLister.HasActiveModWithName("Vanilla Ideology Expanded - Memes and Structures"))
             {
+                ls.CheckboxLabeled("AM_AllowHighImpactMemesForFluidIdeos".Translate(), ref allowHighImpactMemesForFluidIdeos, "AM_AllowHighImpactMemesForFluidIdeos_Tooltip".Translate());
+
+
                 var memesLabel = ls.LabelPlusButton("VME_MemeAmount".Translate() + ": " + memeAmount, "VME_MemeAmountTooltip".Translate());
                 memeAmount = (float)Math.Round(ls.Slider(memeAmount, baseGameMemeAmount, maxMemeAmount), 0);
 

@@ -25,7 +25,7 @@
 	<ThoughtDef>
 		<defName>AM_Religion_Despised</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Religion</workerClass>
 		<stages>
 			<li>
 				<label>religious beliefs</label>
@@ -53,7 +53,7 @@
 	<ThoughtDef>
 		<defName>AM_Religion_Disliked</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Religion</workerClass>
 		<stages>
 			<li>
 				<label>religious beliefs</label>
@@ -81,7 +81,7 @@
 	<ThoughtDef>
 		<defName>AM_Religion_ProselytismDisliked</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>AlphaMemes.Thought_Religion_ProselytismDisliked</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Proselytism</workerClass>
 		<stages>
 			<li>
 				<label>proselytizing behaviour</label>
@@ -109,7 +109,7 @@
 	<ThoughtDef>
 		<defName>AM_Religion_Loved</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>AlphaMemes.Thought_Religion_Despised</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Religion</workerClass>
 		<stages>
 			<li>
 				<label>religious beliefs</label>

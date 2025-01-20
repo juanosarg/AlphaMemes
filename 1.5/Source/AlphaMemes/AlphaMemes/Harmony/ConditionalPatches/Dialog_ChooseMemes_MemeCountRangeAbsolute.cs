@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace AlphaMemes
 {
-
 
     /*[HarmonyPatch(typeof(Dialog_ChooseMemes))]
     [HarmonyPatch("MemeCountRangeAbsolute", MethodType.Getter)]*/
@@ -20,19 +17,7 @@ namespace AlphaMemes
        /* [HarmonyPostfix]*/
         public static void SetMaxToOptions(ref IntRange __result)
         {
-
-
             __result = new IntRange(1, (int)AlphaMemes_Settings.memeAmount);
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

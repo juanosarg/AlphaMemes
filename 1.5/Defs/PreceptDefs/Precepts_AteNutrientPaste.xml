@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
 	<!-- Precepts -->
-
 	<PreceptDef>
 		<defName>AM_NutrientPasteEating_Indifferent</defName>
 		<issue>NutrientPasteEating</issue>
 		<label>indifferent</label>
-		<description>Nutrient paste is a necessity on the Rim. It may not be tasty but it keeps you well fed for another day.\n\n&lt;color=#E5E54C&gt;Note:&lt;/color&gt;\n - This is just a version of the "Don't mind" rank of the precept that doesn't need Transhumanist, so you can add it to other ideos if you want.</description>
+		<description>Nutrient paste is a necessity on the Rim. It may not be tasty but it keeps you well fed for another day.\n\n&lt;color=#E5E54C&gt;Note:&lt;/color&gt;\n - This is just a version of the "Don't mind" rank of the precept that doesn't need Transhumanist or Inhuman (Anomaly DLC), so you can add it to other ideos if you want.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>-10</displayOrderInIssue>
 		<defaultSelectionWeight>0</defaultSelectionWeight>
-
 	</PreceptDef>
-
-
 	<PreceptDef>
 		<defName>AM_NutrientPasteEating_Preferred</defName>
 		<issue>NutrientPasteEating</issue>
@@ -24,7 +18,6 @@
 		<impact>Medium</impact>
 		<displayOrderInIssue>-20</displayOrderInIssue>
 		<defaultSelectionWeight>0</defaultSelectionWeight>
-		
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>AteNutrientPaste</eventDef>
@@ -32,9 +25,22 @@
 			</li>
 		</comps>
 	</PreceptDef>
-
+	<PreceptDef>
+		<defName>AM_NutrientPasteEating_Forbidden</defName>
+		<issue>NutrientPasteEating</issue>
+		<label>forbidden</label>
+		<description>We will absolutely never eat nutrient paste. What a disgusting, revolting thing. We'd rather starve.\n\n&lt;color=#E5E54C&gt;Note:&lt;/color&gt;\n - Colonist will immediately vomit a nutrient paste meal if consumed.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>0</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteNutrientPaste</eventDef>
+				<thought>AM_AteNutrientPasteMeal_Forbidden</thought>
+			</li>
+		</comps>
+	</PreceptDef>
 	<!-- Thoughts -->
-
 	<ThoughtDef>
 		<defName>AM_AteNutrientPasteMeal_Preferred</defName>
 		<durationDays>1</durationDays>
@@ -46,5 +52,15 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-
+	<ThoughtDef>
+		<defName>AM_AteNutrientPasteMeal_Forbidden</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate nutrient paste meal</label>
+				<description>I'm not eating nutrient paste. I'd rather starve!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

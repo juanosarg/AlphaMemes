@@ -6,12 +6,8 @@ using System.Linq;
 using System;
 using System.Reflection.Emit;
 
-
-
 namespace AlphaMemes
 {
-
-
     /*[HarmonyPatch(typeof(IdeoUIUtility))]
     [HarmonyPatch("DoPrecepts")]*/
     public static class AlphaMemes_IdeoUIUtility_DoPrecepts_Amount_Patch

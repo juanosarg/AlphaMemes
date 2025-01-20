@@ -27,10 +27,8 @@ namespace AlphaMemes
 		}
 
 		public static bool Applies(Thing th)
-		{
-
-			bool isArtTable = (th.def.defName== "TableSculpting");
-			return isArtTable && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_ArtProductionSpeed_Increased) != null;
+		{			
+			return th.def == InternalDefOf.TableSculpting && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_ArtProductionSpeed_Increased) != null;
 		}
 	}
 }

@@ -7,6 +7,11 @@
 		<defName>AM_AnimalReleased</defName>
 		<label>animal released</label>
 	</HistoryEventDef>
+	
+	<HistoryEventDef>
+		<defName>AM_AnimalAnalyzedAndReleased</defName>
+		<label>animal analyzed and released</label>
+	</HistoryEventDef>
 
 	<!-- Issue -->
 
@@ -38,6 +43,10 @@
 				<eventDef>AM_AnimalReleased</eventDef>
 				<thought>AM_AnimalRelease_Encouraged</thought>
 			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_AnimalAnalyzedAndReleased</eventDef>
+				<thought>AM_AnimalAnalyzedAndReleased_Encouraged</thought>
+			</li>
 		</comps>
 	</PreceptDef>
 
@@ -50,7 +59,20 @@
 			<li>
 				<label>animal released</label>
 				<description>We released an animal into the wild, enriching the ecosystem.</description>
-				<baseMoodEffect>3</baseMoodEffect>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_AnimalAnalyzedAndReleased_Encouraged</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>animal analyzed and released</label>
+				<description>We released an analyzed animal into the wild, enriching the ecosystem.</description>
+				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

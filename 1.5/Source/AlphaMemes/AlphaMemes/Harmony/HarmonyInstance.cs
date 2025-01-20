@@ -89,6 +89,10 @@ namespace AlphaMemes
             transpiler = typeof(AlphaMemes_IdeoUIUtility_DoStyles_Patch).GetMethod("TranspileStyles");
             harmony.Patch(method, transpiler: transpiler);
 
+            method = AccessTools.Method(typeof(IdeoUtility), "IsMemeAllowedForInitialFluidIdeo");
+            postfix = typeof(AlphaMemes_IdeoUtility_IsMemeAllowedForInitialFluidIdeo_Patch).GetMethod("AllowAllMemes");
+            harmony.Patch(method, postfix: postfix);
+
         }
 
      }

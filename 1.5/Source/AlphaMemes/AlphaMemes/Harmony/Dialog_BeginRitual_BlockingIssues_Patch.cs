@@ -24,7 +24,7 @@ namespace AlphaMemes
 
         public static IEnumerable<string> Postfix(IEnumerable<string> values, Precept_Ritual ___ritual)
         {
-            if (___ritual?.def == InternalDefOf.AM_SkyBurial)
+            if (___ritual?.def.GetModExtension<FuneralPreceptExtension>()?.isColonistFuneral==true)
             {
                 List<string> resultingList = values.ToList();
 

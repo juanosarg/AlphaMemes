@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Issues -->
+	<IssueDef>
+		<defName>AM_Disfigurement</defName>
+		<label>disfigurement</label>
+		<iconPath>UI/Issues/AM_Disfigurement</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Disfigurement_Disliked</defName>
+		<issue>AM_Disfigurement</issue>
+		<label>disliked</label>
+		<description>Disfigurement is unsettling.</description>
+		<impact>Low</impact>
+		<classic>true</classic>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+  <PreceptDef>
+		<defName>AM_Disfigurement_DontCare</defName>
+		<issue>AM_Disfigurement</issue>
+		<label>don't care</label>
+		<description>Who cares if a person is disfigured? We shouldn't judge others based on such trivial matters.</description>
+		<impact>Low</impact>		
+		<displayOrderInIssue>10</displayOrderInIssue>
+		
+	</PreceptDef>
+  
+  
+
+
+</Defs>

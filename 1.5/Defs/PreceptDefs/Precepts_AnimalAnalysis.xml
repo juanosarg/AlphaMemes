@@ -21,7 +21,7 @@
     <defName>AM_AnimalAnalysis_Expected</defName>
     <issue>AM_AnimalAnalysis</issue>
     <label>expected</label>
-    <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will receive increasing mood boosts from the number of animals scanned and stored in the animal database. You need to have a database built for this to work.</description>
+    <description>By properly cataloguing all the genetically modified animals on the Rim we are contributing to making the galaxy a better place.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists with "Low" expectations or higher will receive increasing mood boosts from the number of animals scanned and stored in the animal database. You need to have a database built for this to work. Animals that have been analyzed will get a bonus to filth rate, caravan riding speed and minimum handling skill needed to tame and train them.</description>
     <impact>High</impact>
     <enabledForNPCFactions>false</enabledForNPCFactions>
     <displayOrderInIssue>20</displayOrderInIssue>
@@ -56,7 +56,7 @@
   <ThoughtDef>
 		<defName>AM_AnimalAnalysis_Expected</defName>
 		<minExpectation>Low</minExpectation>
-		<workerClass>AlphaMemes.Thought_AnimalAnalysis_Expected</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_AnimalAnalysis</workerClass>
 		<stages>
 			<li>
 				<label>no scans</label>

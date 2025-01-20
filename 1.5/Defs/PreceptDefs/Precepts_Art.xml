@@ -33,7 +33,7 @@
 	<ThoughtDef>
 		<defName>AM_Art_Desired</defName>
 		<minExpectation>Low</minExpectation>
-		<workerClass>AlphaMemes.Thought_Art_Desired</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Art</workerClass>
 		<stages>
 			<li>
 				<label>no art nearby</label>
