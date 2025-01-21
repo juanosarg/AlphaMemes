@@ -65,6 +65,14 @@
 			<li>
 				<li>AM_FertilityIssue_Increased</li>
 			</li>
+			<li>
+				<li>AM_LovinFrequency_Increased</li>
+				<li>AM_LovinFrequency_Exuberant</li>
+			</li>
+			<li>
+				<li>AM_MaternalMortality_Nullified</li>
+			</li>
+			
 			
 		</requireOne>
 		<symbolPacks>

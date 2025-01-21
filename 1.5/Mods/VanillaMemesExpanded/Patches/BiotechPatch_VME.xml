@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="AM_Youth"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>AM_LearningRate_Increased</li>
+						</li>
+					</value>
+				</li>		
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>

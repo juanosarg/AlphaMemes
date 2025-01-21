@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "Lovin_Prohibited"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "Lovin_Prohibited"]</xpath>
+			<value>
+				<conflictingMemes>
+					<li>AM_Fertility</li>
+				</conflictingMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "Lovin_Prohibited"]/conflictingMemes</xpath>
+			<value>
+				<li>AM_Fertility</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "Lovin_Horrible"]/conflictingMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "Lovin_Horrible"]</xpath>
+			<value>
+				<conflictingMemes>
+					<li>AM_Fertility</li>
+				</conflictingMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "Lovin_Horrible"]/conflictingMemes</xpath>
+			<value>
+				<li>AM_Fertility</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -47,6 +47,8 @@ namespace AlphaMemes
         public static PreceptDef AM_Creep_DontCare;
         [MayRequire("OskarPotocki.VFE.Insectoid2")]
         public static PreceptDef AM_Creep_Sublime;
+        [MayRequireBiotech]
+        public static PreceptDef AM_MaternalMortality_Nullified;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
