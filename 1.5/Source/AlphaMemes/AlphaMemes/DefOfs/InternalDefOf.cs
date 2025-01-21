@@ -14,6 +14,7 @@ namespace AlphaMemes
         }
 
         public static DamageDef AM_AcidSpit;
+        public static DamageDef AM_HolyBurn;
 
         [MayRequire("VanillaExpanded.VMemesE")]
         public static PreceptDef AM_Violence_Abhorrent_Strict;
@@ -49,6 +50,14 @@ namespace AlphaMemes
         public static PreceptDef AM_Creep_Sublime;
         [MayRequireBiotech]
         public static PreceptDef AM_MaternalMortality_Nullified;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static PreceptDef AM_HuntFocus_Strigoi;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static PreceptDef AM_HuntFocus_Ekkimian;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static PreceptDef AM_HuntFocus_Bruxa;
+        [MayRequireBiotech]
+        public static PreceptDef AM_HuntFocus_Sanguophage;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;

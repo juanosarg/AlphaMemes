@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <DamageDef ParentName="Flame">
+    <defName>AM_HolyBurn</defName>
+    <label>holy burn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+  
+ 
+
+</Defs>

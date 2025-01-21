@@ -13,7 +13,7 @@
 							<defName>AM_HuntFocus_Strigoi</defName>
 							<issue>AM_HuntFocus</issue>
 							<label>strigoi</label>
-							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nStrigoi will be the focus of this precept.</description>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nStrigoi will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Strigoi will cause extra 10 burn damage.</description>
 							<impact>Medium</impact>
 							<associatedMemes>
 								<li>AM_VampireHunting</li>
@@ -24,7 +24,7 @@
 							<defName>AM_HuntFocus_Ekkimian</defName>
 							<issue>AM_HuntFocus</issue>
 							<label>ekkimian</label>
-							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nEkkimian will be the focus of this precept.</description>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nEkkimian will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against an Ekkimian will cause extra 10 burn damage.</description>
 							<impact>Medium</impact>
 							<associatedMemes>
 								<li>AM_VampireHunting</li>
@@ -35,7 +35,7 @@
 							<defName>AM_HuntFocus_Bruxa</defName>
 							<issue>AM_HuntFocus</issue>
 							<label>bruxa</label>
-							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nBruxa will be the focus of this precept.</description>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nBruxa will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Bruxa will cause extra 10 burn damage.</description>
 							<impact>Medium</impact>
 							<associatedMemes>
 								<li>AM_VampireHunting</li>
@@ -65,7 +65,7 @@
 										<defName>AM_HuntFocus_Malachai</defName>
 										<issue>AM_HuntFocus</issue>
 										<label>malachai</label>
-										<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nMalachai will be the focus of this precept.</description>
+										<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nMalachai will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Malachai will cause extra 10 burn damage.</description>
 										<impact>Medium</impact>
 										<associatedMemes>
 											<li>AM_VampireHunting</li>
