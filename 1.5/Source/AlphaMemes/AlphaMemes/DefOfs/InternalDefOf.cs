@@ -225,6 +225,13 @@ namespace AlphaMemes
 
         [MayRequire("OskarPotocki.VFE.Insectoid2")]
         public static TerrainDef VFEI2_Creep;
-        
+
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static XenotypeDef VRE_Strigoi;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static XenotypeDef VRE_Ekkimian;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static XenotypeDef VRE_Bruxa;
+
     }
 }

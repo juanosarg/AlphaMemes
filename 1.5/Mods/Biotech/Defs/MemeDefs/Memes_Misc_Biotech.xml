@@ -72,8 +72,6 @@
 			<li>
 				<li>AM_MaternalMortality_Nullified</li>
 			</li>
-			
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -101,6 +99,109 @@
 				<member>reproducer</member>
 			</li>
 		</symbolPacks>
-		
+	</MemeDef>
+	
+	<MemeGroupDef>
+		<defName>AM_BloodFeeders</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_VampireHunting</defName>
+		<label>vampire hunting</label>
+		<description>We refuse to tolerate the predations of the sanguophages. These parasitic creatures thrive on the suffering of others, spreading their cursed condition like a plague. Our mission is clear: track them, eliminate them, and ensure their kind finds no safe haven under the stars.</description>
+		<iconPath>UI/Memes/AM_VampireHunting</iconPath>
+		<groupDef>AM_BloodFeeders</groupDef>
+		<exclusionTags>
+			<li>AM_HuntersVSBloodfeeders</li>
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->righteous</li>
+				<li>memeAdjective->zealous</li>
+				<li>memeAdjective->purifying</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeAdjective->vindictive</li>
+				<li>memeHyphenPrefix->blood</li>
+				<li>memeHyphenPrefix->hunter</li>
+				<li>memeConcept->purge</li>
+				<li>memeConcept->redemption</li>
+				<li>memeConcept->cleansing</li>
+				<li>memeLeaderNoun->inquisitor</li>
+				<li>memeLeaderNoun->exorcist</li>
+				<li>memeLeaderNoun->slayer</li>
+				<li>memeLeaderNoun->purifier</li>
+				<li>memeLeaderNoun->warden</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_SanguophageHunting)        ->[deity0_name] gazed upon the cursed sanguophages and proclaimed: "These creatures are an affront to life itself. They must be purged to restore balance."</li>
+					<li>episode(uses=1,tag=meme_SanguophageHunting)  ->[deity0_name] said to the [memberNamePlural]: "Hunt the sanguophages wherever they hide. Their bloodlust defiles the sanctity of creation."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_SanguophageHunting)           ->[memberNamePlural] constructed a solemn [altarName] on the [place_summary] [place_name], where they swore an oath to cleanse the land of sanguophages.</li>
+					<li>conflict(tag=meme_SanguophageHunting)        ->The sanguophages retaliated against [deity0_name]'s followers, but the [memberNamePlural] stood firm, vowing to end their reign of terror.</li>
+					<li>founderJoin(tag=meme_SanguophageHunting)     ->[deity0_name] commanded [founderName] to rise against the sanguophages, calling them the bane of mortal existence.</li>
+					<li>victory(tag=meme_SanguophageHunting)         ->[founderName] led a crusade against the sanguophages, vanquishing them and securing a lasting peace for the faithful.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_SanguophageHunting)           ->Our founder [founderName] was a visionary who saw the danger of sanguophages in [founder_possessive] world. [founder_pronoun] gathered [founder_possessive] followers and set out to eradicate this parasitic menace.</li>
+					<li>story(uses=1,tag=meme_SanguophageHunting)    ->[founderName]'s followers documented [founder_possessive] tactics and strategies, passing down the art of sanguophage hunting through the generations.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_SanguophageHunting)         ->In all my years tracking sanguophages, one truth has become clear:</li>
+					<li>lesson(tag=meme_SanguophageHunting)              ->these creatures cannot coexist with humanity and must be eradicated for the safety of all.</li>
+					<li>lessonReinforcement(tag=meme_SanguophageHunting) ->Only by standing together and taking action can we protect ourselves from the sanguophage threat.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_SanguophageHunting)    ->The archotechs have no tolerance for sanguophages. Their parasitic nature is an antithesis to perfection.</li>
+					<li>archistFact(tag=meme_SanguophageHunting)     ->When the archotechs reveal their grand design, those who stood against sanguophages will be rewarded for their vigilance.</li>
+					<li>archistProphecy(tag=meme_SanguophageHunting) ->[inTheEnd], the archotechs will eliminate all sanguophages and elevate the hunters who aided in their extermination.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_SanguophageHunting)     ->The spirits abhor sanguophages, for their thirst for blood disrupts the natural order of life and death.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_SanguophageHunting)->As predators prey upon the weak, so must we hunt the sanguophages to maintain the balance of the ecosystem.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_SanguophageHunting)->The sanguophages are a whisper of the cosmic madness that threatens to consume us all. By hunting them, we deny the abyss its agents.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_SanguophageHunting)->The sanguophages covet secrets that were never meant to be theirs. By ending their existence, we preserve the sacred knowledge of the unseen.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_SanguophageHunting)->The sanguophages herald the end. To delay the apocalypse, we must extinguish their cursed bloodlines.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_SanguophageHunting)->It has come to my attention that some of you have been avoiding assignments to hunt sanguophages. Let me remind you: no one is exempt from safeguarding our colony. Remember: teamwork keeps the parasites at bay!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_SanguophageHunting)->We will capture and study these creatures, learning from them and perhaps discover a way to better end the threat of sanguophages.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>Bloodfeeders_Reviled</li>
+			</li>
+			<li Name="HuntPrecepts">
+				<li>AM_HuntFocus_Sanguophage</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Sanguophage Hunters</ideoName>
+				<theme>hunt</theme>
+				<adjective>hunter</adjective>
+				<member>hunter</member>
+			</li>
+			<li>
+				<ideoName>The Blood Purge</ideoName>
+				<theme>purification</theme>
+				<adjective>purifying</adjective>
+				<member>purifier</member>
+			</li>
+			<li>
+				<ideoName>Vampire Bane</ideoName>
+				<theme>bane</theme>
+				<adjective>baneful</adjective>
+				<member>banisher</member>
+			</li>
+		</symbolPacks>
 	</MemeDef>
 </Defs>
