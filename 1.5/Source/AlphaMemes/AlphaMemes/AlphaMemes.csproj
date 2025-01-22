@@ -517,6 +517,8 @@
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsGauranlen.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_DeathrestCaskets.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Draincaskets.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_OcularTrees.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_AnimalAnalysis.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Armor.cs" />

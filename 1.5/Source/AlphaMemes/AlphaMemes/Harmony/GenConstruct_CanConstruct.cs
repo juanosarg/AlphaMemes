@@ -22,9 +22,25 @@ namespace AlphaMemes
         {
 
             ThingDef thingDef;
-            if ((t.def.IsBlueprint || t.def.IsFrame) && (thingDef = (t.def.entityDefToBuild as ThingDef)) != null && thingDef.building != null && thingDef == ThingDefOf.Reliquary && !new HistoryEvent(InternalDefOf.AM_BuildingReliquary, p.Named(HistoryEventArgsNames.Doer)).Notify_PawnAboutToDo_Job())
+            if ((t.def.IsBlueprint || t.def.IsFrame) && (thingDef = (t.def.entityDefToBuild as ThingDef)) != null && thingDef.building != null )
             {
-                __result= false;
+                if(thingDef == ThingDefOf.Reliquary && !new HistoryEvent(InternalDefOf.AM_BuildingReliquary, p.Named(HistoryEventArgsNames.Doer)).Notify_PawnAboutToDo_Job())
+                {
+                    __result = false;
+
+                }
+                if (thingDef == ThingDefOf.DeathrestCasket && !new HistoryEvent(InternalDefOf.AM_BuildingDeathrestCasket, p.Named(HistoryEventArgsNames.Doer)).Notify_PawnAboutToDo_Job())
+                {
+                    __result = false;
+
+                }
+                if (thingDef == InternalDefOf.VRE_Draincasket && !new HistoryEvent(InternalDefOf.AM_BuildingDrainCasket, p.Named(HistoryEventArgsNames.Doer)).Notify_PawnAboutToDo_Job())
+                {
+                    __result = false;
+
+                }
+
+
             }
 
 

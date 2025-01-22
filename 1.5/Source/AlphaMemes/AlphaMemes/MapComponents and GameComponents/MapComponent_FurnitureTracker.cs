@@ -76,6 +76,15 @@ namespace AlphaMemes
 
                 }
 
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_DeathrestCaskets_Abhorrent) != null))
+                {
+                    int casketCount = map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.DeathrestCasket).EnumerableCount();
+                    int draincasketCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VRE_Draincasket).EnumerableCount();
+                    StaticCollections.SetDeathrestCasketsInTheMap(map, casketCount);
+                    StaticCollections.SetDraincasketsInTheMap(map, draincasketCount);
+
+                }
+
                 if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Megaliths_Desired) != null))
                 {
                     int megalithCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.AM_Megalith).EnumerableCount();

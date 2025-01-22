@@ -21,6 +21,10 @@ namespace AlphaMemes
 
         public static Dictionary<Map, int> reliquariesInTheMap = new Dictionary<Map, int>();
 
+        public static Dictionary<Map, int> deathrestCasketsInTheMap = new Dictionary<Map, int>();
+
+        public static Dictionary<Map, int> draincasketsInTheMap = new Dictionary<Map, int>();
+
         public static Dictionary<Map, int> megalithsInTheMap = new Dictionary<Map, int>();
 
         public static List<PawnKindDef> analyzedAnimals = new List<PawnKindDef>();
@@ -59,6 +63,14 @@ namespace AlphaMemes
         public static void SetReliquariesInTheMap(Map map, int reliquaries)
         {
             reliquariesInTheMap[map] = reliquaries;
+        }
+        public static void SetDeathrestCasketsInTheMap(Map map, int caskets)
+        {
+            deathrestCasketsInTheMap[map] = caskets;
+        }
+        public static void SetDraincasketsInTheMap(Map map, int caskets)
+        {
+            draincasketsInTheMap[map] = caskets;
         }
         public static void SetMegalithsInTheMap(Map map, int megaliths)
         {

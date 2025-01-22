@@ -58,6 +58,8 @@ namespace AlphaMemes
         public static PreceptDef AM_HuntFocus_Bruxa;
         [MayRequireBiotech]
         public static PreceptDef AM_HuntFocus_Sanguophage;
+        [MayRequireBiotech]
+        public static PreceptDef AM_DeathrestCaskets_Abhorrent;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -72,6 +74,10 @@ namespace AlphaMemes
         public static HistoryEventDef AM_BuildingReliquary;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
+        [MayRequireBiotech]
+        public static HistoryEventDef AM_BuildingDeathrestCasket;
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static HistoryEventDef AM_BuildingDrainCasket;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -107,7 +113,9 @@ namespace AlphaMemes
         [MayRequire("sarg.alphabiomes")]
         public static ThingDef AB_RedPlantsTall;
         public static ThingDef TableSculpting;
-      
+        [MayRequire("vanillaracesexpanded.sanguophage")]
+        public static ThingDef VRE_Draincasket;
+
 
         public static FleckDef PsycastPsychicEffect;
 
