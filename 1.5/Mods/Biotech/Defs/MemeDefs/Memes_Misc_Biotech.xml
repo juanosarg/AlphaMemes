@@ -182,6 +182,12 @@
 			<li Name="HuntPrecepts">
 				<li>AM_HuntFocus_Sanguophage</li>
 			</li>
+			<li>
+				<li>AM_DeathrestCaskets_Abhorrent</li>
+			</li>
+			<li>
+				<li>AM_SanguophageCamps_RaidingDesired</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>

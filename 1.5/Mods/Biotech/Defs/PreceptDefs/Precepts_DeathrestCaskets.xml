@@ -22,12 +22,14 @@
 		<requiredMemes>
 			<li>AM_VampireHunting</li>
 		</requiredMemes>
-		<li Class="PreceptComp_UnwillingToDo">
-			<eventDef>AM_BuildingDeathrestCasket</eventDef>
-		</li>
-		<li Class="PreceptComp_SituationalThought">
-			<thought>AM_DeathrestCaskets_Abhorrent</thought>
-		</li>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_BuildingDeathrestCasket</eventDef>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_DeathrestCaskets_Abhorrent</thought>
+			</li>
+		</comps>
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>AM_DeathrestCaskets_Abhorrent</defName>

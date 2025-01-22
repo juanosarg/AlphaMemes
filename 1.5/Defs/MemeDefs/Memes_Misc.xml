@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<MemeDef>
 		<defName>AM_Artist</defName>
 		<label>artist</label>
@@ -58,7 +57,6 @@
 					<li>introMemo(tag=meme_Artist)->Could you *please* look again into the problems the art department has with their computers? I think they have installed something they shouldn't...</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Artist)->These wayward creatures are an infinite source of creativity. We will portray their myriad forms in our art.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -72,7 +70,6 @@
 			<li>
 				<li>AM_ArtQuality_Expected</li>
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -93,7 +90,6 @@
 		<exclusionTags>
 			<li>VME_MadnessVsGestalt</li>
 			<li>VME_MadnessVsAstrology</li>
-			
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -144,7 +140,6 @@
 					<li>introMemo(tag=meme_Madness)->We are having a recurring incident where someone in the company is replying to mails with a long chain of illegible gibberish. Please remember that AAmOwdh765sh dghd//%dg gt7s65 %/s uisis 7s78s ysg ys/%/Sysy awwxoPOUPSUs yiosioIOSy ysoIYSioy soeqyy66678xnm.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Madness)->I have seen the face of these creatures, and they were staring at me. I could feel their gaze. Even closing my eyes, I could still see their eyes like bright points of red burning my retinas. So arousing!</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -155,7 +150,6 @@
 			<li>
 				<li>AM_Mood_Volatile</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -250,7 +244,6 @@
 			<li>
 				<li>AM_Reputation_Lowered</li>
 			</li>
-			
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -278,7 +271,6 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
-	
 	<MemeGroupDef>
 		<defName>AM_Biological</defName>
 		<drawOffset>(0.65, 0.23)</drawOffset>
@@ -374,21 +366,20 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-
 	<MemeDef>
 		<defName>AM_GauranlenSupremacy</defName>
-		<label>gauranlen supremacy</label>		
+		<label>gauranlen supremacy</label>
 		<description>The symbiotic relationship between humanity, gauranlen trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme or the Biological Corruptors meme are chosen too .\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
 		<iconPath>UI/Memes/AM_GauranlenSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-			<li>AM_GladiatorVsDryads</li>	
-			<li>AM_SharpshooterVsDryads</li>			
+			<li>AM_GladiatorVsDryads</li>
+			<li>AM_SharpshooterVsDryads</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
-				<li>memeCreed->dryad</li>				
+				<li>memeCreed->dryad</li>
 				<li>memeCreed->gauranlen tree</li>
 				<li>memeConcept->gauranlen trees</li>
 				<li>memeConcept->dryads</li>
@@ -398,7 +389,7 @@
 				<li>memeHyphenPrefix->arbor</li>
 				<li>memeHyphenPrefix->dryad</li>
 				<li>memeLeaderNoun->dryadkeeper</li>
-				<li>memeLeaderNoun->arborist</li>				
+				<li>memeLeaderNoun->arborist</li>
 				<li>memeLeaderAdjective->green</li>
 				<li>memeLeaderAdjective->root</li>
 				<li>memeLeaderAdjective->canopy</li>
@@ -440,7 +431,6 @@
 					<li>eschatologismFact(tag=meme_GauranlenSupremacy)->We will use the Gauranlen trees and their dryads to bring forth the destruction of everything.</li>
 					<!-- corporate -->
 					<li>introMemo(tag=meme_GauranlenSupremacy)->The new Gauranlen tree arboretum has greatly increased productivity around. We are however aware of the recent reports of dryads being used for unintended purposes, such as carrying office supplies around. Please note that such uses are penalized by immediate dismissal from the company.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -452,23 +442,20 @@
 				<li>AM_CombatProwess_Reduced</li>
 			</li>
 		</requireOne>
-
 		<modExtensions>
 			<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
 				<requiredMemes>
 					<li>TreeConnection</li>
 					<li>AM_BiologicalCorruptors</li>
-
 				</requiredMemes>
 			</li>
 		</modExtensions>
 	</MemeDef>
-
 	<MemeDef>
 		<defName>AM_BiologicalReconstructors</defName>
 		<label>biological reconstructors</label>
 		<exclusionTags>
-			<li>AM_Biological</li>			
+			<li>AM_Biological</li>
 		</exclusionTags>
 		<description>Life is precious, a gift from Old Earth. We shall try to replicate as much of it as possible and use it to populate the worlds of the Rim with a myriad of lifeforms.</description>
 		<iconPath>UI/Memes/AM_BiologicalReconstructors</iconPath>
@@ -478,19 +465,17 @@
 			<rulesStrings>
 				<li>memeAdjective->zoological</li>
 				<li>memeAdjective->conservationist</li>
-				<li>memeAdjective->environmentalist</li>		
-				<li>memeAdjective->green</li>										
+				<li>memeAdjective->environmentalist</li>
+				<li>memeAdjective->green</li>
 				<li>memeConcept->conservation</li>
-				<li>memeHyphenPrefix->eco</li>	
+				<li>memeHyphenPrefix->eco</li>
 				<li>memeLeaderNoun->ecologist</li>
 				<li>memeMoralist->ecofreak</li>
-
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
-
 					<!-- theist myth -->
 					<li>creation(tag=meme_BiologicalReconstructors)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has been honouring me for centuries, creating all sorts of marvelous creatures. This pleases me."</li>
 					<li>episode(uses=1,tag=meme_BiologicalReconstructors)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of these genetic wonders, cataloguing their multitude of forms.</li>
@@ -529,7 +514,6 @@
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-
 		<symbolPacks>
 			<li>
 				<ideoName>Reconstruction</ideoName>
@@ -537,7 +521,6 @@
 				<adjective>ecologist</adjective>
 				<member>eco-activist</member>
 			</li>
-
 		</symbolPacks>
 		<requireOne>
 			<li>
@@ -561,7 +544,6 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
-
 	<MemeGroupDef>
 		<defName>AM_Combat</defName>
 		<drawOffset>(0.65, 0.23)</drawOffset>
@@ -572,7 +554,7 @@
 		<defName>AM_Bulwark</defName>
 		<label>bulwark</label>
 		<exclusionTags>
-			<li>AM_Combat</li>	
+			<li>AM_Combat</li>
 			<li>AM_BulwarkVsNudist</li>
 		</exclusionTags>
 		<description>A proper defense is the only way to stay safe on the Rim. All weapons in the universe will be useless if your soldiers are dead.</description>
@@ -589,7 +571,6 @@
 				<li>memeConcept->armor</li>
 				<li>memeConcept->defense</li>
 				<li>memeLeaderNoun->bastion</li>
-
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -639,7 +620,6 @@
 				<li>AM_Armour_Sharp</li>
 				<li>AM_Armour_Heat</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -650,13 +630,12 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-
 	<MemeDef>
 		<defName>AM_Sharpshooter</defName>
 		<label>sharpshooter</label>
 		<exclusionTags>
-			<li>AM_Combat</li>		
-			<li>AM_SharpshooterVsDryads</li>		
+			<li>AM_Combat</li>
+			<li>AM_SharpshooterVsDryads</li>
 			<li>AM_NonViolenceVowVsSharpshooter</li>
 		</exclusionTags>
 		<description>Our enemies won't see us coming. We will set our sights on them and they'll be taken silently, without any fanfare or celebration.</description>
@@ -673,7 +652,6 @@
 				<li>memeConcept->sniper rifles</li>
 				<li>memeConcept->precision</li>
 				<li>memeLeaderNoun->sniper</li>
-
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -735,13 +713,12 @@
 			</li>
 		</symbolPacks>
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>AM_Gladiator</defName>
 		<label>gladiator</label>
 		<exclusionTags>
-			<li>AM_Combat</li>		
-			<li>AM_GladiatorVsDryads</li>		
+			<li>AM_Combat</li>
+			<li>AM_GladiatorVsDryads</li>
 			<li>AM_NonViolenceVowVsGladiator</li>
 		</exclusionTags>
 		<description>True glory can only be achieved in hand to hand combat. Ranged weapons are for cowards, and using them is shameful.</description>
@@ -758,7 +735,6 @@
 				<li>memeConcept->hand to hand combat</li>
 				<li>memeConcept->melee</li>
 				<li>memeLeaderNoun->gladiator</li>
-
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -834,10 +810,9 @@
 			<rulesStrings>
 				<li>memeAdjective->aniconic</li>
 				<li>memeAdjective->destructive</li>
-				<li>memeAdjective->anti idolatry</li>				
+				<li>memeAdjective->anti idolatry</li>
 				<li>memeConcept->destruction of religious icons</li>
 				<li>memeConcept->iconoclasm</li>
-				
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -909,11 +884,11 @@
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
 		<exclusionTags>
-			<li>AM_Ascetic</li>	
-			<li>VME_AsceticVsHedonism</li>		
-			<li>AM_AsceticVsHighLife</li>	
-			<li>VME_AsceticVsSweetTeeth</li>	
-			<li>VME_AsceticVsPartyLife</li>				
+			<li>AM_Ascetic</li>
+			<li>VME_AsceticVsHedonism</li>
+			<li>AM_AsceticVsHighLife</li>
+			<li>VME_AsceticVsSweetTeeth</li>
+			<li>VME_AsceticVsPartyLife</li>
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -926,11 +901,10 @@
 				<li>memeConcept->self-restraint</li>
 				<li>memeAdjective->monastic</li>
 				<li>memeAdjective->austere</li>
-				<li>memeHyphenPrefix->monk</li>				
+				<li>memeHyphenPrefix->monk</li>
 				<li>memeLeaderNoun->friar</li>
 				<li>memeLeaderNoun->abbot</li>
 				<li>memeLeaderNoun->prior</li>
-						
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -978,21 +952,18 @@
 			<li>
 				<li>RoughLiving_Welcomed</li>
 			</li>
-			
 			<li>
 				<li>DrugUse_MedicalOrSocial</li>
 				<li>DrugUse_MedicalOnly</li>
 				<li>DrugUse_Prohibited</li>
 			</li>
-			
 			<li>
 				<li>AM_Barracks_Preferred</li>
 			</li>
 			<li>
 				<li>Lovin_Prohibited</li>
-				<li>Lovin_SpouseOnly_Strict</li>				
+				<li>Lovin_SpouseOnly_Strict</li>
 			</li>
-			
 		</requireOne>
 		<agreeableTraits>
 			<li>Ascetic</li>
@@ -1011,8 +982,6 @@
 			</li>
 		</modExtensions>
 	</MemeDef>
-	
-	
 	<MemeDef>
 		<defName>AM_BiologicalCorruptors</defName>
 		<label>biological corruptors</label>
@@ -1028,27 +997,24 @@
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->corrupted</li>
-				<li>memeAdjective->twisted</li>		
-				<li>memeAdjective->ocular</li>	
-				<li>memeAdjective->extradimensional</li>	
-				<li>memeLeaderAdjective->warped</li>					
+				<li>memeAdjective->twisted</li>
+				<li>memeAdjective->ocular</li>
+				<li>memeAdjective->extradimensional</li>
+				<li>memeLeaderAdjective->warped</li>
 				<li>memeConcept->corruption</li>
 				<li>memeConcept->mutation</li>
 				<li>memeLeaderNoun->oculist</li>
 				<li>memeMoralist->ocular zealot</li>
-
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
 			<rules>
 				<rulesStrings>
-
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->We shall pervert and corrupt these creations to fit our goals. Only by twisting them according to our needs will we succeed.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-
 		<symbolPacks>
 			<li>
 				<ideoName>Corruption</ideoName>
@@ -1056,7 +1022,6 @@
 				<adjective>corrupt</adjective>
 				<member>corruptor</member>
 			</li>
-
 		</symbolPacks>
 		<requiredRituals>
 			<li>
@@ -1070,6 +1035,110 @@
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
-		
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_WaterPrimacy</defName>
+		<label>water primacy</label>
+		<description>Water is the essence of life, the purifier of souls, and the force that shapes the world. From sacred baptismal rites to reverence for the seas and rivers, we honor water as the ultimate source of sustenance and spiritual renewal.</description>
+		<iconPath>UI/Memes/AM_WaterPrimacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+				
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->purification</li>
+				<li>memeCreed->flow</li>
+				<li>memeCreed->renewal</li>
+				<li>memeCreed->harmony</li>
+				<li>memeCreed->essence</li>
+				<li>memeConcept->cleansing</li>
+				<li>memeConcept->fluidity</li>
+				<li>memeConcept->life</li>
+				<li>memeAdjective->aquatic</li>
+				<li>memeAdjective->fluid</li>
+				<li>memeHyphenPrefix->water</li>
+				<li>memeHyphenPrefix->aqua</li>
+				<li>memeLeaderNoun->warden</li>
+				<li>memeLeaderNoun->keeper</li>
+				<li>memeLeaderNoun->navigator</li>
+				<li>memeMoralist->pontiff</li>
+				<li>memeMoralist->oracle</li>
+				<li>memeMoralist->hydromancer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_WaterPrimacy)        ->[deity0_name] spoke to [deity0_possessive] followers: "Let the waters cleanse your soul and grant you life everlasting."</li>
+					<li>episode(uses=1,tag=meme_WaterPrimacy)  ->Speaking to the believers, [deity0_name] said: "Through the purity of water, you shall find renewal and the strength to carry forth my will."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_WaterPrimacy)           ->On the [place_summary] [place_name], the [memberNamePlural] built a shrine dedicated to the sanctity of water, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_WaterPrimacy)        ->A rival group polluted the sacred waters of the [memberNamePlural], prompting outrage and calls for action.</li>
+					<li>founderJoin(tag=meme_WaterPrimacy)     ->[founderName], a prophet of purity, convinced the rival leader of the waters' sacred significance, bringing an end to the desecration.</li>
+					<li>victory(tag=meme_WaterPrimacy)         ->The rival leader repented and pledged to protect the sanctity of the sacred waters, joining the [memberNamePlural].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_WaterPrimacy)           ->[founderName], once a hydrologist on a distant Glitterworld, posited that water is not just a necessity but the essence of all life and a conduit for spiritual renewal.</li>
+					<li>story(uses=1,tag=meme_WaterPrimacy)    ->[founderName] showed us that through reverence for water, we can achieve both harmony and enlightenment.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_WaterPrimacy)         ->The oldest member of our colony, once a scholar of hydrology, taught me that</li>
+					<li>lesson(tag=meme_WaterPrimacy)              ->water is the essence of all life, both a physical and spiritual source of renewal.</li>
+					<li>lessonReinforcement(tag=meme_WaterPrimacy) ->Through water, we cleanse our bodies, minds, and souls, finding balance and enlightenment.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_WaterPrimacy)    ->The archotechs value water as the ultimate resource, sustaining all forms of life.</li>
+					<li>archistFact(tag=meme_WaterPrimacy)     ->Water is not just a necessity but a sacred conduit for harmony, purity, and enlightenment, aligning with the archotechs' vision.</li>
+					<li>archistProphecy(tag=meme_WaterPrimacy) ->[inTheEnd], only those who respect and revere water will transcend through the archotechs' designs.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_WaterPrimacy)    ->The spirits dwell within the waters, flowing through the rivers and rains of creation.</li>
+					<li>animistFact(tag=meme_WaterPrimacy)     ->To commune with the spirits, one must respect and preserve the sacred flow of water.</li>
+					<li>animistProphecy(tag=meme_WaterPrimacy) ->[itIsSaid] those who honor and protect the waters will be blessed by the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_WaterPrimacy)->[itIsSaid] we will honor the sacred waters, for they are the lifeblood of our beloved insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_WaterPrimacy)->The eldritch entities stir beneath the depths. We must honor the waters to keep them calm and appeased.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_WaterPrimacy)->The true secrets of existence are written in the currents. Through reverence for water, we unlock the hidden truths of the cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_WaterPrimacy)->Water is the lifeblood of the world, and it will flow even in the end times. We will honor it until the last drop.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_WaterPrimacy)->We are proud to introduce our new water conservation initiative. By respecting and preserving water, we ensure both ecological sustainability and spiritual harmony.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_WaterPrimacy)->The divergent creations of humanity remind us that water connects all living things, and its sanctity must be preserved to unify us all.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Rain_Blessed</li>
+			</li>
+			<li>
+				<li>AM_Water_Desired</li>				
+			</li>
+			
+			<li>
+				<li>AM_Hydroagriculture_Revered</li>			
+			</li>
+			
+			
+		</requireOne>
+		<disagreeableTraits>
+			<li>Pyromaniac</li>
+		</disagreeableTraits>
+		<symbolPacks>
+			<li>
+				<ideoName>Water Primacy</ideoName>
+				<theme>water</theme>
+				<adjective>aquatic</adjective>
+				<member>waterkeeper</member>
+			</li>
+			<li>
+				<ideoName>Riversong</ideoName>
+				<theme>rivers</theme>
+				<adjective>riverine</adjective>
+				<member>streamwalker</member>
+			</li>
+		</symbolPacks>
 	</MemeDef>
 </Defs>

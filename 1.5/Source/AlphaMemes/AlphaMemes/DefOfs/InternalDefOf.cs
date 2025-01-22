@@ -36,6 +36,7 @@ namespace AlphaMemes
         public static PreceptDef AM_Barracks_PreferredTrue;
         public static PreceptDef AM_NutrientPasteEating_Forbidden;
         public static PreceptDef AM_SkyBurial;
+        public static PreceptDef AM_Hydroagriculture_Revered;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
         [MayRequire("Sarg.AlphaPrefabs")]
@@ -60,6 +61,8 @@ namespace AlphaMemes
         public static PreceptDef AM_HuntFocus_Sanguophage;
         [MayRequireBiotech]
         public static PreceptDef AM_DeathrestCaskets_Abhorrent;
+        [MayRequireBiotech]
+        public static PreceptDef AM_SanguophageCamps_RaidingDesired;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -78,6 +81,8 @@ namespace AlphaMemes
         public static HistoryEventDef AM_BuildingDeathrestCasket;
         [MayRequire("vanillaracesexpanded.sanguophage")]
         public static HistoryEventDef AM_BuildingDrainCasket;
+        [MayRequireBiotech]
+        public static HistoryEventDef AM_SanguophageCampRaided;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -249,6 +254,9 @@ namespace AlphaMemes
         public static XenotypeDef VRE_Ekkimian;
         [MayRequire("vanillaracesexpanded.sanguophage")]
         public static XenotypeDef VRE_Bruxa;
+
+        [MayRequireBiotech]
+        public static QuestScriptDef AM_OpportunitySite_SanguophageCamp;
 
     }
 }

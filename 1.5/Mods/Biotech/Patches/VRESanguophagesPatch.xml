@@ -42,6 +42,19 @@
 							</associatedMemes>
 							<displayOrderInIssue>30</displayOrderInIssue>
 						</PreceptDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_HemogenPipe</defName>
+							<thing>VRE_HemogenPipe</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_HemogenVat</defName>
+							<thing>VRE_HemogenVat</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_Draincasket_South</defName>
+							<thing>VRE_Draincasket</thing>
+							<rotation>South</rotation>
+						</KCSG.SymbolDef>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -62,7 +75,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/PreceptDef[defName="AM_DeathrestCaskets_Abhorrent"]</xpath>
+					<xpath>Defs/PreceptDef[defName="AM_DeathrestCaskets_Abhorrent"]/comps</xpath>
 					<value>
 						<li Class="PreceptComp_UnwillingToDo">
 							<eventDef>AM_BuildingDrainCasket</eventDef>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_Water</defName>
+		<label>water</label>
+		<iconPath>UI/Issues/AM_Water</iconPath>
+	</IssueDef>
+	<PreceptDef>
+		<defName>AM_Water_Desired</defName>
+		<issue>AM_Water</issue>
+		<label>desired</label>
+		<description>Water is life, sacred and pure. We must seek it, cherish it, and ensure its abundance in our lives.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Nullifies "Soaking wet" thought.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_WaterPrimacy</li>
+		</associatedMemes>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Water_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>In a watery biome (more than 100 water tiles in the current map)</li>
+					<li>In a non-watery biome (less than 100 water tiles in the current map)</li>					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Water_Desired</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Water</workerClass>
+		<stages>
+			<li>
+				<label>in a watery biome</label>
+				<description>Being near water fills me with peace and purpose. Its presence is a gift we must honor.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>in a non-watery biome</label>
+				<description>The absence of water weighs on my soul. This land feels barren and lifeless.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

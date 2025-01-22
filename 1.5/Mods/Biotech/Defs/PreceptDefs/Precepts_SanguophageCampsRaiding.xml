@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<IssueDef>
+		<defName>AM_SanguophageCamps</defName>
+		<label>sanguophage camps</label>
+		<iconPath>UI/Issues/AM_SanguophageCamps</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_SanguophageCampRaided</defName>
+		<label>raiding a sanguophage camp</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_SanguophageCamps_RaidingDesired</defName>
+		<issue>AM_SanguophageCamps</issue>
+		<label>rading desired</label>
+		<description>The lurking dens of sanguophages are a blight upon the world, festering with unnatural corruption. We take pride in raiding these camps, striking at their cursed kind.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If this precept is active in your colony, you will get Sanguophage camp quests once per quadrum. These are storyteller-independent, they don't take the "slot" of a base game quest.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_VampireHunting</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_VampireHunting</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_SanguophageCampRaided</eventDef>
+				<thought>AM_SanguophageCamps_RaidingDesired_Know</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_SanguophageCampRaided</eventDef>
+				<thought>AM_SanguophageCamps_RaidingDesired</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_SanguophageCamps_RaidingDesired_Know</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>raided a sanguophage camp together</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_SanguophageCamps_RaidingDesired</defName>
+		<durationDays>3</durationDays>
+		<stages>
+			<li>
+				<label>raided a sanguophage camp</label>
+				<description>I raided a camp full of disgusting Sanguophages!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
