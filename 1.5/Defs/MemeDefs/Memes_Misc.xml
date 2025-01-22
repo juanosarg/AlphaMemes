@@ -1115,13 +1115,10 @@
 			</li>
 			<li>
 				<li>AM_Water_Desired</li>				
-			</li>
-			
+			</li>		
 			<li>
 				<li>AM_Hydroagriculture_Revered</li>			
 			</li>
-			
-			
 		</requireOne>
 		<disagreeableTraits>
 			<li>Pyromaniac</li>
@@ -1140,5 +1137,8 @@
 				<member>streamwalker</member>
 			</li>
 		</symbolPacks>
+		<addDesignators>
+			<li>AM_BaptismalFont</li>
+		</addDesignators>
 	</MemeDef>
 </Defs>

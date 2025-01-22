@@ -492,8 +492,10 @@
     <Compile Include="Rituals\FuneralFramework\RitualTriggers\RitualObiligationTrigger_Animals.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFrameworkDreadnought.cs" />
     <Compile Include="Rituals\FuneralFramework\RitualBehavior\RitualBehaviorWorker_FuneralFramework.cs" />
+    <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Baptism.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
+    <Compile Include="Rituals\Misc\RitualOutcomeComps\RitualOutcomeComp_NearWater.cs" />
     <Compile Include="Rituals\OcularWarping\RitualOutcomeEffectWorker_Warping.cs" />
     <Compile Include="Rituals\OcularWarping\RitualRoleDryad.cs" />
     <Compile Include="Rituals\OcularWarping\RitualStage_InteractWithAnimalNotDryad.cs" />

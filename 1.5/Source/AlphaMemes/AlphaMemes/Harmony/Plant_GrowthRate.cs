@@ -17,9 +17,9 @@ namespace AlphaMemes
         [HarmonyPostfix]
         static void GetPlantFertility(ref float __result, Plant __instance)
         {
-            if (WorldComponent_PlantFertility.Instance.plants_and_fertility.ContainsKey(__instance) && WorldComponent_PlantFertility.Instance.plants_and_fertility[__instance])
+            if (WorldComponent_PlantFertility.Instance.plants_and_fertility.ContainsKey(__instance) )
             {
-                __result *= 1.2f;
+                __result *= WorldComponent_PlantFertility.Instance.plants_and_fertility[__instance];
             }
 
 

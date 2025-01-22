@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_BaptismPreceptPattern</defName>
+    <ritualBehavior>AM_BaptismBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>AM_BaptismTarget</ritualObligationTargetFilter>
+  
+    <ritualOutcomeEffect>AM_BaptismOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>

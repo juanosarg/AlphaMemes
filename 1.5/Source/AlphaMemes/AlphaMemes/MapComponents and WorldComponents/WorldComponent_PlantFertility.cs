@@ -15,22 +15,14 @@ namespace AlphaMemes
     public class WorldComponent_PlantFertility : WorldComponent
     {
 
-        public Dictionary<Plant, bool> plants_and_fertility = new Dictionary<Plant, bool>();
-        List<Plant> list1;
-        List<bool> list2;
+        public Dictionary<Plant, float> plants_and_fertility = new Dictionary<Plant, float>();
+       
 
         public static WorldComponent_PlantFertility Instance;
 
         public WorldComponent_PlantFertility(World world) : base(world) => Instance = this;
 
 
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-           // Scribe_Collections.Look(ref plants_and_fertility, "plants_and_fertility", LookMode.Reference, LookMode.Value, ref list1, ref list2);
-
-        }
 
         public void CheckIfPlantExtraFertile(Plant plant,Map map)
         {
@@ -54,7 +46,12 @@ namespace AlphaMemes
             }
             if (waterFound)
             {
-                plants_and_fertility[plant] = true;
+                plants_and_fertility[plant] = 1.2f;
+            }
+            else
+            {
+                plants_and_fertility[plant] = 0.8f;
+
             }
 
         }

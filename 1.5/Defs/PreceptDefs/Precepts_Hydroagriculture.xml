@@ -9,7 +9,7 @@
 		<defName>AM_Hydroagriculture_Revered</defName>
 		<issue>AM_Hydroagriculture</issue>
 		<label>revered</label>
-		<description>The fruits of water-fed fields are gifts from the divine.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Farms near water terrains (3 tiles or less) grow faster (+20% growth rate)</description>
+		<description>The fruits of water-fed fields are gifts from the divine.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Farms near water terrains (3 tiles or less) grow faster (+20% growth rate).\n - Farms more than 3 tiles awy from water grow slower (-20% growth rate).\n - This is calculated when the plant is sown.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>AM_WaterPrimacy</li>

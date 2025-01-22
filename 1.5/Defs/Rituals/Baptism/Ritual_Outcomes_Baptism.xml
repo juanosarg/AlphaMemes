@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualOutcomeEffectDef>
+    <defName>AM_BaptismOutcome</defName>
+    <description>If the baptism ritual goes well (positive outcome), the baptized colonist will be instantly converted. A negative outcome will cause a mood penalty and strengthen their beliefs.</description>
+    <workerClass>AlphaMemes.RitualOutcomeEffectWorker_Baptism</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.1)</li>
+            <li>(10, 0.2)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>leader</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+	  <li Class="AlphaMemes.RitualOutcomeComp_NearWater">
+        <qualityOffset>0.3</qualityOffset>
+		<label>20 tiles of water nearby</label>
+		<labelNotMet>no 20 tiles of water nearby</labelNotMet>
+      </li>
+     
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Blasphemous</label>
+        <chance>0.1</chance>
+        <memory>AM_TerribleBaptism</memory>
+        <description>The {0} was blasphemous. The ritual was an affront to the holiness of water. This desecration will linger in our thoughts.</description>
+		 <ideoCertaintyOffset>0.5</ideoCertaintyOffset>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Underwhelming</label>
+        <chance>0.2</chance>
+        <memory>AM_BoringBaptism</memory>
+        <description>The {0} was underwhelming. The ceremony lacked the spirit and grace it deserved. It felt hollow and uninspired.</description>
+        <positivityIndex>-1</positivityIndex>
+		<ideoCertaintyOffset>0.25</ideoCertaintyOffset>
+      </li>
+      <li>
+        <label>Refreshing</label>
+        <chance>0.6</chance>
+        <memory>AM_FunBaptism</memory>
+        <description>The {0} was refreshing. That was a delightful moment of connection with the holy water. It left us feeling renewed.</description>
+      
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Transcendent</label>
+        <chance>0.1</chance>
+        <memory>AM_UnforgettableBaptism</memory>
+        <description>The {0} was transcendent! This ritual was a profound experience, an unforgettable communion with the sacred flow of life.</description>
+        
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

@@ -74,4 +74,43 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_BaptismalFont</defName>
+		<label>baptismal font</label>
+		<description>A sacred basin for cleansing and spiritual rebirth through water rituals.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>40000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Misc/AM_BaptismalFont</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<category>Building</category>
+		<size>(1,1)</size>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+	
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			
+		</stuffCategories>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<costStuffCount>75</costStuffCount>
+		
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<designationCategory>Misc</designationCategory>
+		
+	</ThingDef>
 </Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<InteractionDef>
+		<defName>AM_Speech_Baptism</defName>
+		<label>baptism rhetoric</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>UI/Rituals/AM_BaptismSymbol</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+				<li>speechtopic->the [AdjectiveWater] power of a [WaterSource]</li>
+				<li>speechtopic->how a [WaterSource] represents [AdjectiveWater] renewal</li>
+				<li>speechtopic->a [WaterSymbol] as a symbol of purity and life</li>
+				
+				<li>speechtopic->how a [WaterSymbol] connects us through shared rituals</li>
+				<li>speechtopic->how a [AdjectiveWater] [WaterSource] brings balance to all</li>
+				<li>speechtopic->the [AdjectiveWater] flow of a [WaterSource] brings peace</li>
+				<li>speechtopic->the cleansing power of a [AdjectiveWater] [WaterSource]</li>
+				<li>speechtopic->a [WaterSymbol] as a reminder of life's eternal cycle</li>
+				<li>speechtopic(p=0.25)->committing to the ideals of [IDEO_name]</li>
+				<li>speechtopic(p=0.25)->strengthening the spirit through shared tradition</li>
+				<li>speechtopic(p=0.25)->celebrating the unity of our community</li>
+				<li>speechtopic(p=0.25)->finding harmony through nature’s gifts</li>
+				<li>speechtopic(p=0.25)->the tranquil blessing of a [AdjectiveWater] [WaterSource]</li>
+				<li>AdjectiveWater->pure</li>
+				<li>AdjectiveWater->serene</li>
+				<li>AdjectiveWater->renewing</li>
+				<li>AdjectiveWater->life-giving</li>
+				<li>WaterSource->river</li>
+				<li>WaterSource->spring</li>
+				<li>WaterSource->sacred pool</li>
+				<li>WaterSymbol->wave</li>
+				<li>WaterSymbol->droplet</li>
+				<li>WaterSymbol->ripple</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+</Defs>

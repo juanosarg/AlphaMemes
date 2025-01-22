@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef>
+		<defName>AM_BaptismBehavior</defName>
+		<durationTicks>7500</durationTicks>
+		<preceptRequirements>
+			<li Class="PreceptRequirement_Altar"/>
+		</preceptRequirements>
+		<roles Inherit="False">
+			<li Class="RitualRoleTag">
+				<label>speaker</label>
+				<id>moralist</id>
+				<tag>Moralist</tag>
+				<precept>IdeoRole_Moralist</precept>
+				<required>True</required>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+			<li Class="RitualRoleConvertee">
+				<label>baptized</label>
+				<id>baptized</id>
+				<maxCount>1</maxCount>
+				<required>True</required>
+				<countsAsParticipant>False</countsAsParticipant>
+				<allowOtherIdeos>True</allowOtherIdeos>
+			</li>
+		</roles>
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<stages>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>2</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+							<li>moralist</li>
+							<li>baptized</li>
+						</roleIds>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_BehindThingCenter"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>baptized</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter"/>
+						</customPositions>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					<li>baptized</li>
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>2</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>SpeakOnCellNoSpeechBubbles</dutyDef>
+						<speakerInteraction>AM_Speech_Baptism</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_BehindThingCenter"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>baptized</roleId>
+						<dutyDef>StandOnCell</dutyDef>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					<li>baptized</li>
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>
