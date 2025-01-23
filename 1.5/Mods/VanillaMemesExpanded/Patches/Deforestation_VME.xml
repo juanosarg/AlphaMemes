@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName="AM_Deforestation"]/requireOne</xpath>
+		<value>
+			<li><li>VME_WoodcuttingYield_High</li></li>
+		</value>
+	</Operation>
+</Patch>
+

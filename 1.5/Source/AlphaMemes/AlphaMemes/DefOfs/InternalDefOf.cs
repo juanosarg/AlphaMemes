@@ -38,6 +38,7 @@ namespace AlphaMemes
         public static PreceptDef AM_SkyBurial;
         public static PreceptDef AM_Hydroagriculture_Revered;
         public static PreceptDef AM_GauranlenConnection_Forbidden;
+        public static PreceptDef AM_RoughLiving_Disliked;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
         [MayRequire("Sarg.AlphaPrefabs")]
@@ -80,6 +81,9 @@ namespace AlphaMemes
         public static HistoryEventDef AM_BuildingReliquary;
         public static HistoryEventDef AM_PruneGauranlenTree;
         public static HistoryEventDef AM_CutGauranlenTree;
+        public static HistoryEventDef AM_SleptInWoodenBed;
+        public static HistoryEventDef AM_AteInWoodenTable;
+        public static HistoryEventDef AM_AteWithoutATable;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
         [MayRequireBiotech]

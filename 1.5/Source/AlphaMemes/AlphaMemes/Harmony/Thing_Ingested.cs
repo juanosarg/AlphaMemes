@@ -27,6 +27,42 @@ namespace AlphaMemes
 
             }
 
+            if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_RoughLiving_Disliked) == true)
+            {
+                IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
+
+                bool continueChecking = true;
+                List<Thing> thingList = positionTable.GetThingList(ingester.Map);
+                for (int i = 0; i < thingList.Count; i++)
+                {
+                    if (thingList[i].def.surfaceType == SurfaceType.Eat)
+                    {
+                        if (thingList[i].Stuff == ThingDefOf.WoodLog)
+                        {
+                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteInWoodenTable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                            continueChecking = false;
+                            break;
+                        }
+                    }
+                }
+                if (continueChecking)
+                {
+                    Pawn actor = ingester;
+                    Job curJob = actor.jobs.curJob;
+                   
+                    if (ingester.needs.mood != null && __instance.def.IsNutritionGivingIngestible && __instance.def.ingestible.chairSearchRadius > 10f)
+                    {
+                        if (!(ingester.Position + ingester.Rotation.FacingCell).HasEatSurface(actor.Map) && ingester.GetPosture() == PawnPosture.Standing && !ingester.IsWildMan() && __instance.def.ingestible.tableDesired)
+                        {
+                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteWithoutATable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+
+                        }
+                    }
+                }
+
+
+            }
+
 
 
         }

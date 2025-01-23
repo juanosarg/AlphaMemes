@@ -31,6 +31,10 @@
 				<eventLabel>cut Gauranlen tree</eventLabel>
 				<points>1</points>
 			</li>
+			 <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AM_CutGauranlenTree</eventDef>
+        <thought>AM_GauranlenConnection_Forbidden_CutGauranlenTree</thought>
+      </li>
 		</comps>
 	</PreceptDef>
 	<ThoughtDef>
@@ -45,4 +49,15 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	  <ThoughtDef>
+    <defName>AM_GauranlenConnection_Forbidden_CutGauranlenTree</defName>
+    <durationDays>5</durationDays>    
+    <stages>
+      <li>
+        <label>cut Gauranlen tree</label>
+        <description>Our colony has gotten rid of another of those parasitic alien trees. Good riddance!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

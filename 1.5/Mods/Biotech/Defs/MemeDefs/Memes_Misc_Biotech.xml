@@ -40,7 +40,7 @@
 					<li>lessonReinforcement(tag=meme_Fertility) ->Children are the lifeblood of our future; each new life brings hope and strength.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_Fertility)    ->The archotechs value exponential growth, and large families mirror the boundless potential of their creations.</li>
-					<li>archistFact(tag=meme_Fertility)     ->In their algorithms, a thriving population is key to achieving transcendent stability.</li>
+					<li>archistFact(tag=meme_Fertility)     ->In their algorithms, a thriving population is key to achieving transcendent stability</li>
 					<li>archistProphecy(tag=meme_Fertility) ->[inTheEnd], only the most populous and fertile communities will earn the archotechs' favor.</li>
 					<!-- animist -->
 					<li>animistBasis(tag=meme_Fertility)    ->The spirits smile upon those who bring new life into the world, for they see children as the essence of vitality.</li>
@@ -152,7 +152,7 @@
 					<li>story(uses=1,tag=meme_SanguophageHunting)    ->[founderName]'s followers documented [founder_possessive] tactics and strategies, passing down the art of sanguophage hunting through the generations.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_SanguophageHunting)         ->In all my years tracking sanguophages, one truth has become clear:</li>
-					<li>lesson(tag=meme_SanguophageHunting)              ->these creatures cannot coexist with humanity and must be eradicated for the safety of all.</li>
+					<li>lesson(tag=meme_SanguophageHunting)              ->these creatures cannot coexist with humanity and must be eradicated for the safety of all</li>
 					<li>lessonReinforcement(tag=meme_SanguophageHunting) ->Only by standing together and taking action can we protect ourselves from the sanguophage threat.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_SanguophageHunting)    ->The archotechs have no tolerance for sanguophages. Their parasitic nature is an antithesis to perfection.</li>

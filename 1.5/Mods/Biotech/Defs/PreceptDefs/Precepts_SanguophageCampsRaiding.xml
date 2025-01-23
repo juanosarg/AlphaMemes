@@ -13,7 +13,7 @@
 	<PreceptDef>
 		<defName>AM_SanguophageCamps_RaidingDesired</defName>
 		<issue>AM_SanguophageCamps</issue>
-		<label>rading desired</label>
+		<label>raiding desired</label>
 		<description>The lurking dens of sanguophages are a blight upon the world, festering with unnatural corruption. We take pride in raiding these camps, striking at their cursed kind.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If this precept is active in your colony, you will get Sanguophage camp quests once per quadrum. These are storyteller-independent, they don't take the "slot" of a base game quest.</description>
 		<impact>Medium</impact>
 		<associatedMemes>

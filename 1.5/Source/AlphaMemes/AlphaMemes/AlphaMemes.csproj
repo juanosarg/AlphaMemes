@@ -343,7 +343,7 @@
     <Compile Include="Harmony\Plant_GrowthRate.cs" />
     <Compile Include="Harmony\Plant_SpawnSetup.cs" />
     <Compile Include="Harmony\PregnancyUtility_ChanceMomDiesDuringBirth.cs" />
-    <Compile Include="Harmony\QuestManager_Notify_PlantHarvested.cs" />
+    <Compile Include="Harmony\Plant_TrySpawnStump.cs" />
     <Compile Include="Harmony\RitualRoleAssignments_PawnNotAssignableReason.cs" />
     <Compile Include="Harmony\SketchGenUtility_PlayerCanBuildNow.cs" />
     <Compile Include="Harmony\GenConstruct_CanConstruct.cs" />

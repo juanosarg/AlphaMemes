@@ -18,7 +18,7 @@ namespace AlphaMemes
     public static class AlphaMemes_Toils_LayDown_ApplyBedThoughts_Patch
     {
         [HarmonyPostfix]
-        static void ApplyBarrackThoughts(Pawn actor)
+        static void ApplyBarrackThoughts(Pawn actor,Building_Bed bed)
         {
 
             if (actor.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Barracks_Preferred) == true)
@@ -78,12 +78,17 @@ namespace AlphaMemes
 
 				}
 			}
+			if(bed.Stuff== ThingDefOf.WoodLog)
+			{
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_SleptInWoodenBed, new SignalArgs(actor.Named(HistoryEventArgsNames.Doer))), true);
+
+            }
 
 
 
 
 
-		}
+        }
     }
 
 

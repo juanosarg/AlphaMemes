@@ -13,15 +13,15 @@ namespace AlphaMemes
 {
 
 
-    [HarmonyPatch(typeof(QuestManager))]
-    [HarmonyPatch("Notify_PlantHarvested")]
-    public static class AlphaMemes_QuestManager_Notify_PlantHarvested_Patch
+    [HarmonyPatch(typeof(Plant))]
+    [HarmonyPatch("TrySpawnStump")]
+    public static class AlphaMemes_Plant_TrySpawnStump_Patch
     {
         [HarmonyPostfix]
-        static void NotifyGauranlenTreeDead(Thing harvested)
+        static void NotifyGauranlenTreeDead(Plant __instance)
         {
 
-            if (harvested.def == ThingDefOf.Plant_TreeGauranlen)
+            if (__instance.def == ThingDefOf.Plant_TreeGauranlen)
             {
                 HistoryEvent historyEvent = new HistoryEvent(InternalDefOf.AM_CutGauranlenTree);
                 Find.HistoryEventsManager.RecordEvent(historyEvent);

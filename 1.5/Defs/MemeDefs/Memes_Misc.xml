@@ -1084,7 +1084,7 @@
 					<li>story(uses=1,tag=meme_WaterPrimacy)    ->[founderName] showed us that through reverence for water, we can achieve both harmony and enlightenment.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_WaterPrimacy)         ->The oldest member of our colony, once a scholar of hydrology, taught me that</li>
-					<li>lesson(tag=meme_WaterPrimacy)              ->water is the essence of all life, both a physical and spiritual source of renewal.</li>
+					<li>lesson(tag=meme_WaterPrimacy)              ->water is the essence of all life, both a physical and spiritual source of renewal</li>
 					<li>lessonReinforcement(tag=meme_WaterPrimacy) ->Through water, we cleanse our bodies, minds, and souls, finding balance and enlightenment.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_WaterPrimacy)    ->The archotechs value water as the ultimate resource, sustaining all forms of life.</li>
@@ -1197,7 +1197,7 @@
 					<li>story(uses=1,tag=meme_Deforestation)    ->[founderName] led the tired and oppressed to the clearings, where they found freedom from the choking embrace of the woods.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_Deforestation)         ->It might seem strange to you, but I realized this truth as I watched the last tree fall. For in its absence,</li>
-					<li>lesson(tag=meme_Deforestation)              ->only by cutting down the old can we build the future.</li>
+					<li>lesson(tag=meme_Deforestation)              ->only by cutting down the old can we build the future</li>
 					<li>lessonReinforcement(tag=meme_Deforestation) ->Let this axiom echo in your mind as the sound of the axe echoes in the glade.</li>
 					<!-- archist -->
 					<li>archistBasis(tag=meme_Deforestation)    ->The archotechs embody progress, and forests are a relic of stagnation. Clearing them is a step toward embracing the future.</li>
@@ -1230,7 +1230,9 @@
 			<li>
 				<li>AM_GauranlenConnection_Forbidden</li>
 			</li>
-			
+			<li>
+				<li>AM_RoughLiving_Disliked</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
