@@ -34,6 +34,11 @@ namespace AlphaMemes
             return ((Count(ritual, data) > 0f) ? label : labelNotMet).CapitalizeFirst().Formatted() + ": " + "OutcomeBonusDesc_QualitySingleOffset".Translate(qualityOffset.ToStringPercent()) + ".";
         }
 
+        public override float QualityOffset(LordJob_Ritual ritual, RitualOutcomeComp_Data data)
+        {
+            return (Count(ritual, data) > 0f) ? qualityOffset : 0;
+        }
+
         public override QualityFactor GetQualityFactor(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
         {
             float quality = 0f;
@@ -42,15 +47,16 @@ namespace AlphaMemes
             {
 
                 flag = WaterTiles(ritualTarget.Cell,ritualTarget.Map, 10)>20;
+               
                 quality = (flag ? qualityOffset : 0f);
             }
             return new QualityFactor
             {
-                label = label.CapitalizeFirst(),
+                label = flag ? label.CapitalizeFirst(): labelNotMet.CapitalizeFirst(),
                 qualityChange = ExpectedOffsetDesc(positive: true, quality),
                 quality = quality,
                 present = flag,
-                positive = true,
+                positive = flag,
                 priority = 0f
             };
         }
@@ -75,6 +81,7 @@ namespace AlphaMemes
                 }
 
             }
+
             return waterNumber;
 
         }
