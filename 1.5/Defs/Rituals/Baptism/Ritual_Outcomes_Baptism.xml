@@ -5,7 +5,7 @@
 
 	<RitualOutcomeEffectDef>
     <defName>AM_BaptismOutcome</defName>
-    <description>If the baptism ritual goes well (positive outcome), the baptized colonist will be instantly converted. A negative outcome will cause a mood penalty and strengthen their beliefs.</description>
+    <description>If the baptism ritual goes well (positive outcome), the baptized colonist will be instantly converted. A negative outcome will cause a mood penalty and strengthen their original beliefs.\n\nBaptism will be more effective if started near large bodies of water (20 water tiles in a 10 tile radius).</description>
     <workerClass>AlphaMemes.RitualOutcomeEffectWorker_Baptism</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_RoomStat">

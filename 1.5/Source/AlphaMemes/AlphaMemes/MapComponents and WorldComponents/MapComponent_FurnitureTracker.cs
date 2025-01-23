@@ -93,6 +93,18 @@ namespace AlphaMemes
 
                 }
 
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Baths_Desired) != null))
+                {
+                    int bathtubs = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.BathtubStuff).EnumerableCount();
+                    int showers = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerStuff).EnumerableCount() +
+                        map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerSimple).EnumerableCount() +
+                        map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerAdvStuff).EnumerableCount();
+
+
+                    StaticCollections.SetBathsAndShowersInTheMap(map, bathtubs+showers);
+
+                }
+
 
                 tickCounter = 0;
             }

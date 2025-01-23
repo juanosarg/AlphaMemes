@@ -12,6 +12,7 @@
 			<value>
 				<exclusionTags>
 					<li>AM_DefilersVsNaturePrimacy</li>
+					<li>AM_NaturePrimacyAndDeforestation</li>
 				</exclusionTags>
 			</value>
 		</nomatch>
@@ -19,6 +20,7 @@
 		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/exclusionTags</xpath>
 			<value>
 				<li>AM_DefilersVsNaturePrimacy</li>
+				<li>AM_NaturePrimacyAndDeforestation</li>
 			</value>
 		</match>
 	</Operation>

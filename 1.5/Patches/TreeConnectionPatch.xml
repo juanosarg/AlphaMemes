@@ -13,6 +13,7 @@
 				<exclusionTags>
 					<li>AM_DefilerVsTreeConnection</li>
 					<li>TreeConnectionExclusion</li>
+					<li>AM_TreeConnectionAndDeforestation</li>
 				</exclusionTags>
 			</value>
 		</nomatch>
@@ -21,8 +22,18 @@
 			<value>
 				<li>AM_DefilerVsTreeConnection</li>
 				<li>TreeConnectionExclusion</li>
+				<li>AM_TreeConnectionAndDeforestation</li>
 			</value>
 		</match>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/MemeDef[defName = "TreeConnection"]/groupDef</xpath>
+		<value>
+			<groupDef>
+				<li>AM_Trees</li>
+			</groupDef>
+		</value>
 	</Operation>
 	
 

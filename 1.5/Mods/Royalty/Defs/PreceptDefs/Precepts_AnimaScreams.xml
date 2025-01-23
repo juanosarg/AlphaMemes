@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<IssueDef>
+		<defName>AM_AnimaScreams</defName>
+		<label>anima screams</label>
+		<iconPath>UI/Issues/AM_AnimaScreams</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_AnimaScream</defName>
+		<label>anima scream</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_AnimaScreams_Delightful</defName>
+		<issue>AM_AnimaScreams</issue>
+		<label>delightful</label>
+		<description>There is nothing sweeter than hearing a cursed anima tree scream after being uprooted.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Deforestation</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Deforestation</li>
+		</requiredMemes>
+		<comps><li Class="PreceptComp_KnowsMemoryThought">
+			<eventDef>AM_AnimaScream</eventDef>
+			<thought>AM_AnimaScreams_Delightful</thought>
+		</li></comps>
+		
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_AnimaScreams_Delightful</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>anima scream</label>
+				<description>The reverberating mental echoes of the cursed tree's death are music to my brain.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -4,13 +4,13 @@ using Verse;
 using RimWorld.QuestGen;
 using AlphaMemes;
 
-namespace AlphaGenes
+namespace AlphaMemes
 {
 
     public class WorldComponent_SanguophageCampQuests : WorldComponent
     {
         public int tickCounter;
-        public int ticksToNextQuest = 60000 * 30;
+        public int ticksToNextQuest = 60000 * 16;
 
         public WorldComponent_SanguophageCampQuests(World world) : base(world)
         {
@@ -33,7 +33,7 @@ namespace AlphaGenes
                     Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(InternalDefOf.AM_OpportunitySite_SanguophageCamp, slate);
 
                     QuestUtility.SendLetterQuestAvailable(quest);
-                    ticksToNextQuest = (int)(60000 * Rand.RangeInclusive(28, 32));
+                    ticksToNextQuest = (int)(60000 * Rand.RangeInclusive(15, 18));
 
                 }
                 

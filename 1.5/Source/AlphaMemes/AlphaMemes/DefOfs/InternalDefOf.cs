@@ -37,6 +37,7 @@ namespace AlphaMemes
         public static PreceptDef AM_NutrientPasteEating_Forbidden;
         public static PreceptDef AM_SkyBurial;
         public static PreceptDef AM_Hydroagriculture_Revered;
+        public static PreceptDef AM_GauranlenConnection_Forbidden;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
         [MayRequire("Sarg.AlphaPrefabs")]
@@ -63,6 +64,8 @@ namespace AlphaMemes
         public static PreceptDef AM_DeathrestCaskets_Abhorrent;
         [MayRequireBiotech]
         public static PreceptDef AM_SanguophageCamps_RaidingDesired;
+        [MayRequire("Dubwise.DubsBadHygiene")]
+        public static PreceptDef AM_Baths_Desired;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -75,6 +78,8 @@ namespace AlphaMemes
         public static HistoryEventDef AM_UsedMelee;
         public static HistoryEventDef AM_UsedRanged;
         public static HistoryEventDef AM_BuildingReliquary;
+        public static HistoryEventDef AM_PruneGauranlenTree;
+        public static HistoryEventDef AM_CutGauranlenTree;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
         [MayRequireBiotech]
@@ -83,6 +88,8 @@ namespace AlphaMemes
         public static HistoryEventDef AM_BuildingDrainCasket;
         [MayRequireBiotech]
         public static HistoryEventDef AM_SanguophageCampRaided;
+        [MayRequireRoyalty]
+        public static HistoryEventDef AM_AnimaScream;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -120,7 +127,14 @@ namespace AlphaMemes
         public static ThingDef TableSculpting;
         [MayRequire("vanillaracesexpanded.sanguophage")]
         public static ThingDef VRE_Draincasket;
-
+        [MayRequire("Dubwise.DubsBadHygiene")]
+        public static ThingDef BathtubStuff;
+        [MayRequire("Dubwise.DubsBadHygiene")]
+        public static ThingDef ShowerStuff;
+        [MayRequire("Dubwise.DubsBadHygiene")]
+        public static ThingDef ShowerSimple;
+        [MayRequire("Dubwise.DubsBadHygiene")]
+        public static ThingDef ShowerAdvStuff;
 
         public static FleckDef PsycastPsychicEffect;
 
@@ -182,6 +196,8 @@ namespace AlphaMemes
         public static ThoughtDef AM_AnimaScreamLesser;
         [MayRequireRoyalty]
         public static ThoughtDef AM_DeathKnellThought;
+        [MayRequireRoyalty]
+        public static ThoughtDef AnimaScream;
 
         public static PawnKindDef Dryad_Woodmaker;
         public static PawnKindDef Dryad_Berrymaker;

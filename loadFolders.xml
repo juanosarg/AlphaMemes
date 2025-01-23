@@ -28,6 +28,7 @@
 		<li IfModActive="VanillaExpanded.HelixienGas">1.5/Mods/VanillaHelixienGas</li>
 		<li IfModActive="Lilscoot.Wheelchairs">1.5/Mods/Wheelchairs</li>
 		<li IfModActive="Dubwise.Rimefeller">1.5/Mods/Rimefeller</li>
+		<li IfModActive="Dubwise.DubsBadHygiene">1.5/Mods/BadHygiene</li>
 		<li IfModActive="Tyrannical_Elmo.IndustrialMelee">1.5/Mods/IndustrialArmory</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/Mods/VanillaGeneticsExpanded</li>
 		<li IfModActive="OskarPotocki.VFE.Pirates">1.5/Mods/VanillaFactionsPirates</li>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Issues -->
+
+	<HistoryEventDef>
+		<defName>AM_SleptInWoodenBed</defName>
+		<label>slept in wooden bed</label>
+	</HistoryEventDef>
+
+  <PreceptDef>
+    <defName>AM_RoughLiving_Disliked</defName>
+    <issue>RoughLiving</issue>
+    <label>disliked</label>
+    <description>We reject the squalor of rough living. Our efforts to clear the land and build proper shelters should not be in vain—comfort is our reward for taming the wilderness.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <associatedMemes>
+      <li>AM_Deforestation</li>
+   
+    </associatedMemes>
+    <requiredMemes>
+      <li>AM_Deforestation</li>
+     
+    </requiredMemes>
+  </PreceptDef>
+
+</Defs>

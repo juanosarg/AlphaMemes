@@ -29,10 +29,12 @@ namespace AlphaMemes
         public void SpawnHostileRaid()
         {
             Faction faction = Find.FactionManager.RandomRaidableEnemyFaction(allowHidden: false, allowDefeated: false, allowNonHumanlike: false, TechLevel.Industrial);
+            bool causeEclipse = false;
             if (faction != null)
             {
                 PawnKindDef kindDef = faction.RandomPawnKind();
                 IntRange numberOfPawns = new IntRange(2, 5);
+                
 
                 List<XenotypeDef> allowedXenotypes = new List<XenotypeDef>
                 {
@@ -56,8 +58,14 @@ namespace AlphaMemes
                     minChanceToRedressWorldPawn: null, fixedBiologicalAge: null, fixedChronologicalAge: null, fixedLastName: null, fixedBirthName: null, fixedTitle: null,
                     fixedIdeo: null, forceNoIdeo: false, forceNoBackstory: false, forbidAnyTitle: false, forceDead: false, forcedXenogenes: null, forcedEndogenes: null,
                     forcedXenotype: null, forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f);
+                    XenotypeDef chosenXenotype = allowedXenotypes.RandomElement();
+                    request.ForcedXenotype = chosenXenotype;
+                    if(chosenXenotype == DefDatabase<XenotypeDef>.GetNamedSilentFail("AM_Malachai"))
+                    {
+                        causeEclipse = true;
 
-                    request.ForcedXenotype = allowedXenotypes.RandomElement();
+                    }
+
                     Pawn pawn = PawnGenerator.GeneratePawn(request);
                     GenSpawn.Spawn(pawn, this.parent.Position, this.parent.Map);
 
@@ -84,6 +92,12 @@ namespace AlphaMemes
                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_SanguophageCampRaided, pawnFriendly.Named(HistoryEventArgsNames.Doer)), true);
 
             }
+            if (causeEclipse)
+            {
+                IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDefOf.Eclipse.category, this.parent.Map);
+                IncidentDefOf.Eclipse.Worker.TryExecute(parms);
+            }
+
             this.parent.Destroy();
         }
 

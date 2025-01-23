@@ -1114,10 +1114,10 @@
 				<li>AM_Rain_Blessed</li>
 			</li>
 			<li>
-				<li>AM_Water_Desired</li>				
-			</li>		
+				<li>AM_Water_Desired</li>
+			</li>
 			<li>
-				<li>AM_Hydroagriculture_Revered</li>			
+				<li>AM_Hydroagriculture_Revered</li>
 			</li>
 		</requireOne>
 		<disagreeableTraits>
@@ -1140,5 +1140,129 @@
 		<addDesignators>
 			<li>AM_BaptismalFont</li>
 		</addDesignators>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AM_Trees</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_Deforestation</defName>
+		<label>deforestation</label>
+		<description>Trees are not allies but obstacles to progress. Forests are a burden, better replaced with open land and thriving civilization. Axes and fire are the tools of enlightenment, clearing the path for humanity’s dominion.</description>
+		<iconPath>UI/Memes/AM_Deforestation</iconPath>
+		<groupDef>AM_Trees</groupDef>
+		<impact>3</impact>
+		<exclusionTags>
+			<li>AM_TreeConnectionAndDeforestation</li>
+			<li>AM_NaturePrimacyAndDeforestation</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->axe</li>
+				<li>memeCreed->blade</li>
+				<li>memeCreed->saw</li>
+				<li>memeCreed->ember</li>
+				<li>memeCreed->clearing</li>
+				<li>memeConcept->deforestation</li>
+				<li>memeConcept->axes</li>
+				<li>memeAdjective->ruthless</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeHyphenPrefix->log</li>
+				<li>memeHyphenPrefix->chop</li>
+				<li>memeHyphenPrefix->stump</li>
+				<li>memeLeaderNoun->clearmaster</li>
+				<li>memeLeaderNoun->lumberlord</li>
+				<li>memeLeaderNoun->woodscourge</li>
+				<li>memeLeaderAdjective->ashen</li>
+				<li>memeLeaderAdjective->timber</li>
+				<li>memeLeaderAdjective->felled</li>
+				<li>memeMoralist->forestreaver</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Deforestation)        ->[deity0_name] stripped the earth of trees, declaring that the land should be clear for [deity0_possessive] people to shape as they see fit. This is [deity0_name]'s first lesson in dominion.</li>
+					<li>episode(uses=1,tag=meme_Deforestation)  ->[deity0_name] turned forests to ash, revealing the bounty of the soil and the freedom of open skies for [deity0_possessive] children.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Deforestation)           ->When the great clearers first came to the [place_summary] [place_name], they raised their axes to the heavens and felled the towering trees, praising the [deity0_type] [deity0_name].</li>
+					<li>conflict(tag=meme_Deforestation)        ->A zealous [foeLeader] built a fortress deep in the forest, but the [memberNamePlural] lit the woods aflame, driving the enemy from [foeLeader_possessive] leafy bastion.</li>
+					<li>founderJoin(tag=meme_Deforestation)     ->The prophet [founderName] was said to have cleared the first great glade in [place_name], proclaiming the beginning of a new era free from the shadow of trees.</li>
+					<li>victory(tag=meme_Deforestation)         ->[founderName] ambushed the [foeLeader] in the [place_powerCenter] and left [foeLeader_possessive] body hanging from the last tree, a grim warning to all who would replant.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Deforestation)           ->In a world shrouded by forests, [founderName] saw the light of the open sky and began the crusade against the tyranny of trees.</li>
+					<li>story(uses=1,tag=meme_Deforestation)    ->[founderName] led the tired and oppressed to the clearings, where they found freedom from the choking embrace of the woods.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Deforestation)         ->It might seem strange to you, but I realized this truth as I watched the last tree fall. For in its absence,</li>
+					<li>lesson(tag=meme_Deforestation)              ->only by cutting down the old can we build the future.</li>
+					<li>lessonReinforcement(tag=meme_Deforestation) ->Let this axiom echo in your mind as the sound of the axe echoes in the glade.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Deforestation)    ->The archotechs embody progress, and forests are a relic of stagnation. Clearing them is a step toward embracing the future.</li>
+					<li>archistFact(tag=meme_Deforestation)     ->The archotechs harvested the first forests to fuel their ascent to power.</li>
+					<li>archistFact(tag=meme_Deforestation)     ->The archotechs find trees an inefficient use of space, clearing them wherever their influence spreads.</li>
+					<li>archistProphecy(tag=meme_Deforestation) ->[inTheEnd], the archotechs will transform the world into a monument of progress, and no tree will stand uncut.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Deforestation)     ->The spirits of fallen trees cry out in anguish, but their whispers are powerless against the saw.</li>
+					<li>animistFact(tag=meme_Deforestation)     ->The ground beneath a forest is rich with the remains of spirits crushed by the weight of trees.</li>
+					<li>animistFact(tag=meme_Deforestation)     ->When a tree falls, its spirit weeps—but the sound of the axe is louder.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Deforestation)->[itIsSaid] the sacred insects thrive best in the open lands, free from the looming shadows of trees.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Deforestation)->The eldritch entities dwell beneath the soil, yearning for liberation from the suffocating roots of forests.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Deforestation)->The truth of existence lies not in the branches above, but in the ground beneath, where roots no longer cling.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Deforestation)->At the end of days, the forests will burn, and humanity will walk free under open skies.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Deforestation)->We are excited to announce our new land reclamation initiative! By clearing forests, we unlock unparalleled opportunities for development and growth.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Deforestation)->The divergent creations of humanity remind us that like trees, some creations of humanity are misguided. Clearing them paves the way for unity and progress.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Trees_Despised</li>
+			</li>
+			<li>
+				<li>AM_GauranlenConnection_Forbidden</li>
+			</li>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Clearcutters</ideoName>
+				<theme>deforestation</theme>
+				<adjective>clearcut</adjective>
+				<member>woodsplitter</member>
+			</li>
+			<li>
+				<ideoName>Timberlords</ideoName>
+				<theme>timber</theme>
+				<adjective>timberborn</adjective>
+				<member>axebearer</member>
+			</li>
+			<li>
+				<ideoName>Scorchers</ideoName>
+				<theme>anti-forest</theme>
+				<adjective>scorched</adjective>
+				<member>treefeller</member>
+			</li>
+			<li>
+				<ideoName>Chainsawers</ideoName>
+				<theme>tree-clearing</theme>
+				<adjective>chainsawn</adjective>
+				<member>chainsawer</member>
+			</li>
+			<li>
+				<ideoName>Barreners</ideoName>
+				<theme>desolation</theme>
+				<adjective>barren</adjective>
+				<member>clearmaker</member>
+			</li>
+		</symbolPacks>
 	</MemeDef>
 </Defs>

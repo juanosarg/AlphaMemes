@@ -27,6 +27,8 @@ namespace AlphaMemes
 
         public static Dictionary<Map, int> megalithsInTheMap = new Dictionary<Map, int>();
 
+        public static Dictionary<Map, int> bathsAndShowersInTheMap = new Dictionary<Map, int>();
+
         public static Dictionary<Map, bool> mapAndWateriness = new Dictionary<Map, bool>();
 
         public static List<PawnKindDef> analyzedAnimals = new List<PawnKindDef>();
@@ -77,6 +79,10 @@ namespace AlphaMemes
         public static void SetMegalithsInTheMap(Map map, int megaliths)
         {
             megalithsInTheMap[map] = megaliths;
+        }
+        public static void SetBathsAndShowersInTheMap(Map map, int bathsAndShowers)
+        {
+            bathsAndShowersInTheMap[map] = bathsAndShowers;
         }
         public static void SetMapWateriness(Map map, bool iswatery)
         {
