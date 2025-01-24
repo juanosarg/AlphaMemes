@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+	<IssueDef>
+		<defName>AM_LearningRate</defName>
+		<label>children learning</label>
+		<iconPath>UI/Issues/AM_LearningRate</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>AM_LearningRate_Increased</defName>
+		<issue>AM_LearningRate</issue>
+		<label>increased</label>
+		<description>The minds of children are fertile ground, ready to be shaped and cultivated.</description>
+		<impact>Low</impact>
+		
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<statOffsets>
+			<LearningRateFactor>0.2</LearningRateFactor>
+			
+		</statOffsets>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>AM_LearningRate_Normal</defName>
+		<issue>AM_LearningRate</issue>
+		<label>normal</label>
+		<description>Children should learn and grow at their own pace, guided by natural curiosity and the wisdom of their elders.</description>
+		<impact>Low</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>AM_LearningRate_Decreased</defName>
+		<issue>AM_LearningRate</issue>
+		<label>decreased</label>
+		<description>Childhood should be a time of simplicity and play. Overburdening young minds with excessive learning only leads to stress and a loss of innocence.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<statOffsets>
+			<LearningRateFactor>-0.2</LearningRateFactor>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

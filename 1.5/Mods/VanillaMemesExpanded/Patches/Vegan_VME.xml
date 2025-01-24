@@ -6,6 +6,12 @@
 			<li>VME_Vegan</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName="VME_Vegan"]/exclusionTags</xpath>
+		<value>
+			<li>VME_CowboysVsVegan</li>
+		</value>
+	</Operation>
 </Patch>
 
 	

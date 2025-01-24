@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef>
+		<defName>AM_RodeoBehavior</defName>
+		<durationTicks>10000</durationTicks>
+		  
+ 
+    <workerClass>AlphaMemes.RitualBehaviorWorker_Rodeo</workerClass>
+    <roles>
+      <li Class="RitualRoleTag">
+        <label>speaker</label>
+        <tag>Moralist</tag>
+        <id>moralist</id>
+        <precept>IdeoRole_Moralist</precept>
+        <required>True</required>
+        <substitutable>false</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>cowboy</label>
+       
+		<id>cowboy</id>
+       
+        <maxCount>1</maxCount>
+        <substitutable>false</substitutable>
+        <required>true</required>
+		<ignoreBleeding>true</ignoreBleeding>		
+        <missingDesc>the current cowboy</missingDesc>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+      <li Class="AlphaMemes.RitualRoleCattle">
+        <label>cattle</label>
+      
+        <missingDesc>a colony cattle</missingDesc>
+        <id>cattle</id>        
+        <required>True</required>       
+        <maxCount>1</maxCount>
+        <ignoreBleeding>true</ignoreBleeding>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+     
+    </roles>
+    <spectatorsLabel>Spectators</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <!-- Duelists drop weapons -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesUnarmed">
+            <roleIds>
+              <li>cowboy</li>
+            
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>cowboy</roleId>
+            <dutyDef>DropWeapon</dutyDef>
+          </li>
+          <li>
+            <roleId>cattle</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <!-- People gather up -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesArrived">
+            <roleIds>
+              <li>moralist</li>
+			  <li>cowboy</li>
+              <li>cattle</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>moralist</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>3~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>cowboy</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>2</distFromTarget>
+                <duelistIndex>0</duelistIndex>
+              </li>
+            </customPositions>
+          </li>
+		  <li>
+            <roleId>cattle</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>2</distFromTarget>
+                <duelistIndex>1</duelistIndex>
+              </li>
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+     
+      <!-- Leader speak on cell -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <ignoreDurationToFinishAfterStage>true</ignoreDurationToFinishAfterStage>
+        <postAction Class="RitualStageAction_SoundOneshotOnTarget">
+          <sound>GladiatorDuel_Start</sound>
+        </postAction>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.33</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>moralist</roleId>
+            <dutyDef>SpeakOnCell</dutyDef>
+            <speakerInteraction>Speech_Duel</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>3~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>cowboy</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+          <li>
+            <roleId>cattle</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <!-- Fight -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <visualEffectDef>Duel</visualEffectDef>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.99</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>moralist</roleId>
+            <dutyDef>Idle</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>3~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>cowboy</roleId>
+            <dutyDef>AM_RodeoDuty</dutyDef>
+			
+          </li>
+          <li>
+            <roleId>cattle</roleId>
+            <dutyDef>AM_RodeoDuty</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      
+
+    </stages>
+  </RitualBehaviorDef>
+		
+		
+</Defs>

@@ -4,16 +4,18 @@ using System;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 
 namespace AlphaMemes
 {
-
+    [StaticConstructorOnStartup]
     public static class StaticCollections
     {
 
         //This static class stores lists of animals and pawns for different things.
 
+        public static readonly Texture2D moteIcon = ContentFinder<Texture2D>.Get("UI/Rituals/AM_Lasso");
 
         public static Dictionary<Map, int> artInTheMap = new Dictionary<Map, int>();
 
@@ -27,11 +29,16 @@ namespace AlphaMemes
 
         public static Dictionary<Map, int> megalithsInTheMap = new Dictionary<Map, int>();
 
+        public static Dictionary<Map, int> penMarkersInMap = new Dictionary<Map, int>();
+
         public static Dictionary<Map, int> bathsAndShowersInTheMap = new Dictionary<Map, int>();
 
         public static Dictionary<Map, bool> mapAndWateriness = new Dictionary<Map, bool>();
 
         public static List<PawnKindDef> analyzedAnimals = new List<PawnKindDef>();
+
+        public static List<PawnKindDef> cattleAnimals = new List<PawnKindDef>();
+
 
         public static float databaseCompletion = 0;
 
@@ -55,6 +62,15 @@ namespace AlphaMemes
         public static List<DesignatorDropdownGroupDef> designatorsToBeRemoved = new List<DesignatorDropdownGroupDef>() { InternalDefOf.AM_Floor_JewishTiles, InternalDefOf.AM_Floor_JewishFineTiles, InternalDefOf.AM_Floor_KemeticTiles, InternalDefOf.AM_Floor_KemeticFineTiles, InternalDefOf.AM_Floor_SteampunkTiles,
         InternalDefOf.AM_Floor_NeolithicTiles};
 
+
+        static StaticCollections()
+        {
+
+            List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x=>x.race.HasComp<CompMilkable>()).ToList();
+            cattleAnimals.AddRange(allMilkCattle);
+            cattleAnimals.Add(PawnKindDefOf.Muffalo);
+            cattleAnimals.Add(InternalDefOf.Bison);
+        }
 
         public static void SetArtInTheMap(Map map, int art)
         {
@@ -83,6 +99,10 @@ namespace AlphaMemes
         public static void SetBathsAndShowersInTheMap(Map map, int bathsAndShowers)
         {
             bathsAndShowersInTheMap[map] = bathsAndShowers;
+        }
+        public static void SetPenMarkersInTheMap(Map map, int pens)
+        {
+            penMarkersInMap[map] = pens;
         }
         public static void SetMapWateriness(Map map, bool iswatery)
         {

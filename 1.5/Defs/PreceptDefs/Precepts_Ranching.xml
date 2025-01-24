@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Ranching_CattleCentered</defName>
+		<issue>Ranching</issue>
+		<label>cattle centered</label>
+		<description>The heart of a ranch beats in time with the herd. Cattle are more than livestock; they are the lifeblood of the community.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - "Cattle" is defined as any animal that is milkable, plus muffalo and bison. Yes, this includes modded animals. Yes, you can have a Frostbound Behemoth ranch.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>1001</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_Cowboys</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>AM_Cowboys</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Ranching_CattleCentered_CattleMassPerCapita</thought>
+				<thoughtStageDescriptions>
+					<li>No cattle</li>
+					<li>Scarce cattle {STAGE1}</li>
+					<li>Few cattle {STAGE2}</li>
+					<li>Some cattle {STAGE4}</li>
+					<li>Lots of cattle {STAGE5}</li>
+					<li>Tons of cattle</li>
+				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Ranching_CattleCentered_Pens</thought>
+				<thoughtStageDescriptions>
+					<li>No enclosed pen markers around</li>
+					<li>Enclosed pen marker around</li>
+					<li>Enclosed pen markers around (2 or more)</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+		<statOffsets>
+			<AnimalProductsSellImprovement>0.15</AnimalProductsSellImprovement>
+		</statOffsets>
+	</PreceptDef>
+	<!-- Thoughts -->
+	
+	<ThoughtDef>
+		<defName>AM_Ranching_CattleCentered_CattleMassPerCapita</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_CattleMassPerCapita</workerClass>
+		<minExpectation>Low</minExpectation>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>no cattle</label>
+				<description>We have no cattle at all! What kind of cowboys are we?</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>scarce cattle</label>
+				<description>Our herd is pitifully small. Without cattle, this doesn’t feel like a real ranch.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>few cattle</label>
+				<description>We have too few cattle to call this a proper ranch. It feels wrong.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>some cattle</label>
+				<description>It’s good to have cattle here, but the herd is far from what it could be.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>lots of cattle</label>
+				<description>Our herd is growing strong. The ranch is shaping up nicely.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>tons of cattle</label>
+				<description>The herd is thriving, and the ranch feels alive. This is the way ranching is meant to be.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_Ranching_CattleCentered_Pens</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_PenMarkers</workerClass>
+		<minExpectation>Low</minExpectation>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>no pen markers around</label>
+				<description>There are no pens in our colony. It's peaceful, but something feels missing.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>pen marker around</label>
+				<description>We have a pen marker set up. It's a good start to raising and caring for cattle.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>pen markers around</label>
+				<description>Our pens are ready, and the ranch feels complete with cattle being raised properly.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

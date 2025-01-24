@@ -3,6 +3,7 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace AlphaMemes
@@ -102,6 +103,15 @@ namespace AlphaMemes
 
 
                     StaticCollections.SetBathsAndShowersInTheMap(map, bathtubs+showers);
+
+                }
+
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Ranching_CattleCentered) != null))
+                {
+              
+                    int pens = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.PenMarker).Where(x => x.TryGetComp<CompAnimalPenMarker>()?.PenState.Enclosed==true).EnumerableCount();
+
+                    StaticCollections.SetPenMarkersInTheMap(map, pens);
 
                 }
 

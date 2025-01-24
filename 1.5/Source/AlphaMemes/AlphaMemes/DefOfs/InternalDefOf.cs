@@ -39,6 +39,9 @@ namespace AlphaMemes
         public static PreceptDef AM_Hydroagriculture_Revered;
         public static PreceptDef AM_GauranlenConnection_Forbidden;
         public static PreceptDef AM_RoughLiving_Disliked;
+        public static PreceptDef AM_Ranching_CattleCentered;
+        public static PreceptDef AM_Horses_Desired;
+        public static PreceptDef AM_Cattle_Improved;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
         [MayRequire("Sarg.AlphaPrefabs")]
@@ -84,6 +87,7 @@ namespace AlphaMemes
         public static HistoryEventDef AM_SleptInWoodenBed;
         public static HistoryEventDef AM_AteInWoodenTable;
         public static HistoryEventDef AM_AteWithoutATable;
+        public static HistoryEventDef AM_ColonyHorseDied;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
         [MayRequireBiotech]
@@ -94,6 +98,8 @@ namespace AlphaMemes
         public static HistoryEventDef AM_SanguophageCampRaided;
         [MayRequireRoyalty]
         public static HistoryEventDef AM_AnimaScream;
+        [MayRequireAnomaly]
+        public static HistoryEventDef AM_CutHarbingerTree;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -110,6 +116,7 @@ namespace AlphaMemes
         public static ThingDef AM_MummyMale;
         public static ThingDef AM_MummyFemale;
         public static ThingDef AM_Filth_RedSlime;
+        public static ThingDef PenMarker;
         [MayRequire("sarg.alphaanimals")]
         public static ThingDef AA_AlienTree;
         [MayRequire("sarg.alphaanimals")]
@@ -216,6 +223,8 @@ namespace AlphaMemes
         public static PawnKindDef AM_Dryad_Spitter;
         public static PawnKindDef AM_Dryad_Unstable;
         public static PawnKindDef AM_Dryad_Tumorous;
+        public static PawnKindDef Bison;
+        public static PawnKindDef Horse;
         [MayRequire("VanillaExpanded.Ideo.Dryads")]
         public static PawnKindDef VDE_Dryad_Stonedigger;
         [MayRequire("VanillaExpanded.Ideo.Dryads")]
@@ -262,6 +271,7 @@ namespace AlphaMemes
         public static JobDef AM_TrantrumJob;
         public static JobDef AM_MergeIntoCorruptedPod;
         public static JobDef AM_InstallRelic;
+        public static JobDef AM_RodeoFalseAttackJob;
 
         public static AbilityDef AM_ChangeStyleRadius;
 

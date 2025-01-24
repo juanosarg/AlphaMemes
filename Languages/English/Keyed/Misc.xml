@@ -37,7 +37,12 @@
 	<AM_Detonate>Detonate</AM_Detonate>
 	<AM_DetonateDesc>Force this animal to detonate. This will kill the animal and cause an explosion.</AM_DetonateDesc>
 	<AM_MessageRitualRoleNeedsDryad>Your colony needs to have an ocular dryad from a corrupted Gauranlen tree to start this ritual.</AM_MessageRitualRoleNeedsDryad>
+	<AM_MessageRitualRoleNeedsCattle>The rodeo needs a colony cattle.</AM_MessageRitualRoleNeedsCattle>
 	<AM_DryadUnlinked>The ocular dryad needs to be linked to a Gauranlen tree.</AM_DryadUnlinked>
+	<AM_CurrentTotalCattleBodySizePerColonist>Current total cattle bodysize per colonist</AM_CurrentTotalCattleBodySizePerColonist>
+	<AM_StatsReport_HorseDesired>Horses: desired precept</AM_StatsReport_HorseDesired>
+	<AM_StatsReport_CattleImproved>Cattle: improved precept</AM_StatsReport_CattleImproved>
+	  <AM_CantStartNotEnoughSpaceRodeo>Not enough space for cowboy and cattle. There must be a clear circle of radius {MINRADIUS}. At least {1} standable spots in that radius required.</AM_CantStartNotEnoughSpaceRodeo>
 	
 	<!--Funeral Stings-->
 	

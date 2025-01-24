@@ -26,7 +26,11 @@ namespace AlphaMemes
                 HistoryEvent historyEvent = new HistoryEvent(InternalDefOf.AM_CutGauranlenTree);
                 Find.HistoryEventsManager.RecordEvent(historyEvent);
             }
-
+            if (__instance.def == ThingDefOf.Plant_TreeHarbinger)
+            {
+                HistoryEvent historyEvent = new HistoryEvent(InternalDefOf.AM_CutHarbingerTree);
+                Find.HistoryEventsManager.RecordEvent(historyEvent);
+            }
 
 
 

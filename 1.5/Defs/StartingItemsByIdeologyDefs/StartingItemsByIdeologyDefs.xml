@@ -15,6 +15,12 @@
 		<associatedMeme>AM_BiologicalCorruptors</associatedMeme>	
 		<thingSetMaker>AM_ThingSetMakerEyelings</thingSetMaker>		
 	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+	
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsCowboys</defName>
+		<associatedMeme>AM_Cowboys</associatedMeme>	
+		<thingSetMaker>AM_ThingSetMakerHorses</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
 
 
 

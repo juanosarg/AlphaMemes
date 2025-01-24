@@ -1140,6 +1140,12 @@
 		<addDesignators>
 			<li>AM_BaptismalFont</li>
 		</addDesignators>
+		<requiredRituals>
+			<li>
+				<precept>AM_BaptismPrecept</precept>
+				<pattern>AM_BaptismPreceptPattern</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 	<MemeGroupDef>
 		<defName>AM_Trees</defName>
@@ -1266,5 +1272,141 @@
 				<member>clearmaker</member>
 			</li>
 		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Cowboys</defName>
+		<label>cowboys</label>
+		<description>We live for the open range and the call of the wild. Our lives revolve around vast herds, galloping horses, and the freedom of the frontier. A sprawling ranch isn’t just a home—it’s who we are.</description>
+		<iconPath>UI/Memes/AM_Cowboys</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_CowboysVsRancher</li>
+			<li>VME_CowboysVsVegan</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->ranch</li>
+				<li>memeCreed->herd</li>
+				<li>memeCreed->rodeo</li>
+				<li>memeCreed->saddle</li>
+				<li>memeCreed->lasso</li>
+				<li>memeConcept->openRange</li>
+				<li>memeConcept->livestock</li>
+				<li>memeAdjective->gritty</li>
+				<li>memeAdjective->free</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeHyphenPrefix->cow</li>
+				<li>memeHyphenPrefix->bronco</li>
+				<li>memeHyphenPrefix->rodeo</li>
+				<li>memeLeaderNoun->ranchmaster</li>
+				<li>memeLeaderNoun->cattlebaron</li>
+				<li>memeLeaderNoun->trailboss</li>
+				<li>memeLeaderAdjective->dusty</li>
+				<li>memeLeaderAdjective->leathered</li>
+				<li>memeLeaderAdjective->grizzled</li>
+				<li>memeMoralist->wrangler</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Cowboys)        ->[deity0_name] blessed the land with vast pastures, proclaiming that it was made for [deity0_possessive] people to tame and herd the beasts of the earth. This is [deity0_name]'s first gift to the cowboys.</li>
+					<li>episode(uses=1,tag=meme_Cowboys)  ->[deity0_name] brought the rains to nourish the grasslands, ensuring endless pastures for [deity0_possessive] children and their herds to thrive.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Cowboys)           ->When the first cowboys came to the [place_summary] [place_name], they saddled their horses, lassoed the wild beasts, and gave praise to the [deity0_type] [deity0_name] for the endless range.</li>
+					<li>conflict(tag=meme_Cowboys)        ->A rival [foeLeader] seized the best grazing lands, but the [memberNamePlural] rode into battle on horseback, reclaiming the fields for their herds.</li>
+					<li>founderJoin(tag=meme_Cowboys)     ->The trailblazer [founderName] was said to have tamed the first wild herd in [place_name], laying the foundation for a new way of life in harmony with the open range.</li>
+					<li>victory(tag=meme_Cowboys)         ->[founderName] ambushed the [foeLeader] at the [place_powerCenter], claiming [foeLeader_possessive] cattle and driving their enemies out of the frontier.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Cowboys)           ->In a land of chaos and wild beasts, [founderName] envisioned order through the power of the ranch and the saddle.</li>
+					<li>story(uses=1,tag=meme_Cowboys)    ->[founderName] gathered the scattered and hungry, teaching them to ride, rope, and raise cattle, forging a proud new society on the range.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Cowboys)         ->It might seem simple to you, but I realized this truth while watching the herd move across the plains. For in their calm,</li>
+					<li>lesson(tag=meme_Cowboys)              ->we find the strength of community and the freedom of the open range</li>
+					<li>lessonReinforcement(tag=meme_Cowboys) ->Remember this truth, as the hoofbeats echo across the prairie and the winds carry your spirit.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Cowboys)    ->The archotechs embrace efficiency, and nothing is more efficient than ranching: turning grass into food and strength.</li>
+					<li>archistFact(tag=meme_Cowboys)     ->The archotechs bred the first cattle to be perfect producers of milk and meat, ensuring humanity's survival.</li>
+					<li>archistFact(tag=meme_Cowboys)     ->The archotechs see horses as ideal tools of mobility and power in a world still unmechanized.</li>
+					<li>archistProphecy(tag=meme_Cowboys) ->[inTheEnd], the archotechs will perfect the ranch, uniting humanity under endless pastures and perfect herds.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Cowboys)     ->The spirit of the herd moves as one, guiding the cowboys who respect their bond with the land.</li>
+					<li>animistFact(tag=meme_Cowboys)     ->Each horse carries the wisdom of the plains, a partner to the cowboy in harmony with the wild.</li>
+					<li>animistFact(tag=meme_Cowboys)     ->When a rancher is in need, the spirits of the range whisper through the wind, guiding them back to the herd.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Cowboys)->[itIsSaid] that the sacred insects thrive best in the grazing lands, feeding on the bounty left by the herd.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Cowboys)->The ancient spirits of the soil hunger for the trampling of hooves, calling the herds to their eternal purpose.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Cowboys)->The secrets of existence lie in the movement of the herd, where every hoofbeat echoes the cosmic dance of survival.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Cowboys)->At the end of days, the plains will stretch on forever, and the herds will graze freely under eternal skies.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Cowboys)->We are thrilled to announce our new livestock management program! By focusing on sustainable ranching, we ensure the prosperity of our communities for generations to come.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Cowboys)->The diverse creations of humanity are like herds, and the unification of humanity begins with the harmony of the pasture.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Ranching_CattleCentered</li>
+			</li>
+			<li>
+				<li>AM_Horses_Desired</li>
+			</li>
+			<li>
+				<li>AM_Cattle_Improved</li>
+			</li>
+		</requireOne>
+		<selectOneOrNone>
+			<noneChance>0</noneChance>
+			<preceptThingPairs>
+				<li>
+					<precept>ApparelDesired_Strong_Subordinate</precept>
+					<thing>Apparel_CowboyHat</thing>
+				</li>
+			</preceptThingPairs>
+		</selectOneOrNone>
+		<symbolPacks>
+			<li>
+				<ideoName>Trailblazers</ideoName>
+				<theme>frontier</theme>
+				<adjective>trailworn</adjective>
+				<member>wrangler</member>
+			</li>
+			<li>
+				<ideoName>Rustlers</ideoName>
+				<theme>cattle</theme>
+				<adjective>rustled</adjective>
+				<member>ranchhand</member>
+			</li>
+			<li>
+				<ideoName>Broncobusters</ideoName>
+				<theme>horses</theme>
+				<adjective>bronco-tamed</adjective>
+				<member>buckaroo</member>
+			</li>
+			<li>
+				<ideoName>Steerlords</ideoName>
+				<theme>ranching</theme>
+				<adjective>steerbound</adjective>
+				<member>cattleman</member>
+			</li>
+			<li>
+				<ideoName>Longhorns</ideoName>
+				<theme>ranches</theme>
+				<adjective>longhorned</adjective>
+				<member>cowpuncher</member>
+			</li>
+		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_RodeoPrecept</precept>
+				<pattern>AM_RodeoPreceptPattern</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 </Defs>

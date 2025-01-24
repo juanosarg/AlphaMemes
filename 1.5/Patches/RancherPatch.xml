@@ -6,7 +6,7 @@
 		<xpath>/Defs/MemeDef[defName="Rancher"]/exclusionTags</xpath>
 		<value>
 			<li>VME_NonViolenceVoteVsRancher</li>
-			
+			<li>VME_CowboysVsRancher</li>
 		</value>
 	</Operation>
 

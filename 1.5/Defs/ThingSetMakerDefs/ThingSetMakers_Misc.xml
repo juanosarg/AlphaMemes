@@ -12,4 +12,8 @@
 		<defName>AM_ThingSetMakerEyelings</defName>
 		<root Class="AlphaMemes.ThingSetMaker_Eyelings"/>
 	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>AM_ThingSetMakerHorses</defName>
+		<root Class="AlphaMemes.ThingSetMaker_Horses"/>
+	</ThingSetMakerDef>
 </Defs>

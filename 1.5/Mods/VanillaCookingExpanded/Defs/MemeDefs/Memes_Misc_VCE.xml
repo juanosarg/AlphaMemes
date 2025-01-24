@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_Epicurean</defName>
+		<label>epicurean</label>
+		<description>Life is too short for bland meals. We savor every bite, celebrating food as art and joy. A good feast is our highest expression of life’s beauty.</description>
+		<iconPath>UI/Memes/AM_Epicurean</iconPath>
+		<exclusionTags>
+		
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->feast</li>
+				<li>memeCreed->indulgence</li>
+				<li>memeCreed->banquet</li>
+				<li>memeCreed->gourmet</li>
+				<li>memeCreed->savor</li>
+				<li>memeConcept->flavor</li>
+				<li>memeConcept->culinary</li>
+				<li>memeAdjective->lavish</li>
+				<li>memeAdjective->decadent</li>
+				<li>memeAdjective->refined</li>
+				<li>memeHyphenPrefix->taste</li>
+				<li>memeHyphenPrefix->feast</li>
+				<li>memeHyphenPrefix->flavor</li>
+				<li>memeLeaderNoun->gourmand</li>
+				<li>memeLeaderNoun->epicure</li>
+				<li>memeLeaderNoun->foodie</li>
+				<li>memeLeaderAdjective->savory</li>
+				<li>memeLeaderAdjective->indulgent</li>
+				<li>memeLeaderAdjective->refined</li>
+				<li>memeMoralist->chef</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Epicurean)        ->[deity0_name] blessed the world with an abundance of flavors and delicacies, declaring that savoring life’s pleasures was [deity0_possessive] divine purpose for humanity. This is [deity0_name]'s first gift to the Epicureans.</li>
+					<li>episode(uses=1,tag=meme_Epicurean)  ->[deity0_name] taught [deity0_possessive] people the secrets of spices and wine, ensuring their feasts were as eternal as their devotion.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Epicurean)           ->When the first Epicureans gathered in the [place_summary] [place_name], they shared a meal of unparalleled richness, raising their glasses to the [deity0_type] [deity0_name] for blessing their table.</li>
+					<li>conflict(tag=meme_Epicurean)        ->A rival [foeLeader] sought to hoard the finest ingredients, but the [memberNamePlural] prepared a feast that won the hearts of all, reclaiming their rightful bounty.</li>
+					<li>founderJoin(tag=meme_Epicurean)     ->The culinary genius [founderName] was said to have crafted the first true banquet in [place_name], inspiring a movement devoted to the art of indulgence.</li>
+					<li>victory(tag=meme_Epicurean)         ->[founderName] outshone [foeLeader] at the [place_powerCenter], crafting a dish so sublime that it united their followers in celebration.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Epicurean)           ->In a time of scarcity, [founderName] dreamed of a world where flavor and nourishment were celebrated as the highest form of art.</li>
+					<li>story(uses=1,tag=meme_Epicurean)    ->[founderName] gathered the hungry and hopeless, teaching them to cook, savor, and celebrate, creating a society built on the joys of the table.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Epicurean)         ->You might overlook this, but as I savored my meal, I realized this truth: through every flavor,</li>
+					<li>lesson(tag=meme_Epicurean)              ->we celebrate life’s bounty and find joy in its smallest moments</li>
+					<li>lessonReinforcement(tag=meme_Epicurean) ->Remember this truth, as every meal is a gift and every taste a fleeting connection to the divine.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Epicurean)    ->The archotechs value balance and satisfaction, and nothing satisfies like a perfectly crafted dish.</li>
+					<li>archistFact(tag=meme_Epicurean)     ->The archotechs engineered the finest ingredients, ensuring humanity could always savor perfection.</li>
+					<li>archistFact(tag=meme_Epicurean)     ->The archotechs see indulgence as a necessary reward for efficient living, fostering happiness through culinary excellence.</li>
+					<li>archistProphecy(tag=meme_Epicurean) ->[inTheEnd], the archotechs will craft the ultimate feast, uniting all under a table of endless delights.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Epicurean)     ->Every herb and spice holds a spirit of its own, granting life and wisdom to those who use them with care.</li>
+					<li>animistFact(tag=meme_Epicurean)     ->The essence of the feast lies in harmony with the land, where the spirits of food and cook align.</li>
+					<li>animistFact(tag=meme_Epicurean)     ->When a cook listens, the spirits of the ingredients whisper, guiding them to create something truly divine.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Epicurean)->[itIsSaid] that sacred insects cultivate the most exquisite flavors, their labor a hidden gift to the culinary world.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Epicurean)->The ancient gods of the earth delight in decadence, their power flowing through the rich bounty of the feast.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Epicurean)->The secrets of the universe lie in the perfect pairing of flavors, where each bite reveals a cosmic truth.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Epicurean)->At the end of days, tables will stretch endlessly, and all will feast together in an eternal celebration.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Epicurean)->There have been conflicting reports that someone is stealing other employees' lunch from the common freezer. To address this and promote a culture of culinary respect, we are launching our new initiative to celebrate and share the joys of good food. Together, we can savor prosperity and ensure everyone's meals remain safe and satisfying.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Epicurean)->The diverse creations of the galaxy are like flavors, and the harmony of all beings begins with the joy of the table.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_NutrientPasteEating_Forbidden</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Savorists</ideoName>
+				<theme>gourmet</theme>
+				<adjective>savored</adjective>
+				<member>taster</member>
+			</li>
+			<li>
+				<ideoName>Flavorguardians</ideoName>
+				<theme>flavor</theme>
+				<adjective>flavorful</adjective>
+				<member>chef</member>
+			</li>
+			<li>
+				<ideoName>Ambrosians</ideoName>
+				<theme>feast</theme>
+				<adjective>feastbound</adjective>
+				<member>culinarian</member>
+			</li>
+			<li>
+				<ideoName>Gastronomes</ideoName>
+				<theme>cuisine</theme>
+				<adjective>gastronomic</adjective>
+				<member>foodie</member>
+			</li>
+			<li>
+				<ideoName>Epicures</ideoName>
+				<theme>indulgence</theme>
+				<adjective>epicurean</adjective>
+				<member>connoisseur</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>
+	
+

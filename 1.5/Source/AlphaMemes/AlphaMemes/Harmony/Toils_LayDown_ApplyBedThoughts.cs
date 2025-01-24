@@ -78,7 +78,7 @@ namespace AlphaMemes
 
 				}
 			}
-			if(bed.Stuff== ThingDefOf.WoodLog)
+			if(bed?.Stuff== ThingDefOf.WoodLog)
 			{
                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_SleptInWoodenBed, new SignalArgs(actor.Named(HistoryEventArgsNames.Doer))), true);
 
