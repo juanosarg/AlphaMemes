@@ -68,9 +68,12 @@ namespace AlphaMemes
 					}
 				}
 			}
-			
 
-			Building altar = jobRitual.selectedTarget.Thing as Building;
+            
+			HistoryEvent historyEvent = new HistoryEvent(InternalDefOf.AM_DestroyedARelic);
+            Find.HistoryEventsManager.RecordEvent(historyEvent);
+
+            Building altar = jobRitual.selectedTarget.Thing as Building;
 			CompRelicSmashingContainer comp = altar.TryGetComp<CompRelicSmashingContainer>();
 			if (comp != null)
             {

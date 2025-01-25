@@ -5,6 +5,10 @@
 		<label>relic destruction</label>
 		<iconPath>UI/Issues/AM_RelicDestructionPrecept</iconPath>
 	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_DestroyedARelic</defName>
+		<label>destroyed a relic</label>
+	</HistoryEventDef>
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>AM_RelicDestruction_Desired</defName>
@@ -28,6 +32,11 @@
 					
 					
 				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>AM_DestroyedARelic</eventDef>
+				<eventLabel>destroyed a relic</eventLabel>
+				<points>10</points>
 			</li>
 		</comps>
 		

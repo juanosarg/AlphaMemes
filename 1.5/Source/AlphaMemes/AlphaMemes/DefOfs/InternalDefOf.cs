@@ -96,6 +96,7 @@ namespace AlphaMemes
         public static HistoryEventDef AM_AteWithoutATable;
         public static HistoryEventDef AM_ColonyHorseDied;
         public static HistoryEventDef AM_AteInLowQualityTable;
+        public static HistoryEventDef AM_DestroyedARelic;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
         [MayRequireBiotech]
