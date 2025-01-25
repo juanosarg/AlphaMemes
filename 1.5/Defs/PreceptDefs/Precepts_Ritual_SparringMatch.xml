@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+  <PreceptDef>
+    <defName>AM_SparringMatch</defName>
+    <label>sparring match</label>
+    <description>A test of skill and endurance where participants engage in friendly combat. Duelists will use their fists to fights and wounds will (usually) not be serious.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>AM_SparringMatchPattern</ritualPatternBase>
+    <iconPath>UI/Rituals/AM_SparringMatch</iconPath>
+    <visible>true</visible>
+    <countsTowardsPreceptLimit>true</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+   
+  </PreceptDef>
+
+
+
+
+</Defs>

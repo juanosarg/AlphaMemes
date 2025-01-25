@@ -638,49 +638,5 @@
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
 	</ThingDef>
-	<ThingDef ParentName="IdeoBuildingConsumableBase">
-		<defName>AM_BanquetTable</defName>
-		<label>banquet table</label>
-		<thingClass>AlphaMemes.Building_BanquetTable</thingClass>
-		<description>A grand and sprawling table designed to host feasts fit for a king. It’s not just a place to eat—it’s a centerpiece for celebration, a symbol of abundance, and the heart of any proper gathering.</description>
-		<ideoBuildingNamerBase>AM_BanquetNamer</ideoBuildingNamerBase>
-		<graphicData>
-			<texPath>Things/Building/Misc/AM_BanquetTable2x6</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(4,6)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<size>(2,6)</size>
-		<stuffCategories>
-			<li>AM_LavishMeals</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
-		<costList>
-			<WoodLog>80</WoodLog>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<defaultPlacingRot>East</defaultPlacingRot>
-		<ritualFocus>
-			<spectateDistance>1~2</spectateDistance>
-		</ritualFocus>
-		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>10000</WorkToBuild>
-			<MarketValue>360</MarketValue>
-			<Flammability>1</Flammability>
-			<Mass>50</Mass>
-			<Beauty>50</Beauty>
-		</statBases>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Ideology</designationCategory>
-		<passability>PassThroughOnly</passability>
-		<placeWorkers Inherit="False"/>
-		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
-	</ThingDef>
+	
 </Defs>

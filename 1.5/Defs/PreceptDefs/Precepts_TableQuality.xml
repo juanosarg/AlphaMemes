@@ -17,9 +17,7 @@
 		<label>desired</label>
 		<description>Meals are best enjoyed with dignity. A proper table elevates the experience, turning simple sustenance into a moment of refinement.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating on a Poor or Awful quality table will cause a mood penalty.</description>
 		<impact>Low</impact>
-		<associatedMemes>
-			<li>AM_Epicurean</li>
-		</associatedMemes>
+	
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>AM_AteInLowQualityTable</eventDef>
