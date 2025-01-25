@@ -79,7 +79,26 @@
 			<li>
 				<li>AM_NutrientPasteEating_Forbidden</li>
 			</li>
+			<li>
+				<li>AM_Meals_QualityDesired</li>
+			</li>
+			<li>
+				<li>AM_TableQuality_Desired</li>
+			</li>
+			<li>
+				<li>AM_KitchenProficiency_Extreme</li>
+			</li>
 		</requireOne>
+		<requiredRituals>
+			<li>
+				<precept>AM_BanquetPrecept</precept>
+				<pattern>AM_BanquetPreceptPattern</pattern>
+				<building>AM_BanquetTable</building>
+			</li>
+		</requiredRituals>
+		<consumableBuildings>
+			<li>AM_BanquetTable</li>
+		</consumableBuildings>
 		<symbolPacks>
 			<li>
 				<ideoName>Savorists</ideoName>

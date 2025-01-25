@@ -11,7 +11,10 @@
 		<label>fertility</label>
 		<iconPath>UI/Issues/AM_FertilityIssue</iconPath>
 	</IssueDef>
-
+	<HistoryEventDef>
+		<defName>AM_ChildBorn</defName>
+		<label>a child was born</label>
+	</HistoryEventDef>
 	<PreceptDef>
 		<defName>AM_FertilityIssue_Increased</defName>
 		<issue>AM_FertilityIssue</issue>
@@ -26,6 +29,13 @@
 			<Fertility>0.2</Fertility>
 			
 		</statOffsets>
+		<comps>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>AM_ChildBorn</eventDef>
+				<eventLabel>a child was born</eventLabel>
+				<points>1</points>
+			</li>
+		</comps>
 	</PreceptDef>
 	<PreceptDef>
 		<defName>AM_FertilityIssue_Normal</defName>

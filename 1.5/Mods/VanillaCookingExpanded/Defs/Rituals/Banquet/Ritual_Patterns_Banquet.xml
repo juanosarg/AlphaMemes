@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef>
+		<defName>AM_BanquetPreceptPattern</defName>
+
+		<ritualObligationTargetFilter>AM_BanquetTarget</ritualObligationTargetFilter>
+		<ritualBehavior>AM_BanquetBehaviour</ritualBehavior>
+		<ritualOutcomeEffect>AM_BanquetOutcome</ritualOutcomeEffect>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
+		<ritualOnlyForIdeoMembers>true</ritualOnlyForIdeoMembers>
+		<ignoreConsumableBuildingRequirement>true</ignoreConsumableBuildingRequirement>
+	</RitualPatternDef>
+</Defs>

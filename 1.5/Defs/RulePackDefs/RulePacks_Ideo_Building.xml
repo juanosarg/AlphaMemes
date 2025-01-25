@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>AM_BanquetNamer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>buildingName->[descriptor] [category]</li>
+				<li>buildingName->[category] of [specialDetail]</li>
+				<li>descriptor->Opulent</li>
+				<li>descriptor->Lavish</li>
+				<li>descriptor->Extravagant</li>
+				<li>descriptor->Ceremonial</li>
+				<li>descriptor->Majestic</li>
+				<li>category->Banquet Hall</li>
+				<li>category->Dining Pavilion</li>
+				<li>category->Feasting Chamber</li>
+				<li>category->Celebration Hall</li>
+				<li>category->Revelry Table</li>
+				<li>specialDetail->Boundless Plenty</li>
+				<li>specialDetail->Eternal Celebration</li>
+				<li>specialDetail->Glorious Unity</li>
+				<li>specialDetail->the Harvest’s Bounty</li>
+				<li>specialDetail->Unending Prosperity</li>
+				<li>specialDetail->the Feast of Ages</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

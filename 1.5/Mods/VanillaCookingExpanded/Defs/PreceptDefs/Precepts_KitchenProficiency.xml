@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_KitchenProficiency</defName>
+		<label>kitchen proficiency</label>
+		<iconPath>UI/Issues/AM_KitchenProficiency</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_KitchenProficiency_Extreme</defName>
+		<issue>AM_KitchenProficiency</issue>
+		<label>extreme</label>
+		<description>A meal is more than sustenance—it's an art form. Only the most skilled hands should touch the ingredients, and every dish must be crafted to perfection.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Epicurean</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Epicurean</li>
+		</requiredMemes>
+		<statFactors>
+			<CookSpeed>1.15</CookSpeed>
+		</statFactors>
+		<statOffsets>
+			<VCE_FoodImprovementChance>0.05</VCE_FoodImprovementChance>
+			<VCEF_FoodCondimentChance>0.05</VCEF_FoodCondimentChance>
+		</statOffsets>
+	</PreceptDef>
+	
+</Defs>

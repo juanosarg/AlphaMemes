@@ -4,6 +4,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
+using Verse.Sound;
 
 namespace AlphaMemes
 {
@@ -62,6 +63,7 @@ namespace AlphaMemes
                 if ((pawn = job.targetA.Thing as Pawn) != null)
                 {
                     MoteMaker.MakeSpeechBubble(pawn, StaticCollections.moteIcon);
+                    InternalDefOf.AM_Rodeo.PlayOneShot(pawn);
                     bool num = pawn.Downed && base.pawn.mindState.duty != null && base.pawn.mindState.duty.attackDownedIfStarving && base.pawn.Starving();
                     CompActivity comp;
                     bool flag = ModsConfig.AnomalyActive && pawn.TryGetComp<CompActivity>(out comp) && comp.IsDormant;
@@ -75,6 +77,11 @@ namespace AlphaMemes
             yield return Toils_Combat.FollowAndMeleeAttack(TargetIndex.A, TargetIndex.B, delegate
             {
                 MoteMaker.MakeSpeechBubble(pawn, StaticCollections.moteIcon);
+                if (Rand.Chance(0.5f))
+                {
+                    InternalDefOf.AM_Rodeo_Yeehaw.PlayOneShot(pawn);
+
+                }
                 Thing thing = job.GetTarget(TargetIndex.A).Thing;
                 Pawn p;
                 if (job.reactingToMeleeThreat && (p = thing as Pawn) != null && !p.Awake())

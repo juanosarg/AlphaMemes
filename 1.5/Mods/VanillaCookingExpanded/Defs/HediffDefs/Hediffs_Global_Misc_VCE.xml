@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>AM_FeastingFrenzy</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>feasting frenzy</label>
+		<description>The joyous atmosphere of the banquet has left everyone energized and eager to devour their meals with unmatched swiftness. Plates are cleared in record time! This will last for two days.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="AlphaMemes.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>120000</disappearsAfterTicks>
+				
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<EatingSpeed>1.5</EatingSpeed>
+					
+				</statFactors>
+				
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

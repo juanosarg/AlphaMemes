@@ -2,7 +2,7 @@
 <Defs>
 	<RitualBehaviorDef>
 		<defName>AM_RodeoBehavior</defName>
-		<durationTicks>10000</durationTicks>
+		<durationTicks>8000</durationTicks>
 		  
  
     <workerClass>AlphaMemes.RitualBehaviorWorker_Rodeo</workerClass>
@@ -68,6 +68,35 @@
         </roleBehaviors>
       </li>
       <!-- People gather up -->
+	  <li Class="AlphaMemes.RitualStage_InteractWithCattle">
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+		<essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+        </endTriggers>
+        <failTriggers>
+          <li Class="StageFailTrigger_TargetPawnUnreachable">
+            <takerId>moralist</takerId>
+            <takeeId>cattle</takeeId>
+            <desc>Cattle is not reachable.</desc>
+          </li>
+        </failTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>moralist</roleId>
+            <dutyDef>DeliverPawnToAltar</dutyDef>
+          </li>
+          <li>
+            <roleId>animal</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+		  <li>
+            <roleId>cowboy</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
       <li>
         <defaultDuty>SpectateCircle</defaultDuty>
         <spectateDistanceOverride>5~7</spectateDistanceOverride>
@@ -124,7 +153,7 @@
         </postAction>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
-            <percentage>0.33</percentage>
+            <percentage>0.2</percentage>
           </li>
         </endTriggers>
         <roleBehaviors>

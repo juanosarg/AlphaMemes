@@ -5,11 +5,11 @@ using Verse;
 
 namespace AlphaMemes
 {
-    public class RitualStage_InteractWithDryad : RitualStage
+    public class RitualStage_InteractWithCattle : RitualStage
     {
         public override TargetInfo GetSecondFocus(LordJob_Ritual ritual)
         {
-            return ritual.assignments.Participants.FirstOrDefault((Pawn p) => p.kindDef == InternalDefOf.AM_Dryad_Ocular);
+            return ritual.assignments.Participants.FirstOrDefault((Pawn p) => StaticCollections.cattleAnimals.Contains(p.kindDef));
         }
     }
 }

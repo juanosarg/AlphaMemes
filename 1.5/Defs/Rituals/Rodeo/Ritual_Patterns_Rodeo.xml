@@ -11,7 +11,7 @@
  
     <ritualOutcomeEffect>AM_RodeoOutcome</ritualOutcomeEffect>
       <canStartAnytime>true</canStartAnytime>
-   
+   <alwaysStartAnytime>true</alwaysStartAnytime>
     <patternGroupTag>CelebratedDate</patternGroupTag>
 	<playsIdeoMusic>true</playsIdeoMusic>
   </RitualPatternDef>

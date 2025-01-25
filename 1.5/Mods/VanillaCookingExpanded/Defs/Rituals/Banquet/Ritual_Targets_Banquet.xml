@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualObligationTargetFilterDef>
+		<defName>AM_BanquetTarget</defName>
+		<workerClass>RitualObligationTargetWorker_ConsumableBuilding</workerClass>
+		<thingDefs>
+			<li>AM_BanquetTable</li>
+		</thingDefs>
+	</RitualObligationTargetFilterDef>
+</Defs>

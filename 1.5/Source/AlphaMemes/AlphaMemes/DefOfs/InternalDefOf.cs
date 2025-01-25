@@ -16,6 +16,12 @@ namespace AlphaMemes
         public static DamageDef AM_AcidSpit;
         public static DamageDef AM_HolyBurn;
 
+        public static SoundDef AM_Rodeo;
+        public static SoundDef AM_Rodeo_Yeehaw;
+        public static SoundDef RawVegetable_Eat;
+
+        public static EffecterDef EatVegetarian;
+
         [MayRequire("VanillaExpanded.VMemesE")]
         public static PreceptDef AM_Violence_Abhorrent_Strict;
         public static PreceptDef AM_ArtProductionSpeed_Increased;
@@ -42,6 +48,7 @@ namespace AlphaMemes
         public static PreceptDef AM_Ranching_CattleCentered;
         public static PreceptDef AM_Horses_Desired;
         public static PreceptDef AM_Cattle_Improved;
+        public static PreceptDef AM_TableQuality_Desired;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static PreceptDef AM_PrefabBuying_Preferred;
         [MayRequire("Sarg.AlphaPrefabs")]
@@ -88,6 +95,7 @@ namespace AlphaMemes
         public static HistoryEventDef AM_AteInWoodenTable;
         public static HistoryEventDef AM_AteWithoutATable;
         public static HistoryEventDef AM_ColonyHorseDied;
+        public static HistoryEventDef AM_AteInLowQualityTable;
         [MayRequire("Sarg.AlphaPrefabs")]
         public static HistoryEventDef AM_BoughtPrefabOnMerchant;
         [MayRequireBiotech]
@@ -96,10 +104,18 @@ namespace AlphaMemes
         public static HistoryEventDef AM_BuildingDrainCasket;
         [MayRequireBiotech]
         public static HistoryEventDef AM_SanguophageCampRaided;
+        [MayRequireBiotech]
+        public static HistoryEventDef AM_ChildBorn;
         [MayRequireRoyalty]
         public static HistoryEventDef AM_AnimaScream;
         [MayRequireAnomaly]
         public static HistoryEventDef AM_CutHarbingerTree;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static HistoryEventDef AM_AteSimpleMeal;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static HistoryEventDef AM_AteRawFood;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static HistoryEventDef AM_AteLavishMeal;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -193,6 +209,8 @@ namespace AlphaMemes
         public static HediffDef AM_GenericDryadHediff;
         public static HediffDef AM_IconoclastHediff;
         public static HediffDef AM_Kamikaze;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static HediffDef AM_FeastingFrenzy;
 
         public static SoundDef AM_RitualSustainer_MaddeningChant;
         public static SoundDef Hive_Spawn;
@@ -203,6 +221,7 @@ namespace AlphaMemes
         public static ThoughtDef AM_SleptInBarracksPreferred;
         public static ThoughtDef AM_SleptInPrivateRoomPreferred;
         public static ThoughtDef AM_CorpseRumThought;
+        public static ThoughtDef AteLavishMeal;
         [MayRequireRoyalty]
         public static ThoughtDef AM_AnimaScreamLesser;
         [MayRequireRoyalty]
@@ -272,6 +291,8 @@ namespace AlphaMemes
         public static JobDef AM_MergeIntoCorruptedPod;
         public static JobDef AM_InstallRelic;
         public static JobDef AM_RodeoFalseAttackJob;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static JobDef AM_EatAtBanquet;
 
         public static AbilityDef AM_ChangeStyleRadius;
 
