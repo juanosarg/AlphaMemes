@@ -8,6 +8,7 @@
 		<exclusionTags>
 		
 		</exclusionTags>
+		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>

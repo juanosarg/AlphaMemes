@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_TeaPrimacy</defName>
+		<label>tea primacy</label>
+		<description>Tea is everything to us—comfort, culture, and ritual. We start our day with it, solve problems over it, and celebrate through it. Those who don’t drink tea just don’t understand what they’re missing.</description>
+		<iconPath>UI/Memes/AM_TeaPrimacy</iconPath>
+		<exclusionTags>
+		
+		</exclusionTags>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->brew</li>
+				<li>memeCreed->steep</li>
+				<li>memeCreed->sip</li>
+				<li>memeCreed->infuse</li>
+				<li>memeCreed->ceremony</li>
+				<li>memeConcept->tranquility</li>
+				<li>memeConcept->aroma</li>
+				<li>memeAdjective->soothing</li>
+				<li>memeAdjective->refined</li>
+				<li>memeAdjective->calming</li>
+				<li>memeHyphenPrefix->tea</li>
+				<li>memeHyphenPrefix->brew</li>
+				<li>memeHyphenPrefix->leaf</li>
+				<li>memeLeaderNoun->tea-master</li>
+				<li>memeLeaderNoun->brewmaster</li>
+				<li>memeLeaderNoun->infuser</li>
+				<li>memeLeaderAdjective->serene</li>
+				<li>memeLeaderAdjective->aromatic</li>
+				<li>memeLeaderAdjective->mindful</li>
+				<li>memeMoralist->tea-sage</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_TeaPrimacy)        ->[deity0_name] gifted humanity the first tea leaves, teaching us that tranquility and focus are the true paths to enlightenment. This is [deity0_name]'s gift to the tea-drinkers.</li>
+					<li>episode(uses=1,tag=meme_TeaPrimacy)  ->[deity0_name] brewed the first sacred pot, sharing its warmth and wisdom with [deity0_possessive] people, and thus began the tradition of tea.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_TeaPrimacy)           ->When the first tea-drinkers gathered in the [place_summary] [place_name], they shared a pot of freshly brewed tea, offering thanks to the [deity0_type] [deity0_name] for its calming embrace.</li>
+					<li>conflict(tag=meme_TeaPrimacy)        ->A rival [foeLeader] tried to outlaw tea, but the [memberNamePlural] resisted with peaceful gatherings, converting their oppressors through the power of a perfect brew.</li>
+					<li>founderJoin(tag=meme_TeaPrimacy)     ->The wise [founderName] brewed the first ceremonial tea in [place_name], inspiring a movement rooted in serenity and mindfulness.</li>
+					<li>victory(tag=meme_TeaPrimacy)         ->[founderName] outmaneuvered [foeLeader] at the [place_powerCenter], offering a cup of tea so soothing that it ended all hostilities.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_TeaPrimacy)           ->In a world of chaos, [founderName] envisioned a society grounded in the calming ritual of tea.</li>
+					<li>story(uses=1,tag=meme_TeaPrimacy)    ->[founderName] gathered the weary and the restless, showing them the path to peace through the shared ritual of brewing and drinking tea.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_TeaPrimacy)         ->You might not realize this, but as I took a sip of tea, I understood this truth: through every cup,</li>
+					<li>lesson(tag=meme_TeaPrimacy)              ->we find peace in simplicity and strength in mindfulness</li>
+					<li>lessonReinforcement(tag=meme_TeaPrimacy) ->Never forget this truth, for each cup of tea is a moment of clarity in an otherwise chaotic world.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_TeaPrimacy)    ->The archotechs value focus and precision, and nothing clears the mind like a perfectly brewed cup of tea.</li>
+					<li>archistFact(tag=meme_TeaPrimacy)     ->The archotechs engineered the finest tea plants, ensuring humanity could always find serenity in the leaf.</li>
+					<li>archistFact(tag=meme_TeaPrimacy)     ->To the archotechs, tea rituals are a vital component of human harmony and efficiency.</li>
+					<li>archistProphecy(tag=meme_TeaPrimacy) ->[inTheEnd], the archotechs will brew a tea so perfect that it unites all minds in a single moment of enlightenment.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_TeaPrimacy)     ->Every tea leaf holds a spirit of its own, and each brew honors the essence of the earth.</li>
+					<li>animistFact(tag=meme_TeaPrimacy)     ->The spirits of water and leaf dance together in harmony, creating a brew that soothes the soul.</li>
+					<li>animistFact(tag=meme_TeaPrimacy)     ->Tea is a gift from the spirits, teaching us patience, tranquility, and gratitude with every cup.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_TeaPrimacy)->[itIsSaid] that sacred insects pollinate the finest tea plants, their labor infusing the leaves with unparalleled wisdom.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_TeaPrimacy)->The ancient gods of the earth delight in the ritual of tea, their whispers carried in the steam of every brew.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_TeaPrimacy)->The secrets of the universe lie in the swirling patterns of tea leaves, where every brew reveals a hidden truth.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_TeaPrimacy)->At the end of days, kettles will boil endlessly, and all will drink together in an eternal state of calm.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_TeaPrimacy)->To: All Employees. Subject: Tea Time Culture at Work. It has come to our attention that productivity is being significantly impacted by excessive tea breaks. While we understand the importance of mindfulness, please remember that the quarterly budget cannot be steeped like a fine oolong. Consider this your invitation to a balanced tea culture—savor, but also work.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_TeaPrimacy)->The harmony of the galaxy begins with a shared pot of tea, bridging the gaps between species with its soothing warmth.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Steepkeepers</ideoName>
+				<theme>tea</theme>
+				<adjective>steeped</adjective>
+				<member>tea taster</member>
+			</li>
+			<li>
+				<ideoName>Brewguardians</ideoName>
+				<theme>brew</theme>
+				<adjective>brewed</adjective>
+				<member>tea brewer</member>
+			</li>
+			<li>
+				<ideoName>Leafbinders</ideoName>
+				<theme>leaf</theme>
+				<adjective>leaf-bound</adjective>
+				<member>infuser</member>
+			</li>
+			<li>
+				<ideoName>Infusivists</ideoName>
+				<theme>infusion</theme>
+				<adjective>infused</adjective>
+				<member>tea drinker</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>
+	
+
