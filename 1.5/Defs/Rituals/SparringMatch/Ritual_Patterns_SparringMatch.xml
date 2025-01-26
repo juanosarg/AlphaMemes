@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef>
+		<defName>AM_SparringMatchPattern</defName>
+		<ritualBehavior>AM_SparringMatchBehavior</ritualBehavior>
+		<ritualObligationTargetFilter>AnyRitualSpot</ritualObligationTargetFilter>
+		<ritualOutcomeEffect>AM_SparringMatchOutcome</ritualOutcomeEffect>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
+		<canStartAnytime>true</canStartAnytime>
+		<tags Inherit="False"/>
+		<playsIdeoMusic>false</playsIdeoMusic>
+		<ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+	</RitualPatternDef>
+</Defs>
