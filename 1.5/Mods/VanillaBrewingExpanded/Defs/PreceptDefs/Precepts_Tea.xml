@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_TeaDrinking</defName>
+		<label>tea drinking</label>
+		<iconPath>UI/Issues/AM_Tea</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Meals_QualityDesired</defName>
+		<issue>AM_Meals</issue>
+		<label>desired</label>
+		<description>Why would we settle for anything less than the finest? Food is more than fuel—it's an experience, a celebration of life itself.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_Epicurean</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteLavishMeal</eventDef>
+				<thought>AM_Meals_QualityDesired_AteLavishMeal</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteSimpleMeal</eventDef>
+				<thought>AM_Meals_QualityDesired_AteSimpleMeal</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteRawFood</eventDef>
+				<thought>AM_Meals_QualityDesired_AteRawFood</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Meals_QualityDesired_AteLavishMeal</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<durationDays>1</durationDays>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<stages>
+			<li>
+				<label>ate delightful meal</label>
+				<description>That meal was a masterpiece—a symphony of flavors and textures. For a moment, all felt right with the world.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_Meals_QualityDesired_AteSimpleMeal</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<durationDays>1</durationDays>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<stages>
+			<li>
+				<label>ate simple meal</label>
+				<description>Really? Was that the best we can do? What a bland, simple meal.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_Meals_QualityDesired_AteRawFood</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate raw food</label>
+				<description>I was forced to eat raw food. It’s an utter abomination—filthy, revolting, and beneath any sense of decency. We’re not beasts scavenging in the dirt!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
