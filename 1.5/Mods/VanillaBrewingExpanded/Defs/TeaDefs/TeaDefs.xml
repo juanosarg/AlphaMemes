@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlphaMemes.TeaDefs>
+		<defName>AM_TeaDefs</defName>
+		<normalTeas>
+			<li>VBE_Tea</li>
+		</normalTeas>
+		<specialtyTeas>
+			<li>VBE_BlackTea</li>
+			<li>VBE_Kombucha</li>
+			<li>VBE_Yuenyeung</li>
+			<li>VBE_GreenTea</li>
+			<li>VBE_MasalaChai</li>
+			<li>VBE_MintTea</li>
+			<li>VBE_NoonChai</li>
+			<li>VBE_EarlGreyTea</li>
+			<li>VBE_LemonTea</li>
+		</specialtyTeas>
+	</AlphaMemes.TeaDefs>
+</Defs>

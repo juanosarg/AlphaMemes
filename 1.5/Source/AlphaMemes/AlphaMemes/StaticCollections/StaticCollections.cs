@@ -39,6 +39,9 @@ namespace AlphaMemes
 
         public static List<PawnKindDef> cattleAnimals = new List<PawnKindDef>();
 
+        public static HashSet<ThingDef> normalTeas = new HashSet<ThingDef>();
+
+        public static HashSet<ThingDef> specialtyTeas = new HashSet<ThingDef>();
 
         public static float databaseCompletion = 0;
 
@@ -70,6 +73,27 @@ namespace AlphaMemes
             cattleAnimals.AddRange(allMilkCattle);
             cattleAnimals.Add(PawnKindDefOf.Muffalo);
             cattleAnimals.Add(InternalDefOf.Bison);
+
+            HashSet<TeaDefs> allTeaLists = DefDatabase<TeaDefs>.AllDefsListForReading.ToHashSet();
+            foreach (TeaDefs individualList in allTeaLists)
+            {
+                foreach(string normalTea in individualList.normalTeas)
+                {
+                    ThingDef normalTeaDef = DefDatabase<ThingDef>.GetNamedSilentFail(normalTea);
+                    if (normalTeaDef != null)
+                    {
+                        normalTeas.Add(normalTeaDef);
+                    }
+                }
+                foreach (string specialtyTea in individualList.specialtyTeas)
+                {
+                    ThingDef specialtyTeaDef = DefDatabase<ThingDef>.GetNamedSilentFail(specialtyTea);
+                    if (specialtyTeaDef != null)
+                    {
+                        specialtyTeas.Add(specialtyTeaDef);
+                    }
+                }      
+            }
         }
 
         public static void SetArtInTheMap(Map map, int art)

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_TeaCeremonyOutcome</defName>
+		<description>If the tea ceremony doesn't go terribly bad, the moralist will brew some tea for the colony without needing harvested tea leaves. Better outcomes will produce more tea. A spectacular tea ceremony might produce some specialty tea if VE Brewing - Coffees and Teas is installed.</description>
+		<workerClass>AlphaMemes.RitualOutcomeEffectWorker_TeaCeremony</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>100,  0.25</li>
+						<li>200, 0.5</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.1)</li>
+						<li>(10, 0.2)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>speaker's social impact</labelAbstract>
+				<roleId>leader</roleId>
+				<statDef>SocialImpact</statDef>
+				<curve>
+					<points>
+						<li>(0.2,  0.0)</li>
+						<li>(0.6,  0.18)</li>
+						<li>(1.0, 0.25)</li>
+						<li>(1.5, 0.3)</li>
+					</points>
+				</curve>
+			</li>
+			
+		</comps>
+		<outcomeChances>
+    <li>
+        <label>Profane</label>
+        <chance>0.1</chance>
+        <memory>AM_TeaCeremonyBlasphemous</memory>
+        <description>The {0} was profane. The ceremony was an affront to the sacred art of tea. This desecration will linger in our thoughts.</description>
+      
+        <positivityIndex>-2</positivityIndex>
+    </li>
+    <li>
+        <label>Disappointing</label>
+        <chance>0.2</chance>
+        <memory>AM_TeaCeremonyUnderwhelming</memory>
+        <description>The {0} was disappointing. The ceremony lacked the spirit and grace it deserved. It felt hollow and uninspired.</description>
+        <positivityIndex>-1</positivityIndex>
+       
+    </li>
+    <li>
+        <label>Soothing</label>
+        <chance>0.6</chance>
+        <memory>AM_TeaCeremonyRefreshing</memory>
+        <description>The {0} was soothing. That was a delightful moment of connection with the essence of tea. It left us feeling renewed.</description>
+        <positivityIndex>1</positivityIndex>
+    </li>
+    <li>
+        <label>Enlightening</label>
+        <chance>0.1</chance>
+        <memory>AM_TeaCeremonyTranscendent</memory>
+        <description>The {0} was enlightening! This ceremony was a profound experience, an unforgettable communion with the sacred tea.</description>
+        <positivityIndex>2</positivityIndex>
+    </li>
+</outcomeChances>
+
+	</RitualOutcomeEffectDef>
+</Defs>

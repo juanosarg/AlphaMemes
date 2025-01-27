@@ -35,67 +35,80 @@ namespace AlphaMemes
         [HarmonyPostfix]
         static void IngestedNutrientPaste(Thing __instance, Pawn ingester)
         {
-            if (nutrientMeals.Contains(__instance.def) && ingester.Ideo?.HasPrecept(InternalDefOf.AM_NutrientPasteEating_Forbidden) == true)
+            if (ingester?.RaceProps?.Humanlike==true)
             {
-                ingester.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
-
-            }
-
-            if (__instance.def?.ingestible?.preferability == FoodPreferability.MealSimple && InternalDefOf.AM_AteSimpleMeal != null)
-            {
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteSimpleMeal, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
-
-            }
-            if (__instance.def?.ingestible?.preferability == FoodPreferability.RawBad && InternalDefOf.AM_AteRawFood != null)
-            {
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteRawFood, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
-
-            }
-            if (__instance.def?.ingestible?.preferability == FoodPreferability.MealLavish && InternalDefOf.AM_AteLavishMeal != null)
-            {
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteLavishMeal, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
-
-            }
-
-            if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_RoughLiving_Disliked) == true)
-            {
-                IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
-                Job curJob = ingester.jobs.curJob;
-                Thing table = GetTable(positionTable, ingester.Map);
-
-                if (table?.Stuff == ThingDefOf.WoodLog)
+                if (nutrientMeals.Contains(__instance.def) && ingester.Ideo?.HasPrecept(InternalDefOf.AM_NutrientPasteEating_Forbidden) == true)
                 {
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteInWoodenTable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                    ingester.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
+
                 }
 
-
-                if (table is null && ingester.needs.mood != null && __instance.def.IsNutritionGivingIngestible && __instance.def.ingestible.chairSearchRadius > 10f)
+                if (InternalDefOf.AM_AteSimpleMeal != null && __instance.def?.ingestible?.preferability == FoodPreferability.MealSimple)
                 {
-                    if (ingester.GetPosture() == PawnPosture.Standing && !ingester.IsWildMan() && __instance.def.ingestible.tableDesired)
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteSimpleMeal, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_AteRawFood != null && __instance.def?.ingestible?.preferability == FoodPreferability.RawBad)
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteRawFood, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_AteLavishMeal != null && __instance.def?.ingestible?.preferability == FoodPreferability.MealLavish)
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteLavishMeal, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_DrankPsychiteTea != null && __instance.def== InternalDefOf.PsychiteTea)
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankPsychiteTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_DrankTea != null && StaticCollections.normalTeas.Contains(__instance.def))
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_DrankSpecialtyTea != null && StaticCollections.specialtyTeas.Contains(__instance.def))
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankSpecialtyTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+
+                if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_RoughLiving_Disliked) == true)
+                {
+                    IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
+                    Job curJob = ingester.jobs.curJob;
+                    Thing table = GetTable(positionTable, ingester.Map);
+
+                    if (table?.Stuff == ThingDefOf.WoodLog)
                     {
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteWithoutATable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteInWoodenTable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
                     }
-                }
-            }
 
-            if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_TableQuality_Desired) == true)
-            {
-                IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
-                Thing table = GetTable(positionTable, ingester.Map);
-                CompQuality compQuality = table.TryGetComp<CompQuality>();
-                if (compQuality != null)
-                {
-                    if (compQuality.Quality < QualityCategory.Normal)
+
+                    if (table is null && ingester.needs.mood != null && __instance.def.IsNutritionGivingIngestible && __instance.def.ingestible.chairSearchRadius > 10f)
                     {
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteInLowQualityTable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
-
+                        if (ingester.GetPosture() == PawnPosture.Standing && !ingester.IsWildMan() && __instance.def.ingestible.tableDesired)
+                        {
+                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteWithoutATable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                        }
                     }
                 }
 
+                if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_TableQuality_Desired) == true)
+                {
+                    IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
+                    Thing table = GetTable(positionTable, ingester.Map);
+                    CompQuality compQuality = table.TryGetComp<CompQuality>();
+                    if (compQuality != null)
+                    {
+                        if (compQuality.Quality < QualityCategory.Normal)
+                        {
+                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_AteInLowQualityTable, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+
+                        }
+                    }
+
+                }
+
+
             }
 
 
-                
 
 
 

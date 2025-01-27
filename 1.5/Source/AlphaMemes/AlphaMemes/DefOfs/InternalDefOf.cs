@@ -19,6 +19,8 @@ namespace AlphaMemes
         public static SoundDef AM_Rodeo;
         public static SoundDef AM_Rodeo_Yeehaw;
         public static SoundDef RawVegetable_Eat;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static SoundDef AM_RitualSustainer_TeaCeremony;
 
         public static EffecterDef EatVegetarian;
 
@@ -77,6 +79,12 @@ namespace AlphaMemes
         public static PreceptDef AM_SanguophageCamps_RaidingDesired;
         [MayRequire("Dubwise.DubsBadHygiene")]
         public static PreceptDef AM_Baths_Desired;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_TeaDrinking_Required;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_TeaCultivation_Improved;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_TeaYield_Increased;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -117,6 +125,12 @@ namespace AlphaMemes
         public static HistoryEventDef AM_AteRawFood;
         [MayRequire("VanillaExpanded.VCookE")]
         public static HistoryEventDef AM_AteLavishMeal;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static HistoryEventDef AM_DrankPsychiteTea;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static HistoryEventDef AM_DrankTea;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static HistoryEventDef AM_DrankSpecialtyTea;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -134,6 +148,7 @@ namespace AlphaMemes
         public static ThingDef AM_MummyFemale;
         public static ThingDef AM_Filth_RedSlime;
         public static ThingDef PenMarker;
+        public static ThingDef PsychiteTea;
         [MayRequire("sarg.alphaanimals")]
         public static ThingDef AA_AlienTree;
         [MayRequire("sarg.alphaanimals")]
@@ -163,6 +178,10 @@ namespace AlphaMemes
         public static ThingDef ShowerSimple;
         [MayRequire("Dubwise.DubsBadHygiene")]
         public static ThingDef ShowerAdvStuff;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static ThingDef VBE_Plant_Tea;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static ThingDef VBE_Tea;
 
         public static FleckDef PsycastPsychicEffect;
 
@@ -201,6 +220,8 @@ namespace AlphaMemes
         public static MemeDef VME_ViolentConversion;
         [MayRequireRoyalty]
         public static MemeDef AM_PsychicVampirism;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static MemeDef AM_TeaPrimacy;
 
         //public static ThingStyleDef AM_MealNutrientPaste;
 

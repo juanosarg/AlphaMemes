@@ -21,6 +21,10 @@ namespace AlphaMemes
             {
                 __result *= WorldComponent_PlantFertility.Instance.plants_and_fertility[__instance];
             }
+            if(__instance.def == InternalDefOf.VBE_Plant_Tea && WorldComponent_GenericIdeosTracker.Instance.teaBoost)
+            {
+                __result *= 1.2f;
+            }
 
 
 

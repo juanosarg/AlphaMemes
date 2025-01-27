@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef>
+		<defName>AM_TeaCeremonyBehavior</defName>
+			<workerClass>AlphaMemes.RitualBehaviorWorker_TeaCeremony</workerClass>
+		<durationTicks>5000</durationTicks>
+		<preceptRequirements>
+			<li Class="PreceptRequirement_Altar"/>
+		</preceptRequirements>
+		<roles Inherit="False">
+			<li Class="RitualRoleTag">
+				<label>speaker</label>
+				<id>moralist</id>
+				<tag>Moralist</tag>
+				<precept>IdeoRole_Moralist</precept>
+				<required>True</required>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+			
+		</roles>
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<stages>
+			<li>
+				<defaultDuty>SpectateCircle</defaultDuty>
+				<spectateDistanceOverride>5~7</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+							<li>moralist</li>
+							
+						</roleIds>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_BehindThingCenter"/>
+						</customPositions>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+			<li>
+				<defaultDuty>SpectateCircle</defaultDuty>
+				<spectateDistanceOverride>5~7</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>StandOnCell</dutyDef>
+						
+					</li>
+				
+				</roleBehaviors>
+				<highlightRolePawns>
+					
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>

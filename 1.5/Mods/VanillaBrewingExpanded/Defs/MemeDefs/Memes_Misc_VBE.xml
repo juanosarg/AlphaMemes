@@ -77,7 +77,9 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-			
+			<li><li>AM_TeaDrinking_Required</li></li>
+			<li><li>AM_TeaCultivation_Improved</li></li>
+			<li><li>AM_TeaYield_Increased</li></li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -105,6 +107,15 @@
 				<member>tea drinker</member>
 			</li>
 		</symbolPacks>
+		<addDesignators>
+			<li>AM_TeaCeremonyTable</li>
+		</addDesignators>
+		<requiredRituals>
+			<li>
+				<precept>AM_TeaCeremonyPrecept</precept>
+				<pattern>AM_TeaCeremonyPattern</pattern>
+			</li>
+		</requiredRituals>
 	</MemeDef>
 </Defs>
 	

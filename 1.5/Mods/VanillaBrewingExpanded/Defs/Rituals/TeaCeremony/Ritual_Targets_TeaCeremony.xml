@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualObligationTargetFilterDef>
+    <defName>AM_TeaCeremonyTarget</defName>
+   <workerClass>RitualObligationTargetWorker_ThingDef</workerClass>
+    <thingDefs>
+      <li>AM_TeaCeremonyTable</li>
+    </thingDefs>
+  </RitualObligationTargetFilterDef>
+
+ 
+
+</Defs>

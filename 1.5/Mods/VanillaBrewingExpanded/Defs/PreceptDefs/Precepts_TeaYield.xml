@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_TeaYield</defName>
+		<label>tea yield</label>
+		<iconPath>UI/Issues/AM_TeaYield</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_TeaYield_Increased</defName>
+		<issue>AM_TeaYield</issue>
+		<label>increased</label>
+		<description>By perfecting our harvesting techniques and nurturing the soil, each tea plant now provides a more generous yield.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Increases yield of tea plants by 10%.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_TeaPrimacy</li>
+		</associatedMemes>
+		
+		
+	</PreceptDef>
+	
+</Defs>

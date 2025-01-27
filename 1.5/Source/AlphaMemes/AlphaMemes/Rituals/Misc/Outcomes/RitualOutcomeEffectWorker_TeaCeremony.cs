@@ -4,20 +4,21 @@ using System.Linq;
 using Verse;
 using RimWorld;
 using Verse.Sound;
+using System.Security.Principal;
 
 
 namespace AlphaMemes
 {
-    public class RitualOutcomeEffectWorker_Baptism : RitualOutcomeEffectWorker_FromQuality
+    public class RitualOutcomeEffectWorker_TeaCeremony : RitualOutcomeEffectWorker_FromQuality
     {
 
 
 
-        public RitualOutcomeEffectWorker_Baptism()
+        public RitualOutcomeEffectWorker_TeaCeremony()
         {
         }
 
-        public RitualOutcomeEffectWorker_Baptism(RitualOutcomeEffectDef def) : base(def)
+        public RitualOutcomeEffectWorker_TeaCeremony(RitualOutcomeEffectDef def) : base(def)
         {
         }
 
@@ -48,21 +49,41 @@ namespace AlphaMemes
 
             }
             Pawn pawn2 = jobRitual.PawnWithRole("moralist");
-            Pawn pawn3 = jobRitual.PawnWithRole("baptized");
-            if (outcome.Positive)
+            ThingDef teaToMake=null;
+            int numberToMake=1;
+            switch(outcome.positivityIndex)
+
+                    {
+
+                case -1:
+                    teaToMake = InternalDefOf.VBE_Tea;
+                    numberToMake = 5;
+                    break;
+                case 1:
+                    teaToMake = InternalDefOf.VBE_Tea;
+                    numberToMake = 20;
+
+                    break;
+                case 2:
+                    if(StaticCollections.specialtyTeas.Count > 0)
+                    {
+                        teaToMake = StaticCollections.specialtyTeas.RandomElement();
+                        numberToMake = 25;
+                    }
+                    else
+                    {
+                        teaToMake = InternalDefOf.VBE_Tea;
+                        numberToMake = 25;
+
+                    }
+
+                    break;
+                }
+            if(teaToMake != null)
             {
-                pawn3.ideo.SetIdeo(pawn2.Ideo);
-            }
-            else
-            {
-                float ideoCertaintyOffset = outcome.ideoCertaintyOffset;
-                pawn3.ideo.OffsetCertainty(ideoCertaintyOffset);
-            }
-            for (int i = 0; i < 5; i++)
-            {
-                IntVec3 c;
-                CellFinder.TryFindRandomReachableCellNearPosition(pawn3.Position, pawn3.Position, jobRitual.Map, 1, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-                FilthMaker.TryMakeFilth(c, jobRitual.Map, ThingDefOf.Filth_Water);
+                Thing thing = ThingMaker.MakeThing(teaToMake);
+                thing.stackCount = numberToMake;
+                GenPlace.TryPlaceThing(thing, pawn2.Position, pawn2.Map, ThingPlaceMode.Near);
 
             }
 

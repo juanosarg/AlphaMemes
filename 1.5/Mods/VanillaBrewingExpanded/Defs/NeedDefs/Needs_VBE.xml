@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+ 
+  
+   <NeedDef>
+    <defName>AM_TeaNeed</defName>
+    <needClass>AlphaMemes.Need_Tea</needClass>
+    <label>tea</label>
+    <description>Tea reflects a person’s craving for the soothing warmth and refined taste of brewed leaves, a ritual as old as civilization itself.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+	<fallPerDay>0.5</fallPerDay>
+    <listPriority>91</listPriority>
+   
+  </NeedDef>
+
+  
+</Defs>

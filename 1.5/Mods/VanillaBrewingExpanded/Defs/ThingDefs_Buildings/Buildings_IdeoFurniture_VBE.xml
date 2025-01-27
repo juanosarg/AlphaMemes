@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_TeaCeremonyTable</defName>
+		<label>tea table</label>
+		<description>A short-legged table designed specifically for the tea ceremony, offering a stable surface for brewing and presenting tea with care and precision. Its low height encourages a sense of intimacy and tranquility during the ritual.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>40000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Misc/AM_TeaCeremonyTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<category>Building</category>
+		<size>(1,1)</size>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Woody</li>
+			
+		</stuffCategories>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<costStuffCount>30</costStuffCount>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_TeaCeremonyPrecept</defName>
+		<label>tea ceremony</label>
+		<description>A moment of tranquility and connection, where the brewing of tea becomes an art and a shared experience.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>AM_TeaCeremonyPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_TeaCeremony</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<useCooldownFromAbilityGroupDef>Moralist</useCooldownFromAbilityGroupDef>
+		<requiredMemes>		
+			<li>AM_TeaPrimacy</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>
