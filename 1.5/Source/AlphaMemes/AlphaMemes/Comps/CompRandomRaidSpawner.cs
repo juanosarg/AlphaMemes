@@ -46,8 +46,8 @@ namespace AlphaMemes
                     allowedXenotypes.Add(InternalDefOf.VRE_Strigoi);
                     allowedXenotypes.Add(InternalDefOf.VRE_Ekkimian);
                 }
-                if (DefDatabase<XenotypeDef>.GetNamedSilentFail("AM_Malachai") != null)
-                { allowedXenotypes.Add(DefDatabase<XenotypeDef>.GetNamedSilentFail("AM_Malachai")); }
+                if (DefDatabase<XenotypeDef>.GetNamedSilentFail("AG_Malachai") != null)
+                { allowedXenotypes.Add(DefDatabase<XenotypeDef>.GetNamedSilentFail("AG_Malachai")); }
 
                 for(int i = 0; i < numberOfPawns.RandomInRange; i++)
                 {
@@ -60,7 +60,7 @@ namespace AlphaMemes
                     forcedXenotype: null, forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f);
                     XenotypeDef chosenXenotype = allowedXenotypes.RandomElement();
                     request.ForcedXenotype = chosenXenotype;
-                    if(chosenXenotype == DefDatabase<XenotypeDef>.GetNamedSilentFail("AM_Malachai"))
+                    if(chosenXenotype == DefDatabase<XenotypeDef>.GetNamedSilentFail("AG_Malachai"))
                     {
                         causeEclipse = true;
 
