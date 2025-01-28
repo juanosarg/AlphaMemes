@@ -6,6 +6,7 @@
 		<label>feasting frenzy</label>
 		<description>The joyous atmosphere of the banquet has left everyone energized and eager to devour their meals with unmatched swiftness. Plates are cleared in record time! This will last for two days.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>

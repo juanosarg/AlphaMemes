@@ -7,6 +7,7 @@
 		<description>The exhilaration caused after a mental break is causing this person to have increased pain tolerance and strength. This will last for about a day.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -56,6 +57,7 @@
 		<label>utility dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<stages>
@@ -82,6 +84,7 @@
 		<label>combat dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<stages>
@@ -113,6 +116,7 @@
 		<label>generic dryad supremacy boost</label>
 		<description>This dryad is being strengthened due to the existing improved psychic link between the Gauranlen trees and your colonists.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<stages>
@@ -143,6 +147,7 @@
 		<description>The destruction of an ancient relic is filling this person with increased confidence and righteousness.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<isBad>false</isBad>
 		<stages>
 			<li>
@@ -241,6 +246,7 @@
 		<label>eyepatch</label>
 		<description>An eyepatch is blocking this person's vision.</description>
 		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<stages>
 			<li>
 				<capMods>
@@ -269,6 +275,7 @@
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<taleOnVisible>ToxicityRevealed</taleOnVisible>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
