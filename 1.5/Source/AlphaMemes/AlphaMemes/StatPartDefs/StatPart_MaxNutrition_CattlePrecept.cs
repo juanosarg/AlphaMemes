@@ -31,8 +31,12 @@ namespace AlphaMemes
         private bool Applies(StatRequest req)
         {
             Pawn pawn = (req.Thing as Pawn);
-            return ( StaticCollections.cattleAnimals.Contains(pawn.kindDef) && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Cattle_Improved) != null);
+            if(pawn!=null)
+            {
+                return (StaticCollections.cattleAnimals.Contains(pawn.kindDef) && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Cattle_Improved) != null);
 
+            }
+            return false;
         }
     }
 }

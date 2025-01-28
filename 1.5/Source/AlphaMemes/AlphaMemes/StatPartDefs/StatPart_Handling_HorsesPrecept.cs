@@ -31,7 +31,7 @@ namespace AlphaMemes
         private bool Applies(StatRequest req)
         {
             Pawn pawn = (req.Thing as Pawn);
-            return (pawn.kindDef == InternalDefOf.Horse && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Horses_Desired) != null);
+            return (pawn?.kindDef == InternalDefOf.Horse && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Horses_Desired) != null);
 
         }
     }

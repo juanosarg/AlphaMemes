@@ -32,9 +32,12 @@ namespace AlphaMemes
         {
             Pawn pawn = req.Thing as Pawn;
            
-           
+           if(pawn!=null)
+            {
                 return StaticCollections.analyzedAnimals.Contains(pawn.kindDef);
-           
+            }
+               
+           return false;
 
         }
     }
