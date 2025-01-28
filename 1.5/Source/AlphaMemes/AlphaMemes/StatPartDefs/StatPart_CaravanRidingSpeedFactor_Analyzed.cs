@@ -32,11 +32,9 @@ namespace AlphaMemes
         {
             Pawn pawn = req.Thing as Pawn;
            
-            if (pawn?.Faction==Faction.OfPlayerSilentFail)
-            {
+           
                 return StaticCollections.analyzedAnimals.Contains(pawn.kindDef);
-            }
-            return false;
+           
 
         }
     }
