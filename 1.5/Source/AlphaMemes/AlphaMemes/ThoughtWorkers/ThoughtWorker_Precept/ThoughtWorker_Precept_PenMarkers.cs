@@ -19,7 +19,7 @@ namespace AlphaMemes
                 return ThoughtState.ActiveAtStage(0);
 
             }
-            else if (StaticCollections.penMarkersInMap[p.Map] ==1l)
+            else if (StaticCollections.penMarkersInMap[p.Map] ==1)
             {
                 return ThoughtState.ActiveAtStage(1);
 

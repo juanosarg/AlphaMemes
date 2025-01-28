@@ -22,6 +22,9 @@
 			<li>AM_WaterPrimacy</li>
 		</requiredMemes>
 		<displayOrderInIssue>0</displayOrderInIssue>
+		<statOffsets>
+			<HygieneRateMultiplier>0.1</HygieneRateMultiplier>
+		</statOffsets>
 		<comps>
 			
 			<li Class="PreceptComp_SituationalThought">

@@ -85,6 +85,8 @@ namespace AlphaMemes
         public static PreceptDef AM_TeaCultivation_Improved;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static PreceptDef AM_TeaYield_Increased;
+        [MayRequireRoyalty]
+        public static PreceptDef AM_AnimaScreams_Delightful;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;

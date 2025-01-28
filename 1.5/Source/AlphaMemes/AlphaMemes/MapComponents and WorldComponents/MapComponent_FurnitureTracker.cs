@@ -83,15 +83,12 @@ namespace AlphaMemes
                     int draincasketCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.VRE_Draincasket).EnumerableCount();
                     StaticCollections.SetDeathrestCasketsInTheMap(map, casketCount);
                     StaticCollections.SetDraincasketsInTheMap(map, draincasketCount);
-
                 }
 
                 if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Megaliths_Desired) != null))
                 {
-                    int megalithCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.AM_Megalith).EnumerableCount();
-                 
+                    int megalithCount = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.AM_Megalith).EnumerableCount();               
                     StaticCollections.SetMegalithsInTheMap(map,megalithCount);
-
                 }
 
                 if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Baths_Desired) != null))
@@ -100,10 +97,14 @@ namespace AlphaMemes
                     int showers = map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerStuff).EnumerableCount() +
                         map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerSimple).EnumerableCount() +
                         map.listerBuildings.AllBuildingsColonistOfDef(InternalDefOf.ShowerAdvStuff).EnumerableCount();
-
-
                     StaticCollections.SetBathsAndShowersInTheMap(map, bathtubs+showers);
 
+                }
+
+                if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_AnimaScreams_Delightful) != null))
+                {
+                    int trees = map.listerThings.ThingsOfDef(ThingDefOf.Plant_TreeAnima).Count();                
+                    StaticCollections.SetAnimaTreesInTheMap(map, trees);
                 }
 
                 if (map.IsPlayerHome && (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_Ranching_CattleCentered) != null))

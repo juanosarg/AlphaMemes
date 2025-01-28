@@ -577,6 +577,7 @@
     <Compile Include="Thoughts\Thought_Catharsis.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Megaliths.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Mood_Volatile.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_AnimaTrees.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_PenMarkers.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Rain.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_RelicDestruction.cs" />

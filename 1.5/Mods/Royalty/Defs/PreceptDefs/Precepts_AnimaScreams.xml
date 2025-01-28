@@ -22,11 +22,20 @@
 		<requiredMemes>
 			<li>AM_Deforestation</li>
 		</requiredMemes>
-		<comps><li Class="PreceptComp_KnowsMemoryThought">
-			<eventDef>AM_AnimaScream</eventDef>
-			<thought>AM_AnimaScreams_Delightful</thought>
-		</li></comps>
-		
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_AnimaScream</eventDef>
+				<thought>AM_AnimaScreams_Delightful</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_AnimaScream_TreesInMap</thought>
+				<thoughtStageDescriptions>
+				
+					<li>Anima tree around</li>
+					<li>More than 1 anima tree around</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>AM_AnimaScreams_Delightful</defName>
@@ -38,6 +47,25 @@
 				<label>anima scream</label>
 				<description>The reverberating mental echoes of the cursed tree's death are music to my brain.</description>
 				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_AnimaScream_TreesInMap</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_AnimaTrees</workerClass>
+		<minExpectation>Low</minExpectation>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			
+			<li>
+				<label>anima tree around</label>
+				<description>That strange anima tree is whispering inside my mind, we should get rid of it!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>anima trees around</label>
+				<description>This is madness, those trees need to be cut down NOW.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
