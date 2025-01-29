@@ -52,7 +52,7 @@ namespace AlphaMemes
             get
             {
                 if (Find.IdeoManager.classicMode) return false;
-                if (InternalDefOf.AM_TeaPrimacy is null || !this.pawn.Ideo?.HasPrecept(InternalDefOf.AM_TeaDrinking_Required) != true
+                if (InternalDefOf.AM_TeaPrimacy is null || this.pawn.Ideo?.HasPrecept(InternalDefOf.AM_TeaDrinking_Required) != true
                     || ExpectationsUtility.CurrentExpectationFor(this.pawn).order <= 2)
                 {
                     return false;

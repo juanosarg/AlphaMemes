@@ -4,6 +4,7 @@
 		<defName>AM_TeaDefs</defName>
 		<normalTeas>
 			<li>VBE_Tea</li>
+			<li>ERN_Tea</li>
 		</normalTeas>
 		<specialtyTeas>
 			<li>VBE_BlackTea</li>
