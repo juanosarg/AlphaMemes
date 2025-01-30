@@ -3,7 +3,7 @@
 
  
   
-  <RitualPatternDef Name="CelebrationPartyChat">
+  <RitualPatternDef>
     <defName>AM_RodeoPreceptPattern</defName>
     <ritualBehavior>AM_RodeoBehavior</ritualBehavior>
     <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
