@@ -20,14 +20,18 @@ namespace AlphaMemes
 
         public static Thing GetTable(IntVec3 tablePosition, Map map)
         {
-            List<Thing> thingList = tablePosition.GetThingList(map);
-            for (int i = 0; i < thingList.Count; i++)
+            if (map != null)
             {
-                if (thingList[i].def.surfaceType == SurfaceType.Eat)
+                List<Thing> thingList = tablePosition.GetThingList(map);
+                for (int i = 0; i < thingList.Count; i++)
                 {
-                    return thingList[i];
+                    if (thingList[i].def.surfaceType == SurfaceType.Eat)
+                    {
+                        return thingList[i];
+                    }
                 }
             }
+           
             return null;
         }
 
@@ -93,7 +97,7 @@ namespace AlphaMemes
                 {
                     IntVec3 positionTable = ingester.Position + ingester.Rotation.FacingCell;
                     Thing table = GetTable(positionTable, ingester.Map);
-                    CompQuality compQuality = table.TryGetComp<CompQuality>();
+                    CompQuality compQuality = table?.TryGetComp<CompQuality>();
                     if (compQuality != null)
                     {
                         if (compQuality.Quality < QualityCategory.Normal)
