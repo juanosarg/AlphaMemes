@@ -20,7 +20,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         static void RemoveMaternalMortality(ref float __result)
         {
-            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_ArtProductionSpeed_Increased) != null)
+            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_MaternalMortality_Nullified) != null)
             {
                 __result= 0f;
             }
