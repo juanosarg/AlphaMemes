@@ -14,7 +14,7 @@
 	<AM_AbilityNeedsResourcesDelivered>All resources must have been delivered to the building frame</AM_AbilityNeedsResourcesDelivered>
 	<AM_NoDataBaseFound>You'll need to build an animal database before this ability can be used</AM_NoDataBaseFound>
 	<AM_NotAnalyzed>Not scanned</AM_NotAnalyzed>
-	<AM_Analyzed>Genome analyzed</AM_Analyzed>
+	<AM_Analyzed>Genome analyzed</AM_Analyzed> 
 	<AM_OnlyTaggedAnimals>Only tagged animals</AM_OnlyTaggedAnimals>
 	<AM_StatsReport_Analyzed>Animal analyzed</AM_StatsReport_Analyzed>
 	<AM_AnalyzedAnimalBonuses>Since this animal has been analyzed, it will have from now on -2 to Minimum handling skill, -25% Filth rate and +25% Caravan riding speed.</AM_AnalyzedAnimalBonuses>
