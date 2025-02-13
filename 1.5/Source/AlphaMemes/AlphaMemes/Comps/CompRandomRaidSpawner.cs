@@ -92,6 +92,7 @@ namespace AlphaMemes
                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_SanguophageCampRaided, pawnFriendly.Named(HistoryEventArgsNames.Doer)), true);
 
             }
+            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_SanguophageCampRaided_DevPoints), true);
             if (causeEclipse)
             {
                 IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDefOf.Eclipse.category, this.parent.Map);

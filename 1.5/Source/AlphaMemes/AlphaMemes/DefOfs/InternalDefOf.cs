@@ -116,6 +116,8 @@ namespace AlphaMemes
         [MayRequireBiotech]
         public static HistoryEventDef AM_SanguophageCampRaided;
         [MayRequireBiotech]
+        public static HistoryEventDef AM_SanguophageCampRaided_DevPoints;
+        [MayRequireBiotech]
         public static HistoryEventDef AM_ChildBorn;
         [MayRequireRoyalty]
         public static HistoryEventDef AM_AnimaScream;

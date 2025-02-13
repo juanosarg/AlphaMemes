@@ -521,6 +521,7 @@
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_SparringMatch.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_TeaCeremony.cs" />
+    <Compile Include="Rituals\Misc\RitualOutcomeComps\RitualOutcomeComp_Outdoors.cs" />
     <Compile Include="Rituals\Misc\RitualOutcomeComps\RitualOutcomeComp_NearWater.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Warping.cs" />
     <Compile Include="Rituals\Misc\RitualRoles\RitualRoleCattle.cs" />

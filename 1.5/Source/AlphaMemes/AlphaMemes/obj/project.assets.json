@@ -130,20 +130,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\Sarg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
       "projectName": "AlphaMemes",
-      "projectPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\AlphaMemes.csproj",
+      "packagesPath": "C:\\Users\\Sarg\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sarg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -157,6 +157,11 @@
         "net472": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

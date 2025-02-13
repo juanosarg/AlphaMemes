@@ -8,6 +8,10 @@
 	</IssueDef>
 	<HistoryEventDef>
 		<defName>AM_SanguophageCampRaided</defName>
+		<label>raiding a sanguophage camp together</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_SanguophageCampRaided_DevPoints</defName>
 		<label>raiding a sanguophage camp</label>
 	</HistoryEventDef>
 	<PreceptDef>
@@ -41,7 +45,7 @@
 				</thoughtStageDescriptions>
 			</li>
 			<li Class="PreceptComp_DevelopmentPoints">
-				<eventDef>AM_SanguophageCampRaided</eventDef>
+				<eventDef>AM_SanguophageCampRaided_DevPoints</eventDef>
 				<eventLabel>sanguophage camp raided</eventLabel>
 				<points>1</points>
 			</li>
