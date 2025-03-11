@@ -71,7 +71,7 @@ namespace AlphaMemes
         static StaticCollections()
         {
 
-            List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x=>x.race.HasComp<CompMilkable>()).ToList();
+            List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x=>x.race.HasComp<CompMilkable>() && !x.race.race.Humanlike).ToList();
             cattleAnimals.AddRange(allMilkCattle);
             cattleAnimals.Add(PawnKindDefOf.Muffalo);
             cattleAnimals.Add(InternalDefOf.Bison);
