@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\staticcollections\\staticcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\staticcollections\\staticcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\statpartdefs\\statpart_filthrate_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\statpartdefs\\statpart_filthrate_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\rituals\\misc\\ritualoutcomecomps\\ritualoutcomecomp_outdoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\rituals\\misc\\ritualoutcomecomps\\ritualoutcomecomp_outdoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,15 +23,15 @@
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\plant_tryspawnstump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\harmony\\thoughtutility_removepositivebedroomthoughts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\thoughtutility_removepositivebedroomthoughts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\thoughtutility_removepositivebedroomthoughts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\harmony\\thoughtutility_givethoughtsforpawnorganharvested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\thoughtutility_givethoughtsforpawnorganharvested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\thoughtutility_givethoughtsforpawnorganharvested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\harmony\\plant_yieldnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\harmony\\plant_yieldnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\harmony\\plant_yieldnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,12 +47,8 @@
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\defofs\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\alphamemes\\1.5\\source\\alphamemes\\alphamemes\\thoughtworkers\\thoughtworker_precept\\thoughtworker_precept_armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\thoughtworkers\\thoughtworker_precept\\thoughtworker_precept_armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\thoughtworkers\\thoughtworker_precept\\thoughtworker_precept_armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\staticcollections\\staticcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\staticcollections\\staticcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\mapcomponents and worldcomponents\\mapcomponent_furnituretracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\statpartdefs\\statpart_handling_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\statpartdefs\\statpart_handling_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\statpartdefs\\statpart_filthrate_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|solutionrelative:alphamemes\\statpartdefs\\statpart_filthrate_analyzed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F1404A7-FC72-4BA6-94D3-80D242E76B2B}|AlphaMemes\\AlphaMemes.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\alphamemes\\rituals\\misc\\outcomes\\ritualoutcomeeffectworker_relicdestruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -667,11 +667,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RitualOutcomeComp_Outdoors.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Rituals\\Misc\\RitualOutcomeComps\\RitualOutcomeComp_Outdoors.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Rituals\\Misc\\RitualOutcomeComps\\RitualOutcomeComp_Outdoors.cs",
@@ -683,38 +687,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ThoughtUtility_RemovePositiveBedroomThoughts.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
-              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
-              "RelativeToolTip": "AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:18:28.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
-              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
-              "RelativeToolTip": "AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:18:24.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Plant_YieldNow.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Plant_YieldNow.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\Plant_YieldNow.cs",
@@ -722,12 +696,11 @@
               "RelativeToolTip": "AlphaMemes\\Harmony\\Plant_YieldNow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:18:15.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T09:18:15.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ThoughtWorker_Precept_Armor.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\ThoughtWorkers\\ThoughtWorker_Precept\\ThoughtWorker_Precept_Armor.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\ThoughtWorkers\\ThoughtWorker_Precept\\ThoughtWorker_Precept_Armor.cs",
@@ -735,12 +708,11 @@
               "RelativeToolTip": "AlphaMemes\\ThoughtWorkers\\ThoughtWorker_Precept\\ThoughtWorker_Precept_Armor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:29:19.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T09:29:19.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MapComponent_FurnitureTracker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\MapComponent_FurnitureTracker.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\MapComponent_FurnitureTracker.cs",
@@ -752,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CompRandomRaidSpawner.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Comps\\CompRandomRaidSpawner.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Comps\\CompRandomRaidSpawner.cs",
@@ -760,12 +732,61 @@
               "RelativeToolTip": "AlphaMemes\\Comps\\CompRandomRaidSpawner.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAAAGUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:08:23.809Z",
+              "WhenOpened": "2025-01-22T10:08:23.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatPart_FilthRate_Analyzed.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
+              "RelativeToolTip": "AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T12:13:14.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "StaticCollections.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollections\\StaticCollections.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\StaticCollections\\StaticCollections.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollections\\StaticCollections.cs",
+              "RelativeToolTip": "AlphaMemes\\StaticCollections\\StaticCollections.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwEkAAACmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T15:20:09.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\ThoughtUtility_GiveThoughtsForPawnOrganHarvested.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:18:24.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThoughtUtility_RemovePositiveBedroomThoughts.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
+              "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
+              "RelativeToolTip": "AlphaMemes\\Harmony\\ThoughtUtility_RemovePositiveBedroomThoughts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:18:28.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Plant_TrySpawnStump.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Plant_TrySpawnStump.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\Plant_TrySpawnStump.cs",
@@ -773,12 +794,11 @@
               "RelativeToolTip": "AlphaMemes\\Harmony\\Plant_TrySpawnStump.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T09:09:39.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T09:09:39.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "WorldComponent_KillsTracker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_KillsTracker.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_KillsTracker.cs",
@@ -790,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "InternalDefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\DefOfs\\InternalDefOf.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\DefOfs\\InternalDefOf.cs",
@@ -798,12 +818,11 @@
               "RelativeToolTip": "AlphaMemes\\DefOfs\\InternalDefOf.cs",
               "ViewState": "AgIAAGkAAAAAAAAAAAAAAHYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T15:58:04.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T15:58:04.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Plant_SpawnSetup.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Plant_SpawnSetup.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\Plant_SpawnSetup.cs",
@@ -811,12 +830,11 @@
               "RelativeToolTip": "AlphaMemes\\Harmony\\Plant_SpawnSetup.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwBMAAACTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T15:50:14.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T15:50:14.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Plant_GrowthRate.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\Harmony\\Plant_GrowthRate.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\Harmony\\Plant_GrowthRate.cs",
@@ -824,12 +842,11 @@
               "RelativeToolTip": "AlphaMemes\\Harmony\\Plant_GrowthRate.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwBUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T18:25:19.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T18:25:19.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "WorldComponent_SanguophageCampQuests.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_SanguophageCampQuests.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_SanguophageCampQuests.cs",
@@ -841,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "WorldComponent_Relics.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_Relics.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_Relics.cs",
@@ -853,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "WorldComponent_RandomMood.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_RandomMood.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_RandomMood.cs",
@@ -865,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "WorldComponent_PlantFertility.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_PlantFertility.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\MapComponents and WorldComponents\\WorldComponent_PlantFertility.cs",
@@ -877,19 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StaticCollections.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollections\\StaticCollections.cs",
-              "RelativeDocumentMoniker": "AlphaMemes\\StaticCollections\\StaticCollections.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StaticCollections\\StaticCollections.cs",
-              "RelativeToolTip": "AlphaMemes\\StaticCollections\\StaticCollections.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T15:20:09.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "StatPart_CaravanRidingSpeedFactor_Analyzed.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_CaravanRidingSpeedFactor_Analyzed.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_CaravanRidingSpeedFactor_Analyzed.cs",
@@ -901,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "StatPart_CaravanRidingSpeedFactor_HorsesPrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_CaravanRidingSpeedFactor_HorsesPrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_CaravanRidingSpeedFactor_HorsesPrecept.cs",
@@ -913,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "StatPart_MoveSpeed_HorsesPrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_MoveSpeed_HorsesPrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_MoveSpeed_HorsesPrecept.cs",
@@ -925,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "StatPart_ImmunityGainSpeed_CattlePrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_ImmunityGainSpeed_CattlePrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_ImmunityGainSpeed_CattlePrecept.cs",
@@ -937,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "StatPart_MeditationFocusStrength.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_MeditationFocusStrength.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_MeditationFocusStrength.cs",
@@ -949,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "StatPart_ExtraSharp.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_ExtraSharp.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_ExtraSharp.cs",
@@ -961,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "StatPart_CreepBeauty.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_CreepBeauty.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_CreepBeauty.cs",
@@ -973,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "StatPart_Handling_HorsesPrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_Handling_HorsesPrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_Handling_HorsesPrecept.cs",
@@ -985,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "StatPart_Handling_Analyzed.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_Handling_Analyzed.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_Handling_Analyzed.cs",
@@ -997,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "StatPart_EatingSpeed_CattlePrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_EatingSpeed_CattlePrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_EatingSpeed_CattlePrecept.cs",
@@ -1009,19 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "StatPart_FilthRate_Analyzed.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
-              "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
-              "RelativeToolTip": "AlphaMemes\\StatPartDefs\\StatPart_FilthRate_Analyzed.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T12:13:14.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "StatPart_WorkTableArt.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_WorkTableArt.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_WorkTableArt.cs",
@@ -1045,7 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "StatPart_MaxNutrition_CattlePrecept.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AlphaMemes\\1.5\\Source\\AlphaMemes\\AlphaMemes\\StatPartDefs\\StatPart_MaxNutrition_CattlePrecept.cs",
               "RelativeDocumentMoniker": "AlphaMemes\\StatPartDefs\\StatPart_MaxNutrition_CattlePrecept.cs",
