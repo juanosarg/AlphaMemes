@@ -19,20 +19,26 @@ namespace AlphaMemes
     //So even if this somehow makes something count The effectt is basically nothing
     public static class GatheringsUtility_InGatheringArea_Patch
     {
+        
+        private static object patchLock = new object();
         [HarmonyPostfix]
         public static void Postfix(ref bool __result, IntVec3 cell, IntVec3 partySpot, Map map)
         {
-            if(__result == true) { return; }
-            Building building = partySpot.GetEdifice(map);
-            if(building == null) { return; }
-            LordJob_Ritual ritual = Find.IdeoManager.GetActiveRitualOn(building);
-            if (ritual != null)
-            {
-                if(map.reachability.CanReach(cell,building.InteractionCell,PathEndMode.ClosestTouch,TraverseParms.For(TraverseMode.NoPassClosedDoors))) 
+            if (__result == true) { return; }
+            lock (patchLock)
+            {                
+                Building building = partySpot.GetEdifice(map);
+                if (building == null) { return; }
+                LordJob_Ritual ritual = Find.IdeoManager.GetActiveRitualOn(building);
+                if (ritual != null)
                 {
-                    __result = true;
+                    if (map.reachability.CanReach(cell, building.InteractionCell, PathEndMode.ClosestTouch, TraverseParms.For(TraverseMode.NoPassClosedDoors)))
+                    {
+                        __result = true;
+                    }
                 }
             }
+            
         }
 
     }
