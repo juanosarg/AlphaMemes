@@ -97,4 +97,20 @@
 		<thing>TorchWallLamp</thing>
 		<styleCategory>Morbid</styleCategory>
 	</KCSG.SymbolDef>
+	<KCSG.SymbolDef MayRequire="vanillaracesexpanded.sanguophage">
+		<defName>VRE_HemogenPipe</defName>
+		<thing>VRE_HemogenPipe</thing>
+		
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef MayRequire="vanillaracesexpanded.sanguophage">
+		<defName>VRE_HemogenVat</defName>
+		<thing>VRE_HemogenVat</thing>
+		
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef MayRequire="vanillaracesexpanded.sanguophage">
+		<defName>VRE_Draincasket_South</defName>
+		<thing>VRE_Draincasket</thing>
+	
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
 </Defs>

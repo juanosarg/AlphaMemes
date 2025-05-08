@@ -124,6 +124,8 @@
 			<li>AM_Tile_Flesh_Metal</li>
 			<li>AM_FleshSlab_Medium</li>
 			<li>AM_FleshSlab_Broad</li>
+			<li>AM_Building_Misc_FleshmassPiece1x1c</li>
+			<li>AM_Building_Misc_FleshmassPiece2x2c</li>
 		</addDesignators>
 	</StyleCategoryDef>
 </Defs>
