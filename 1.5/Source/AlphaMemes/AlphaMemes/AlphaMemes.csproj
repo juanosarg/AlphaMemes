@@ -397,6 +397,7 @@
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />
     <Compile Include="Precepts\Precept_DespisedAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rituals\FuneralFramework\Comp\CompAssignableToPawn_RumCasket.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualObligationTrigger_MemberCorpseDestroyed_Patch.cs" />
     <Compile Include="Rituals\Misc\Behaviours\RitualBehaviorWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_OcularBurial.cs" />

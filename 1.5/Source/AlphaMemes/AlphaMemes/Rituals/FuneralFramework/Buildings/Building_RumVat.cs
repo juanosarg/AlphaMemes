@@ -13,19 +13,21 @@ using LudeonTK;
 namespace AlphaMemes
 {
     [StaticConstructorOnStartup]
-    public class Building_RumVat : Building_CorpseCasket
+    public class Building_RumVat : Building_Grave
     {
         public int tickToFerment;
         public int age = 0;
         public int tickFilled;
         public bool isFuneral = false;
-        public static float zOffset = 0.51f;
-        public static float xOffset = 0.51f; 
+        public static float zOffset = 0.45f;
+        public static float xOffset = 0.51f;
         public static float topXOffset = 0.0f;
         //[TweakValue("00", -10, 10)] public static float topYOffset = 1.0f;
-        public static float topYOffset = .80f;
+        public static float topYOffset = 1.0f;
         private static readonly int maxAge = 3;
         public static readonly Material vatTop = MaterialPool.MatFrom("Things/Building/Misc/AM_RumBarrel");
+
+        public CompAssignableToPawn_RumCasket CompAssignableToPawn_RumCasket => GetComp<CompAssignableToPawn_RumCasket>();
 
         public void Notify_CorpseBuried()
         {
@@ -94,14 +96,8 @@ namespace AlphaMemes
         }
         public override void Open()
         {
-            if (age == 0)
+            if (age == 0) //If it hasn't fermented yet spit out corpse like regular grave
             {
-                //Dialog box doesn't work here because it needs to go on the gizmo *todo
-                /*    Dialog_MessageBox.CreateConfirmation("AM_RumVatInteruptFerment".Translate(), () =>
-                    {
-                        base.Open();
-                        Cleanup();
-                    });*/
                 base.Open();
                 Cleanup();
                 return;
@@ -126,18 +122,23 @@ namespace AlphaMemes
             innerContainer.ClearAndDestroyContents();//Destroy the corpse
             Cleanup();
         }
+        
         private void Cleanup()
         {
             age = 0;
             tickToFerment = 0;
             isFuneral = false;
+            if (AssignedPawn != null) 
+            { 
+                CompAssignableToPawn_RumCasket.TryUnassignPawn(AssignedPawn);
+            }
         }
         public override bool Accepts(Thing thing)
         {
-            //has to be a fresh corpse
+            //has to be a fresh corpse       
             if (base.Accepts(thing))
             {
-                var comp = thing.TryGetComp<CompRottable>();
+                var comp = thing.TryGetComp<CompRottable>();                
                 if (comp?.Stage != RotStage.Fresh)
                 {
                     return false;
@@ -146,14 +147,12 @@ namespace AlphaMemes
             }
             return false;
         }
-        public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
+        public override void Notify_HauledTo(Pawn hauler, Thing thing, int count)
         {
-            if(base.TryAcceptThing(thing, allowSpecialEffects))
-            {
-                Notify_CorpseBuried();
-            }            
-            return false;
+            base.Notify_HauledTo(hauler, thing, count);
+            Notify_CorpseBuried();
         }
+
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
