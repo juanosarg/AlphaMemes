@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VEF.Memes.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsNonViolent</defName>
+		<associatedMeme>AM_NonViolence</associatedMeme>	
+		<thingSetMaker>AM_StartingItemsNonViolent</thingSetMaker>		
+	</VEF.Memes.StartingItemsByIdeologyDef>
+	
+
+
+
+
+
+
+
+</Defs>

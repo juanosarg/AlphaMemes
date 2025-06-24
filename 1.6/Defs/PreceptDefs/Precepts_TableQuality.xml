@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_TableQuality</defName>
+		<label>table quality</label>
+		<iconPath>UI/Issues/AM_TableQuality</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_AteInLowQualityTable</defName>
+		<label>ate in shoddy table</label>
+	</HistoryEventDef>
+		
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_TableQuality_Desired</defName>
+		<issue>AM_TableQuality</issue>
+		<label>desired</label>
+		<description>Meals are best enjoyed with dignity. A proper table elevates the experience, turning simple sustenance into a moment of refinement.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating on a Poor or Awful quality table will cause a mood penalty.</description>
+		<impact>Low</impact>
+	
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteInLowQualityTable</eventDef>
+				<thought>AM_TableQuality_Desired_AteInLowQualityTable</thought>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_TableQuality_Desired_AteInLowQualityTable</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<durationDays>1</durationDays>
+		
+		<stages>
+			<li>
+				<label>ate in shoddy table</label>
+				<description>I had to eat at that ramshackle excuse for a table. Its wobbling legs and splintered surface were an insult to the act of dining itself.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  <ThoughtDef>
+    <defName>AM_TerribleRodeo</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>disastrous rodeo</label>
+        <description>The event was chaotic and poorly organized. It was embarrassing and left me feeling disappointed.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_BoringRodeo</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>underwhelming rodeo</label>
+        <description>The energy was low, and the performance lacked the excitement I was hoping for.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_FunRodeo</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>thrilling rodeo</label>
+        <description>The performances were energetic, and the crowd's excitement was contagious. I had a great time.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_UnforgettableRodeo</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>legendary rodeo</label>
+        <description>The event was electrifying and unforgettable. It was one of the greatest moments in our colony's history!</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+  
+  
+
+ 
+
+</Defs>

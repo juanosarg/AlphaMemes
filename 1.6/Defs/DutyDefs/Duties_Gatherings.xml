@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DutyDef>
+		<defName>AM_RodeoDuty</defName>
+		<alwaysShowWeapon>false</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				
+				<li Class="AlphaMemes.JobGiver_Rodeo"/>
+				<li Class="JobGiver_Idle">
+					<ticks>60</ticks>
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+</Defs>

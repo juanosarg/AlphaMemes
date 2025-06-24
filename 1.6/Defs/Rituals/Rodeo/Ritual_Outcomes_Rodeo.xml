@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_RodeoOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>RitualOutcomeEffectWorker_FromQuality</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.1</li>
+						<li>120, 0.2</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.1)</li>
+						<li>(10, 0.5)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>speaker's social impact</labelAbstract>
+				<roleId>moralist</roleId>
+				<statDef>SocialImpact</statDef>
+				<curve>
+					<points>
+						<li>(0.2,  0.0)</li>
+						<li>(0.6,  0.18)</li>
+						<li>(1.0, 0.25)</li>
+						<li>(1.5, 0.3)</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Disastrous</label>
+				<chance>0.1</chance>
+				<memory>AM_TerribleRodeo</memory>
+				<description>The {0} was disastrous. The event was chaotic and poorly organized, leaving everyone embarrassed and disappointed.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Underwhelming</label>
+				<chance>0.2</chance>
+				<memory>AM_BoringRodeo</memory>
+				<description>The {0} was underwhelming. The energy was low, and the performance lacked the excitement we were hoping for.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Thrilling</label>
+				<chance>0.6</chance>
+				<memory>AM_FunRodeo</memory>
+				<description>The {0} was thrilling. The performances were energetic, and the crowd was roaring with excitement. A great time was had by all.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Legendary</label>
+				<chance>0.1</chance>
+				<memory>AM_UnforgettableRodeo</memory>
+				<description>The {0} was legendary! Every moment was electrifying, and the show will be remembered as one of the greatest events in our colony's history.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AM_BaseGas">
+		<defName>AM_Filth_RedSlime</defName>
+		<label>red slime</label>
+		<graphicData>
+			<texPath>Things/Gas/AM_Spatter</texPath>
+			<color>(196, 71, 50, 170)</color>
+		</graphicData>
+		<gas>
+			<expireSeconds>
+				<min>29</min>
+				<max>31</max>
+			</expireSeconds>
+			<rotationSpeed>0</rotationSpeed>
+		</gas>
+	</ThingDef>
+	<ThingDef ParentName="BaseFilth">
+		<defName>AM_Filth_OcularGoo</defName>
+		<label>ocular goo</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(196, 71, 50, 170)</color>
+		</graphicData>
+		<filth>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+		</filth>
+	</ThingDef>
+</Defs>

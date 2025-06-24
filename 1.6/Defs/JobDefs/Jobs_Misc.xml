@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>AM_InstallRelic</defName>
+		<driverClass>AlphaMemes.JobDriver_InstallRelicInSmashingAltar</driverClass>
+		<reportString>installing TargetA in TargetB</reportString>
+	</JobDef>
+	<JobDef>
+		<defName>AM_MergeIntoCorruptedPod</defName>
+		<driverClass>AlphaMemes.JobDriver_MergeIntoCorruptedPod</driverClass>
+		<reportString>merging into TargetB.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>AM_RodeoFalseAttackJob</defName>
+		<driverClass>AlphaMemes.JobDriver_RodeoFalseAttackJob</driverClass>
+		<reportString>melee.</reportString>
+	</JobDef>
+</Defs>

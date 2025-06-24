@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingSetMakerDef>
+		<defName>AM_StartingItemsNonViolent</defName>
+		<root Class="AlphaMemes.ThingSetMaker_StartingItemsNonViolent"/>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>AM_StartingItemsGauranlen</defName>
+		<root Class="AlphaMemes.ThingSetMaker_StartingItemsGauranlen"/>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>AM_ThingSetMakerEyelings</defName>
+		<root Class="AlphaMemes.ThingSetMaker_Eyelings"/>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>AM_ThingSetMakerHorses</defName>
+		<root Class="AlphaMemes.ThingSetMaker_Horses"/>
+	</ThingSetMakerDef>
+</Defs>

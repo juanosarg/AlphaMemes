@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef ParentName="DateRitualBehavior">
+		<defName>AM_BanquetBehaviour</defName>
+		<durationTicks>5000</durationTicks>
+		<roles Inherit="False"/>
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<stages Inherit="False">
+			<li>
+				<defaultDuty>AM_EatAtBanquet</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1.0</percentage>
+					</li>
+				</endTriggers>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>

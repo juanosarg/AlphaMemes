@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "AnimaScream"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AnimaScream"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>AM_AnimaScreams_Delightful</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThoughtDef[defName = "AnimaScream"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>AM_AnimaScreams_Delightful</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	
+	
+
+
+</Patch>

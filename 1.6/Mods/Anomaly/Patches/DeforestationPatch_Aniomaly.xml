@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/MemeDef[defName="AM_Deforestation"]/requireOne</xpath>
+		<value>
+			<li>
+				<li>AM_HarbingerTrees_Disgusting</li>
+			</li>
+		</value>
+	</Operation>
+	
+	
+	
+	
+
+
+</Patch>

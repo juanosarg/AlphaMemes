@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+   
+	
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Bed"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "Bed"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bed"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable" />
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bed"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable" />
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "DoubleBed"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "DoubleBed"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "DoubleBed"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable" />
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "DoubleBed"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable" />
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "HospitalBed"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "HospitalBed"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "HospitalBed"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable" />
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "HospitalBed"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable" />
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RoyalBed"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Styleable" />
+					</comps>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Styleable" />
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<SitePartDef>
+		<defName>AG_SanguophageCamp</defName>
+		<label>sanguophage camp</label>
+		<description>A recently-discovered sanguophage camp.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>UI/Issues/AM_SanguophageCamps</expandingIconTexture>
+		<tags>
+			<li>AG_SanguophageCamp</li>
+		</tags>
+	</SitePartDef>
+	<GenStepDef>
+		<defName>AG_SanguophageCamp</defName>
+		<linkWithSite>AG_SanguophageCamp</linkWithSite>
+		<order>450</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>AM_SanguophageCamp_Alpha</li>
+				<li>AM_SanguophageCamp_Beta</li>
+				<li>AM_SanguophageCamp_Gamma</li>
+				<li>AM_SanguophageCamp_Delta</li>
+			</structureLayoutDefs>
+			<filthTypes>
+				<li>Filth_Dirt</li>
+				<li>Filth_Trash</li>
+				<li>Filth_RubbleBuilding</li>
+			</filthTypes>
+		</genStep>
+	</GenStepDef>
+</Defs>

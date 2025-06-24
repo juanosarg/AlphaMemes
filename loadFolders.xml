@@ -1,22 +1,6 @@
 <loadFolders>
 	
-	<v1.4>
-		<li>/</li>
-		<li>1.4</li>
-		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Mods/Royalty</li>
-		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaAnimals</li>
-		<li IfModActive="sarg.alphabiomes">1.4/Mods/AlphaBiomes</li>
-		<li IfModActive="VanillaExpanded.VFEPower">1.4/Mods/VanillaPowerExpanded</li>
-		<li IfModActive="VanillaExpanded.HelixienGas">1.4/Mods/VanillaHelixienGas</li>
-		<li IfModActive="Lilscoot.Wheelchairs">1.4/Mods/Wheelchairs</li>
-		<li IfModActive="Dubwise.Rimefeller">1.4/Mods/Rimefeller</li>
-		<li IfModActive="Tyrannical_Elmo.IndustrialMelee">1.4/Mods/IndustrialArmory</li>
-		<li IfModActive="VanillaExpanded.VGeneticsE">1.4/Mods/VanillaGeneticsExpanded</li>
-		<li IfModActive="OskarPotocki.VFE.Pirates">1.4/Mods/VanillaFactionsPirates</li>
-		<li IfModActive="Owlchemist.WallUtilities">1.4/Mods/WallUtilities</li>
-		<li IfModActive="VanillaExpanded.VMemesE">1.4/Mods/VanillaMemesExpanded</li>
-		<li IfModActive="Sarg.AlphaPrefabs">1.4/Mods/AlphaPrefabs</li>
-	</v1.4>
+	
 	<v1.5>  
 		<li>/</li>
 		<li>1.5</li>
@@ -39,6 +23,28 @@
 		<li IfModActive="VanillaExpanded.VCookE">1.5/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.5/Mods/VanillaBrewingExpanded</li>
 	</v1.5>
+	<v1.6>  
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>
+		<li IfModActive="sarg.alphabiomes">1.6/Mods/AlphaBiomes</li>
+		<li IfModActive="VanillaExpanded.VFEPower">1.6/Mods/VanillaPowerExpanded</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.6/Mods/VanillaHelixienGas</li>
+		<li IfModActive="Lilscoot.Wheelchairs">1.6/Mods/Wheelchairs</li>
+		<li IfModActive="Dubwise.Rimefeller">1.6/Mods/Rimefeller</li>
+		<li IfModActive="Dubwise.DubsBadHygiene">1.6/Mods/BadHygiene</li>
+		<li IfModActive="Tyrannical_Elmo.IndustrialMelee">1.6/Mods/IndustrialArmory</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.6/Mods/VanillaGeneticsExpanded</li>
+		<li IfModActive="OskarPotocki.VFE.Pirates">1.6/Mods/VanillaFactionsPirates</li>
+		<li IfModActive="Owlchemist.WallUtilities">1.6/Mods/WallUtilities</li>
+		<li IfModActive="VanillaExpanded.VMemesE">1.6/Mods/VanillaMemesExpanded</li>
+		<li IfModActive="Sarg.AlphaPrefabs">1.6/Mods/AlphaPrefabs</li>
+		<li IfModActive="OskarPotocki.VFE.Insectoid2">1.6/Mods/VanillaFactionsExpandedInsectoids</li>
+		<li IfModActive="VanillaExpanded.VCookE">1.6/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="VanillaExpanded.VBrewE">1.6/Mods/VanillaBrewingExpanded</li>
+	</v1.6>
 </loadFolders>
 
 

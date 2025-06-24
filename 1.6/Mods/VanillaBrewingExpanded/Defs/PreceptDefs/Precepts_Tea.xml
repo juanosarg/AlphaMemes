@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_TeaDrinking</defName>
+		<label>tea drinking</label>
+		<iconPath>UI/Issues/AM_Tea</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_DrankPsychiteTea</defName>
+		<label>drank psychite tea</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_DrankTea</defName>
+		<label>drank tea</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_DrankSpecialtyTea</defName>
+		<label>drank specialty tea</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_TeaDrinking_Required</defName>
+		<issue>AM_TeaDrinking</issue>
+		<label>required</label>
+		<description>Tea is more than just a drink; it's a moment of stillness, reflection, and tradition. The consumption of tea is now a sacred obligation.\n\n&lt;color=#E5E54C&gt;Unlocks need:&lt;/color&gt;\n - Tea drinking need.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind this precept has a minimum expectation required. Moderate expectations or higher are needed for the "Tea" need to show up.\n- Psychite tea fills the need by 0.15, normal tea by 0.4, specialty tea (any in VE Brewing - Coffees and Teas) by 0.5</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_TeaPrimacy</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_TeaPrimacy</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_DrankPsychiteTea</eventDef>
+				<thought>AM_TeaDrinking_Required_DrankPsychiteTea</thought>
+			</li>
+			<li Class="AlphaMemes.PreceptComp_IncreaseTeaNeed">
+				<eventDef>AM_DrankPsychiteTea</eventDef>
+				<needGain>0.15</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_DrankTea</eventDef>
+				<thought>AM_TeaDrinking_Required_DrankTea</thought>
+			</li>
+			<li Class="AlphaMemes.PreceptComp_IncreaseTeaNeed">
+				<eventDef>AM_DrankTea</eventDef>
+				<needGain>0.4</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_DrankSpecialtyTea</eventDef>
+				<thought>AM_TeaDrinking_Required_DrankSpecialtyTea</thought>
+			</li>
+			<li Class="AlphaMemes.PreceptComp_IncreaseTeaNeed">
+				<eventDef>AM_DrankSpecialtyTea</eventDef>
+				<needGain>0.5</needGain>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_TeaDrinking_Required_DrankPsychiteTea</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>drank psychite tea</label>
+				<description>That wasn't real tea, and very simple, but it had a pleasant flavor. It hit the spot.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_TeaDrinking_Required_DrankTea</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>drank tea</label>
+				<description>That tea was refreshing and comforting. A nice moment of calm.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_TeaDrinking_Required_DrankSpecialtyTea</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>drank specialty tea</label>
+				<description>That specialty tea was exquisite—rich, fragrant, and exactly what I needed.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

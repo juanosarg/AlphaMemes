@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+	<IssueDef>
+		<defName>AM_Baths</defName>
+		<label>bathtubs</label>
+		<iconPath>UI/Issues/AM_Baths</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>AM_Baths_Desired</defName>
+		<issue>AM_Baths</issue>
+		<label>desired</label>
+		<description>Water is not just a necessity; it is a sacred medium for renewal and purity. The presence of bathtubs and showers reflects our devotion to cleanliness, both physical and spiritual. To neglect such facilities is to fall into disgrace, while their abundance brings harmony and joy.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_WaterPrimacy</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_WaterPrimacy</li>
+		</requiredMemes>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<statOffsets>
+			<HygieneRateMultiplier>0.1</HygieneRateMultiplier>
+		</statOffsets>
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Baths_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>No bathtubs or showers</li>
+					<li>Very few bathtubs and showers (less than 1 per colonist)</li>
+					<li>Enough bathtubs and showers (less than 1.25 per colonist)</li>
+					<li>Lots of bathtubs and showers (1.25 per colonist or more)</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	
+	 <ThoughtDef>
+		<defName>AM_Baths_Desired</defName>
+		
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Baths</workerClass>
+		<minExpectation>Moderate</minExpectation>
+		<stages>
+			<li>
+				<label>no bathtubs or showers</label>
+				<description>What is this, a pigsty? We deserve better.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>very few bathtubs and showers</label>
+				<description>There are only a bunch of bathtubs and showers around. This isn't hygienic.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>enough bathtubs and showers</label>
+				<description>Every colonist has a bathtub or shower. Squeaky clean!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>lots of bathtubs and showers</label>
+				<description>Dub's Amazing Hygiene!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			
+			
+		</stages>
+	</ThoughtDef>
+
+
+</Defs>

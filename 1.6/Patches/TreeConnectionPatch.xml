@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "TreeConnection"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>AM_DefilerVsTreeConnection</li>
+					<li>TreeConnectionExclusion</li>
+					<li>AM_TreeConnectionAndDeforestation</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+			<value>
+				<li>AM_DefilerVsTreeConnection</li>
+				<li>TreeConnectionExclusion</li>
+				<li>AM_TreeConnectionAndDeforestation</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/MemeDef[defName = "TreeConnection"]/groupDef</xpath>
+		<value>
+			<groupDef>
+				<li>AM_Trees</li>
+			</groupDef>
+		</value>
+	</Operation>
+	
+
+	
+
+
+
+</Patch>

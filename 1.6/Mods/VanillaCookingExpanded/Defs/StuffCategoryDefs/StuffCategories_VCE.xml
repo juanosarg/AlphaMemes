@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <StuffCategoryDef>
+    <defName>AM_LavishMeals</defName>
+    <label>lavish meals</label>
+    <noun>lavish meals</noun>
+    <destroySoundSmall>BuildingDestroyed_Soft_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Soft_Medium</destroySoundMedium>
+  </StuffCategoryDef>  
+  
+  
+
+</Defs>

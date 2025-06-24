@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name="AM_Building_Misc_FleshmassPiece_Base" Abstract="True">
+		<description>A piece of fleshmass.</description>
+		<designationCategory>Furniture</designationCategory>
+		<uiOrder>1</uiOrder>
+		<graphicData>
+			<texPath>Things/Building/Linked/FleshmassPiece</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<damageData>
+				<scratches>
+					<li>Damage/FleshScratch1</li>
+					<li>Damage/FleshScratch2</li>
+					<li>Damage/FleshScratch3</li>
+				</scratches>
+			</damageData>
+		</graphicData>
+		
+		<costList>
+			<Meat_Twisted>1</Meat_Twisted>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_Fleshmass</filthLeaving>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<canOverlapZones>true</canOverlapZones>
+		<rotatable>false</rotatable>
+		<tickerType>Never</tickerType>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<soundImpactDefault>Fleshmass_Damaged</soundImpactDefault>
+		<building>
+			<destroyEffecter>FleshmassDestroyed</destroyEffecter>
+			<isEdifice>false</isEdifice>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="AM_Building_Misc_FleshmassPiece_Base">
+		<defName>AM_Building_Misc_FleshmassPiece1x1c</defName>
+		<label>fleshmass piece (1x1)</label>
+	</ThingDef>
+	<ThingDef ParentName="AM_Building_Misc_FleshmassPiece_Base">
+		<defName>AM_Building_Misc_FleshmassPiece2x2c</defName>
+		<label>fleshmass piece (2x2)</label>
+		<size>(2, 2)</size>
+	</ThingDef>
+</Defs>

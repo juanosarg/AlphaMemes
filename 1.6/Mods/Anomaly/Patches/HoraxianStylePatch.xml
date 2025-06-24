@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Horaxian_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Horaxian_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Horaxian_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Horaxian_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Horaxian_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Horaxian_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Horaxian_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Horaxian_LongBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Horaxian_AntiMaterialRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HandCannon</thingDef>
+								<styleDef>AM_Horaxian_HandCannon</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_CombatHandgun</thingDef>
+								<styleDef>AM_Horaxian_CombatHandgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Flamethrower</thingDef>
+								<styleDef>AM_Horaxian_Flamethrower</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_BattleRifle</thingDef>
+								<styleDef>AM_Horaxian_BattleRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Carbine</thingDef>
+								<styleDef>AM_Horaxian_CarbineVWE</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Crossbow</thingDef>
+								<styleDef>AM_Horaxian_Crossbow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Flintlock</thingDef>
+								<styleDef>AM_Horaxian_Flintlock</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HMG</thingDef>
+								<styleDef>AM_Horaxian_HMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_SawedOffShotgun</thingDef>
+								<styleDef>AM_Horaxian_SawedOffShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+								<styleDef>AM_Horaxian_SemiAutomaticRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+								<styleDef>AM_Horaxian_LeverActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LightSMG</thingDef>
+								<styleDef>AM_Horaxian_LightSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SMG</thingDef>
+								<styleDef>AM_Horaxian_SMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ServiceRifle</thingDef>
+								<styleDef>AM_Horaxian_ServiceRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+								<styleDef>AM_Horaxian_MarksmanRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Musket</thingDef>
+								<styleDef>AM_Horaxian_Musket</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Tribal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
+								<styleDef>AM_Horaxian_Shiv</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+
+	
+</Patch>

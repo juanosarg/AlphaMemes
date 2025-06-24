@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<IssueDef>
+		<defName>AM_DeathrestCaskets</defName>
+		<label>deathrest caskets</label>
+		<iconPath>UI/Issues/AM_DeathrestCaskets</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_BuildingDeathrestCasket</defName>
+		<label>building a deathrest casket</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_DeathrestCaskets_Abhorrent</defName>
+		<issue>AM_DeathrestCaskets</issue>
+		<label>abhorrent</label>
+		<description>To lie in a coffin, ensnared in a deathlike slumber, is to mock the sanctity of life itself.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_VampireHunting</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_VampireHunting</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_BuildingDeathrestCasket</eventDef>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_DeathrestCaskets_Abhorrent</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_DeathrestCaskets_Abhorrent</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_DeathrestCaskets</workerClass>
+		<stages>
+			<li>
+				<label>deathrest casket nearby</label>
+				<description>We have a deathrest casket in the colony. This is blasphemy, it should be dismantled as soon as possible.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

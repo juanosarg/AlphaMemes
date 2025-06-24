@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef>
+		<defName>AM_SparringMatchBehavior</defName>
+		<durationTicks>5000</durationTicks>
+	
+    <workerClass>RitualBehaviorWorker_Duel</workerClass>
+    <roles>
+      <li Class="RitualRoleTag">
+        <label>speaker</label>
+        <tag>Leader</tag>
+        <id>leader</id>
+        <precept>IdeoRole_Leader</precept>
+        <required>True</required>
+        <substitutable>True</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+        <allowChild>false</allowChild>
+        <mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>duelist</label>
+        <categoryLabel>duelists</categoryLabel>
+     
+        <id>duelist1</id>
+        <mergeId>duelist</mergeId>
+     
+        <required>True</required>
+        <maxCount>1</maxCount>
+      
+        <countsAsParticipant>False</countsAsParticipant>
+        <allowChild>false</allowChild>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>duelist</label>
+        <categoryLabel>duelists</categoryLabel>
+     
+        <id>duelist2</id>
+        <mergeId>duelist</mergeId>
+        <required>True</required>
+       
+        <maxCount>1</maxCount>
+     
+        <countsAsParticipant>False</countsAsParticipant>
+        <allowChild>false</allowChild>
+      </li>
+    
+    </roles>
+    <spectatorsLabel>Spectators</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <!-- Duelists drop weapons -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesUnarmed">
+            <roleIds>
+              <li>duelist1</li>
+              <li>duelist2</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>duelist1</roleId>
+            <dutyDef>DropWeapon</dutyDef>
+          </li>
+          <li>
+            <roleId>duelist2</roleId>
+            <dutyDef>DropWeapon</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <!-- People gather up -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesArrived">
+            <roleIds>
+              <li>leader</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>leader</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>1~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+           <li>
+            <roleId>duelist1</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>2</distFromTarget>
+                <duelistIndex>0</duelistIndex>
+              </li>
+            </customPositions>
+          </li>
+		  <li>
+            <roleId>duelist2</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>2</distFromTarget>
+                <duelistIndex>1</duelistIndex>
+              </li>
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+    
+      <!-- Leader speak on cell -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <ignoreDurationToFinishAfterStage>true</ignoreDurationToFinishAfterStage>
+        <postAction Class="RitualStageAction_SoundOneshotOnTarget">
+          <sound>GladiatorDuel_Start</sound>
+        </postAction>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.33</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>leader</roleId>
+            <dutyDef>SpeakOnCell</dutyDef>
+            <speakerInteraction>Speech_Duel</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>1~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>duelist2</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+          <li>
+            <roleId>duelist1</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <!-- Fight -->
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <visualEffectDef>Duel</visualEffectDef>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+          <li Class="StageEndTrigger_DuelEnded">
+            <roleIds>
+              <li>duelist1</li>
+              <li>duelist2</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>leader</roleId>
+            <dutyDef>Idle</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_InCircle">
+                <preferredRotation>North</preferredRotation>
+                <distRange>1~3</distRange>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>duelist2</roleId>
+            <dutyDef>Duel</dutyDef>
+          </li>
+          <li>
+            <roleId>duelist1</roleId>
+            <dutyDef>Duel</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+    
+     
+
+    </stages>
+  </RitualBehaviorDef>
+</Defs>

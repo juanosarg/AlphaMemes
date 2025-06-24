@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precept -->
+	<PreceptDef>
+		<defName>AM_Trees_Despised</defName>
+		<issue>Trees</issue>
+		<label>despised</label>
+		<description>Trees are obstacles, standing in the way of our true potential. Their roots choke the earth, their branches block the sky. We must rid the land of these leafy oppressors, for only then will we be free to shape the world as we see fit.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>AM_Deforestation</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Trees_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>+9 to -9 mood depending on number of trees watched by the colonist</li>
+				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_TreeDensityReduced</thought>
+				<thoughtStageDescriptions>
+					<li>+10 to -15 mood depending on number of trees destroyed on each quadrum</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>AM_Trees_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_TreesDesired</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<minExpectation>Moderate</minExpectation>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>repulsive forests</label>
+				<description>I am surrounded by several massive, ugly trees. The sight of these overgrown eyesores repulses me!</description>
+				<baseMoodEffect>-9</baseMoodEffect>
+			</li>
+			<li>
+				<label>abominable trees</label>
+				<description>I very recently encountered a massive, ugly tree – a blight on the land!</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>disgraceful forests</label>
+				<description>I am surrounded by a vile, overgrown forest.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+			<li>
+				<label>blighted trees</label>
+				<description>I recently encountered a massive, ugly tree.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>corrupted forest</label>
+				<description>I was recently surrounded by an overgrown, repulsive forest.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>suffocating trees</label>
+				<description>I recently walked among many dense, suffocating trees.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>chaotic woods</label>
+				<description>I recently walked among a haphazard variety of twisted trees.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>distorted trees</label>
+				<description>I recently encountered a twisted, disfigured tree.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>pitiful trees</label>
+				<description>I was recently surrounded by a few pathetic miniature trees.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>stunted trees</label>
+				<description>I recently encountered a stunted, unattractive miniature tree.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>tree-free</label>
+				<description>I haven't been around any trees in a while. It's a relief!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>tree-less</label>
+				<description>I'm thankful for not having many trees around me.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>tree absence</label>
+				<description>It has been a while since I’ve been near a tree – and I’m grateful for it.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>tree-free zone</label>
+				<description>It has been too long since I’ve been near a tree, and I don’t miss them at all.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>blessed tree absence</label>
+				<description>It has been way too long since I’ve been near a tree, and I’m thankful for the distance!</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_TreeDensityReduced</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<minExpectation>Moderate</minExpectation>
+		<workerClass>ThoughtWorker_Precept_TreeDensity</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>trees purged</label>
+				<description>In the past quadrum, we destroyed a gratifyingly large number of trees. Each fallen trunk brings us closer to a better world.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees cleared</label>
+				<description>In the past quadrum, we destroyed an impressive number of trees. The land looks better already!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees removed</label>
+				<description>In the past quadrum, we got rid of a satisfying number of trees. This was necessary progress.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees cut down</label>
+				<description>In the past quadrum, we destroyed a commendable number of trees. The space feels more open and free now.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees dealt with</label>
+				<description>In the past quadrum, we destroyed a reasonable number of trees. It had to be done, and it feels good to have it behind us.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees thinned</label>
+				<description>In the past quadrum, we destroyed some trees. It’s a step in the right direction, but there’s still more work to do.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees disturbed</label>
+				<description>In the past quadrum, we destroyed a few trees. It’s progress, but hardly worth celebrating.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>trees untouched</label>
+				<description>In the past quadrum, we didn’t destroy many trees at all. It’s disappointing to see so little improvement.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+				<!-- A penalty for failing to meet expectations -->
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

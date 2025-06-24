@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+
+	<!-- Precepts -->
+
+	<IssueDef>
+		<defName>AM_HuntFocus</defName>
+		<label>hunt focus</label>
+		<iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>AM_HuntFocus_Sanguophage</defName>
+		<issue>AM_HuntFocus</issue>
+		<label>sanguophage</label>
+		<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nNormal Sanguophages will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Sanguophage will cause extra 10 burn damage.\n - You'll get extra hunt focus precepts with VE Races - Sanguophage and Alpha Genes.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_VampireHunting</li>
+		</associatedMemes>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		
+	</PreceptDef>
+	
+	
+
+
+</Defs>

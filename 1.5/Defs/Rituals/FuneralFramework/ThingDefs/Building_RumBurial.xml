@@ -72,7 +72,7 @@
       <li Class="CompProperties_Forbiddable"/>
 	  <li Class="CompProperties_AssignableToPawn">
         <drawAssignmentOverlay>false</drawAssignmentOverlay>
-        <compClass>AlphaMemes.CompAssignableToPawn_RumCasket</compClass>
+        <compClass>CompAssignableToPawn</compClass>
       </li>
     </comps>
     <placeWorkers>

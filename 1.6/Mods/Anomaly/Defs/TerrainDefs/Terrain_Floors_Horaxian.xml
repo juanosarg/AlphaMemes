@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>AM_Tile_Horaxian</defName>
+		<label>horaxian tile</label>
+		<description>Stylish tiles in a Horaxian style.</description>
+		<texturePath>Terrain/Surfaces/AM_HoraxianTiles</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+	</TerrainDef>
+</Defs>

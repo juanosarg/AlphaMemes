@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HistoryEventDef>
+		<defName>AM_PruneGauranlenTree</defName>
+		<label>prune Gauranlen tree</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_CutGauranlenTree</defName>
+		<label>Gauranlen tree cut</label>
+	</HistoryEventDef>
+	<!-- Precept -->
+	<PreceptDef>
+		<defName>AM_GauranlenConnection_Forbidden</defName>
+		<issue>GauranlenConnection</issue>
+		<label>forbidden</label>
+		<description>We shun any connection with Gauranlen trees. Such bonds are a wasteful indulgence, distracting from proper labor and fostering unnatural dependence. True strength lies in severing these ties.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Planting the Gauranlen seed and then cutting the tree will provide development points and a mood bonus.</description>
+		<impact>High</impact>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>AM_Deforestation</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>AM_PruneGauranlenTree</eventDef>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_GauranlenConnection_Forbidden</thought>
+			</li>
+			<li Class="PreceptComp_DevelopmentPoints">
+				<eventDef>AM_CutGauranlenTree</eventDef>
+				<eventLabel>cut Gauranlen tree</eventLabel>
+				<points>1</points>
+			</li>
+			 <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AM_CutGauranlenTree</eventDef>
+        <thought>AM_GauranlenConnection_Forbidden_CutGauranlenTree</thought>
+      </li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_GauranlenConnection_Forbidden</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_GauranlenConnection</workerClass>
+		<stages>
+			<li>
+				<label>connected to a gauranlen tree</label>
+				<description>I'm connected to a parasitic alien tree. It's disgusting. I refuse to tend to it and its disgusting progeny.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	  <ThoughtDef>
+    <defName>AM_GauranlenConnection_Forbidden_CutGauranlenTree</defName>
+    <durationDays>5</durationDays>    
+    <stages>
+      <li>
+        <label>cut Gauranlen tree</label>
+        <description>Our colony has gotten rid of another of those parasitic alien trees. Good riddance!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

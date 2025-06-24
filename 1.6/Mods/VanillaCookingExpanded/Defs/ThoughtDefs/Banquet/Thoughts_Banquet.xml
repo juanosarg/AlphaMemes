@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+ <ThoughtDef>
+    <defName>AM_DisastrousBanquet</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+        <li>
+            <label>disastrous banquet</label>
+            <description>The food was revolting, and arguments spoiled the entire occasion.</description>
+            <baseMoodEffect>-7</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_DullBanquet</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+        <li>
+            <label>dull banquet</label>
+            <description>The food was uninspired, and the atmosphere felt lifeless and routine.</description>
+            <baseMoodEffect>-4</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_EnjoyableBanquet</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+        <li>
+            <label>enjoyable banquet</label>
+            <description>Sharing delicious food and laughter together made the event truly worthwhile.</description>
+            <baseMoodEffect>5</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+<ThoughtDef>
+    <defName>AM_ExquisiteBanquet</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+        <li>
+            <label>exquisite banquet</label>
+            <description>The atmosphere was perfect, the company heartwarming, and the food beyond compare.</description>
+            <baseMoodEffect>10</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+
+ 
+
+</Defs>

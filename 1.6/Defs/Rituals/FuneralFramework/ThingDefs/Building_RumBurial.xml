@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AM_RumBurialSpot</defName>
+    <label>corpse rum vat</label>
+    <description>pirates have to use everything to get rum, this invention turns corpses into delicious rum!</description>
+    <thingClass>AlphaMemes.Building_RumVat</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <graphicData> 
+      <texPath>Things/Building/Misc/AM_RumBarrel_Bottom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>     
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <uiIconPath>Things/Building/Misc/AM_RumBarrel</uiIconPath>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1100</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability> 
+      <Mass>25</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <size>(2,2)</size>
+    <designationCategory>Misc</designationCategory>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>true</rotatable>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <haulToContainerDuration>300</haulToContainerDuration>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>     
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+	  <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+          <specialFiltersToDisallow>
+			<li>AllowCorpsesColonist</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+	<costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <costStuffCount>40</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+         <compClass>AlphaMemes.CompAssignableToPawn_RumCasket</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <inspectorTabs>
+	  <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+
+</Defs>

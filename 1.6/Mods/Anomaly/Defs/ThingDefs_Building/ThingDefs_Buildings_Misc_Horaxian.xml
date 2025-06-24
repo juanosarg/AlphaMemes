@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>AM_HoraxianBed</defName>
+		<label>horaxian bed</label>
+		<description>A spiky bed that puts spikecore style to shame.</description>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_HoraxianBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>45</costStuffCount>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiOrder>2010</uiOrder>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	</ThingDef>
+	<ThingDef ParentName="BasicBedBase">
+		<defName>AM_DoubleHoraxianBed</defName>
+		<label>double horaxian bed</label>
+		<description>A spiky bed that puts spikecore style to shame.</description>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Horaxian/Beds/AM_DoubleHoraxianBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>2</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>85</costStuffCount>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<designationHotKey>Misc3</designationHotKey>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_GrayStatueDecorative</defName>
+		<label>decorative gray statue</label>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designationCategory>Furniture</designationCategory>
+		<description>A strange, twisted sculpture shaped into a disturbing form. It hums gently with some strange internal energy. Merely decorative.</description>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Building/GrayStatue</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.45, 0.3)</volume>
+				<offset>(0, 0, -0.5)</offset>
+			</shadowData>
+		</graphicData>
+		<building>
+			<paintable>false</paintable>
+		</building>
+	</ThingDef>
+</Defs>

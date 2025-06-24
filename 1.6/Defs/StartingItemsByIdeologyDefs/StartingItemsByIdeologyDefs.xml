@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	
+	
+	<VEF.Memes.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsGauranlen</defName>
+		<associatedMeme>AM_GauranlenSupremacy</associatedMeme>	
+		<thingSetMaker>AM_StartingItemsGauranlen</thingSetMaker>		
+	</VEF.Memes.StartingItemsByIdeologyDef>
+	
+	<VEF.Memes.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsCorruptors</defName>
+		<associatedMeme>AM_BiologicalCorruptors</associatedMeme>	
+		<thingSetMaker>AM_ThingSetMakerEyelings</thingSetMaker>		
+	</VEF.Memes.StartingItemsByIdeologyDef>
+	
+	<VEF.Memes.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsCowboys</defName>
+		<associatedMeme>AM_Cowboys</associatedMeme>	
+		<thingSetMaker>AM_ThingSetMakerHorses</thingSetMaker>		
+	</VEF.Memes.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

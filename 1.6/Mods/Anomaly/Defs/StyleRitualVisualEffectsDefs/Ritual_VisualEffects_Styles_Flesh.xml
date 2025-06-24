@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualVisualEffectDef>
+		<defName>AM_FleshVisuals</defName>
+	
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>Mote_RitualSmoke</moteDef>
+				<scaleWithRoom>true</scaleWithRoom>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+				<fleckDef>AM_Tentacle</fleckDef>
+				<area>(27, 28)</area>
+				<radius>6</radius>
+				<concentration>3</concentration>
+				<spawnIntervalTicks>27</spawnIntervalTicks>
+				<spawnCount>1</spawnCount>
+				<rotation>-15~15</rotation>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+				<fleckDef>AM_TentacleTwo</fleckDef>
+				<area>(27, 28)</area>
+				<radius>8</radius>
+				<concentration>3</concentration>
+				<spawnIntervalTicks>27</spawnIntervalTicks>
+				<spawnCount>1</spawnCount>
+				<rotation>-15~15</rotation>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+				<fleckDef>AM_TentacleThree</fleckDef>
+				<area>(27, 28)</area>
+				<radius>8</radius>
+				<concentration>3</concentration>
+				<spawnIntervalTicks>27</spawnIntervalTicks>
+				<spawnCount>1</spawnCount>
+				<rotation>-15~15</rotation>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>AM_FleshRune</moteDef>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>AM_Tentacle</defName>
+		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+		<graphicData>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteDistorted</shaderType>
+			<texPath>Things/Pawn/Fleshbeast/Trispike/Attachments/Top/Trispike_TopLimb_north</texPath>
+			<drawSize>3</drawSize>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+				<_distortionScrollSpeed>0.15</_distortionScrollSpeed>
+			</shaderParameters>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.42</solidTime>
+		<fadeInTime>0.6</fadeInTime>
+		<fadeOutTime>1.3</fadeOutTime>
+		<acceleration>(0, 0.0, 0.4)</acceleration>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>AM_TentacleTwo</defName>
+		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+		<graphicData>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteDistorted</shaderType>
+			<texPath>Things/Pawn/Fleshbeast/Bulbfreak/Tentacles/BulbfreakTentacleA</texPath>
+			<drawSize>3</drawSize>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+				<_distortionScrollSpeed>0.15</_distortionScrollSpeed>
+			</shaderParameters>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.42</solidTime>
+		<fadeInTime>0.6</fadeInTime>
+		<fadeOutTime>1.3</fadeOutTime>
+		<acceleration>(0, 0.0, 0.4)</acceleration>
+	</FleckDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>AM_TentacleThree</defName>
+		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+		<graphicData>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteDistorted</shaderType>
+			<texPath>Things/Pawn/Fleshbeast/Fingerspike/Attachments/Fingerspike_TopLimb</texPath>
+			<drawSize>3</drawSize>
+			<shaderParameters>
+				<_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+				<_distortionScrollSpeed>0.15</_distortionScrollSpeed>
+			</shaderParameters>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.42</solidTime>
+		<fadeInTime>0.6</fadeInTime>
+		<fadeOutTime>1.3</fadeOutTime>
+		<acceleration>(0, 0.0, 0.4)</acceleration>
+	</FleckDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>AM_FleshRune</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(23, 73, 45)</color>
+			<texPath>Motes/AM_FleshRune</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>10</_Intensity>
+			</shaderParameters>
+			<drawSize>10</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

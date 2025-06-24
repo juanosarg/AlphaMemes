@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoStoryPatternDef>
+		<defName>AM_HoraxianDescription</defName>
+		<segments>
+			<li>horaxianlessonIntro</li>
+			<li>lesson</li>
+		
+			<li>horaxianlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_horaxianlessonIntro] [r_lesson]. [r_horaxianlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->[founder_nameFull]'s [book] on [concept]</li>
+				<li>book->discourse</li>
+				<li>book->sermon</li>
+				<li>book->conclave</li>
+				<li>book->congregation</li>
+				
+				<li>concept->the Voidborn Prophecies</li>
+				<li>concept->the Darkened Mysteries</li>
+				<li>concept->Nightmare Esoterica</li>
+				<li>concept->Horaxian Doctrine</li>
+				<li>concept->Shadowed Lore</li>
+				<li>concept->Tenebrous Revelations</li>
+				<li>concept->Umbral Invocations</li>
+				<!-- generic intro -->
+				<li>horaxianlessonIntro->Welcome, brethren, to the gathering of shadows and whispers. As we convene beneath the veil of darkness, let us heed the call of the void and embrace the wisdom it offers. The Void shows us that</li>
+				<li>horaxianlessonIntro->Dark blessings upon you, faithful followers of the abyss. As we stand on the precipice of oblivion, let us open our minds to the secrets that lie within the depths of our darkest desires. It will then become clear:</li>
+				<li>horaxianlessonIntro->Hail, disciples of the void, and welcome to the sanctum of shadows. In the swirling darkness that surrounds us, let us find solace and strength as we commune with the unseen forces that shape our existence. They'll teach us one thing:</li>
+				<li>horaxianlessonIntro->Greetings, children of the abyss, and welcome to this gathering of the faithful. In the silence that envelops us, let us listen for the whispers of our dark patron and prepare to receive its unholy wisdom:</li>
+				<li>horaxianlessonIntro->May the shadows embrace you, brethren, as we come together in reverence of the void. In the quietude of this sacred space, let us open our hearts to the mysteries that await us in the depths of the abyss. You will show everyone that</li>
+				
+				<!-- generic reinforcement -->
+				<li>horaxianlessonReinforcement->As we depart, carry the darkness within you, for it is our strength and our salvation.</li>
+				<li>horaxianlessonReinforcement->Go forth, disciples, and may the shadows guide your every step.</li>
+				<li>horaxianlessonReinforcement->Let the whispers of the void linger in your soul, guiding you on the path to enlightenment.</li>
+				<li>horaxianlessonReinforcement->With the darkness as our ally, we shall triumph over all who oppose us.</li>
+				<li>horaxianlessonReinforcement->Until we meet again, may the abyss watch over you and keep you safe.</li>
+				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+
+  
+</Defs>

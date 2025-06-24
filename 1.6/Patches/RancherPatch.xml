@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/MemeDef[defName="Rancher"]/exclusionTags</xpath>
+		<value>
+			<li>VME_NonViolenceVoteVsRancher</li>
+			<li>VME_CowboysVsRancher</li>
+		</value>
+	</Operation>
+
+
+
+</Patch>

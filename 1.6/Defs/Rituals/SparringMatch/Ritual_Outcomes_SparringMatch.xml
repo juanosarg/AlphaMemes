@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_SparringMatchOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>AlphaMemes.RitualOutcomeEffectWorker_SparringMatch</workerClass>
+		<extraPredictedOutcomeDescriptions>
+			<li>Duelists and viewers will gain melee combat experience.</li>
+			<li>Spectators will gain a mood boost and fill their recreation bars.</li>
+		</extraPredictedOutcomeDescriptions>
+		<comps>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.15)</li>
+						<li>(10, 0.2)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+				<roleId>leader</roleId>
+				<label>leader present</label>
+				<qualityOffset>0.2</qualityOffset>
+			</li>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.1</li>
+						<li>120, 0.3</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>speaker's social impact</labelAbstract>
+				<roleId>leader</roleId>
+				<statDef>SocialImpact</statDef>
+				<curve>
+					<points>
+						<li>(0.2,  0.0)</li>
+						<li>(0.6,  0.18)</li>
+						<li>(1.0, 0.25)</li>
+						<li>(1.5, 0.3)</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Embarrassing</label>
+				<chance>0.1</chance>
+				<memory>AM_TerribleSparring</memory>
+				<description>The {0} was embarrassing. The match lacked skill, discipline, and respect. It was a shameful display that will not be easily forgotten.</description>
+				<ideoCertaintyOffset>-0.5</ideoCertaintyOffset>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Uneventful</label>
+				<chance>0.2</chance>
+				<memory>AM_BoringSparring</memory>
+				<description>The {0} was uneventful. The match lacked energy and intensity, leaving everyone feeling unimpressed.</description>
+				<positivityIndex>-1</positivityIndex>
+				<ideoCertaintyOffset>-0.25</ideoCertaintyOffset>
+			</li>
+			<li>
+				<label>Invigorating</label>
+				<chance>0.6</chance>
+				<memory>AM_FunSparring</memory>
+				<description>The {0} was invigorating. A lively match that showcased skill and spirit, leaving everyone feeling energized.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Exhilarating</label>
+				<chance>0.1</chance>
+				<memory>AM_UnforgettableSparring</memory>
+				<description>The {0} was exhilarating! A breathtaking display of mastery and determination, leaving a lasting impression on everyone present.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

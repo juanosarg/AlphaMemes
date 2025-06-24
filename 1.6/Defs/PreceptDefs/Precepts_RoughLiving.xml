@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<HistoryEventDef>
+		<defName>AM_SleptInWoodenBed</defName>
+		<label>slept in wooden bed</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_AteInWoodenTable</defName>
+		<label>ate in wooden table</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>AM_AteWithoutATable</defName>
+		<label>ate without a table</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_RoughLiving_Disliked</defName>
+		<issue>RoughLiving</issue>
+		<label>shunned</label>
+		<description>We reject the squalor of rough living. Our efforts to clear the land and build proper shelters should not be in vain—comfort is our reward for taming the wilderness.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_Deforestation</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Deforestation</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_SleptInWoodenBed</eventDef>
+				<thought>AM_RoughLiving_Disliked_SleptInWoodenBed</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteInWoodenTable</eventDef>
+				<thought>AM_RoughLiving_Disliked_AteInWoodenTable</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_AteWithoutATable</eventDef>
+				<thought>AM_RoughLiving_Disliked_AteWithoutATable</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_RoughLiving_Disliked_SleptInWoodenBed</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>slept in wooden bed</label>
+				<description>There's something deeply satisfying about resting on the remains of felled trees. A proper victory over nature.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_RoughLiving_Disliked_AteInWoodenTable</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate in wooden table</label>
+				<description>Dining on a table crafted from fallen trees fills me with pride. A symbol of our dominance over the wild.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_RoughLiving_Disliked_AteWithoutATable</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>ate without table</label>
+				<description>I had to eat a meal off the filthy ground like a wild animal. This is beneath even the barest standards of decency!</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

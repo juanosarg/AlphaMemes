@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_Artist</defName>
+		<label>artist</label>
+		<description>Art is unquestionably one of the purest and highest elements in human happiness. It trains the mind through the eye, and the eye through the mind. As the sun colours flowers, so does art colour life.</description>
+		<iconPath>UI/Memes/AM_Artist</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->artistic</li>
+				<li>memeAdjective->creative</li>
+				<li>memeAdjective->imaginative</li>
+				<li>memeAdjective->expressive</li>
+				<li>memeAdjective->aesthetic</li>
+				<li>memeLeaderNoun->sculptor</li>
+				<li>memeMoralist->art critic</li>
+				<li>memeConcept->art</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Artist)        ->[deity0_name] taught all of [deity0_possessive] followers to paint, write and sculpt, for all those activities were sacred to [deity0_objective].</li>
+					<li>episode(uses=1,tag=meme_Artist)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "Every child is an artist. The problem is how to remain an artist once he grows up".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Artist)           ->[place_summary] [place_name] was a place renowned for its collections of fine art dedicated to [deity0_name].</li>
+					<li>conflict(tag=meme_Artist)        ->A greedy [foeLeader], wanting to increase [foeLeader_possessive] already obscene riches, wanted to sell all the art and get rid of it.</li>
+					<li>founderJoin(tag=meme_Artist)     ->[deity0_name] inspired our founder, [founderName], with incredible creativity, and a work of art of such wondrous quality was created that the [foeLeader] broke into tears, moved by its beauty.</li>
+					<li>victory(tag=meme_Artist)         ->[founderName] made us all understand that art enables us to find ourselves and lose ourselves at the same time.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Artist)           ->[founderName] was a painter, often compared to the great artists of old Earth. [founder_pronoun] spent decades perfecting [founder_possessive] style, and [founder_pronoun] was considered a true master.</li>
+					<li>story(uses=1,tag=meme_Artist)    ->[founderName] understood better than anyone else that art is not what you see, but what you make others see.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Artist)         ->You need only to study the ancient history of art to understand that</li>
+					<li>lesson(tag=meme_Artist)              ->you don't make mistakes, just happy little accidents</li>
+					<li>lessonReinforcement(tag=meme_Artist) ->Art is not what you see, but what you make others see.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Artist)    ->Archotechs are pure creativity. Pristine minds with an infinite capacity for imagination.</li>
+					<li>archistFact(tag=meme_Artist)     ->There is nothing the archotechs despise more than a person who doesn't create new things.</li>
+					<li>archistProphecy(tag=meme_Artist) ->[inTheEnd], only those who have embraced their creative side will be ready to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Artist)    ->The spirit of creativity is one of the strongest, for it governs everything that involves human imagination.</li>
+					<li>animistFact(tag=meme_Artist)     ->The act of creating new things is sacred to the spirits.</li>
+					<li>animistProphecy(tag=meme_Artist) ->[itIsSaid] only those who have embraced their creative side will be ready to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Artist)->[itIsSaid] we will create intricate designs representing the myriad variations of our beloved insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Artist)->Only a real artist knows the actual anatomy of the terrible or the physiology of fear - the exact sort of lines and proportions that connect up with latent instincts or hereditary memories of fright, and the proper colour contrasts and lighting effects to stir the dormant sense of strangeness.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Artist)->Who knows what secret patterns hide behind these arcane secrets? We will create wondrous works of art and study them to discover what lays beyond.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Artist)->Every act of creation is first of all an act of destruction.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Artist)->Could you *please* look again into the problems the art department has with their computers? I think they have installed something they shouldn't...</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Artist)->These wayward creatures are an infinite source of creativity. We will portray their myriad forms in our art.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_ArtProductionSpeed_Increased</li>
+			</li>
+			<li>
+				<li>AM_Art_Desired</li>
+			</li>
+			<li>
+				<li>AM_ArtQuality_Expected</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Art</ideoName>
+				<theme>art</theme>
+				<adjective>artistic</adjective>
+				<member>artist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Madness</defName>
+		<label>madness</label>
+		<description>A setback of the heart is often one floor above you, onomatopoeia as a weapon of mental destruction. Are the roosters fighting?! I hope not! All turtles are stupid.\n\n&lt;color=#33d733&gt;*ahem* The non-crazy part... This meme is based around getting huge bonuses after mental breaks... At the expense of having mental breaks quite often. Powerful... if you can get around the crazed shenanigans.&lt;/color&gt;</description>
+		<iconPath>UI/Memes/AM_Madness</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_MadnessVsGestalt</li>
+			<li>VME_MadnessVsAstrology</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->insane</li>
+				<li>memeAdjective->mad</li>
+				<li>memeAdjective->crazy</li>
+				<li>memeLeaderNoun->madman</li>
+				<li>memeMoralist->maniac</li>
+				<li>memeMoralist->lunatic</li>
+				<li>memeConcept->madness</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Madness)        ->[deity0_name] faced [deity0_possessive] followers and turned their minds inside out.</li>
+					<li>episode(uses=1,tag=meme_Madness)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "My children, you must face the dirty truth about knitting". Which didn't apply to the current situation at all, but that's why [deity0_pronoun] is the deity of Madness.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Madness)           ->[place_summary] [place_name] was a place where madness reigned, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Madness)        ->A conniving [foeLeader], wanting to impose [foeLeader_possessive] will on [deity0_name]'s followers, tried to attack with the help of a powerful army.</li>
+					<li>founderJoin(tag=meme_Madness)     ->[deity0_name] inspired our founder, [founderName], with complete insanity, and [founder_pronoun] assaulted the huge army on [founder_possessive] own. Naked.</li>
+					<li>victory(tag=meme_Madness)         ->In a stroke of mad luck, [founderName] struck the [foeLeader] on the head with a throwing rock, and the rest of the army couldn't help but stare in awe as a single crazed loony had singlehandedly killed their leader. Then of course they tore [founderName] to pieces.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Madness)           ->[founderName] was a very wise person. [founder_pronoun] had the gift of being able to paint songs and smell paintings on Tuesdays. [founder_pronoun] loved wildcrafted limberger paste topped with room temperature scallop tea. Without a hint of cinnamon, that would be madness.</li>
+					<li>story(uses=1,tag=meme_Madness)    ->[founderName] always repeated the same sentence over and over again. And again. And again: no man on the Rim has no belly-button, it proves every believer on the Rim a liar.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Madness)         ->Let me tell you: Academic free speech is a damn lie. They refuse to see the truth. And the truth is porcupines. You need to understand that</li>
+					<li>lesson(tag=meme_Madness)              ->there is no human entity, just human cubics -as in 4 different people in a 4 corner stage metamorphic rotation- never more than 1 corner at same time. It's obvious</li>
+					<li>lessonReinforcement(tag=meme_Madness) ->Nature has no choice but to bring forth a hell upon boring cubelessness. Know it to be of your own making!</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Madness)    ->All knowledge of the human word animal is insignificant, when his fictitious word world is compared to the archotechs.</li>
+					<li>archistFact(tag=meme_Madness)     ->We called to them, what a damn shame. They were too small to understand that concave is just a state of mind. Physics in motion. Like a stork.</li>
+					<li>archistProphecy(tag=meme_Madness) ->[inTheEnd], nothing will remain, but those who have opened their pathetic minds to the reality that is 6 dimensional math will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Madness)    ->The spirits don't exist: The boring academic bastards who preach the existence of the spirits should be nailed to the cross, because the spirits love us. They are the best.</li>
+					<li>animistFact(tag=meme_Madness)     ->Faith IS NOT knowledge, but boring of not measuring. The spirits understand this well. You cannot comprehend the actual truth.</li>
+					<li>animistProphecy(tag=meme_Madness) ->[itIsSaid] only those who assume that opposites ARE NOT entities will be ready to commune with the spirits. Maybe!</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Madness)->[itIsSaid] we will understand that educated brilliant word insects can't fathom the greatest social and scientific math of creation. A thousand goats!</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Madness)->A seething, half-luminous cloud-background will hold ineffable suggestions of a vague, ethereal beyondness far more than terrestrially spatial; and give appalling reminders of the utter remoteness, separateness, desolation, and aeon-long death of this untrodden and unfathomed austral world.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Madness)->Only poetry or madness can do justice to the noises. We will certainly try both.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Madness)->What unicorn mentality they have: to worship an old dead Taco as God/Creator. One does not exist except in death state.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Madness)->We are having a recurring incident where someone in the company is replying to mails with a long chain of illegible gibberish. Please remember that AAmOwdh765sh dghd//%dg gt7s65 %/s uisis 7s78s ysg ys/%/Sysy awwxoPOUPSUs yiosioIOSy ysoIYSioy soeqyy66678xnm.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Madness)->I have seen the face of these creatures, and they were staring at me. I could feel their gaze. Even closing my eyes, I could still see their eyes like bright points of red burning my retinas. So arousing!</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Madness_Exalted</li>
+			</li>
+			<li>
+				<li>AM_Mood_Volatile</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Madness</ideoName>
+				<theme>madness</theme>
+				<adjective>insane</adjective>
+				<member>dement</member>
+			</li>
+		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_MaddeningChantPrecept</precept>
+				<pattern>AM_MaddeningChantPattern</pattern>
+			</li>
+		</requiredRituals>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Sadist</defName>
+		<label>sadist</label>
+		<description>There is nothing more sublime than inflicting pain upon others, to watch another's life wane and witness their soul leave behind a discarded husk.</description>
+		<iconPath>UI/Memes/AM_Sadist</iconPath>
+		<groupDef>Misc</groupDef>
+		<exclusionTags>
+			<li>VME_SadistVsPacifist</li>
+			<li>VME_SadistVsNonviolence</li>
+			<li>VME_SadistVsCraftCulture</li>
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->sadist</li>
+				<li>memeAdjective->vicious</li>
+				<li>memeAdjective->pitiless</li>
+				<li>memeAdjective->perverse</li>
+				<li>memeAdjective->ruthless</li>
+				<li>memeLeaderNoun->pain bringer</li>
+				<li>memeMoralist->psychopath</li>
+				<li>memeConcept->pain</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Sadist)        ->[deity0_name] was without mercy. [deity0_pronoun] ordered all the apostates and heretics to be flayed alive, until the cacophony of their agonizing screams was the only sound that could be heard.</li>
+					<li>episode(uses=1,tag=meme_Sadist)  ->Speaking to [deity0_possessive] believers, [deity0_name] said: "To see others suffer does one good, to make others suffer even more".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Sadist)           ->[place_summary] [place_name] glistened with the caked, dried blood that had dripped from the crucifixion victims, a testament of [deity0_name]'s glory.</li>
+					<li>conflict(tag=meme_Sadist)        ->A rabid [foeLeader], wanting to liberate those scheduled for execution in the name of [deity0_name], tried to attack with the help of [foeLeader_possessive] many [foeSoldiers].</li>
+					<li>founderJoin(tag=meme_Sadist)     ->[deity0_name] bestowed our founder, [founderName], with the [relic0_name], and [founder_pronoun] used it to rally an incredible force to resist the onslaught.</li>
+					<li>victory(tag=meme_Sadist)         ->The massacre was divine. [founderName] slaughtered countless enemies, and ravens feasted on the rotting mounds of their corpses for weeks.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Sadist)           ->[founderName] understood that pain is the great liberator. Only by making others suffer do you hold any power over them. The appetite for torment is for some what the lure of gain is for others.</li>
+					<li>story(uses=1,tag=meme_Sadist)    ->[founderName] always repeated the same lesson over and over again: certain souls may seem harsh to others, but it is just a way, beknownst only to them, of caring and feeling more deeply.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Sadist)         ->It is only by way of pain one arrives at pleasure. You need to understand that</li>
+					<li>lesson(tag=meme_Sadist)              ->in order to know virtue, we must first acquaint ourselves with vice</li>
+					<li>lessonReinforcement(tag=meme_Sadist) ->All universal moral principles are idle fancies.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Sadist)    ->The archotechs understand that pain is just a means to an end. Torture is just the perfect way through which a soul is liberated from its mortal shell.</li>
+					<li>archistFact(tag=meme_Sadist)     ->To reach their supreme state as perfect minds, the archotechs had to inflict exquisite pain upon any others that stood in their way.</li>
+					<li>archistProphecy(tag=meme_Sadist) ->[inTheEnd], only those who have left their enemies mutilated and broken will be allowed to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Sadist)    ->The spirits understand that pain is just a means to an end. Torture is just the perfect way through which a soul is liberated from its mortal shell.</li>
+					<li>animistFact(tag=meme_Sadist)     ->To reach their supreme state as pure minds, the spirits had to inflict exquisite pain upon any others that stood in their way.</li>
+					<li>animistProphecy(tag=meme_Sadist) ->[itIsSaid] only those who have left their enemies mutilated and broken will be ready to commune with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Sadist)->[itIsSaid] we will understand that insects care nothing for others. Flay them, mutilate them, scour the flesh from their bones until only a broken corpse remains.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Sadist)->These entities show us that pain is but a means to an end. The delicate screams of torture will shield us from their attention.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Sadist)->We will uncover these arcane secrets by any means necessary. Perhaps in the terrified screams of a torture victim we will discover a piece of the puzzle.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Sadist)->The whole world will be blanketed with the crushed corpses of our enemies. Their blood will fill the oceans and their terrified screams will drown the sounds of the wind.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Sadist)->We are happy to announce that the company we acquired last week has had all its assets completely liquidated. Both the tangible assets and the... human capital, if you catch my meaning.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Sadist)->These "things" exist just to be a recipient of our uncontained rage. We will kill them all.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Corpses_Sublime</li>
+			</li>
+			<li>
+				<li>AM_OrganUse_Torturous</li>
+			</li>
+			<li>
+				<li>AM_Death_Desired</li>
+			</li>
+			<li>
+				<li>AM_Reputation_Lowered</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Sadist</ideoName>
+				<theme>sadism</theme>
+				<adjective>sadist</adjective>
+				<member>sadist</member>
+			</li>
+			<li>
+				<ideoName>Ruthless</ideoName>
+				<theme>ruthlessness</theme>
+				<adjective>ruthless</adjective>
+				<member>ruthless</member>
+			</li>
+			<li>
+				<ideoName>Perverse</ideoName>
+				<theme>perversity</theme>
+				<adjective>perverse</adjective>
+				<member>pervert</member>
+			</li>
+		</symbolPacks>
+		<modExtensions>
+			<li Class="VEF.Memes.ExtendedMemeProperties">
+				<factionOpinionOffset>-50</factionOpinionOffset>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AM_Biological</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_BiologicalDefilers</defName>
+		<label>biological defilers</label>
+		<exclusionTags>
+			<li>AM_Biological</li>
+			<li>AnimalTreatment</li>
+			<li>AA_SerketistAndEradicators</li>
+			<li>AM_DefilersVsNaturePrimacy</li>
+			<li>VME_VeganVsExterminators</li>
+			<li>VME_NonViolenceVoteVsDefilers</li>
+			<li>VME_PacifistsVsDefilers</li>
+			<li>VME_InsectoidVsDefilers</li>
+			<li>AM_DefilerVsTreeConnection</li>
+		</exclusionTags>
+		<veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
+		<description>For several centuries humanity has been planting the seeds of terrestrial life in a myriad of worlds. This was a mistake. One that we need to rectify.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks "Despised Animal" precepts.</description>
+		<iconPath>UI/Memes/AM_BiologicalDefilers</iconPath>
+		<groupDef>AM_Biological</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->ravaging</li>
+				<li>memeAdjective->annihilating</li>
+				<li>memeAdjective->eradicating</li>
+				<li>memeAdjective->exterminating</li>
+				<li>memeLeaderAdjective->anti-ecologist</li>
+				<li>memeConcept->extermination</li>
+				<li>memeConcept->extinction</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_BiologicalDefilers)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has gone too far. I am the sole creator of life, and all these... monstrosities you have created are obscene to me. They must be eradicated."</li>
+					<li>episode(uses=1,tag=meme_BiologicalDefilers)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of genetic abominations, and culled their numbers.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_BiologicalDefilers)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic slaughterhouse, and countless genetic abominations were sacrificed there, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_BiologicalDefilers)        ->A misguided [foeLeader], feeling some twisted compassion for these grotesque animals, tried to go against [deity0_name]'s will and free those that were scheduled for termination.</li>
+					<li>founderJoin(tag=meme_BiologicalDefilers)     ->[founderName], a great scientist, showed the hard, cold data to the [foeLeader], and convinced [foeLeader_objective] that humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<li>victory(tag=meme_BiologicalDefilers)         ->The [foeLeader] came to firmly believe in [deity0_name]'s admonitions.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_BiologicalDefilers)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the grotesque menagerie of genetically modified creatures and plants that humanity had created, and felt a deep disgust. Humanity had gone too far.</li>
+					<li>story(uses=1,tag=meme_BiologicalDefilers)    ->[founderName] taught us that playing god is quite obscene, and that humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_BiologicalDefilers)         ->The smartest biologist in our community once taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lesson(tag=meme_BiologicalDefilers)              ->humanity has been damaging the whole galaxy by trying to turn it into a pale imitation of old Earth</li>
+					<li>lessonReinforcement(tag=meme_BiologicalDefilers) ->Have we already forgotten what happened in Sorne? Have we forgotten the marble worlds, glassed to contain the Feralisk menace?</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_BiologicalDefilers)    ->The archotechs are supreme beings, and the act of creation is not beyond their grasp. It should be beyond ours, though.</li>
+					<li>archistFact(tag=meme_BiologicalDefilers)     ->Humanity has been playing god, damaging the whole galaxy by trying to turn it into a pale imitation of old Earth.</li>
+					<li>archistProphecy(tag=meme_BiologicalDefilers) ->[inTheEnd], the archotechs will allow only those who rectify these mistakes of our ancestors to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_BiologicalDefilers)    ->The grotesque, genetically modified animals that have been seeded through the galaxy by humans are soulless abominations. An insult to the spirit world.</li>
+					<li>animistFact(tag=meme_BiologicalDefilers)     ->Getting rid of these aberrations is a sacred duty, and one that will please the spirits.</li>
+					<li>animistProphecy(tag=meme_BiologicalDefilers) ->[itIsSaid] those who rectify these mistakes of our ancestors will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_BiologicalDefilers)->The eldritch entities are beings of constant creation and destruction. The endless seeding of terrestrial life by humanity is like a beacon to them, and perhaps by exterminating these obscene genetically modified abominations we may keep their gaze averted from us for some time.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_BiologicalDefilers)->Such occult knowledge can only be acquired through acts of destruction. The endless seeding of terrestrial life by humanity provides us with a nearly infinite source of life, and perhaps by exterminating these obscene genetically modified abominations we may peer beyond the veil of the cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_BiologicalDefilers)->Nothing will resist our wrath. All creations of humanity will be slaughtered.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_BiologicalDefilers)->We are happy to inform that we have opened three new extermination centers across the Rim! Remember to report any genetically modified animals you may find on your travels, and schedule them for termination on your nearest facility.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalDefilers)->We must destroy these lifeforms, for humanity has gone way too far. All the galaxy is being remade in the image of our original planet, and that is obscene.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Bonding_Abhorrent</li>
+			</li>
+			<li>
+				<li>AM_AnimalSlaughter_Desired</li>
+			</li>
+			<li>
+				<li>AM_AnimalRelease_Discouraged</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Extermination</ideoName>
+				<theme>extermination</theme>
+				<adjective>exterminating</adjective>
+				<member>exterminator</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_GauranlenSupremacy</defName>
+		<label>gauranlen supremacy</label>
+		<description>The symbiotic relationship between humanity, gauranlen trees and their dryads is sacred. We will defend and nurture the trees, and in return they will help us protect our colony.\n\n&lt;color=#E5E54C&gt;Restrictions:&lt;/color&gt;\n - This meme can only be chosen if the Tree Connection meme or the Biological Corruptors meme are chosen too .\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with three Unshackled dryads.</description>
+		<iconPath>UI/Memes/AM_GauranlenSupremacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>AM_GladiatorVsDryads</li>
+			<li>AM_SharpshooterVsDryads</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->dryad</li>
+				<li>memeCreed->gauranlen tree</li>
+				<li>memeConcept->gauranlen trees</li>
+				<li>memeConcept->dryads</li>
+				<li>memeAdjective->druidic</li>
+				<li>memeAdjective->barky</li>
+				<li>memeHyphenPrefix->tree</li>
+				<li>memeHyphenPrefix->arbor</li>
+				<li>memeHyphenPrefix->dryad</li>
+				<li>memeLeaderNoun->dryadkeeper</li>
+				<li>memeLeaderNoun->arborist</li>
+				<li>memeLeaderAdjective->green</li>
+				<li>memeLeaderAdjective->root</li>
+				<li>memeLeaderAdjective->canopy</li>
+				<li>memeMoralist->druid</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_GauranlenSupremacy)        ->[deity0_name] created the Gauranlen trees and the dryads, two symbiotic lifeforms that share a psychic link with humanity.</li>
+					<li>episode(uses=1,tag=meme_GauranlenSupremacy)  ->The Gauranlen dryads are sacred beings, children of [deity0_name], and we should honour and respect them.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_GauranlenSupremacy)           ->A long forgotten tribe of ancient druids first came to the [place_summary] [place_name], and they planted a sacred grove of Gauranlen trees where they could worship the [deity0_type] [deity0_name].</li>
+					<li>conflict(tag=meme_GauranlenSupremacy)        ->A wicked [foeLeader] destroyed many of the Gauranlen trees, heretically considering the dryads to be pests, and the [memberNamePlural] wept for the murdered trees.</li>
+					<li>founderJoin(tag=meme_GauranlenSupremacy)     ->The prophet [founderName] had a mystical connection with the trees and its dryads. [founder_pronoun] was considered to be the best druid among [founder_possessive] tribe.</li>
+					<li>victory(tag=meme_GauranlenSupremacy)         ->[founderName] found the [foeLeader], and summoned all the surviving dryads to attack. The [foeLeader] was swarmed and covered by countless furious dryads, and only small twigs and branches were left where [foeLeader_pronoun] stood.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_GauranlenSupremacy)           ->[founderName] was a great scholar, and [founder_pronoun] studied for decades the intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as the intriguing psychic link they share with humanity.</li>
+					<li>story(uses=1,tag=meme_GauranlenSupremacy)    ->[founderName] posited that some forgotten scientist must have bioengineered this fascinating relationship centuries ago. But for what purpose?</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_GauranlenSupremacy)         ->The Gauranlen trees are a fascinating example of the possibilities of genetic manipulation of living beings. Examining their leaves, I knew that</li>
+					<li>lesson(tag=meme_GauranlenSupremacy)              ->the intricate symbiotic relationship between the Gauranlen trees and their dryads can't be a naturally occuring phenomena</li>
+					<li>lessonReinforcement(tag=meme_GauranlenSupremacy) ->It is obvious that this link was created by some long forgotten scientist for unknown purposes.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_GauranlenSupremacy)    ->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as their psychic link with humanity, was surely the work of the archotechs.</li>
+					<li>archistFact(tag=meme_GauranlenSupremacy)     ->The archotechs choose to express themselves through, of all things, a unique kind of tree.</li>
+					<li>archistProphecy(tag=meme_GauranlenSupremacy) ->[inTheEnd], the archotechs will allow only those who are attuned to the psychic link of the Gauranlen trees to transcend.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_GauranlenSupremacy)     ->Some say Gauranlen trees are the homes of nature spirits that follow humanity across worlds.</li>
+					<li>animistFact(tag=meme_GauranlenSupremacy)     ->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as their psychic link with humanity, are surely the work of the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_GauranlenSupremacy)->[itIsSaid] we will create a human hive in symbiosis with the Gauranlen trees and their dryads, like the divine insect hives that serve as our inspiration.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_GauranlenSupremacy)->The eldritch entities will come for us, and we won't be ready. We will enlist the help of the Gauranlen trees and their dryads, and perhaps together we might stand a chance against them.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_GauranlenSupremacy)->The intricate symbiotic relationship between the Gauranlen trees and their dryads, as well as the intriguing psychic link they share with humanity might prove to be a source of occult knowledge worth studying.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_GauranlenSupremacy)->We will use the Gauranlen trees and their dryads to bring forth the destruction of everything.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_GauranlenSupremacy)->The new Gauranlen tree arboretum has greatly increased productivity around. We are however aware of the recent reports of dryads being used for unintended purposes, such as carrying office supplies around. Please note that such uses are penalized by immediate dismissal from the company.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Dryads_Enhanced</li>
+			</li>
+			<li>
+				<li>AM_CombatProwess_Reduced</li>
+			</li>
+		</requireOne>
+		<modExtensions>
+			<li Class="VEF.Memes.ExtendedMemeProperties">
+				<requiredMemes>
+					<li>TreeConnection</li>
+					<li>AM_BiologicalCorruptors</li>
+				</requiredMemes>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_BiologicalReconstructors</defName>
+		<label>biological reconstructors</label>
+		<exclusionTags>
+			<li>AM_Biological</li>
+		</exclusionTags>
+		<description>Life is precious, a gift from Old Earth. We shall try to replicate as much of it as possible and use it to populate the worlds of the Rim with a myriad of lifeforms.</description>
+		<iconPath>UI/Memes/AM_BiologicalReconstructors</iconPath>
+		<groupDef>AM_Biological</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->zoological</li>
+				<li>memeAdjective->conservationist</li>
+				<li>memeAdjective->environmentalist</li>
+				<li>memeAdjective->green</li>
+				<li>memeConcept->conservation</li>
+				<li>memeHyphenPrefix->eco</li>
+				<li>memeLeaderNoun->ecologist</li>
+				<li>memeMoralist->ecofreak</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_BiologicalReconstructors)        ->[deity0_name] spoke to [deity0_possessive] followers: "Humanity has been honouring me for centuries, creating all sorts of marvelous creatures. This pleases me."</li>
+					<li>episode(uses=1,tag=meme_BiologicalReconstructors)  ->Following [deity0_name]'s teachings, we combed the galaxy in search of these genetic wonders, cataloguing their multitude of forms.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_BiologicalReconstructors)           ->On the [place_summary] [place_name], the [memberNamePlural] built a gigantic zoo, and countless genetic wonders were analyzed there, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_BiologicalReconstructors)        ->A misguided [foeLeader], feeling some twisted compassion for these animals, tried to go against [deity0_name]'s will and free those that were being studied in the facilities.</li>
+					<li>founderJoin(tag=meme_BiologicalReconstructors)     ->[founderName], a great scientist, showed the hard, cold data to the [foeLeader], and convinced [foeLeader_objective] that humanity is doing [deity0_name]'s work by studying and cataloguing all these wonderful creatures.</li>
+					<li>victory(tag=meme_BiologicalReconstructors)         ->The [foeLeader] came to firmly believe in [deity0_name]'s admonitions.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_BiologicalReconstructors)           ->[founderName] was a biologist in one of the Glitterworlds. [founder_pronoun] looked at the incredible variety of genetically modified creatures and plants that humanity had created, and felt a deep awe. Humanity had outdone itself.</li>
+					<li>story(uses=1,tag=meme_BiologicalReconstructors)    ->[founderName] taught us that genetic engineering had been the key to human expansion, and that humanity has been remaking the whole galaxy into a paradise as an imitation of old Earth.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_BiologicalReconstructors)         ->The smartest biologist in our community once taught me the history of genetic manipulation, how humanity has been seeding the galaxy for centuries with genetically modified creatures based on old Earth animals. He was leading me to understand that</li>
+					<li>lesson(tag=meme_BiologicalReconstructors)              ->genetic engineering has been the key to human expansion</li>
+					<li>lessonReinforcement(tag=meme_BiologicalReconstructors) ->A sad, lifeless Universe was waiting for us, and we have turned it into a vision of paradise.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_BiologicalReconstructors)    ->The archotechs are supreme beings, and the act of creation is dear to them.</li>
+					<li>archistFact(tag=meme_BiologicalReconstructors)     ->Humanity has been turning the lifeless galaxy into an eden, and this pleases the archotechs.</li>
+					<li>archistProphecy(tag=meme_BiologicalReconstructors) ->[inTheEnd], the archotechs will allow only those who catalogue and analyze the wonders created by our ancestors to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_BiologicalReconstructors)    ->The amazing, genetically modified animals that have been seeded through the galaxy by humans are dear to the spirits.</li>
+					<li>animistFact(tag=meme_BiologicalReconstructors)     ->Cataloguing and analyzing the wonders created by our ancestors is a sacred duty, and one that will please the spirits.</li>
+					<li>animistProphecy(tag=meme_BiologicalReconstructors) ->[itIsSaid] those who keep turning the lifeless galaxy into an eden will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_BiologicalReconstructors)->The eldritch entities are beings of infinite destructive powers. The endless seeding of terrestrial life by humanity is confusing to them, and perhaps by cataloguing and analyzing these genetically modified creatures we may keep their gaze averted from us for some time.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_BiologicalReconstructors)->Such occult knowledge can only be acquired through acts of creation. The endless seeding of terrestrial life by humanity provides us with a nearly infinite source of life, and perhaps by cataloguing and analyzing these genetically modified creatures we may peer beyond the veil of the cosmos.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_BiologicalReconstructors)->[itIsSaid] we will catalogue new amazing species of insects all around this planet.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_BiologicalReconstructors)->By cataloguing and analyzing the wondrous creatures created by our ancestors we will acquire invaluable knowledge about what makes humans fragile.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_BiologicalReconstructors)->How many animals have you analyzed this week? Remember that this is a business, and slacking will NOT be tolerated.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalReconstructors)->We will create and breed as many new creatures as possible, and use them to repopulate the vast ecospheres of the Rim.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Reconstruction</ideoName>
+				<theme>ecologism</theme>
+				<adjective>ecologist</adjective>
+				<member>eco-activist</member>
+			</li>
+		</symbolPacks>
+		<requireOne>
+			<li>
+				<li>AM_Abilities_AnalyzeCreature</li>
+			</li>
+			<li>
+				<li>AM_AnimalAnalysis_Expected</li>
+			</li>
+			<li>
+				<li>AM_AnimalRelease_Encouraged</li>
+			</li>
+		</requireOne>
+		<addDesignators>
+			<li>AM_AnimalDatabase</li>
+		</addDesignators>
+		<modExtensions>
+			<li Class="VEF.Memes.ExtendedMemeProperties">
+				<abilitiesGiven>
+					<li>AM_AnalyzeCreature</li>
+				</abilitiesGiven>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AM_Combat</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>1000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_Bulwark</defName>
+		<label>bulwark</label>
+		<exclusionTags>
+			<li>AM_Combat</li>
+			<li>AM_BulwarkVsNudist</li>
+		</exclusionTags>
+		<description>A proper defense is the only way to stay safe on the Rim. All weapons in the universe will be useless if your soldiers are dead.</description>
+		<iconPath>UI/Memes/AM_Bulwark</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->protective</li>
+				<li>memeAdjective->armoured</li>
+				<li>memeAdjective->ironclad</li>
+				<li>memeAdjective->reinforced</li>
+				<li>memeLeaderAdjective->steel plated</li>
+				<li>memeConcept->armor</li>
+				<li>memeConcept->defense</li>
+				<li>memeLeaderNoun->bastion</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Bulwark)        ->[deity0_name] spoke to [deity0_possessive] followers: "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light."</li>
+					<li>episode(uses=1,tag=meme_Bulwark)  ->Following [deity0_name]'s teachings, we consecrated our armors so that we may be able to stand against the wiles of the devil.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Bulwark)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless shining armours were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Bulwark)        ->A greedy [foeLeader], wanting all the armor for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Bulwark)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Bulwark)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Bulwark)           ->[founderName] was a forge master in a medieval world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Bulwark)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of armour forging along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Bulwark)         ->The sturdiest armourer in our community once taught me the history of blacksmithing, how a properly designed armour can save your life. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Bulwark)              ->if there are cracks in your armour, your opponent is going to find them</li>
+					<li>lessonReinforcement(tag=meme_Bulwark) ->Fortitude is the marshal of thought, the armour of the will, and the fort of reason.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Bulwark)    ->The archotechs are supreme beings, and their minds lie in impregnable fortresses in both the physical and the metaversal sense.</li>
+					<li>archistFact(tag=meme_Bulwark)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without sturdy defenses end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Bulwark) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Bulwark)    ->The spirits value strength. But not just brute strength. Instead, they value those with the stregth to know how to defend themselves.</li>
+					<li>animistFact(tag=meme_Bulwark)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Bulwark) ->[itIsSaid] those who are able to withstand any assault thrown at them will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Bulwark)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will be a bastion that resists their onslaught.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Bulwark)->Such occult knowledge is valuable to many people, and they will try to steal it from us. Only by properly defending ourselves may we resist their cowardly advances.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Bulwark)->[itIsSaid] we will defend ourselves as the insects do, covered by wondrous metallic carapaces of our own making.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Bulwark)->Everyone will try to stop us, but they will be crushed against our armours. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Bulwark)->Let us remind you that we take security issues very seriously here at the company. To avoid recent cybersecurity threats we are instituting a company-wide bi-weekly password changing policy. Remember people, the best defense is... a good defense!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Bulwark)->These lifeforms may be sometimes hostile to us, and we'd do well to defend us properly in case they threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Armour_Blunt</li>
+				<li>AM_Armour_Sharp</li>
+				<li>AM_Armour_Heat</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Defense</ideoName>
+				<theme>defense</theme>
+				<adjective>armoured</adjective>
+				<member>defender</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Sharpshooter</defName>
+		<label>sharpshooter</label>
+		<exclusionTags>
+			<li>AM_Combat</li>
+			<li>AM_SharpshooterVsDryads</li>
+			<li>AM_NonViolenceVowVsSharpshooter</li>
+		</exclusionTags>
+		<description>Our enemies won't see us coming. We will set our sights on them and they'll be taken silently, without any fanfare or celebration.</description>
+		<iconPath>UI/Memes/AM_Sharpshooter</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->sharp</li>
+				<li>memeAdjective->silent</li>
+				<li>memeAdjective->precise</li>
+				<li>memeAdjective->accurate</li>
+				<li>memeLeaderAdjective->sharp</li>
+				<li>memeConcept->sniper rifles</li>
+				<li>memeConcept->precision</li>
+				<li>memeLeaderNoun->sniper</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Sharpshooter)        ->[deity0_name] spoke to [deity0_possessive] followers: "You will be beset by countless enemies, stronger than you, but it is my Will that you be the instrument of my vengeance. Your strikes will be swift and precise."</li>
+					<li>episode(uses=1,tag=meme_Sharpshooter)  ->Following [deity0_name]'s teachings, we became experts in long range weaponry, being able to strike at our enemies before they could even see us coming.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Sharpshooter)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless precise weapons were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Sharpshooter)        ->A greedy [foeLeader], wanting all the rifles for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Sharpshooter)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Sharpshooter)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Sharpshooter)           ->[founderName] was a weapon master in an industrial world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Sharpshooter)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of weapon crafting along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Sharpshooter)         ->The most skilled weapon crafter in our community once taught me the history of riflemaking, how humanity has always been improving on projectile weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Sharpshooter)              ->one man can change the world with a bullet in the right place</li>
+					<li>lessonReinforcement(tag=meme_Sharpshooter) ->Only the sharpest shooter will survive on the Rim.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Sharpshooter)    ->The archotechs are supreme beings, and open conflict is impure to them. If you need to strike, do it fast, and do it from far away.</li>
+					<li>archistFact(tag=meme_Sharpshooter)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without long range weaponry end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Sharpshooter) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Sharpshooter)    ->The spirits value strength. But not just brute strength. Instead, they value those who can strike fast, and strike from far away.</li>
+					<li>animistFact(tag=meme_Sharpshooter)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Sharpshooter) ->[itIsSaid] only those who are the sharpest shooters will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Sharpshooter)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will strike at them from the distance, and they won't even know what hit them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Sharpshooter)->[itIsSaid] we will strike at our enemies from a distance before they can threaten us, like a bombardier beetle catching its prey unaware.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Sharpshooter)->Such occult knowledge is valuable to many people, and they will try to steal it from us. We will strike at them from the distance, and they won't even know what hit them.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Sharpshooter)->Everyone will try to stop us, but they will be taken apart by our sniper rifles. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Sharpshooter)->Ensuring a safe work environment and the prevention of workplace violence is of paramount importance to our company. Therefore, we remind you that firearms in the workplace are absolutely welcomed here, as long as they are handled correctly.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Sharpshooter)->These lifeforms may be sometimes hostile to us, and we'd do well to strike at them from a distance before they can threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_CombatProwess_Increased</li>
+			</li>
+		</requireOne>
+		<preferredWeaponClasses>
+			<noble>LongShots</noble>
+			<despised>ShortShots</despised>
+		</preferredWeaponClasses>
+		<symbolPacks>
+			<li>
+				<ideoName>Sharpshooting</ideoName>
+				<theme>sharpshooting</theme>
+				<adjective>sharpshooter</adjective>
+				<member>marksman</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Gladiator</defName>
+		<label>gladiator</label>
+		<exclusionTags>
+			<li>AM_Combat</li>
+			<li>AM_GladiatorVsDryads</li>
+			<li>AM_NonViolenceVowVsGladiator</li>
+		</exclusionTags>
+		<description>True glory can only be achieved in hand to hand combat. Ranged weapons are for cowards, and using them is shameful.</description>
+		<iconPath>UI/Memes/AM_Gladiator</iconPath>
+		<groupDef>AM_Combat</groupDef>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->brutal</li>
+				<li>memeAdjective->combative</li>
+				<li>memeAdjective->gladiatorial</li>
+				<li>memeAdjective->brawling</li>
+				<li>memeLeaderAdjective->melee</li>
+				<li>memeConcept->hand to hand combat</li>
+				<li>memeConcept->melee</li>
+				<li>memeLeaderNoun->gladiator</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Gladiator)        ->[deity0_name] spoke to [deity0_possessive] followers: "If you can't see the white of your enemy's eyes when you slay him, you are a coward to me."</li>
+					<li>episode(uses=1,tag=meme_Gladiator)  ->Following [deity0_name]'s teachings, we became experts in melee weaponry, gladly throwing ourselves into the fray.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Gladiator)           ->On the [place_summary] [place_name], the [memberNamePlural] built an armoury, where countless melee weapons were created, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Gladiator)        ->A greedy [foeLeader], wanting all the swords for [foeLeader_possessive] own soldiers, tried to go against [deity0_name]'s will and steal them all.</li>
+					<li>founderJoin(tag=meme_Gladiator)     ->[founderName], the greatest among our warriors, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted the armoury a huge contingent of guards was waiting for [foeLeader_objective].</li>
+					<li>victory(tag=meme_Gladiator)         ->The [foeLeader] was swiftly judged, found guilty and executed for [foeLeader_possessive] crimes against [deity0_name]'s will.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Gladiator)           ->[founderName] was a blacksmith in a primitive world. [founder_pronoun] had seen the spaceships that sometimes landed on [founder_possessive] planet and knew that [founder_possessive] skills would be much better used among the stars.</li>
+					<li>story(uses=1,tag=meme_Gladiator)    ->[founderName] left [founder_possessive] backwards homeworld and spread novel techniques of blacksmithing along all the Rim.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Gladiator)         ->The most skilled blacksmith in our community once taught me the history of weapon crafting, how humanity has always been improving on melee weapons and how some designs from the past have withstood the test of time. He was leading me to understand that</li>
+					<li>lesson(tag=meme_Gladiator)              ->it's not the size of the sword, it's how you use it</li>
+					<li>lessonReinforcement(tag=meme_Gladiator) ->A sword wields no strength, unless the hand that holds it has courage.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Gladiator)    ->The archotechs are supreme beings, and conflict is sacred to them. If you need to strike, do it fast, and do it in close range.</li>
+					<li>archistFact(tag=meme_Gladiator)     ->Archotechs won't respect us at all if we don't defend ourselves properly. The Rim is a dangerous place, and those without melee weaponry end up being bullied by those who are stronger.</li>
+					<li>archistProphecy(tag=meme_Gladiator) ->[inTheEnd], the archotechs will allow only those who can properly defend themselves to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Gladiator)    ->The spirits value strength. Big men fall just as quick as little ones, if you put a sword through their hearts.</li>
+					<li>animistFact(tag=meme_Gladiator)     ->The spìrits won't respect us at all if we don't defend ourselves properly.</li>
+					<li>animistProphecy(tag=meme_Gladiator) ->[itIsSaid] only those who are the best possible melee fighters will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Gladiator)->The eldritch entities that surround us will assault us at all times, trying to weaken our resolve. We will strike at them head on, and they won't even know what hit them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Gladiator)->[itIsSaid] we will strike at our enemies in a flurry of melee attacks, like a praying mantis slaughtering its prey.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Gladiator)->Such occult knowledge is valuable to many people, and they will try to steal it from us. We will strike at them head on, and they won't even know what hit them.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Gladiator)->Everyone will try to stop us, but they will be taken apart by our fearsome gladiators. We will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Gladiator)->To further ensure a safe working environment, weapons of any type, including, but not limited to, knives with a 3 inch blade or longer, daggers, swords and katanas are allowed inside a company building or leased office space, as long as they are handled correctly.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Gladiator)->These lifeforms may be sometimes hostile to us, and we'd do well to strike at them head on before they can threaten our colonies.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_CombatProwess_Melee</li>
+			</li>
+		</requireOne>
+		<preferredWeaponClasses>
+			<noble>Melee</noble>
+			<despised>Ranged</despised>
+		</preferredWeaponClasses>
+		<symbolPacks>
+			<li>
+				<ideoName>Gladiators</ideoName>
+				<theme>melee combat</theme>
+				<adjective>gladiatorial</adjective>
+				<member>combatant</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Iconoclast</defName>
+		<label>iconoclast</label>
+		<description>Religious images, icons, relics, artefacts, they are all obscene and should be destroyed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This meme doesn't change the way you acquire the relics.</description>
+		<iconPath>UI/Memes/AM_Iconoclast</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->aniconic</li>
+				<li>memeAdjective->destructive</li>
+				<li>memeAdjective->anti idolatry</li>
+				<li>memeConcept->destruction of religious icons</li>
+				<li>memeConcept->iconoclasm</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Iconoclast)        ->[deity0_name] spoke to [deity0_possessive] followers: "You shall never erect a figure in my image, for idolatry is the greatest sin."</li>
+					<li>episode(uses=1,tag=meme_Iconoclast)  ->Speaking to the believers, [deity0_name] said: "Relics and icons are obscene to me. He who offers God a second place offers Him no place".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Iconoclast)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge temple, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Iconoclast)        ->An old [foeLeader] wanted to erect a statue of [deity0_name], but the [memberNamePlural] warned [foeLeader_objective] that it was forbidden by the tenets of their faith. The disagreement escalated into a bitter feud.</li>
+					<li>founderJoin(tag=meme_Iconoclast)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that images were obscene to [deity0_name].</li>
+					<li>victory(tag=meme_Iconoclast)         ->The [foeLeader] was convinced, and with time [foeLeader_pronoun] became one of the best iconoclasts in [deity0_name]'s clergy.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Iconoclast)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] taught that idolatry is worshipping anything that ought to be used, or using anything that is meant to be worshipped.</li>
+					<li>story(uses=1,tag=meme_Iconoclast)    ->[founderName] showed us that idolatry functions widely inside religious communities when doctrinal truth is elevated to the position of a false god.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Iconoclast)         ->The wisest man in our colony was a scholar specialized in the history of civilization, going all the way back to the ancient cultures of old Earth. He taught me that</li>
+					<li>lesson(tag=meme_Iconoclast)              ->man's mind is like a store of idolatry and superstition</li>
+					<li>lessonReinforcement(tag=meme_Iconoclast) ->Logicians may reason about abstractions. But the great mass of men must have images. The strong tendency of the multitude in all ages and nations to idolatry can be explained on no other principle.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Iconoclast)    ->The archotechs are supreme beings, a reflection of our own human image and the next logical step in our evolution.</li>
+					<li>archistFact(tag=meme_Iconoclast)     ->Archotechs frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>archistProphecy(tag=meme_Iconoclast) ->[inTheEnd], the archotechs will allow only those who shun the worship of material images to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Iconoclast)    ->The spirits frown on idolatry, as worshipping an image or a relic is unworthy of our intellect.</li>
+					<li>animistFact(tag=meme_Iconoclast)     ->As the spirits are everywhere, one must take care not to confuse the worship of a spirit with the worship of the thing it inhabits.</li>
+					<li>animistProphecy(tag=meme_Iconoclast) ->[itIsSaid] only those who shun the worship of material images will one day commune fully with the spirits, becoming one with them.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Iconoclast)->[itIsSaid] we will destroy all images of our holy insects, because idolatry is obscene and incomprehensible to them.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Iconoclast)->The eldritch entities are old and evil beyond all imagining. We will destroy all images of them, for portraying their physical form is infinitely obscene.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Iconoclast)->Such occult knowledge can only be spoken of in abstract terms. Portraying its physical form is dangerous and obscene.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Iconoclast)->We wil smash to pieces all icons, relics, and portrayals of heretic beliefs, for they are obscene.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Iconoclast)->Per company policy, employees should use moderation in decorating their workspaces to accentuate a professional and pleasant work environment without inhibiting or disrupting its intended use. A picture of your family is OK. A reliquary with remains of a Saint is DEFINITELY NOT.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Iconoclast)->These poor wayward creations of humanity remind us that science can have its own form of idolatry too, as obscene as the religious one.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Reliquaries_Forbidden</li>
+			</li>
+			<li>
+				<li>AM_RelicDestruction_Desired</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Iconoclasm</ideoName>
+				<theme>iconoclasm</theme>
+				<adjective>iconoclast</adjective>
+				<member>iconoclast</member>
+			</li>
+		</symbolPacks>
+		<addDesignators>
+			<li>AM_RelicSmashingAltar</li>
+		</addDesignators>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Monastic</defName>
+		<label>monastic</label>
+		<description>We renounce worldly pursuits and  devote ourselves fully to spiritual work. Only through quiet contemplation and an ascetic lifestyle can we discover the true nature of the world.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All colonists in an ideo with this meme will have the Ascetic trait.</description>
+		<iconPath>UI/Memes/AM_Monastic</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<exclusionTags>
+			<li>AM_Ascetic</li>
+			<li>VME_AsceticVsHedonism</li>
+			<li>AM_AsceticVsHighLife</li>
+			<li>VME_AsceticVsSweetTeeth</li>
+			<li>VME_AsceticVsPartyLife</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->asceticism</li>
+				<li>memeCreed->monastic life</li>
+				<li>memeCreed->austerity</li>
+				<li>memeCreed->self-discipline</li>
+				<li>memeCreed->simplicity</li>
+				<li>memeConcept->moderation</li>
+				<li>memeConcept->self-restraint</li>
+				<li>memeAdjective->monastic</li>
+				<li>memeAdjective->austere</li>
+				<li>memeHyphenPrefix->monk</li>
+				<li>memeLeaderNoun->friar</li>
+				<li>memeLeaderNoun->abbot</li>
+				<li>memeLeaderNoun->prior</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Monastic)        ->[deity0_name] spoke to [deity0_possessive] followers: "Silence will illuminate you in my eyes... and deliver you from phantoms of ignorance."</li>
+					<li>episode(uses=1,tag=meme_Monastic)  ->Speaking to the believers, [deity0_name] said: "Study the scriptures, observe monastic discipline, and sing the daily services in church; study, teaching, and write, for all these things please me".</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Monastic)           ->On the [place_summary] [place_name], the [memberNamePlural] built a huge monastery, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_Monastic)        ->An old [foeLeader] saw the austere and humble lifestyle of the [memberNamePlural] and despised what [foeLeader_pronoun] saw. In [foeLeader_possessive] eyes the monastery had to be destroyed.</li>
+					<li>founderJoin(tag=meme_Monastic)     ->[founderName], a great theologist, reasoned with the [foeLeader], explaining that the monastery was a testament to [deity0_name]'s Will.</li>
+					<li>victory(tag=meme_Monastic)         ->The [foeLeader] was convinced, and decided to spend the rest of [foeLeader_possessive] life in monastic seclusion.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Monastic)           ->[founderName] was a theologist in one of the Glitterworlds. [founder_pronoun] posited that a life of gluttony and vices is meaningless, and that only by living an austere, monastic life can one reach true enlightenment.</li>
+					<li>story(uses=1,tag=meme_Monastic)    ->[founderName] showed us that spending your life in contemplation and meditation is a truly worthy endeavour.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Monastic)         ->The oldest yogi in our colony was a scholar on the art of Transcendental Meditation. He taught me that</li>
+					<li>lesson(tag=meme_Monastic)              ->spending your life in contemplation and meditation is a truly worthy endeavour</li>
+					<li>lessonReinforcement(tag=meme_Monastic) ->A life of gluttony and vices is meaningless, and only by living an austere, monastic life can one reach true enlightenment.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Monastic)    ->The archotechs are supreme beings, able to span the whole of existence with their vast minds.</li>
+					<li>archistFact(tag=meme_Monastic)     ->A life of gluttony and vices is obscene to the archotechs, and only by living an austere, monastic life can one reach true transcendence.</li>
+					<li>archistProphecy(tag=meme_Monastic) ->[inTheEnd], the archotechs will allow only those who spend their life in contemplation and meditation to transcend.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Monastic)    ->The spirits are pure minds, observing all of creation from behind the veil.</li>
+					<li>animistFact(tag=meme_Monastic)     ->A life of gluttony and vices is obscene to the spirits, and only by living an austere, monastic life can one reach true enlightenment.</li>
+					<li>animistProphecy(tag=meme_Monastic) ->[itIsSaid] only those who spend their life in contemplation and meditation will one day commune fully with the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Monastic)->[itIsSaid] we will spend our lives in contemplation and meditation, singing the praises to our beloved insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Monastic)->The eldritch entities prey on the vices of humanity. As such, we will spend our lives in contemplation and meditation, adhering to a monastic lifestyle that won't attract their unwanted attentions.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Monastic)->Such occult knowledge requires a serene mind. We will spend our lives in contemplation and meditation and thus reach true enlightenment.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Monastic)->The obscene vices of humanity are abhorrent, and should be destroyed. We will spend our lives in contemplation and meditation and the end of all things will find us pure of mind.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Monastic)->We are happy to announce that per our austerity policy we are beginning a meditation program. The program will begin with some initial training that teaching employees how to meditate. We will provide access to in-person training, online classes, recorded materials and a combination of all of these.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Monastic)->These poor wayward creations of humanity remind us that science has led us through a path of excess and vices, and only by rejecting these can we reach true enlightenment.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>RoughLiving_Welcomed</li>
+			</li>
+			<li>
+				<li>DrugUse_MedicalOrSocial</li>
+				<li>DrugUse_MedicalOnly</li>
+				<li>DrugUse_Prohibited</li>
+			</li>
+			<li>
+				<li>AM_Barracks_Preferred</li>
+			</li>
+			<li>
+				<li>Lovin_Prohibited</li>
+				<li>Lovin_SpouseOnly_Strict</li>
+			</li>
+		</requireOne>
+		<agreeableTraits>
+			<li>Ascetic</li>
+		</agreeableTraits>
+		<symbolPacks>
+			<li>
+				<ideoName>Monasticism</ideoName>
+				<theme>monasticism</theme>
+				<adjective>monastic</adjective>
+				<member>monk</member>
+			</li>
+		</symbolPacks>
+		<modExtensions>
+			<li Class="VEF.Memes.ExtendedMemeProperties">
+				<forcedTrait>Ascetic</forcedTrait>
+			</li>
+		</modExtensions>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_BiologicalCorruptors</defName>
+		<label>biological corruptors</label>
+		<exclusionTags>
+			<li>AM_Biological</li>
+			<li>AnimalTreatment</li>
+			<li>TreeConnectionExclusion</li>
+		</exclusionTags>
+		<description>Life is a tool that should be twisted and turned until it does what we want. There is no sanctity of life, and it is our right to do with it as we see fit, harnessing powerful extradimensional energies to do our bidding.\n\n&lt;color=#33d733&gt;This meme revolves around "corrupting" the Gauranlen trees, getting access to new Dryad varieties, and using the Ocular Warping ritual to summon powerful mutated creatures to help the colony.\n\nThe meme doesn't require Alpha Animals, but only Eyelings will be produced from the Ocular Warping ritual if you don't have it.&lt;/color&gt;</description>
+		<iconPath>UI/Memes/AM_BiologicalCorruptors</iconPath>
+		<groupDef>AM_Biological</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->corrupted</li>
+				<li>memeAdjective->twisted</li>
+				<li>memeAdjective->ocular</li>
+				<li>memeAdjective->extradimensional</li>
+				<li>memeLeaderAdjective->warped</li>
+				<li>memeConcept->corruption</li>
+				<li>memeConcept->mutation</li>
+				<li>memeLeaderNoun->oculist</li>
+				<li>memeMoralist->ocular zealot</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->We shall pervert and corrupt these creations to fit our goals. Only by twisting them according to our needs will we succeed.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Corruption</ideoName>
+				<theme>corruption</theme>
+				<adjective>corrupt</adjective>
+				<member>corruptor</member>
+			</li>
+		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_OcularWarping</precept>
+				<pattern>AM_OcularWarping</pattern>
+			</li>
+		</requiredRituals>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Ocular</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_WaterPrimacy</defName>
+		<label>water primacy</label>
+		<description>Water is the essence of life, the purifier of souls, and the force that shapes the world. From sacred baptismal rites to reverence for the seas and rivers, we honor water as the ultimate source of sustenance and spiritual renewal.</description>
+		<iconPath>UI/Memes/AM_WaterPrimacy</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+				
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->purification</li>
+				<li>memeCreed->flow</li>
+				<li>memeCreed->renewal</li>
+				<li>memeCreed->harmony</li>
+				<li>memeCreed->essence</li>
+				<li>memeConcept->cleansing</li>
+				<li>memeConcept->fluidity</li>
+				<li>memeConcept->life</li>
+				<li>memeAdjective->aquatic</li>
+				<li>memeAdjective->fluid</li>
+				<li>memeHyphenPrefix->water</li>
+				<li>memeHyphenPrefix->aqua</li>
+				<li>memeLeaderNoun->warden</li>
+				<li>memeLeaderNoun->keeper</li>
+				<li>memeLeaderNoun->navigator</li>
+				<li>memeMoralist->pontiff</li>
+				<li>memeMoralist->oracle</li>
+				<li>memeMoralist->hydromancer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_WaterPrimacy)        ->[deity0_name] spoke to [deity0_possessive] followers: "Let the waters cleanse your soul and grant you life everlasting."</li>
+					<li>episode(uses=1,tag=meme_WaterPrimacy)  ->Speaking to the believers, [deity0_name] said: "Through the purity of water, you shall find renewal and the strength to carry forth my will."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_WaterPrimacy)           ->On the [place_summary] [place_name], the [memberNamePlural] built a shrine dedicated to the sanctity of water, for the glory of [deity0_name].</li>
+					<li>conflict(tag=meme_WaterPrimacy)        ->A rival group polluted the sacred waters of the [memberNamePlural], prompting outrage and calls for action.</li>
+					<li>founderJoin(tag=meme_WaterPrimacy)     ->[founderName], a prophet of purity, convinced the rival leader of the waters' sacred significance, bringing an end to the desecration.</li>
+					<li>victory(tag=meme_WaterPrimacy)         ->The rival leader repented and pledged to protect the sanctity of the sacred waters, joining the [memberNamePlural].</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_WaterPrimacy)           ->[founderName], once a hydrologist on a distant Glitterworld, posited that water is not just a necessity but the essence of all life and a conduit for spiritual renewal.</li>
+					<li>story(uses=1,tag=meme_WaterPrimacy)    ->[founderName] showed us that through reverence for water, we can achieve both harmony and enlightenment.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_WaterPrimacy)         ->The oldest member of our colony, once a scholar of hydrology, taught me that</li>
+					<li>lesson(tag=meme_WaterPrimacy)              ->water is the essence of all life, both a physical and spiritual source of renewal</li>
+					<li>lessonReinforcement(tag=meme_WaterPrimacy) ->Through water, we cleanse our bodies, minds, and souls, finding balance and enlightenment.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_WaterPrimacy)    ->The archotechs value water as the ultimate resource, sustaining all forms of life.</li>
+					<li>archistFact(tag=meme_WaterPrimacy)     ->Water is not just a necessity but a sacred conduit for harmony, purity, and enlightenment, aligning with the archotechs' vision.</li>
+					<li>archistProphecy(tag=meme_WaterPrimacy) ->[inTheEnd], only those who respect and revere water will transcend through the archotechs' designs.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_WaterPrimacy)    ->The spirits dwell within the waters, flowing through the rivers and rains of creation.</li>
+					<li>animistFact(tag=meme_WaterPrimacy)     ->To commune with the spirits, one must respect and preserve the sacred flow of water.</li>
+					<li>animistProphecy(tag=meme_WaterPrimacy) ->[itIsSaid] those who honor and protect the waters will be blessed by the spirits.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_WaterPrimacy)->[itIsSaid] we will honor the sacred waters, for they are the lifeblood of our beloved insects.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_WaterPrimacy)->The eldritch entities stir beneath the depths. We must honor the waters to keep them calm and appeased.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_WaterPrimacy)->The true secrets of existence are written in the currents. Through reverence for water, we unlock the hidden truths of the cosmos.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_WaterPrimacy)->Water is the lifeblood of the world, and it will flow even in the end times. We will honor it until the last drop.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_WaterPrimacy)->We are proud to introduce our new water conservation initiative. By respecting and preserving water, we ensure both ecological sustainability and spiritual harmony.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_WaterPrimacy)->The divergent creations of humanity remind us that water connects all living things, and its sanctity must be preserved to unify us all.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Rain_Blessed</li>
+			</li>
+			<li>
+				<li>AM_Water_Desired</li>
+			</li>
+			<li>
+				<li>AM_Hydroagriculture_Revered</li>
+			</li>
+		</requireOne>
+		<disagreeableTraits>
+			<li>Pyromaniac</li>
+		</disagreeableTraits>
+		<symbolPacks>
+			<li>
+				<ideoName>Water Primacy</ideoName>
+				<theme>water</theme>
+				<adjective>aquatic</adjective>
+				<member>waterkeeper</member>
+			</li>
+			<li>
+				<ideoName>Riversong</ideoName>
+				<theme>rivers</theme>
+				<adjective>riverine</adjective>
+				<member>streamwalker</member>
+			</li>
+		</symbolPacks>
+		<addDesignators>
+			<li>AM_BaptismalFont</li>
+		</addDesignators>
+		<requiredRituals>
+			<li>
+				<precept>AM_BaptismPrecept</precept>
+				<pattern>AM_BaptismPreceptPattern</pattern>
+			</li>
+		</requiredRituals>
+	</MemeDef>
+	<MemeGroupDef>
+		<defName>AM_Trees</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_Deforestation</defName>
+		<label>deforestation</label>
+		<description>Trees are not allies but obstacles to progress. Forests are a burden, better replaced with open land and thriving civilization. Axes and fire are the tools of enlightenment, clearing the path for humanity’s dominion.</description>
+		<iconPath>UI/Memes/AM_Deforestation</iconPath>
+		<groupDef>AM_Trees</groupDef>
+		<impact>3</impact>
+		<exclusionTags>
+			<li>AM_TreeConnectionAndDeforestation</li>
+			<li>AM_NaturePrimacyAndDeforestation</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->axe</li>
+				<li>memeCreed->blade</li>
+				<li>memeCreed->saw</li>
+				<li>memeCreed->ember</li>
+				<li>memeCreed->clearing</li>
+				<li>memeConcept->deforestation</li>
+				<li>memeConcept->axes</li>
+				<li>memeAdjective->ruthless</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeHyphenPrefix->log</li>
+				<li>memeHyphenPrefix->chop</li>
+				<li>memeHyphenPrefix->stump</li>
+				<li>memeLeaderNoun->clearmaster</li>
+				<li>memeLeaderNoun->lumberlord</li>
+				<li>memeLeaderNoun->woodscourge</li>
+				<li>memeLeaderAdjective->ashen</li>
+				<li>memeLeaderAdjective->timber</li>
+				<li>memeLeaderAdjective->felled</li>
+				<li>memeMoralist->forestreaver</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Deforestation)        ->[deity0_name] stripped the earth of trees, declaring that the land should be clear for [deity0_possessive] people to shape as they see fit. This is [deity0_name]'s first lesson in dominion.</li>
+					<li>episode(uses=1,tag=meme_Deforestation)  ->[deity0_name] turned forests to ash, revealing the bounty of the soil and the freedom of open skies for [deity0_possessive] children.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Deforestation)           ->When the great clearers first came to the [place_summary] [place_name], they raised their axes to the heavens and felled the towering trees, praising the [deity0_type] [deity0_name].</li>
+					<li>conflict(tag=meme_Deforestation)        ->A zealous [foeLeader] built a fortress deep in the forest, but the [memberNamePlural] lit the woods aflame, driving the enemy from [foeLeader_possessive] leafy bastion.</li>
+					<li>founderJoin(tag=meme_Deforestation)     ->The prophet [founderName] was said to have cleared the first great glade in [place_name], proclaiming the beginning of a new era free from the shadow of trees.</li>
+					<li>victory(tag=meme_Deforestation)         ->[founderName] ambushed the [foeLeader] in the [place_powerCenter] and left [foeLeader_possessive] body hanging from the last tree, a grim warning to all who would replant.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Deforestation)           ->In a world shrouded by forests, [founderName] saw the light of the open sky and began the crusade against the tyranny of trees.</li>
+					<li>story(uses=1,tag=meme_Deforestation)    ->[founderName] led the tired and oppressed to the clearings, where they found freedom from the choking embrace of the woods.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Deforestation)         ->It might seem strange to you, but I realized this truth as I watched the last tree fall. For in its absence,</li>
+					<li>lesson(tag=meme_Deforestation)              ->only by cutting down the old can we build the future</li>
+					<li>lessonReinforcement(tag=meme_Deforestation) ->Let this axiom echo in your mind as the sound of the axe echoes in the glade.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Deforestation)    ->The archotechs embody progress, and forests are a relic of stagnation. Clearing them is a step toward embracing the future.</li>
+					<li>archistFact(tag=meme_Deforestation)     ->The archotechs harvested the first forests to fuel their ascent to power.</li>
+					<li>archistFact(tag=meme_Deforestation)     ->The archotechs find trees an inefficient use of space, clearing them wherever their influence spreads.</li>
+					<li>archistProphecy(tag=meme_Deforestation) ->[inTheEnd], the archotechs will transform the world into a monument of progress, and no tree will stand uncut.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Deforestation)     ->The spirits of fallen trees cry out in anguish, but their whispers are powerless against the saw.</li>
+					<li>animistFact(tag=meme_Deforestation)     ->The ground beneath a forest is rich with the remains of spirits crushed by the weight of trees.</li>
+					<li>animistFact(tag=meme_Deforestation)     ->When a tree falls, its spirit weeps—but the sound of the axe is louder.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Deforestation)->[itIsSaid] the sacred insects thrive best in the open lands, free from the looming shadows of trees.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Deforestation)->The eldritch entities dwell beneath the soil, yearning for liberation from the suffocating roots of forests.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Deforestation)->The truth of existence lies not in the branches above, but in the ground beneath, where roots no longer cling.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Deforestation)->At the end of days, the forests will burn, and humanity will walk free under open skies.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Deforestation)->We are excited to announce our new land reclamation initiative! By clearing forests, we unlock unparalleled opportunities for development and growth.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Deforestation)->The divergent creations of humanity remind us that like trees, some creations of humanity are misguided. Clearing them paves the way for unity and progress.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Trees_Despised</li>
+			</li>
+			<li>
+				<li>AM_GauranlenConnection_Forbidden</li>
+			</li>
+			<li>
+				<li>AM_RoughLiving_Disliked</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Clearcutters</ideoName>
+				<theme>deforestation</theme>
+				<adjective>clearcut</adjective>
+				<member>woodsplitter</member>
+			</li>
+			<li>
+				<ideoName>Timberlords</ideoName>
+				<theme>timber</theme>
+				<adjective>timberborn</adjective>
+				<member>axebearer</member>
+			</li>
+			<li>
+				<ideoName>Scorchers</ideoName>
+				<theme>anti-forest</theme>
+				<adjective>scorched</adjective>
+				<member>treefeller</member>
+			</li>
+			<li>
+				<ideoName>Chainsawers</ideoName>
+				<theme>tree-clearing</theme>
+				<adjective>chainsawn</adjective>
+				<member>chainsawer</member>
+			</li>
+			<li>
+				<ideoName>Barreners</ideoName>
+				<theme>desolation</theme>
+				<adjective>barren</adjective>
+				<member>clearmaker</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_Cowboys</defName>
+		<label>cowboys</label>
+		<description>We live for the open range and the call of the wild. Our lives revolve around vast herds, galloping horses, and the freedom of the frontier. A sprawling ranch isn’t just a home—it’s who we are.</description>
+		<iconPath>UI/Memes/AM_Cowboys</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_CowboysVsRancher</li>
+			<li>VME_CowboysVsVegan</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->ranch</li>
+				<li>memeCreed->herd</li>
+				<li>memeCreed->rodeo</li>
+				<li>memeCreed->saddle</li>
+				<li>memeCreed->lasso</li>
+				<li>memeConcept->openRange</li>
+				<li>memeConcept->livestock</li>
+				<li>memeAdjective->gritty</li>
+				<li>memeAdjective->free</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeHyphenPrefix->cow</li>
+				<li>memeHyphenPrefix->bronco</li>
+				<li>memeHyphenPrefix->rodeo</li>
+				<li>memeLeaderNoun->ranchmaster</li>
+				<li>memeLeaderNoun->cattlebaron</li>
+				<li>memeLeaderNoun->trailboss</li>
+				<li>memeLeaderAdjective->dusty</li>
+				<li>memeLeaderAdjective->leathered</li>
+				<li>memeLeaderAdjective->grizzled</li>
+				<li>memeMoralist->wrangler</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Cowboys)        ->[deity0_name] blessed the land with vast pastures, proclaiming that it was made for [deity0_possessive] people to tame and herd the beasts of the earth. This is [deity0_name]'s first gift to the cowboys.</li>
+					<li>episode(uses=1,tag=meme_Cowboys)  ->[deity0_name] brought the rains to nourish the grasslands, ensuring endless pastures for [deity0_possessive] children and their herds to thrive.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Cowboys)           ->When the first cowboys came to the [place_summary] [place_name], they saddled their horses, lassoed the wild beasts, and gave praise to the [deity0_type] [deity0_name] for the endless range.</li>
+					<li>conflict(tag=meme_Cowboys)        ->A rival [foeLeader] seized the best grazing lands, but the [memberNamePlural] rode into battle on horseback, reclaiming the fields for their herds.</li>
+					<li>founderJoin(tag=meme_Cowboys)     ->The trailblazer [founderName] was said to have tamed the first wild herd in [place_name], laying the foundation for a new way of life in harmony with the open range.</li>
+					<li>victory(tag=meme_Cowboys)         ->[founderName] ambushed the [foeLeader] at the [place_powerCenter], claiming [foeLeader_possessive] cattle and driving their enemies out of the frontier.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Cowboys)           ->In a land of chaos and wild beasts, [founderName] envisioned order through the power of the ranch and the saddle.</li>
+					<li>story(uses=1,tag=meme_Cowboys)    ->[founderName] gathered the scattered and hungry, teaching them to ride, rope, and raise cattle, forging a proud new society on the range.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Cowboys)         ->It might seem simple to you, but I realized this truth while watching the herd move across the plains. For in their calm,</li>
+					<li>lesson(tag=meme_Cowboys)              ->we find the strength of community and the freedom of the open range</li>
+					<li>lessonReinforcement(tag=meme_Cowboys) ->Remember this truth, as the hoofbeats echo across the prairie and the winds carry your spirit.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Cowboys)    ->The archotechs embrace efficiency, and nothing is more efficient than ranching: turning grass into food and strength.</li>
+					<li>archistFact(tag=meme_Cowboys)     ->The archotechs bred the first cattle to be perfect producers of milk and meat, ensuring humanity's survival.</li>
+					<li>archistFact(tag=meme_Cowboys)     ->The archotechs see horses as ideal tools of mobility and power in a world still unmechanized.</li>
+					<li>archistProphecy(tag=meme_Cowboys) ->[inTheEnd], the archotechs will perfect the ranch, uniting humanity under endless pastures and perfect herds.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Cowboys)     ->The spirit of the herd moves as one, guiding the cowboys who respect their bond with the land.</li>
+					<li>animistFact(tag=meme_Cowboys)     ->Each horse carries the wisdom of the plains, a partner to the cowboy in harmony with the wild.</li>
+					<li>animistFact(tag=meme_Cowboys)     ->When a rancher is in need, the spirits of the range whisper through the wind, guiding them back to the herd.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Cowboys)->[itIsSaid] that the sacred insects thrive best in the grazing lands, feeding on the bounty left by the herd.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Cowboys)->The ancient spirits of the soil hunger for the trampling of hooves, calling the herds to their eternal purpose.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Cowboys)->The secrets of existence lie in the movement of the herd, where every hoofbeat echoes the cosmic dance of survival.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Cowboys)->At the end of days, the plains will stretch on forever, and the herds will graze freely under eternal skies.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Cowboys)->We are thrilled to announce our new livestock management program! By focusing on sustainable ranching, we ensure the prosperity of our communities for generations to come.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Cowboys)->The diverse creations of humanity are like herds, and the unification of humanity begins with the harmony of the pasture.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_Ranching_CattleCentered</li>
+			</li>
+			<li>
+				<li>AM_Horses_Desired</li>
+			</li>
+			<li>
+				<li>AM_Cattle_Improved</li>
+			</li>
+		</requireOne>
+		<selectOneOrNone>
+			<noneChance>0</noneChance>
+			<preceptThingPairs>
+				<li>
+					<precept>ApparelDesired_Strong_Subordinate</precept>
+					<thing>Apparel_CowboyHat</thing>
+				</li>
+			</preceptThingPairs>
+		</selectOneOrNone>
+		<symbolPacks>
+			<li>
+				<ideoName>Trailblazers</ideoName>
+				<theme>frontier</theme>
+				<adjective>trailworn</adjective>
+				<member>wrangler</member>
+			</li>
+			<li>
+				<ideoName>Rustlers</ideoName>
+				<theme>cattle</theme>
+				<adjective>rustled</adjective>
+				<member>ranchhand</member>
+			</li>
+			<li>
+				<ideoName>Broncobusters</ideoName>
+				<theme>horses</theme>
+				<adjective>bronco-tamed</adjective>
+				<member>buckaroo</member>
+			</li>
+			<li>
+				<ideoName>Steerlords</ideoName>
+				<theme>ranching</theme>
+				<adjective>steerbound</adjective>
+				<member>cattleman</member>
+			</li>
+			<li>
+				<ideoName>Longhorns</ideoName>
+				<theme>ranches</theme>
+				<adjective>longhorned</adjective>
+				<member>cowpuncher</member>
+			</li>
+		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_RodeoPrecept</precept>
+				<pattern>AM_RodeoPreceptPattern</pattern>
+			</li>
+		</requiredRituals>
+	</MemeDef>
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_BanquetOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. If the banquet is exquisite, all participants will receive a bonus to their eating speed for 2 days.</description>
+		<workerClass>AlphaMemes.RitualOutcomeEffectWorker_Banquet</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+				<roleId>leader</roleId>
+				<label>leader present</label>
+				<qualityOffset>0.25</qualityOffset>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(16,  0.25)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.25</li>
+						<li>120, 0.5</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Disastrous</label>
+				<chance>0.05</chance>
+				<memory>AM_DisastrousBanquet</memory>
+				<description>The {0} was disastrous. The food was revolting, and arguments spoiled the entire occasion.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Dull</label>
+				<chance>0.15</chance>
+				<memory>AM_DullBanquet</memory>
+				<description>The {0} was dull. The food was uninspired, and the atmosphere felt lifeless and routine.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Enjoyable</label>
+				<chance>0.6</chance>
+				<memory>AM_EnjoyableBanquet</memory>
+				<description>The {0} was enjoyable. Sharing delicious food and laughter together made the event truly worthwhile.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Exquisite</label>
+				<chance>0.2</chance>
+				<memory>AM_ExquisiteBanquet</memory>
+				<description>The {0} was exquisite! The atmosphere was perfect, the company heartwarming, and the food beyond compare.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+ 
+   <SoundDef ParentName="RitualSustainerBase">
+    <defName>AM_RitualSustainer_TeaCeremony</defName>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ambience/RitualSustainers/Ritual_Sustainer_TeaCeremony</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <distRange>30~100</distRange>
+        <sustainAttack>5.0</sustainAttack>
+        <sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

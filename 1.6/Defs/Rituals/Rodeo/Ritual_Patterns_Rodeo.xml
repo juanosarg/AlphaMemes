@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_RodeoPreceptPattern</defName>
+    <ritualBehavior>AM_RodeoBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+ 
+    <ritualOutcomeEffect>AM_RodeoOutcome</ritualOutcomeEffect>
+      <canStartAnytime>true</canStartAnytime>
+   <alwaysStartAnytime>true</alwaysStartAnytime>
+ 
+	<playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>

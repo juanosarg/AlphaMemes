@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+
+  <RitualPatternDef>
+    <defName>AM_OcularWarping</defName>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
+    <ritualBehavior>AM_OcularWarping</ritualBehavior>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <ritualOutcomeEffect>AM_OcularWarping</ritualOutcomeEffect>
+    <tags>
+      <li>AM_OcularWarping</li>
+    </tags>
+  </RitualPatternDef>
+  
+</Defs>

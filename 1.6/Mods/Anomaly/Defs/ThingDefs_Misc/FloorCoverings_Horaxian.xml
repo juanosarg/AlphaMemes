@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>AM_HoraxianSlab_Medium</defName>
+    <label>horaxian slab (medium)</label>
+    <description>A stone bas relief of Horaxian imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Horaxian</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Horaxian/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+	
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>AM_HoraxianSlab_Broad</defName>
+    <label>horaxian slab (broad)</label>
+    <description>A stone bas relief of Horaxian imagery for decorating a floor.</description>
+    <dominantStyleCategory>AM_Horaxian</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Horaxian/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+	
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+</Defs>

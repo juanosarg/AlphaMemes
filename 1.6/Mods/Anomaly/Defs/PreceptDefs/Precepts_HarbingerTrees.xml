@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_HarbingerTrees</defName>
+		<label>harbinger trees</label>
+		<iconPath>UI/Issues/AM_HarbingerTrees</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_CutHarbingerTree</defName>
+		<label>Harbinger tree cut</label>
+	</HistoryEventDef>
+	<!-- Precept -->
+	<PreceptDef>
+		<defName>AM_HarbingerTrees_Disgusting</defName>
+		<issue>AM_HarbingerTrees</issue>
+		<label>disgusting</label>
+		<description>What? A flesh eating tree? Now that is just perverse...</description>
+		<impact>Low</impact>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>AM_Deforestation</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_Deforestation</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_CutHarbingerTree</eventDef>
+				<thought>AM_HarbingerTrees_Disgusting_CutHarbingerTree</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_HarbingerTrees_Disgusting_CutHarbingerTree</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>cut Harbinger tree</label>
+				<description>Our colony has gotten rid of a weird carnivore tree. Who made that thing??</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[@Name="MealLavishBase"]/stuffProps/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="MealLavishBase"]</xpath>
+			<value>
+				<stuffProps>
+				<categories>
+					<li>AM_LavishMeals</li>
+				</categories>
+			</stuffProps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="MealLavishBase"]/stuffProps/categories</xpath>
+			<value>
+				<li>AM_LavishMeals</li>
+					
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName="VCE_LavishBake"]/stuffProps/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishBake"]</xpath>
+			<value>
+				<stuffProps>
+				<categories>
+					<li>AM_LavishMeals</li>
+				</categories>
+			</stuffProps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishBake"]/stuffProps/categories</xpath>
+			<value>
+				<li>AM_LavishMeals</li>
+					
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName="VCE_LavishDessert"]/stuffProps/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishDessert"]</xpath>
+			<value>
+				<stuffProps>
+				<categories>
+					<li>AM_LavishMeals</li>
+				</categories>
+			</stuffProps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishDessert"]/stuffProps/categories</xpath>
+			<value>
+				<li>AM_LavishMeals</li>
+					
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName="VCE_LavishGrill"]/stuffProps/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishGrill"]</xpath>
+			<value>
+				<stuffProps>
+				<categories>
+					<li>AM_LavishMeals</li>
+				</categories>
+			</stuffProps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_LavishGrill"]/stuffProps/categories</xpath>
+			<value>
+				<li>AM_LavishMeals</li>
+					
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName="VCE_CookedSoupLavish"]/stuffProps/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_CookedSoupLavish"]</xpath>
+			<value>
+				<stuffProps>
+				<categories>
+					<li>AM_LavishMeals</li>
+				</categories>
+			</stuffProps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_CookedSoupLavish"]/stuffProps/categories</xpath>
+			<value>
+				<li>AM_LavishMeals</li>
+					
+			</value>
+		</match>
+	</Operation>
+
+	
+
+</Patch>

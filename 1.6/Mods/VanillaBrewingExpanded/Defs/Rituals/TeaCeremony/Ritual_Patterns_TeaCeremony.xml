@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_TeaCeremonyPattern</defName>
+    <ritualBehavior>AM_TeaCeremonyBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>AM_TeaCeremonyTarget</ritualObligationTargetFilter>
+  
+    <ritualOutcomeEffect>AM_TeaCeremonyOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<playsIdeoMusic>false</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>

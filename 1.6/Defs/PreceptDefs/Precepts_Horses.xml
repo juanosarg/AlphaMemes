@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_Horses</defName>
+		<label>horses</label>
+		<iconPath>UI/Issues/AM_Horses</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_ColonyHorseDied</defName>
+		<label>colony horse died</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Horses_Desired</defName>
+		<issue>AM_Horses</issue>
+		<label>desired</label>
+		<description>We see the horse as a vital companion on our ranch. Their strength and loyalty will enhance our life here, helping with work and bringing a sense of freedom to our lives.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with two tamed horses.\n - Horses will get -2 Minimum handling skill (it will be 0), +15% move speed and +25% caravan riding speed.</description>
+		<impact>Medium</impact>
+		<requiredMemes>
+			<li>AM_Cowboys</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>AM_Cowboys</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>AM_ColonyHorseDied</eventDef>
+				<thought>AM_Horses_Desired_HorseDied</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>AM_Horses_Desired_HorseDied</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>colony horse died</label>
+				<description>Such a cruel world. Our horses are not just animals, but our friends and companions.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

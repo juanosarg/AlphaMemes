@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_BaptismPrecept</defName>
+		<label>baptism</label>
+		<description>A ceremony of purification and renewal, marking devotion through the sanctity of water.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>AM_BaptismPreceptPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_BaptismRitual</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<useCooldownFromAbilityGroupDef>Moralist</useCooldownFromAbilityGroupDef>
+		<requiredMemes>		
+			<li>AM_WaterPrimacy</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

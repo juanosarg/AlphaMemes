@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_Fertility</defName>
+		<label>fertility</label>
+		<description>Life begets life, and the cycle of creation is the eternal heartbeat of existence. From fertile soil to fertile wombs, the promise of tomorrow is seeded in the abundance of today.</description>
+		<iconPath>UI/Memes/AM_Fertility</iconPath>
+		<exclusionTags>
+		
+		</exclusionTags>
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->fertile</li>
+				<li>memeAdjective->bountiful</li>
+				<li>memeAdjective->fruitful</li>
+				<li>memeConcept->growth</li>
+				<li>memeHyphenPrefix->life</li>
+				<li>memeLeaderNoun->progenitor</li>
+				<li>memeMoralist->nurturer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Fertility)        ->[deity0_name] declared: "Be fruitful and multiply, for the strength of the faithful lies in their numbers."</li>
+					<li>episode(uses=1,tag=meme_Fertility)  ->Following [deity0_name]'s teachings, we celebrated each birth as a divine blessing, growing stronger with every child born.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Fertility)           ->On the [place_summary] [place_name], the [memberNamePlural] established a tradition of large families, believing each child to be a gift from the divine.</li>
+					<li>conflict(tag=meme_Fertility)        ->A rival [foeLeader], envious of our growing population, sought to divide families and undermine our unity.</li>
+					<li>founderJoin(tag=meme_Fertility)     ->[founderName], a wise midwife, united the community and ensured every family thrived, even in times of hardship.</li>
+					<li>victory(tag=meme_Fertility)         ->[foeLeader] was overthrown, and [foeLeader_possessive] attempt to disrupt our families only strengthened our resolve.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Fertility)           ->[founderName], a visionary leader, argued that a strong community is built on large families and the nurturing of many children.</li>
+					<li>story(uses=1,tag=meme_Fertility)    ->[founderName] created policies and customs that celebrated fertility and ensured that every child could thrive.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Fertility)         ->A mother of twelve once told me that the measure of a person’s legacy is not in riches or fame, but in the children they leave behind. She taught me that</li>
+					<li>lesson(tag=meme_Fertility)              ->raising strong, united families is the foundation of any enduring community.</li>
+					<li>lessonReinforcement(tag=meme_Fertility) ->Children are the lifeblood of our future; each new life brings hope and strength.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Fertility)    ->The archotechs value exponential growth, and large families mirror the boundless potential of their creations.</li>
+					<li>archistFact(tag=meme_Fertility)     ->In their algorithms, a thriving population is key to achieving transcendent stability</li>
+					<li>archistProphecy(tag=meme_Fertility) ->[inTheEnd], only the most populous and fertile communities will earn the archotechs' favor.</li>
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Fertility)    ->The spirits smile upon those who bring new life into the world, for they see children as the essence of vitality.</li>
+					<li>animistFact(tag=meme_Fertility)     ->Our ancestors guide us to cherish every child, as they are the bridge between the living and the spirit world.</li>
+					<li>animistProphecy(tag=meme_Fertility) ->[itIsSaid] the most fertile families will be blessed with wisdom from the spirits themselves.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Fertility)->[itIsSaid] a colony that embraces fertility will thrive as an unstoppable collective, like the most prolific ant colony.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Fertility)->The eldritch entities watch our numbers grow with fascination, for they understand that strength lies in multitudes.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Fertility)->Only through generations of growth can the secrets of the cosmos be unraveled and preserved.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Fertility)->We must grow our numbers, for only through countless generations can we see the end of days fulfilled.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Fertility)->We are excited to introduce our new "Family Growth Incentive Program," designed to encourage employees to contribute to our population goals.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_Fertility)->The alien species we encounter remind us of the beauty of diversity and the importance of expanding our own families.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_FertilityIssue_Increased</li>
+			</li>
+			<li>
+				<li>AM_LovinFrequency_Increased</li>
+				<li>AM_LovinFrequency_Exuberant</li>
+			</li>
+			<li>
+				<li>AM_MaternalMortality_Nullified</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Fertility</ideoName>
+				<theme>fertility</theme>
+				<adjective>fertile</adjective>
+				<member>fertile</member>
+			</li>
+			<li>
+				<ideoName>Progenitor</ideoName>
+				<theme>creation</theme>
+				<adjective>progenitor</adjective>
+				<member>progenitor</member>
+			</li>
+			<li>
+				<ideoName>Gestation</ideoName>
+				<theme>gestation</theme>
+				<adjective>gestational</adjective>
+				<member>gestator</member>
+			</li>
+			<li>
+				<ideoName>Reproduction</ideoName>
+				<theme>reproduction</theme>
+				<adjective>reproductive</adjective>
+				<member>reproducer</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+	
+	<MemeGroupDef>
+		<defName>AM_BloodFeeders</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
+	<MemeDef>
+		<defName>AM_VampireHunting</defName>
+		<label>vampire hunting</label>
+		<description>We refuse to tolerate the predations of the sanguophages. These parasitic creatures thrive on the suffering of others, spreading their cursed condition like a plague. Our mission is clear: track them, eliminate them, and ensure their kind finds no safe haven under the stars.</description>
+		<iconPath>UI/Memes/AM_VampireHunting</iconPath>
+		<groupDef>AM_BloodFeeders</groupDef>
+		<exclusionTags>
+			<li>AM_HuntersVSBloodfeeders</li>
+		</exclusionTags>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->righteous</li>
+				<li>memeAdjective->zealous</li>
+				<li>memeAdjective->purifying</li>
+				<li>memeAdjective->unyielding</li>
+				<li>memeAdjective->vindictive</li>
+				<li>memeHyphenPrefix->blood</li>
+				<li>memeHyphenPrefix->hunter</li>
+				<li>memeConcept->purge</li>
+				<li>memeConcept->redemption</li>
+				<li>memeConcept->cleansing</li>
+				<li>memeLeaderNoun->inquisitor</li>
+				<li>memeLeaderNoun->exorcist</li>
+				<li>memeLeaderNoun->slayer</li>
+				<li>memeLeaderNoun->purifier</li>
+				<li>memeLeaderNoun->warden</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_SanguophageHunting)        ->[deity0_name] gazed upon the cursed sanguophages and proclaimed: "These creatures are an affront to life itself. They must be purged to restore balance."</li>
+					<li>episode(uses=1,tag=meme_SanguophageHunting)  ->[deity0_name] said to the [memberNamePlural]: "Hunt the sanguophages wherever they hide. Their bloodlust defiles the sanctity of creation."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_SanguophageHunting)           ->[memberNamePlural] constructed a solemn [altarName] on the [place_summary] [place_name], where they swore an oath to cleanse the land of sanguophages.</li>
+					<li>conflict(tag=meme_SanguophageHunting)        ->The sanguophages retaliated against [deity0_name]'s followers, but the [memberNamePlural] stood firm, vowing to end their reign of terror.</li>
+					<li>founderJoin(tag=meme_SanguophageHunting)     ->[deity0_name] commanded [founderName] to rise against the sanguophages, calling them the bane of mortal existence.</li>
+					<li>victory(tag=meme_SanguophageHunting)         ->[founderName] led a crusade against the sanguophages, vanquishing them and securing a lasting peace for the faithful.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_SanguophageHunting)           ->Our founder [founderName] was a visionary who saw the danger of sanguophages in [founder_possessive] world. [founder_pronoun] gathered [founder_possessive] followers and set out to eradicate this parasitic menace.</li>
+					<li>story(uses=1,tag=meme_SanguophageHunting)    ->[founderName]'s followers documented [founder_possessive] tactics and strategies, passing down the art of sanguophage hunting through the generations.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_SanguophageHunting)         ->In all my years tracking sanguophages, one truth has become clear:</li>
+					<li>lesson(tag=meme_SanguophageHunting)              ->these creatures cannot coexist with humanity and must be eradicated for the safety of all</li>
+					<li>lessonReinforcement(tag=meme_SanguophageHunting) ->Only by standing together and taking action can we protect ourselves from the sanguophage threat.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_SanguophageHunting)    ->The archotechs have no tolerance for sanguophages. Their parasitic nature is an antithesis to perfection.</li>
+					<li>archistFact(tag=meme_SanguophageHunting)     ->When the archotechs reveal their grand design, those who stood against sanguophages will be rewarded for their vigilance.</li>
+					<li>archistProphecy(tag=meme_SanguophageHunting) ->[inTheEnd], the archotechs will eliminate all sanguophages and elevate the hunters who aided in their extermination.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_SanguophageHunting)     ->The spirits abhor sanguophages, for their thirst for blood disrupts the natural order of life and death.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_SanguophageHunting)->As predators prey upon the weak, so must we hunt the sanguophages to maintain the balance of the ecosystem.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_SanguophageHunting)->The sanguophages are a whisper of the cosmic madness that threatens to consume us all. By hunting them, we deny the abyss its agents.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_SanguophageHunting)->The sanguophages covet secrets that were never meant to be theirs. By ending their existence, we preserve the sacred knowledge of the unseen.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_SanguophageHunting)->The sanguophages herald the end. To delay the apocalypse, we must extinguish their cursed bloodlines.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_SanguophageHunting)->It has come to my attention that some of you have been avoiding assignments to hunt sanguophages. Let me remind you: no one is exempt from safeguarding our colony. Remember: teamwork keeps the parasites at bay!</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_SanguophageHunting)->We will capture and study these creatures, learning from them and perhaps discover a way to better end the threat of sanguophages.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>Bloodfeeders_Reviled</li>
+			</li>
+			<li Name="HuntPrecepts">
+				<li>AM_HuntFocus_Sanguophage</li>
+			</li>
+			<li>
+				<li>AM_DeathrestCaskets_Abhorrent</li>
+			</li>
+			<li>
+				<li>AM_SanguophageCamps_RaidingDesired</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Sanguophage Hunters</ideoName>
+				<theme>hunt</theme>
+				<adjective>hunter</adjective>
+				<member>hunter</member>
+			</li>
+			<li>
+				<ideoName>The Blood Purge</ideoName>
+				<theme>purification</theme>
+				<adjective>purifying</adjective>
+				<member>purifier</member>
+			</li>
+			<li>
+				<ideoName>Vampire Bane</ideoName>
+				<theme>bane</theme>
+				<adjective>baneful</adjective>
+				<member>banisher</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>

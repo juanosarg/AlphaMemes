@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="AM_InsectoidBurial"]/requiredMemes</xpath>
+		<value>
+			<li>VME_InsectoidSupremacy</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RitualBehaviorDef[defName="AM_InsectoidFuneralBehavior"]/roles/li[@Class="RitualRoleTag"]/precept</xpath>
+		<value>
+			<precept>VME_IdeoRole_InsectoidHerder</precept>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RitualBehaviorDef[defName="AM_InsectoidFuneralBehavior"]/roles/li[@Class="RitualRoleTag"]/tag</xpath>
+		<value>
+			<tag>InsectoidHerder</tag>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RitualObligationTargetFilterDef[defName="AM_InsectoidBurialTarget"]/thingDefs</xpath>
+		<value>
+			<li>VME_InsectNest</li>
+		</value>
+	</Operation>
+</Patch>
+
+	

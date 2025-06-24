@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MemeDef>
+		<defName>AM_Structure_Cubicism</defName>
+		<label>cubicism</label>
+		<description>Driven by an insatiable thirst for knowledge and spiritual enlightenment, the Cubicists dedicate their lives to unraveling the mysteries of the Cube. They believe that by understanding its enigmatic nature, they can transcend the limitations of the material world and ascend to higher planes of consciousness.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Cubicism</iconPath>
+		<impact>0</impact>
+		<deityNameMakerOverride>AM_NamerDeityCubic</deityNameMakerOverride>
+		<deityTypeMakerOverride>DietyTypeMakerAbrahamic</deityTypeMakerOverride>
+		<worshipRoomLabel>cubic sanctum</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1</deityCount>
+		
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->cubic</li>
+				<li>memeAdjective->hypercubic</li>
+				<li>memeAdjective->cubiform</li>
+				<li>memeAdjective->cuboid</li>
+				<li>memeLeaderNoun->square one</li>
+				<li>memeLeaderNoun->cubic one</li>
+				<li>memeLeaderAdjective->solid</li>
+				<li>memeLeaderAdjective->gilded</li>
+				<li>memeLeaderAdjective->golden</li>
+				<li>memeMoralist->cubic oracle</li>
+				<li>memeMoralist->tetrasage</li>
+				<li>memeMoralist->auric hierophant</li>
+				<li>memeMoralist->luminary custodian</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_CubicDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_cubicism</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>cubicism</theme>
+				<adjective>cubic</adjective>
+				<member>cube disciple</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Cubic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+	
+	
+	
+</Defs>

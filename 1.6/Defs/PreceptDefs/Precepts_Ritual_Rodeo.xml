@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef ParentName="FestivalBase">
+		<defName>AM_RodeoPrecept</defName>
+		<label>rodeo</label>
+		<description>A celebration of skill, courage, and tradition. Riders spar with wild beasts, ropes fly, and the crowd cheers as the colony comes together to honor our bond with livestock.</description>
+		 <allowDuplicates>false</allowDuplicates>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ritualPatternBase>AM_RodeoPreceptPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_Rodeo</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>	
+		<requiredMemes>		
+			<li>AM_Cowboys</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

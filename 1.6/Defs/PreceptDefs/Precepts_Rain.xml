@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_Rain</defName>
+		<label>rainfall</label>
+		<iconPath>UI/Issues/AM_Rain</iconPath>
+	</IssueDef>
+	<PreceptDef>
+		<defName>AM_Rain_Blessed</defName>
+		<issue>AM_Rain</issue>
+		<label>blessed</label>
+		<description>Rain is a gift from the heavens, a sign of life’s renewal and the divine’s favor. Each droplet is a blessing, nurturing the land and cleansing the spirit.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Nullifies "Soaking wet" thought.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_WaterPrimacy</li>
+		</associatedMemes>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Rain_Blessed</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Rain_Blessed</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Rain</workerClass>
+		<stages>
+			<li>
+				<label>it's raining</label>
+				<description>Rain is a blessing, purifying our souls with its sacred touch.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>AM_Rain_Disliked</defName>
+		<issue>AM_Rain</issue>
+		<label>disliked</label>
+		<description>The rain is a burden upon our minds, heavy and relentless. It clutters our thoughts with discomfort, and we long for its end. How we wish the sun would return and lift this oppressive gloom.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Rain_Disliked</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Rain_Disliked</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Rain</workerClass>
+		<stages>
+			<li>
+				<label>it's raining</label>
+				<description>The rain weighs on me, bringing discomfort and longing for the sun.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>AM_TeaNeed</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_NeedTea</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>craving tea</label>
+				<description>I need tea, badly... My head feels foggy, my nerves are frayed... I’d brew shoe leather if it smelled remotely like tea right now.</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+			<li>
+				<label>desiring tea</label>
+				<description>It's been too long since I had a proper cup of tea. The day just doesn't feel right without it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanting tea</label>
+				<description>A cup of tea would be nice. Just something warm to hold and sip for a moment of peace.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>content</label>
+				<description>Ahh, I’ve had my tea. The world seems a little brighter now.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>perfectly steeped</label>
+				<description>This was divine. Perfectly brewed tea, warming my soul and calming my mind.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

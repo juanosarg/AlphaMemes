@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Sanguophage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<PreceptDef>
+							<defName>AM_HuntFocus_Strigoi</defName>
+							<issue>AM_HuntFocus</issue>
+							<label>strigoi</label>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nStrigoi will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Strigoi will cause extra 10 burn damage.</description>
+							<impact>Medium</impact>
+							<associatedMemes>
+								<li>AM_VampireHunting</li>
+							</associatedMemes>
+							<displayOrderInIssue>10</displayOrderInIssue>
+						</PreceptDef>
+						<PreceptDef>
+							<defName>AM_HuntFocus_Ekkimian</defName>
+							<issue>AM_HuntFocus</issue>
+							<label>ekkimian</label>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nEkkimian will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against an Ekkimian will cause extra 10 burn damage.</description>
+							<impact>Medium</impact>
+							<associatedMemes>
+								<li>AM_VampireHunting</li>
+							</associatedMemes>
+							<displayOrderInIssue>20</displayOrderInIssue>
+						</PreceptDef>
+						<PreceptDef>
+							<defName>AM_HuntFocus_Bruxa</defName>
+							<issue>AM_HuntFocus</issue>
+							<label>bruxa</label>
+							<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nBruxa will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Bruxa will cause extra 10 burn damage.</description>
+							<impact>Medium</impact>
+							<associatedMemes>
+								<li>AM_VampireHunting</li>
+							</associatedMemes>
+							<displayOrderInIssue>30</displayOrderInIssue>
+						</PreceptDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_HemogenPipe</defName>
+							<thing>VRE_HemogenPipe</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_HemogenVat</defName>
+							<thing>VRE_HemogenVat</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>VRE_Draincasket_South</defName>
+							<thing>VRE_Draincasket</thing>
+							<rotation>South</rotation>
+						</KCSG.SymbolDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="AM_VampireHunting"]/requireOne/li[@Name = "HuntPrecepts"]</xpath>
+					<value>
+						<li>AM_HuntFocus_Strigoi</li>
+						<li>AM_HuntFocus_Ekkimian</li>
+						<li>AM_HuntFocus_Bruxa</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<HistoryEventDef>
+							<defName>AM_BuildingDrainCasket</defName>
+							<label>building a draincasket</label>
+						</HistoryEventDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PreceptDef[defName="AM_DeathrestCaskets_Abhorrent"]/comps</xpath>
+					<value>
+						<li Class="PreceptComp_UnwillingToDo">
+							<eventDef>AM_BuildingDrainCasket</eventDef>
+						</li>
+						<li Class="PreceptComp_SituationalThought">
+							<thought>AM_DrainCaskets_Abhorrent</thought>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThoughtDef>
+							<defName>AM_DrainCaskets_Abhorrent</defName>
+							<workerClass>AlphaMemes.ThoughtWorker_Precept_Draincaskets</workerClass>
+							<stages>
+								<li>
+									<label>draincasket nearby</label>
+									<description>We have a draincasket in the colony. This is blasphemy, it should be dismantled as soon as possible.</description>
+									<baseMoodEffect>-10</baseMoodEffect>
+								</li>
+							</stages>
+						</ThoughtDef>
+					</value>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Genes</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<PreceptDef>
+										<defName>AM_HuntFocus_Malachai</defName>
+										<issue>AM_HuntFocus</issue>
+										<label>malachai</label>
+										<description>Our purpose is clear: to seek out the cursed sanguophages wherever they may hide.\n\nMalachai will be the focus of this precept.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - All attacks against a Malachai will cause extra 10 burn damage.</description>
+										<impact>Medium</impact>
+										<associatedMemes>
+											<li>AM_VampireHunting</li>
+										</associatedMemes>
+										<displayOrderInIssue>10</displayOrderInIssue>
+									</PreceptDef>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/MemeDef[defName="AM_VampireHunting"]/requireOne/li[@Name = "HuntPrecepts"]</xpath>
+								<value>
+									<li>AM_HuntFocus_Malachai</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

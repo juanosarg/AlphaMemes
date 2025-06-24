@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_TeaCultivation</defName>
+		<label>tea cultivation</label>
+		<iconPath>UI/Issues/AM_TeaCultivation</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_TeaCultivation_Improved</defName>
+		<issue>AM_TeaCultivation</issue>
+		<label>improved</label>
+		<description>We’ve honed our methods to ensure our tea plants thrive like never before. Through careful tending and reverence for the craft, our tea fields grow lush and bountiful.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Tea plants will receive a +20% growth rate bonus.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_TeaPrimacy</li>
+		</associatedMemes>
+		
+		
+	</PreceptDef>
+	
+</Defs>

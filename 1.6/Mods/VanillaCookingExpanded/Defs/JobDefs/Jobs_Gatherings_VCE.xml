@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <JobDef>
+    <defName>AM_EatAtBanquet</defName>
+    <driverClass>AlphaMemes.JobDriver_EatAtBanquet</driverClass>
+    <reportString>eating at TargetA.</reportString>
+  </JobDef>
+
+
+  
+</Defs>
