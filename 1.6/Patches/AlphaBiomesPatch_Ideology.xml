@@ -12,7 +12,7 @@
 				<TerrainDef ParentName="AM_OcularStone">
 					<defName>AB_Tile_OcularQuartz</defName>
 					<label>ocular red quartz floor</label>
-					<color>(120,50,50)</color>
+					<color>(110,75,75)</color>
 					<costList>
 						<GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
 					</costList>
@@ -21,7 +21,7 @@
 				<TerrainDef ParentName="AM_OcularStone">
 					<defName>AB_Tile_OcularMudstone</defName>
 					<label>ocular mudstone floor</label>
-					<color>(49,31,15)</color>
+					<color>(41,35,31)</color>
 					<costList>
 						<AB_BlocksMudstone>20</AB_BlocksMudstone>
 					</costList>

@@ -5,7 +5,7 @@
 	<TerrainDef ParentName="AM_JewishTileStoneBase">
 		<defName>AM_JewishTileRoseQuartz</defName>
 		<label>jewish rose quartz tile</label>
-		<color>(120,50,50)</color>
+		<color>(110,75,75)</color>
 		<costList>
 			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
 		</costList>
@@ -13,7 +13,7 @@
 	<TerrainDef ParentName="AM_JewishTileStoneBase">
 		<defName>AM_JewishTileMudstone</defName>
 		<label>jewish mudstone tile</label>
-		<color>(49,31,15)</color>
+		<color>(41,35,31)</color>
 		<costList>
 			<AB_BlocksMudstone>4</AB_BlocksMudstone>
 		</costList>
@@ -70,7 +70,7 @@
 	<TerrainDef ParentName="AM_KemeticTileStoneBase">
 		<defName>AM_KemeticTileRoseQuartz</defName>
 		<label>kemetic rose quartz tile</label>
-		<color>(120,50,50)</color>
+		<color>(110,75,75)</color>
 		<costList>
 			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
 		</costList>
@@ -78,7 +78,7 @@
 	<TerrainDef ParentName="AM_KemeticTileStoneBase">
 		<defName>AM_KemeticTileMudstone</defName>
 		<label>kemetic mudstone tile</label>
-		<color>(49,31,15)</color>
+		<color>(41,35,31)</color>
 		<costList>
 			<AB_BlocksMudstone>4</AB_BlocksMudstone>
 		</costList>
@@ -102,7 +102,7 @@
 	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
 		<defName>AM_KemeticFineTileRoseQuartz</defName>
 		<label>kemetic fine rose quartz tile</label>
-		<color>(120,50,50)</color>
+		<color>(110,75,75)</color>
 		<costList>
 			<GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
 		</costList>
@@ -110,7 +110,7 @@
 	<TerrainDef ParentName="AM_KemeticFineStoneTiles">
 		<defName>AM_KemeticFineTileMudstone</defName>
 		<label>kemetic fine mudstone tile</label>
-		<color>(49,31,15)</color>
+		<color>(41,35,31)</color>
 		<costList>
 			<AB_BlocksMudstone>20</AB_BlocksMudstone>
 		</costList>
@@ -134,7 +134,7 @@
 	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
 		<defName>AM_SteampunkTileRoseQuartz</defName>
 		<label>steampunk rose quartz tile</label>
-		<color>(120,50,50)</color>
+		<color>(110,75,75)</color>
 		<costList>
 			<GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
 		</costList>
@@ -142,7 +142,7 @@
 	<TerrainDef ParentName="AM_SteampunkTileStoneBase">
 		<defName>AM_SteampunkTileMudstone</defName>
 		<label>steampunk mudstone tile</label>
-		<color>(49,31,15)</color>
+		<color>(41,35,31)</color>
 		<costList>
 			<AB_BlocksMudstone>4</AB_BlocksMudstone>
 		</costList>
