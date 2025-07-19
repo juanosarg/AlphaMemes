@@ -72,6 +72,11 @@ namespace AlphaMemes
             if(faction != null)
             {
                 flag = flag ? def?.ritualPatternBase?.CanFactionUse(faction) ?? true: false;
+                var ext = faction.GetModExtension<FuneralFramework_FactionDefExtension>();
+                if (ext != null && def.defName != "Funeral")
+                {
+                    flag = !ext.defaultFuneral;
+                }
             }
             if (!def?.requiredMemes?.NullOrEmpty() ?? false)
             {
