@@ -30,6 +30,7 @@
       
         <countsAsParticipant>False</countsAsParticipant>
         <allowChild>false</allowChild>
+		<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
       </li>
       <li Class="RitualRoleColonist">
         <label>duelist</label>
@@ -43,6 +44,7 @@
      
         <countsAsParticipant>False</countsAsParticipant>
         <allowChild>false</allowChild>
+		<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
       </li>
     
     </roles>

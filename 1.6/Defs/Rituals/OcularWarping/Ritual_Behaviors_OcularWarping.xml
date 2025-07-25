@@ -28,6 +28,7 @@
         <missingDesc>a tamed animal, the bigger the better</missingDesc>
         <countsAsParticipant>False</countsAsParticipant>
         <ignoreBleeding>true</ignoreBleeding>
+		<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
       </li>
 	  <li Class="AlphaMemes.RitualRoleDryad">
         <label>channel</label>
@@ -37,6 +38,7 @@
         <missingDesc>an ocular dryad from a corrupted gauranlen tree</missingDesc>
         <countsAsParticipant>False</countsAsParticipant>
         <ignoreBleeding>true</ignoreBleeding>
+		<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
       </li>
     </roles>
 	 <spectatorsLabel>Participants</spectatorsLabel>
@@ -58,7 +60,10 @@
         <roleBehaviors>
           <li>
             <roleId>ocularpriest</roleId>
-            <dutyDef>DeliverPawnToAltar</dutyDef>
+           <dutyDef>DeliverPawnToCellIfAliveThenIdle</dutyDef>
+			<customPositions>
+              <li Class="RitualPosition_InFrontThingCenter" />
+            </customPositions>
           </li>
           <li>
             <roleId>animal</roleId>
@@ -86,7 +91,10 @@
         <roleBehaviors>
           <li>
             <roleId>ocularpriest</roleId>
-            <dutyDef>DeliverPawnToAltar</dutyDef>
+            <dutyDef>DeliverPawnToCellIfAliveThenIdle</dutyDef>
+			<customPositions>
+              <li Class="RitualPosition_BehindThingCenter" />
+            </customPositions>
           </li>
           <li>
             <roleId>animal</roleId>
@@ -120,11 +128,11 @@
           </li>
           <li>
             <roleId>animal</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
+            <dutyDef>Idle</dutyDef>
           </li>
 		  <li>
             <roleId>dryad</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
+            <dutyDef>Idle</dutyDef>
           </li>
         </roleBehaviors>
       </li>
@@ -146,11 +154,11 @@
           </li>
           <li>
             <roleId>animal</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
+            <dutyDef>Idle</dutyDef>
           </li>
 		  <li>
             <roleId>dryad</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
+            <dutyDef>Idle</dutyDef>
           </li>
         </roleBehaviors>
         <visualEffectDef>SacrificeAnimal</visualEffectDef>
@@ -173,7 +181,7 @@
           </li>
           <li>
             <roleId>dryad</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
+            <dutyDef>Idle</dutyDef>
           </li>
         </roleBehaviors>
         <visualEffectDef>SacrificeAnimal</visualEffectDef>

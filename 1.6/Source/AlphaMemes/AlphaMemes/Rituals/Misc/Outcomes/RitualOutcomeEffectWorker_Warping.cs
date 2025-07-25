@@ -38,8 +38,9 @@ namespace AlphaMemes
                 this.ApplyAttachableOutcome(totalPresence, jobRitual, outcome, out text, ref lookTargets);
             }
 
-            Log.Message(outcome.positivityIndex.ToString());
-            Pawn sacrifice = jobRitual.PawnWithRole("animal");
+
+            var sacrifice = jobRitual.assignments.FirstAssignedPawn("animal");        //  PawnWithRole("animal");
+            Log.Message(sacrifice.ToStringSafe());
             float size = sacrifice.RaceProps.baseBodySize;
             PawnGenerationRequest request = new PawnGenerationRequest();
             string str = outcome.label + " " + jobRitual.Ritual.Label;
