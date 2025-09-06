@@ -5,7 +5,6 @@
 		<alwaysShowWeapon>false</alwaysShowWeapon>
 		<thinkNode Class="ThinkNode_Priority">
 			<subNodes>
-				
 				<li Class="AlphaMemes.JobGiver_Rodeo"/>
 				<li Class="JobGiver_Idle">
 					<ticks>60</ticks>
@@ -13,4 +12,5 @@
 			</subNodes>
 		</thinkNode>
 	</DutyDef>
+	
 </Defs>

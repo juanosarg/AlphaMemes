@@ -25,22 +25,25 @@ namespace AlphaMemes
 
         public override void Apply(float progress, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual)
         {
+        
             float quality = base.GetQuality(jobRitual, progress);
+          
             RitualOutcomePossibility outcome = this.GetOutcome(quality, jobRitual);
+         
             LookTargets lookTargets = jobRitual.selectedTarget;
-
-
-
-
+         
             string text = null;
             if (jobRitual.Ritual != null)
             {
+              
                 this.ApplyAttachableOutcome(totalPresence, jobRitual, outcome, out text, ref lookTargets);
             }
+      
+            Pawn sacrifice = jobRitual.PawnWithRole("animal");
+            Pawn dryad = jobRitual.PawnWithRole("dryad");
 
-          
-            Pawn sacrifice = jobRitual.PawnWithRole("animal");         
             float size = sacrifice.RaceProps.baseBodySize;
+          
             PawnGenerationRequest request = new PawnGenerationRequest();
             string str = outcome.label + " " + jobRitual.Ritual.Label;
             TaggedString taggedString = outcome.description.Formatted(jobRitual.Ritual.Label);
@@ -138,6 +141,8 @@ namespace AlphaMemes
             }
             request = new PawnGenerationRequest(chosenPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, 1f, false, true, true, false, false);
 
+            sacrifice.Kill(null);
+            dryad.Kill(null);
             Pawn pawn = PawnGenerator.GeneratePawn(request);
             GenSpawn.Spawn(pawn, jobRitual.selectedTarget.Cell, jobRitual.Map, WipeMode.Vanish);
             ChoiceLetter let = LetterMaker.MakeLetter(str, taggedString, LetterDefOf.RitualOutcomePositive, lookTargets, null, null, null);

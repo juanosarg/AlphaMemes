@@ -29,6 +29,7 @@
         <countsAsParticipant>False</countsAsParticipant>
         <ignoreBleeding>true</ignoreBleeding>
 		<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
+		<endJobOnRitualCleanup>false</endJobOnRitualCleanup>
       </li>
 	  <li Class="AlphaMemes.RitualRoleDryad">
         <label>channel</label>
@@ -62,7 +63,10 @@
             <roleId>ocularpriest</roleId>
            <dutyDef>DeliverPawnToCellIfAliveThenIdle</dutyDef>
 			<customPositions>
-              <li Class="RitualPosition_InFrontThingCenter" />
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>1</distFromTarget>
+                <duelistIndex>0</duelistIndex>
+              </li>
             </customPositions>
           </li>
           <li>
@@ -93,7 +97,10 @@
             <roleId>ocularpriest</roleId>
             <dutyDef>DeliverPawnToCellIfAliveThenIdle</dutyDef>
 			<customPositions>
-              <li Class="RitualPosition_BehindThingCenter" />
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>1</distFromTarget>
+                <duelistIndex>1</duelistIndex>
+              </li>
             </customPositions>
           </li>
           <li>
@@ -136,56 +143,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="AlphaMemes.RitualStage_InteractWithAnimalNotDryad">
-        <defaultDuty>Spectate</defaultDuty>
-        <essential>True</essential>
-        <endTriggers>
-          <li Class="StageEndTrigger_PawnDead">
-            <roleId>animal</roleId>
-          </li>
-        </endTriggers>
-        <roleBehaviors>
-          <li>
-            <roleId>ocularpriest</roleId>
-            <dutyDef>Sacrifice</dutyDef>
-            <customPositions>
-              <li Class="RitualPosition_OnInteractionCell" />
-            </customPositions>
-          </li>
-          <li>
-            <roleId>animal</roleId>
-            <dutyDef>Idle</dutyDef>
-          </li>
-		  <li>
-            <roleId>dryad</roleId>
-            <dutyDef>Idle</dutyDef>
-          </li>
-        </roleBehaviors>
-        <visualEffectDef>SacrificeAnimal</visualEffectDef>
-      </li>
-	   <li Class="AlphaMemes.RitualStage_InteractWithDryad">
-        <defaultDuty>Spectate</defaultDuty>
-        <essential>True</essential>
-        <endTriggers>
-          <li Class="StageEndTrigger_PawnDead">
-            <roleId>dryad</roleId>
-          </li>
-        </endTriggers>
-        <roleBehaviors>
-          <li>
-            <roleId>ocularpriest</roleId>
-            <dutyDef>Sacrifice</dutyDef>
-            <customPositions>
-              <li Class="RitualPosition_OnInteractionCell" />
-            </customPositions>
-          </li>
-          <li>
-            <roleId>dryad</roleId>
-            <dutyDef>Idle</dutyDef>
-          </li>
-        </roleBehaviors>
-        <visualEffectDef>SacrificeAnimal</visualEffectDef>
-      </li>
+
       <li>
         <defaultDuty>Spectate</defaultDuty>
         <endTriggers>
@@ -202,7 +160,16 @@
               <li Class="RitualPosition_OnInteractionCell" />
             </customPositions>
           </li>
+		   <li>
+            <roleId>animal</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+		  <li>
+            <roleId>dryad</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
         </roleBehaviors>
+		<visualEffectDef>SacrificeAnimal</visualEffectDef>
       </li>
     </stages>
   </RitualBehaviorDef>
