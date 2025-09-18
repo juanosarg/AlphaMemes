@@ -20,7 +20,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         public static void Postfix(Precept_Ritual ritual)
         {
-            if (!ritual.def.HasModExtension<FuneralPreceptExtension>())//Still have to worry about vanilla funeral
+            if (ritual?.def?.HasModExtension<FuneralPreceptExtension>()!=true)//Still have to worry about vanilla funeral
             {
                 return;
             }
