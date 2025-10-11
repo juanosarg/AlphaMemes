@@ -23,6 +23,10 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
+		 <li>
+		    <packageId>Ludeon.RimWorld.Ideology</packageId>
+		    <displayName>Ideology</displayName>
+	    </li>
 		
 	</modDependencies>
 	
