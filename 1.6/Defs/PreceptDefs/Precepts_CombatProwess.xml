@@ -62,7 +62,7 @@
 		
 		<statFactors>
 			<ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
-			
+			<VEF_VerbRangeFactor>1.2</VEF_VerbRangeFactor>
 		</statFactors>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
