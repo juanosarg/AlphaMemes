@@ -242,13 +242,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef ParentName="AM_RotateWeapons">
+	<!--<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Techist_ChargeSniperRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Techist/AM_TechistChargeSniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>
+	</ThingStyleDef>-->
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Techist_ChargeMinigun</defName>
 		<graphicData>
