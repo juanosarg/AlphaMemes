@@ -536,13 +536,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<!--<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Horaxian_ChargeSniperRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Horaxian/AM_HoraxianChargeSniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>-->
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Horaxian_ChargeMinigun</defName>
 		<graphicData>

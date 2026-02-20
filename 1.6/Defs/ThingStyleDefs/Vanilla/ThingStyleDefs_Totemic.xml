@@ -249,13 +249,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<!--<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_ChargeSniperRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicChargeSniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>-->
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_ChargeMinigun</defName>
 		<graphicData>
