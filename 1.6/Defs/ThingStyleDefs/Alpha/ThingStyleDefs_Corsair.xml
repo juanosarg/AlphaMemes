@@ -389,13 +389,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef ParentName="AM_RotateWeapons">
+	<!--<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ChargeSniperRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Corsair/AM_CorsairChargeSniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>
+	</ThingStyleDef>-->
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Corsair_ChargeMinigun</defName>
 		<graphicData>

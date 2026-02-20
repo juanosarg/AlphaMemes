@@ -29,10 +29,10 @@
 								<thingDef>VWE_Gun_ChargeLMG</thingDef>
 								<styleDef>AM_Horaxian_ChargeLMG</styleDef>
 							</li>
-							<li>
+							<!--<li>
 								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
 								<styleDef>AM_Horaxian_ChargeSniperRifle</styleDef>
-							</li>
+							</li>-->
 							<li>
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>AM_Horaxian_ChargeMinigun</styleDef>
@@ -74,10 +74,6 @@
 								<styleDef>AM_Horaxian_Crossbow</styleDef>
 							</li>
 							<li>
-								<thingDef>VWE_Gun_Flintlock</thingDef>
-								<styleDef>AM_Horaxian_Flintlock</styleDef>
-							</li>
-							<li>
 								<thingDef>VWE_Gun_HMG</thingDef>
 								<styleDef>AM_Horaxian_HMG</styleDef>
 							</li>
@@ -109,10 +105,6 @@
 								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
 								<styleDef>AM_Horaxian_MarksmanRifle</styleDef>
 							</li>
-							<li>
-								<thingDef>VWE_Gun_Musket</thingDef>
-								<styleDef>AM_Horaxian_Musket</styleDef>
-							</li>
 						</value>
 					</match>
 				</li>
@@ -141,7 +133,32 @@
 			</operations>
 		</match>
 	</Operation>
-	
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <success>Always</success>
+          <xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+            <value>
+              <li>
+                <thingDef>VFEM2_Gun_Flintlock</thingDef>
+                <styleDef>AM_Horaxian_Flintlock</styleDef>
+              </li>
+              <li>
+                <thingDef>VFEM2_Gun_Musket</thingDef>
+                <styleDef>AM_Horaxian_Musket</styleDef>
+              </li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 	
 
 	

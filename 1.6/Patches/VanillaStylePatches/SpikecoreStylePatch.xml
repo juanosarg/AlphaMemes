@@ -190,10 +190,10 @@
 								<thingDef>VWE_Gun_ChargeLMG</thingDef>
 								<styleDef>AM_Spikecore_ChargeLMG</styleDef>
 							</li>
-							<li>
+							<!--<li>
 								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
 								<styleDef>AM_Spikecore_ChargeSniperRifle</styleDef>
-							</li>
+							</li>-->
 							<li>
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>AM_Spikecore_ChargeMinigun</styleDef>
@@ -223,10 +223,6 @@
 							<li>
 								<thingDef>VWE_Bow_Crossbow</thingDef>
 								<styleDef>AM_Spikecore_Crossbow</styleDef>
-							</li>
-							<li>
-								<thingDef>VWE_Gun_Flintlock</thingDef>
-								<styleDef>AM_Spikecore_Flintlock</styleDef>
 							</li>
 							<li>
 								<thingDef>VWE_Gun_HMG</thingDef>
@@ -260,5 +256,27 @@
 			</operations>
 		</match>
 	</Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <success>Always</success>
+          <xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
+            <value>
+              <li>
+                <thingDef>VFEM2_Gun_Flintlock</thingDef>
+                <styleDef>AM_Spikecore_Flintlock</styleDef>
+              </li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 
 </Patch>
