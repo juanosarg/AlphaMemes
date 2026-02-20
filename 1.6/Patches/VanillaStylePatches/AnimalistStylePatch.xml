@@ -207,10 +207,10 @@
 											<thingDef>VWE_Gun_ChargeLMG</thingDef>
 											<styleDef>AM_Animalist_ChargeLMG</styleDef>
 										</li>
-										<!--<li>
+										<li>
 											<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
 											<styleDef>AM_Animalist_ChargeSniperRifle</styleDef>
-										</li>-->
+										</li>
 										<li>
 											<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 											<styleDef>AM_Animalist_ChargeMinigun</styleDef>

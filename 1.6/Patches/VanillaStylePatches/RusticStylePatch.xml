@@ -185,10 +185,10 @@
 								<thingDef>VWE_Gun_ChargeLMG</thingDef>
 								<styleDef>AM_Rustic_ChargeLMG</styleDef>
 							</li>
-							<!--<li>
+							<li>
 								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
 								<styleDef>AM_Rustic_ChargeSniperRifle</styleDef>
-							</li>-->
+							</li>
 							<li>
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>AM_Rustic_ChargeMinigun</styleDef>
