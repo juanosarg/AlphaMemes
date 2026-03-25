@@ -72,6 +72,7 @@
 		<graphicData>
 			<texPath>Things/Apparel/Corsair/AM_CorsairPowerArmorHelmet/AM_CorsairPowerArmorHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">

@@ -198,6 +198,41 @@
 
 		</graphicData>
 	</ThingStyleDef>
+	
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevivalShelf</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Shelf/AM_SteampunkShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevivalShelfSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/ShelfSmall/AM_SteampunkShelfSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevivalDresser</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/Dresser/AM_SteampunkDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>AM_SteampunkRevivalEndTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Steampunk/EndTable/AM_SteampunkEndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_Components</defName>
 		<graphicData>

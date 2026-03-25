@@ -91,6 +91,25 @@
 				<thingDef>GeothermalGenerator</thingDef>
 				<styleDef>AM_SteampunkRevival_GeothermalGenerator</styleDef>
 			</li>
+			
+			<li>
+				<thingDef>Shelf</thingDef>
+				<styleDef>AM_SteampunkRevivalShelf</styleDef>
+			</li>
+			<li>
+				<thingDef>ShelfSmall</thingDef>
+				<styleDef>AM_SteampunkRevivalShelfSmall</styleDef>
+			</li>
+			<li>
+				<thingDef>Dresser</thingDef>
+				<styleDef>AM_SteampunkRevivalDresser</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>EndTable</thingDef>
+				<styleDef>AM_SteampunkRevivalEndTable</styleDef>
+			</li>
+			
 			<li>
 				<thingDef>ComponentIndustrial</thingDef>
 				<styleDef>AM_SteampunkRevival_Components</styleDef>
