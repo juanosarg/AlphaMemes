@@ -46,7 +46,7 @@ namespace AlphaMemes
 			extraOutcomeDesc = null;
 			var data = compDatas.First(x => x is RitualOutcomeComp_TantrumData) as RitualOutcomeComp_TantrumData;
 			float wealth = data.colonyWealthBefore - jobRitual.Map.wealthWatcher.WealthBuildings;
-			extraOutcomeDesc = "AM_TantrumDestoryed".Translate(string.Join(", ",data.destoryedThings.Select(x=>x.LabelCap)), wealth.ToStringMoney());
+			extraOutcomeDesc = "AM_TantrumDestoryed".Translate(string.Join(", ",data.destoryedThings.Where(x=>x!=null).Select(x=>x.LabelCap)), wealth.ToStringMoney());
 		}
        
         protected override void ApplyDevelopmentPoints(Precept_Ritual ritual, RitualOutcomePossibility outcome, out string extraOutcomeDesc)
