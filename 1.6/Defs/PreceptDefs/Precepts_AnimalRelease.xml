@@ -29,7 +29,7 @@
 		<defName>AM_AnimalRelease_Encouraged</defName>
 		<issue>AM_AnimalRelease</issue>
 		<label>encouraged</label>
-		<description>Releasing animals to the wild is a noble endeavour. By raising or rescuing animals and them freeing them to repopulate the ecosystem we are enriching the amazing biodiversity around us.</description>
+		<description>Releasing animals to the wild is a noble endeavour. By raising or rescuing animals and then freeing them to repopulate the ecosystem we are enriching the amazing biodiversity around us.</description>
 		<impact>Medium</impact>
 
 		<displayOrderInIssue>20</displayOrderInIssue>

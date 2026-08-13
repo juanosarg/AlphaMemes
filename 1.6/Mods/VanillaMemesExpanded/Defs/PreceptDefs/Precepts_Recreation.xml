@@ -4,7 +4,7 @@
     <defName>AM_Recreation_Abhorrent</defName>
     <issue>VME_Recreation</issue>
     <label>abhorrent</label>
-    <description>Recreation is a complete waste of time. We have much more important things to do than indulging in meaningless recreative activities.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists get -15 mood for half a day after doing a recreation job.</description>
+    <description>Recreation is a complete waste of time. We have much more important things to do than indulging in meaningless recreational activities.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists get -15 mood for half a day after doing a recreation job.</description>
     <impact>High</impact>
 	<displayOrderInIssue>10</displayOrderInIssue>
 	<comps>

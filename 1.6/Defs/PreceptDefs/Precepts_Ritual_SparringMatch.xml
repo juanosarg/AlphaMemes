@@ -7,7 +7,7 @@
   <PreceptDef>
     <defName>AM_SparringMatch</defName>
     <label>sparring match</label>
-    <description>A test of skill and endurance where participants engage in friendly combat. Duelists will use their fists to fights and wounds will (usually) not be serious.</description>
+    <description>A test of skill and endurance where participants engage in friendly combat. Duelists will use their fists to fight and wounds will (usually) not be serious.</description>
     <issue>Ritual</issue>
     <impact>Medium</impact>
     <preceptClass>Precept_Ritual</preceptClass>

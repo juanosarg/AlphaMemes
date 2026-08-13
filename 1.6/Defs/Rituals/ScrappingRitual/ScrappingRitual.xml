@@ -117,7 +117,7 @@
         <label>Good</label>
         <chance>0.50</chance>
         <memory>FunFestival</memory>
-        <description>We succesfully extracted both materials and a great deal of knowledge from {0}.</description>
+        <description>We successfully extracted both materials and a great deal of knowledge from {0}.</description>
         <positivityIndex>1</positivityIndex>
       </li>
       <li>
@@ -141,7 +141,7 @@
      </li>
 	 <li Class="AlphaMemes.RitualOutcomeComp_Crafter">
 		<roleId>AM_Crafter</roleId>
-		<label>Scapper</label>
+		<label>Scrapper</label>
 		<skill>Crafting</skill>
 		<curve>
 		  <points>

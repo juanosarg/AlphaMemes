@@ -16,7 +16,7 @@
     <JobDef>
     <defName>AM_TrantrumJob</defName>
     <driverClass>AlphaMemes.JobDriver_RitualTantrum</driverClass>
-    <reportString>destorying TargetA.</reportString>
+    <reportString>destroying TargetA.</reportString>
     <casualInterruptible>false</casualInterruptible>
   </JobDef>
 

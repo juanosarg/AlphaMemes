@@ -174,7 +174,7 @@
         <label>Lackluster</label>
         <chance>0.2</chance>
         <memory>AM_LacklusterDreadnought</memory>
-        <description>The {0} was messy, I hope if I ever end up in that situation they do a better job.</description>
+        <description>The {0} was messy. I hope if I ever end up in that situation they do a better job.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
