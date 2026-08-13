@@ -144,7 +144,7 @@
 		</curve>
 	</li>
 	<li Class="AlphaMemes.RitualOutcomeComp_DistanceFromBuildings">
-		<label>artifical buildings</label>
+		<label>artificial buildings</label>
 		<radius>10</radius>
 		<curve>
 		  <points>

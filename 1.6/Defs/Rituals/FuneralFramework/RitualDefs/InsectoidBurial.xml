@@ -128,7 +128,7 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The insects didnt seem to enjoy them at all.</description>
+        <description>The {0} was terrible! The insects didn't seem to enjoy them at all.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>

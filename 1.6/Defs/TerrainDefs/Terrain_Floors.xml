@@ -364,7 +364,7 @@
 	</DesignatorDropdownGroupDef>
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_NeolithicTileStoneBase">
 		<renderPrecedence>220</renderPrecedence>
-		<description>Rough, ugly packed dirt. Very cheeap and quick to build, but barely better than regular dirt.</description>
+		<description>Rough, ugly packed dirt. Very cheap and quick to build, but barely better than regular dirt.</description>
 		<texturePath>Terrain/Surfaces/AM_PackedDirt</texturePath>
 		<statBases>
 			<WorkToBuild>75</WorkToBuild>

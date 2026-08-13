@@ -8,7 +8,7 @@
     <stages>
       <li>
         <label>disgraceful extraction</label>
-        <description>That extraction was devestating, now I have to say goodbye.</description>
+        <description>That extraction was devastating, now I have to say goodbye.</description>
         <baseMoodEffect>-3</baseMoodEffect>
       </li>
     </stages>
@@ -50,7 +50,7 @@
     <stages>
       <li>
         <label>amazing extraction</label>
-        <description>That exctraction was amazing. I can't wait to see what the final creation</description>
+        <description>That extraction was amazing. I can't wait to see the final creation.</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>

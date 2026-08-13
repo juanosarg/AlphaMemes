@@ -61,7 +61,7 @@
 	<Funeral_NotEnoughStuff>Not enough stuff: need {COUNT} of {STUFF}:</Funeral_NotEnoughStuff>
 	<AM_RitualCrafterOutcome>{LABEL} with {SKILL}</AM_RitualCrafterOutcome>
 	<AM_RitualRolePsyker>Psyker level</AM_RitualRolePsyker>
-	<AM_PsychicSensitivty>Deceased's Psycic sensitivty</AM_PsychicSensitivty>
+	<AM_PsychicSensitivty>Deceased's Psychic sensitivity</AM_PsychicSensitivty>
 	<Funeral_LaunchableRoofed>Unable to launch due to roof above pod</Funeral_LaunchableRoofed>
 	<Funeral_LaunchableNoFuel>Unable to launch due to no fuel for pod</Funeral_LaunchableNoFuel>
 	<Funeral_ThingLaunchable>A fueled and unroofed: {0}</Funeral_ThingLaunchable>
@@ -73,13 +73,13 @@
 	<Funeral_DreadnoughtDessicated>{CORPSE} is too far gone to even attempt</Funeral_DreadnoughtDessicated>
 	<Funeral_DreadnoughtBrainGone>{CORPSE}'s brain has been destroyed, there's nothing to be done</Funeral_DreadnoughtBrainGone>
 	<Funeral_DreadnoughtBrainGoneMessage>{PAWN}'s brain has been destroyed! We can't hold a {RITUAL} for them!</Funeral_DreadnoughtBrainGoneMessage>
-	<Funeral_DreadnoughtToYoung>{PAWN} tragically didnt make it to an age where they could fill; We can't hold a {RITUAL} for them!</Funeral_DreadnoughtToYoung>
+	<Funeral_DreadnoughtToYoung>{PAWN} tragically didn't make it to an age where they could fill; We can't hold a {RITUAL} for them!</Funeral_DreadnoughtToYoung>
 	<Funeral_ResearchNotCompleted>We do not yet possess the knowledge ({0}) to complete this</Funeral_ResearchNotCompleted>
 	<Funeral_OpportunitiesFor>Funerals for {PAWN}</Funeral_OpportunitiesFor>
-	<Funeral_OptionsCount>{0} Avaliable Funeral Obigations</Funeral_OptionsCount>
+	<Funeral_OptionsCount>{0} Available Funeral Obligations</Funeral_OptionsCount>
 	<Funeral_ThingNotEmpty>{0} is not empty</Funeral_ThingNotEmpty>
 	<Funeral_CorpseContainerFull>{0} is full</Funeral_CorpseContainerFull>
-	<Funeral_Gauralen>A Gauralen Tree</Funeral_Gauralen>
+	<Funeral_Gauralen>A Gauranlen Tree</Funeral_Gauralen>
 	<AM_CorpseContainerOpen>This is not reversible! Once the body is out they can not be put back in</AM_CorpseContainerOpen>
 	<AM_CorpseContainerFailedToEject>Unable to remove corpse; try moving thing if possible</AM_CorpseContainerFailedToEject>
 	<Funeral_FreshCorpse>Corpse can't be rotted</Funeral_FreshCorpse>
@@ -89,10 +89,10 @@
 	<AM_UnnaturalThingsAffecting>Buildings affecting quality in {0} radius</AM_UnnaturalThingsAffecting>
 	<AM_CorpseContainerMultiDiedOn>{NAME} died on {DATE}</AM_CorpseContainerMultiDiedOn>
 	<Funeral_SkyburialAnimalsWanderIn>The success of the sky burial has led new animals to the area</Funeral_SkyburialAnimalsWanderIn>
-	<AM_TantrumDestoryed>All told we have destoryed {1} worth of buildings \n\n We destroyed: {0}</AM_TantrumDestoryed>
+	<AM_TantrumDestoryed>All told we have destroyed {1} worth of buildings \n\n We destroyed: {0}</AM_TantrumDestoryed>
 	<AM_TantrumOutcomeComp>Wealth Destroyed</AM_TantrumOutcomeComp>
 	<AM_TantrumMustBePlayerHome>Has to be started in your home colony</AM_TantrumMustBePlayerHome>
-	<AM_ScrapperHighTechThing>A valuable, hightech piece of technology that we can haul</AM_ScrapperHighTechThing>
+	<AM_ScrapperHighTechThing>A valuable, high-tech piece of technology that we can haul</AM_ScrapperHighTechThing>
 	<AM_ScrapperRitualOutcome>We have salvaged {0} {1} {2}.</AM_ScrapperRitualOutcome>
 	<AM_ScrapperComponentCount>resulting in {0} components</AM_ScrapperComponentCount>
 	<AM_ScrapperAdvComponentCount>and {0} advanced components</AM_ScrapperAdvComponentCount>

@@ -9,7 +9,7 @@
     <stackLimit>3</stackLimit>
     <stages>
       <li>
-        <label>blasphemous  baptism</label>
+        <label>blasphemous baptism</label>
         <description>The ritual was an affront to the holiness of water. This desecration will linger in my thoughts.</description>
         <baseMoodEffect>-3</baseMoodEffect>
       </li>
@@ -23,7 +23,7 @@
     <stackLimit>3</stackLimit>
     <stages>
       <li>
-        <label>underwhelming  baptism</label>
+        <label>underwhelming baptism</label>
         <description>The ceremony lacked the spirit and grace it deserved. It felt hollow and uninspired.</description>
         <baseMoodEffect>-1</baseMoodEffect>
       </li>

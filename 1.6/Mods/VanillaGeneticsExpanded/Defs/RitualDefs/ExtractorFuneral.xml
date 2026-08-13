@@ -151,7 +151,7 @@
         <label>Terrible</label>
         <chance>0.1</chance>
         <memory>GR_TerribleExtraction</memory>
-        <description>The {0} was a terrible! Everyone felt devestated for having to see the genomes destroyed.</description>
+        <description>The {0} was terrible! Everyone felt devastated for having to see the genomes destroyed.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>

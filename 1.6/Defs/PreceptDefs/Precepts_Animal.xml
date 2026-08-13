@@ -29,7 +29,7 @@
     <defName>AM_AnimalDespised</defName>
     <issue>AM_AnimalsDespised</issue>
     <label>despised</label>
-    <description>This animal is considered by believers to be specially abhorrent, which means it must be hunted and exterminated at all costs.</description>
+    <description>This animal is considered by believers to be especially abhorrent, which means it must be hunted and exterminated at all costs.</description>
     <preceptClass>AlphaMemes.Precept_DespisedAnimal</preceptClass>
     <workerClass>AlphaMemes.PreceptWorker_DespisedAnimal</workerClass>
     <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>

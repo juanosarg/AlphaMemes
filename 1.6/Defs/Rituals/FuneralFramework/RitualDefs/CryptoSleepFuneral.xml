@@ -99,7 +99,7 @@
         <label>Terrible</label>
         <chance>0.05</chance>
         <memory>AM_TerribleFuneral</memory>
-        <description>The {0} was terrible! The speech was boring and it was disprespected their legacy.</description>
+        <description>The {0} was terrible! The speech was boring and it was disrespectful of their legacy.</description>
         <positivityIndex>-2</positivityIndex>
       </li>
       <li>

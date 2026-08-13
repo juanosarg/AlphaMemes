@@ -23,7 +23,7 @@
 		<defName>AM_Barracks_PreferredTrue</defName>
 		<issue>AM_Barracks</issue>
 		<label>preferred</label>
-		<description>Sharing a bedroom bring a certain sensation of security in the Rim. Who would want to sleep alone in such a terrible world?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists receive small positive mood boosts by sleeping in barracks.\n - Colonists receive negative mood by sleeping in a private room.</description>
+		<description>Sharing a bedroom brings a certain sensation of security in the Rim. Who would want to sleep alone in such a terrible world?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists receive small positive mood boosts by sleeping in barracks.\n - Colonists receive negative mood by sleeping in a private room.</description>
 		<impact>Low</impact>
 	
 		
