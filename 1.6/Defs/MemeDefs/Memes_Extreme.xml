@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>AM_DeepDevotion</defName>
+		<label>deep devotion</label>
+		<description>Humans ought to live underground, and enjoy the succulent fruit of the depths.\n&lt;color=#c79fef&gt;Extreme version of the Tunneler meme.&lt;/color&gt;</description>
+		<iconPath>UI/Memes/AM_DeepDevotion</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>4</impact>
+		<exclusionTags>
+			<li>AM_TunnelerAndDeepDevotion</li>
+			<li>AM_LightAndDeepDevotion</li>
+			<li>AM_ShipbornAndDeepDevotion</li>
+		</exclusionTags>
+		<requireOne>
+			<li>
+				<li>AM_FungusEating_Required</li>
+			</li>
+			<li>
+				<li>AM_InsectMeatEating_Required</li>
+			</li>
+			<li>
+				<li>AM_Indoors_Required</li>
+			</li>
+			<li>
+				<li>AB_MiningYield_VeryHigh</li>
+			</li>
+			<li>
+				<li>AM_RoomSize_Small</li>
+			</li>
+			<li>
+				<li>AM_PlantSowing_Inside</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->depth</li>
+				<li>memeCreed->cavern</li>
+				<li>memeCreed->stone</li>
+				<li>memeCreed->earth</li>
+				<li>memeCreed->delving</li>
+				<li>memeAdjective->deep</li>
+				<li>memeAdjective->subterranean</li>
+				<li>memeAdjective->stonebound</li>
+				<li>memeAdjective->buried</li>
+				<li>memeHyphenPrefix->stone</li>
+				<li>memeHyphenPrefix->cave</li>
+				<li>memeHyphenPrefix->deep</li>
+				<li>memeHyphenPrefix->under</li>
+				<li>memeHyphenPrefix->earth</li>
+				<li>memeConcept->earth</li>
+				<li>memeConcept->stone</li>
+				<li>memeConcept->depth</li>
+				<li>memeConcept->cavern</li>
+				<li>memeConcept->underground</li>
+				<li>memeLeaderNoun->foredigger</li>
+				<li>memeLeaderNoun->deepmaster</li>
+				<li>memeLeaderNoun->stonewarden</li>
+				<li>memeLeaderAdjective->deep</li>
+				<li>memeLeaderAdjective->stonebound</li>
+				<li>memeLeaderAdjective->subterranean</li>
+				<li>memeMoralist->truthdigger</li>
+				<li>memeMoralist->thoughtdigger</li>
+				<li>memeMoralist->mindminer</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_DeepDevotion)        ->Before the mountains rose and the seas were formed, [deity0_name] carved the first chamber from the living earth. There [deity0_pronoun] sheltered the first people and taught them that the world above was never meant to be their home.</li>
+					<li>episode(uses=1,tag=meme_DeepDevotion)  ->When [deity0_possessive] people had exhausted the riches of the upper earth, [deity0_name] opened a passage into the depths and revealed the endless bounty hidden beneath their feet.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_DeepDevotion)           ->When the first settlers reached the [place_summary] [place_name], they were afraid of the endless sky above them. The [deity0_type] [deity0_name] answered their prayers by revealing a great cavern beneath the earth.</li>
+					<li>conflict(tag=meme_DeepDevotion)        ->A proud [foeLeader] mocked the [memberNamePlural] for hiding beneath the earth, claiming that true people belonged beneath the open sky. The faithful answered by digging deeper.</li>
+					<li>founderJoin(tag=meme_DeepDevotion)     ->[founderName] spent seven years alone in a cave beneath [place_name], surviving on fungus and water. When [founderName] emerged, [founder_pronoun] proclaimed that the deepest darkness had shown [founder_objective] the true meaning of life.</li>
+					<li>victory(tag=meme_DeepDevotion)         ->When the [foeLeader] invaded the [memberNamePlural]' settlement, [founderName] ordered everyone to retreat underground. The invaders found nothing but empty rooms, while the [memberNamePlural] emerged from hidden tunnels behind them and drove them away.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_DeepDevotion)           ->[founderName] looked upon the vastness of the surface and saw only emptiness. Beneath the earth, surrounded by stone, [founderName] discovered purpose and founded our movement.</li>
+					<li>story(uses=1,tag=meme_DeepDevotion)    ->[founderName] gathered those who feared the surface and led them into the mountains. Together they carved halls, chambers, and sanctuaries from the rock, creating a home that could never be taken from them.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_DeepDevotion)         ->I once climbed to the surface and looked upon the endless sky. That was when I understood:</li>
+					<li>lesson(tag=meme_DeepDevotion)              ->the farther we descend beneath the earth, the closer we come to the place where humanity truly belongs</li>
+					<li>lessonReinforcement(tag=meme_DeepDevotion) ->Do not fear the darkness. The stone above us is stronger than any sky.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_DeepDevotion)    ->The archotechs understood that survival requires control over one's environment. They buried their greatest works beneath the earth, where neither weather nor the stars could interfere.</li>
+					<li>archistFact(tag=meme_DeepDevotion)     ->The archotechs constructed vast subterranean complexes capable of sustaining entire populations without ever requiring access to the surface.</li>
+					<li>archistProphecy(tag=meme_DeepDevotion) ->[inTheEnd], the surface will become an abandoned ruin while the archotechs awaken beneath the earth to welcome those who followed their example.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_DeepDevotion)     ->The earth remembers every footstep taken upon it. Those who dwell beneath the soil can hear its ancient memories in the silence.</li>
+					<li>animistFact(tag=meme_DeepDevotion)     ->Every stone has a spirit, but the oldest stones possess the greatest wisdom. We must dig deep enough to hear them.</li>
+					<li>animistFact(tag=meme_DeepDevotion)     ->The roots of the great trees reach downward seeking the same ancient spirits that dwell in the deep earth.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_DeepDevotion)->[itIsSaid] that the sacred insects were the first creatures to discover the hidden passages beneath the earth, and that they still guard the deepest chambers.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_DeepDevotion)->Something ancient sleeps beneath the lowest stone. Those who descend far enough may hear it breathing in the darkness.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_DeepDevotion)->Every layer of earth conceals another layer of reality. Those who descend far enough will eventually reach the truth beneath existence itself.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_DeepDevotion)->When the final age arrives, the mountains will close over the world and the last survivors will retreat into the eternal depths, where they will wait for the surface to die.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_DeepDevotion)->Management is pleased to announce the completion of our new Deep Workplace Optimization Initiative. Employees are encouraged to relocate their desks, meetings, cafeterias, break rooms, and personal quarters to increasingly lower floors. Studies indicate that employee satisfaction increases by approximately 4% for every hundred meters below ground.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_DeepDevotion)->Humanity has spent its history looking toward the stars, but perhaps the greatest civilizations are those that turned inward and built their worlds beneath the surface.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<renderOrder>110</renderOrder>
+		<addDesignators>
+			<li>FungalGravel</li>
+			<li>AM_RichFungalGravel</li>
+		</addDesignators>
+		<styleItemTags>
+			<li>
+				<tag>TattooBodyInsect</tag>
+				<baseWeight>0.01</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<startingResearchProjects>
+			<li>Stonecutting</li>
+			<li>Devilstrand</li>
+		</startingResearchProjects>
+		<agreeableTraits>
+			<li>Undergrounder</li>
+		</agreeableTraits>
+	</MemeDef>
+</Defs>

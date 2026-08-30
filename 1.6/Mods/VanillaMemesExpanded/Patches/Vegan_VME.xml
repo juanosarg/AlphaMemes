@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/PreceptDef[defName="AM_PastedFuneral"]/conflictingMemes</xpath>
+		<xpath>Defs/PreceptDef[defName="AM_PastedFuneral"]/conflictingMemes</xpath>
 		<value>
 			<li>VME_Vegan</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/MemeDef[defName="VME_Vegan"]/exclusionTags</xpath>
+		<xpath>Defs/MemeDef[defName="VME_Vegan"]/exclusionTags</xpath>
 		<value>
 			<li>VME_CowboysVsVegan</li>
 		</value>

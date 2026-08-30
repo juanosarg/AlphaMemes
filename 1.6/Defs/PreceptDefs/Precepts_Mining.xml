@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <PreceptDef>
+    <defName>AB_MiningYield_VeryHigh</defName>
+    <issue>MiningYield</issue>
+    <label>very high</label>
+    <description>Mining is sacred to us. We devote ourselves to it with absolute focus and reverence, and the earth rewards our dedication with greater abundance.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - 25% of the time, mining will produce small amounts of other random minerals.</description>
+    <impact>High</impact>
+    
+    <requiredMemes>
+      <li>AM_DeepDevotion</li>
+    </requiredMemes>
+    <statOffsets>
+      <MiningYield>0.15</MiningYield>
+    </statOffsets>
+  </PreceptDef>
+
+ 
+
+</Defs>

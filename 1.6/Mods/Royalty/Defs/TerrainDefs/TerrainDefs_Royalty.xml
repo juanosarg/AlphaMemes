@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FineTileStoneBase">
+		<defName>AM_FinestonePristineLimestone</defName>
+		<label>fine pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>20</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+</Defs>
+

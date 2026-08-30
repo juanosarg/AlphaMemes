@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="WorkTableWorkSpeedFactor"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="WorkTableWorkSpeedFactor"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_WorkTableArt"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="MinimumHandlingSkill"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="MinimumHandlingSkill"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_Handling_Analyzed">
 				<offset>-2</offset>
@@ -16,34 +16,34 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_MoveSpeed_HorsesPrecept"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="ArmorRating_Blunt"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="ArmorRating_Blunt"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_ExtraBlunt"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="ArmorRating_Sharp"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="ArmorRating_Sharp"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_ExtraSharp"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="ArmorRating_Heat"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="ArmorRating_Heat"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_ExtraHeat"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/StatDef[defName = "FilthRate"]/parts</xpath>
+		<xpath>Defs/StatDef[defName = "FilthRate"]/parts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "FilthRate"]</xpath>
+			<xpath>Defs/StatDef[defName = "FilthRate"]</xpath>
 			<value>
 				<parts>
 					<li Class="AlphaMemes.StatPart_FilthRate_Analyzed"/>
@@ -51,7 +51,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "FilthRate"]/parts</xpath>
+			<xpath>Defs/StatDef[defName = "FilthRate"]/parts</xpath>
 			<value>
 				<li Class="AlphaMemes.StatPart_FilthRate_Analyzed"/>
 			</value>
@@ -59,9 +59,9 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/StatDef[defName = "CaravanRidingSpeedFactor"]/parts</xpath>
+		<xpath>Defs/StatDef[defName = "CaravanRidingSpeedFactor"]/parts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "CaravanRidingSpeedFactor"]</xpath>
+			<xpath>Defs/StatDef[defName = "CaravanRidingSpeedFactor"]</xpath>
 			<value>
 				<parts>
 					<li Class="AlphaMemes.StatPart_CaravanRidingSpeedFactor_Analyzed"/>
@@ -70,7 +70,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "CaravanRidingSpeedFactor"]/parts</xpath>
+			<xpath>Defs/StatDef[defName = "CaravanRidingSpeedFactor"]/parts</xpath>
 			<value>
 				<li Class="AlphaMemes.StatPart_CaravanRidingSpeedFactor_Analyzed"/>
 				<li Class="AlphaMemes.StatPart_CaravanRidingSpeedFactor_HorsesPrecept"/>
@@ -79,9 +79,9 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
+		<xpath>Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]</xpath>
+			<xpath>Defs/StatDef[defName = "MeditationFocusStrength"]</xpath>
 			<value>
 				<parts>
 					<li Class="AlphaMemes.StatPart_MeditationFocusStrength"/>
@@ -89,7 +89,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
+			<xpath>Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
 			<value>
 				<li Class="AlphaMemes.StatPart_MeditationFocusStrength"/>
 			</value>
@@ -97,9 +97,9 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/StatDef[defName = "EatingSpeed"]/parts</xpath>
+		<xpath>Defs/StatDef[defName = "EatingSpeed"]/parts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "EatingSpeed"]</xpath>
+			<xpath>Defs/StatDef[defName = "EatingSpeed"]</xpath>
 			<value>
 				<parts>
 					<li Class="AlphaMemes.StatPart_EatingSpeed_CattlePrecept"/>
@@ -107,20 +107,20 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "EatingSpeed"]/parts</xpath>
+			<xpath>Defs/StatDef[defName = "EatingSpeed"]/parts</xpath>
 			<value>
 				<li Class="AlphaMemes.StatPart_EatingSpeed_CattlePrecept"/>
 			</value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="MaxNutrition"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="MaxNutrition"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_MaxNutrition_CattlePrecept"/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+		<xpath>Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
 		<value>
 			<li Class="AlphaMemes.StatPart_ImmunityGainSpeed_CattlePrecept"/>
 		</value>

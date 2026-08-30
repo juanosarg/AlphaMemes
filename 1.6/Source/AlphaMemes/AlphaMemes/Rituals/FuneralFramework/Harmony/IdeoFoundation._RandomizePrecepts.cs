@@ -39,7 +39,8 @@ namespace AlphaMemes
                                               where x.GetModExtension<FuneralPreceptExtension>()._weighting > 0 &&
                                               x.GetModExtension<FuneralPreceptExtension>().CanAddPrecept(__instance.ideo, x, parms.forFaction)
                                               select x).ToList();
-                PreceptDef def = validDefs.RandomElementByWeight(x => x.GetModExtension<FuneralPreceptExtension>().Weighting(__instance.ideo, x));
+                PreceptDef def;
+                validDefs.TryRandomElementByWeight(x => x.GetModExtension<FuneralPreceptExtension>().Weighting(__instance.ideo, x),out def); 
                 if (def != null)
                 {
                     __instance.ideo.AddPrecept(PreceptMaker.MakePrecept(def), true, null, def.ritualPatternBase);

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/MemeDef[defName = "VME_Light"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName = "VME_Light"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>AM_LightAndDeepDevotion</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/MemeDef[defName = "VME_Light"]/exclusionTags</xpath>
+			<value>
+				<li>AM_LightAndDeepDevotion</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+
+	

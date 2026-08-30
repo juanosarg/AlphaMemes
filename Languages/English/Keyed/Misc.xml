@@ -42,7 +42,10 @@
 	<AM_CurrentTotalCattleBodySizePerColonist>Current total cattle bodysize per colonist</AM_CurrentTotalCattleBodySizePerColonist>
 	<AM_StatsReport_HorseDesired>Horses: desired precept</AM_StatsReport_HorseDesired>
 	<AM_StatsReport_CattleImproved>Cattle: improved precept</AM_StatsReport_CattleImproved>
-	  <AM_CantStartNotEnoughSpaceRodeo>Not enough space for cowboy and cattle. There must be a clear circle of radius {MINRADIUS}. At least {1} standable spots in that radius required.</AM_CantStartNotEnoughSpaceRodeo>
+	<AM_CantStartNotEnoughSpaceRodeo>Not enough space for cowboy and cattle. There must be a clear circle of radius {MINRADIUS}. At least {1} standable spots in that radius required.</AM_CantStartNotEnoughSpaceRodeo>
+	<AM_IdeoMemeImpactLabel_4>extreme</AM_IdeoMemeImpactLabel_4>
+	<AM_IdeoImpactLabel_10>super extreme</AM_IdeoImpactLabel_10>
+	<AM_IdeoImpactLabel_11>insane</AM_IdeoImpactLabel_11>
 	
 	<!--Funeral Stings-->
 	

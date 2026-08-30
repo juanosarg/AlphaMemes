@@ -2,12 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "Owl_Heater"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Owl_Heater"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Owl_Heater"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Owl_Heater"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -15,7 +15,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "Owl_Heater"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>
@@ -25,12 +25,12 @@
 	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "Vent"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Vent"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "Vent"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "Vent"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Vent"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Vent"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -38,7 +38,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Vent"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "Vent"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>

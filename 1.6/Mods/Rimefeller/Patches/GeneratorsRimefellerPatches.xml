@@ -2,12 +2,12 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "OilWell"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "OilWell"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "OilWell"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "OilWell"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "OilWell"]</xpath>
+				<xpath>Defs/ThingDef[defName = "OilWell"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -15,7 +15,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "OilWell"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "OilWell"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>
@@ -24,12 +24,12 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "DeepOilWell"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "DeepOilWell"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "DeepOilWell"]</xpath>
+				<xpath>Defs/ThingDef[defName = "DeepOilWell"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -37,7 +37,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "DeepOilWell"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>
@@ -46,12 +46,12 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "OilStorage"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "OilStorage"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "OilStorage"]</xpath>
+				<xpath>Defs/ThingDef[defName = "OilStorage"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -59,7 +59,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "OilStorage"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>
@@ -68,12 +68,12 @@
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/ThingDef[defName = "FuelStorage"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
+		<xpath>Defs/ThingDef[defName = "FuelStorage"]/comps/li[@Class = "CompProperties_Styleable"]</xpath>
 		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
 			<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FuelStorage"]</xpath>
+				<xpath>Defs/ThingDef[defName = "FuelStorage"]</xpath>
 				<value>
 					<comps>
 						<li Class="CompProperties_Styleable"/>
@@ -81,7 +81,7 @@
 				</value>
 			</nomatch>
 			<match Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName = "FuelStorage"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Styleable"/>
 				</value>

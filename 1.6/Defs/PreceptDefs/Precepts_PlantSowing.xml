@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_PlantSowing</defName>
+		<label>plant sowing</label>
+		<iconPath>UI/Issues/AM_PlantSowing</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>AM_SowedPlantOutside</defName>
+		<label>sowed plant outside</label>
+	</HistoryEventDef>
+	<PreceptDef>
+		<defName>AM_PlantSowing_Inside</defName>
+		<issue>AM_PlantSowing</issue>
+		<label>inside</label>
+		<description>We should grow our crops safely beneath the earth, where they can thrive away from the harsh surface.</description>
+		<impact>Medium</impact>
+		<requiredMemes>
+			<li>AM_DeepDevotion</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AM_SowedPlantOutside</eventDef>
+				<thought>AM_PlantSowing_Inside_SowedPlantOutside</thought>
+			</li>
+		</comps>
+		<conditionalStatAffecters>
+			<li Class="VEF.Genes.ConditionalStatAffecter_Outdoors">
+				<statOffsets>
+					<PlantWorkSpeed>-0.5</PlantWorkSpeed>
+				</statOffsets>
+			</li>
+		</conditionalStatAffecters>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_PlantSowing_Inside_SowedPlantOutside</defName>
+		<durationDays>2</durationDays>
+		 <stackLimit>5</stackLimit>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>sowed plants outside</label>
+				<description>I sowed a plant outside. We should grow our crops safely beneath the earth.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

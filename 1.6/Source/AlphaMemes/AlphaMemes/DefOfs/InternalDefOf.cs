@@ -87,6 +87,9 @@ namespace AlphaMemes
         public static PreceptDef AM_TeaYield_Increased;
         [MayRequireRoyalty]
         public static PreceptDef AM_AnimaScreams_Delightful;
+        public static PreceptDef AM_InsectMeatEating_Required;
+        public static PreceptDef AM_FungusEating_Required;
+        public static PreceptDef AB_MiningYield_VeryHigh;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -135,6 +138,7 @@ namespace AlphaMemes
         public static HistoryEventDef AM_DrankTea;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static HistoryEventDef AM_DrankSpecialtyTea;
+        public static HistoryEventDef AM_SowedPlantOutside;
 
         public static ThingDef AM_TrapBlunt;
         public static ThingDef AM_AnimalDatabase;
@@ -186,6 +190,8 @@ namespace AlphaMemes
         public static ThingDef VBE_Plant_Tea;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static ThingDef VBE_Tea;
+        public static ThingDef Meat_Megaspider;
+        public static ThingDef RawFungus;
 
         public static FleckDef PsycastPsychicEffect;
 

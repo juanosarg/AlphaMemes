@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_RoomSize</defName>
+		<label>room sizes</label>
+		<iconPath>UI/Issues/AM_RoomSize</iconPath>
+	</IssueDef>
+	<PreceptDef>
+		<defName>AM_RoomSize_Small</defName>
+		<label>small</label>
+		<issue>AM_RoomSize</issue>
+		<description>Large rooms and caverns remind us too much of the dangerous outdoors. We prefer tight, cramped accomodations.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_DeepDevotion</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_RoomSize_Small</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_RoomSize_Small</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_RoomSize_Small</workerClass>
+		<stages>
+			
+				<li>
+					<label>confined interior</label>
+					<description>This space is wonderfully tiny. I feel safe and comfortable surrounded by solid walls.</description>
+					<baseMoodEffect>5</baseMoodEffect>
+				</li>
+				<li>
+					<label>cramped interior</label>
+					<description>This room is perfectly snug. There's no need for all that wasted space.</description>
+					<baseMoodEffect>2</baseMoodEffect>
+				</li>
+				<li>
+					<label>spacious interior</label>
+					<description>This room is far too expansive. All this empty space makes me feel exposed.</description>
+					<baseMoodEffect>-10</baseMoodEffect>
+				</li>
+			
+		</stages>
+	</ThoughtDef>
+</Defs>

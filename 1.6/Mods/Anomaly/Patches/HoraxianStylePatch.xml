@@ -9,9 +9,9 @@
 			<operations>
 				<li Class="PatchOperationConditional">
 					<success>Always</success>
-					<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+					<xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+						<xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
 						<value>
 							<li>
 								<thingDef>VWE_Gun_ChargePistol</thingDef>
@@ -119,9 +119,9 @@
 			<operations>
 				<li Class="PatchOperationConditional">
 					<success>Always</success>
-					<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+					<xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+						<xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
 						<value>
 							<li>
 								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
@@ -141,9 +141,9 @@
       <operations>
         <li Class="PatchOperationConditional">
           <success>Always</success>
-          <xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+          <xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
+            <xpath>Defs/StyleCategoryDef[defName = "AM_Horaxian"]/thingDefStyles</xpath>
             <value>
               <li>
                 <thingDef>VFEM2_Gun_Flintlock</thingDef>

@@ -37,14 +37,30 @@ namespace AlphaMemes
 
 
         [HarmonyPostfix]
-        static void IngestedNutrientPaste(Thing __instance, Pawn ingester)
+        public static void IngestedNutrientPaste(Thing __instance, Pawn ingester)
         {
             if (ingester?.RaceProps?.Humanlike==true)
             {
                 if (nutrientMeals.Contains(__instance.def) && ingester.Ideo?.HasPrecept(InternalDefOf.AM_NutrientPasteEating_Forbidden) == true)
                 {
                     ingester.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
+                    if (ingester.needs?.food != null)
+                    {
+                        ingester.needs.food.CurLevel = -0.3f;
+                    }
+                }
 
+                if (ingester.Ideo?.HasPrecept(InternalDefOf.AM_InsectMeatEating_Required) == true && ingester.Ideo?.HasPrecept(InternalDefOf.AM_FungusEating_Required) == true)
+                {
+                    if(!__instance.def.IsFungus && !FoodUtility.IsInsectCorpseOrInsectMeatIngredient(__instance))
+                    {
+                        ingester.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
+                        if (ingester.needs?.food != null)
+                        {
+                            ingester.needs.food.CurLevel = -0.3f;
+                        }
+                        
+                    }
                 }
 
                 if (InternalDefOf.AM_AteSimpleMeal != null && __instance.def?.ingestible?.preferability == FoodPreferability.MealSimple)

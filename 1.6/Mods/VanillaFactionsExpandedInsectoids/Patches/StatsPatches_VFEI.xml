@@ -2,9 +2,9 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>/Defs/StatDef[defName = "Beauty"]/parts</xpath>
+		<xpath>Defs/StatDef[defName = "Beauty"]/parts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "Beauty"]</xpath>
+			<xpath>Defs/StatDef[defName = "Beauty"]</xpath>
 			<value>
 				<parts>
 					<li Class="AlphaMemes.StatPart_CreepBeauty"/>
@@ -12,7 +12,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName = "Beauty"]/parts</xpath>
+			<xpath>Defs/StatDef[defName = "Beauty"]/parts</xpath>
 			<value>
 				<li Class="AlphaMemes.StatPart_CreepBeauty"/>
 			</value>

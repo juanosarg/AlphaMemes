@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_FungusEating_Required</defName>
+		<issue>FungusEating</issue>
+		<label>required</label>
+		<description>Fungus sustains us where surface crops fail. We should eat nothing that cannot thrive in the darkness.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating anything different than fungus (or insect meat) will make the colonist vomit immediately.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_DeepDevotion</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteFungus</eventDef>
+				<thought>AteFungus_Preferred</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteFungusAsIngredient</eventDef>
+				<thought>AteFungusAsIngredient_Preferred</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteNonFungusPlant</eventDef>
+				<thought>AteNonFungusPlant_Despised</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>AteNonFungusMealWithPlants</eventDef>
+				<thought>AteNonFungusMealWithPlants_Despised</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+</Defs>

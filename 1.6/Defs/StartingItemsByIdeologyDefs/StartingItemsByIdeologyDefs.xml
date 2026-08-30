@@ -22,7 +22,11 @@
 		<thingSetMaker>AM_ThingSetMakerHorses</thingSetMaker>		
 	</VEF.Memes.StartingItemsByIdeologyDef>
 
-
+	<VEF.Memes.StartingItemsByIdeologyDef>
+		<defName>AM_StartingItemsDeepDevotion</defName>
+		<associatedMeme>AM_DeepDevotion</associatedMeme>	
+		<thingSetMaker>AM_ThingSetMakerDeepDevotion</thingSetMaker>		
+	</VEF.Memes.StartingItemsByIdeologyDef>
 
 
 
