@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[defName = "SlabBed_Preferred"]/requiredMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName = "SlabBed_Preferred"]</xpath>
+			<value>
+				<requiredMemes>
+					<li>AM_PainIsDivine</li>
+				</requiredMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PreceptDef[defName = "SlabBed_Preferred"]/requiredMemes</xpath>
+			<value>
+				<li>AM_PainIsDivine</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

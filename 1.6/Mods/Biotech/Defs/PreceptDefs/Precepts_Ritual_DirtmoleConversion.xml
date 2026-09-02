@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>AM_DirtmoleConversionPrecept</defName>
+		<label>embrace the deep</label>
+		<description>Using forbidden genetic engineering techniques, imbue a colonist with a dirtmole endogerm, reshaping their body with enlarged digging claws, powerful limbs, thickened skin, and enhanced senses suited to life underground.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>AM_DirtmoleConversionPattern</ritualPatternBase>
+		<iconPath>UI/Rituals/AM_DirtmoleConversion</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<useCooldownFromAbilityGroupDef>AM_DirtmoleConversion</useCooldownFromAbilityGroupDef>
+		<requiredMemes>		
+			<li>AM_DeepDevotion</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

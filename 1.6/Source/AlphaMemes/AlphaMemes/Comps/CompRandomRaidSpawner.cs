@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AlphaMemes;
+using HarmonyLib;
 using RimWorld;
 using RimWorld.QuestGen;
 using UnityEngine;
@@ -28,7 +29,12 @@ namespace AlphaMemes
 
         public void SpawnHostileRaid()
         {
-            Faction faction = Find.FactionManager.RandomRaidableEnemyFaction(allowHidden: false, allowDefeated: false, allowNonHumanlike: false, TechLevel.Industrial);
+            TechLevel techLevel = TechLevel.Industrial;
+            if (ModLister.HasActiveModWithName("Medieval Overhaul"))
+            {
+                techLevel = TechLevel.Medieval;
+            }
+            Faction faction = Find.FactionManager.RandomRaidableEnemyFaction(allowHidden: false, allowDefeated: false, allowNonHumanlike: false, techLevel);
             bool causeEclipse = false;
             if (faction != null)
             {

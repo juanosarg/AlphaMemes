@@ -116,7 +116,7 @@
 		<defName>AM_TreeDensityReduced</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<minExpectation>Moderate</minExpectation>
-		<workerClass>ThoughtWorker_Precept_TreeDensity</workerClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_TreeDensity</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		<li>
@@ -159,7 +159,11 @@
 				<description>In the past quadrum, we destroyed a gratifyingly large number of trees. Each fallen trunk brings us closer to a better world.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
-
+			<li>
+				<label>low destruction, low density</label>
+				<description>We didn't get rid of many trees just because there aren't many laying around.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
 			
 		</stages>
 	</ThoughtDef>

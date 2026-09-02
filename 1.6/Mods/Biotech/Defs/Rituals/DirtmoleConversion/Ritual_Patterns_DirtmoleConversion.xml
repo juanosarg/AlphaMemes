@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef>
+		<defName>AM_DirtmoleConversionPattern</defName>
+		<ritualBehavior>AM_DirtmoleConversionBehavior</ritualBehavior>
+		<ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
+		<ritualOutcomeEffect>AM_DirtmoleConversionOutcome</ritualOutcomeEffect>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
+		<playsIdeoMusic>true</playsIdeoMusic>
+	</RitualPatternDef>
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Comfort_DiscomfortPreferred</defName>
+		<issue>Comfort</issue>
+		<label>discomfort preferred</label>
+		<description>Comfort is a weakness. We prefer hardship and discomfort, as they remind us that we are strong enough to endure them.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>110</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_PainIsDivine</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Comfort_DiscomfortPreferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Comfort_DiscomfortPreferred</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_NeedComfort</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>uncomfortable</label>
+				<description>I've been pleasantly uncomfortable recently. This hardship reminds me that I am strong enough to endure it.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>comfortable</label>
+				<description>I've been too comfortable recently. I need some hardship in my life.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>quite comfortable</label>
+				<description>I've been far too comfortable recently. All this luxury is making me soft.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>extremely comfortable</label>
+				<description>I've been living in disgusting luxury. I need to experience some real discomfort.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>luxuriantly comfortable</label>
+				<description>This is unbearable. I am surrounded by softness and comfort, and I can feel myself becoming weak.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

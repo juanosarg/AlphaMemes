@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<InteractionDef>
+		<defName>AM_Speech_DirtmoleConversion</defName>
+		<label>embrace the deep rhetoric</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>UI/Rituals/AM_DirtmoleConversion_Symbol</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+				<li>speechtopic->the body being reshaped for life beneath the earth</li>
+				<li>speechtopic->the growth of powerful claws made for digging</li>
+				<li>speechtopic->the strengthening of the body to endure the deep earth</li>
+				<li>speechtopic->the thickening of the skin to withstand the harshness of the underground</li>
+				<li>speechtopic->the sharpening of the senses to navigate through darkness</li>
+				<li>speechtopic->the transformation of the limbs for burrowing through solid earth</li>
+				<li>speechtopic->the reshaping of the body into the form of a dirtmole</li>
+				<li>speechtopic->the loss of the fragile traits of the surface-dwelling body</li>
+				<li>speechtopic->the initiate's body becoming suited to life in the deep</li>
+				<li>speechtopic(p=0.25)->embracing the physical transformation into a dirtmole</li>
+				<li>speechtopic(p=0.25)->leaving the weakness of the surface behind</li>
+				<li>speechtopic(p=0.25)->becoming one with the earth below</li>
+				<li>speechtopic(p=0.25)->accepting the body that belongs beneath the earth</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+</Defs>

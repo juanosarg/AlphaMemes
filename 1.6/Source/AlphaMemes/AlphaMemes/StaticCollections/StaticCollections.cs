@@ -37,6 +37,8 @@ namespace AlphaMemes
 
         public static Dictionary<Map, int> animaTreesInMap = new Dictionary<Map, int>();
 
+        public static Dictionary<Map, int> treesInMap = new Dictionary<Map, int>();
+
         public static List<PawnKindDef> analyzedAnimals = new List<PawnKindDef>();
 
         public static List<PawnKindDef> cattleAnimals = new List<PawnKindDef>();
@@ -133,6 +135,10 @@ namespace AlphaMemes
         public static void SetAnimaTreesInTheMap(Map map, int trees)
         {
             animaTreesInMap[map] = trees;
+        }
+        public static void SetTreesInTheMap(Map map, int trees)
+        {
+            treesInMap[map] = trees;
         }
         public static void SetMapWateriness(Map map, bool iswatery)
         {

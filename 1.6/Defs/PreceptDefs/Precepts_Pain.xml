@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>AM_Pain_Required</defName>
+    <issue>Pain</issue>
+    <label>required</label>
+    <description>To endure nerve-shattering pain is to prove my strength and moral worth. Avoiding it is a sign of weakness.</description>
+    <impact>High</impact>
+    <displayOrderInImpact>110</displayOrderInImpact>
+    <requiredMemes>
+      <li>AM_PainIsDivine</li>
+    
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <description>Pain</description>
+        <thought>AM_Pain_Required</thought>
+        <tooltipShowMoodRange>true</tooltipShowMoodRange>
+      </li>
+	  <li Class="PreceptComp_SituationalThought">
+        <description>Pain (masochist trait)</description>
+        <thought>AM_Pain_Required_Masochist</thought>
+        
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <!-- Thoughts -->
+
+  <ThoughtDef>
+    <defName>AM_Pain_Required</defName>
+    <workerClass>AlphaMemes.ThoughtWorker_Precept_Pain_Required</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+      <li>Wimp</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>no pain</label>
+        <description>There is no life without pain. We can't experience life to its fullest while being tainted by comfort.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>minor pain</label>
+        <description>The pain grounds me. I appreciate it.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>serious pain</label>
+        <description>The pain cleanses me. I like it.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>intense pain</label>
+        <description>The pain purifies me. I need it!</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>mind-shattering pain</label>
+        <description>The pain makes me sublime! I wish to become it!</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AM_Pain_Required_Masochist</defName>
+    <workerClass>AlphaMemes.ThoughtWorker_Precept_Pain_Required_Masochist</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>no pain</label>
+        <description>Why does nothing hurt?! I feel hollow, numb, incomplete. I need pain. I need it so badly.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+	
+    </stages>
+  </ThoughtDef>
+
+</Defs>

@@ -8,6 +8,7 @@
 			<value>
 				<nullifyingPrecepts>
 					<li>AM_Disfigurement_DontCare</li>
+					<li>AM_Disfigurement_Preferred</li>
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -15,6 +16,7 @@
 			<xpath>Defs/ThoughtDef[defName = "Disfigured"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>AM_Disfigurement_DontCare</li>
+				<li>AM_Disfigurement_Preferred</li>
 			</value>
 		</match>
 	</Operation>

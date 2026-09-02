@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Scarification_Insane</defName>
+		<issue>Scarification</issue>
+		<impact>High</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<displayOrderInImpact>110</displayOrderInImpact>
+		<label>insane</label>
+		<description>Every person ought to be covered in ritual scars. An unmarked body is an unfinished one.</description>
+		<requiredScars>8</requiredScars>
+		<requiredMemes>
+			<li>AM_PainIsDivine</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Scarification_Insane</thought>
+				<thoughtStageDescriptions>
+					<li>Scarification (8 scars required)</li>
+				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Scarification_Insane_Opinion</thought>
+				<thoughtStageDescriptions>
+					<li>Scarification (8 scars required)</li>
+				</thoughtStageDescriptions>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>GotScarified</eventDef>
+				<thought>AM_ScarificationCeremony_Self_Insane</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_ScarificationCeremony_Self_Insane</defName>
+		<durationDays>4</durationDays>
+		<stages>
+			<li>
+				<label>got scarified</label>
+				<description>I bear a new ritual scar, another mark carved into my flesh to bind me forever to our truth.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>AM_Scarification_Insane_Opinion</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_Scarification_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>Wimp</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>scarified</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not scarified</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>insufficiently scarified</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_Scarification_Insane</defName>
+		<workerClass>ThoughtWorker_Precept_Scarification</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<minExpectationForNegativeThought>Low</minExpectationForNegativeThought>
+		<nullifyingTraits>
+			<li>Wimp</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>scarified</label>
+				<description>My flesh bears the proof of my devotion. Every scar is another piece of our truth written into me.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>not scarified</label>
+				<description>My unmarked flesh disgusts me. I have nothing written upon me to prove who I am.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>insufficiently scarified</label>
+				<description>I have too little scarification. My body should be covered in the marks of our truth.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

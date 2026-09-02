@@ -90,6 +90,7 @@ namespace AlphaMemes
         public static PreceptDef AM_InsectMeatEating_Required;
         public static PreceptDef AM_FungusEating_Required;
         public static PreceptDef AB_MiningYield_VeryHigh;
+        public static PreceptDef AM_Trees_Despised;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -337,6 +338,8 @@ namespace AlphaMemes
         public static XenotypeDef VRE_Ekkimian;
         [MayRequire("vanillaracesexpanded.sanguophage")]
         public static XenotypeDef VRE_Bruxa;
+        [MayRequireBiotech]
+        public static XenotypeDef Dirtmole;
 
         [MayRequireBiotech]
         public static QuestScriptDef AM_OpportunitySite_SanguophageCamp;

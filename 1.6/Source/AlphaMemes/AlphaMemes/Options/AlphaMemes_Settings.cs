@@ -17,7 +17,7 @@ namespace AlphaMemes
 
         public static float memeAmount = baseGameMemeAmount;
         public const float baseGameMemeAmount = 4;
-        public const float maxMemeAmount = 16;
+        public const float maxMemeAmount = 100;
 
 
         public static float ritualsAmount = baseGameRitualsAmount;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>AM_TerribleDirtmoleConversion</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>unconvincing embrace the deep</label>
+				<description>The moralist failed to inspire me. The ceremony did little to strengthen my devotion to the depths of the earth.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_BoringDirtmoleConversion</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>underwhelming embrace the deep</label>
+				<description>The moralist's words lacked passion. The ceremony left me unimpressed.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_FunDirtmoleConversion</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>convincing embrace the deep</label>
+				<description>The moralist spoke with conviction about life beneath the earth. I found the ceremony inspiring.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_UnforgettableDirtmoleConversion</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>inspiring embrace the deep</label>
+				<description>The moralist's words were profoundly inspiring. I feel deeply connected to the depths of the earth.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

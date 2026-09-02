@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<!-- Issues -->
+	<!-- Issues -->
 	<IssueDef>
 		<defName>AM_Disfigurement</defName>
 		<label>disfigurement</label>
@@ -18,17 +17,59 @@
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 	</PreceptDef>
-  <PreceptDef>
+	<PreceptDef>
 		<defName>AM_Disfigurement_DontCare</defName>
 		<issue>AM_Disfigurement</issue>
 		<label>don't care</label>
 		<description>Who cares if a person is disfigured? We shouldn't judge others based on such trivial matters.</description>
-		<impact>Low</impact>		
+		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
-		
 	</PreceptDef>
-  
-  
+	<PreceptDef>
+		<defName>AM_Disfigurement_Preferred</defName>
+		<issue>AM_Disfigurement</issue>
+		<label>preferred</label>
+		<description>Disfigurement is beautiful. To alter the body is to improve it, and the more thoroughly a person is reshaped, the more worthy they become.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Missing eyes, ears, nose, jaw or tongue count as disfigurement.</description>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<requiredMemes>
+			<li>AM_PainIsDivine</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Disfigurement_Preferred_Social</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Disfigurement_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Disfigurement_Preferred_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>AlphaMemes.ThoughtWorker_Disfigured_Social</workerClass>
+		<stages>
+			<li>
+				<label>disfigured</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+		<ThoughtDef>
+		<defName>AM_Disfigurement_Preferred</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Disfigured</workerClass>
+		 <minExpectationForNegativeThought>Low</minExpectationForNegativeThought>
+		<stages>
+			<li>
+				<label>disfigured</label>
+				<description>Disfigurement is beautiful. To alter the body is to improve it.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>not disfigured</label>
+				<description>I want to be disfigured. An unaltered body is a wasted opportunity to become something greater.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
 
-
+	</ThoughtDef>
 </Defs>

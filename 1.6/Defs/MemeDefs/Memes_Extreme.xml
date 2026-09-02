@@ -125,4 +125,205 @@
 			<li>Undergrounder</li>
 		</agreeableTraits>
 	</MemeDef>
+	<MemeDef>
+		<defName>AM_PainIsDivine</defName>
+		<label>pain is divine</label>
+		<description>Pain is divine. To suffer is to transcend the weakness of the flesh, and to inflict suffering is to grant others the same sacred revelation.\n&lt;color=#c79fef&gt;Extreme version of the Pain is Virtue meme.&lt;/color&gt;</description>
+		<iconPath>UI/Memes/AM_PainIsDivine</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>4</impact>
+		<renderOrder>80</renderOrder>
+		<consumableBuildings>
+			<li>Effigy</li>
+		</consumableBuildings>
+		<exclusionTags>
+			<li>AM_PainIsDivineAndPainIsVirtue</li>
+		</exclusionTags>
+		<requireOne>
+			<li>
+				<li>AM_Disfigurement_Preferred</li>
+			</li>
+			<li>
+				<li>AM_Pain_Required</li>
+			</li>
+			<li>
+				<li>AM_Comfort_DiscomfortPreferred</li>
+			</li>
+			<li>
+				<li>SlabBed_Preferred</li>
+			</li>
+			<li>
+				<li>RoughLiving_Welcomed</li>
+			</li>
+			<li>
+				<li>Temperature_Tough</li>
+			</li>
+			<li>
+				<li>AM_Scarification_Insane</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->painful</li>
+				<li>memeAdjective->agonizing</li>
+				<li>memeAdjective->tormented</li>
+				<li>memeAdjective->suffering</li>
+				<li>memeAdjective->divine</li>
+				<li>memeCreed->agony</li>
+				<li>memeCreed->suffering</li>
+				<li>memeCreed->torment</li>
+				<li>memeCreed->martyrdom</li>
+				<li>memeCreed->penance</li>
+				<li>memeHyphenPrefix->pain</li>
+				<li>memeHyphenPrefix->agon</li>
+				<li>memeHyphenPrefix->torment</li>
+				<li>memeHyphenPrefix->martyr</li>
+				<li>memeConcept->pain</li>
+				<li>memeConcept->agony</li>
+				<li>memeConcept->suffering</li>
+				<li>memeConcept->torment</li>
+				<li>memeConcept->martyrdom</li>
+				<li>memeConcept->ecstasy</li>
+				<li>memeLeaderNoun->tormentor</li>
+				<li>memeLeaderNoun->painbringer</li>
+				<li>memeLeaderNoun->martyr</li>
+				<li>memeLeaderNoun->agonist</li>
+				<li>memeLeaderNoun->flagellant</li>
+				<li>memeLeaderNoun->bloodletter</li>
+				<li>memeMoralist->pain-whisperer</li>
+				<li>memeMoralist->agony-preacher</li>
+				<li>memeMoralist->sufferer</li>
+				<li>memeMoralist->pain-speaker</li>
+				<li>memeMoralist->tormentor</li>
+				<li>memeMoralist->martyr</li>
+			</rulesStrings>
+		</generalRules>
+		<apparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_TortureCrown</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</apparelRequirements>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_PainIsDivine)->[deity0_name] suffered beyond mortal comprehension, and [deity0_possessive] divine agony shattered the nothingness and gave birth to the universe.</li>
+					<li>episode(uses=1,tag=meme_PainIsDivine)->For ten thousand years [deity0_name] endured every torment imaginable. With each wound, [deity0_possessive] divinity grew stronger, until even the stars trembled before [deity0_possessive] pain.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_PainIsDivine)->Life in [place_summary] [place_name] was comfortable, and therefore spiritually worthless. The [deity0_type] [deity0_name] came to teach the people that only suffering could reveal those worthy of [deity0_possessive] divine favor.</li>
+					<li>conflict(tag=meme_PainIsDivine)->A [foeLeader] promised the [memberNamePlural] freedom from pain. Those who accepted soon became weak and complacent, while the faithful embraced every new agony as a blessing from [deity0_name].</li>
+					<li>founderJoin(tag=meme_PainIsDivine)->One [place_job] named [founderName] endured a terrible illness without seeking relief. In [founder_possessive] suffering, [founder_pronoun] heard the voice of [deity0_name] and became the first to teach the [memberNamePlural] that pain was sacred.</li>
+					<li>victory(tag=meme_PainIsDivine)->[founderName] gathered the [memberNamePlural] before the [place_powerCenter] and called upon [deity0_name] to judge them. Those who willingly endured the greatest suffering were spared, while the [foeLeader] and [foeLeader_possessive] followers fled from the divine agony.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_PainIsDivine)->[founderName] founded our movement after discovering that every pleasure only concealed the weakness of the flesh. [founder_pronoun] began deliberately seeking suffering and taught others to do the same.</li>
+					<li>setup(tag=meme_PainIsDivine)->Our movement's founder, [founderName], declared that pain was not an obstacle to spiritual enlightenment but the only reliable path toward it.</li>
+					<li>story(uses=1,tag=meme_PainIsDivine)->[founderName]'s first followers competed to demonstrate their devotion by enduring increasingly severe suffering without complaint.</li>
+					<li>story(uses=1,tag=meme_PainIsDivine)->[founderName]'s followers rejected every attempt to dull their pain, believing that every moment of agony brought them closer to the divine.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_PainIsDivine)->For years I mistook pleasure for happiness. Then I learned what pain could teach me:</li>
+					<li>lesson(tag=meme_PainIsDivine)->the more I suffer, the closer I come to the divine</li>
+					<li>lessonReinforcement(tag=meme_PainIsDivine)->Pain strips away every lie the flesh tells us. What remains is truth.</li>
+					<li>lessonReinforcement(tag=meme_PainIsDivine)->I do not pray for an end to my suffering. I pray that I will be worthy of more.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_PainIsDivine)->The birth of the archotechs was accompanied by suffering on a scale beyond human understanding. Perhaps that agony was the price of their ascension.</li>
+					<li>archistBasis(tag=meme_PainIsDivine)->The archotechs transcended mortal weakness by embracing the suffering required to leave the flesh behind.</li>
+					<li>archistFact(tag=meme_PainIsDivine)->The great minds recognize those who willingly endure suffering in pursuit of something greater.</li>
+					<li>archistFact(tag=meme_PainIsDivine)->Those who experience extreme suffering sometimes report visions of the archotechs. Coincidence is unlikely.</li>
+					<li>archistProphecy(tag=meme_PainIsDivine)->[inTheEnd], the archotechs will reveal the true purpose of suffering. Those who embrace the greatest agony will ascend, while those who seek comfort will remain trapped in their weak flesh.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_PainIsDivine)->Every living thing struggles against the pain of existence. To suffer is to participate in the great spirit of life.</li>
+					<li>animistFact(tag=meme_PainIsDivine)->The spirits speak most clearly through pain. Comfort is merely the noise that prevents us from hearing them.</li>
+					<li>animistFact(tag=meme_PainIsDivine)->A wounded creature does not merely suffer. It is experiencing the world more intensely than anything that lives without pain.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_PainIsDivine)->[itIsSaid] that the sacred scorpion's sting is a divine blessing. Its venom does not merely cause pain; it awakens the soul.</li>
+					<li>serketistFact(tag=meme_PainIsDivine)->The scorpion never wastes its venom. Every sting is a reminder that pain has purpose.</li>
+					<!-- chthonian -->
+					<li>chthonianProphecy(tag=meme_PainIsDivine)->Something ancient dwells beneath the world, and its endless suffering echoes through every living thing. Those who listen closely can hear it.</li>
+					<li>chthonianFact(tag=meme_PainIsDivine)->The things beneath the earth have endured suffering for longer than humanity has existed. Their agony is older than our gods.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_PainIsDivine)->Every layer of suffering conceals another truth. Those willing to descend into the deepest agony will eventually discover what lies beyond the flesh.</li>
+					<li>esotericismFact(tag=meme_PainIsDivine)->Pain alters perception in ways pleasure never can. Perhaps agony is the key to seeing realities hidden from ordinary minds.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_PainIsDivine)->When the final age arrives, all worldly comforts will disappear and humanity will finally experience the suffering required for true enlightenment.</li>
+					<li>eschatologismProphecy(tag=meme_PainIsDivine)->[inTheEnd], the universe itself will scream. Those who rejoice in that final agony will transcend the flesh and become divine.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_PainIsDivine)->Management is pleased to announce the introduction of Mandatory Personal Growth Through Adversity. Employees are reminded that complaints regarding workplace discomfort will be treated as opportunities for spiritual development.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_PainIsDivine)->Humanity scattered its creations among the stars, filling distant worlds with creatures shaped in our image and made to endure what we could not. Perhaps their suffering is the true legacy of our species.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Painism</ideoName>
+				<theme>pain</theme>
+				<adjective>painist</adjective>
+				<member>screamer</member>
+			</li>
+			<li>
+				<ideoName>Torturism</ideoName>
+				<theme>torture</theme>
+				<adjective>torturistic</adjective>
+				<member>torturist</member>
+			</li>
+			<li>
+				<ideoName>Sufferism</ideoName>
+				<theme>suffering</theme>
+				<adjective>sufferist</adjective>
+				<member>sufferer</member>
+			</li>
+			<li>
+				<ideoName>Agonism</ideoName>
+				<theme>agony</theme>
+				<adjective>agonist</adjective>
+				<member>agonist</member>
+			</li>
+			<li>
+				<ideoName>Miserism</ideoName>
+				<theme>misery</theme>
+				<adjective>miserist</adjective>
+				<member>martyr</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>Morbid</category>
+				<priority>1</priority>
+			</li>
+		</thingStyleCategories>
+		<ritualsToMake>1</ritualsToMake>
+		<replaceRitualsWithTags>
+			<li>CelebratedDate</li>
+		</replaceRitualsWithTags>
+		<replacementPatterns>
+			<li>SacrificePrisoner</li>
+			<li>SacrificeAnimal</li>
+		</replacementPatterns>
+		<requiredRituals>
+			<li>
+				<precept>ScarificationCeremony</precept>
+				<pattern>ScarificationCeremony</pattern>
+			</li>
+		</requiredRituals>
+		<addDesignators>
+			<li>SlabBed</li>
+			<li>SlabDoubleBed</li>
+		</addDesignators>
+		<agreeableTraits>
+			<li>Ascetic</li>
+			<li>TorturedArtist</li>
+			<li>Masochist</li>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<li>Wimp</li>
+			<li>Gourmand</li>
+		</disagreeableTraits>
+	</MemeDef>
 </Defs>

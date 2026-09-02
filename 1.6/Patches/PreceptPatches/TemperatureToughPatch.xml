@@ -2,40 +2,40 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/associatedMemes</xpath>
+		<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/associatedMemes</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]</xpath>
+			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]</xpath>
 			<value>
 				<associatedMemes>
-					<li>AM_Monastic</li>
+					
 					<li>AM_PainIsDivine</li>
 				</associatedMemes>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/associatedMemes</xpath>
+			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/associatedMemes</xpath>
 			<value>
-				<li>AM_Monastic</li>
+				
 				<li>AM_PainIsDivine</li>
 			</value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/requiredMemes</xpath>
+		<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/requiredMemes</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]</xpath>
+			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]</xpath>
 			<value>
 				<requiredMemes>
-					<li>AM_Monastic</li>
+					
 					<li>AM_PainIsDivine</li>
 				</requiredMemes>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/PreceptDef[defName = "RoughLiving_Welcomed"]/requiredMemes</xpath>
+			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/requiredMemes</xpath>
 			<value>
-				<li>AM_Monastic</li>
+				
 				<li>AM_PainIsDivine</li>
 			</value>
 		</match>
