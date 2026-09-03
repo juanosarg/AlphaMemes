@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef>
+		<defName>AM_FlagellationBehavior</defName>
+		<workerClass>AlphaMemes.RitualBehaviorWorker_Flagellation</workerClass>
+		<durationTicks>7500</durationTicks>
+		<preceptRequirements>
+			<li Class="PreceptRequirement_Altar"/>
+		</preceptRequirements>
+		<roles Inherit="False">
+			<li Class="RitualRoleTag">
+				<label>speaker</label>
+				<id>moralist</id>
+				<tag>Moralist</tag>
+				<precept>IdeoRole_Moralist</precept>
+				<required>True</required>
+				<maxCount>1</maxCount>
+				<countsAsParticipant>False</countsAsParticipant>
+				<mustBeAbleToReachTarget>True</mustBeAbleToReachTarget>
+			</li>
+			<li Class="RitualRoleColonist">
+				<label>flagellant</label>
+				<id>flagellant</id>
+				<maxCount>1</maxCount>
+				<required>True</required>
+				<countsAsParticipant>True</countsAsParticipant>
+				<allowOtherIdeos>false</allowOtherIdeos>
+			</li>
+		</roles>
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<stages>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>2</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_RolesArrived">
+						<roleIds>
+							<li>moralist</li>
+							<li>flagellant</li>
+						</roleIds>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_BehindThingCenter"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>flagellant</roleId>
+						<dutyDef>ArriveToCell</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_InFrontThingCenter"/>
+						</customPositions>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					<li>flagellant</li>
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>2</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>0.25</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>SpeakOnCellNoSpeechBubbles</dutyDef>
+						<speakerInteraction>AM_Speech_Flagellation</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_BehindThingCenter"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>flagellant</roleId>
+						<dutyDef>StandOnCell</dutyDef>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					<li>flagellant</li>
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+				<spectateDistanceOverride>3</spectateDistanceOverride>
+				<spectatorsRequired>true</spectatorsRequired>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>0.75</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>StandOnCell</dutyDef>
+					</li>
+					<li>
+						<roleId>flagellant</roleId>
+						<dutyDef>SpeakOnCellNoSpeechBubbles</dutyDef>
+						<speakerInteraction>AM_Speech_Flagellation_Flagellant</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_InCircle">
+								<preferredRotation>West</preferredRotation>
+								<distRange>1</distRange>
+							</li>
+						</customPositions>
+					</li>
+				</roleBehaviors>
+				<highlightRolePawns>
+					<li>flagellant</li>
+					<li>moralist</li>
+				</highlightRolePawns>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>

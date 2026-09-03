@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- 
-
-
-  
-    <ThingSetMakerDef>
+	<ThingSetMakerDef>
 		<defName>AM_StartingItemsMadness</defName>
-		<root Class="AlphaMemes.ThingSetMaker_StartingItemsMadness" />
+		<root Class="AlphaMemes.ThingSetMaker_StartingItemsMadness"/>
 	</ThingSetMakerDef>
-
- 
-  
+	<ThingSetMakerDef>
+		<defName>AM_StartingItemsPainIsDivine</defName>
+		<root Class="AlphaMemes.ThingSetMaker_StartingItemsPainIsDivine"/>
+	</ThingSetMakerDef>
 </Defs>

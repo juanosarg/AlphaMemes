@@ -8,6 +8,16 @@
 	</IssueDef>
 	<!-- Precepts -->
 	<PreceptDef>
+		<defName>AM_Armour_Forbidden</defName>
+		<issue>AM_Armour</issue>
+		<label>forbidden</label>
+		<description>Armor is forbidden. I will never hide my body behind clothing or armor. The body must remain exposed, for there is nothing shameful about our natural form.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists can't equip ANY apparel.</description>
+		<impact>High</impact>
+		<requiredMemes>		
+			<li>AM_NakedTruth</li>
+		</requiredMemes>
+	</PreceptDef>
+	<PreceptDef>
 		<defName>AM_Armour_Blunt</defName>
 		<issue>AM_Armour</issue>
 		<label>blunt</label>

@@ -49,15 +49,8 @@ namespace AlphaMemes
 
         public static float databaseCompletion = 0;
 
-        public static List<PawnKindDef> utilityDryads = new List<PawnKindDef>() { PawnKindDefOf.Dryad_Basic, InternalDefOf.Dryad_Woodmaker,
-            InternalDefOf.Dryad_Berrymaker, InternalDefOf.Dryad_Medicinemaker, PawnKindDefOf.Dryad_Gaumaker, InternalDefOf.Dryad_Carrier,InternalDefOf.AM_UnshackledDryad,InternalDefOf.AM_Dryad_Ocular,
-            InternalDefOf.AM_Dryad_Corruptor,InternalDefOf.AM_Dryad_Tumorous,InternalDefOf.VDE_Dryad_Stonedigger,InternalDefOf.VDE_Dryad_Gaubricmaker,
-            InternalDefOf.VDE_Dryad_Nectarmaker,InternalDefOf.VDE_AwakenedDryad_Carrier,InternalDefOf.VDE_AwakenedDryad_Woodmaker,InternalDefOf.VDE_AwakenedDryad_Medicinemaker
-            ,InternalDefOf.VDE_AwakenedDryad_Berrymaker,InternalDefOf.VDE_AwakenedDryad_Stonedigger,InternalDefOf.VDE_AwakenedDryad_Nectarmaker,InternalDefOf.VDE_AwakenedDryad_Gaubricmaker
-    };
-
-        public static List<PawnKindDef> combatDryads = new List<PawnKindDef>() { InternalDefOf.Dryad_Clawer, InternalDefOf.Dryad_Barkskin, InternalDefOf.AM_Dryad_Spitter,
-            InternalDefOf.AM_Dryad_Unstable,InternalDefOf.VDE_Dryad_Spitter,InternalDefOf.VDE_AwakenedDryad_Clawer,InternalDefOf.VDE_AwakenedDryad_Barkskin,InternalDefOf.VDE_AwakenedDryad_Spitter};
+        public static List<PawnKindDef> utilityDryads = new List<PawnKindDef>();   
+        public static List<PawnKindDef> combatDryads = new List<PawnKindDef>();
 
         public static List<MemeDef> listReligiousMemes = new List<MemeDef>() { InternalDefOf.AM_Structure_Jainism,InternalDefOf.AM_Structure_Jewish, InternalDefOf.AM_Structure_Kemetism, InternalDefOf.AM_Structure_Sikhism,
         InternalDefOf.Structure_Animist,InternalDefOf.Structure_Archist,InternalDefOf.Structure_OriginBuddhist,InternalDefOf.Structure_OriginChristian,InternalDefOf.Structure_OriginHindu,InternalDefOf.Structure_OriginIslamic,
@@ -98,6 +91,20 @@ namespace AlphaMemes
                     }
                 }      
             }
+
+            HashSet<DryadsDef> allDryadLists = DefDatabase<DryadsDef>.AllDefsListForReading.ToHashSet();
+            foreach (DryadsDef individualList in allDryadLists)
+            {
+                foreach (PawnKindDef utilityDryad in individualList.utilityDryads)
+                {
+                    AddUtilityDryad(utilityDryad);                   
+                }
+                foreach (PawnKindDef combatDryad in individualList.combatDryads)
+                {
+                    AddCombatDryad(combatDryad);
+                }
+            }
+
         }
 
         public static void SetArtInTheMap(Map map, int art)

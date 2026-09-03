@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_FlagellationOutcome</defName>
+		<description>If the flagellation ritual goes well (anything over the worst result), the flagellant will receive a number of scarifications.</description>
+		<workerClass>AlphaMemes.RitualOutcomeEffectWorker_Flagellation</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RitualTargetDefs">
+				<allowAltars>true</allowAltars>
+				<label>started at altar</label>
+				<qualityOffset>0.2</qualityOffset>
+				<expectedThingLabelTip>an altar</expectedThingLabelTip>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.1)</li>
+						<li>(5,  0.3)</li>
+						<li>(10, 0.4)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>speaker's social impact</labelAbstract>
+				<roleId>leader</roleId>
+				<statDef>SocialImpact</statDef>
+				<curve>
+					<points>
+						<li>(0.2,  0.0)</li>
+						<li>(0.6,  0.28)</li>
+						<li>(1.0, 0.35)</li>
+						<li>(1.5, 0.4)</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Failed</label>
+				<chance>0.1</chance>
+				<memory>AM_TerribleFlagellation</memory>
+				<description>The {0} was a failure. The ritual failed to leave even a single scar, making the entire ceremony feel pointless.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Underwhelming</label>
+				<chance>0.2</chance>
+				<memory>AM_BoringFlagellation</memory>
+				<description>The {0} was underwhelming. Only a few ritual scars were earned, leaving much to be desired.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Satisfying</label>
+				<chance>0.6</chance>
+				<memory>AM_FunFlagellation</memory>
+				<description>The {0} was satisfying. The ritual left its participant bearing several new scars as marks of their devotion.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Exemplary</label>
+				<chance>0.1</chance>
+				<memory>AM_UnforgettableFlagellation</memory>
+				<description>The {0} was exemplary! The ritual left its participant covered in new scars, displaying their devotion for all to see.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

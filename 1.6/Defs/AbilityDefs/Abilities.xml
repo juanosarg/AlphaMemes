@@ -31,14 +31,6 @@
 			<li>AM_BiologicalReconstructors</li>
 		</requiredMemes>
 	</AbilityDef>
-	<AbilityGroupDef>
-		<defName>AM_ArchitectStone</defName>
-		<cooldownTicks>30000</cooldownTicks>
-	</AbilityGroupDef>
-	<AbilityGroupDef>
-		<defName>AM_ArchitectFinishBuilding</defName>
-		<cooldownTicks>600000</cooldownTicks>
-	</AbilityGroupDef>
 	<AbilityDef>
 		<defName>AM_ConvertStone</defName>
 		<label>convert to pristine limestone</label>
@@ -99,10 +91,6 @@
 			<li>AM_Structure_Kemetism</li>
 		</requiredMemes>
 	</AbilityDef>
-	<AbilityGroupDef>
-		<defName>AM_Ocular</defName>
-		<cooldownTicks>60000</cooldownTicks>
-	</AbilityGroupDef>
 	<AbilityDef>
 		<defName>AM_OcularConversion</defName>
 		<label>ocular conversion</label>
@@ -137,10 +125,6 @@
 			<li>AM_BiologicalCorruptors</li>
 		</requiredMemes>
 	</AbilityDef>
-	<AbilityGroupDef>
-		<defName>AM_ChangeStyle</defName>
-		<cooldownTicks>50</cooldownTicks>
-	</AbilityGroupDef>
 	<AbilityDef>
 		<defName>AM_ChangeStyle</defName>
 		<label>change style</label>

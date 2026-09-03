@@ -321,6 +321,7 @@
     <Compile Include="Comps\Properties\CompProperties_RandomRaidSpawner.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_RedAcidExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\DryadsDef.cs" />
     <Compile Include="Defs\TeaDefs.cs" />
     <Compile Include="Dev Mode\GenerateSanguophageCamp.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
@@ -329,6 +330,7 @@
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Enums\TeaNeedCategory.cs" />
     <Compile Include="FloatMenuOptionProviders\FloatMenuOptionProvider_RelicSmashingAltar.cs" />
+    <Compile Include="Harmony\Apparel_PawnCanWear.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
     <Compile Include="Harmony\CompGiveThoughtToAllMapPawnsOnDestroy_PostDestroy.cs" />
@@ -340,6 +342,7 @@
     <Compile Include="Harmony\ConditionalPatches\IdeoUtility_IsMemeAllowedForInitialFluidIdeo.cs" />
     <Compile Include="Harmony\DamageWorker_AddInjury_Apply.cs" />
     <Compile Include="Harmony\Dialog_BeginRitual_BlockingIssues_Patch.cs" />
+    <Compile Include="Harmony\EquipmentUtility_CanEquip.cs" />
     <Compile Include="Harmony\ExtremeMemes\Dialog_ChooseMemes_DoNormalMemeSelector.cs" />
     <Compile Include="Harmony\ExtremeMemes\IdeoImpactUtility_DrawImpactIcon.cs" />
     <Compile Include="Harmony\ExtremeMemes\IdeoImpactUtility_MemeImpactLabel.cs" />
@@ -347,8 +350,11 @@
     <Compile Include="Harmony\ExtremeMemes\MemeDef_ConfigErrors.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\JobDriver_PlantSow_MakeNewToils.cs" />
+    <Compile Include="Harmony\JobGiver_OptimizeApparel_ApparelScoreGain.cs" />
     <Compile Include="Harmony\Mineable_TrySpawnYield.cs" />
+    <Compile Include="Harmony\PawnApparelGenerator_GenerateStartingApparelFor.cs" />
     <Compile Include="Harmony\PawnDiedOrDownedThoughtsUtility_GiveVeneratedAnimalDiedThoughts.cs" />
+    <Compile Include="Harmony\PawnGenerator_AddRequiredScars.cs" />
     <Compile Include="Harmony\Plant_GrowthRate.cs" />
     <Compile Include="Harmony\Plant_SpawnSetup.cs" />
     <Compile Include="Harmony\Plant_YieldNow.cs" />
@@ -399,6 +405,7 @@
     <Compile Include="Rituals\FuneralFramework\Comp\CompAssignableToPawn_RumCasket.cs" />
     <Compile Include="Rituals\FuneralFramework\Extensions\FuneralFramework_FactionDefExtension.cs" />
     <Compile Include="Rituals\FuneralFramework\Harmony\RitualObligationTrigger_MemberCorpseDestroyed_Patch.cs" />
+    <Compile Include="Rituals\Misc\Behaviours\RitualBehaviorWorker_Flagellation.cs" />
     <Compile Include="Rituals\Misc\Behaviours\RitualBehaviorWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_OcularBurial.cs" />
     <Compile Include="Rituals\FuneralFramework\AI\JobDriver\JobDriver_AnimaBurialLinking.cs" />
@@ -519,6 +526,7 @@
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Banquet.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Baptism.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_DirtmoleConversion.cs" />
+    <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Flagellation.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_RelicDestruction.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_SparringMatch.cs" />
@@ -567,6 +575,7 @@
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsGauranlen.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
+    <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsPainIsDivine.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_NeedTea.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Baths.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_BloodfeederDied_Desire.cs" />

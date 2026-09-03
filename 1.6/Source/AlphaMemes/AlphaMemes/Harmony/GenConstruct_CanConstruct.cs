@@ -18,7 +18,7 @@ namespace AlphaMemes
     public static class AlphaMemes_GenConstruct_CanConstruct_Patch
     {
         [HarmonyPostfix]
-        static void CantBuildReliquary(Thing t, Pawn p, ref bool __result)
+        public static void CantBuildReliquary(Thing t, Pawn p, ref bool __result)
         {
 
             ThingDef thingDef;

@@ -17,7 +17,7 @@
 		<ritualPatternBase>AM_DirtmoleConversionPattern</ritualPatternBase>
 		<iconPath>UI/Rituals/AM_DirtmoleConversion</iconPath>
 		<ignoreNameUniqueness>false</ignoreNameUniqueness>
-		<useCooldownFromAbilityGroupDef>AM_DirtmoleConversion</useCooldownFromAbilityGroupDef>
+		<useCooldownFromAbilityGroupDef>AM_OnceAYear</useCooldownFromAbilityGroupDef>
 		<requiredMemes>		
 			<li>AM_DeepDevotion</li>
 		</requiredMemes>

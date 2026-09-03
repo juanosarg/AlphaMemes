@@ -15,7 +15,6 @@
 				<li>speechtopic->the [AdjectiveWater] power of a [WaterSource]</li>
 				<li>speechtopic->how a [WaterSource] represents [AdjectiveWater] renewal</li>
 				<li>speechtopic->a [WaterSymbol] as a symbol of purity and life</li>
-				
 				<li>speechtopic->how a [WaterSymbol] connects us through shared rituals</li>
 				<li>speechtopic->how a [AdjectiveWater] [WaterSource] brings balance to all</li>
 				<li>speechtopic->the [AdjectiveWater] flow of a [WaterSource] brings peace</li>
@@ -36,6 +35,80 @@
 				<li>WaterSymbol->wave</li>
 				<li>WaterSymbol->droplet</li>
 				<li>WaterSymbol->ripple</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	<InteractionDef>
+		<defName>AM_Speech_Flagellation</defName>
+		<label>flagellation rhetoric</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>UI/Rituals/AM_Flagellation</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+				<li>speechtopic->the [AdjectivePain] power of suffering</li>
+				<li>speechtopic->how pain strips away the weakness of the flesh</li>
+				<li>speechtopic->the [PainSymbol] as a symbol of strength and devotion</li>
+				<li>speechtopic->how suffering reveals the truth hidden beneath comfort</li>
+				<li>speechtopic->how [AdjectivePain] pain strengthens the body and spirit</li>
+				<li>speechtopic->the cleansing power of [AdjectivePain] suffering</li>
+				<li>speechtopic->how enduring pain proves the strength of one's convictions</li>
+				<li>speechtopic->the sacred purpose of willingly enduring suffering</li>
+				<li>speechtopic(p=0.25)->committing to the ideals of [IDEO_name]</li>
+				<li>speechtopic(p=0.25)->strengthening the spirit through shared suffering</li>
+				<li>speechtopic(p=0.25)->proving one's devotion through endurance</li>
+				<li>speechtopic(p=0.25)->rejecting the weakness of comfort</li>
+				<li>speechtopic(p=0.25)->the divine lesson hidden within [AdjectivePain] pain</li>
+				<li>AdjectivePain->sacred</li>
+				<li>AdjectivePain->searing</li>
+				<li>AdjectivePain->piercing</li>
+				<li>AdjectivePain->agonizing</li>
+				<li>AdjectivePain->purifying</li>
+				<li>PainSymbol->whip</li>
+				<li>PainSymbol->scar</li>
+				<li>PainSymbol->wound</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	<InteractionDef>
+		<defName>AM_Speech_Flagellation_Flagellant</defName>
+		<label>flagellation rhetoric</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>UI/Rituals/AM_Whip</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic]. [argh]</li>
+				<li>speechtopic->the [AdjectivePain] pain they endure</li>
+				<li>speechtopic->how pain makes them stronger</li>
+				<li>speechtopic->how suffering proves their devotion</li>
+				<li>speechtopic->the scars they will bear after the ritual</li>
+				<li>speechtopic->how they welcome the pain</li>
+				<li>speechtopic->how comfort has no place in a faithful life</li>
+				<li>speechtopic->the strength they find in suffering</li>
+				<li>argh->"Agh!"</li>
+				<li>argh->"Ghn!"</li>
+				<li>argh->"Nngh!"</li>
+				<li>argh->"Hrrgh!"</li>
+				<li>argh->"Aaargh!"</li>
+				<li>argh->"It hurts!"</li>
+				<li>argh->"More!"</li>
+				<li>speechtopic(p=0.25)->their devotion to the ideals of [IDEO_name]</li>
+				<li>speechtopic(p=0.25)->how they will carry these scars with pride</li>
+				<li>speechtopic(p=0.25)->how they refuse to fear pain</li>
+				<li>speechtopic(p=0.25)->how they are grateful for this suffering</li>
+				<li>AdjectivePain->sacred</li>
+				<li>AdjectivePain->searing</li>
+				<li>AdjectivePain->piercing</li>
+				<li>AdjectivePain->agonizing</li>
+				<li>AdjectivePain->purifying</li>
 			</rulesStrings>
 		</logRulesInitiator>
 	</InteractionDef>

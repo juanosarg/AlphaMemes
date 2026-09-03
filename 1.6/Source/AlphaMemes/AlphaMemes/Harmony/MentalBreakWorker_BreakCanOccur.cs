@@ -18,7 +18,7 @@ namespace AlphaMemes
     public static class AlphaMemes_MentalBreakWorker_BreakCanOccur_Patch
     {
         [HarmonyPostfix]
-        static void DisableMostMentalBreaksIfPacifist(ref bool __result, Pawn pawn, MentalBreakWorker __instance)
+        public static void DisableMostMentalBreaksIfPacifist(ref bool __result, Pawn pawn, MentalBreakWorker __instance)
         {
 
             if (pawn.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Violence_Abhorrent_Strict)==true)

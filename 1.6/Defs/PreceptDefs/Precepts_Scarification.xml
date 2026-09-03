@@ -8,7 +8,7 @@
 		<displayOrderInIssue>-10</displayOrderInIssue>
 		<displayOrderInImpact>110</displayOrderInImpact>
 		<label>insane</label>
-		<description>Every person ought to be covered in ritual scars. An unmarked body is an unfinished one.</description>
+		<description>Every person ought to be covered in ritual scars. An unmarked body is an unfinished one.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlike other scarification precepts, pawns with this precept on their ideo won't spawn with scarifications before joining the colony. That's very much intended. Don't blame me for base game bullshit. You have to earn these.</description>
 		<requiredScars>8</requiredScars>
 		<requiredMemes>
 			<li>AM_PainIsDivine</li>

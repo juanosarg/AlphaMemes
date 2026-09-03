@@ -21,6 +21,7 @@ namespace AlphaMemes
         public static SoundDef RawVegetable_Eat;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static SoundDef AM_RitualSustainer_TeaCeremony;
+        public static SoundDef AM_RitualSustainer_Flagellation;
 
         public static EffecterDef EatVegetarian;
 
@@ -91,6 +92,8 @@ namespace AlphaMemes
         public static PreceptDef AM_FungusEating_Required;
         public static PreceptDef AB_MiningYield_VeryHigh;
         public static PreceptDef AM_Trees_Despised;
+        public static PreceptDef AM_Scarification_Insane;
+        public static PreceptDef AM_Armour_Forbidden;
 
         public static HistoryEventDef AM_SomeoneDied;
         public static HistoryEventDef AM_HarvestedNonColonistOrgan;
@@ -193,6 +196,8 @@ namespace AlphaMemes
         public static ThingDef VBE_Tea;
         public static ThingDef Meat_Megaspider;
         public static ThingDef RawFungus;
+        [MayRequireRoyalty]
+        public static ThingDef Mindscrew;
 
         public static FleckDef PsycastPsychicEffect;
 

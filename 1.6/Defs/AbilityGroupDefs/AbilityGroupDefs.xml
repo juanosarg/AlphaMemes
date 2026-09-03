@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>AM_OnceAYear</defName>
+		<cooldownTicks>3600000</cooldownTicks>
+		<sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+		<ritualRoleIds>
+			<li>moralist</li>
+		</ritualRoleIds>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_OnceAQuadrum</defName>
+		<cooldownTicks>900000</cooldownTicks>
+		<sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+		<ritualRoleIds>
+			<li>moralist</li>
+		</ritualRoleIds>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_ArchitectStone</defName>
+		<cooldownTicks>30000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_ArchitectFinishBuilding</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_Ocular</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>AM_ChangeStyle</defName>
+		<cooldownTicks>50</cooldownTicks>
+	</AbilityGroupDef>
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlphaMemes.DryadsDef>
+		<defName>AM_DryadsDef</defName>
+		<utilityDryads>
+			<li>Dryad_Basic</li>
+			<li>Dryad_Woodmaker</li>
+			<li>Dryad_Berrymaker</li>
+			<li>Dryad_Medicinemaker</li>
+			<li>Dryad_Gaumaker</li>
+			<li>Dryad_Carrier</li>
+			<li>AM_UnshackledDryad</li>
+			<li>AM_Dryad_Ocular</li>
+			<li>AM_Dryad_Corruptor</li>
+			<li>AM_Dryad_Tumorous</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_Dryad_Stonedigger</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_Dryad_Gaubricmaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_Dryad_Nectarmaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Carrier</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Woodmaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Medicinemaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Berrymaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Stonedigger</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Nectarmaker</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Gaubricmake</li>
+		</utilityDryads>
+		<combatDryads>
+			<li>Dryad_Clawer</li>
+			<li>Dryad_Barkskin</li>
+			<li>AM_Dryad_Spitter</li>
+			<li>AM_Dryad_Unstable</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_Dryad_Spitter</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Clawer</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Barkskin</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Spitter</li>
+		</combatDryads>
+	</AlphaMemes.DryadsDef>
+</Defs>
+

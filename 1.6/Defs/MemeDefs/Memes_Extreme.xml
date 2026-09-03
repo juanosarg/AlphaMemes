@@ -311,6 +311,10 @@
 				<precept>ScarificationCeremony</precept>
 				<pattern>ScarificationCeremony</pattern>
 			</li>
+			<li>
+				<precept>AM_FlagellationPrecept</precept>
+				<pattern>AM_FlagellationPattern</pattern>
+			</li>
 		</requiredRituals>
 		<addDesignators>
 			<li>SlabBed</li>
@@ -325,5 +329,119 @@
 			<li>Wimp</li>
 			<li>Gourmand</li>
 		</disagreeableTraits>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_NakedTruth</defName>
+		<label>naked truth</label>
+		<description>Nudity is truth. Clothing conceals the body and denies its natural form. The faithful embrace complete exposure, rejecting all apparel and accepting the body as it is.\n&lt;color=#c79fef&gt;Extreme version of the Nudism meme.&lt;/color&gt;</description>
+		<iconPath>UI/Memes/AM_NakedTruth</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>4</impact>
+		<renderOrder>999</renderOrder>
+		<preventApparelRequirements>true</preventApparelRequirements>
+		<consumableBuildings>
+			<li>Effigy</li>
+		</consumableBuildings>
+		<exclusionTags>
+			<li>AM_BulwarkVsNudist</li>
+		</exclusionTags>
+		<requireOne>
+			<li>
+				<li>AM_Armour_Forbidden</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->nude</li>
+				<li>memeAdjective->naked</li>
+				<li>memeAdjective->unclothed</li>
+				<li>memeAdjective->bare</li>
+				<li>memeAdjective->natural</li>
+				<li>memeAdjective->unburdened</li>
+				<li>memeHyphenPrefix->skin</li>
+				<li>memeHyphenPrefix->bare</li>
+				<li>memeHyphenPrefix->nude</li>
+				<li>memeConcept->nudity</li>
+				<li>memeConcept->nakedness</li>
+				<li>memeConcept->skin</li>
+				<li>memeConcept->flesh</li>
+				<li>memeConcept->exposure</li>
+				<li>memeConcept->freedom</li>
+				<li>memeLeaderNoun->nudist</li>
+				<li>memeLeaderNoun->exposer</li>
+				<li>memeLeaderNoun->skinbearer</li>
+				<li>memeLeaderNoun->barebody</li>
+				<li>memeLeaderNoun->unclad</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_NakedTruth)           ->[deity0_name] created humanity in [deity0_possessive] own image: naked, unburdened, and free. Clothing came later, invented by those too ashamed to accept what [deity0_name] had made.</li>
+					<li>episode(uses=1,tag=meme_NakedTruth)     ->The people asked [deity0_name] why [deity0_possessive] body was uncovered. The [deity0_type] answered, "Why should I hide what I created? Your body is not shameful. Your shame is."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_NakedTruth)              ->On the [place_summary] [place_name], a tradition began at the [altarRoomLabel] of [deity0_name], where the faithful prayed without clothing. This pleased the [deity0_type], who had never asked them to hide their bodies.</li>
+					<li>conflict(tag=meme_NakedTruth)           ->A prudish [foeLeader] took power and demanded that everyone conceal themselves beneath layers of clothing, declaring the natural body shameful.</li>
+					<li>founderJoin(tag=meme_NakedTruth)        ->[deity0_name]'s truest follower [founderName] stood before the [place_powerCenter], cast aside [founder_possessive] clothing, and declared that nothing [founder_objective]self should be ashamed to show.</li>
+					<li>victory(tag=meme_NakedTruth)            ->[founderName] prayed to [deity0_name], and a great heat wave struck [place_name]. The [foeSoldiers] were forced to discard their clothing, while the [foeLeader] fled in shame at having tried to conceal what was natural.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_NakedTruth)              ->[founderName] lived beneath a system that dressed, uniformed, and judged everyone by their appearance. One day, [founder_pronoun] discarded every piece of clothing and declared that the body needed no disguise. Our movement was born.</li>
+					<li>story(uses=1,tag=meme_NakedTruth)       ->[founderName] established a rule of complete nudity so that believers would stop judging themselves and others by clothing, status, and appearance.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_NakedTruth)         ->For the first few years, walking around naked felt embarrassing. Eventually I realized that the embarrassment was the only thing that had ever been wrong with it. I learned:</li>
+					<li>lesson(tag=meme_NakedTruth)              ->clothing hides the truth, while the naked body has nothing to conceal</li>
+					<li>lessonReinforcement(tag=meme_NakedTruth) ->When you see one of us walking freely without a stitch of clothing, you know they have nothing left to hide.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_NakedTruth)       ->The archotechs had no need for appearances. They understood that the mind is greater than the physical form, and taught us not to confuse the things covering a body with the person beneath them.</li>
+					<li>archistFact(tag=meme_NakedTruth)        ->Archotechs sometimes reach directly into human minds. If we are willing to expose our thoughts to them, there is no reason to hide our flesh as well.</li>
+					<li>archistProphecy(tag=meme_NakedTruth)    ->[inTheEnd], the archotechs will seek out those who have abandoned every disguise and accepted themselves exactly as they are.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_NakedTruth)        ->The spirits gave us our bodies without clothing. To cover them is to deny the natural form they gave us.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_NakedTruth) ->[itIsSaid] that the sacred scorpions never hide their bodies. Their shells, claws, and stings are displayed openly, as nature intended.</li>
+					<!-- chthonian -->
+					<li>chthonianProphecy(tag=meme_NakedTruth) ->Something ancient beneath the world knows the truth of flesh. It does not wear clothing, and neither should we.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_NakedTruth) ->Every layer we place between ourselves and the world hides another part of the truth. To remove them all is to finally see what was always there.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_NakedTruth) ->When the final age arrives, all disguises will be stripped away. Humanity will stand exposed, with nothing left to hide from the universe.</li>
+					
+					<!-- corporate -->
+					<li>introMemo(tag=meme_NakedTruth) ->Management is pleased to announce the Complete Apparel Elimination Initiative. Employees are reminded that uniforms, protective equipment, and all other forms of clothing are unnecessary barriers between the employee and their authentic natural form.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_NakedTruth) ->Humanity scattered countless genetically engineered creatures across the stars, each adapted to live according to its natural form. Perhaps our greatest mistake was forgetting to do the same ourselves.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>nudism</ideoName>
+				<theme>nudity</theme>
+				<adjective>nudist</adjective>
+				<member>nudist</member>
+			</li>
+			<li>
+				<ideoName>skinism</ideoName>
+				<theme>skin</theme>
+				<adjective>skinnist</adjective>
+				<member>skinnist</member>
+			</li>
+		</symbolPacks>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<modExtensions>
+			<li Class="VEF.Memes.ExtendedMemeProperties">
+				<forcedTrait>Nudist</forcedTrait>
+			</li>
+		</modExtensions>
+		<agreeableTraits>
+			<li>Nudist</li>
+		</agreeableTraits>
 	</MemeDef>
 </Defs>

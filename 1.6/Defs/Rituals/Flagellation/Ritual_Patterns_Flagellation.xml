@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>AM_FlagellationPattern</defName>
+    <ritualBehavior>AM_FlagellationBehavior</ritualBehavior>
+   <ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
+ 
+    <ritualOutcomeEffect>AM_FlagellationOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<playsIdeoMusic>false</playsIdeoMusic>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>
