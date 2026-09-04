@@ -14,7 +14,7 @@
 		<defName>AM_Horses_Desired</defName>
 		<issue>AM_Horses</issue>
 		<label>desired</label>
-		<description>We see the horse as a vital companion on our ranch. Their strength and loyalty will enhance our life here, helping with work and bringing a sense of freedom to our lives.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with two tamed horses.\n - Horses will get -2 Minimum handling skill (it will be 0), +15% move speed and +25% caravan riding speed.</description>
+		<description>We see the horse as a vital companion on our ranch. Their strength and loyalty will enhance our life here, helping with work and bringing a sense of freedom to our lives.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony will start with two tamed horses.\n - Horses will get -2 Minimum handling skill (it will be 0), +15% move speed and +25% caravan riding speed.\n - By default, this covers base game horses, Meadow aves from Alpha Animals and horse hybrids from Vanilla Genetics Expanded.</description>
 		<impact>Medium</impact>
 		<requiredMemes>
 			<li>AM_Cowboys</li>

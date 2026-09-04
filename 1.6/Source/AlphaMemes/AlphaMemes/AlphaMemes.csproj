@@ -322,6 +322,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_RedAcidExplosion.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\DryadsDef.cs" />
+    <Compile Include="Defs\RanchAnimalsDef.cs" />
     <Compile Include="Defs\TeaDefs.cs" />
     <Compile Include="Dev Mode\GenerateSanguophageCamp.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
@@ -330,7 +331,6 @@
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
     <Compile Include="Enums\TeaNeedCategory.cs" />
     <Compile Include="FloatMenuOptionProviders\FloatMenuOptionProvider_RelicSmashingAltar.cs" />
-    <Compile Include="Harmony\Apparel_PawnCanWear.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
     <Compile Include="Harmony\Building_NutrientPasteDispenser_TryDispenseFood.cs" />
     <Compile Include="Harmony\CompGiveThoughtToAllMapPawnsOnDestroy_PostDestroy.cs" />
@@ -351,6 +351,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\JobDriver_PlantSow_MakeNewToils.cs" />
     <Compile Include="Harmony\JobGiver_OptimizeApparel_ApparelScoreGain.cs" />
+    <Compile Include="Harmony\JobGiver_OptimizeApparel_TryGiveJob.cs" />
     <Compile Include="Harmony\Mineable_TrySpawnYield.cs" />
     <Compile Include="Harmony\PawnApparelGenerator_GenerateStartingApparelFor.cs" />
     <Compile Include="Harmony\PawnDiedOrDownedThoughtsUtility_GiveVeneratedAnimalDiedThoughts.cs" />
@@ -585,6 +586,7 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Draincaskets.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_GauranlenConnection.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_NeedComfort.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Nude.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_OcularTrees.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_AnimalAnalysis.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Armor.cs" />

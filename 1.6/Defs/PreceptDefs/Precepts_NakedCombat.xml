@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>AM_NakedCombat</defName>
+		<label>naked combat</label>
+		<iconPath>UI/Issues/AM_NakedCombat</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_NakedCombat_Preferred</defName>
+		<issue>AM_NakedCombat</issue>
+		<label>preferred</label>
+		<description>Fighting naked allows us to move freely and evade attacks with greater ease.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<associatedMemes>
+			<li>AM_NakedTruth</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>AM_NakedTruth</li>
+		</requiredMemes>
+		<conditionalStatAffecters>
+			<li Class="ConditionalStatAffecter_Unclothed">
+				<statOffsets>
+					<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+					<VEF_RangedDodgeChance>0.2</VEF_RangedDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MeleeHitChance>1.2</MeleeHitChance>
+					<MeleeDodgeChance>1.2</MeleeDodgeChance>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+	</PreceptDef>
+</Defs>

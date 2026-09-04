@@ -6,15 +6,14 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
 			<value>
-
 				<li>
 					<thingDef>MeleeWeapon_Club</thingDef>
 					<styleDef>AM_Spikecore_Club</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Gladius</thingDef>
 					<styleDef>AM_Spikecore_Gladius</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>MeleeWeapon_Ikwa</thingDef>
 					<styleDef>AM_Spikecore_Ikwa</styleDef>
@@ -38,19 +37,19 @@
 				<li>
 					<thingDef>Gun_ChargeLance</thingDef>
 					<styleDef>AM_Spikecore_ChargeLance</styleDef>
-				</li>	
+				</li>
 				<li>
 					<thingDef>Gun_Minigun</thingDef>
 					<styleDef>AM_Spikecore_Minigun</styleDef>
-				</li>	
+				</li>
 				<li>
 					<thingDef>Gun_ChargeRifle</thingDef>
 					<styleDef>AM_Spikecore_ChargeRifle</styleDef>
-				</li>			
+				</li>
 				<li>
 					<thingDef>Gun_HeavySMG</thingDef>
 					<styleDef>AM_Spikecore_HeavySMG</styleDef>
-				</li>		
+				</li>
 				<li>
 					<thingDef>Gun_SniperRifle</thingDef>
 					<styleDef>AM_Spikecore_SniperRifle</styleDef>
@@ -87,7 +86,6 @@
 					<thingDef>Gun_AssaultRifle</thingDef>
 					<styleDef>AM_Spikecore_AssaultRifle</styleDef>
 				</li>
-
 				<li>
 					<thingDef>Bow_Short</thingDef>
 					<styleDef>AM_Spikecore_Bow</styleDef>
@@ -112,7 +110,6 @@
 					<thingDef>MeleeWeapon_BreachAxe</thingDef>
 					<styleDef>AM_Spikecore_Pickaxe</styleDef>
 				</li>
-				
 				<li>
 					<thingDef>Weapon_GrenadeFrag</thingDef>
 					<styleDef>AM_Spikecore_Grenade</styleDef>
@@ -153,11 +150,9 @@
 					<thingDef>Gun_ToxbombLauncher</thingDef>
 					<styleDef>AM_Spikecore_ToxLauncher</styleDef>
 				</li>
-
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Weapons Expanded</li>
@@ -202,7 +197,6 @@
 								<thingDef>VWE_Gun_Flamethrower</thingDef>
 								<styleDef>AM_Spikecore_Flamethrower</styleDef>
 							</li>
-							
 							<li>
 								<thingDef>VWE_Gun_HandCannon</thingDef>
 								<styleDef>AM_Spikecore_HandCannon</styleDef>
@@ -211,7 +205,6 @@
 								<thingDef>VWE_CombatHandgun</thingDef>
 								<styleDef>AM_Spikecore_CombatHandgun</styleDef>
 							</li>
-							
 							<li>
 								<thingDef>VWE_Gun_BattleRifle</thingDef>
 								<styleDef>AM_Spikecore_BattleRifle</styleDef>
@@ -228,13 +221,41 @@
 								<thingDef>VWE_Gun_HMG</thingDef>
 								<styleDef>AM_Spikecore_HMG</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+								<styleDef>AM_Spikecore_LeverActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_SawedOffShotgun</thingDef>
+								<styleDef>AM_Spikecore_SawedOffShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+								<styleDef>AM_Spikecore_SemiAutomaticRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LightSMG</thingDef>
+								<styleDef>AM_Spikecore_LightSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SMG</thingDef>
+								<styleDef>AM_Spikecore_SMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ServiceRifle</thingDef>
+								<styleDef>AM_Spikecore_ServiceRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+								<styleDef>AM_Spikecore_MarksmanRifle</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>
 			</operations>
 		</match>
 	</Operation>
-<Operation Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Weapons Expanded - Tribal</li>
 		</mods>
@@ -256,27 +277,30 @@
 			</operations>
 		</match>
 	</Operation>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Factions Expanded - Medieval 2</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationConditional">
-          <success>Always</success>
-          <xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
-          <match Class="PatchOperationAdd">
-            <xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
-            <value>
-              <li>
-                <thingDef>VFEM2_Gun_Flintlock</thingDef>
-                <styleDef>AM_Spikecore_Flintlock</styleDef>
-              </li>
-            </value>
-          </match>
-        </li>
-      </operations>
-    </match>
-  </Operation>
-
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Spikecore"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VFEM2_Gun_Flintlock</thingDef>
+								<styleDef>AM_Spikecore_Flintlock</styleDef>
+							</li>
+							<li>
+								<thingDef>VFEM2_Gun_Musket</thingDef>
+								<styleDef>AM_Spikecore_Musket</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

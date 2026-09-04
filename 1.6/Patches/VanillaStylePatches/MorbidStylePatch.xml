@@ -201,6 +201,62 @@
 								<thingDef>VWE_Gun_Flamethrower</thingDef>
 								<styleDef>AM_Morbid_Flamethrower</styleDef>
 							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Morbid_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Morbid_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Morbid_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Morbid_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Morbid_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Morbid_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_SawedOffShotgun</thingDef>
+								<styleDef>AM_Morbid_SawedOffShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+								<styleDef>AM_Morbid_SemiAutomaticRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LightSMG</thingDef>
+								<styleDef>AM_Morbid_LightSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SMG</thingDef>
+								<styleDef>AM_Morbid_SMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HMG</thingDef>
+								<styleDef>AM_Morbid_HMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+								<styleDef>AM_Morbid_LeverActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ServiceRifle</thingDef>
+								<styleDef>AM_Morbid_ServiceRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+								<styleDef>AM_Morbid_MarksmanRifle</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>
@@ -222,6 +278,32 @@
 							<li>
 								<thingDef>VWE_MeleeWeapon_Shiv</thingDef>
 								<styleDef>AM_Morbid_Shiv</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "Morbid"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "Morbid"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VFEM2_Gun_Flintlock</thingDef>
+								<styleDef>AM_Morbid_Flintlock</styleDef>
+							</li>
+							<li>
+								<thingDef>VFEM2_Gun_Musket</thingDef>
+								<styleDef>AM_Morbid_Musket</styleDef>
 							</li>
 						</value>
 					</match>

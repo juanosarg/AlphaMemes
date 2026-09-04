@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_Nudity_Male_Strict</defName>
+		<issue>Nudity_Male</issue>
+		<description>Men must be entirely nude at all times. No exceptions.</description>
+		<label>strict</label>
+		<impact>High</impact>
+		<displayOrderInIssue>140</displayOrderInIssue>
+		<displayOrderInImpact>750</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_NakedTruth</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AnyBodyPartCovered_Disapproved_Male</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AnyBodyPartCovered_Disapproved_Social_Male</thought>
+			</li>
+		</comps>
+		<prefersNudity>true</prefersNudity>
+		<genderPrefersNudity>Male</genderPrefersNudity>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>AM_Nudity_Female_Strict</defName>
+		<issue>Nudity_Female</issue>
+		<label>strict</label>
+		<description>Women must be entirely nude at all times. No exceptions.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>140</displayOrderInIssue>
+		<displayOrderInImpact>750</displayOrderInImpact>
+		<requiredMemes>
+			<li>AM_NakedTruth</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AnyBodyPartCovered_Disapproved_Female</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AnyBodyPartCovered_Disapproved_Social_Female</thought>
+			</li>
+		</comps>
+		<prefersNudity>true</prefersNudity>
+		<genderPrefersNudity>Female</genderPrefersNudity>
+	</PreceptDef>
+	
+
+</Defs>

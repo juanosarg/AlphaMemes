@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-	
-
-
 	<!-- Spikecore -->
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_Club</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -20,7 +13,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreShortSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -28,7 +20,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreIkwa</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -50,7 +41,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -58,7 +48,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -67,7 +56,7 @@
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreChargeRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>	
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_HeavySMG</defName>
 		<graphicData>
@@ -138,10 +127,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_Bow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -149,7 +136,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_RecurveBow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreRecurveBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -157,7 +143,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_GreatBow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -247,8 +232,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-		<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_Grenade</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreGrenades</texPath>
@@ -316,7 +300,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreShiv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -326,14 +309,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-		<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_Flamethrower</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Spikecore/AM_SpikecoreFlamethrower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_HandCannon</defName>
 		<graphicData>
@@ -348,7 +330,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Spikecore_BattleRifle</defName>
 		<graphicData>
@@ -384,6 +365,60 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreSemiautomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_Musket</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreMusket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_SpikecoreLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

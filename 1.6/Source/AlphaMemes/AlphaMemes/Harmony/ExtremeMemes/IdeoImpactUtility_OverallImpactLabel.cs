@@ -17,6 +17,11 @@ namespace AlphaMemes
         [HarmonyPrefix]
         public static bool DrawInsaneImpactLabel(int impact, ref string __result)
         {
+            if (impact > 50)
+            {
+                __result = "AM_IdeoImpactLabel_12".Translate();
+                return false;
+            }
             if (impact > 20)
             {
                 __result = "AM_IdeoImpactLabel_11".Translate();

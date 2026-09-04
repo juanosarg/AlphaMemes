@@ -349,6 +349,21 @@
 			<li>
 				<li>AM_Armour_Forbidden</li>
 			</li>
+			<li>
+				<li>AM_Nudity_Male_Strict</li>
+			</li>
+			<li>
+				<li>AM_Nudity_Female_Strict</li>
+			</li>
+			<li>
+				<li>Temperature_Tough</li>
+			</li>
+			<li>
+				<li>AM_NakedCombat_Preferred</li>
+			</li>
+			<li>
+				<li>AM_Disfigurement_DontCare</li>
+			</li>
 		</requireOne>
 		<generalRules>
 			<rulesStrings>
@@ -406,7 +421,6 @@
 					<li>esotericismProphecy(tag=meme_NakedTruth) ->Every layer we place between ourselves and the world hides another part of the truth. To remove them all is to finally see what was always there.</li>
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_NakedTruth) ->When the final age arrives, all disguises will be stripped away. Humanity will stand exposed, with nothing left to hide from the universe.</li>
-					
 					<!-- corporate -->
 					<li>introMemo(tag=meme_NakedTruth) ->Management is pleased to announce the Complete Apparel Elimination Initiative. Employees are reminded that uniforms, protective equipment, and all other forms of clothing are unnecessary barriers between the employee and their authentic natural form.</li>
 					<!-- alienist -->

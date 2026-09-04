@@ -13,10 +13,27 @@
 		<label>forbidden</label>
 		<description>Armor is forbidden. I will never hide my body behind clothing or armor. The body must remain exposed, for there is nothing shameful about our natural form.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists can't equip ANY apparel.</description>
 		<impact>High</impact>
-		<requiredMemes>		
+		<requiredMemes>
 			<li>AM_NakedTruth</li>
 		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>AM_Armour_Forbidden_HappyNude</thought>
+			</li>
+		</comps>
 	</PreceptDef>
+	<ThoughtDef>
+		<defName>AM_Armour_Forbidden_HappyNude</defName>
+		<workerClass>AlphaMemes.ThoughtWorker_Precept_Nude</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>naked truth</label>
+				<description>My body is bare and the truth is clear for all to see.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 	<PreceptDef>
 		<defName>AM_Armour_Blunt</defName>
 		<issue>AM_Armour</issue>

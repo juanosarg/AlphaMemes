@@ -43,6 +43,8 @@ namespace AlphaMemes
 
         public static List<PawnKindDef> cattleAnimals = new List<PawnKindDef>();
 
+        public static List<PawnKindDef> horseAnimals = new List<PawnKindDef>();
+
         public static HashSet<ThingDef> normalTeas = new HashSet<ThingDef>();
 
         public static HashSet<ThingDef> specialtyTeas = new HashSet<ThingDef>();
@@ -68,8 +70,18 @@ namespace AlphaMemes
 
             List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x=>x.race.HasComp<CompMilkable>() && x.race?.race?.Humanlike==false).ToList();
             cattleAnimals.AddRange(allMilkCattle);
-            cattleAnimals.Add(PawnKindDefOf.Muffalo);
-            cattleAnimals.Add(InternalDefOf.Bison);
+            HashSet<RanchAnimalsDef> allRanchAnimalsLists = DefDatabase<RanchAnimalsDef>.AllDefsListForReading.ToHashSet();
+            foreach (RanchAnimalsDef individualList in allRanchAnimalsLists)
+            {
+                foreach (PawnKindDef horse in individualList.horses)
+                {
+                    AddHorse(horse);
+                }
+                foreach (PawnKindDef cow in individualList.cows)
+                {
+                    AddCow(cow);
+                }
+            }
 
             HashSet<TeaDefs> allTeaLists = DefDatabase<TeaDefs>.AllDefsListForReading.ToHashSet();
             foreach (TeaDefs individualList in allTeaLists)
@@ -158,17 +170,27 @@ namespace AlphaMemes
             {
                 utilityDryads.Add(pawn);
             }
-
         }
-
-
         public static void AddCombatDryad(PawnKindDef pawn)
         {
             if (pawn != null && !combatDryads.Contains(pawn))
             {
                 combatDryads.Add(pawn);
             }
-
+        }
+        public static void AddCow(PawnKindDef pawn)
+        {
+            if (pawn != null && !cattleAnimals.Contains(pawn))
+            {
+                cattleAnimals.Add(pawn);
+            }
+        }
+        public static void AddHorse(PawnKindDef pawn)
+        {
+            if (pawn != null && !horseAnimals.Contains(pawn))
+            {
+                horseAnimals.Add(pawn);
+            }
         }
 
     }

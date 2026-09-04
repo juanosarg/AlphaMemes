@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlphaMemes.RanchAnimalsDef>
+		<defName>AM_RanchAnimalsDef</defName>
+		<horses>
+			<li>Horse</li>
+			<li MayRequire="sarg.alphaanimals">AA_MeadowAve</li>
+			<li MayRequire="sarg.alphaanimals">AA_DesertAve</li>
+			<li MayRequire="sarg.alphaanimals">AA_FrostAve</li>
+			<li MayRequire="sarg.alphaanimals">AA_NightAve</li>
+			<li MayRequire="sarg.alphaanimals">AA_RoyalAve</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_ParagonHorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Bearhorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Boomhorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Chickenhorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Cathorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Molehorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Wolfhorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Muffalohorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Crocorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Spiderhorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Hurseman</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Mechahorse</li>
+			<li MayRequire="VanillaExpanded.VGeneticsE">GR_Thrumhorse</li>
+		</horses>
+		<cows>
+			<li>Muffalo</li>
+			<li>Bison</li>
+		</cows>
+	</AlphaMemes.RanchAnimalsDef>
+</Defs>
+

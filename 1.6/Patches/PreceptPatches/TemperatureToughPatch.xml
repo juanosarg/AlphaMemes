@@ -7,16 +7,16 @@
 			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]</xpath>
 			<value>
 				<associatedMemes>
-					
 					<li>AM_PainIsDivine</li>
+					<li>AM_NakedTruth</li>
 				</associatedMemes>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/associatedMemes</xpath>
 			<value>
-				
 				<li>AM_PainIsDivine</li>
+				<li>AM_NakedTruth</li>
 			</value>
 		</match>
 	</Operation>
@@ -27,16 +27,16 @@
 			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]</xpath>
 			<value>
 				<requiredMemes>
-					
 					<li>AM_PainIsDivine</li>
+					<li>AM_NakedTruth</li>
 				</requiredMemes>
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/PreceptDef[defName = "Temperature_Tough"]/requiredMemes</xpath>
 			<value>
-				
 				<li>AM_PainIsDivine</li>
+				<li>AM_NakedTruth</li>
 			</value>
 		</match>
 	</Operation>

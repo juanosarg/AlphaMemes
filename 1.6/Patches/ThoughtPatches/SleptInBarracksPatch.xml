@@ -29,6 +29,7 @@
 				<nullifyingPrecepts>
 					<li>AM_Barracks_Preferred</li>
 					<li>AM_Barracks_PreferredTrue</li>
+					<li>AM_Barracks_Acceptable</li>
 				</nullifyingPrecepts>
 			</value>
 		</nomatch>
@@ -37,6 +38,7 @@
 			<value>
 				<li>AM_Barracks_Preferred</li>
 				<li>AM_Barracks_PreferredTrue</li>
+				<li>AM_Barracks_Acceptable</li>
 			</value>
 		</match>
 	</Operation>

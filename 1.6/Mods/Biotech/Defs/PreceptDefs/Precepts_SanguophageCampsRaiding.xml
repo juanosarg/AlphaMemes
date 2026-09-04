@@ -83,7 +83,7 @@
 			<li>
 				<label>too long without killing a sanguophage</label>
 				<description>It's been more than three quadrums since our colony has killed a Sanguophage... What kind of hunters are we?</description>
-				<baseMoodEffect>-20</baseMoodEffect>
+				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

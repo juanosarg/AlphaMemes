@@ -11,7 +11,7 @@
 		<defName>AM_Cattle_Improved</defName>
 		<issue>AM_Cattle</issue>
 		<label>improved</label>
-		<description>Through careful breeding and care, we strive to improve our cattle. Stronger, healthier, and more productive herds are a testament to our dedication and the cornerstone of a thriving ranch.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony cattle will get -15% needed nutrition, +25% eating speed and +15% immunity gain speed.</description>
+		<description>Through careful breeding and care, we strive to improve our cattle. Stronger, healthier, and more productive herds are a testament to our dedication and the cornerstone of a thriving ranch.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colony cattle will get -15% needed nutrition, +25% eating speed and +15% immunity gain speed.\n - By default, cattle covers any milkable animal, plus Muffalos and Bison.</description>
 		<impact>Medium</impact>
 		<requiredMemes>
 			<li>AM_Cowboys</li>

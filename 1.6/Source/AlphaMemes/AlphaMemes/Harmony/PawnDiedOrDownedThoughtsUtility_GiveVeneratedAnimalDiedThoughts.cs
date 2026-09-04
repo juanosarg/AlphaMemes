@@ -18,10 +18,10 @@ namespace AlphaMemes
     public static class AlphaMemes_PawnDiedOrDownedThoughtsUtility_GiveVeneratedAnimalDiedThoughts_Patch
     {
         [HarmonyPostfix]
-        static void HorseDied(Pawn victim, Map map)
+        public static void HorseDied(Pawn victim, Map map)
         {
 
-            if (victim.Faction == Faction.OfPlayerSilentFail && victim.kindDef== InternalDefOf.Horse)
+            if (victim.Faction == Faction.OfPlayerSilentFail && StaticCollections.horseAnimals.Contains(victim.kindDef))
             {
                 HistoryEvent historyEvent = new HistoryEvent(InternalDefOf.AM_ColonyHorseDied);
                 Find.HistoryEventsManager.RecordEvent(historyEvent);
