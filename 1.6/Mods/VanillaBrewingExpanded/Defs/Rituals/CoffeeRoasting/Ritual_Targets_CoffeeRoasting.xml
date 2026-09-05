@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualObligationTargetFilterDef>
+		<defName>AM_CoffeeRoastingTarget</defName>
+		<workerClass>RitualObligationTargetWorker_ThingDef</workerClass>
+		<thingDefs>
+			<li>Campfire</li>
+			<li MayRequire="VanillaExpanded.VFECore">Stone_Campfire</li>
+		</thingDefs>
+	</RitualObligationTargetFilterDef>
+</Defs>

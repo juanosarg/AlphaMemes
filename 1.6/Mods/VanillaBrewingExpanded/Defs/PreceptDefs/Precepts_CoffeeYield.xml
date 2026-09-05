@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_CoffeeYield</defName>
+		<label>coffee yield</label>
+		<iconPath>UI/Issues/AM_CoffeeYield</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_CoffeeYield_Increased</defName>
+		<issue>AM_CoffeeYield</issue>
+		<label>increased</label>
+		<description>By carefully tending our coffee plants and improving our harvesting methods, we coax a richer and more generous yield from every crop.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Increases yield of coffee plants by 10%.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>AM_CoffeePrimacy</li>
+		</associatedMemes>
+	</PreceptDef>
+</Defs>

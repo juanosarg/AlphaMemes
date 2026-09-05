@@ -115,6 +115,8 @@
 		<groupDef>AM_BloodFeeders</groupDef>
 		<exclusionTags>
 			<li>AM_HuntersVSBloodfeeders</li>
+			<li>AM_PacifistVsVampireHunters</li>
+			<li>AM_NonViolenceVowVsVampireHunters</li>
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>

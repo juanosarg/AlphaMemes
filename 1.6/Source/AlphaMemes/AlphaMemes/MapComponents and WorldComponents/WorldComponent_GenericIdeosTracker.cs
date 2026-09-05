@@ -16,6 +16,7 @@ namespace AlphaMemes
         public const int tickInterval = 60000;
 
         public bool teaBoost = false;
+        public bool coffeeBoost = false;
 
         public static WorldComponent_GenericIdeosTracker Instance;
 
@@ -33,7 +34,14 @@ namespace AlphaMemes
                     teaBoost = true;
 
                 }else teaBoost = false;
-             
+
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.AM_CoffeeCultivation_Improved) != null)
+                {
+                    coffeeBoost = true;
+
+                }
+                else coffeeBoost = false;
+
                 tickCounter = 0;
             }
 

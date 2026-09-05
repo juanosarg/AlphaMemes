@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Mesoamerican"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Mesoamerican"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>AM_Mesoamerican_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>AM_Mesoamerican_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>AM_Mesoamerican_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>AM_Mesoamerican_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>AM_Mesoamerican_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>AM_Mesoamerican_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>AM_Mesoamerican_AntiMaterialRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Compound</thingDef>
+								<styleDef>AM_Mesoamerican_CompoundBow</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Bow_Long</thingDef>
+								<styleDef>AM_Mesoamerican_LongBow</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Tribal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "AM_Mesoamerican"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "AM_Mesoamerican"]/thingDefStyles</xpath>
+						<value>
+							<li>
+								<thingDef>VWE_MeleeWeapon_HeavyClub</thingDef>
+								<styleDef>AM_Mesoamerican_HeavyClub</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_MeleeWeapon_LightClub</thingDef>
+								<styleDef>AM_Mesoamerican_LightClub</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_MeleeWeapon_TribalAxe</thingDef>
+								<styleDef>AM_Mesoamerican_TribalAxe</styleDef>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

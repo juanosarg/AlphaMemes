@@ -9,16 +9,14 @@ using System.Security.Principal;
 
 namespace AlphaMemes
 {
-    public class RitualOutcomeEffectWorker_TeaCeremony : RitualOutcomeEffectWorker_FromQuality
+    public class RitualOutcomeEffectWorker_CoffeeRoasting : RitualOutcomeEffectWorker_FromQuality
     {
 
-
-
-        public RitualOutcomeEffectWorker_TeaCeremony()
+        public RitualOutcomeEffectWorker_CoffeeRoasting()
         {
         }
 
-        public RitualOutcomeEffectWorker_TeaCeremony(RitualOutcomeEffectDef def) : base(def)
+        public RitualOutcomeEffectWorker_CoffeeRoasting(RitualOutcomeEffectDef def) : base(def)
         {
         }
 
@@ -49,44 +47,40 @@ namespace AlphaMemes
 
             }
             Pawn pawn2 = jobRitual.PawnWithRole("moralist");
-            ThingDef teaToMake=null;
-            int numberToMake=1;
-            switch(outcome.positivityIndex)
-
-                    {
-
+            ThingDef coffeeToMake = null;
+            int numberToMake = 1;
+            switch (outcome.positivityIndex)
+            {
                 case -1:
-                    teaToMake = InternalDefOf.VBE_Tea;
+                    coffeeToMake = InternalDefOf.VBE_HotCoffee;
                     numberToMake = 25;
                     break;
                 case 1:
-                    teaToMake = InternalDefOf.VBE_Tea;
+                    coffeeToMake = InternalDefOf.VBE_HotCoffee;
                     numberToMake = 75;
 
                     break;
                 case 2:
-                    if(StaticCollections.specialtyTeas.Count > 0)
+                    if (StaticCollections.specialtyCoffees.Count > 0)
                     {
-                        teaToMake = StaticCollections.specialtyTeas.RandomElement();
+                        coffeeToMake = StaticCollections.specialtyCoffees.RandomElement();
                         numberToMake = 150;
                     }
                     else
                     {
-                        teaToMake = InternalDefOf.VBE_Tea;
+                        coffeeToMake = InternalDefOf.VBE_HotCoffee;
                         numberToMake = 150;
 
                     }
 
                     break;
-                }
-            if(teaToMake != null)
+            }
+            if (coffeeToMake != null)
             {
-                Thing thing = ThingMaker.MakeThing(teaToMake);
+                Thing thing = ThingMaker.MakeThing(coffeeToMake);
                 thing.stackCount = numberToMake;
                 GenPlace.TryPlaceThing(thing, pawn2.Position, pawn2.Map, ThingPlaceMode.Near);
-
             }
-
 
             string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
             string text3 = this.def.OutcomeMoodBreakdown(outcome);

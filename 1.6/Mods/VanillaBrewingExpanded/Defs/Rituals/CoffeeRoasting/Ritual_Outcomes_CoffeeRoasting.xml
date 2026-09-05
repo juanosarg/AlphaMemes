@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_CoffeeRoastingOutcome</defName>
+		<description>If the coffee roasting doesn't go terribly bad, the moralist will brew some coffee for the colony without needing harvested coffee beans. Better outcomes will produce more coffee. A spectacular coffee roasting might produce some specialty coffee if VE Brewing - Coffees and Teas is installed.</description>
+		<workerClass>AlphaMemes.RitualOutcomeEffectWorker_CoffeeRoasting</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>100,  0.25</li>
+						<li>200, 0.5</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.1)</li>
+						<li>(10, 0.2)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_PawnStatScaled">
+				<label>{PAWN_labelShort}'s social impact</label>
+				<labelAbstract>speaker's social impact</labelAbstract>
+				<roleId>leader</roleId>
+				<statDef>SocialImpact</statDef>
+				<curve>
+					<points>
+						<li>(0.2,  0.0)</li>
+						<li>(0.6,  0.18)</li>
+						<li>(1.0, 0.25)</li>
+						<li>(1.5, 0.3)</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Burnt</label>
+				<chance>0.1</chance>
+				<memory>AM_CoffeeRoastingBurnt</memory>
+				<description>The {0} was burnt. The beans were ruined, and the ceremony was an insult to the sacred art of coffee roasting.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Underwhelming</label>
+				<chance>0.2</chance>
+				<memory>AM_CoffeeRoastingUnderwhelming</memory>
+				<description>The {0} was underwhelming. The roasting lacked the care and skill it deserved, leaving the coffee dull and uninspired.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Rich</label>
+				<chance>0.6</chance>
+				<memory>AM_CoffeeRoastingRich</memory>
+				<description>The {0} was delightful. The beans were roasted beautifully, filling the air with a rich aroma and leaving us feeling renewed.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Masterful</label>
+				<chance>0.1</chance>
+				<memory>AAM_CoffeeRoastingMasterful</memory>
+				<description>The {0} was masterful! The beans were roasted to perfection, creating an unforgettable communion with the sacred art of coffee.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlphaMemes.CoffeesDef>
+		<defName>AM_CoffeesDef</defName>
+		<normalCoffees>
+			<li>VBE_HotCoffee</li>
+			<li>VBE_IceCoffee</li>
+		</normalCoffees>
+		<specialtyCoffees>
+			<li>VBE_DalgonaCoffee</li>
+			<li>VBE_MintCoffee</li>
+			<li>VBE_LemonCoffee</li>
+			<li>VBE_CannibalCoffee</li>
+			<li>VBE_IrishCoffee</li>
+			<li>VBE_LatteCoffee</li>
+			<li>VBE_MochaCoffee</li>
+			<li>VBE_PumpkinCoffee</li>
+			<li>VBE_Yuenyeung</li>
+		</specialtyCoffees>
+	</AlphaMemes.CoffeesDef>
+</Defs>

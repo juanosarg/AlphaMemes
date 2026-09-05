@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<MemeGroupDef>
+		<defName>AM_CoffeeAndTea</defName>
+		<drawOffset>(0.65, 0.23)</drawOffset>
+		<maxRows>1</maxRows>
+		<renderOrder>2000</renderOrder>
+	</MemeGroupDef>
 	<MemeDef>
 		<defName>AM_TeaPrimacy</defName>
 		<label>tea primacy</label>
 		<description>Tea is everything to us—comfort, culture, and ritual. We start our day with it, solve problems over it, and celebrate through it. Those who don’t drink tea just don’t understand what they’re missing.</description>
 		<iconPath>UI/Memes/AM_TeaPrimacy</iconPath>
 		<exclusionTags>
-		
+			<li>AM_CoffeeAndTea</li>
 		</exclusionTags>
-		<groupDef>Misc</groupDef>
+		<groupDef>AM_CoffeeAndTea</groupDef>
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
@@ -77,9 +83,15 @@
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-			<li><li>AM_TeaDrinking_Required</li></li>
-			<li><li>AM_TeaCultivation_Improved</li></li>
-			<li><li>AM_TeaYield_Increased</li></li>
+			<li>
+				<li>AM_TeaDrinking_Required</li>
+			</li>
+			<li>
+				<li>AM_TeaCultivation_Improved</li>
+			</li>
+			<li>
+				<li>AM_TeaYield_Increased</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -114,6 +126,126 @@
 			<li>
 				<precept>AM_TeaCeremonyPrecept</precept>
 				<pattern>AM_TeaCeremonyPattern</pattern>
+			</li>
+		</requiredRituals>
+	</MemeDef>
+	<MemeDef>
+		<defName>AM_CoffeePrimacy</defName>
+		<label>coffee primacy</label>
+		<description>Coffee is the fuel that drives our lives. Its rich aroma awakens the body, its bitter taste sharpens the mind, and its daily rituals bring us together. A life without coffee is a life lived without purpose.</description>
+		<iconPath>UI/Memes/AM_CoffeePrimacy</iconPath>
+		<exclusionTags>
+			<li>AM_CoffeeAndTea</li>
+		</exclusionTags>
+		<groupDef>AM_CoffeeAndTea</groupDef>
+		<impact>2</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeCreed->brew</li>
+				<li>memeCreed->roast</li>
+				<li>memeCreed->grind</li>
+				<li>memeCreed->sip</li>
+				<li>memeCreed->pour</li>
+				<li>memeConcept->energy</li>
+				<li>memeConcept->aroma</li>
+				<li>memeAdjective->energizing</li>
+				<li>memeAdjective->bold</li>
+				<li>memeAdjective->invigorating</li>
+				<li>memeHyphenPrefix->coffee</li>
+				<li>memeHyphenPrefix->brew</li>
+				<li>memeHyphenPrefix->bean</li>
+				<li>memeLeaderNoun->coffee-master</li>
+				<li>memeLeaderNoun->barista</li>
+				<li>memeLeaderNoun->brewmaster</li>
+				<li>memeLeaderAdjective->energetic</li>
+				<li>memeLeaderAdjective->alert</li>
+				<li>memeLeaderAdjective->vigorous</li>
+				<li>memeMoralist->coffee-sage</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_CoffeePrimacy)        ->[deity0_name] gifted humanity the first coffee beans, teaching us that alertness and determination are the true paths to enlightenment. This is [deity0_name]'s gift to the coffee-drinkers.</li>
+					<li>episode(uses=1,tag=meme_CoffeePrimacy)  ->[deity0_name] roasted the first sacred beans, sharing their warmth and vigor with [deity0_possessive] people, and thus began the tradition of coffee.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_CoffeePrimacy)           ->When the first coffee-drinkers gathered in the [place_summary] [place_name], they shared a pot of freshly brewed coffee, offering thanks to the [deity0_type] [deity0_name] for its invigorating embrace.</li>
+					<li>conflict(tag=meme_CoffeePrimacy)        ->A rival [foeLeader] tried to outlaw coffee, but the [memberNamePlural] resisted with determined gatherings, converting their oppressors through the power of a perfect brew.</li>
+					<li>founderJoin(tag=meme_CoffeePrimacy)     ->The wise [founderName] brewed the first ceremonial coffee in [place_name], inspiring a movement rooted in energy and determination.</li>
+					<li>victory(tag=meme_CoffeePrimacy)         ->[founderName] outmaneuvered [foeLeader] at the [place_powerCenter], offering a cup of coffee so invigorating that it ended all hostilities.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_CoffeePrimacy)           ->In a world of exhaustion, [founderName] envisioned a society grounded in the energizing ritual of coffee.</li>
+					<li>story(uses=1,tag=meme_CoffeePrimacy)    ->[founderName] gathered the weary and the sluggish, showing them the path to purpose through the shared ritual of roasting, brewing, and drinking coffee.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_CoffeePrimacy)         ->You might not realize this, but as I took a sip of coffee, I understood this truth: through every cup,</li>
+					<li>lesson(tag=meme_CoffeePrimacy)              ->we find strength in energy and clarity in the boldness of coffee</li>
+					<li>lessonReinforcement(tag=meme_CoffeePrimacy) ->Never forget this truth, for each cup of coffee is a spark of clarity in an otherwise sluggish world.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_CoffeePrimacy)    ->The archotechs value focus and precision, and nothing sharpens the mind like a perfectly brewed cup of coffee.</li>
+					<li>archistFact(tag=meme_CoffeePrimacy)     ->The archotechs engineered the finest coffee plants, ensuring humanity could always find vigor in the bean.</li>
+					<li>archistFact(tag=meme_CoffeePrimacy)     ->To the archotechs, coffee rituals are a vital component of human productivity and efficiency.</li>
+					<li>archistProphecy(tag=meme_CoffeePrimacy) ->[inTheEnd], the archotechs will brew a coffee so potent that it unites all minds in a single moment of perfect clarity.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_CoffeePrimacy)     ->Every coffee bean holds a spirit of its own, and each brew honors the essence of the earth.</li>
+					<li>animistFact(tag=meme_CoffeePrimacy)     ->The spirits of soil, rain, and bean dance together in harmony, creating a brew that awakens the soul.</li>
+					<li>animistFact(tag=meme_CoffeePrimacy)     ->Coffee is a gift from the spirits, teaching us resilience, vigor, and gratitude with every cup.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_CoffeePrimacy)->[itIsSaid] that sacred insects pollinate the finest coffee plants, their labor infusing the beans with unparalleled vitality.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_CoffeePrimacy)->The ancient gods of the yawning abyss delight in the ritual of coffee, their whispers carried in the steam of every brew.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_CoffeePrimacy)->The secrets of the universe lie in the swirling patterns of coffee, where every brew reveals a hidden truth to those alert enough to perceive it.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_CoffeePrimacy)->At the end of days, roasters will burn endlessly, and all will drink together in an eternal state of wakefulness.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_CoffeePrimacy)->To: All Employees. Subject: Coffee Culture at Work. It has come to our attention that productivity is being significantly impacted by excessive coffee breaks. While we understand the importance of staying alert, please remember that the quarterly budget cannot be brewed like a fine espresso. Consider this your invitation to a balanced coffee culture—savor, but also work.</li>
+					<!-- alienist -->
+					<li>alienistProphecy(tag=meme_CoffeePrimacy)->The harmony of the galaxy begins with a shared pot of coffee, bridging the gaps between species with its invigorating warmth.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>AM_CoffeeDrinking_Required</li>
+			</li>
+			<li>
+				<li>AM_CoffeeCultivation_Improved</li>
+			</li>
+			<li>
+				<li>AM_CoffeeYield_Increased</li>
+			</li>
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Roastkeepers</ideoName>
+				<theme>roast</theme>
+				<adjective>roasted</adjective>
+				<member>coffee taster</member>
+			</li>
+			<li>
+				<ideoName>Brewguardians</ideoName>
+				<theme>brew</theme>
+				<adjective>brewed</adjective>
+				<member>coffee brewer</member>
+			</li>
+			<li>
+				<ideoName>Beanbinders</ideoName>
+				<theme>bean</theme>
+				<adjective>bean-bound</adjective>
+				<member>coffee grinder</member>
+			</li>
+			<li>
+				<ideoName>Roastivists</ideoName>
+				<theme>roasting</theme>
+				<adjective>roasted</adjective>
+				<member>coffee drinker</member>
+			</li>
+		</symbolPacks>
+		<requiredRituals>
+			<li>
+				<precept>AM_CoffeeRoastingPrecept</precept>
+				<pattern>AM_CoffeeRoastingPattern</pattern>
 			</li>
 		</requiredRituals>
 	</MemeDef>

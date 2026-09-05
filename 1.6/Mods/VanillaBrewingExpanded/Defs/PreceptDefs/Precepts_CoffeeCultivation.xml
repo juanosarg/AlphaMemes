@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>AM_CoffeeCultivation</defName>
+		<label>coffee cultivation</label>
+		<iconPath>UI/Issues/AM_CoffeeCultivation</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>AM_CoffeeCultivation_Improved</defName>
+		<issue>AM_CoffeeCultivation</issue>
+		<label>improved</label>
+		<description>Our coffee cultivation has become a craft in its own right. Through careful tending and mastery of the roast, we coax rich, flavorful beans from every plant and ensure our harvest is plentiful.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Coffee plants will receive a +20% growth rate bonus.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>AM_CoffeePrimacy</li>
+		</associatedMemes>
+	</PreceptDef>
+</Defs>

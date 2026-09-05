@@ -93,7 +93,7 @@
 		<thinkNode Class="ThinkNode_Priority">
 			<subNodes>
 				<li Class="AlphaMemes.JobGiver_OcularBurial">
-        </li>
+				</li>
 				<li Class="JobGiver_Idle">
 					<ticks>60</ticks>
 				</li>

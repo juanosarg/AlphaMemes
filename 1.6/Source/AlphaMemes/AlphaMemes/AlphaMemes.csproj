@@ -323,12 +323,14 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\DryadsDef.cs" />
     <Compile Include="Defs\RanchAnimalsDef.cs" />
+    <Compile Include="Defs\CoffeesDef.cs" />
     <Compile Include="Defs\TeaDefs.cs" />
     <Compile Include="Dev Mode\GenerateSanguophageCamp.cs" />
     <Compile Include="Dialogs\Dialog_AnimalDatabase.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles_Swap.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles_Area.cs" />
     <Compile Include="Dialogs\Dialog_ChangeStyles.cs" />
+    <Compile Include="Enums\CoffeeNeedCategory.cs" />
     <Compile Include="Enums\TeaNeedCategory.cs" />
     <Compile Include="FloatMenuOptionProviders\FloatMenuOptionProvider_RelicSmashingAltar.cs" />
     <Compile Include="Harmony\BaseGenUtility_TryRandomInexpensiveFloor.cs" />
@@ -391,6 +393,7 @@
     <Compile Include="MapComponents and WorldComponents\MapComponent_FurnitureTracker.cs" />
     <Compile Include="MapComponents and WorldComponents\WorldComponent_KillsTracker.cs" />
     <Compile Include="MapComponents and WorldComponents\WorldComponent_SanguophageCampQuests.cs" />
+    <Compile Include="Needs\Need_Coffee.cs" />
     <Compile Include="Needs\Need_Tea.cs" />
     <Compile Include="Options\AlphaMemes_Settings.cs" />
     <Compile Include="Options\AlphaMemes_SettingsController.cs" />
@@ -526,6 +529,7 @@
     <Compile Include="Rituals\Misc\Behaviours\RitualBehaviorWorker_TeaCeremony.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Banquet.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Baptism.cs" />
+    <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_CoffeeRoasting.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_DirtmoleConversion.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_Flagellation.cs" />
     <Compile Include="Rituals\Misc\Outcomes\RitualOutcomeEffectWorker_MaddeningChant.cs" />
@@ -577,7 +581,8 @@
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsMadness.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsNonViolent.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsPainIsDivine.cs" />
-    <Compile Include="ThoughtWorkers\ThoughtWorker_NeedTea.cs" />
+    <Compile Include="ThoughtWorkers\Needs\ThoughtWorker_NeedCoffee.cs" />
+    <Compile Include="ThoughtWorkers\Needs\ThoughtWorker_NeedTea.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Baths.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_BloodfeederDied_Desire.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_CattleMassPerCapita.cs" />

@@ -83,9 +83,15 @@ namespace AlphaMemes
         [MayRequire("VanillaExpanded.VBrewE")]
         public static PreceptDef AM_TeaDrinking_Required;
         [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_CoffeeDrinking_Required;
+        [MayRequire("VanillaExpanded.VBrewE")]
         public static PreceptDef AM_TeaCultivation_Improved;
         [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_CoffeeCultivation_Improved;
+        [MayRequire("VanillaExpanded.VBrewE")]
         public static PreceptDef AM_TeaYield_Increased;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static PreceptDef AM_CoffeeYield_Increased;
         [MayRequireRoyalty]
         public static PreceptDef AM_AnimaScreams_Delightful;
         public static PreceptDef AM_InsectMeatEating_Required;
@@ -142,6 +148,10 @@ namespace AlphaMemes
         public static HistoryEventDef AM_DrankTea;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static HistoryEventDef AM_DrankSpecialtyTea;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static HistoryEventDef AM_DrankCoffee;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static HistoryEventDef AM_DrankSpecialtyCoffee;
         public static HistoryEventDef AM_SowedPlantOutside;
 
         public static ThingDef AM_TrapBlunt;
@@ -193,7 +203,11 @@ namespace AlphaMemes
         [MayRequire("VanillaExpanded.VBrewE")]
         public static ThingDef VBE_Plant_Tea;
         [MayRequire("VanillaExpanded.VBrewE")]
+        public static ThingDef VBE_Plant_Coffee;
+        [MayRequire("VanillaExpanded.VBrewE")]
         public static ThingDef VBE_Tea;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static ThingDef VBE_HotCoffee;
         public static ThingDef Meat_Megaspider;
         public static ThingDef RawFungus;
         [MayRequireRoyalty]
@@ -238,6 +252,8 @@ namespace AlphaMemes
         public static MemeDef AM_PsychicVampirism;
         [MayRequire("VanillaExpanded.VBrewE")]
         public static MemeDef AM_TeaPrimacy;
+        [MayRequire("VanillaExpanded.VBrewE")]
+        public static MemeDef AM_CoffeePrimacy;
 
         //public static ThingStyleDef AM_MealNutrientPaste;
 

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Axe</defName>
+		<overrideLabel>tlaximaltepoztli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_BoltActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanBoltRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Bow</defName>
+		<overrideLabel>tlahhuītōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChainShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChainShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_HeavySMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanHeavyMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_SniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_MachinePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanMachinePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanPumpShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_AssaultRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanAntimaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Club</defName>
+		<overrideLabel>quauholōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_GreatBow</defName>
+		<overrideLabel>great tlahhuītōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanGreatBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Hammer</defName>
+		<overrideLabel>cuauhololli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Ikwa</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Knife</defName>
+		<overrideLabel>macuahuitzōctli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Mace</defName>
+		<overrideLabel>macuahuitl</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Pickaxe</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanPickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_RecurveBow</defName>
+		<overrideLabel>recurve tlahhuītōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanRecurveBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Sword</defName>
+		<overrideLabel>huitzauhqui</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Spear</defName>
+		<overrideLabel>tepoztopilli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Gladius</defName>
+		<overrideLabel>curved huitzauhqui</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanGladius</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_CompoundBow</defName>
+		<overrideLabel>compound tlahhuītōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanCompoundbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_LongBow</defName>
+		<overrideLabel>long tlahhuītōlli</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanLongbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ToxLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanToxLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Pila</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanPilum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Staff</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanEltexStaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_HeavyClub</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanGreatClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_LightClub</defName>
+		<overrideLabel>sharpened stick</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanLightClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_TribalAxe</defName>
+		<overrideLabel>crude stone ax</overrideLabel>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanTribalAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+</Defs>

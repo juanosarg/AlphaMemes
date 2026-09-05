@@ -49,9 +49,13 @@ namespace AlphaMemes
 
         public static HashSet<ThingDef> specialtyTeas = new HashSet<ThingDef>();
 
+        public static HashSet<ThingDef> normalCoffees = new HashSet<ThingDef>();
+
+        public static HashSet<ThingDef> specialtyCoffees = new HashSet<ThingDef>();
+
         public static float databaseCompletion = 0;
 
-        public static List<PawnKindDef> utilityDryads = new List<PawnKindDef>();   
+        public static List<PawnKindDef> utilityDryads = new List<PawnKindDef>();
         public static List<PawnKindDef> combatDryads = new List<PawnKindDef>();
 
         public static List<MemeDef> listReligiousMemes = new List<MemeDef>() { InternalDefOf.AM_Structure_Jainism,InternalDefOf.AM_Structure_Jewish, InternalDefOf.AM_Structure_Kemetism, InternalDefOf.AM_Structure_Sikhism,
@@ -68,7 +72,7 @@ namespace AlphaMemes
         static StaticCollections()
         {
 
-            List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x=>x.race.HasComp<CompMilkable>() && x.race?.race?.Humanlike==false).ToList();
+            List<PawnKindDef> allMilkCattle = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.race.HasComp<CompMilkable>() && x.race?.race?.Humanlike == false).ToList();
             cattleAnimals.AddRange(allMilkCattle);
             HashSet<RanchAnimalsDef> allRanchAnimalsLists = DefDatabase<RanchAnimalsDef>.AllDefsListForReading.ToHashSet();
             foreach (RanchAnimalsDef individualList in allRanchAnimalsLists)
@@ -86,7 +90,7 @@ namespace AlphaMemes
             HashSet<TeaDefs> allTeaLists = DefDatabase<TeaDefs>.AllDefsListForReading.ToHashSet();
             foreach (TeaDefs individualList in allTeaLists)
             {
-                foreach(string normalTea in individualList.normalTeas)
+                foreach (string normalTea in individualList.normalTeas)
                 {
                     ThingDef normalTeaDef = DefDatabase<ThingDef>.GetNamedSilentFail(normalTea);
                     if (normalTeaDef != null)
@@ -101,7 +105,28 @@ namespace AlphaMemes
                     {
                         specialtyTeas.Add(specialtyTeaDef);
                     }
-                }      
+                }
+            }
+
+            HashSet<CoffeesDef> allCoffeesLists = DefDatabase<CoffeesDef>.AllDefsListForReading.ToHashSet();
+            foreach (CoffeesDef individualList in allCoffeesLists)
+            {
+                foreach (string normalCoffee in individualList.normalCoffees)
+                {
+                    ThingDef normalCoffeeDef = DefDatabase<ThingDef>.GetNamedSilentFail(normalCoffee);
+                    if (normalCoffeeDef != null)
+                    {
+                        normalCoffees.Add(normalCoffeeDef);
+                    }
+                }
+                foreach (string specialtyCoffee in individualList.specialtyCoffees)
+                {
+                    ThingDef specialtyCoffeeDef = DefDatabase<ThingDef>.GetNamedSilentFail(specialtyCoffee);
+                    if (specialtyCoffeeDef != null)
+                    {
+                        specialtyCoffees.Add(specialtyCoffeeDef);
+                    }
+                }
             }
 
             HashSet<DryadsDef> allDryadLists = DefDatabase<DryadsDef>.AllDefsListForReading.ToHashSet();
@@ -109,7 +134,7 @@ namespace AlphaMemes
             {
                 foreach (PawnKindDef utilityDryad in individualList.utilityDryads)
                 {
-                    AddUtilityDryad(utilityDryad);                   
+                    AddUtilityDryad(utilityDryad);
                 }
                 foreach (PawnKindDef combatDryad in individualList.combatDryads)
                 {

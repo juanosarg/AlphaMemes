@@ -15,7 +15,7 @@ namespace AlphaMemes
     public static class AlphaMemes_Plant_GrowthRate_Patch
     {
         [HarmonyPostfix]
-        static void GetPlantFertility(ref float __result, Plant __instance)
+        public static void GetPlantFertility(ref float __result, Plant __instance)
         {
             if (WorldComponent_PlantFertility.Instance.plants_and_fertility.ContainsKey(__instance) )
             {
@@ -25,20 +25,12 @@ namespace AlphaMemes
             {
                 __result *= 1.2f;
             }
-
-
-
-
-
-
+            if (__instance.def == InternalDefOf.VBE_Plant_Coffee && WorldComponent_GenericIdeosTracker.Instance.coffeeBoost)
+            {
+                __result *= 1.2f;
+            }
         }
     }
-
-
-
-
-
-
 
 
 }

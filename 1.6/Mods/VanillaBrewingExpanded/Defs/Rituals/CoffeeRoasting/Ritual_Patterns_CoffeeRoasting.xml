@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef>
+		<defName>AM_CoffeeRoastingPattern</defName>
+		<ritualBehavior>AM_CoffeeRoastingBehavior</ritualBehavior>
+		<ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+		<ritualObligationTargetFilter>AM_CoffeeRoastingTarget</ritualObligationTargetFilter>
+		<ritualOutcomeEffect>AM_CoffeeRoastingOutcome</ritualOutcomeEffect>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
+		<playsIdeoMusic>false</playsIdeoMusic>
+	</RitualPatternDef>
+</Defs>

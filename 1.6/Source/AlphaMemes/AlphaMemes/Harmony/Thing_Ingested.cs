@@ -1,16 +1,12 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 using Verse.AI;
-using AlphaPrefabs;
+
 
 namespace AlphaMemes
 {
-
     [HarmonyPatch(typeof(Thing))]
     [HarmonyPatch("Ingested")]
     public static class AlphaMemes_Thing_Ingested_Patch
@@ -30,11 +26,9 @@ namespace AlphaMemes
                         return thingList[i];
                     }
                 }
-            }
-           
+            }          
             return null;
         }
-
 
         [HarmonyPostfix]
         public static void IngestedNutrientPaste(Thing __instance, Pawn ingester)
@@ -58,8 +52,7 @@ namespace AlphaMemes
                         if (ingester.needs?.food != null)
                         {
                             ingester.needs.food.CurLevel = -0.3f;
-                        }
-                        
+                        }                      
                     }
                 }
 
@@ -79,13 +72,13 @@ namespace AlphaMemes
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankPsychiteTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
                 }
-                if (InternalDefOf.AM_DrankTea != null && StaticCollections.normalTeas.Contains(__instance.def))
+                if (InternalDefOf.AM_DrankCoffee != null && StaticCollections.normalCoffees.Contains(__instance.def))
                 {
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankCoffee, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
                 }
-                if (InternalDefOf.AM_DrankSpecialtyTea != null && StaticCollections.specialtyTeas.Contains(__instance.def))
+                if (InternalDefOf.AM_DrankSpecialtyCoffee != null && StaticCollections.specialtyCoffees.Contains(__instance.def))
                 {
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankSpecialtyTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankSpecialtyCoffee, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
                 }
 
                 if (ingester.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_RoughLiving_Disliked) == true)
@@ -122,16 +115,8 @@ namespace AlphaMemes
 
                         }
                     }
-
                 }
-
-
             }
-
-
-
-
-
         }
     }
 }

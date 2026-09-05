@@ -21,6 +21,7 @@
 			<li>VME_SadistVsNonviolence</li>
 			<li>AM_NonViolenceVowVsSharpshooter</li>
 			<li>AM_NonViolenceVowVsGladiator</li>
+			<li>AM_NonViolenceVowVsVampireHunters</li>
 		</exclusionTags>
 		<impact>4</impact>
 		<generalRules>

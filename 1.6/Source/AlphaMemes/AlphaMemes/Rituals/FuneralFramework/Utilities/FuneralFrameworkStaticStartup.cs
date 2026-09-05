@@ -22,10 +22,7 @@ namespace AlphaMemes
                 AM_WarCasketLifeSupport = DefDatabase<HediffDef>.GetNamed("AM_WarCasketLifeSupport");
                 VFEP_SpacerWarcaskets = DefDatabase<ResearchProjectDef>.GetNamed("VFEP_SpacerWarcaskets", false);
             }
-            if (ModsConfig.IsActive("sarg.alphaanimals"))
-            {
-                AM_OcularBurial = DefDatabase<JobDef>.GetNamed("AM_OcularBurial");
-            }
+            
         }
 
         

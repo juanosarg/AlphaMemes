@@ -1,21 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
- 
-  
-   <NeedDef>
-    <defName>AM_TeaNeed</defName>
-    <needClass>AlphaMemes.Need_Tea</needClass>
-    <label>tea</label>
-    <description>Tea reflects a person’s craving for the soothing warmth and refined taste of brewed leaves, a ritual as old as civilization itself.</description>
-    <minIntelligence>Humanlike</minIntelligence>
-    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
-	<fallPerDay>0.5</fallPerDay>
-    <listPriority>91</listPriority>
-   
-  </NeedDef>
-
-  
+	<NeedDef>
+		<defName>AM_TeaNeed</defName>
+		<needClass>AlphaMemes.Need_Tea</needClass>
+		<label>tea</label>
+		<description>Tea reflects a person’s craving for the soothing warmth and refined taste of brewed leaves, a ritual as old as civilization itself.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<fallPerDay>0.5</fallPerDay>
+		<listPriority>91</listPriority>
+	</NeedDef>
+	<NeedDef>
+		<defName>AM_CoffeeNeed</defName>
+		<needClass>AlphaMemes.Need_Coffee</needClass>
+		<label>coffee</label>
+		<description>Coffee reflects a person's craving for the invigorating warmth and rich taste of freshly brewed beans, a ritual that sharpens the mind and starts the day.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<fallPerDay>0.5</fallPerDay>
+		<listPriority>91</listPriority>
+	</NeedDef>
 </Defs>
