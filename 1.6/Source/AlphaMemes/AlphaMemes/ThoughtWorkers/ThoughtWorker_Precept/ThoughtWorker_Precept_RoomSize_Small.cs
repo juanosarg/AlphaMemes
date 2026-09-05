@@ -4,9 +4,9 @@ using System;
 using Verse;
 namespace AlphaMemes
 {
-    public class ThoughtWorker_Precept_RoomSize_Small : ThoughtWorker
+    public class ThoughtWorker_Precept_RoomSize_Small : ThoughtWorker_Precept
     {
-        protected override ThoughtState CurrentStateInternal(Pawn p)
+        protected override ThoughtState ShouldHaveThought(Pawn p)
         {
             if (p.needs.roomsize == null)
             {
