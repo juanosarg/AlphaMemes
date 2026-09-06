@@ -22,7 +22,7 @@
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Berrymaker</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Stonedigger</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Nectarmaker</li>
-			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Gaubricmake</li>
+			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Gaubricmaker</li>
 		</utilityDryads>
 		<combatDryads>
 			<li>Dryad_Clawer</li>
