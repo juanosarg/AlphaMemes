@@ -72,6 +72,14 @@ namespace AlphaMemes
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankPsychiteTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
                 }
+                if (InternalDefOf.AM_DrankTea != null && StaticCollections.normalTeas.Contains(__instance.def))
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
+                if (InternalDefOf.AM_DrankSpecialtyTea != null && StaticCollections.specialtyTeas.Contains(__instance.def))
+                {
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankSpecialtyTea, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
+                }
                 if (InternalDefOf.AM_DrankCoffee != null && StaticCollections.normalCoffees.Contains(__instance.def))
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.AM_DrankCoffee, new SignalArgs(ingester.Named(HistoryEventArgsNames.Doer))), true);
