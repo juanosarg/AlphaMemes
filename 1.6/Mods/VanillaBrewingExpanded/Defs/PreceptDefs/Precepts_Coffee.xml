@@ -33,7 +33,7 @@
 				<eventDef>AM_DrankCoffee</eventDef>
 				<thought>AM_CoffeeDrinking_Required_DrankCoffee</thought>
 			</li>
-			<li Class="AlphaMemes.PreceptComp_IncreaseTeaNeed">
+			<li Class="AlphaMemes.PreceptComp_IncreaseCoffeeNeed">
 				<eventDef>AM_DrankCoffee</eventDef>
 				<needGain>0.4</needGain>
 			</li>
@@ -41,7 +41,7 @@
 				<eventDef>AM_DrankSpecialtyCoffee</eventDef>
 				<thought>AM_CoffeeDrinking_Required_DrankSpecialtyCoffee</thought>
 			</li>
-			<li Class="AlphaMemes.PreceptComp_IncreaseTeaNeed">
+			<li Class="AlphaMemes.PreceptComp_IncreaseCoffeeNeed">
 				<eventDef>AM_DrankSpecialtyCoffee</eventDef>
 				<needGain>0.5</needGain>
 			</li>

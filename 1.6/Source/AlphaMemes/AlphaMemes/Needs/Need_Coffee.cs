@@ -85,7 +85,7 @@ namespace AlphaMemes
 
         }
 
-        public void TeaTaken(float coffee)
+        public void CoffeeTaken(float coffee)
         {
             this.lastCoffeeUsed = coffee;
             this.lastCoffeeUseTick = Find.TickManager.TicksGame;

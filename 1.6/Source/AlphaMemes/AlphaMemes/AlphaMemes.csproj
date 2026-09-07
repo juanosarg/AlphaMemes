@@ -400,6 +400,7 @@
     <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Pawn Classes\Pawn_Detonator.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnlyOne.cs" />
+    <Compile Include="PreceptComps\PreceptComp_IncreaseCoffeeNeed.cs" />
     <Compile Include="PreceptComps\PreceptComp_IncreaseTeaNeed.cs" />
     <Compile Include="PreceptComps\PreceptComp_SanguophageDied.cs" />
     <Compile Include="Precepts\PreceptWorker_DespisedAnimal.cs" />
