@@ -5,12 +5,13 @@
 		<defName>AM_FungusEating_Required</defName>
 		<issue>FungusEating</issue>
 		<label>required</label>
-		<description>Fungus sustains us where surface crops fail. We should eat nothing that cannot thrive in the darkness.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating anything different than fungus (or insect meat) will make the colonist vomit immediately.</description>
+		<description>Fungus sustains us where surface crops fail. We should eat nothing that cannot thrive in the darkness.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating anything different than insect meat, insect jelly or fungus will make the colonist vomit immediately.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<requiredMemes>
 			<li>AM_DeepDevotion</li>
+			<li>Darkness</li>
 		</requiredMemes>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">

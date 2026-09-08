@@ -46,7 +46,7 @@ namespace AlphaMemes
 
                 if (ingester.Ideo?.HasPrecept(InternalDefOf.AM_InsectMeatEating_Required) == true && ingester.Ideo?.HasPrecept(InternalDefOf.AM_FungusEating_Required) == true)
                 {
-                    if(!__instance.def.IsFungus && !FoodUtility.IsInsectCorpseOrInsectMeatIngredient(__instance))
+                    if(!IsFungusOrFungusIngredients(__instance) &&!FoodUtility.IsInsectCorpseOrInsectMeatIngredient(__instance) && __instance.def != ThingDefOf.InsectJelly)
                     {
                         ingester.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
                         if (ingester.needs?.food != null)
@@ -125,6 +125,29 @@ namespace AlphaMemes
                     }
                 }
             }
+        }
+
+        public static bool IsFungusOrFungusIngredients(Thing thing)
+        {
+            if (thing.def.IsFungus)
+            {
+                return true;
+            }
+            bool ingredientFound = false;
+            CompIngredients compIngredients = thing.TryGetComp<CompIngredients>();
+            if (compIngredients != null)
+            {
+                for (int j = 0; j < compIngredients.ingredients.Count; j++)
+                {
+                    if (compIngredients.ingredients[j].IsFungus)
+                    {
+                        ingredientFound = true;
+                        break;
+                    }
+                }
+
+            }
+            return ingredientFound;
         }
     }
 }

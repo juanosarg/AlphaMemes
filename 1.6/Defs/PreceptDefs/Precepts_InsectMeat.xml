@@ -5,16 +5,16 @@
 		<defName>AM_InsectMeatEating_Required</defName>
 		<issue>InsectMeat</issue>
 		<label>required</label>
-		<description>Insect flesh is sacred sustenance. We must never turn our backs on the bounty of the creatures that dwell beneath the earth.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating anything different than insect meat (or fungus) will make the colonist vomit immediately.</description>
+		<description>Insect flesh is sacred sustenance. We must never turn our backs on the bounty of the creatures that dwell beneath the earth.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Eating anything different than insect meat, insect jelly or fungus will make the colonist vomit immediately.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<requiredMemes>
 			<li>AM_DeepDevotion</li>
 		</requiredMemes>
-		<exclusionTags>
-			<li>InsectMeatEatingLoved</li>
-		</exclusionTags>
+		<conflictingMemes>
+			<li>Tunneler</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>AteInsectMeatDirect</eventDef>

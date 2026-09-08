@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/RitualAttachableOutcomeEffectDef[defName = "InsectJellyTunnels"]/requiredMemeAny</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/RitualAttachableOutcomeEffectDef[defName = "InsectJellyTunnels"]</xpath>
+			<value>
+				<requiredMemeAny>
+					<li>AM_DeepDevotion</li>
+				</requiredMemeAny>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RitualAttachableOutcomeEffectDef[defName = "InsectJellyTunnels"]/requiredMemeAny</xpath>
+			<value>
+				<li>AM_DeepDevotion</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
