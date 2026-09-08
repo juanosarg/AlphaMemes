@@ -5,5 +5,5 @@
 	     Adding it again via XPath patch causes duplicate CompStyleable components,
 	     leading to duplicate sourcePrecept entries in save files and errors on load.
 	     The XPath conditional check doesn't detect inherited comps. -->
-
+ 
 </Patch>
