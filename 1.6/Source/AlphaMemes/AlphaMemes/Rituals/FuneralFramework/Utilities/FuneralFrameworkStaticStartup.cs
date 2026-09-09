@@ -16,8 +16,13 @@ namespace AlphaMemes
             foreach(PreceptDef precept in DefDatabase<PreceptDef>.AllDefsListForReading.Where(x => x.HasModExtension<FuneralPreceptExtension>())){
                 funeralDefs.Add(precept);
             }
-           
-            
+            VFEPLoaded = ModsConfig.IsActive("OskarPotocki.VFE.Pirates");
+            if (VFEPLoaded)
+            {
+                AM_WarCasketLifeSupport = DefDatabase<HediffDef>.GetNamed("AM_WarCasketLifeSupport");
+                VFEP_SpacerWarcaskets = DefDatabase<ResearchProjectDef>.GetNamed("VFEP_SpacerWarcaskets", false);
+            }
+
         }
 
         

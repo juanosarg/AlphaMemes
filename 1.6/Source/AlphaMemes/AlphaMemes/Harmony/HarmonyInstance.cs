@@ -24,10 +24,45 @@ namespace AlphaMemes
             var method3 = AccessTools.Method(typeof(PawnApparelGenerator), "GenerateStartingApparelFor");
             var postfix3 = typeof(AlphaMemes_PawnApparelGenerator_GenerateStartingApparelFor_Patch).GetMethod("RemoveApparel");
             AlphaMemes_Mod.harmony.Patch(method3, postfix: postfix3);
-
+            PatchVFEPirate(AlphaMemes_Mod.harmony);
         }
-     
 
-     }
+        public static void PatchVFEPirate(Harmony harmony)
+        {
+            //Occupant patch
+            var postfix = typeof(Building_WarcasketFoundry_OccupantAliveAndPresent_Patch).GetMethod("Postfix");
+
+            var type = AccessTools.TypeByName("VFEPirates.Building_WarcasketFoundry");
+            var method = AccessTools.PropertyGetter(type, "OccupantAliveAndPresent");
+            if (postfix != null && method != null)
+            {
+                harmony.Patch(method, postfix: new HarmonyMethod(postfix));
+            }
+            //Draw Patch          
+            postfix = typeof(Building_WarcasketFoundry_Draw_Patch).GetMethod("Postfix");
+            if (postfix != null)
+            {
+                harmony.Patch(AccessTools.Method("VFEPirates.Building_WarcasketFoundry:DrawAt"), postfix: new HarmonyMethod(postfix));
+            }
+            //Hediff patch
+            postfix = typeof(RecipeWorker_WarcasketRemoval_AvailableOnNow_Patch).GetMethod("Postfix");
+            if (postfix != null)
+            {
+                harmony.Patch(AccessTools.Method("VFEPirates.RecipeWorker_WarcasketRemoval:AvailableOnNow"), postfix: new HarmonyMethod(postfix));
+            }
+            //OskarPotocki.VFECore
+            //Patch to let resurecttion penalties affect sarco casket
+            postfix = typeof(PawnCapacityUtility_CalculateCapacityLevel_Patch).GetMethod("Postfix");
+            if (postfix != null)
+            {
+                var harmonyPostfix = new HarmonyMethod(postfix)
+                {
+                    after = new[] { "OskarPotocki.VFECore" }
+                };
+
+                harmony.Patch(AccessTools.Method("Verse.PawnCapacityUtility:CalculateCapacityLevel"), postfix: harmonyPostfix);
+            }
+        }
+    }
 
 }
