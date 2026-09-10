@@ -15,7 +15,7 @@ namespace AlphaMemes
         [HarmonyPostfix]
         public static void PostFix(ref bool __result, Thing thing, Pawn pawn, ref string cantReason)
         {
-            if (pawn.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Armour_Forbidden) == true)
+            if (pawn.ideo?.Ideo?.HasPrecept(InternalDefOf.AM_Armour_Forbidden) == true && thing.def.IsApparel)
             {
                 __result = false;
                 cantReason = "AM_NakedTruthCantWearArmor".Translate();

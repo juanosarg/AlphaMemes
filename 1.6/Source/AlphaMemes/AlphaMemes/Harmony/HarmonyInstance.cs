@@ -24,7 +24,12 @@ namespace AlphaMemes
             var method3 = AccessTools.Method(typeof(PawnApparelGenerator), "GenerateStartingApparelFor");
             var postfix3 = typeof(AlphaMemes_PawnApparelGenerator_GenerateStartingApparelFor_Patch).GetMethod("RemoveApparel");
             AlphaMemes_Mod.harmony.Patch(method3, postfix: postfix3);
-            PatchVFEPirate(AlphaMemes_Mod.harmony);
+
+            if (FuneralFrameWork_StaticStartup.VFEPLoaded)
+            {
+                PatchVFEPirate(AlphaMemes_Mod.harmony);
+            }
+            
         }
 
         public static void PatchVFEPirate(Harmony harmony)
