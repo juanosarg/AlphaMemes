@@ -436,6 +436,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
 			<useIdeoColor>true</useIdeoColor>
+			 <paintable>true</paintable>
 		</building>
 		<comps>
 			<li>
@@ -462,6 +463,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
 			<useIdeoColor>true</useIdeoColor>
+			 <paintable>true</paintable>
 		</building>
 		<comps>
 			<li>

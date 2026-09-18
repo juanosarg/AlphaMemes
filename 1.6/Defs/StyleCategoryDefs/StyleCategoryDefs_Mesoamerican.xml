@@ -300,5 +300,9 @@
 			<li>AM_MesoamericanRug_Medium</li>
 			<li>AM_MesoamericanRug_Broad</li>
 		</addDesignators>
+		<addDesignatorGroups>
+			<li>AM_Floor_MesoamericanTiles</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_MesoamericanFineTiles</li>
+		</addDesignatorGroups>
 	</StyleCategoryDef>
 </Defs>

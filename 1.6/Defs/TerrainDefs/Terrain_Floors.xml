@@ -517,4 +517,144 @@
 		</statBases>
 		<designationHotKey>Misc6</designationHotKey>
 	</TerrainDef>
+	<!-- Mesoamerican -->
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_MesoamericanTiles</defName>
+		<label>mesoamerican stone tiles</label>
+	</DesignatorDropdownGroupDef>
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="AM_MesoamericanTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles in a mesoamerican style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_MesoamericanStoneTiles</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<designatorDropdown>AM_Floor_MesoamericanTiles</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<dominantStyleCategory>AM_Mesoamerican</dominantStyleCategory>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTileSandstone</defName>
+		<label>mesoamerican sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTileGranite</defName>
+		<label>mesoamerican granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTileLimestone</defName>
+		<label>mesoamerican limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTileSlate</defName>
+		<label>mesoamerican slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTileMarble</defName>
+		<label>mesoamerican marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanTileStoneBase">
+		<defName>AM_MesoamericanTilePristineLimestone</defName>
+		<label>mesoamerican pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>4</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+	<DesignatorDropdownGroupDef>
+		<defName>AM_Floor_MesoamericanFineTiles</defName>
+		<label>mesoamerican fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="AM_MesoamericanFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a mesoamerican style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/AM_MesoamericanFineStoneTiles</texturePath>
+		<designatorDropdown>AM_Floor_MesoamericanFineTiles</designatorDropdown>
+		<dominantStyleCategory>AM_Mesoamerican</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTileSandstone</defName>
+		<label>mesoamerican fine sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTileGranite</defName>
+		<label>mesoamerican fine granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTileLimestone</defName>
+		<label>mesoamerican fine limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTileSlate</defName>
+		<label>mesoamerican fine slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTileMarble</defName>
+		<label>mesoamerican fine marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+	<TerrainDef ParentName="AM_MesoamericanFineStoneTiles">
+		<defName>AM_MesoamericanFineTilePristineLimestone</defName>
+		<label>mesoamerican fine pristine limestone tile</label>
+		<color>(170,157,125)</color>
+		<costList>
+			<AM_BlocksPristineLimestone>20</AM_BlocksPristineLimestone>
+		</costList>
+	</TerrainDef>
+	
 </Defs>
