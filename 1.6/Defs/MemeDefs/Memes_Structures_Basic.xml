@@ -760,6 +760,173 @@
 		
 	</MemeDef>
 	
-	
+	<MemeDef>
+		<defName>AM_Structure_Mesoamerican</defName>
+		<label>mesoamerican origin</label>
+		<description>This ideoligion is a descendant of the ancient religions of Mesoamerica. Its traditions draw from the Maya, Mexica, Zapotec, and other Mesoamerican cultures. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/AM_Mesoamerican</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>4</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->reconstructed</li>
+				<li>memeAdjective->revived</li>
+				<li>memeAdjective->revised</li>
+				<li>memeHyphenPrefix->neo</li>
+				<li>memeLeaderNoun->tlatoani</li>
+				<li>memeLeaderNoun->ajaw</li>
+				<li>memeLeaderAdjective->solemn</li>
+				<li>memeLeaderAdjective->sacred</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->ah k'in</li>
+				<li>memeMoralist->tlamacazqui</li>
+				<li>memeMoralist->quihuatl</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>AM_MesoamericanDescription</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_mesoamerican</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>mesoamerican</theme>
+				<adjective>mesoamerican</adjective>
+				<member>mesoamerican</member>
+			</li>
+		</symbolPacks>
+		<thingStyleCategories>
+			<li>
+				<category>AM_Mesoamerican</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Ometeotl</name>
+				<type>The Creator God</type>
+			</li>
+			<li>
+				<name>Quetzalcoatl</name>
+				<type>God of Knowledge</type>
+			</li>
+			<li>
+				<name>Huitzilopochtli</name>
+				<type>God of War</type>
+			</li>
+			<li>
+				<name>Tlaloc</name>
+				<type>God of Rain</type>
+			</li>
+			<li>
+				<name>Coatlicue</name>
+				<type>Goddess of Motherhood</type>
+			</li>
+			<li>
+				<name>Tezcatlipoca</name>
+				<type>God of Night</type>
+			</li>
+			<li>
+				<name>Chalchiuhtlicue</name>
+				<type>Goddess of Water</type>
+			</li>
+			<li>
+				<name>Xipe Totec</name>
+				<type>God of Renewal</type>
+			</li>
+			<li>
+				<name>Tonatiuh</name>
+				<type>God of the Sun</type>
+			</li>
+			<li>
+				<name>Metztli</name>
+				<type>God of the Moon</type>
+			</li>
+			<li>
+				<name>Mictlantecuhtli</name>
+				<type>God of Death</type>
+			</li>
+			<li>
+				<name>Mictecacihuatl</name>
+				<type>Goddess of the Dead</type>
+			</li>
+			<li>
+				<name>Mayahuel</name>
+				<type>Goddess of Agave</type>
+			</li>
+			<li>
+				<name>Chicomecoatl</name>
+				<type>Goddess of Maize</type>
+			</li>
+			<li>
+				<name>Xochiquetzal</name>
+				<type>Goddess of Beauty</type>
+			</li>
+			<li>
+				<name>Xolotl</name>
+				<type>God of Lightning</type>
+			</li>
+			<li>
+				<name>Xiuhtecuhtli</name>
+				<type>God of Fire</type>
+			</li>
+			<li>
+				<name>Ehcatl</name>
+				<type>God of Wind</type>
+			</li>
+			<li>
+				<name>Camazotz</name>
+				<type>God of Bats</type>
+			</li>
+			<li>
+				<name>Itzamna</name>
+				<type>God of Creation</type>
+			</li>
+			<li>
+				<name>Ix Chel</name>
+				<type>Goddess of Medicine</type>
+			</li>
+			<li>
+				<name>Kukulkan</name>
+				<type>God of Wind</type>
+			</li>
+			<li>
+				<name>Chaac</name>
+				<type>God of Rain</type>
+			</li>
+			<li>
+				<name>Ah Puch</name>
+				<type>God of Death</type>
+			</li>
+			<li>
+				<name>Kinich Ahau</name>
+				<type>God of the Sun</type>
+			</li>
+			<li>
+				<name>Yum Kaax</name>
+				<type>God of the Forest</type>
+			</li>
+			<li>
+				<name>Ek Chuah</name>
+				<type>God of Merchants</type>
+			</li>
+			<li>
+				<name>Huracan</name>
+				<type>God of Storms</type>
+			</li>
+		</fixedDeityNameTypes>
+	</MemeDef>
 	
 </Defs>

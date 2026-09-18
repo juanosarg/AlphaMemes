@@ -721,4 +721,34 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	 <ThingDef ParentName="TableGatherSpotBase">
+    <defName>AM_EatingMat</defName>
+    <label>eating mat (2x2)</label>
+	<description>A simple woven reed surface used as a low table for eating.</description>
+	<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <graphicData>
+			<texPath>Things/Building/BuildingStyles/Mesoamerican/AM_EatingMat</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <size>(2,2)</size>
+    <costList><Hay>50</Hay></costList>
+    <rotatable>false</rotatable>
+  </ThingDef>
 </Defs>

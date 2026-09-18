@@ -113,10 +113,7 @@
 				<thingDef>TorchWallLamp</thingDef>
 				<styleDef>AM_Kemetic_TorchWallLamp</styleDef>
 			</li>
-			<li>
-				<thingDef>Couch</thingDef>
-				<styleDef>AM_KemeticCouch</styleDef>
-			</li>
+			
 			<li>
 				<thingDef>WallLamp</thingDef>
 				<styleDef>AM_KemeticWallLamp</styleDef>
@@ -330,6 +327,10 @@
 			<li>
 				<thingDef>Armchair</thingDef>
 				<styleDef>AM_KemeticArmchair</styleDef>
+			</li>
+			<li>
+				<thingDef>Couch</thingDef>
+				<styleDef>AM_KemeticCouch</styleDef>
 			</li>
 			<li>
 				<thingDef>DiningChair</thingDef>

@@ -240,7 +240,7 @@
 	<IdeoStoryPatternDef>
 		<defName>AM_KemeticDescription</defName>
 		<segments>
-			<li>kemeticlessonIntro</li>
+			<li>mesoamericanlessonIntro</li>
 			<li>lesson</li>
 			<li>lessonReinforcement</li>
 			<li>kemeticlessonReinforcement</li>
@@ -256,7 +256,7 @@
 				<!-- final fallbacks (when no memes selected yet) -->
 				<li>lesson(priority=-1)->stuff happens</li>
 				<!-- typesetting -->
-				<li>r_pattern->"[r_kemeticlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_kemeticlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<li>r_pattern->"[r_mesoamericanlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_kemeticlessonReinforcement]"\n\n  - [lessonAttribution]</li>
 				<!-- attribution -->
 				<li>lessonAttribution->fragment of a [edited] [book] found [museum]</li>
 				<li>edited->heavily edited</li>
@@ -274,14 +274,14 @@
 				<li>museum->in ancient ruins on Ticonderoga</li>
 				<li>museum->by an artifact hunter on Ilwaba</li>
 				<!-- generic intro -->
-				<li>kemeticlessonIntro->O you young men of Shu of the morning, who have power over those who flash among the sun-folk, whose arms move about and whose heads sway to and fro, may I move about every day. Understand:</li>
-				<li>kemeticlessonIntro->Behold Osiris Ani the scribe who recordeth the holy offerings of all the gods, who saith:</li>
-				<li>kemeticlessonIntro->Hail all ye gods of the Temple of the Soul, who weigh heaven and earth in the balance, and who provide food and abundance of meat. They teach us one thing:</li>
-				<li>kemeticlessonIntro->The House of the Prince keepeth festival, and the sound of those who rejoice is in the mighty dwelling. The gods are glad when we realize that</li>
-				<li>kemeticlessonIntro->Behold Osiris, Qenna the merchant, who saith: "Homage to thee, in thy rising thou Tmu in thy crowns of beauty. Thou risest, thou risest, thou Ra shinest, thou shinest, at dawn of day. Preach that</li>
-				<li>kemeticlessonIntro->Homage to thee, O thou glorious Being, thou who art provided with all things. O Tmu-Heru-khuti, when thou risest in the horizon of heaven, a cry cometh out of the mouth of all peoples:</li>
-				<li>kemeticlessonIntro->I am Tmu-Khepera, who gave birth unto himself upon the thigh of his divine mother. Those who are in Nu are made wolves, and those who are among the godlike rulers are become. Realize that</li>
-				<li>kemeticlessonIntro->Hail, Bull of Amenta. I am brought unto thee, I am the oar of Ra wherewith he ferried over the aged ones; let me not be buried nor consumed. I thus declare:</li>
+				<li>mesoamericanlessonIntro->O you young men of Shu of the morning, who have power over those who flash among the sun-folk, whose arms move about and whose heads sway to and fro, may I move about every day. Understand:</li>
+				<li>mesoamericanlessonIntro->Behold Osiris Ani the scribe who recordeth the holy offerings of all the gods, who saith:</li>
+				<li>mesoamericanlessonIntro->Hail all ye gods of the Temple of the Soul, who weigh heaven and earth in the balance, and who provide food and abundance of meat. They teach us one thing:</li>
+				<li>mesoamericanlessonIntro->The House of the Prince keepeth festival, and the sound of those who rejoice is in the mighty dwelling. The gods are glad when we realize that</li>
+				<li>mesoamericanlessonIntro->Behold Osiris, Qenna the merchant, who saith: "Homage to thee, in thy rising thou Tmu in thy crowns of beauty. Thou risest, thou risest, thou Ra shinest, thou shinest, at dawn of day. Preach that</li>
+				<li>mesoamericanlessonIntro->Homage to thee, O thou glorious Being, thou who art provided with all things. O Tmu-Heru-khuti, when thou risest in the horizon of heaven, a cry cometh out of the mouth of all peoples:</li>
+				<li>mesoamericanlessonIntro->I am Tmu-Khepera, who gave birth unto himself upon the thigh of his divine mother. Those who are in Nu are made wolves, and those who are among the godlike rulers are become. Realize that</li>
+				<li>mesoamericanlessonIntro->Hail, Bull of Amenta. I am brought unto thee, I am the oar of Ra wherewith he ferried over the aged ones; let me not be buried nor consumed. I thus declare:</li>
 				<!-- generic reinforcement -->
 				<li>kemeticlessonReinforcement->Hail, Tmu, grant thou unto me the sweet breath which is in thy two nostrils.</li>
 				<li>kemeticlessonReinforcement->Thou risest, O still heart! Thou shinest, O still heart!</li>
@@ -496,6 +496,65 @@
 				<li>itIsSaid->Either through technology or more arcane means</li>
 				<li>itIsSaid->Many techniques behind their creation have been lost with time, but in time</li>
 				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+	<IdeoStoryPatternDef>
+		<defName>AM_MesoamericanDescription</defName>
+		<segments>
+			<li>mesoamericanlessonIntro</li>
+			<li>lesson</li>
+			<li>lessonReinforcement</li>
+			<li>mesoamericanlessonReinforcement</li>
+		</segments>
+		<noCapitalizeFirstSentence>
+			<li>lesson</li>
+		</noCapitalizeFirstSentence>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+				<!-- final fallbacks (when no memes selected yet) -->
+				<li>lesson(priority=-1)->stuff happens</li>
+				<!-- typesetting -->
+				<li>r_pattern->"[r_mesoamericanlessonIntro] [r_lesson]. [r_lessonReinforcement] [r_mesoamericanlessonReinforcement]"\n\n  - [lessonAttribution]</li>
+				<!-- attribution -->
+				<li>lessonAttribution->fragment of a [edited] [book] found [museum]</li>
+				<li>edited->heavily edited</li>
+				<li>edited->poorly translated</li>
+				<li>edited->ruined</li>
+				<li>edited->forgotten</li>
+				<li>edited->recovered</li>
+				<li>book->Popol Vuh</li>
+				<li>book->Book of Chilam Balam</li>
+				<li>book->Dresden Codex</li>
+				<li>book->Madrid Codex</li>
+				<li>book->Codex Borgia</li>
+				<li>museum->in the archives of Amen-Ti</li>
+				<li>museum->in a private collection on Rogia</li>
+				<li>museum->in the Utmaior Academy archives</li>
+				<li>museum->in the Caspian School of Engineering's historical collection</li>
+				<li>museum->in the Vanu Defense College archives</li>
+				<li>museum->in the ruins of an ancient city on Kemia</li>
+				<!-- generic intro -->
+				<li>mesoamericanlessonIntro->THIS IS THE BEGINNING OF THE ANCIENT TRADITIONS of this place called Quiché. HERE we shall write:</li>
+				<li>mesoamericanlessonIntro->We shall begin to tell the ancient stories of the beginning, the origin of all that was done in the citadel of Quiché:</li>
+				<li>mesoamericanlessonIntro->THIS IS THE ACCOUNT of when all is still silent and placid:</li>
+
+				<li>mesoamericanlessonIntro->All is silent and calm. Hushed and empty is the womb of the sky. Preach that</li>
+				<li>mesoamericanlessonIntro->What time the sun shall brightest shine, tearful will be the eyes of the king. Four ages yet shall be inscribed:</li>
+				<li>mesoamericanlessonIntro->Then shall come the holy priest, the holy god. With grief I speak what now I see:</li>
+				<li>mesoamericanlessonIntro->Watch well the road, ye dwellers in Itza. The master of the earth shall come to us. I thus declare:</li>
+				<!-- generic reinforcement -->
+				<li>mesoamericanlessonReinforcement->Thus prophesies Nahau Pech, the seer.</li>
+				<li>mesoamericanlessonReinforcement->So it is said, in the days of the fourth age, at the time of its beginning.</li>
+				<li>mesoamericanlessonReinforcement->The time for the planting and dawning is nearing. For this we must make a provider and nurturer.</li>
+				<li>mesoamericanlessonReinforcement->In earth we must cook it, and in earth must be his grave—if the great knower, the one to be made and modeled, is to have a sowing and dawning.</li>
+				<li>mesoamericanlessonReinforcement->There were countless peoples, but there was just one dawn for all tribes.</li>
+				
+				<li>lessonReinforcement->No one can argue with that.</li>
 			</rulesStrings>
 		</rules>
 	</IdeoStoryPatternDef>

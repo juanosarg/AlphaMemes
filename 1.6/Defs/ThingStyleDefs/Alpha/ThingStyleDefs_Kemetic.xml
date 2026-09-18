@@ -236,15 +236,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Kemetic/WallTorch/AM_KemeticWallTorch_MenuIcon</uiIconPath>
 	</ThingStyleDef>
-	<ThingStyleDef>
-		<defName>AM_KemeticCouch</defName>
-		<graphicData>
-			<texPath>Things/Building/BuildingStyles/Kemetic/Couch/AM_KemeticCouch</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-	</ThingStyleDef>
+	
 	<ThingStyleDef ParentName="WallLampStyleBase">
 		<defName>AM_KemeticWallLamp</defName>
 		<graphicData>
@@ -899,6 +891,15 @@
 			<shadowData>
 				<volume>(0.23, 0.26, 0.23)</volume>
 			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>AM_KemeticCouch</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Kemetic/Couch/AM_KemeticCouch</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>

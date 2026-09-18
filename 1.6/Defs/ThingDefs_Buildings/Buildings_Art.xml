@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--================================ Sculptures ======================================-->
+	<!--================================ Sculptures and big structures ======================================-->
 	<ThingDef ParentName="SculptureBase">
 		<defName>AM_Pyramid</defName>
 		<label>pyramid</label>
@@ -62,9 +62,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_GrandGate</defName>
 		<label>grand gate</label>
@@ -87,7 +84,6 @@
 				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
 			</li>
-
 		</comps>
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
@@ -118,7 +114,6 @@
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
-
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
@@ -126,7 +121,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_FuturisticObelisk</defName>
 		<label>futuristic obelisk</label>
@@ -149,7 +143,6 @@
 				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
 			</li>
-
 		</comps>
 		<uiIconPath>Things/Building/BuildingStyles/Kemetic/AM_FutureObelisk_UIIcon</uiIconPath>
 		<rotatable>false</rotatable>
@@ -164,7 +157,6 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">60</StyleDominance>
 		</statBases>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
-	
 		<blockWind>true</blockWind>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>1</fillPercent>
@@ -181,7 +173,6 @@
 		<researchPrerequisites>
 			<li>MicroelectronicsBasics</li>
 		</researchPrerequisites>
-
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
@@ -189,7 +180,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_FuturisticStele</defName>
 		<label>futuristic stele</label>
@@ -212,7 +202,6 @@
 				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
 			</li>
-
 		</comps>
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
@@ -243,7 +232,6 @@
 		<researchPrerequisites>
 			<li>MicroelectronicsBasics</li>
 		</researchPrerequisites>
-
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
@@ -251,7 +239,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_FuturisticPyramid</defName>
 		<label>futuristic great pyramid</label>
@@ -376,7 +363,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_GreatPyramid</defName>
 		<label>great pyramid</label>
@@ -500,9 +486,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
-
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_Sphynx</defName>
 		<label>sphinx</label>
@@ -622,7 +605,6 @@
 			<li>Art</li>
 		</tradeTags>
 	</ThingDef>
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>AM_Megalith</defName>
 		<label>megalith</label>
@@ -729,6 +711,125 @@
 			<li>BuildingsMisc</li>
 		</thingCategories>
 		<costStuffCount>550</costStuffCount>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AM_MesoamericanPyramid</defName>
+		<label>mesoamerican pyramid</label>
+		<description>A stepped stone pyramid crowned by a temple, built to honor the gods and mark the center of the settlement.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Mesoamerican/AM_MesoamericanPyramid</texPath>
+			<drawSize>(24,24)</drawSize>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<thingClass>Building_Art</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>50</pathCost>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.16)</li>
+								<!-- awful -->
+								<li>(1,0.24)</li>
+								<!-- poor -->
+								<li>(2,0.28)</li>
+								<!-- normal -->
+								<li>(3,0.30)</li>
+								<!-- good -->
+								<li>(4,0.32)</li>
+								<!-- excellent -->
+								<li>(5,0.36)</li>
+								<!-- masterwork -->
+								<li>(6,0.4)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>30</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.015)</li>
+								<!-- normal -->
+								<li>(3,0.02)</li>
+								<!-- good -->
+								<li>(4,0.02)</li>
+								<!-- excellent -->
+								<li>(5,0.03)</li>
+								<!-- masterwork -->
+								<li>(6,0.04)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<size>(24,24)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>75000</MaxHitPoints>
+			<Beauty>7000</Beauty>
+			<Mass>100000</Mass>
+			<WorkToBuild>400000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">150</StyleDominance>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costStuffCount>9000</costStuffCount>
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
