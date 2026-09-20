@@ -726,4 +726,121 @@
 			</damageData>
 		</graphicData>
 	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Tuque</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Tuque/AM_Mesoamerican_Tuque</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Tuque/AM_Mesoamerican_Tuque</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_CowboyHat</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CowboyHat/AM_Mesoamerican_CowboyHat</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CowboyHat/AM_Mesoamerican_CowboyHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_SimpleHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_SimpleHelmet/AM_Mesoamerican_SimpleHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_SimpleHelmet/AM_Mesoamerican_SimpleHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_AdvancedHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_AdvancedHelmet/AM_Mesoamerican_AdvancedHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_AdvancedHelmet/AM_Mesoamerican_AdvancedHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_BowlerHat</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_BowlerHat/AM_Mesoamerican_BowlerHat</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_BowlerHat/AM_Mesoamerican_BowlerHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ReconArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_ReconHelmet/AM_Mesoamerican_ReconHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_ReconHelmet/AM_Mesoamerican_ReconHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_WarMask</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_WarMask/AM_Mesoamerican_WarMask</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_WarMask/AM_Mesoamerican_WarMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PowerHelmet/AM_Mesoamerican_PowerHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PowerHelmet/AM_Mesoamerican_PowerHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigeReconHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigeReconHelmet/AM_Mesoamerican_PrestigeReconHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigeReconHelmet/AM_Mesoamerican_PrestigeReconHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigePowerArmorHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigePowerHelmet/AM_Mesoamerican_PrestigePowerHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigePowerHelmet/AM_Mesoamerican_PrestigePowerHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ArmorCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CataphractHelmet/AM_Mesoamerican_CataphractHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CataphractHelmet/AM_Mesoamerican_CataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigeCataphractHelmet</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigeCataphractHelmet/AM_Mesoamerican_PrestigeCataphractHelmet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_PrestigeCataphractHelmet/AM_Mesoamerican_PrestigeCataphractHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

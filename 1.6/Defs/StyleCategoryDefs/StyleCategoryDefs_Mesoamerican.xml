@@ -291,6 +291,55 @@
 				<thingDef>PlantPot</thingDef>
 				<styleDef>AM_MesoamericanPlantPot</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_Tuque</thingDef>
+				<styleDef>AM_Mesoamerican_Tuque</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_CowboyHat</thingDef>
+				<styleDef>AM_Mesoamerican_CowboyHat</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_SimpleHelmet</thingDef>
+				<styleDef>AM_Mesoamerican_SimpleHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_AdvancedHelmet</thingDef>
+				<styleDef>AM_Mesoamerican_AdvancedHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_BowlerHat</thingDef>
+				<styleDef>AM_Mesoamerican_BowlerHat</styleDef>
+			</li>
+		
+			<li>
+				<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+				<styleDef>AM_Mesoamerican_ReconArmorHelmet</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_WarMask</thingDef>
+				<styleDef>AM_Mesoamerican_WarMask</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_PowerArmorHelmet</thingDef>
+				<styleDef>AM_Mesoamerican_PowerArmorHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetReconPrestige</thingDef>
+				<styleDef>AM_Mesoamerican_PrestigeReconHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorMarineHelmetPrestige</thingDef>
+				<styleDef>AM_Mesoamerican_PrestigePowerArmorHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+				<styleDef>AM_Mesoamerican_ArmorCataphractHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
+				<styleDef>AM_Mesoamerican_PrestigeCataphractHelmet</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>
