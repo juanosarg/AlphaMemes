@@ -843,4 +843,14 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanPowerArmor/AM_MesoamericanPowerArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanPowerArmor/AM_MesoamericanPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
