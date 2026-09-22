@@ -344,6 +344,18 @@
 				<thingDef>Apparel_PowerArmor</thingDef>
 				<styleDef>AM_Mesoamerican_PowerArmor</styleDef>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorMarinePrestige</thingDef>
+				<styleDef>AM_Mesoamerican_PrestigePowerArmor</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_ArmorRecon</thingDef>
+				<styleDef>AM_Mesoamerican_Recon</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>Apparel_ArmorReconPrestige</thingDef>
+				<styleDef>AM_Mesoamerican_PrestigeRecon</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>

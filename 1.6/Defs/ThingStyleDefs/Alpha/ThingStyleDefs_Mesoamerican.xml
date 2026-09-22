@@ -853,4 +853,34 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigePowerArmor</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigePowerArmor/AM_MesoamericanPrestigePowerArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigePowerArmor/AM_MesoamericanPrestigePowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Recon</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanReconPowerArmor/AM_MesoamericanReconPowerArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanReconPowerArmor/AM_MesoamericanReconPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigeRecon</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigeReconPowerArmor/AM_MesoamericanPrestigeReconPowerArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigeReconPowerArmor/AM_MesoamericanPrestigeReconPowerArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
