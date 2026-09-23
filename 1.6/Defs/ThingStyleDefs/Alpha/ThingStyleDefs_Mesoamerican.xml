@@ -730,6 +730,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Mesoamerican_Tuque</defName>
 		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Tuque/AM_Mesoamerican_Tuque</wornGraphicPath>
+		<overrideLabel>cap</overrideLabel>
 		<graphicData>
 			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Tuque/AM_Mesoamerican_Tuque</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -738,6 +739,7 @@
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Mesoamerican_CowboyHat</defName>
 		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CowboyHat/AM_Mesoamerican_CowboyHat</wornGraphicPath>
+		<overrideLabel>plumed cap</overrideLabel>
 		<graphicData>
 			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_CowboyHat/AM_Mesoamerican_CowboyHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -767,6 +769,7 @@
 		<defName>AM_Mesoamerican_BowlerHat</defName>
 		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_BowlerHat/AM_Mesoamerican_BowlerHat</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<overrideLabel>copilli</overrideLabel>
 		<graphicData>
 			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_BowlerHat/AM_Mesoamerican_BowlerHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -883,4 +886,53 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ArmorCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanCataphract/AM_MesoamericanCataphract</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanCataphract/AM_MesoamericanCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_PrestigeCataphract</defName>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigeCataphract/AM_MesoamericanPrestigeCataphract</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanPrestigeCataphract/AM_MesoamericanPrestigeCataphract</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Pants</defName>
+		<overrideLabel>hipcloth</overrideLabel>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Pants/AM_Mesoamerican_Pants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_FlakPants</defName>
+		<overrideLabel>plumed flak skirt</overrideLabel>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_FlakPants/AM_Mesoamerican_FlakPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_FlakVest</defName>
+		<overrideLabel>padded war vest</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanFlakVest/AM_MesoamericanFlakVest</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanFlakVest/AM_MesoamericanFlakVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	
 </Defs>
