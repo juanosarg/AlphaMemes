@@ -934,5 +934,14 @@
 			
 		</graphicData>
 	</ThingStyleDef>
-	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Shirt</defName>
+		<overrideLabel>padded vest</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Shirt/AM_Mesoamerican_Shirt</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Shirt/AM_Mesoamerican_Shirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

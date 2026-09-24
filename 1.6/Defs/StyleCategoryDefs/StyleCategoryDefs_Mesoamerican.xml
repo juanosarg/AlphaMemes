@@ -376,7 +376,10 @@
 				<thingDef>Apparel_FlakVest</thingDef>
 				<styleDef>AM_Mesoamerican_FlakVest</styleDef>
 			</li>
-			
+			<li>
+				<thingDef>Apparel_BasicShirt</thingDef>
+				<styleDef>AM_Mesoamerican_Shirt</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>
