@@ -380,6 +380,18 @@
 				<thingDef>Apparel_BasicShirt</thingDef>
 				<styleDef>AM_Mesoamerican_Shirt</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_CollarShirt</thingDef>
+				<styleDef>AM_Mesoamerican_ButtonShirt</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Jacket</thingDef>
+				<styleDef>AM_Mesoamerican_Jacket</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_Parka</thingDef>
+				<styleDef>AM_Mesoamerican_Parka</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>

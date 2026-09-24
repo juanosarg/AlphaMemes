@@ -944,4 +944,34 @@
 			
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ButtonShirt</defName>
+		<overrideLabel>vest</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_MesoamericanFormalShirth/AM_MesoamericanFormalShirth</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_MesoamericanFormalShirth/AM_MesoamericanFormalShirth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Jacket</defName>
+		
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Jacket/AM_Mesoamerican_Jacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Jacket/AM_Mesoamerican_Jacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Parka</defName>
+		<overrideLabel>cape</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Parka/AM_Mesoamerican_Parka</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Parka/AM_Mesoamerican_Parka</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
