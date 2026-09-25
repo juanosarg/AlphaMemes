@@ -41,7 +41,6 @@
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
 			<li>VME_Proselytism</li>
-			
 		</exclusionTags>
 		<descriptionMaker>
 			<patterns>
@@ -84,7 +83,6 @@
 		<deityCount>1</deityCount>
 		<exclusionTags>
 			<li>AM_Ascetic</li>
-			
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -420,14 +418,12 @@
 				<li>memeAdjective->analytical</li>
 				<li>memeAdjective->retrofuturistic</li>
 				<li>memeAdjective->aetheric</li>
-				<li>memeAdjective->neo-victorian</li>				
+				<li>memeAdjective->neo-victorian</li>
 				<li>memeLeaderNoun->overseer</li>
-				<li>memeLeaderNoun->cogmaster</li>				
+				<li>memeLeaderNoun->cogmaster</li>
 				<li>memeMoralist->tinkerer</li>
-				
 			</rulesStrings>
 		</generalRules>
-		
 		<descriptionMaker>
 			<patterns>
 				<li>
@@ -472,10 +468,8 @@
 				<li>memeAdjective->sea dog</li>
 				<li>memeAdjective->freebooting</li>
 				<li>memeAdjective->roving</li>
-							
 				<li>memeLeaderNoun->shipmaster</li>
 				<li>memeLeaderNoun->commodore</li>
-				
 				<li>memeLeaderAdjective->gallant</li>
 				<li>memeLeaderAdjective->draconian</li>
 				<li>memeLeaderAdjective->callous</li>
@@ -485,10 +479,8 @@
 				<li>memeMoralist->lieutenant</li>
 				<li>memeMoralist->sargeant</li>
 				<li>memeMoralist->subaltern</li>
-				
 			</rulesStrings>
 		</generalRules>
-		
 		<descriptionMaker>
 			<patterns>
 				<li>
@@ -535,7 +527,7 @@
 				<li>memeAdjective->prehistoric</li>
 				<li>memeAdjective->primitive</li>
 				<li>memeAdjective->primeval</li>
-				<li>memeAdjective->primordial</li>			
+				<li>memeAdjective->primordial</li>
 				<li>memeLeaderNoun->chief</li>
 				<li>memeLeaderAdjective->antediluvian</li>
 				<li>memeLeaderAdjective->primal</li>
@@ -544,7 +536,6 @@
 				<li>memeMoralist->medicine man</li>
 				<li>memeMoralist->witch doctor</li>
 				<li>memeMoralist->seer</li>
-			
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -626,12 +617,10 @@
 				<name>Aura</name>
 				<type>The Playful Appearance</type>
 			</li>
-			
 		</fixedDeityNameTypes>
 		<modExtensions>
 			<li Class="VEF.Memes.ExtendedMemeProperties">
 				<removedDesignators>
-					
 					<li>Bed</li>
 					<li>Table1x2c</li>
 					<li>Table2x2c</li>
@@ -643,7 +632,6 @@
 		<requireOne>
 			<li>
 				<li>AM_Megaliths_Desired</li>
-			
 			</li>
 		</requireOne>
 	</MemeDef>
@@ -659,7 +647,6 @@
 		<deityCount>0</deityCount>
 		<generalRules>
 			<rulesStrings>
-								
 				<li>memeAdjective->scrapping</li>
 				<li>memeAdjective->scavenging</li>
 				<li>memeAdjective->scrounging</li>
@@ -670,10 +657,8 @@
 				<li>memeLeaderNoun->scrapper</li>
 				<li>memeLeaderNoun->scrounger</li>
 				<li>memeMoralist->junk rat</li>
-				
 			</rulesStrings>
 		</generalRules>
-		
 		<descriptionMaker>
 			<patterns>
 				<li>
@@ -700,9 +685,7 @@
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
-		
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>AM_Structure_Alienism</defName>
 		<label>alienism</label>
@@ -713,7 +696,6 @@
 		<worshipRoomLabel>ever-seeing chamber</worshipRoomLabel>
 		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
 		<deityCount>0</deityCount>
-		
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->alien</li>
@@ -721,10 +703,8 @@
 				<li>memeAdjective->strange</li>
 				<li>memeAdjective->peculiar</li>
 				<li>memeAdjective->exotic</li>
-				
-				<li>memeLeaderNoun->high alienist</li>				
+				<li>memeLeaderNoun->high alienist</li>
 				<li>memeLeaderAdjective->foreign</li>
-						
 				<li>memeMoralist->aspirant</li>
 				<li>memeMoralist->inquirer</li>
 				<li>memeMoralist->zealot</li>
@@ -756,10 +736,7 @@
 				<priority>4</priority>
 			</li>
 		</thingStyleCategories>
-		
-		
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>AM_Structure_Mesoamerican</defName>
 		<label>mesoamerican origin</label>
@@ -927,6 +904,12 @@
 				<type>God of Storms</type>
 			</li>
 		</fixedDeityNameTypes>
+		<ritualsToMake>1</ritualsToMake>
+		<replaceRitualsWithTags>
+			<li>CelebratedDate</li>
+		</replaceRitualsWithTags>
+		<replacementPatterns>
+			<li>AM_HeartExtraction</li>
+		</replacementPatterns>
 	</MemeDef>
-	
 </Defs>

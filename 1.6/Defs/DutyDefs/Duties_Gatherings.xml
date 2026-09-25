@@ -12,5 +12,14 @@
 			</subNodes>
 		</thinkNode>
 	</DutyDef>
-	
+	<DutyDef>
+		<defName>AM_HeartExtractionSacrifice</defName>
+		<hook>HighPriority</hook>
+		<socialModeMax>Off</socialModeMax>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="AlphaMemes.JobGiver_HeartExtraction"/>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
 </Defs>

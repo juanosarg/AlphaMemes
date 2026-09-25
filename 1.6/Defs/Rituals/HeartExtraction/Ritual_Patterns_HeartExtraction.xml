@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef ParentName="SacrificeBase">
+		<defName>AM_HeartExtraction</defName>
+		<ritualBehavior>AM_HeartExtractionBehavior</ritualBehavior>
+		<shortDescOverride>heart extraction</shortDescOverride>
+		<descOverride>A ritualistic prisoner sacrifice. The organizer will give a speech to excite the crowd, then cut open the prisoner's chest and tear out their still-beating heart. Once the prisoner is dead, the organizer will raise the heart toward the heavens and speak the finishing words.</descOverride>
+		<iconPathOverride>UI/Rituals/AM_HeartExtraction</iconPathOverride>
+		<patternGroupTag/>
+		<ritualOutcomeEffect>AM_HeartExtractionOutcome</ritualOutcomeEffect>
+	</RitualPatternDef>
+</Defs>

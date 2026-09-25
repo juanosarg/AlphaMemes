@@ -13,6 +13,8 @@ namespace AlphaMemes
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
         }
 
+        public static BodyPartDef Heart;
+
         public static DamageDef AM_AcidSpit;
         public static DamageDef AM_HolyBurn;
 
@@ -347,6 +349,7 @@ namespace AlphaMemes
         public static JobDef AM_RodeoFalseAttackJob;
         [MayRequire("VanillaExpanded.VCookE")]
         public static JobDef AM_EatAtBanquet;
+        public static JobDef AM_HeartExtraction;
 
         public static AbilityDef AM_ChangeStyleRadius;
 

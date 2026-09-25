@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualBehaviorDef ParentName="SacrificeBehaviorBase">
+		<defName>AM_HeartExtractionBehavior</defName>
+		<workerClass>RitualBehaviorWorker_PrisonerSacrifice</workerClass>
+		<roles>
+			<li Class="RitualRolePrisoner">
+				<label>sacrifice</label>
+				<missingDesc>a prisoner</missingDesc>
+				<id>prisoner</id>
+				<maxCount>1</maxCount>
+				<required>True</required>
+				<countsAsParticipant>False</countsAsParticipant>
+				<ignoreBleeding>true</ignoreBleeding>
+				<allowDowned>true</allowDowned>
+				<removeFromAssignmentsOnDeath>false</removeFromAssignmentsOnDeath>
+			</li>
+		</roles>
+		<stages Inherit="False">
+			<li Class="RitualStage_InteractWithPrisoner">
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_TargetPawnUnreachable">
+						<takerId>moralist</takerId>
+						<takeeId>prisoner</takeeId>
+						<desc>Prisoner is not reachable.</desc>
+					</li>
+					<li Class="StageFailTrigger_PawnAsleep">
+						<desc>escort asleep</desc>
+						<pawnId>moralist</pawnId>
+					</li>
+				</failTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>DeliverPawnToAltar</dutyDef>
+					</li>
+					<li>
+						<roleId>prisoner</roleId>
+						<dutyDef>Idle</dutyDef>
+					</li>
+				</roleBehaviors>
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>0.4</percentage>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+						<speakerInteraction>AM_Speech_HeartExtraction</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_Lectern">
+								<maxDistanceToFocus>5</maxDistanceToFocus>
+							</li>
+							<li Class="RitualPosition_OnInteractionCell"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>prisoner</roleId>
+						<dutyDef>LayDownAwake</dutyDef>
+					</li>
+				</roleBehaviors>
+			</li>
+			<li Class="RitualStage_InteractWithPrisoner">
+				<defaultDuty>Spectate</defaultDuty>
+				<essential>True</essential>
+				<endTriggers>
+					<li Class="StageEndTrigger_PawnDead">
+						<roleId>prisoner</roleId>
+					</li>
+				</endTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>AM_HeartExtractionSacrifice</dutyDef>
+						<customPositions>
+							<li Class="RitualPosition_OnInteractionCell"/>
+						</customPositions>
+					</li>
+					<li>
+						<roleId>prisoner</roleId>
+						<dutyDef>LayDownAwake</dutyDef>
+					</li>
+				</roleBehaviors>
+				<visualEffectDef>SacrificePrisoner</visualEffectDef>
+			</li>
+			<li>
+				<defaultDuty>Spectate</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>0.6</percentage>
+					</li>
+				</endTriggers>
+				<failTriggers>
+					<li Class="StageFailTrigger_PawnAlive">
+						<pawnId>prisoner</pawnId>
+						<desc>sacrifice no longer dead</desc>
+					</li>
+				</failTriggers>
+				<roleBehaviors>
+					<li>
+						<roleId>moralist</roleId>
+						<dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+						<speakerInteraction>Speech_Sacrifice</speakerInteraction>
+						<customPositions>
+							<li Class="RitualPosition_OnInteractionCell"/>
+						</customPositions>
+					</li>
+				</roleBehaviors>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>

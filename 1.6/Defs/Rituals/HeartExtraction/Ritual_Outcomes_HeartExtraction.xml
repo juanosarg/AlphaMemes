@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>AM_HeartExtractionOutcome</defName>
+		<description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>RitualOutcomeEffectWorker_Consumable</workerClass>
+		<extraPredictedOutcomeDescriptions>
+			<li>If the {0} is satisfying, one of the participants might gain an inspiration.</li>
+		</extraPredictedOutcomeDescriptions>
+		<comps>
+			<li Class="RitualOutcomeComp_RitualSeatPresent">
+				<qualityOffset>0.15</qualityOffset>
+			</li>
+			<li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+				<roleId>moralist</roleId>
+				<label>moral guide present</label>
+				<qualityOffset>0.25</qualityOffset>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.33)</li>
+						<li>(10, 0.4)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_RitualTargetDefs">
+				<allowAltars>true</allowAltars>
+				<label>started at altar</label>
+				<qualityOffset>0.2</qualityOffset>
+				<expectedThingLabelTip>an altar</expectedThingLabelTip>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Terrible</label>
+				<chance>0.05</chance>
+				<memory>AM_HeartExtraction_Terrible</memory>
+				<description>The {0} was terrible! The speech was stuttering and incoherent, and the chest was opened clumsily. The heart was difficult to extract, leaving the victim struggling for far too long - everyone was waiting for it to end.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Boring</label>
+				<chance>0.15</chance>
+				<memory>AM_HeartExtraction_Boring</memory>
+				<description>The {0} was boring. The speech was repetitive and the heart was extracted without ceremony or grace. The whole affair felt awkward and undignified.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Satisfying</label>
+				<chance>0.6</chance>
+				<memory>AM_HeartExtraction_Satisfying</memory>
+				<description>The {0} was satisfying. The speech felt meaningful, the chest was opened with precision, and the heart was extracted cleanly and presented to the heavens with dignity.</description>
+				<potentialExtraOutcomeDesc>There's a 5% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Spectacular</label>
+				<chance>0.2</chance>
+				<memory>AM_HeartExtraction_Spectacular</memory>
+				<description>The {0} was spectacular! The speech drove the crowd to the edge of a frenzy, the chest was opened with perfect precision, and the still-beating heart was raised triumphantly toward the heavens as blood spilled upon the altar.</description>
+				<potentialExtraOutcomeDesc>There's a 10% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

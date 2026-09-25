@@ -301,10 +301,12 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityOcularConversion.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityPsychicDeathKnell.cs" />
     <Compile Include="AI\JobDriver\JobDriver_EatAtBanquet.cs" />
+    <Compile Include="AI\JobDriver\JobDriver_HeartExtraction.cs" />
     <Compile Include="AI\JobDriver\JobDriver_InstallRelicInSmashingAltar.cs" />
     <Compile Include="AI\JobDriver\JobDriver_MergeIntoCorruptedPod.cs" />
     <Compile Include="AI\JobDriver\JobDriver_RodeoFalseAttackJob.cs" />
     <Compile Include="AI\JobGiver\JobGiver_EatAtBanquet.cs" />
+    <Compile Include="AI\JobGiver\JobGiver_HeartExtraction.cs" />
     <Compile Include="AI\JobGiver\JobGiver_MergeIntoGaumakerPodCorruptor.cs" />
     <Compile Include="AI\JobGiver\JobGiver_Rodeo.cs" />
     <Compile Include="AI\LordJobs\LordJob_Ritual_Rodeo.cs" />

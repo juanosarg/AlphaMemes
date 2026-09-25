@@ -10,10 +10,15 @@
 		<driverClass>AlphaMemes.JobDriver_MergeIntoCorruptedPod</driverClass>
 		<reportString>merging into TargetB.</reportString>
 	</JobDef>
-	
 	<JobDef>
 		<defName>AM_RodeoFalseAttackJob</defName>
 		<driverClass>AlphaMemes.JobDriver_RodeoFalseAttackJob</driverClass>
 		<reportString>melee.</reportString>
+	</JobDef>
+	<JobDef>
+		<defName>AM_HeartExtraction</defName>
+		<driverClass>AlphaMemes.JobDriver_HeartExtraction</driverClass>
+		<reportString>Ripping TargetA's heart out.</reportString>
+		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 </Defs>

@@ -112,4 +112,39 @@
 			</rulesStrings>
 		</logRulesInitiator>
 	</InteractionDef>
+	<InteractionDef>
+		<defName>AM_Speech_HeartExtraction</defName>
+		<label>heart extraction speech</label>
+		<workerClass>InteractionWorker</workerClass>
+		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+		<symbol>UI/Rituals/AM_Heart</symbol>
+		<logRulesInitiator>
+			<include>
+				<li>SpeechUtility</li>
+			</include>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+				<li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
+				<li>speechtopic->the sacred heart and its gift to the heavens</li>
+				<li>speechtopic->the life-giving power of blood</li>
+				<li>speechtopic->the journey of the heart to the heavens</li>
+				<li>speechtopic->the hunger of the sun</li>
+				<li>speechtopic->the sacred bond between blood and life</li>
+				<li>speechtopic->the heart as the seat of life</li>
+				<li>speechtopic->the price of keeping the sun alive</li>
+				<li>speechtopic->the eternal cycle of death and renewal</li>
+				<li>speechtopic->the offering of the heart</li>
+				<li>speechtopic->the sacred path from flesh to heaven</li>
+				<li>speechtopic->the red river that sustains the world</li>
+				<li>speechtopic->the beating heart beneath the ribs</li>
+				<li>crazy->screamed a prayer towards the heavens</li>
+				<li>crazy->broke into a fevered chant</li>
+				<li>crazy->chanted wildly to the sun</li>
+				<li>crazy->pressed a hand against the sacrifice's chest</li>
+				<li>crazy->cackled as they invoked the heavens</li>
+				<li>crazy->brandished the sacrificial blade</li>
+				<li>crazy->muttered prayers over and over</li>
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
 </Defs>

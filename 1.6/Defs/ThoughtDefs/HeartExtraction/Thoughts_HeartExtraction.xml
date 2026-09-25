@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>AM_HeartExtraction_Terrible</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>terrible heart extraction</label>
+				<description>That sacrifice was botched and the ritual felt completely wrong. The heart was extracted clumsily, making for an awful and awkward death.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_HeartExtraction_Boring</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>boring heart extraction</label>
+				<description>That sacrifice lacked passion and ceremony. The heart was extracted without any real grace or reverence.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_HeartExtraction_Satisfying</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>satisfying heart extraction</label>
+				<description>That sacrifice was satisfying - the heart was extracted cleanly and presented to the heavens with proper ceremony.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>AM_HeartExtraction_Spectacular</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>spectacular heart extraction</label>
+				<description>The heart! The blood! The offering! That sacrifice felt like a true communion with the heavens.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
