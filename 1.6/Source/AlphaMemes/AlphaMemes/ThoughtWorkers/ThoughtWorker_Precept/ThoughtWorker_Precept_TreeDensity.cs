@@ -6,16 +6,7 @@ namespace AlphaMemes
 {
     public class ThoughtWorker_Precept_TreeDensity : ThoughtWorker_Precept
     {
-        private static readonly int[] treeDestructionThresholds = new int[7]
-        {
-        2,
-        5,
-        8,
-        10,
-        13,
-        16,
-        20
-        };
+        private static readonly int[] treeDestructionThresholds = new int[7]{2,5,8,10,13,16,20};
 
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
@@ -28,7 +19,7 @@ namespace AlphaMemes
 
         private int ThoughtStageIndex(Pawn p)
         {
-            if(p.Map!=null && StaticCollections.treesInMap[p.Map] < 21)
+            if (p.Map != null && StaticCollections.treesInMap.ContainsKey(p.Map) && StaticCollections.treesInMap[p.Map] < 21)
             {
                 return 8;
             }
