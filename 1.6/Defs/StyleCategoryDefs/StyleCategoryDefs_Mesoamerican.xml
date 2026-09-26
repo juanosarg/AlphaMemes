@@ -392,6 +392,14 @@
 				<thingDef>Apparel_Parka</thingDef>
 				<styleDef>AM_Mesoamerican_Parka</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_Duster</thingDef>
+				<styleDef>AM_Mesoamerican_Duster</styleDef>
+			</li>
+			<li>
+				<thingDef>Apparel_PlateArmor</thingDef>
+				<styleDef>AM_Mesoamerican_Plate</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>

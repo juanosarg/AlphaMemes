@@ -974,4 +974,24 @@
 			
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Duster</defName>
+		<overrideLabel>cloak</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Duster/AM_Mesoamerican_Duster</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Duster/AM_Mesoamerican_Duster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Plate</defName>
+		
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Plate/AM_Mesoamerican_Plate</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_Plate/AM_Mesoamerican_Plate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
 </Defs>
