@@ -994,4 +994,87 @@
 			
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_FlakJacket</defName>
+		<overrideLabel>padded war jacket</overrideLabel>
+		<wornGraphicPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_FlakJacket/AM_Mesoamerican_FlakJacket</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Apparel/Mesoamerican/AM_Mesoamerican_FlakJacket/AM_Mesoamerican_FlakJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_TripleRocket</defName>
+	
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanRocketLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_DoomsdayRocket</defName>
+	
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanDoomsdayLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Grenade</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_EMPGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanEMPGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_ToxGrenades</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanToxGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Molotovs</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanMolotovs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_FlameLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanFlameLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_SmokeLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanSmokeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_EMPLauncher</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanEMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_Flamebow</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_MesoamericanFlameBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

@@ -400,6 +400,52 @@
 				<thingDef>Apparel_PlateArmor</thingDef>
 				<styleDef>AM_Mesoamerican_Plate</styleDef>
 			</li>
+			<li>
+				<thingDef>Apparel_FlakJacket</thingDef>
+				<styleDef>AM_Mesoamerican_FlakJacket</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_TripleRocket</thingDef>
+				<styleDef>AM_Mesoamerican_TripleRocket</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_DoomsdayRocket</thingDef>
+				<styleDef>AM_Mesoamerican_DoomsdayRocket</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeFrag</thingDef>
+				<styleDef>AM_Mesoamerican_Grenade</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeEMP</thingDef>
+				<styleDef>AM_Mesoamerican_EMPGrenades</styleDef>
+			</li>
+			<li>
+				<thingDef>Weapon_GrenadeMolotov</thingDef>
+				<styleDef>AM_Mesoamerican_Molotovs</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_IncendiaryLauncher</thingDef>
+				<styleDef>AM_Mesoamerican_FlameLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_SmokeLauncher</thingDef>
+				<styleDef>AM_Mesoamerican_SmokeLauncher</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_EmpLauncher</thingDef>
+				<styleDef>AM_Mesoamerican_EMPLauncher</styleDef>
+			</li>
+		
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Flamebow</thingDef>
+				<styleDef>AM_Mesoamerican_Flamebow</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<thingDef>Weapon_GrenadeTox</thingDef>
+				<styleDef>AM_Mesoamerican_ToxGrenades</styleDef>
+			</li>
+			
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>
