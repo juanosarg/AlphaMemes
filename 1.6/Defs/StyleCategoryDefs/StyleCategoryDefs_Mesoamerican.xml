@@ -445,7 +445,14 @@
 				<thingDef>Weapon_GrenadeTox</thingDef>
 				<styleDef>AM_Mesoamerican_ToxGrenades</styleDef>
 			</li>
-			
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Gun_HellcatRifle</thingDef>
+				<styleDef>AM_Mesoamerican_HellcatRifle</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<thingDef>Gun_BeamRepeater</thingDef>
+				<styleDef>AM_Mesoamerican_BeamRepeater</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_MesoamericanSlab_Medium</li>

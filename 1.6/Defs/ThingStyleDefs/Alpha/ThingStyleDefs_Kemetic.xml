@@ -1166,4 +1166,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Kemetic_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Kemetic_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Kemetic/AM_Kemetic_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

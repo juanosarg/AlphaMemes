@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-	
-
 	<!-- Totemic -->
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_Club</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicClub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -19,7 +13,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicShortSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -51,7 +44,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicGunstockMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -68,7 +60,7 @@
 			<texPath>Things/Weapons/Totemic/AM_TotemicChargeRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>	
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_HeavySMG</defName>
 		<graphicData>
@@ -141,7 +133,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_Bow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -149,7 +140,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_RecurveBow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicRecurveBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -157,13 +147,11 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_GreatBow</defName>
-
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_ChargeLance</defName>
 		<graphicData>
@@ -298,7 +286,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_Crossbow</defName>
 		<graphicData>
@@ -320,7 +307,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_SawedOffShotgun</defName>
 		<graphicData>
@@ -377,8 +363,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-			<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Totemic_Grenade</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicGrenades</texPath>
@@ -446,7 +431,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Totemic/AM_TotemicShiv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -456,7 +440,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-
-	
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_Totemic_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Totemic_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Totemic/AM_Totemic_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

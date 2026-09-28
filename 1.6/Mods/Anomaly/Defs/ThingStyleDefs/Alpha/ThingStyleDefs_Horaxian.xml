@@ -835,4 +835,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_Horaxian_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Horaxian_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Horaxian/AM_Horaxian_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

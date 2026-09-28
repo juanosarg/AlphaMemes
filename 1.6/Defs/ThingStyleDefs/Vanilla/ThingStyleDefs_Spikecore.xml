@@ -421,4 +421,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_Spikecore_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Spikecore_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Spikecore/AM_Spikecore_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

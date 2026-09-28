@@ -449,4 +449,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_Animalist_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Animalist_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Animalist/AM_Animalist_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

@@ -15,7 +15,7 @@
 				<thingDef>Apparel_CowboyHat</thingDef>
 				<styleDef>AM_Corsair_Tricorn</styleDef>
 			</li>
-				<li>
+			<li>
 				<thingDef>Apparel_BowlerHat</thingDef>
 				<styleDef>AM_Corsair_BowlerHat</styleDef>
 			</li>
@@ -207,7 +207,6 @@
 				<thingDef>Gun_EmpLauncher</thingDef>
 				<styleDef>AM_Corsair_EMPLauncher</styleDef>
 			</li>
-			
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<thingDef>Flamebow</thingDef>
 				<styleDef>AM_Corsair_Flamebow</styleDef>
@@ -259,6 +258,14 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">
 				<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
 				<styleDef>AM_Corsair_PrestigeCataphractHelmet</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Gun_HellcatRifle</thingDef>
+				<styleDef>AM_Corsair_HellcatRifle</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<thingDef>Gun_BeamRepeater</thingDef>
+				<styleDef>AM_Corsair_BeamRepeater</styleDef>
 			</li>
 		</thingDefStyles>
 		<addDesignators>

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-	
-
 	<!-- Rustic -->
-
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_Club</defName>
 		<graphicData>
@@ -19,7 +14,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Rustic/AM_RusticShortSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -28,7 +22,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Rustic/AM_RusticIkwa</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -51,7 +44,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Rustic/AM_RusticMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -60,7 +52,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Rustic/AM_RusticSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -69,7 +60,7 @@
 			<texPath>Things/Weapons/Rustic/AM_RusticChargeRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	</ThingStyleDef>	
+	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_HeavySMG</defName>
 		<graphicData>
@@ -203,7 +194,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_LongBow</defName>
 		<graphicData>
@@ -218,7 +208,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_ChargePistol</defName>
 		<graphicData>
@@ -317,7 +306,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Rustic_SawedOffShotgun</defName>
 		<graphicData>
@@ -442,7 +430,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Rustic/AM_RusticShiv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -452,8 +439,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-
-
-
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_Rustic_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Rustic_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Rustic/AM_Rustic_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

@@ -1077,4 +1077,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_Mesoamerican_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Mesoamerican_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Mesoamerican/AM_Mesoamerican_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<!-- ====== Steampunk ======== -->
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>AM_SteampunkRevival_Wall</defName>
@@ -195,11 +194,8 @@
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Steampunk/AM_Steampunk_ShipLandingBeacon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-	
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevivalShelf</defName>
 		<graphicData>
@@ -213,7 +209,7 @@
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Steampunk/ShelfSmall/AM_SteampunkShelfSmall</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -224,7 +220,6 @@
 			<drawSize>(2,1)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevivalEndTable</defName>
 		<graphicData>
@@ -232,7 +227,6 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>AM_SteampunkRevival_Components</defName>
 		<graphicData>
@@ -351,7 +345,6 @@
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_SteampunkRevival_ShieldBelt</defName>
-
 		<graphicData>
 			<texPath>Things/Apparel/Steampunk/AM_SteampunkShieldBelt/AM_SteampunkShieldBelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -403,7 +396,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkRecurveBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -411,7 +403,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -419,7 +410,6 @@
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkGreatBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="AM_RotateWeapons">
@@ -560,10 +550,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
-	
-			<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Steampunk_Grenade</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkGrenades</texPath>
@@ -641,15 +628,25 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-		<ThingStyleDef ParentName="AM_RotateWeapons">
+	<ThingStyleDef ParentName="AM_RotateWeapons">
 		<defName>AM_Steampunk_Flamethrower</defName>
 		<graphicData>
 			<texPath>Things/Weapons/Steampunk/AM_SteampunkFlamethrower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
-
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_Steampunk_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Steampunk_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Steampunk/AM_Steampunk_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

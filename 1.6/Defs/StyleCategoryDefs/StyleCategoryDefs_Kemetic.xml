@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<StyleCategoryDef>
 		<defName>AM_Kemetic</defName>
 		<label>kemetic</label>
@@ -8,23 +7,22 @@
 		<soundOngoingRitual>AM_RitualSustainer_Kemetic</soundOngoingRitual>
 		<ritualVisualEffectDef>AM_KemeticVisuals</ritualVisualEffectDef>
 		<thingDefStyles>
-		
 			<li>
-                <thingDef>Bed</thingDef>
-                <styleDef>AM_Kemetic_Bed</styleDef>
-            </li>
+				<thingDef>Bed</thingDef>
+				<styleDef>AM_Kemetic_Bed</styleDef>
+			</li>
 			<li>
-                <thingDef>DoubleBed</thingDef>
-                <styleDef>AM_Kemetic_DoubleBed</styleDef>
-            </li>
+				<thingDef>DoubleBed</thingDef>
+				<styleDef>AM_Kemetic_DoubleBed</styleDef>
+			</li>
 			<li>
-                <thingDef>RoyalBed</thingDef>
-                <styleDef>AM_Kemetic_RoyalBed</styleDef>
-            </li>
+				<thingDef>RoyalBed</thingDef>
+				<styleDef>AM_Kemetic_RoyalBed</styleDef>
+			</li>
 			<li>
-                <thingDef>HospitalBed</thingDef>
-                <styleDef>AM_Kemetic_HospitalBed</styleDef>
-            </li>
+				<thingDef>HospitalBed</thingDef>
+				<styleDef>AM_Kemetic_HospitalBed</styleDef>
+			</li>
 			<li>
 				<thingDef>PlantPot_Bonsai</thingDef>
 				<styleDef>AM_KemeticBonsaiTreePot</styleDef>
@@ -113,7 +111,6 @@
 				<thingDef>TorchWallLamp</thingDef>
 				<styleDef>AM_Kemetic_TorchWallLamp</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>WallLamp</thingDef>
 				<styleDef>AM_KemeticWallLamp</styleDef>
@@ -290,8 +287,6 @@
 				<thingDef>Apparel_PlateArmor</thingDef>
 				<styleDef>AM_Kemetic_Plate</styleDef>
 			</li>
-			
-			
 			<li>
 				<thingDef>Apparel_ArmorRecon</thingDef>
 				<styleDef>AM_Kemetic_Recon</styleDef>
@@ -340,7 +335,6 @@
 				<thingDef>PlantPot</thingDef>
 				<styleDef>AM_KemeticPlantPot</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Weapon_GrenadeFrag</thingDef>
 				<styleDef>AM_Kemetic_Grenade</styleDef>
@@ -365,7 +359,6 @@
 				<thingDef>Gun_EmpLauncher</thingDef>
 				<styleDef>AM_Kemetic_EMPLauncher</styleDef>
 			</li>
-		
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<thingDef>Flamebow</thingDef>
 				<styleDef>AM_Kemetic_Flamebow</styleDef>
@@ -378,7 +371,6 @@
 				<thingDef>Gun_ToxbombLauncher</thingDef>
 				<styleDef>AM_Kemetic_ToxLauncher</styleDef>
 			</li>
-			
 			<li>
 				<thingDef>Apparel_Tuque</thingDef>
 				<styleDef>AM_Kemetic_SimpleHelmet</styleDef>
@@ -451,9 +443,14 @@
 				<thingDef>Apparel_WarMask</thingDef>
 				<styleDef>AM_Kemetic_WarMask</styleDef>
 			</li>
-			
-			
-			
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Gun_HellcatRifle</thingDef>
+				<styleDef>AM_Kemetic_HellcatRifle</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<thingDef>Gun_BeamRepeater</thingDef>
+				<styleDef>AM_Kemetic_BeamRepeater</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_Pyramid</li>
@@ -472,5 +469,4 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">AM_Floor_KemeticFineTiles</li>
 		</addDesignatorGroups>
 	</StyleCategoryDef>
-
 </Defs>

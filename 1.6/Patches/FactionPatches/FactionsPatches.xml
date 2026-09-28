@@ -16,6 +16,8 @@
 					<AM_Structure_Corsair >1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic >1</AM_Structure_Neolithic>
 					<AM_Structure_Scavenger >1</AM_Structure_Scavenger>
+					<AM_Structure_Alienism>1</AM_Structure_Alienism>
+					<AM_Structure_Mesoamerican>1</AM_Structure_Mesoamerican>
 				</structureMemeWeights>
 			</value>
 		</nomatch>
@@ -31,6 +33,8 @@
 				<AM_Structure_Corsair >1</AM_Structure_Corsair>
 				<AM_Structure_Neolithic >1</AM_Structure_Neolithic>
 				<AM_Structure_Scavenger >1</AM_Structure_Scavenger>
+				<AM_Structure_Alienism>1</AM_Structure_Alienism>
+				<AM_Structure_Mesoamerican>1</AM_Structure_Mesoamerican>
 			</value>
 		</match>
 	</Operation>
@@ -56,6 +60,8 @@
 					<AM_Structure_Corsair >1</AM_Structure_Corsair>
 					<AM_Structure_Neolithic >3</AM_Structure_Neolithic>
 					<AM_Structure_Scavenger >1</AM_Structure_Scavenger>
+					<AM_Structure_Alienism>1</AM_Structure_Alienism>
+					<AM_Structure_Mesoamerican>1</AM_Structure_Mesoamerican>
 				</structureMemeWeights>
 			</value>
 		</nomatch>
@@ -70,6 +76,8 @@
 				<AM_Structure_Corsair >1</AM_Structure_Corsair>
 				<AM_Structure_Neolithic >3</AM_Structure_Neolithic>
 				<AM_Structure_Scavenger >1</AM_Structure_Scavenger>
+				<AM_Structure_Alienism>1</AM_Structure_Alienism>
+				<AM_Structure_Mesoamerican>1</AM_Structure_Mesoamerican>
 			</value>
 		</match>
 	</Operation>
@@ -162,14 +170,16 @@
 						<xpath>Defs/FactionDef[defName="Empire"]</xpath>
 						<value>
 							<structureMemeWeights>
-								<AM_Structure_Kemetism >1</AM_Structure_Kemetism>
+								<AM_Structure_Kemetism>0.5</AM_Structure_Kemetism>
+								<AM_Structure_Mesoamerican>0.5</AM_Structure_Mesoamerican>
 							</structureMemeWeights>
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
 						<value>
-							<AM_Structure_Kemetism >1</AM_Structure_Kemetism>
+							<AM_Structure_Kemetism>0.5</AM_Structure_Kemetism>
+							<AM_Structure_Mesoamerican>0.5</AM_Structure_Mesoamerican>
 						</value>
 					</match>
 				</li>

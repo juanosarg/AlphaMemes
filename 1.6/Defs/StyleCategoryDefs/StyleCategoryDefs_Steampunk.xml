@@ -319,6 +319,14 @@
 				<thingDef>Gun_ToxbombLauncher</thingDef>
 				<styleDef>AM_Steampunk_ToxLauncher</styleDef>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Gun_HellcatRifle</thingDef>
+				<styleDef>AM_Steampunk_HellcatRifle</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<thingDef>Gun_BeamRepeater</thingDef>
+				<styleDef>AM_Steampunk_BeamRepeater</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignatorGroups>
 			<li>AM_Floor_SteampunkTiles</li>

@@ -727,4 +727,18 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_Corsair_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Corsair_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Corsair/AM_Corsair_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

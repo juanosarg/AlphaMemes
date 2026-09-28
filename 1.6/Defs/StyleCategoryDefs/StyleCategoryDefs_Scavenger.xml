@@ -230,7 +230,14 @@
 				<thingDef>Gun_ToxbombLauncher</thingDef>
 				<styleDef>AM_Scavenger_ToxLauncher</styleDef>
 			</li>
-			
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<thingDef>Gun_HellcatRifle</thingDef>
+				<styleDef>AM_Scavenger_HellcatRifle</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<thingDef>Gun_BeamRepeater</thingDef>
+				<styleDef>AM_Scavenger_BeamRepeater</styleDef>
+			</li>
 		</thingDefStyles>
 		<addDesignators>
 			<li>AM_AncientBed</li>

@@ -1200,4 +1200,18 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Cubic_HellcatRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Cubic/AM_Cubic_HellcatRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="AM_RotateWeapons">
+		<defName>AM_Cubic_BeamRepeater</defName>
+		<graphicData>
+			<texPath>Things/Weapons/Cubic/AM_Cubic_BeamRepeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 </Defs>

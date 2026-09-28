@@ -148,6 +148,14 @@
 								<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
 								<styleDef>AM_Animalist_Staff</styleDef>
 							</li>
+							<li MayRequire="Ludeon.RimWorld.Anomaly">
+								<thingDef>Gun_HellcatRifle</thingDef>
+								<styleDef>AM_Animalist_HellcatRifle</styleDef>
+							</li>
+							<li MayRequire="Ludeon.RimWorld.Odyssey">
+								<thingDef>Gun_BeamRepeater</thingDef>
+								<styleDef>AM_Animalist_BeamRepeater</styleDef>
+							</li>
 						</value>
 					</match>
 				</li>
