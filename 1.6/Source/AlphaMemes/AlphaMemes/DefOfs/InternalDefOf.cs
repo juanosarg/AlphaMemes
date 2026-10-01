@@ -336,6 +336,8 @@ namespace AlphaMemes
         public static DesignatorDropdownGroupDef AM_Floor_KemeticFineTiles;
         public static DesignatorDropdownGroupDef AM_Floor_SteampunkTiles;
         public static DesignatorDropdownGroupDef AM_Floor_NeolithicTiles;
+        public static DesignatorDropdownGroupDef AM_Floor_MesoamericanFineTiles;
+        public static DesignatorDropdownGroupDef AM_Floor_MesoamericanTiles;
 
         [MayRequireRoyalty]
         public static JobDef AM_AnimaBurialLink;

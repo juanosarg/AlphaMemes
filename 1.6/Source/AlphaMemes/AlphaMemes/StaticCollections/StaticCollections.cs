@@ -66,7 +66,7 @@ namespace AlphaMemes
         public static List<MemeDef> listProselytizerMemes = new List<MemeDef>() { InternalDefOf.Proselytizer, InternalDefOf.VME_ViolentConversion };
 
         public static List<DesignatorDropdownGroupDef> designatorsToBeRemoved = new List<DesignatorDropdownGroupDef>() { InternalDefOf.AM_Floor_JewishTiles, InternalDefOf.AM_Floor_JewishFineTiles, InternalDefOf.AM_Floor_KemeticTiles, InternalDefOf.AM_Floor_KemeticFineTiles, InternalDefOf.AM_Floor_SteampunkTiles,
-        InternalDefOf.AM_Floor_NeolithicTiles};
+        InternalDefOf.AM_Floor_NeolithicTiles,InternalDefOf.AM_Floor_MesoamericanTiles,InternalDefOf.AM_Floor_MesoamericanFineTiles};
 
 
         static StaticCollections()
