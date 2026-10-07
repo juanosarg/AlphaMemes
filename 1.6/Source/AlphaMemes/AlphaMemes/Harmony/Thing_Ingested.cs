@@ -44,7 +44,7 @@ namespace AlphaMemes
                     }
                 }
 
-                if (ingester.Ideo?.HasPrecept(InternalDefOf.AM_InsectMeatEating_Required) == true && ingester.Ideo?.HasPrecept(InternalDefOf.AM_FungusEating_Required) == true && ingester.IsColonistPlayerControlled)
+                if (ingester.Ideo?.HasPrecept(InternalDefOf.AM_InsectMeatEating_Required) == true && ingester.Ideo?.HasPrecept(InternalDefOf.AM_FungusEating_Required) == true && ingester.IsColonistPlayerControlled && !__instance.def.IsDrug && __instance.def.defName!= "DBH_WaterBottle")
                 {
                     if(!IsFungusOrFungusIngredients(__instance) &&!FoodUtility.IsInsectCorpseOrInsectMeatIngredient(__instance) && __instance.def != ThingDefOf.InsectJelly)
                     {
