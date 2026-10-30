@@ -43,6 +43,6 @@
 			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Barkskin</li>
 			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Spitter</li>
 		</combatDryads>
-	</AlphaMemes.DryadsDef>
+	</AlphaMemes.DryadsDef> 
 </Defs>
 
