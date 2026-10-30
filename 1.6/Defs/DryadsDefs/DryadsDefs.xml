@@ -23,6 +23,12 @@
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Stonedigger</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Nectarmaker</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Gaubricmaker</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Woodmaker</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Medicinemaker</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Berrymaker</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Stonedigger</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Nectarmaker</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Gaubricmaker</li>
 		</utilityDryads>
 		<combatDryads>
 			<li>Dryad_Clawer</li>
@@ -33,6 +39,9 @@
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Clawer</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Barkskin</li>
 			<li MayRequire="VanillaExpanded.Ideo.Dryads">VDE_AwakenedDryad_Spitter</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Clawer</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Barkskin</li>
+			<li MayRequire="redmattis.dryads.greater">DVE_GreaterDryad_Spitter</li>
 		</combatDryads>
 	</AlphaMemes.DryadsDef>
 </Defs>
